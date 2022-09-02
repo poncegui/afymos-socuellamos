@@ -1,0 +1,136 @@
+.article {
+  //font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin: 30px 15px 45px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #4a4a4a;
+  width: 100%;
+  text-align: justify;
+
+  @media (min-width: 768px) {
+    padding-left: 15px;
+    padding-right: 25px;
+
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 50px;
+    padding-right: 60px;
+
+  }
+
+  &__small {
+    font-size: 14px;
+    color: #8ccbea;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  @media (min-width: 1200px) {
+    &__small {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    font-size: 2px;
+    color: #000000;
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  @media (min-width: 768px) {
+    &__title {
+      width: 100%;
+      font-size: 26px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__title {
+      font-size: 32px;
+    }
+  }
+
+  &__pharagraf {
+    visibility: hidden;
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 30px;
+    width: 50%;
+
+  }
+
+  @media (min-width: 768px) {
+    &__pharagraf {
+      visibility: visible;
+      font-size: 20px;
+     width: 650px;
+     padding-top: 25px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__pharagraf {
+      visibility: visible;
+      width: 100%;
+      padding-top: 40px;
+    }
+  }
+
+  &__link {
+    border: 1px solid pink;
+    background-color: rgb(15, 104, 132);
+    height: 45px;
+    width: 150px;
+    line-height: 2.25;
+    margin: 30px 214px 0px 0px;
+    padding: 0 25px 0 26px;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: pink;
+    }
+
+
+    @media (min-width: 768px) {
+
+    }
+
+
+    &:hover {
+      background-color: 0.5s linear;
+      font-size: 20px;
+      border-radius: 50px;
+      border: 1px solid #ffffff;
+      box-shadow: 0 0 15px #8ccbea;
+      transform: translateY(5px);
+      transition: all 0.5s ease-out;
+    }
+
+    &--btn {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 20px 15px;
+
+
+      &:hover {
+        background-color: 0.8s linear;
+      }
+    }
+  }
+
+ 
+}
+.boxBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+}

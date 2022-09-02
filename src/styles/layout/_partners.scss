@@ -1,0 +1,211 @@
+.partners {
+    display: grid;
+    grid-template-columns: 1f;
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    //padding: 30px 50px 50px 50px;
+    grid-row-gap: 15px;
+    background-color: #eff9ff;
+  
+  
+    @media (min-width: 768px) {
+      grid-template-rows: 10% 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  
+    }
+  
+    @media (min-width: 1200px) {
+  
+    }
+  
+    //  -Main title-
+    &__title {
+      grid-row: 1/2;
+      font-size: 50px;
+      font-family: 'Montserrat Alternates', sans-serif;
+      line-height: 30px;
+      height: 50px;
+      width: 290px;
+      margin-top: auto;
+  
+      @media (min-width: 768px) {
+        width: 100%;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-size: 26px;
+      }
+      @media (min-width: 1200px) {
+  
+      }
+    }
+  
+    // Partners boxes
+  
+    &__diputacion {
+      margin: auto;
+      width: 250px;
+    
+  
+      @media (min-width: 768px) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: 212px;
+     
+      }
+  
+      @media (min-width: 1200px) {
+  
+      }
+    }
+  
+    &__aese {
+      text-align: center;
+      margin: auto;
+      width: 180px;
+  
+  
+      @media (min-width: 768px) {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        width: 212px;
+     
+      }
+      @media (min-width: 1200px) {
+     
+      }
+    }
+  
+    &__plenaInclusion {
+      text-align: center;
+      margin: auto;
+      width: 180px;
+  
+  
+      @media (min-width: 768px) {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        font-size: 20px;
+        width: 212px;
+  
+    
+      }
+  
+      @media (min-width: 1200px) {
+  
+        
+      }
+    }
+  
+    &__castillaLaMancha {
+      text-align: center;
+      margin: auto;
+      width: 180px;
+  
+  
+      @media (min-width: 768px) {
+        grid-row: 3/3;
+        grid-column: 1/2;
+        font-size: 20px;
+        width: 212px;
+  
+    
+      }
+  
+      @media (min-width: 1200px) {
+  
+        
+      }
+    }
+  
+    &__ministerio {
+      text-align: center;
+      margin: auto;
+      width: 180px;
+  
+  
+      @media (min-width: 768px) {
+        grid-row: 3/3;
+        grid-column: 2/3;
+        font-size: 20px;
+        width: 212px;
+  
+    
+      }
+  
+      @media (min-width: 1200px) {
+  
+        
+      }
+    }
+  
+    &__europa {
+      text-align: center;
+      margin: auto;
+      width: 180px;
+  
+  
+      @media (min-width: 768px) {
+        grid-row: 3/3;
+        grid-column: 3/3;
+        font-size: 20px;
+        width: 212px;
+  
+    
+      }
+  
+      @media (min-width: 1200px) {
+  
+        
+      }
+    }
+    //  Button -more reasons-
+  
+  //   &__nav {
+  //     background-color: $secundary-color;
+  //     grid-row: 5;
+  //     grid-column: 1;
+  //     text-decoration: none;
+  //     font-family: $font-text;
+  //     color: $main-color;
+  //     border-radius: 22.5px;
+  //     padding: 7px 5px 5px 5px;
+  //     width: 184px;
+  //     height: 45px;
+  //     justify-content: center;
+  //     align-items: center;
+  //     margin: auto;
+  
+  //     &:hover {
+  //       background-color: $main-color;
+  //       background-color: 0.5s linear;
+  //       color: $secundary-color;
+  //       font-size: 20px;
+  //       border-radius: 50px;
+  //       border: 1px solid $secundary-color;
+  //       box-shadow: 0 0 15px rgb(236, 164, 8);
+  //     }
+  
+  //     @media (min-width: 768px) {
+  //       grid-row: 3/4;
+  //       grid-column: 2/3;
+  //       align-items: center;
+  //       justify-content: center;
+  //     }
+  
+  //     &--btn {
+  //       text-decoration: none;
+  //       padding: 10px 25px;
+  //       color: $main-color;
+  //       font-size: 16px;
+  //       font-family: $font-text;
+  //     }
+  //     &--btn:hover {
+  //       color: $secundary-color;
+  //       background-color: 0.5s linear;
+  //     }
+  //   }
+  }
+  
