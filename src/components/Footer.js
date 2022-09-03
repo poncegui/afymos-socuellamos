@@ -44,15 +44,7 @@ const Footer = () => {
           >926 532 749</a
         >
       </li>
-      <li><i className="fa-brands fa-square-whatsapp"></i>
-        <a
-          className="box1__display--list"
-          href="tel:926532749"
-          target="_blank"
-          title="Teléfono Afymos"
-          >926 532 749</a
-        >
-      </li>
+  
         <li>
           <a
             className="box1__display--list"
