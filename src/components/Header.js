@@ -1,5 +1,5 @@
 import logo from "../images/logo-afymos.png";
-import arrow from "../images/ico-scroll-down.svg";
+import arrow from "../images/down.svg";
 import menu from "../images/ico-menu.svg";
 import facebook from "../images/facebook.svg";
 import home from "../images/home.svg";
@@ -33,10 +33,13 @@ const Header = () => {
         <div className="menu">
           <nav className="menu">
             <ul>
+            <li>
+                <a href="#">Donaciones</a>
+              </li>
               <li>
                 <a href="#" id="selected">
                   <img
-                    className=""
+                    className="homeIcon"
                     src={home}
                     alt="Home Afymos"
                   />

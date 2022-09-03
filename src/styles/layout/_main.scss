@@ -1,3 +1,6 @@
+
+
+
 .article {
   //font-family: 'Playfair Display', serif;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -21,12 +24,29 @@
 
   }
 
-  &__small {
-    font-size: 14px;
-    color: #8ccbea;
+  &__entidad--small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    font-size: 16px;
+    color: pink;
     line-height: 30px;
-    font-weight: normal;
+    padding: 7px;
+    width: 200px;
+    margin-bottom: 30px;
+   
   }
+
+  &__entidad--icon {
+    background-color: transparent;
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+   border: none;
+   
+  }
+
 
   @media (min-width: 1200px) {
     &__small {
@@ -82,7 +102,7 @@
 
   &__link {
     border: 1px solid pink;
-    background-color: rgb(15, 104, 132);
+    background-color: black;
     height: 45px;
     width: 150px;
     line-height: 2.25;

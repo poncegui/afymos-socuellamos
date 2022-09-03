@@ -11,6 +11,7 @@
 .header_superior {
   background-color: #c796b7;
 
+
   &--title {
     font-size: 80px;
     text-transform: uppercase;
@@ -20,11 +21,12 @@
   }
 
   .header_superior__container {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 150px;
+    height: 180px;
   
     &--logo {
       display: none;
@@ -49,7 +51,7 @@
       margin: auto;
       visibility: visible;
       justify-content: space-evenly;
-      height: 180px;
+      height: 200px;
 
       &--logo {
         display: block;
@@ -94,12 +96,12 @@
 
 .container__menu {
   width: 100%;
-  height: 70px;
-  background-color: rgb(15, 104, 132);
+  height: 100px;
+  background-color: black;
   padding: 0px 20px;
 
   .menu {
-    max-width: 1200px;
+    //max-width: 1000px;
     margin: auto;
     height: 100%;
   }
@@ -115,14 +117,15 @@
     color: white;
   }
 
-  nav > ul > li:first-child > a {
-    height: 100%;
-    display: flex;
-    position: relative;
-    color: white;
-    margin-right: 100px;
-    padding: 30px 25px;
-  }
+  // nav > ul > li:second-child > a {
+  //   height: 100%;
+  //   display: flex;
+  //   position: relative;
+  //   color: white;
+    
+  //   margin-right: 100px;
+  //   padding: 30px 25px;
+  // }
   nav > ul > li {
     height: 100%;
     display: flex;
@@ -143,19 +146,42 @@
     transition: all 300ms ease;
     justify-content: center;
     margin-left: 30px;
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   nav > ul > li > a:hover {
     transform: scale(1.1);
     background-color: #c796b7;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    color: #000;
   }
 
   #selected {
     transform: scale(1.1);
     background-color: #c796b7;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    width: 80px;
+
+    @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
   }
+
+  .homeIcon{
+    width: 50px;
+    height: 50px;
+
+    @media (max-width: 768px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
 
   //SubMenu//
 
@@ -194,7 +220,8 @@
 
   nav ul li ul li a {
     display: block;
-    color: rgb(15, 104, 132);
+    color: black;
+    font-weight: bold;
     padding: 6px;
     padding-left: 14px;
     margin-top: 10px;
@@ -205,7 +232,7 @@
 
   nav ul li ul li a:hover {
     background-color: #c796b7;
-    color: rgb(15, 104, 132);
+    color: black;
     transform: scale(1.1);
     font-size: 14px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -218,7 +245,7 @@
 }
 
 .header__menu {
-  background-color: rgb(15, 104, 132);
+  background-color: black;
   width: 44px;
   height: 44px;
   position: fixed;

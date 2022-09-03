@@ -23,13 +23,16 @@
   
     //  -Main title-
     &__title {
-      grid-row: 1/2;
-      font-size: 50px;
-      font-family: 'Montserrat Alternates', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000000;
+      font-size: 16px;
+      color: pink;
       line-height: 30px;
-      height: 50px;
-      width: 290px;
-      margin-top: auto;
+      padding: 7px;
+      width: 200px;
+      margin-bottom: 30px;
   
       @media (min-width: 768px) {
         width: 100%;
