@@ -33,16 +33,12 @@ const Header = () => {
         <div className="menu">
           <nav className="menu">
             <ul>
-            <li>
+              <li>
                 <a href="#">Donaciones</a>
               </li>
               <li>
                 <a href="#" id="selected">
-                  <img
-                    className="homeIcon"
-                    src={home}
-                    alt="Home Afymos"
-                  />
+                  <img className="homeIcon" src={home} alt="Home Afymos" />
                 </a>
               </li>
               <li>
@@ -122,10 +118,7 @@ const Header = () => {
             "Dadme un punto de apoyo y moveré el mundo."
           </h3>
           <h1 className="slogan__text--author"> Arquímedes de Siracusa</h1>
-          <a href="./index.html#main">
-            <img className="slogan__text--btn" src={arrow} alt="main" />
-            
-          </a>
+
         </section>
       </div>
       {/* Menú lateral v. mobile */}
