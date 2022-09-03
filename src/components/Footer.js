@@ -1,25 +1,23 @@
 import up from "../images/up.svg";
 import facebook from "../images/facebook.svg";
+import pipe from "../images/pipe.svg";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__btn">
-        <a href="#header">
-          <img
-            src={up}
-            className="footer-icons"
-            alt="main menu"
-            title="main menu"
-          />
-        </a>
+      <a href="./index.html#header" class="footer__btn--arrow">
+      <i class="fa-solid fa-chevron-up"></i>
+      </a>
+      
       </div>
 
-      <div className="footer__navigation">
-        <nav className="box1">
-          <ul className="box1__display">
-            <li>
-              <i className="fa-solid fa-map-location-dot">
+      <div class="index-footer__wrapper">
+        <div class="index-footer__shop">
+          <h4>Contacto</h4>
+          <nav>
+            <ul>
+              <li>
                 <a
                   className="box1__display--list"
                   href="https://acortar.link/O2NBKp"
@@ -28,96 +26,98 @@ const Footer = () => {
                 >
                   Cómo llegar
                 </a>
-              </i>
-            </li>
-            <li>
-              <i className="fa-solid fa-paper-plane"></i>
-              <a
-                className="box1__display--list"
-                href="mailto:afymos@gmail.com"
-                target="_blank"
-                title="e-mail Afymos"
-              >
-                e-mail
-              </a>
-            </li>
-            <li>
-              <i className="fa-solid fa-phone"></i>
-              <a
-                className="box1__display--list"
-                href="tel:926532749"
-                target="_blank"
-                title="Teléfono Afymos"
-              >
-                926 532 749
-              </a>
-            </li>
-
-            <li>
-              <a
-                className="box1__display--list"
-                href="https://adalab.es/"
-                target="_blank"
-                title="cookies"
-              ></a>
-            </li>
-            <li>
-              <i className="fa-sharp fa-solid fa-cookie"></i>
-              <a
-                className="box1__display--list"
-                href="https://adalab.es/"
-                target="_blank"
-                title="cookies"
-              >
-                Cookies
-              </a>
-            </li>
-            <li>
-              <i className="fa-solid fa-gavel"></i>
-              <a
-                className="box1__display--list"
-                href="https://adalab.es/"
-                target="_blank"
-                title="Web Adalab"
-              >
-                Aviso Legal
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav className="box2">
-          <ul className="box2__display--list">
-            <li>
-              <a
-                className="box2__display--list"
-                href="https://es-es.facebook.com/pages/category/Nonprofit-organization/Afymos-Asociaci%C3%B3n-878470228866846/"
-                target="_blank"
-                title="facebook Afymos"
-              >
-               <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <div className="footer__heart">
-          <div>
-            we <i className="fa-solid fa-heart"></i>humans
-            <div>&copy;2022</div>
+              </li>
+              <li>
+                <a
+                  className="box1__display--list"
+                  href="mailto:afymos@gmail.com"
+                  target="_blank"
+                  title="e-mail Afymos"
+                >
+                  afymos@gmail
+                </a>
+              </li>
+              <li>
+                <a
+                  className="box1__display--list"
+                  href="tel:926532749"
+                  target="_blank"
+                  title="Teléfono Afymos"
+                >
+                  926 532 749
+                </a>
+              </li>
+              {/* <li>
+                <a href="https://adalab.es/" target="_blank">
+                  Habitaciones
+                </a>
+              </li> */}
+            </ul>
+          </nav>
+        </div>
+        <div class="index-footer__about-us">
+          <h4></h4>
+          <nav>
+            <ul>
+              <li>
+                <a href="https://adalab.es/" target="_blank"></a>
+              </li>
+              <li>
+                <a href="https://adalab.es/" target="_blank"></a>
+              </li>
+              <li>
+                <a href="https://adalab.es/" target="_blank"></a>
+              </li>
+              <li>
+                <a href="https://adalab.es/" target="_blank"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="index-footer__contact">
+          <div class="index-footer__contact--menu">
+            <h4>Aviso Legal</h4>
+            <nav>
+              <ul>
+                <li>
+                  <a
+                    className=""
+                    href="https://adalab.es/"
+                    target="_blank"
+                    title="Política de Privacidad"
+                  >
+                    Política de Privacidad
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className=""
+                    href="https://adalab.es/"
+                    target="_blank"
+                    title="cookies"
+                  >
+                    Cookies
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="index-footer__contact--socialmedia">
+            {/* <a href="https://adalab.es/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://adalab.es/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://adalab.es/" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a> */}
+            <a href="https://acortar.link/tvNjS0" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
           </div>
         </div>
       </div>
-      {/* <div className="cookies">
-    <p>
-      <button onclick="aceptarCookies()" className="pull-right">
-        <i className="fa fa-times"></i> Aceptar y cerrar éste mensaje
-      </button>
-      Éste sitio web usa cookies, si permanece aquí acepta su uso. Puede leer
-      más sobre el uso de cookies en nuestra
-      <a href="politica.html">política de privacidad</a>.
-    </p>
-  </div> */}
     </footer>
   );
 };

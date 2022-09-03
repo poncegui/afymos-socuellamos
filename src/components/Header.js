@@ -122,11 +122,13 @@ const Header = () => {
             "Dadme un punto de apoyo y moveré el mundo."
           </h3>
           <h1 className="slogan__text--author"> Arquímedes de Siracusa</h1>
-          <a href="#main">
+          <a href="./index.html#main">
             <img className="slogan__text--btn" src={arrow} alt="main" />
+            
           </a>
         </section>
       </div>
+      {/* Menú lateral v. mobile */}
     </header>
   );
 };
