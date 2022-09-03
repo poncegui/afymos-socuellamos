@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.72d79137.css",
+    "main.js": "./static/js/main.992194f3.js",
+    "static/media/foto4.jpg": "./static/media/foto4.d8380d5686e1353b4386.jpg",
+    "static/media/logo-ministerio.jpg": "./static/media/logo-ministerio.c2b29bf9b4cef40dba10.jpg",
+    "static/media/logo-inclusion.png": "./static/media/logo-inclusion.72fd29222dc5dd544bbb.png",
+    "static/media/logo-afymos.png": "./static/media/logo-afymos.665bbd9817f1c58a0ddb.png",
+    "static/media/logo-aese.jpg": "./static/media/logo-aese.97d43fd6c31090877279.jpg",
+    "static/media/logo-diputacion.png": "./static/media/logo-diputacion.0a4371a2c02713e61274.png",
+    "index.html": "./index.html",
+    "static/media/ico-menu.svg": "./static/media/ico-menu.b62d5b9002daa4d7d29eb3f8c43e962f.svg",
+    "static/media/home.svg": "./static/media/home.c104e2819c58a9a9198e7ad2a43f7b24.svg",
+    "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
+    "static/media/ico-scroll-down.svg": "./static/media/ico-scroll-down.d1488c471e86d7036a41fdca8a2f2793.svg",
+    "main.72d79137.css.map": "./static/css/main.72d79137.css.map",
+    "main.992194f3.js.map": "./static/js/main.992194f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72d79137.css",
+    "static/js/main.992194f3.js"
+  ]
+}
