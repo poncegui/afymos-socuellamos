@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.8622f4fc.css",
-    "main.js": "./static/js/main.4edec414.js",
+    "main.css": "./static/css/main.c23c769a.css",
+    "main.js": "./static/js/main.14afb28a.js",
     "static/media/foto4.jpg": "./static/media/foto4.d8380d5686e1353b4386.jpg",
+    "static/media/logo-ayuntamiento.png": "./static/media/logo-ayuntamiento.572c855624433d08e729.png",
     "static/media/logo-ministerio.jpg": "./static/media/logo-ministerio.c2b29bf9b4cef40dba10.jpg",
+    "static/media/logo-europa.png": "./static/media/logo-europa.55ed42872ad87c97fd99.png",
     "static/media/logo-inclusion.png": "./static/media/logo-inclusion.72fd29222dc5dd544bbb.png",
     "static/media/logo-afymos.png": "./static/media/logo-afymos.665bbd9817f1c58a0ddb.png",
     "static/media/logo-aese.jpg": "./static/media/logo-aese.97d43fd6c31090877279.jpg",
@@ -15,12 +17,13 @@
     "static/media/open.svg": "./static/media/open.02120b307e31b7552ddb9e8d56796a45.svg",
     "static/media/down.svg": "./static/media/down.d1488c471e86d7036a41fdca8a2f2793.svg",
     "static/media/up.svg": "./static/media/up.073c6f1fb318de56c788f49a1222a363.svg",
+    "static/media/close-arrow.svg": "./static/media/close-arrow.e7e8f435847c1672921946ae23f5354c.svg",
     "static/media/pipe.svg": "./static/media/pipe.7d42b2535ca6687ba4b265dfefcf8df0.svg",
-    "main.8622f4fc.css.map": "./static/css/main.8622f4fc.css.map",
-    "main.4edec414.js.map": "./static/js/main.4edec414.js.map"
+    "main.c23c769a.css.map": "./static/css/main.c23c769a.css.map",
+    "main.14afb28a.js.map": "./static/js/main.14afb28a.js.map"
   },
   "entrypoints": [
-    "static/css/main.8622f4fc.css",
-    "static/js/main.4edec414.js"
+    "static/css/main.c23c769a.css",
+    "static/js/main.14afb28a.js"
   ]
 }

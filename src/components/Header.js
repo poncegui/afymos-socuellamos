@@ -1,8 +1,8 @@
-import logo from "../images/logo-afymos.png";
-import arrow from "../images/down.svg";
-import menu from "../images/ico-menu.svg";
-import facebook from "../images/facebook.svg";
-import home from "../images/home.svg";
+import logo from "../logos/logo-afymos.png";
+import arrow from "../icons/down.svg";
+import menu from "../icons/ico-menu.svg";
+import facebook from "../icons/facebook.svg";
+import home from "../icons/home.svg";
 
 const Header = () => {
   return (
@@ -100,7 +100,7 @@ const Header = () => {
         >
           <img src={menu} alt="main menu" />
         </a>
-        <label for="btn-menu">✖️</label>
+        <label htmlFor="btn-menu">✖️</label>
       </nav>
 
       <div className="slogan">

@@ -1,19 +1,19 @@
-import up from "../images/up.svg";
-import facebook from "../images/facebook.svg";
-import pipe from "../images/pipe.svg";
+import up from "../icons/up.svg";
+import facebook from "../icons/facebook.svg";
+import pipe from "../icons/pipe.svg";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__btn">
-      <a href="./index.html#header" class="footer__btn--arrow">
-      <i class="fa-solid fa-chevron-up"></i>
+      <a href="./index.html#header" className="footer__btn--arrow">
+      <i className="fa-solid fa-chevron-up"></i>
       </a>
       
       </div>
 
-      <div class="index-footer__wrapper">
-        <div class="index-footer__shop">
+      <div className="index-footer__wrapper">
+        <div className="index-footer__shop">
           <h4>Contacto</h4>
           <nav>
             <ul>
@@ -34,7 +34,7 @@ const Footer = () => {
                   target="_blank"
                   title="e-mail Afymos"
                 >
-                  afymos@gmail
+                  afymos@gmail.com
                 </a>
               </li>
               <li>
@@ -55,7 +55,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div class="index-footer__about-us">
+        <div className="index-footer__about-us">
           <h4></h4>
           <nav>
             <ul>
@@ -74,8 +74,8 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div class="index-footer__contact">
-          <div class="index-footer__contact--menu">
+        <div className="index-footer__contact">
+          <div className="index-footer__contact--menu">
             <h4>Aviso Legal</h4>
             <nav>
               <ul>
@@ -102,18 +102,18 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          <div class="index-footer__contact--socialmedia">
-            {/* <a href="https://adalab.es/" target="_blank">
-              <i class="fa-brands fa-linkedin-in"></i>
+          <div className="index-footer__contact--socialmedia">
+            {/* <a href="" target="_blank">
+              <i className="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://adalab.es/" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
+            <a href="" alt="Instagram" target="_blank">
+              <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://adalab.es/" target="_blank">
-              <i class="fa-brands fa-twitter"></i>
+            <a href="" alt="Twitter" target="_blank">
+              <i className="fa-brands fa-twitter"></i>
             </a> */}
-            <a href="https://acortar.link/tvNjS0" target="_blank">
-              <i class="fa-brands fa-facebook"></i>
+            <a href="https://acortar.link/tvNjS0" alt="Facebook" target="_blank">
+              <i className="fa-brands fa-facebook"></i>
             </a>
           </div>
         </div>
