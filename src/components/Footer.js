@@ -1,12 +1,10 @@
-import up from "../icons/up.svg";
-import facebook from "../icons/facebook.svg";
-import pipe from "../icons/pipe.svg";
+
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__btn">
-      <a href="./index.html#header" className="footer__btn--arrow">
+      <a href="./index.html#header" className="footer__btn--arrow" alt="menú principal" >
       <i className="fa-solid fa-chevron-up"></i>
       </a>
       
@@ -112,7 +110,7 @@ const Footer = () => {
             <a href="" alt="Twitter" target="_blank">
               <i className="fa-brands fa-twitter"></i>
             </a> */}
-            <a href="https://acortar.link/tvNjS0" alt="Facebook" target="_blank">
+            <a href="https://acortar.link/tvNjS0" alt="Facebook" target="_blank" >
               <i className="fa-brands fa-facebook"></i>
             </a>
           </div>

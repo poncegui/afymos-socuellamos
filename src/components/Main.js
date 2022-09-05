@@ -1,20 +1,25 @@
-import OpenBtn from "./OpenBtn";
+import Collapsable from "./Collapsable";
 import RenderMainText from "./RenderMainText";
 
-const Main = (props) => {
+const Main = props => {
   return (
     <main>
       <article className="article">
         <div className="article__entidad">
-          <h5 className="article__entidad--small">NUESTRA ENTIDAD</h5>
-          <OpenBtn onClick={props.onClick} />
+          <div className="article__entidad--small">
+          <h5 className="">Nuestra entidad</h5>
+          </div>
           <h4 className="article__title">
-            AFYMOS fue fundada en el año 1991 y los fines que perseguimos según
-            nuestros estatutos son:
+            AFYMOS fue fundada en el año 1991. <br></br>
+            Ver los fines que perseguimos según
+            nuestros estatutos:
           </h4>
+
+          <Collapsable onClick={props.onClick} />
+    
           <RenderMainText
             onClick={props.onClick}
-            toggleStatus={props.toggleStatus}
+            toggleStatusMain={props.toggleStatusMain}
           />
         </div>
 

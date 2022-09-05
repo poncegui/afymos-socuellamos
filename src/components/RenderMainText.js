@@ -2,13 +2,18 @@
 
 const renderMainText = props => {
 
-  if(props.toggleStatus === true) {
-    console.log(props.textIsOpen);
+  if(props.toggleStatusMain === true) {
+
+   
     return (
        <>
-          <p className="article__pharagraf--hideText" id="hideText">
+       <br></br>
+  
             {" "}
-            “Articulo 3.- Los fines que la Asociación persigue son de carácter
+            <div className="article__pharagraf">
+           <h4>Artículo 3.-</h4> 
+            <p className="article__pharagraf--hideText" id="hideText">
+            "Los fines que la Asociación persigue son de carácter
             cívico y social, de promoción de los valores constitucionales y de
             los derechos humanos de las personas con discapacidad intelectual,
             física o sensorial. Impulsará la asistencia social, promoción,
@@ -19,9 +24,11 @@ const renderMainText = props => {
             diferencias, implicando a la sociedad a través de la información,
             prestando especial atención al impulso del voluntariado.”
           </p>
-          <p className="article__pharagraf--hideText" id="hideText">
-            {" "}
-            "Artículo 4.- Para el cumplimiento de los fines asociativos se
+          <br></br>
+  
+            <h4>Artículo 3.-</h4> 
+            <p className="article__pharagraf--hideText" id="hideText">
+            "Para el cumplimiento de los fines asociativos se
             realizarán las siguientes acciones: Formación ocupacional dirigida
             a la inserción laboral, programas que garanticen e impulsen su
             autonomía personal, terapias rehabilitadoras y cualquier otra
@@ -31,6 +38,7 @@ const renderMainText = props => {
             divulgue sobre cualquier aspecto que ataña a los intereses de los
             asociados.”
           </p>
+          </div>
         
       </>
       

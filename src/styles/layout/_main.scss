@@ -1,13 +1,9 @@
-// main {
-// background-color: rgb(244, 221, 225);
-// position: absolute;
-// }
 
 
 .article {
   //font-family: 'Playfair Display', serif;
-  font-family: 'Montserrat Alternates', sans-serif;
-  margin: 30px 15px 45px 15px;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,90 +12,101 @@
   text-align: justify;
 
   @media (min-width: 768px) {
-    padding-left: 15px;
-    padding-right: 25px;
+    // padding-left: 15px;
+    // padding-right: 25px;
 
   }
 
   @media (min-width: 1200px) {
-    padding-left: 50px;
-    padding-right: 60px;
+    // padding-left: 50px;
+    // padding-right: 60px;
 
   }
+
+  &__entidad {
+    //padding-left: 50px;
+    width: 100vhw;
+
+    
+
+  }
+
 
   &__entidad--small {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 40px;
+    font-size: 20px;
     background-color: #000000;
-    font-size: 16px;
-    color: pink;
-    line-height: 30px;
-    padding: 7px;
-    width: 200px;
-    margin-bottom: 30px;
-   
-  }
-
-  &__entidad--icon {
-    background-color: transparent;
-   width: 20px;
-   height: 20px;
-   cursor: pointer;
-   border: none;
+    color: #ffffff;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: center;
    
   }
 
 
-  @media (min-width: 1200px) {
-    &__small {
+  &__entidad--small:first-letter {
+    font-size: 180%;
+    font-weight: bold;
+ }
+
+
+  @media (min-width: 720px) {
+    &--small {
+      width:100px;
+    
       font-size: 16px;
+      padding: 0px;
+      background-color: #000000;
     }
   }
 
   &__title {
-    font-size: 2px;
+    font-size: 16px;
     color: #000000;
     width: 100%;
     margin: 5px 0px;
+    padding-left: 50px;
+    padding-right: 60px;
+    font-size: 16px;
+   
   }
+
+  &__title:first-letter {
+    font-size: 200%;
+    font-weight: bold;
+  
+ }
 
   @media (min-width: 768px) {
     &__title {
       width: 100%;
-      font-size: 26px;
+      font-size: 16px;
     }
   }
 
   @media (min-width: 1200px) {
     &__title {
-      font-size: 32px;
+      font-size: 18px;
     }
   }
 
   &__pharagraf {
-    visibility: hidden;
-    font-size: 18px;
-    padding-top: 10px;
-    line-height: 30px;
-    width: 50%;
-
+    padding: 0px 30px;
+   
   }
 
   @media (min-width: 768px) {
     &__pharagraf {
-      visibility: visible;
-      font-size: 20px;
-     width: 650px;
-     padding-top: 25px;
+      padding: 0px 40px;
+
+   
     }
   }
 
   @media (min-width: 1200px) {
     &__pharagraf {
-      visibility: visible;
-      width: 100%;
-      padding-top: 40px;
+      padding: 0px 60px;
+
     }
   }
 
@@ -137,7 +144,7 @@
 
     &--btn {
       text-decoration: none;
-      text-transform: capitalize;
+     // text-transform: capitalize;
       color: #ffffff;
       font-size: 16px;
       padding: 20px 15px;
@@ -155,5 +162,66 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
+  margin: 50px 50px;
+
+
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  
+  }
+
 }
+
+//Collapsable BTNS
+
+
+
+.containerCollapsable {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  width: 45px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: pink;
+  border: solid rgb(249, 165, 179);
+  margin: 30px 50px;
+
+
+}
+
+
+.close {
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50px;
+  background-color: #000000;
+  transform: translateX(19px);
+  transition: all 0.8s ease-out;
+  cursor: pointer;
+
+
+}
+
+.open {
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50px;
+  background-color: #000000;
+  transform: translateX(0px);
+  transition: all 0.8s ease-out;
+  cursor: pointer;
+
+
+}
+
+
+
+

@@ -23,7 +23,7 @@
       background-color: pink;
   
       &--arrow {
-        transform: translateY(5px);
+        transform: translateY(9px);
         padding: 10px;
       }
     }
@@ -87,7 +87,15 @@
     a {
       color: pink;
       line-height: normal;
+
+      &:hover {
+        color:white;
+       }
     }
+
+    &:hover {
+      color:white;
+     }
   }
 
   &__contact {
@@ -106,19 +114,14 @@
            margin-bottom: 50px;
         }
       }
+
+      &--socialmedia:hover {
+       font-style:white;
+      }
     }
   }
 
-  // &__arrow {
-  //   color: pink;
-  //   font-size: 25px;
-  //   align-self: flex-end;
-  //   padding: 24px 30px;
 
-  //   @media all and (min-width: 900px) {
-  //     padding: 50px 50px 0px 50px;
-  //   }
-  // }
 }
 
 
