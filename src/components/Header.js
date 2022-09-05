@@ -37,7 +37,7 @@ const Header = () => {
                 <a href="#">Donaciones</a>
               </li>
               <li>
-                <a href="#" id="selected">
+                <a href="./index.html#footer" id="selected">
                   <img className="homeIcon" src={home} alt="Home Afymos" />
                 </a>
               </li>

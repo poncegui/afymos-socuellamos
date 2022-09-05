@@ -3,7 +3,7 @@ import RenderMainText from "./RenderMainText";
 
 const Main = props => {
   return (
-    <main>
+    <section>
       <article className="article">
         <div className="article__entidad">
           <div className="article__entidad--small">
@@ -23,25 +23,25 @@ const Main = props => {
           />
         </div>
 
-        <div className="boxBtns">
-            <nav className="article__link">
-              <a className="article__link--btn" href="https://adalab.es/">
+        <div className="containerBoxBtns">
+            <nav className="containerBoxBtns__nav">
+              <a className="containerBoxBtns__nav--btn" href="https://adalab.es/">
                 Donaciones
               </a>
             </nav>
-            <nav className="article__link">
-              <a className="article__link--btn" href="https://adalab.es/">
+            <nav className="containerBoxBtns__nav">
+              <a className="containerBoxBtns__nav--btn" href="https://adalab.es/">
                 Sensibilización
               </a>
             </nav>
-            <nav className="article__link">
-              <a className="article__link--btn" href="https://adalab.es/">
+            <nav className="containerBoxBtns__nav">
+              <a className="containerBoxBtns__nav--btn" href="https://adalab.es/">
                 Testimonios
               </a>
             </nav>
           </div>
       </article>
-    </main>
+    </section>
   );
 };
 

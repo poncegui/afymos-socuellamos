@@ -12,23 +12,17 @@
   text-align: justify;
 
   @media (min-width: 768px) {
-    // padding-left: 15px;
-    // padding-right: 25px;
+
 
   }
 
   @media (min-width: 1200px) {
-    // padding-left: 50px;
-    // padding-right: 60px;
+
 
   }
 
   &__entidad {
-    //padding-left: 50px;
     width: 100vhw;
-
-    
-
   }
 
 
@@ -53,7 +47,6 @@
   @media (min-width: 720px) {
     &--small {
       width:100px;
-    
       font-size: 16px;
       padding: 0px;
       background-color: #000000;
@@ -64,7 +57,7 @@
     font-size: 16px;
     color: #000000;
     width: 100%;
-    margin: 5px 0px;
+    margin: 20px 0px;
     padding-left: 50px;
     padding-right: 60px;
     font-size: 16px;
@@ -91,13 +84,17 @@
   }
 
   &__pharagraf {
-    padding: 0px 30px;
+    padding: 0px 50px;
+    font-size: 14px;
+  
    
   }
 
   @media (min-width: 768px) {
     &__pharagraf {
-      padding: 0px 40px;
+      padding: 0px 350px;
+      font-size: 18px;
+      margin-bottom: 150px;
 
    
     }
@@ -105,7 +102,7 @@
 
   @media (min-width: 1200px) {
     &__pharagraf {
-      padding: 0px 60px;
+      padding: 0px 500px;
 
     }
   }
@@ -158,19 +155,82 @@
 
  
 }
-.boxBtns {
+
+
+.containerBoxBtns {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  cursor: pointer;
   margin: 50px 50px;
+  cursor: pointer;
+
 
 
 
   @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   
+    
+  
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid pink;
+    background-color: black;
+    height: 30px;
+    width: 100px;
+    line-height: 2.25;
+    padding: 0 25px 0 26px;
+    border-radius: 22.5px;
+    margin: 10px 0px;
+   
+
+
+    a {
+      color: pink;
+      font-size: 10px;
+      font-style: to-lower-case($string: "");
+      font-weight: bold;
+    }
+
+
+    @media (min-width: 768px) {
+    height: 45px;
+    width: 150px;
+
+    a {
+      font-size: 16px;
+    }
+
+    }
+
+
+    &:hover {
+      background-color: 0.5s linear;
+      font-size: 20px;
+      border-radius: 50px;
+      border: 1px solid #ffffff;
+      transform: translateY(5px);
+      transition: all 0.5s ease-out;
+    }
+
+    &--btn {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 16px;
+
+
+
+      &:hover {
+        background-color: 0.8s linear;
+      }
+    }
   }
 
 }

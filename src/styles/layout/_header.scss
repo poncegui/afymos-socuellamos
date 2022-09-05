@@ -254,6 +254,7 @@
 }
 
 .header__menu {
+ 
   background-color: black;
   width: 44px;
   height: 44px;
@@ -261,6 +262,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   &:hover {
     background-color: #ab8c7a;
     background-color: 0.5s linear;

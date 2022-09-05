@@ -23,8 +23,8 @@
       background-color: pink;
   
       &--arrow {
-        transform: translateY(9px);
-        padding: 10px;
+        transform: translateY(3px);
+        color: black
       }
     }
   
@@ -108,7 +108,7 @@
         margin-top: 20px;
    
 
-        @media all and (min-width: 720px) {
+        @media (min-width: 720px) {
           font-size: 60px;
            margin-left: 800px;
            margin-bottom: 50px;

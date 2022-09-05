@@ -18,7 +18,8 @@ import HeadPartners from "./HeadPartners";
 import Partners from "./Partners";
 import Main from "./Main";
 import Footer from "./Footer";
-import Collapsable from "./Collapsable";
+import SlidesShow, { Slideshow } from "./SlidesShow";
+
 
 
 
@@ -26,7 +27,7 @@ import Collapsable from "./Collapsable";
 function App() {
   //States
   const [textIsOpenMain, setTextIsOpenMain] = useState(false);
-  const [textIsOpenPartners, setTextIsOpenPartners] = useState(true);
+  const [textIsOpenPartners, setTextIsOpenPartners] = useState(false);
 
 
 
@@ -46,14 +47,16 @@ function App() {
   //Render helpers
 
   return (
-    <div>
+    <>
       <Header />
 
-      
+      <main>
       <Main 
       onClick={handleToggleMain} 
       toggleStatusMain={textIsOpenMain}
       />
+
+      <SlidesShow/>
 
       <HeadPartners 
       onClick={handleTogglePartners}
@@ -83,9 +86,9 @@ function App() {
       <Partners 
       toggleStatus={textIsOpenPartners} text="Unión Europea"  class="card" src={europa} alt="Unión Europea" href="https://european-union.europa.eu/index_es/" target="_blank"/>
       </div>
-
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

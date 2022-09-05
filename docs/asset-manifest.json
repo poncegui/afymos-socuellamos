@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d53516c1.css",
-    "main.js": "./static/js/main.77817c56.js",
+    "main.css": "./static/css/main.8dbf2221.css",
+    "main.js": "./static/js/main.6895ae04.js",
     "static/media/foto4.jpg": "./static/media/foto4.d8380d5686e1353b4386.jpg",
     "static/media/logo-ayuntamiento.png": "./static/media/logo-ayuntamiento.572c855624433d08e729.png",
     "static/media/logo-ministerio.jpg": "./static/media/logo-ministerio.c2b29bf9b4cef40dba10.jpg",
@@ -13,13 +13,15 @@
     "index.html": "./index.html",
     "static/media/ico-menu.svg": "./static/media/ico-menu.b62d5b9002daa4d7d29eb3f8c43e962f.svg",
     "static/media/home.svg": "./static/media/home.c104e2819c58a9a9198e7ad2a43f7b24.svg",
+    "static/media/close.svg": "./static/media/close.934bdf773da311e687f858f644346995.svg",
     "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
+    "static/media/open.svg": "./static/media/open.02120b307e31b7552ddb9e8d56796a45.svg",
     "static/media/down.svg": "./static/media/down.d1488c471e86d7036a41fdca8a2f2793.svg",
-    "main.d53516c1.css.map": "./static/css/main.d53516c1.css.map",
-    "main.77817c56.js.map": "./static/js/main.77817c56.js.map"
+    "main.8dbf2221.css.map": "./static/css/main.8dbf2221.css.map",
+    "main.6895ae04.js.map": "./static/js/main.6895ae04.js.map"
   },
   "entrypoints": [
-    "static/css/main.d53516c1.css",
-    "static/js/main.77817c56.js"
+    "static/css/main.8dbf2221.css",
+    "static/js/main.6895ae04.js"
   ]
 }
