@@ -19,7 +19,6 @@ const Collapsable = props => {
           className="containerCollapsable__btn close"
           id="btn"
           onClick={props.onClick}
-          handleState={``}
           //handleState={handleState}
          // onChange={status}
         >

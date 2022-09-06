@@ -15,15 +15,15 @@ body {
 //   overflow: hidden;
 // }
 
-.mainContainer {
+.mainContainer { //contenedorPrincipal
     position: relative;
-    margin: auto;
+   // margin: auto;
     
-  &__slidesShow {
+  &__moveContainer {//contenedorSlideshow
     display: flex;
     flex-wrap: nowrap;
 
-    &--slide {
+    &--slide { //slice
       min-width: 100%;
       overflow: hidden;
       transition: 0.3 ease all;
@@ -46,9 +46,10 @@ body {
       position: absolute;
       bottom: 0px;
 
+
       @media (max-width: 720px) {
         position: relative;
-        background-color: black;
+        background: #000;
       }
     }
   }
@@ -58,17 +59,17 @@ body {
 
 
 .mainContainer__containerBtns {
-    background-color: grey;
     position: absolute;
     top: 0px;
-    z-index: 20px;
+    z-index: 20;
     width: 100%;
     height: 100%;
     pointer-events: none;
-    margin: auto;
+    
 
     &--left {
       pointer-events: all;
+      border: none;
       background: none;
       cursor: pointer;
       outline: none;
@@ -77,11 +78,56 @@ body {
       text-align: center;
       position: absolute;
       transition: 0.3s ease all;
+     
+    }
+
+    &--left:hover {
+      background: rgba(0, 0, 0, 0.2);
+      path {
+        fill: #fff;
+      }
+
     }
 
     &--right {
       pointer-events: all;
+      border: none;
+      background: none;
+      cursor: pointer;
+      outline: none;
+      width: 50px;
+      height: 100%;
+      text-align: center;
+      position: absolute;
+      transition: 0.3s ease all;
+      right: 0;
     }
 
+    &--right:hover {
+      background: rgba(0, 0, 0, 0.2);
+      path {
+        fill: #fff;
+      }
+
+    }
+
+
+}
+
+
+.slideTransition {
+
+  min-width: 100%;
+  overflow: hidden;
+  transition: 0.3 ease all;
+  z-index: 10;
+  max-height: 500px;
+  position: relative;
+  transition: 3000ms ease-out all;
+
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
 
 }
