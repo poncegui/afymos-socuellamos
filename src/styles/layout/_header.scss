@@ -22,6 +22,8 @@
     margin-top: 0px;
   }
 
+  
+
   .header_superior__container {
 
     display: flex;
@@ -284,6 +286,7 @@
 }
 
 .slogan {
+  z-index: -20;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,54 +301,60 @@
 
   &__text {
     margin: auto;
-    margin-bottom: 530px;
+    margin-bottom:700px;
   }
 
   &__text--btn {
     margin: auto;
     margin-top: 100px;
-  }
 
-  @media (min-width: 1200px) {
-    &__text--btn {
-      margin-bottom: 13px;
+    @media (min-width: 1200px) {
+    
+        margin-bottom: 13px;
+      
     }
   }
+
+ 
   &__text--main {
     font-size: 42px;
     text-transform: uppercase;
-  }
 
-  @media (min-width: 768px) {
-    &__text--main {
-      font-size: 80px;
+    @media (min-width: 768px) {
+
+        font-size: 80px;
+      
+    }
+  
+    @media (min-width: 1200px) {
+  
+        font-size: 100px;
+      
     }
   }
 
-  @media (min-width: 1200px) {
-    &__text--main {
-      font-size: 100px;
-    }
-  }
+
 
   &__text--phrase {
     font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
 
+    @media (min-width: 768px) {
+      margin: 0PX;
+        font-size: 32px;
+      
+    }
+  
+    @media (min-width: 1200px) {
+    
+        font-size: 50px;
+  
+    }
+
   }
 
-  @media (min-width: 768px) {
-    &__text--phrase {
-      font-size: 32px;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    &__text--phrase {
-      font-size: 50px;
-    }
-  }
+ 
 
   &__text--author {
     font-size: 12px;

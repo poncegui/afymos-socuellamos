@@ -16,10 +16,10 @@ function Navbar() {
         <h2>Menú <span>Principal</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
         {/* <img className='hidden' src={logo} alt="logo Afymos"/> */}
-          <a onClick={handleClick} href="#h">Home</a>
-          <a onClick={handleClick} href="#h">Diversidad funcional</a>
+          <a onClick={handleClick} href="#h">Nosotros</a>
+          <a onClick={handleClick} href="#h">Diversidad</a>
           <a onClick={handleClick} href="#h">Servicios</a>
-          <a onClick={handleClick} href="#h">Porogramas</a>
+          <a onClick={handleClick} href="#h">Programas</a>
           <a onClick={handleClick} href="#h">Donaciones</a>
         </div>
         <div className='burguer'>
@@ -37,14 +37,15 @@ const NavContainer = styled.nav`
 
 
   h2{
-    color: white;
+    color:pink;
     font-weight: 400;
     span{
       font-weight: bold;
     }
   }
   padding: .4rem;
-  background-color: #333;
+//   background-color: #333;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,24 +55,27 @@ const NavContainer = styled.nav`
     margin-right: 1rem;
   }
   .links{
+    background-color: #000;
+    border-radius: 0 0 90% 0;
+    padding: 80px;
     position: absolute;
+    
     top: -700px;
     left: -2000px;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top:10px;
     text-align: center;
     transition: all .5s ease;
     a{
       color: white;
-      font-size: 2rem;
+      font-size: 1.5rem;
       display: block;
     }
     @media(min-width: 768px){
       position: initial;
       margin: 0;
       a{
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: white;
         display: inline;
       }
@@ -84,13 +88,15 @@ const NavContainer = styled.nav`
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+  
+    top: 28%;
     left: 0;
     right: 0;
     text-align: center;
     a{
-      font-size: 2rem;
-      margin-top: 1rem;
+        
+      font-size: 1.5rem;
+      margin-top: 0.8rem;
       color: white;
     }
   }
