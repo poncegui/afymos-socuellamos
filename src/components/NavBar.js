@@ -39,6 +39,7 @@ const NavContainer = styled.nav`
   h2{
     color:pink;
     font-weight: 400;
+    margin-left: 15px;
     span{
       font-weight: bold;
     }

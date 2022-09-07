@@ -89,6 +89,7 @@ function App() {
       <Partners 
       toggleStatus={textIsOpenPartners} text="Unión Europea"  class="card" src={europa} alt="Unión Europea" href="https://european-union.europa.eu/index_es/" target="_blank"/>
       </div>
+   
       </main>
       <Footer />
     </>
