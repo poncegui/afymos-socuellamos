@@ -11,6 +11,7 @@
   width: 100%;
   text-align: justify;
 
+
   @media (min-width: 768px) {
 
 
@@ -92,7 +93,7 @@
 
   @media (min-width: 768px) {
     &__pharagraf {
-      padding: 0px 350px;
+      padding: 0px 150px;
       font-size: 18px;
       margin-bottom: 150px;
 
@@ -102,7 +103,7 @@
 
   @media (min-width: 1200px) {
     &__pharagraf {
-      padding: 0px 500px;
+      padding: 0px 150px;
 
     }
   }

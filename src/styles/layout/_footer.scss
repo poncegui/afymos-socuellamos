@@ -8,7 +8,8 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    padding-bottom: 50px;
+   // padding-bottom: 50px;
+
   
     &__btn {
       width: 45px;
@@ -37,6 +38,7 @@
   
 
 .index-footer {
+
   background-color: black;
   color: pink;
   display: flex;
@@ -79,14 +81,16 @@
 
     h4 {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 24px;
       line-height: normal;
       text-align: left;
     }
 
     a {
+      padding-top: 10px;
       color: pink;
       line-height: normal;
+      font-size: 20px;
 
       &:hover {
         color:white;
@@ -99,24 +103,40 @@
   }
 
   &__contact {
-
+    display: flex;
+    z-index: 20;
     &--socialmedia {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    pointer-events: none;
+  
+
       a {
+        cursor: pointer;
+        pointer-events: all;
+        outline: none;
+        text-align: center;
+        width: 50px;
+        height: 100%;
         color: pink;
-        padding: 5px;
-        font-size: 25px;
-        margin-top: 20px;
-   
+        font-size: 45px;
+
 
         @media (min-width: 720px) {
           font-size: 60px;
-           margin-left: 800px;
-           margin-bottom: 50px;
+          //  margin-left: 800px;
+          //  margin-bottom: 50px;
         }
       }
 
       &--socialmedia:hover {
-       font-style:white;
+       font-style:grey;
       }
     }
   }

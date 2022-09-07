@@ -9,7 +9,7 @@ import foto6 from "../images/foto6.jpg";
 import right from "../icons/right.svg";
 import left from "../icons/left.svg";
 
-const SlidesShow = (props) => {
+const SlidesShow = props => {
   const slideShow = useRef(null);
   const intervalSlides = useRef(null);
 

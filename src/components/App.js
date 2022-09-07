@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styled from 'styled-components'
 //import { Route, Switch, useRouteMatch } from "react-router-dom";
 
 
@@ -14,6 +15,7 @@ import ministerio from "../logos/logo-ministerio.jpg";
 //Components
 import "../styles/main.scss";
 import Header from "./Header";
+import NavBar from "./NavBar";
 import HeadPartners from "./HeadPartners";
 import Partners from "./Partners";
 import Main from "./Main";
@@ -48,7 +50,8 @@ function App() {
 
   return (
     <>
-      <Header />
+    <NavBar/>
+    <Header />
 
       <main>
       <Main 

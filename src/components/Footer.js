@@ -1,4 +1,4 @@
-
+import home from "../icons/home.svg";
 
 const Footer = () => {
   return (
@@ -16,6 +16,7 @@ const Footer = () => {
           <nav>
             <ul>
               <li>
+    
                 <a
                   className="box1__display--list"
                   href="https://acortar.link/O2NBKp"
@@ -100,7 +101,10 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          <div className="index-footer__contact--socialmedia">
+          
+        </div>
+      </div>
+      <div className="index-footer__contact--socialmedia">
             {/* <a href="" target="_blank">
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
@@ -114,10 +118,16 @@ const Footer = () => {
               <i className="fa-brands fa-facebook"></i>
             </a>
           </div>
-        </div>
-      </div>
     </footer>
   );
 };
 
 export default Footer;
+
+
+// const icons = document.querySelectorAll('.icon');
+// icons.forEach (icon => {  
+//   icon.addEventListener('click', (event) => {
+//     icon.classList.toggle("open");
+//   });
+// });

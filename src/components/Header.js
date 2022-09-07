@@ -91,7 +91,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      <nav className="header__menu">
+      {/* <nav className="header__menu">
         <a
           className="header__burger"
           href="https://adalab.es/"
@@ -101,17 +101,17 @@ const Header = () => {
           <img src={menu} alt="main menu" />
         </a>
         <label htmlFor="btn-menu">✖️</label>
-      </nav>
+      </nav> */}
 
       <div className="slogan">
         <section className="slogan__text">
           <div className="header_superior__hidden">
             <div className="header_superior__container">
-              <img
+              {/* <img
                 className="header_superior__container--logo"
                 src={logo}
                 alt="logo-afymos.png"
-              />
+              /> */}
             </div>
           </div>
           <h3 className="slogan__text--phrase">
