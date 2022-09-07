@@ -19,8 +19,12 @@ import NavBar from "./NavBar";
 import HeadPartners from "./HeadPartners";
 import Partners from "./Partners";
 import Main from "./Main";
-import Footer from "./Footer";
+
 import SlidesShow, { Slideshow } from "./SlidesShow";
+import SlidesShowPartners from "./SlidesShowPartners";
+
+import Footer from "./Footer";
+import AboutUs from "./AboutUs";
 
 
 
@@ -58,16 +62,17 @@ function App() {
       onClick={handleToggleMain} 
       toggleStatusMain={textIsOpenMain}
       />
-
-      <SlidesShow/>
+      
+     <AboutUs/>
+      {/* <SlidesShow/> */}
 
       <HeadPartners 
       onClick={handleTogglePartners}
       toggleStatus={textIsOpenPartners}
   
       />
-
-      <div className="container__cards">
+      
+      {/* <div className="container__cards">
       <Partners 
       toggleStatus={textIsOpenPartners}
       text="Ayuntamiento de Socuellamos"  class="card" src={ayuntamiento} alt="Ayuntamiento de Socuéllamos" href="https://socuellamos.es/" target="_blank"/>
@@ -88,7 +93,7 @@ function App() {
       text="Plena Inclusión" class="card" src={inclusion} alt="Plena Inclusión" href="https://www.plenainclusion.org/" target="_blank"/>
       <Partners 
       toggleStatus={textIsOpenPartners} text="Unión Europea"  class="card" src={europa} alt="Unión Europea" href="https://european-union.europa.eu/index_es/" target="_blank"/>
-      </div>
+      </div> */}
    
       </main>
       <Footer />

@@ -36,6 +36,7 @@ export default Navbar
 const NavContainer = styled.nav`
 
 
+
   h2{
     color:pink;
     font-weight: 400;
@@ -106,6 +107,11 @@ const NavContainer = styled.nav`
       display: none;
     }
   }
+
+
+
+
+  
 `
 
 const BgDiv = styled.div`
