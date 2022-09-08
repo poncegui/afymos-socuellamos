@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__btn">
-      <a href="./index.html#header" className="footer__btn--arrow" alt="menú principal" >
+      <a href="#menu-principal" className="footer__btn--arrow" alt="menú principal" >
       <i className="fa-solid fa-chevron-up"></i>
       </a>
       

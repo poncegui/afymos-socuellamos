@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.61f704c4.css",
-    "main.js": "./static/js/main.6ae2533d.js",
+    "main.css": "./static/css/main.1cd6e059.css",
+    "main.js": "./static/js/main.35deb240.js",
     "static/media/foto7.jpg": "./static/media/foto7.190634458463d2fd0d4e.jpg",
     "static/media/foto4.jpg": "./static/media/foto4.d8380d5686e1353b4386.jpg",
     "static/media/foto1.jpg": "./static/media/foto1.43d683a7a843ce24a36b.jpg",
     "static/media/foto5.jpg": "./static/media/foto5.e6e5d3eacdf24b8f03df.jpg",
     "static/media/foto2.jpg": "./static/media/foto2.16f3f0076c299fa1517a.jpg",
     "static/media/foto6.jpg": "./static/media/foto6.1974beb83348f1a32746.jpg",
+    "static/media/voluntariado2.jpg": "./static/media/voluntariado2.fccbcfb128e2d24b9cb0.jpg",
     "static/media/logo-ayuntamiento.png": "./static/media/logo-ayuntamiento.572c855624433d08e729.png",
     "static/media/foto8.jpg": "./static/media/foto8.e7b032d3bd6d56beeb48.jpg",
     "static/media/logo-ministerio.jpg": "./static/media/logo-ministerio.c2b29bf9b4cef40dba10.jpg",
@@ -23,11 +24,11 @@
     "static/media/down.svg": "./static/media/down.d1488c471e86d7036a41fdca8a2f2793.svg",
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
-    "main.61f704c4.css.map": "./static/css/main.61f704c4.css.map",
-    "main.6ae2533d.js.map": "./static/js/main.6ae2533d.js.map"
+    "main.1cd6e059.css.map": "./static/css/main.1cd6e059.css.map",
+    "main.35deb240.js.map": "./static/js/main.35deb240.js.map"
   },
   "entrypoints": [
-    "static/css/main.61f704c4.css",
-    "static/js/main.6ae2533d.js"
+    "static/css/main.1cd6e059.css",
+    "static/js/main.35deb240.js"
   ]
 }

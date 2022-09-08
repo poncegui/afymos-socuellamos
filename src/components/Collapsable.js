@@ -29,6 +29,7 @@ const Collapsable = props => {
             title="desplegar o cerrar texto"
           /> */}
         </button>
+        
       </div>
     </>
   );

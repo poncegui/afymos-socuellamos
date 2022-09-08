@@ -1,4 +1,4 @@
-import children from "../images/fotoMenu.jpg";
+import children from "../images-talleres/voluntariado2.jpg";
 
 const AboutUs = (props) => {
   const links = document.querySelectorAll(".links");
@@ -10,7 +10,9 @@ const AboutUs = (props) => {
 
 
   return (
-<>
+<>  
+
+<section class="aboutUs">
     <div className="mainContainerAboutUs">
 
         <div className="mainContainerAboutUs__wrapPhoto">
@@ -18,8 +20,8 @@ const AboutUs = (props) => {
                             <img src={children} alt="foto niños afymos" />
                         </div>
 
-                        <div className="mainContainerAboutUs__wrapPhoto--tittle">
-                            <h4 className="children">quiénes Somos</h4>
+                        <div className="mainContainerAboutUs__wrapPhoto--title">
+                            <h4 className="children">entidad</h4>
                         </div>
         </div>
     
@@ -64,6 +66,8 @@ const AboutUs = (props) => {
         </div>
 
     </div>
+
+    </section>
   
    
       </>

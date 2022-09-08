@@ -12,6 +12,7 @@ const renderMainText = props => {
             {" "}
             <div className="article__pharagraf">
            <h4>Artículo 3.-</h4> 
+           <br></br>
             <p className="article__pharagraf--hideText" id="hideText">
             "Los fines que la Asociación persigue son de carácter
             cívico y social, de promoción de los valores constitucionales y de
@@ -25,8 +26,10 @@ const renderMainText = props => {
             prestando especial atención al impulso del voluntariado.”
           </p>
           <br></br>
+          <br></br>
   
-            <h4>Artículo 3.-</h4> 
+            <h4>Artículo 4.-</h4> 
+            <br></br>
             <p className="article__pharagraf--hideText" id="hideText">
             "Para el cumplimiento de los fines asociativos se
             realizarán las siguientes acciones: Formación ocupacional dirigida

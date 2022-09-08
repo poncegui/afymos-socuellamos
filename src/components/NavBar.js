@@ -12,11 +12,11 @@ function Navbar() {
   }
   return (
     <>
-      <NavContainer>
+      <NavContainer id="menu-principal">
         <h2>Menú <span>Principal</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
         {/* <img className='hidden' src={logo} alt="logo Afymos"/> */}
-          <a onClick={handleClick} href="#h">Nosotros</a>
+          <a onClick={handleClick} href="#aboutUs">Nosotros</a>
           <a onClick={handleClick} href="#h">Diversidad</a>
           <a onClick={handleClick} href="#h">Servicios</a>
           <a onClick={handleClick} href="#h">Programas</a>
@@ -35,7 +35,7 @@ export default Navbar
 
 const NavContainer = styled.nav`
 
-
+height: 120px;
 
   h2{
     color:pink;
@@ -54,53 +54,73 @@ const NavContainer = styled.nav`
   a{
     color: white;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
   .links{
-    background-color: #000;
-    border-radius: 0 0 90% 0;
-    padding: 80px;
+ 
     position: absolute;
     
     top: -700px;
     left: -2000px;
     right: 0;
-    padding-top:10px;
+  
     text-align: center;
     transition: all .5s ease;
     a{
       color: white;
-      font-size: 1.5rem;
+      font-size: 2rem;
       display: block;
     }
     @media(min-width: 768px){
       position: initial;
       margin: 0;
       a{
-        font-size: 0.8rem;
+        font-size: 1.5rem;
         color: white;
         display: inline;
+
+        &:hover {
+          font-size: 2rem;
+          font-weight: bold;
+          transition: all 0.5s ease-out;
+  
+        }
       }
       display: block;
     }
   }
   .links.active{
+    background-color: #000;
+    border-radius: 0 0 90% 0;
+    padding: 80px;
     width: 100%;
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-  
-    top: 28%;
+    padding-top:10px;
+    top: 29%;
     left: 0;
     right: 0;
     text-align: center;
     a{
         
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-top: 0.8rem;
-      color: white;
+      color: pink;
+      cursor: pointer;
+
+      &:hover {
+        font-size: 2rem;
+        font-weight:bold;
+        transition: all 0.5s ease-out;
+
+      }
     }
+
+    @media(min-width: 768px){
+   
+  }
   }
   .burguer{
     @media(min-width: 768px){

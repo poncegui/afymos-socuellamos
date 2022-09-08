@@ -1,29 +1,38 @@
 import Collapsable from "./Collapsable";
 import RenderMainText from "./RenderMainText";
 
-const Main = props => {
+const Main = (props) => {
   return (
-    <section>
+    <section id="aboutUs">
       <article className="article">
         <div className="article__entidad">
           <div className="article__entidad--small">
-          <h5 className="">Nuestra entidad</h5>
+            <h5 className="">Nuestra entidad</h5>
           </div>
-          <h4 className="article__title">
-            AFYMOS fue fundada en el año 1991. <br></br>
-            Ver los fines que perseguimos según
-            nuestros estatutos:
-          </h4>
+          <div className="article__title">
+          <h4 className="article__title">Introdución a Afymos</h4>
+          <p>
+            Nuestra asociación de familiares y amigos de personas con alguna
+            discapacidad es una asociación sin ánimo de lucro ubicada en la
+            localidad de Socuéllamos (Ciudad Real). <br></br>
+            AFYMOS fue fundada en el año 1991.
+            </p>
+          </div>
 
-          <Collapsable onClick={props.onClick} />
-    
+          <div className="article__entidad--btn">
+            <Collapsable onClick={props.onClick} />
+            <h4>
+              leer más sobre los fines que perseguimos según nuestros estatutos;
+            </h4>
+          </div>
+
           <RenderMainText
             onClick={props.onClick}
             toggleStatusMain={props.toggleStatusMain}
           />
         </div>
 
-        <div className="containerBoxBtns">
+        {/* <div className="containerBoxBtns">
             <nav className="containerBoxBtns__nav">
               <a className="containerBoxBtns__nav--btn" href="https://adalab.es/">
                 Donaciones
@@ -39,7 +48,7 @@ const Main = props => {
                 Testimonios
               </a>
             </nav>
-          </div>
+          </div> */}
       </article>
     </section>
   );

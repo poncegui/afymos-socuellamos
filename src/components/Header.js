@@ -29,7 +29,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="container__menu">
+      {/* <div className="container__menu">
         <div className="menu">
           <nav className="menu">
             <ul>
@@ -90,7 +90,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-      </div>
+      </div> */}
       {/* <nav className="header__menu">
         <a
           className="header__burger"
