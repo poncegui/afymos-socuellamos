@@ -99,7 +99,7 @@ height: 120px;
     margin-left: auto;
     margin-right: auto;
     padding-top:10px;
-    top: 29%;
+    top: 35%;
     left: 0;
     right: 0;
     text-align: center;

@@ -85,6 +85,7 @@ const SlidesShow = props => {
 
   return (
     <>
+
       <h2>Nuestros programas</h2>
 
       {/* contenedorPrincipal */}
@@ -163,6 +164,7 @@ const SlidesShow = props => {
           </button>
         </div>
       </div>
+   
     </>
   );
 };

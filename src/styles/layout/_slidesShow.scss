@@ -10,7 +10,11 @@ html {
   overflow-x: hidden;
 }
 
-
+.slideShow {
+  max-width: 1000px;
+  margin: 50px auto;
+  overflow: hidden;
+}
 
 .mainContainer { //contenedorPrincipal
     position: relative;

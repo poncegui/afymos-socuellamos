@@ -64,15 +64,27 @@ function App() {
       />
       
      <AboutUs/>
-      {/* <SlidesShow/> */}
 
+     <section class="slideShow">
+      <SlidesShow/>
+      </section>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
       <HeadPartners 
       onClick={handleTogglePartners}
       toggleStatus={textIsOpenPartners}
-  
       />
+
       
-      {/* <div className="container__cards">
+      <div className="container__cards">
       <Partners 
       toggleStatus={textIsOpenPartners}
       text="Ayuntamiento de Socuellamos"  class="card" src={ayuntamiento} alt="Ayuntamiento de Socuéllamos" href="https://socuellamos.es/" target="_blank"/>
@@ -93,7 +105,7 @@ function App() {
       text="Plena Inclusión" class="card" src={inclusion} alt="Plena Inclusión" href="https://www.plenainclusion.org/" target="_blank"/>
       <Partners 
       toggleStatus={textIsOpenPartners} text="Unión Europea"  class="card" src={europa} alt="Unión Europea" href="https://european-union.europa.eu/index_es/" target="_blank"/>
-      </div> */}
+      </div>
    
       </main>
       <Footer />
