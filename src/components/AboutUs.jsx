@@ -1,4 +1,5 @@
 import children from "../images-talleres/voluntariado2.jpg";
+import SlidesShowAboutUs from "./SlidesShowAboutUs";
 
 const AboutUs = (props) => {
   const links = document.querySelectorAll(".links");
@@ -17,12 +18,13 @@ const AboutUs = (props) => {
 
         <div className="mainContainerAboutUs__wrapPhoto">
                         <div className="mainContainerAboutUs__wrapPhoto--photo">
-                            <img src={children} alt="foto niños afymos" />
+                            {/* <img src={children} alt="foto niños afymos" /> */}
+                            <SlidesShowAboutUs/>
                         </div>
 
-                        <div className="mainContainerAboutUs__wrapPhoto--title">
+                        {/* <div className="mainContainerAboutUs__wrapPhoto--title">
                             <h4 className="children">entidad</h4>
-                        </div>
+                        </div> */}
         </div>
     
            

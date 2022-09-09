@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from "react";
 
-import foto1 from "../images/foto1.jpg";
-import foto2 from "../images/foto2.jpg";
-import foto7 from "../images/foto7.jpg";
-import foto8 from "../images/foto8.jpg";
-import foto5 from "../images/foto5.jpg";
-import foto6 from "../images/foto6.jpg";
+import fisioterapia from "../images-talleres/sala-fisioterapia.png";
+import cocina from "../images-talleres/cocina.png";
+import informatica from "../images-talleres/informatica.png";
+import formacion from "../images-talleres/sala-formacion.png";
+import ocupacional from "../images-talleres/sala-ocupacional.png";
+
 import right from "../icons/right.svg";
 import left from "../icons/left.svg";
 
@@ -86,67 +86,66 @@ const SlidesShow = props => {
   return (
     <>
 
-      <h2>Nuestros programas</h2>
 
       {/* contenedorPrincipal */}
       <div className="mainContainer">
         {/* contenedorSlidesShow */}
-        <div className="mainContainer__moveContainer" ref={slideShow}>
+   
+        <div className="mainContainer__moveContainer slideTransition" ref={slideShow}>
+          
           {/* Slides */}
-          <div className="mainContainer__moveContainer--slide slideTransition">
-            <a href="https://www.falconmaters.com">
-              <img src={foto1} alt="" />
-            </a>
 
-            <div className="mainContainer__moveContainer--text">
-              <p>Lorem Ipsum</p>
+      
+
+          <div className="mainContainer__moveContainer--slide ">
+            <a href="https://www.falconmaters.com">
+              <img src={fisioterapia} alt="" />
+            </a>
+    
+
+            <div className="mainContainer__moveContainer--textBottom">
+              <p>sala de fisioterapia</p>
+            </div>
+           
+          </div>
+          <div className="mainContainer__moveContainer--slide">
+            <a href="https://www.falconmaters.com">
+              <img src={cocina} alt="" />
+            </a>
+     
+            <div className="mainContainer__moveContainer--textBottom">
+              <p>cocina</p>
             </div>
           </div>
           <div className="mainContainer__moveContainer--slide">
             <a href="https://www.falconmaters.com">
-              <img src={foto2} alt="" />
+              <img src={informatica} alt="" />
             </a>
+       
 
-            <div className="mainContainer__moveContainer--text">
-              <p>Lorem Ipsum</p>
+            <div className="mainContainer__moveContainer--textBottom">
+              <p>sala de informática</p>
             </div>
           </div>
           <div className="mainContainer__moveContainer--slide">
             <a href="https://www.falconmaters.com">
-              <img src={foto6} alt="" />
+              <img src={formacion} alt="" />
             </a>
-
-            <div className="mainContainer__moveContainer--text">
-              <p>Lorem Ipsum</p>
+      
+            <div className="mainContainer__moveContainer--textBottom">
+              <p>sala de formación para empleo</p>
             </div>
           </div>
           <div className="mainContainer__moveContainer--slide">
             <a href="https://www.falconmaters.com">
-              <img src={foto7} alt="" />
+              <img src={ocupacional} alt="" />
             </a>
-
-            <div className="mainContainer__moveContainer--text">
-              <p>Lorem Ipsum</p>
+      
+            <div className="mainContainer__moveContainer--textBottom">
+              <p>sala de terapia ocupacional</p>
             </div>
           </div>
-          <div className="mainContainer__moveContainer--slide">
-            <a href="https://www.falconmaters.com">
-              <img src={foto8} alt="" />
-            </a>
-
-            <div className="mainContainer__moveContainer--text">
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
-          <div className="mainContainer__moveContainer--slide">
-            <a href="https://www.falconmaters.com">
-              <img src={foto5} alt="" />
-            </a>
-
-            <div className="mainContainer__moveContainer--text">
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
+    
         </div>
 
         <div className="mainContainer__containerBtns">
@@ -160,7 +159,7 @@ const SlidesShow = props => {
             className="mainContainer__containerBtns--right"
             onClick={next}
           >
-            <img src={right} alt="" />
+           <img src={right} alt="" />
           </button>
         </div>
       </div>

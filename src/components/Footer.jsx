@@ -107,11 +107,11 @@ const Footer = () => {
       <div className="index-footer__contact--socialmedia">
             {/* <a href="" target="_blank">
               <i className="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="" alt="Instagram" target="_blank">
+            </a> */}
+            <a href="https://www.instagram.com/afymos/?hl=es" alt="Instagram" target="_blank">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="" alt="Twitter" target="_blank">
+            {/* <a href="" alt="Twitter" target="_blank">
               <i className="fa-brands fa-twitter"></i>
             </a> */}
             <a href="https://acortar.link/tvNjS0" alt="Facebook" target="_blank" >

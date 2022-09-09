@@ -31,24 +31,6 @@ const Main = (props) => {
             toggleStatusMain={props.toggleStatusMain}
           />
         </div>
-
-        {/* <div className="containerBoxBtns">
-            <nav className="containerBoxBtns__nav">
-              <a className="containerBoxBtns__nav--btn" href="https://adalab.es/">
-                Donaciones
-              </a>
-            </nav>
-            <nav className="containerBoxBtns__nav">
-              <a className="containerBoxBtns__nav--btn" href="https://adalab.es/">
-                Sensibilización
-              </a>
-            </nav>
-            <nav className="containerBoxBtns__nav">
-              <a className="containerBoxBtns__nav--btn" href="https://adalab.es/">
-                Testimonios
-              </a>
-            </nav>
-          </div> */}
       </article>
     </section>
   );

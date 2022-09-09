@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom';
 import styled from 'styled-components'
 import logo from "../logos/logo-afymos.png";
 import BurguerBtn from './BurguerBtn'
@@ -16,11 +17,12 @@ function Navbar() {
         <h2>Menú <span>Principal</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
         {/* <img className='hidden' src={logo} alt="logo Afymos"/> */}
-          <a onClick={handleClick} href="#aboutUs">Nosotros</a>
-          <a onClick={handleClick} href="#h">Diversidad</a>
-          <a onClick={handleClick} href="#h">Servicios</a>
-          <a onClick={handleClick} href="#h">Programas</a>
-          <a onClick={handleClick} href="#h">Donaciones</a>
+          <a onClick={handleClick} href="#aboutUs">nosotros</a>
+          <a onClick={handleClick} href="#h">diversidad</a>
+          <a onClick={handleClick} href="#h">servicios</a>
+          <a onClick={handleClick} href="#h">programas</a>
+          <a onClick={handleClick} href="#h">donaciones</a>
+          <Link onClick={handleClick} to='/contacto'>contacto</Link>
         </div>
         <div className='burguer'>
           <BurguerBtn clicked={clicked} handleClick={handleClick} />
@@ -35,7 +37,10 @@ export default Navbar
 
 const NavContainer = styled.nav`
 
-height: 120px;
+height: 150px;
+width:100%;
+
+z-index: 50;
 
   h2{
     color:pink;
@@ -103,6 +108,7 @@ height: 120px;
     left: 0;
     right: 0;
     text-align: center;
+
     a{
         
       font-size: 1.6rem;

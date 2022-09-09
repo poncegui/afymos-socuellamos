@@ -39,7 +39,27 @@ html {
       }
     }
 
-    &--text {
+    &--textTop {
+     
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      width: 100%;
+      padding: 10px 60px;
+      text-align: center;
+      top: 0px;
+
+       p {
+        font-size: 30px;
+       }
+
+      @media (max-width: 720px) {
+        position: relative;
+        background: #000; 
+        font-size: 14px;
+      }
+    }
+
+    &--textBottom {
       background: rgba(0, 0, 0, 0.5);
       color: white;
       width: 100%;
@@ -48,10 +68,14 @@ html {
       position: absolute;
       bottom: 0px;
 
+       p {
+        font-size: 30px;
+       }
 
       @media (max-width: 720px) {
         position: relative;
-        background: #000;
+        background: #000; 
+        font-size: 14px;
       }
     }
   }
@@ -79,8 +103,10 @@ html {
       width: 50px;
       height: 100%;
       text-align: center;
+      justify-content: center;
       position: absolute;
       transition: 0.3s ease all;
+     
      
     }
 
@@ -101,9 +127,13 @@ html {
       width: 50px;
       height: 100%;
       text-align: center;
+      justify-content: center;
       position: absolute;
       transition: 0.3s ease all;
       right: 0;
+  
+
+    
     }
 
     &--right:hover {
@@ -116,6 +146,7 @@ html {
 
 
 }
+
 
 
 .slideTransition {

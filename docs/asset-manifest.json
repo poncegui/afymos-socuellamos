@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.f71d5588.css",
-    "main.js": "./static/js/main.4d422b66.js",
+    "main.css": "./static/css/main.f7492d3e.css",
+    "main.js": "./static/js/main.fbd0c84c.js",
+    "static/media/sala-fisioterapia.png": "./static/media/sala-fisioterapia.4936dbb0451e351d6569.png",
+    "static/media/sala-ocupacional.png": "./static/media/sala-ocupacional.ea5ef010a858f21c8a50.png",
+    "static/media/informatica.png": "./static/media/informatica.79e22a532c3609ed1de0.png",
+    "static/media/sala-formacion.png": "./static/media/sala-formacion.a5c5cc523104b9ae31fb.png",
+    "static/media/cocina.png": "./static/media/cocina.dddf8cae8b29de25da13.png",
     "static/media/foto7.jpg": "./static/media/foto7.190634458463d2fd0d4e.jpg",
     "static/media/foto4.jpg": "./static/media/foto4.d8380d5686e1353b4386.jpg",
     "static/media/foto1.jpg": "./static/media/foto1.43d683a7a843ce24a36b.jpg",
+    "static/media/background-contact.jpg": "./static/media/background-contact.56f37ee488983abb7dd5.jpg",
     "static/media/foto5.jpg": "./static/media/foto5.e6e5d3eacdf24b8f03df.jpg",
     "static/media/foto2.jpg": "./static/media/foto2.16f3f0076c299fa1517a.jpg",
     "static/media/foto6.jpg": "./static/media/foto6.1974beb83348f1a32746.jpg",
@@ -18,17 +24,15 @@
     "static/media/logo-aese.jpg": "./static/media/logo-aese.97d43fd6c31090877279.jpg",
     "static/media/logo-diputacion.png": "./static/media/logo-diputacion.0a4371a2c02713e61274.png",
     "index.html": "./index.html",
-    "static/media/ico-menu.svg": "./static/media/ico-menu.b62d5b9002daa4d7d29eb3f8c43e962f.svg",
     "static/media/home.svg": "./static/media/home.c104e2819c58a9a9198e7ad2a43f7b24.svg",
     "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
-    "static/media/down.svg": "./static/media/down.d1488c471e86d7036a41fdca8a2f2793.svg",
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
-    "main.f71d5588.css.map": "./static/css/main.f71d5588.css.map",
-    "main.4d422b66.js.map": "./static/js/main.4d422b66.js.map"
+    "main.f7492d3e.css.map": "./static/css/main.f7492d3e.css.map",
+    "main.fbd0c84c.js.map": "./static/js/main.fbd0c84c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f71d5588.css",
-    "static/js/main.4d422b66.js"
+    "static/css/main.f7492d3e.css",
+    "static/js/main.fbd0c84c.js"
   ]
 }
