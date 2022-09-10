@@ -10,7 +10,7 @@ const Diversity = (props) => {
 
   return (
     <>
-      <section class="Diversity">
+      <section className="Diversity">
         <div className="mainContainerDiversity">
           <div className="mainContainerDiversity__wrapPhoto">
             <div className="mainContainerDiversity__wrapPhoto--photo">
@@ -22,21 +22,22 @@ const Diversity = (props) => {
             <div className="mainContainerDiversity__wrapText--icon title">
               {/* <i class="fa-solid fa-house-user"></i> */}
               <a href="https://www.falconmaters.com">
-                <h4>centro de atención a la diversidad funcional</h4>
+                <h4>centro de atención</h4>
+                <h3>a la diversidad funcional</h3>
               </a>
             </div>
 
             <div className="mainContainerDiversity__wrapText--icon">
-              <i class="fa-solid fa-house-user"></i>
+              <i className="fa-solid fa-house-user"></i>
               <a href="https://www.falconmaters.com">
-                <h4>un espacio de 803,16 m2 lleno de ilusiones</h4>
+                <h4>tenemos 803,16 m2 cargados de ilusión</h4>
               </a>
             </div>
 
             <div className="mainContainerDiversity__wrapText--icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-graduation-cap"></i>
               <a href="https://www.falconmaters.com">
-                <h4>saber más...</h4>
+                <h4>nuestros certificados</h4>
               </a>
             </div>
 

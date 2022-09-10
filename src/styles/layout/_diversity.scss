@@ -1,21 +1,17 @@
 .Diversity {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
 
-   
+  @media (min-width: 768px) {
+    margin: 70px;
+  }
 
-
-    @media (min-width: 768px) {
-        margin: 70px;
-      }
-
-      @media (min-width: 1090px) {
-        margin: 100px;
-      }
+  @media (min-width: 1090px) {
+    margin: 100px;
+  }
 }
-
 
 .mainContainerDiversity {
   box-sizing: border-box;
@@ -25,9 +21,6 @@
   height: 100%;
   flex-direction: column;
 
-
-
-
   @media (min-width: 768px) {
     height: 50%;
     flex-direction: row-reverse;
@@ -35,7 +28,6 @@
     align-items: center;
     background-color: pink;
   }
-
 
   &__wrapPhoto {
     display: flex;
@@ -56,11 +48,9 @@
         object-position: center;
         z-index: -1;
         bottom: 0px;
-
       }
     }
 
-    
     &--title {
       position: relative;
       display: flex;
@@ -84,13 +74,11 @@
         bottom: 0px;
         font-size: 3rem;
 
-        
-      h4 {
-        color: black;
-        z-index: 20;
-        font-size: 1.5rem;
-      }
-
+        h4 {
+          color: black;
+          z-index: 20;
+          font-size: 1.5rem;
+        }
       }
 
       :first-letter {
@@ -116,11 +104,10 @@
     top: 0px;
     padding: 45px;
     z-index: 20;
-   
 
     i,
     h4 {
-      font-size: 20px;
+      font-size: 22px;
       text-decoration: none;
       color: black;
     }
@@ -137,7 +124,7 @@
     @media (min-width: 768px) {
       width: 60%;
       height: 100%;
-    //   padding: 50px 120px;
+      //   padding: 50px 120px;
 
       i,
       h4 {
@@ -152,6 +139,7 @@
       height: 100%;
       align-items: center;
       padding-bottom: 10px;
+      top: 0px;
 
       i {
         margin-right: 40px;
@@ -163,8 +151,7 @@
         text-decoration: none;
 
         &:hover {
-          font-size: 2rem;
-          font-weight: bold;
+         color:grey;
           transition: all 0.5s ease-out;
         }
       }
@@ -178,16 +165,33 @@
   }
 }
 
-.title{
+.title {
+  padding-bottom: 50px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
 
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0px;
-    z-index: 20px;
+  h4 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+  }
 
+  h3 {
+    color: white;
+
+    font-size: 35px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
     h4 {
-        color:white;
-        font-weight: bold;
-        font-size: 30px;
+      font-size: 28px;
     }
-  
+
+    h3 {
+      font-size: 26px;
+    }
+  }
 }

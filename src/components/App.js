@@ -11,7 +11,12 @@ import europa from "../logos/logo-europa.png";
 import inclusion from "../logos/logo-inclusion.png";
 import ministerio from "../logos/logo-ministerio.jpg";
 
-// //Components
+//COMPONENTS
+
+
+//*--Sliders & Gliders--*
+import GliderShow from "./GliderShow";
+
 import "../styles/main.scss";
 import Header from "./Header";
 import NavBar from "./NavBar";
@@ -38,7 +43,7 @@ const App = () => {
   };
   return (
   <> 
-  <html>
+
         <Routes>
                   <Route 
                   path="/contacto" 
@@ -58,6 +63,7 @@ const App = () => {
                           onClick={handleToggleMain} 
                           toggleStatusMain={textIsOpenMain} 
                           />
+                          <AboutUs/>
                           <Diversity/>
                           <HeadPartners
                             onClick={handleTogglePartners}
@@ -128,6 +134,9 @@ const App = () => {
                       target="_blank"
                     />
                           </div>
+
+
+                          {/* <GliderShow/> */}
                           <Footer />
 
                         
@@ -136,7 +145,7 @@ const App = () => {
                   } />
                  
         </Routes>
-        </html>
+
 </>
   );
 };
