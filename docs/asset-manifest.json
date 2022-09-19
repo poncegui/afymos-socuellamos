@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.59ce186e.css",
-    "main.js": "./static/js/main.749d0c32.js",
+    "main.css": "./static/css/main.f82a31ee.css",
+    "main.js": "./static/js/main.9f54daf2.js",
     "static/media/sala-fisioterapia.png": "./static/media/sala-fisioterapia.4936dbb0451e351d6569.png",
     "static/media/sala-ocupacional.png": "./static/media/sala-ocupacional.ea5ef010a858f21c8a50.png",
     "static/media/informatica.png": "./static/media/informatica.79e22a532c3609ed1de0.png",
@@ -15,7 +15,16 @@
     "static/media/foto2.jpg": "./static/media/foto2.16f3f0076c299fa1517a.jpg",
     "static/media/foto6.jpg": "./static/media/foto6.1974beb83348f1a32746.jpg",
     "static/media/voluntariado2.jpg": "./static/media/voluntariado2.fccbcfb128e2d24b9cb0.jpg",
+    "static/media/img9.png": "./static/media/img9.2aed5dcbd85e28d327ae.png",
+    "static/media/img3.png": "./static/media/img3.20cdf48e6e78ccb2dc16.png",
+    "static/media/img5.png": "./static/media/img5.0983d7a51b6f98b9303d.png",
+    "static/media/img8.png": "./static/media/img8.0695a16e35dc34b84027.png",
+    "static/media/img6.png": "./static/media/img6.8bac874a3ac3c99d77c6.png",
+    "static/media/img7.png": "./static/media/img7.628035e993356b07f9b8.png",
+    "static/media/img1.png": "./static/media/img1.95a643df0d60985b548d.png",
     "static/media/logo-ayuntamiento.png": "./static/media/logo-ayuntamiento.572c855624433d08e729.png",
+    "static/media/img2.png": "./static/media/img2.6558af38f9203d1695f8.png",
+    "static/media/img4.png": "./static/media/img4.efdb0272569ec3942011.png",
     "static/media/foto8.jpg": "./static/media/foto8.e7b032d3bd6d56beeb48.jpg",
     "static/media/logo-ministerio.jpg": "./static/media/logo-ministerio.c2b29bf9b4cef40dba10.jpg",
     "static/media/logo-europa.png": "./static/media/logo-europa.55ed42872ad87c97fd99.png",
@@ -28,11 +37,11 @@
     "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
-    "main.59ce186e.css.map": "./static/css/main.59ce186e.css.map",
-    "main.749d0c32.js.map": "./static/js/main.749d0c32.js.map"
+    "main.f82a31ee.css.map": "./static/css/main.f82a31ee.css.map",
+    "main.9f54daf2.js.map": "./static/js/main.9f54daf2.js.map"
   },
   "entrypoints": [
-    "static/css/main.59ce186e.css",
-    "static/js/main.749d0c32.js"
+    "static/css/main.f82a31ee.css",
+    "static/js/main.9f54daf2.js"
   ]
 }
