@@ -6,9 +6,6 @@
     align-items: center;
     margin: 50px 0px;
 
-   
-
-
     @media (min-width: 768px) {
         margin: 70px;
       }
@@ -126,8 +123,8 @@
       color: black;
     }
 
-    &__wrapText:hover {
-      background: rgba(134, 53, 53, 0.5);
+    h4:hover {
+      color: gray;
     }
 
     h4:first-letter {
@@ -163,11 +160,11 @@
         text-align: left;
         text-decoration: none;
 
-        &:hover {
-          font-size: 2rem;
-          font-weight: bold;
-          transition: all 0.5s ease-out;
-        }
+        // &:hover {
+        //   font-size: 2rem;
+        //   font-weight: bold;
+        //   transition: all 0.5s ease-out;
+        // }
       }
 
       @media (max-width: 768px) {

@@ -1,6 +1,7 @@
-import { Link, Route, Routes } from "react-router-dom";
+
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+
 
 // //Media
 import aese from "../logos/logo-aese.jpg";
@@ -11,6 +12,10 @@ import europa from "../logos/logo-europa.png";
 import inclusion from "../logos/logo-inclusion.png";
 import ministerio from "../logos/logo-ministerio.jpg";
 
+
+//HOOKS
+import { useLocation, matchPath } from 'react-router';
+import { Link, Route, Routes } from "react-router-dom";
 //COMPONENTS
 
 
@@ -58,13 +63,13 @@ const App = () => {
                   element={
                     <>
                           <NavBar />
-                          <Header />
+                          {/* <Header /> */}
                           <Main 
                           onClick={handleToggleMain} 
                           toggleStatusMain={textIsOpenMain} 
                           />
                           <AboutUs/>
-                          <Diversity/>
+                          {/* <Diversity/> */}
                           <HeadPartners
                             onClick={handleTogglePartners}
                             toggleStatus={textIsOpenPartners}
@@ -73,7 +78,7 @@ const App = () => {
                     <Partners
                       toggleStatus={textIsOpenPartners}
                       text="Ayuntamiento de Socuellamos"
-                      class="card"
+                      className="card"
                       src={ayuntamiento}
                       alt="Ayuntamiento de Socuéllamos"
                       href="https://socuellamos.es/"
@@ -82,7 +87,7 @@ const App = () => {
                     <Partners
                       toggleStatus={textIsOpenPartners}
                       text="Diputación de Ciudad Real"
-                      class="card"
+                      className="card"
                       src={diputacion}
                       alt="Diputación de Ciudad Real"
                       href="https://www.dipucr.es/"
@@ -91,7 +96,7 @@ const App = () => {
                     <Partners
                       toggleStatus={textIsOpenPartners}
                       text="Junta de Comunidades de Castilla-La Mancha"
-                      class="card"
+                      className="card"
                       src={castillaLaMancha}
                       alt="Junta de Comunidades de Castilla-La Mancha"
                       href="https://www.jccm.es/"
@@ -100,7 +105,7 @@ const App = () => {
                     <Partners
                       toggleStatus={textIsOpenPartners}
                       text="Asociación Española de Empleo con Apoyo"
-                      class="card"
+                      className="card"
                       src={aese}
                       alt="Asociación Española de Empleo con Apoyo"
                       href="http://www.empleoconapoyo.org/aese/s/"
@@ -109,7 +114,7 @@ const App = () => {
                     <Partners
                       toggleStatus={textIsOpenPartners}
                       text="Ministerio de Empleo y Seguridad Social"
-                      class="card"
+                      className="card"
                       src={ministerio}
                       alt="Ministerio de Empleo y Seguridad Social"
                       href="https://www.mites.gob.es/"
@@ -118,7 +123,7 @@ const App = () => {
                     <Partners
                       toggleStatus={textIsOpenPartners}
                       text="Plena Inclusión"
-                      class="card"
+                      className="card"
                       src={inclusion}
                       alt="Plena Inclusión"
                       href="https://www.plenainclusion.org/"
@@ -127,7 +132,7 @@ const App = () => {
                     <Partners
                       toggleStatus={textIsOpenPartners}
                       text="Unión Europea"
-                      class="card"
+                      className="card"
                       src={europa}
                       alt="Unión Europea"
                       href="https://european-union.europa.eu/index_es/"

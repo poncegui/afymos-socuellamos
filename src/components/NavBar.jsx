@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components'
 import logo from "../logos/logo-afymos.png";
 import BurguerBtn from './BurguerBtn'
+import Header from './Header';
 
 function Navbar() {
 
@@ -28,7 +29,9 @@ function Navbar() {
           <BurguerBtn clicked={clicked} handleClick={handleClick} />
         </div>
         <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+      
       </NavContainer>
+      <Header/>
     </>
   )
 }
@@ -104,7 +107,7 @@ z-index: 50;
     margin-left: auto;
     margin-right: auto;
     padding-top:10px;
-    top: 35%;
+    top: 150px;
     left: 0;
     right: 0;
     text-align: center;

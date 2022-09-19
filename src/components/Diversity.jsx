@@ -4,7 +4,7 @@ const Diversity = (props) => {
   const links = document.querySelectorAll(".links");
   links.forEach((icon) => {
     icon.addEventListener("click", (event) => {
-      icon.classList.toggle("open");
+      icon.classNameList.toggle("open");
     });
   });
 
@@ -20,7 +20,7 @@ const Diversity = (props) => {
 
           <div className="mainContainerDiversity__wrapText">
             <div className="mainContainerDiversity__wrapText--icon title">
-              {/* <i class="fa-solid fa-house-user"></i> */}
+              {/* <i className="fa-solid fa-house-user"></i> */}
               <a href="https://www.falconmaters.com">
                 <h4>centro de atención</h4>
                 <h3>a la diversidad funcional</h3>
@@ -35,7 +35,7 @@ const Diversity = (props) => {
             </div>
 
             <div className="mainContainerDiversity__wrapText--icon">
-            <i class="fa-solid fa-graduation-cap"></i>
+            <i className="fa-solid fa-graduation-cap"></i>
               <a href="https://www.falconmaters.com">
                 <h4>nuestros certificados</h4>
               </a>
@@ -43,14 +43,14 @@ const Diversity = (props) => {
 
             {/* CÓDIGO COMENTADO PARA INSERTAR MÁS IMAGENES */}
             {/* <div className="mainContainerDiversity__wrapText--icon">
-                            <i class="fa-solid fa-sitemap"></i>
+                            <i className="fa-solid fa-sitemap"></i>
                             <a href="https://www.falconmaters.com">
                             <h4>organigrama</h4>
                             </a>
                             </div>
 
                             <div className="mainContainerDiversity__wrapText--icon">
-                            <i class="fa-solid fa-eye"></i>
+                            <i className="fa-solid fa-eye"></i>
                             <a href="https://www.falconmaters.com">
                             <h4>transparencia</h4>
                             </a>
