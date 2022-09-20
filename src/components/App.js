@@ -1,5 +1,11 @@
 
+//HOOKS
 import React, { useEffect, useState } from "react";
+import { useLocation, matchPath } from 'react-router';
+import { Link, Route, Routes } from "react-router-dom";
+
+
+//Styles
 import styled from "styled-components";
 
 
@@ -13,14 +19,8 @@ import inclusion from "../logos/logo-inclusion.png";
 import ministerio from "../logos/logo-ministerio.jpg";
 
 
-//HOOKS
-import { useLocation, matchPath } from 'react-router';
-import { Link, Route, Routes } from "react-router-dom";
-//COMPONENTS
 
-
-//*--Sliders & Gliders--*
-import GliderShow from "./GliderShow";
+//COMPONENTs
 
 import "../styles/main.scss";
 import Header from "./Header";
@@ -28,11 +28,13 @@ import NavBar from "./NavBar";
 import HeadPartners from "./HeadPartners";
 import Partners from "./Partners";
 import Main from "./Main";
-
+import Donation from "./Donation";
+import Projects from "./Projects";
 import AboutUs from "./AboutUs";
 import Diversity from "./Diversity";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
+import Center from "./Center";
 
 const App = () => {
   //States
@@ -56,6 +58,18 @@ const App = () => {
                     {/* <Route 
                   path='*' element={<NotFoundPage />} 
                   /> */}
+
+                  <Route
+                  path="/centro-diversidad" 
+                  element={<Center />} />
+
+                  {/* <Route
+                  path="/programas" 
+                  element={<Programms />} /> */}
+
+                  <Route
+                  path="/servicios-y-proyectos" 
+                  element={<Projects />} />
                 
 
                   <Route 
@@ -63,18 +77,19 @@ const App = () => {
                   element={
                     <>
                           <NavBar />
-                          {/* <Header /> */}
+                  
                           <Main 
                           onClick={handleToggleMain} 
                           toggleStatusMain={textIsOpenMain} 
                           />
                           <AboutUs/>
-                          {/* <Diversity/> */}
+                          <Diversity/>
                           <HeadPartners
                             onClick={handleTogglePartners}
                             toggleStatus={textIsOpenPartners}
                           />
                           <div className="container__cards">
+                            {/* <Donation/> */}
                     <Partners
                       toggleStatus={textIsOpenPartners}
                       text="Ayuntamiento de Socuellamos"

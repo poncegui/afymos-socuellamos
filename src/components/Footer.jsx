@@ -1,12 +1,13 @@
 import home from "../icons/home.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__btn">
-      <a href="#menu-principal" className="footer__btn--arrow" alt="menú principal" >
+      <Link to="#menu-principal" className="footer__btn--arrow" alt="menú principal" >
       <i className="fa-solid fa-chevron-up"></i>
-      </a>
+      </Link>
       
       </div>
 

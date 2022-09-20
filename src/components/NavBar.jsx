@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom';
 import styled from 'styled-components'
-import logo from "../logos/logo-afymos.png";
 import BurguerBtn from './BurguerBtn'
 import Header from './Header';
 
@@ -18,12 +17,12 @@ function Navbar() {
         <h2>Menú <span>Principal</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
         {/* <img className='hidden' src={logo} alt="logo Afymos"/> */}
-          <a onClick={handleClick} href="#aboutUs">nosotros</a>
-          <a onClick={handleClick} href="#h">diversidad</a>
-          <a onClick={handleClick} href="#h">servicios</a>
-          <a onClick={handleClick} href="#h">programas</a>
-          <a onClick={handleClick} href="#h">donaciones</a>
-          <Link onClick={handleClick} to='/contacto'>contacto</Link>
+          <Link onClick={handleClick} to="#aboutUs">nosotros</Link>
+          <Link onClick={handleClick} to="/centro-diversidad" > centro diversidad</Link>
+          <Link onClick={handleClick} to="/servicios-y-proyectos">servicios y proyectos</Link>
+          <Link onClick={handleClick} to="/programas">programas</Link>
+          <Link onClick={handleClick} to="/donaciones">donaciones</Link>
+          <Link onClick={handleClick} to="/contacto">contacto</Link>
         </div>
         <div className='burguer'>
           <BurguerBtn clicked={clicked} handleClick={handleClick} />

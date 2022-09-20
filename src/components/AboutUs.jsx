@@ -1,5 +1,6 @@
 import children from "../images-talleres/voluntariado2.jpg";
 import SlidesShowAboutUs from "./SlidesShowAboutUs";
+import { Link } from "react-router-dom";
 
 const AboutUs = (props) => {
   const links = document.querySelectorAll(".links");
@@ -33,9 +34,9 @@ const AboutUs = (props) => {
                 
                             <div className="mainContainerAboutUs__wrapText--icon">
                             <i className="fa-solid fa-person-digging"></i>
-                            <a href="https://www.falconmaters.com">
+                            <Link to="/servicios-y-proyectos">
                             <h4>servicios y proyectos</h4>
-                            </a>
+                            </Link>
                             </div>
                             
                             <div className="mainContainerAboutUs__wrapText--icon">
