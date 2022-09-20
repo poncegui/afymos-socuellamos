@@ -1,5 +1,5 @@
-import logo from "../logos/logo-afymos.png";
-import facebook from "../icons/facebook.svg";
+import logo from "../../logos/logo-afymos.png";
+import facebook from "../../icons/facebook.svg";
 
 
 const Header = props => {

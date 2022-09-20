@@ -5,13 +5,14 @@ import ReactCardFlip from "react-card-flip";
 import "aos/dist/aos.css";
 
 import logo from "../logos/logo-afymos.png";
-import familias from "../images-services/fomento-autonomia1.jpg";
-import artesania from "../images-services/artesania1.jpg";
-import ocio from "../images-services/voluntariado1.jpg";
+import empleo from "../images-programs/integracion-laboral1.jpg";
+import fomento from "../images-programs/proyectos.jpg";
+import integral from "../images-programs/fomento.jpg";
+import residencial from "../images-programs/fomento.jpg";
 import Footer from "./Footer";
 
 const Projects = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(true);
 
   const handleFlipped = event => {
     event.preventDefault();
@@ -32,7 +33,7 @@ const Projects = () => {
     <>
       <div className="hero">
         <h1>
-          servicios y <span>proyectos</span>
+          Programas 
         </h1>
         <img
           className="header_superior__container--logo"
@@ -53,70 +54,66 @@ const Projects = () => {
         <div className="evento">
           <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
             <div className="foto" data-aos="fade-right" name="familias">
-              <img src={familias} alt="" onClick={handleFlipped} />
+              <img src={empleo} alt="" onClick={handleFlipped} />
             </div>
 
             <div className="foto" data-aos="fade-right" name="familias">
-              <img src={familias} alt="" onClick={handleFlipped} />
+              <img src={empleo} alt="" onClick={handleFlipped} />
             </div>
           </ReactCardFlip>
           <Link
             className="service"
-            to="/servicios-y-proyectos/atencion-familias"
+            to="/programas/empleo-formacion"
           >
-            <h3>atención a las familias</h3>
-			<i class="fa-solid fa-people-roof"></i>
+            <h3>empleo y formación</h3>
           </Link>
         </div>
         <div className="evento">
           <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
             <div className="foto" data-aos="fade-left" name="familias">
-              <img src={ocio} alt="" onClick={handleFlipped} />
+              <img src={fomento} alt="" onClick={handleFlipped} />
             </div>
 
             <div className="foto" data-aos="fade-leftt" name="familias">
-              <img src={ocio} alt="" onClick={handleFlipped} />
+              <img src={fomento} alt="" onClick={handleFlipped} />
             </div>
           </ReactCardFlip>
 
           <Link
             className="service"
-            to="/servicios-y-proyectos/atencion-familias"
+            to="/programas/fomento-autonomia"
           >
-			<i class="fa-solid fa-hands-holding-child"></i>
-            <h3>ocio y voluntariado</h3>
-			
+            <h3>fomento de la autonomía</h3>
           </Link>
         </div>
 
         <div className="evento">
           <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
             <div className="foto" data-aos="fade-right" name="familias">
-              <img src={familias} alt="" onClick={handleFlipped} />
+              <img src={residencial} alt="" onClick={handleFlipped} />
             </div>
 
             <div className="foto" data-aos="fade-right" name="familias">
-              <img src={familias} alt="" onClick={handleFlipped} />
+              <img src={residencial} alt="" onClick={handleFlipped} />
             </div>
           </ReactCardFlip>
 
           <Link
             className="service"
-            to="/servicios-y-proyectos/atencion-familias"
+            to="/programas/apoyo-residencial"
           >
-            <h3>fomento de la autonomia</h3>
-			<i class="fa-regular fa-face-smile-wink"></i>
+            <h3>apoyo residencial</h3>
           </Link>
         </div>
 
         <div className="evento">
           <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
             <div className="foto" data-aos="fade-left" name="familias">
-              <img src={artesania} alt="" onClick={handleFlipped} />
+              <img src={integral} alt="" onClick={handleFlipped} />
             </div>
 
             <div className="foto" data-aos="fade-left" name="familias">
-              <img src={artesania} alt="" onClick={handleFlipped} />
+              <img src={integral} alt="" onClick={handleFlipped} />
             </div>
           </ReactCardFlip>
 
@@ -124,8 +121,7 @@ const Projects = () => {
             className="service"
             to="/servicios-y-proyectos/atencion-familias"
           >
-			<i class="fa-solid fa-paintbrush"></i>
-            <h3>taller de artesanía</h3>
+            <h3>atención integral a la diversidad funcional</h3>
           </Link>
         </div>
       </div>

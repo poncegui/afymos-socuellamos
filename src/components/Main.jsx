@@ -1,4 +1,4 @@
-import Collapsable from "./Collapsable";
+import Collapsable from "./templates/Collapsable";
 import RenderMainText from "./RenderMainText";
 
 const Main = (props) => {
@@ -12,17 +12,15 @@ const Main = (props) => {
           <div className="article__title">
           <h4 className="article__title">Introdución a Afymos</h4>
           <p>
-            Nuestra asociación de familiares y amigos de personas con alguna
-            discapacidad es una asociación sin ánimo de lucro ubicada en la
-            localidad de Socuéllamos (Ciudad Real). <br></br>
-            AFYMOS fue fundada en el año 1991.
+            Asociación sin ánimo de lucro de familiares y amigos de personas con alguna
+            discapacidad. <span>&#160;</span>
             </p>
           </div>
 
           <div className="article__entidad--btn">
             <Collapsable onClick={props.onClick} />
             <h4>
-              leer más sobre los fines que perseguimos según nuestros estatutos;
+              leer más...
             </h4>
           </div>
 

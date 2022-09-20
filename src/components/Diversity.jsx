@@ -40,21 +40,6 @@ const Diversity = (props) => {
                 <h4>nuestros certificados</h4>
               </a>
             </div>
-
-            {/* CÓDIGO COMENTADO PARA INSERTAR MÁS IMAGENES */}
-            {/* <div className="mainContainerDiversity__wrapText--icon">
-                            <i className="fa-solid fa-sitemap"></i>
-                            <a href="https://www.falconmaters.com">
-                            <h4>organigrama</h4>
-                            </a>
-                            </div>
-
-                            <div className="mainContainerDiversity__wrapText--icon">
-                            <i className="fa-solid fa-eye"></i>
-                            <a href="https://www.falconmaters.com">
-                            <h4>transparencia</h4>
-                            </a>
-                            </div> */}
           </div>
         </div>
       </section>

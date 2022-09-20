@@ -9,11 +9,7 @@
   width: 100%;
   text-align: justify;
 
-  @media (min-width: 768px) {
-  }
 
-  @media (min-width: 1200px) {
-  }
 
   &__entidad {
     width: 100vhw;
@@ -99,6 +95,25 @@
       font-size: 18px;
   
     }
+    p{
+      position: relative;
+      float: left;
+      background: #DCDFD9;
+      color: black;
+     }
+     p span {
+      position: absolute;
+      right: 0;
+      width: 0;
+      background: #DCDFD9;
+      border-left: 1px solid #000;
+      animation: escribir 10s steps(30);
+     }
+    
+     @keyframes escribir {
+      from {width: 100%}
+      to{width: 0;}
+     }
 
  
   }

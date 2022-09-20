@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom';
 import styled from 'styled-components'
-import BurguerBtn from './BurguerBtn'
+import BurguerBtn from '../BurguerBtn'
 import Header from './Header';
 
 function Navbar() {
@@ -82,14 +82,14 @@ z-index: 50;
       position: initial;
       margin: 0;
       a{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        margin-left: 30px;
         color: white;
         display: inline;
 
         &:hover {
-          font-size: 2rem;
-          font-weight: bold;
           transition: all 0.5s ease-out;
+          text-decoration: underline;
   
         }
       }
@@ -119,7 +119,7 @@ z-index: 50;
       cursor: pointer;
 
       &:hover {
-        font-size: 2rem;
+      color: gray;
         font-weight:bold;
         transition: all 0.5s ease-out;
 

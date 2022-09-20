@@ -25,12 +25,12 @@ body {
 
     }
 
-    h1 span {
+    span {
     color: white;
     }
 
-    h1 span::first-letter{
-
+   h1:first-letter{
+    font-size: 150%;
     }
 
     @media(max-width: 760px) {
@@ -39,9 +39,6 @@ body {
         img{
             display: none;
         }
-   
-
-
     }
 }
 
@@ -109,7 +106,7 @@ body {
 	left: calc(50% - 9px);
 }
 
-.fecha {
+.service {
 	display: flex;
 	align-items: center;
 	justify-content: start;
@@ -117,12 +114,50 @@ body {
 	font-size: 32px;
 	font-weight: bold;
 
+
+	Link,h3{
+		color: black;
+	}
+	
+	h3:hover{
+		color: grey;
+		cursor: pointer;
+	}
+	i{
+		margin: 0px 30px;
+		color: black;
+	}
+
+	i:hover{
+		color: grey;
+		cursor: pointer;
+	}
+
     @media(max-width: 760px) {
         font-size: 18px;
+		margin: 0px -5px 0px 0px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		i{
+			display: none;
+		}
 
 
     }
+
+
+
 }
+
+
+
+
+
+
+
 
 .foto {
 	width: 70%;
@@ -165,17 +200,15 @@ body {
         width: 100%;
         @media(max-width: 760px) {
             display: none;
-     
-     
+
          }
-    
-       
+ 
     }
 }
 
 }
 
-.evento:nth-child(even) .fecha {
+.evento:nth-child(even) .service {
 	justify-content: end;
 }
 

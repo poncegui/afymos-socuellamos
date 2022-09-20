@@ -1,4 +1,4 @@
-import children from "../images-talleres/voluntariado2.jpg";
+import children from "../images-services/voluntariado2.jpg";
 import SlidesShowAboutUs from "./SlidesShowAboutUs";
 import { Link } from "react-router-dom";
 
@@ -48,16 +48,16 @@ const AboutUs = (props) => {
 
                             <div className="mainContainerAboutUs__wrapText--icon">
                             <i className="fa-solid fa-hand-holding-hand"></i>
-                            <a href="https://www.falconmaters.com">
+                            <Link to="/colaboradores">
                             <h4>colaboradores</h4>
-                            </a>
+                            </Link>
                             </div>
 
                             <div className="mainContainerAboutUs__wrapText--icon">
                             <i className="fa-solid fa-sitemap"></i>
-                            <a href="https://www.falconmaters.com">
+                            <Link to="/organigrama">
                             <h4>organigrama</h4>
-                            </a>
+                            </Link>
                             </div>
 
                             <div className="mainContainerAboutUs__wrapText--icon">

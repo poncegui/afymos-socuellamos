@@ -1,19 +1,12 @@
 import ProfileChart from "./templates/ProfileChart";
-// //Media
-import aese from "../logos/logo-aese.jpg";
-import ayuntamiento from "../logos/logo-ayuntamiento.png";
-import castillaLaMancha from "../logos/logo-castillaLaMancha.png";
-import diputacion from "../logos/logo-diputacion.png";
-import europa from "../logos/logo-europa.png";
-import inclusion from "../logos/logo-inclusion.png";
-import ministerio from "../logos/logo-ministerio.jpg";
-
+import image from "../images-chart/chart1.jpg";
+import image2 from "../images-chart/chart2.jpg";
 import ReactCardFlip from "react-card-flip";
 import logo from "../logos/logo-afymos.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
-const Partners = () => {
+const Chart = () => {
   const handleBack = () => {
     window.history.back();
     console.log("vuelvo");
@@ -22,7 +15,7 @@ const Partners = () => {
     <>
       <div className="hero">
         <h1>
-          colaboradores<span></span>
+          junta <span>directiva</span>
         </h1>
         <img
           className="header_superior__container--logo"
@@ -40,63 +33,70 @@ const Partners = () => {
 
       <div className="containerChart">
         <ProfileChart
-          src={ayuntamiento}
-          href="https://socuellamos.es/"
+          src={image}
+          href="https://acortar.link/tvNjS0"
           name="Lourdes Requena"
           profession="educadora social"
-          position="Ayuntamiento de Socuellamos"
-          target="_blank"
+          position="directora general afymos"
         />
 
         <ProfileChart
-           src={diputacion}
-           href="https://www.dipucr.es/"
+          src={image2}
+          href="https://acortar.link/tvNjS0"
           name="Pilar Alarcón"
           profession="Licenciada"
-          position="Diputación de Ciudad Real"
+          position="la de las webs"
         />
           <ProfileChart
-           src={castillaLaMancha}
-           href="https://www.jccm.es/"
+          src={image}
+          href="https://acortar.link/tvNjS0"
           name="Lourdes Requena"
-          profession="Junta de Comunidades de Castilla-La Mancha"
-          position="Junta de Comunidades de Castilla-La Mancha"
+          profession="educadora social"
+          position="directora general afymos"
         />
 
         <ProfileChart
-          src={aese}
-          href="http://www.empleoconapoyo.org/aese/s/"
+          src={image2}
+          href="https://acortar.link/tvNjS0"
           name="Pilar Alarcón"
           profession="Licenciada"
-          position="Asociación Española de Empleo con Apoyo"
+          position="la de las webs"
         />
   
     
       </div>
       <div className="containerChart">
         <ProfileChart
-          src={ministerio}
-          href="https://www.mites.gob.es/"
+          src={image}
+          href="https://acortar.link/tvNjS0"
           name="Lourdes Requena"
           profession="educadora social"
-          position="Ministerio de Empleo y Seguridad Social"
-        />
-
-        <ProfileChart
-           src={inclusion}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="Plena Inclusión"
-        />
-          <ProfileChart
-          src={europa}
-          href="https://european-union.europa.eu/index_es/"
-          name="Lourdes Requena"
-          profession="Unión Europea"
           position="directora general afymos"
         />
 
+        <ProfileChart
+          src={image2}
+          href="https://acortar.link/tvNjS0"
+          name="Pilar Alarcón"
+          profession="Licenciada"
+          position="la de las webs"
+        />
+          <ProfileChart
+          src={image}
+          href="https://acortar.link/tvNjS0"
+          name="Lourdes Requena"
+          profession="educadora social"
+          position="directora general afymos"
+        />
+
+        <ProfileChart
+          src={image2}
+          href="https://acortar.link/tvNjS0"
+          name="Pilar Alarcón"
+          profession="Licenciada"
+          position="la de las webs"
+        />
+  
     
       </div>
 
@@ -105,6 +105,4 @@ const Partners = () => {
   );
 };
 
-export default Partners;
-
-
+export default Chart;

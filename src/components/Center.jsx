@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 
 // import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 
-import fachada from "../images-talleres/centro-gente.jpg";
+import fachada from "../images-center/centro-gente.jpg";
 import img2 from "../slidesImages/img2.png";
 import img3 from "../slidesImages/img3.png";
 import img4 from "../slidesImages/img4.png";
