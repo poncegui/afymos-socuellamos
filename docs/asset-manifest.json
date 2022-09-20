@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5c2408cf.css",
+    "main.js": "./static/js/main.c05475cc.js",
+    "static/media/foto4.jpg": "./static/media/foto4.d8380d5686e1353b4386.jpg",
+    "static/media/background-contact.jpg": "./static/media/background-contact.56f37ee488983abb7dd5.jpg",
+    "static/media/centro-interior.jpg": "./static/media/centro-interior.0a1a012763d934b52b7c.jpg",
+    "static/media/voluntariado1.jpg": "./static/media/voluntariado1.dec7f91296482557d404.jpg",
+    "static/media/fomento-autonomia1.jpg": "./static/media/fomento-autonomia1.fb1543cc31c8ef6edb5c.jpg",
+    "static/media/voluntariado2.jpg": "./static/media/voluntariado2.fccbcfb128e2d24b9cb0.jpg",
+    "static/media/img9.png": "./static/media/img9.2aed5dcbd85e28d327ae.png",
+    "static/media/img3.png": "./static/media/img3.20cdf48e6e78ccb2dc16.png",
+    "static/media/img5.png": "./static/media/img5.0983d7a51b6f98b9303d.png",
+    "static/media/img8.png": "./static/media/img8.0695a16e35dc34b84027.png",
+    "static/media/img6.png": "./static/media/img6.8bac874a3ac3c99d77c6.png",
+    "static/media/img7.png": "./static/media/img7.628035e993356b07f9b8.png",
+    "static/media/logo-ayuntamiento.png": "./static/media/logo-ayuntamiento.572c855624433d08e729.png",
+    "static/media/centro-fachada.jpg": "./static/media/centro-fachada.6f18f3b97ba93249fe4f.jpg",
+    "static/media/img2.png": "./static/media/img2.6558af38f9203d1695f8.png",
+    "static/media/img4.png": "./static/media/img4.efdb0272569ec3942011.png",
+    "static/media/centro-gente.jpg": "./static/media/centro-gente.1043b6337b21eaeb5a22.jpg",
+    "static/media/logo-ministerio.jpg": "./static/media/logo-ministerio.c2b29bf9b4cef40dba10.jpg",
+    "static/media/logo-europa.png": "./static/media/logo-europa.55ed42872ad87c97fd99.png",
+    "static/media/logo-inclusion.png": "./static/media/logo-inclusion.72fd29222dc5dd544bbb.png",
+    "static/media/artesania1.jpg": "./static/media/artesania1.74341adb9970ed124f12.jpg",
+    "static/media/logo-afymos.png": "./static/media/logo-afymos.665bbd9817f1c58a0ddb.png",
+    "static/media/logo-aese.jpg": "./static/media/logo-aese.97d43fd6c31090877279.jpg",
+    "static/media/logo-diputacion.png": "./static/media/logo-diputacion.0a4371a2c02713e61274.png",
+    "index.html": "./index.html",
+    "static/media/home.svg": "./static/media/home.c104e2819c58a9a9198e7ad2a43f7b24.svg",
+    "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
+    "main.5c2408cf.css.map": "./static/css/main.5c2408cf.css.map",
+    "main.c05475cc.js.map": "./static/js/main.c05475cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c2408cf.css",
+    "static/js/main.c05475cc.js"
+  ]
+}

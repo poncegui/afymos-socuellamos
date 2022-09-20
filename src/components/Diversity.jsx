@@ -30,7 +30,7 @@ const Diversity = (props) => {
             <div className="mainContainerDiversity__wrapText--icon">
               <i className="fa-solid fa-house-user"></i>
               <a href="https://www.falconmaters.com">
-                <h4>tenemos 803,16 m2 cargados de ilusión</h4>
+                <h4>800 m2 llenos de ilusión</h4>
               </a>
             </div>
 

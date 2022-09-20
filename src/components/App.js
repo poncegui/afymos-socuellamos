@@ -82,8 +82,8 @@ const App = () => {
                           onClick={handleToggleMain} 
                           toggleStatusMain={textIsOpenMain} 
                           />
-                          <AboutUs/>
-                          <Diversity/>
+                          {/* <AboutUs/>
+                          <Diversity/> */}
                           <HeadPartners
                             onClick={handleTogglePartners}
                             toggleStatus={textIsOpenPartners}

@@ -91,7 +91,9 @@ body {
 	justify-content: space-between;
 	margin-bottom: 200px;
 	position: relative;
+  
 }
+
 
 .evento::after {
 	content: "";
@@ -118,18 +120,21 @@ body {
     @media(max-width: 760px) {
         font-size: 18px;
 
-      
-   
-
 
     }
 }
 
 .foto {
-	width: 42%;
+	width: 70%;
 	border: 10px solid #fff;
 	position: relative;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    @media(max-width: 760px) {
+       display: none;
+
+
+    }
 }
 
 .foto::after {
@@ -140,6 +145,11 @@ body {
 	position: absolute;
 	right: -50px;
 	top: calc(50% - 20px);
+    @media(max-width: 760px) {
+        display: none;
+ 
+ 
+     }
 }
 
 .foto img {
@@ -149,6 +159,20 @@ body {
 
 .evento:nth-child(even) {
 	flex-direction: row-reverse;
+    .foto {
+        margin-left: 400px;
+    img {
+        width: 100%;
+        @media(max-width: 760px) {
+            display: none;
+     
+     
+         }
+    
+       
+    }
+}
+
 }
 
 .evento:nth-child(even) .fecha {
@@ -161,4 +185,9 @@ body {
 	border-right: 20px solid #fff;
 	right: initial;
 	left: -50px;
+    @media(max-width: 760px) {
+        display: none;
+ 
+ 
+     }
 }
