@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.baca3741.css",
-    "main.js": "./static/js/main.0d914b0a.js",
+    "main.css": "./static/css/main.37029f2e.css",
+    "main.js": "./static/js/main.f4d40431.js",
     "static/media/sala-fisioterapia.png": "./static/media/sala-fisioterapia.4936dbb0451e351d6569.png",
     "static/media/sala-ocupacional.png": "./static/media/sala-ocupacional.ea5ef010a858f21c8a50.png",
     "static/media/informatica.png": "./static/media/informatica.79e22a532c3609ed1de0.png",
@@ -46,11 +46,11 @@
     "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
-    "main.baca3741.css.map": "./static/css/main.baca3741.css.map",
-    "main.0d914b0a.js.map": "./static/js/main.0d914b0a.js.map"
+    "main.37029f2e.css.map": "./static/css/main.37029f2e.css.map",
+    "main.f4d40431.js.map": "./static/js/main.f4d40431.js.map"
   },
   "entrypoints": [
-    "static/css/main.baca3741.css",
-    "static/js/main.0d914b0a.js"
+    "static/css/main.37029f2e.css",
+    "static/js/main.f4d40431.js"
   ]
 }

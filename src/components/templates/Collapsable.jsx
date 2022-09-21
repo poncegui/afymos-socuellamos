@@ -19,17 +19,11 @@ const Collapsable = props => {
           className="containerCollapsable__btn close"
           id="btn"
           onClick={props.onClick}
-          //handleState={handleState}
-         // onChange={status}
         >
-          {/* <img
-            className="containerCollapsable__img"
-            src={open}
-            alt="ver texto articulos entidad"
-            title="desplegar o cerrar texto"
-          /> */}
+           
         </button>
-        
+  
+      
       </div>
     </>
   );

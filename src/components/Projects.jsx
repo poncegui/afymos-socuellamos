@@ -8,6 +8,10 @@ import logo from "../logos/logo-afymos.png";
 import familias from "../images-services/fomento-autonomia1.jpg";
 import artesania from "../images-services/artesania1.jpg";
 import ocio from "../images-services/voluntariado1.jpg";
+
+
+//COMPONENTS
+import NavBarTemplate from "./templates/NavBarTemplate"
 import Footer from "./Footer";
 
 const Projects = () => {
@@ -19,10 +23,7 @@ const Projects = () => {
     console.log("click");
   };
 
-  const handleBack = () => {
-    window.history.back();
-    console.log("vuelvo");
-  };
+
 
   useEffect(() => {
     AOS.init({ duration: 1500 });
@@ -30,6 +31,7 @@ const Projects = () => {
 
   return (
     <>
+    <NavBarTemplate/>
       <div className="hero">
         <h1>
           servicios y <span>proyectos</span>
@@ -41,13 +43,7 @@ const Projects = () => {
         />
       </div>
 
-      <Link className="Link" to="/">
-        <div className="btn">
-          <button className="backBtn" onClick={handleBack}>
-            <i className="fa-solid fa-circle-chevron-left"></i> volver
-          </button>
-        </div>
-      </Link>
+     
 
       <div className="containerServices">
         <div className="evento">

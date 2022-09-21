@@ -65,23 +65,23 @@ const SlidesShow = props => {
 
 
 ///AUTOPLAY  (si no queremos autoplay, comentar este código)
-  useEffect(() => {
-    intervalSlides.current = setInterval(() => {
-      next();
-    }, 5000);
+  // useEffect(() => {
+  //   intervalSlides.current = setInterval(() => {
+  //     next();
+  //   }, 5000);
 
-    //Eliminar intervalos cuando pasamos el cursor
-    slideShow.current.addEventListener("mouseenter", () => {
-      clearInterval(intervalSlides.current);
-    });
+  //   //Eliminar intervalos cuando pasamos el cursor
+  //   slideShow.current.addEventListener("mouseenter", () => {
+  //     clearInterval(intervalSlides.current);
+  //   });
 
-    //Eliminar intervalos cuando pasamos el cursor
-    slideShow.current.addEventListener("mouseleave", () => {
-      intervalSlides.current = setInterval(() => {
-        next();
-      }, 8000);
-    });
-  }, []);
+  //   //Eliminar intervalos cuando pasamos el cursor
+  //   slideShow.current.addEventListener("mouseleave", () => {
+  //     intervalSlides.current = setInterval(() => {
+  //       next();
+  //     }, 8000);
+  //   });
+  // }, []);
 
   return (
     <>
@@ -94,59 +94,10 @@ const SlidesShow = props => {
           {/* Slides */}
           <div className="mainContainer__moveContainer--slide slideTransition">
             <a href="https://www.falconmaters.com">
-              <img src={foto1} alt="" />
-            </a>
-
-            <div className="mainContainer__moveContainer--textTop">
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
-          <div className="mainContainer__moveContainer--slide">
-            <a href="https://www.falconmaters.com">
-              <img src={foto2} alt="" />
-            </a>
-
-            <div className="mainContainer__moveContainer--textTop">
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
-          <div className="mainContainer__moveContainer--slide">
-            <a href="https://www.falconmaters.com">
-              <img src={foto6} alt="" />
-            </a>
-
-            <div className="mainContainer__moveContainer--textTop">
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
-          <div className="mainContainer__moveContainer--slide">
-            <a href="https://www.falconmaters.com">
               <img src={foto7} alt="" />
             </a>
-
-            <div className="mainContainer__moveContainer--textTop">
-              <p>Lorem Ipsum</p>
-            </div>
           </div>
-          <div className="mainContainer__moveContainer--slide">
-            <a href="https://www.falconmaters.com">
-              <img src={foto8} alt="" />
-            </a>
-
-            <div className="mainContainer__moveContainer--textTop">
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
-          
-          <div className="mainContainer__moveContainer--slide">
-            <a href="https://www.falconmaters.com">
-              <img src={foto5} alt="" />
-            </a>
-
-            <div className="mainContainer__moveContainer--textTop">
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
+   
         </div>
 
         <div className="mainContainer__containerBtns">

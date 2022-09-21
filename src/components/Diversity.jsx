@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SlidesShowDiversity from "./SlidesShowDiversity";
 
 const Diversity = (props) => {
@@ -21,17 +22,17 @@ const Diversity = (props) => {
           <div className="mainContainerDiversity__wrapText">
             <div className="mainContainerDiversity__wrapText--icon title">
               {/* <i className="fa-solid fa-house-user"></i> */}
-              <a href="https://www.falconmaters.com">
-                <h4>centro de atención</h4>
-                <h3>a la diversidad funcional</h3>
-              </a>
+              <Link to="/centro-diversidad" >
+                <h4>centro diversidad</h4>
+          
+              </Link>
             </div>
 
             <div className="mainContainerDiversity__wrapText--icon">
-              <i className="fa-solid fa-house-user"></i>
-              <a href="https://www.falconmaters.com">
-                <h4>800 m2 llenos de ilusión</h4>
-              </a>
+            <i className="fa-solid fa-person-digging"></i>
+              <Link to="/servicios-y-proyectos">
+                <h4>servicios</h4>
+              </Link>
             </div>
 
             <div className="mainContainerDiversity__wrapText--icon">

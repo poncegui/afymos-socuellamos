@@ -35,7 +35,7 @@ const AboutUs = (props) => {
                             <div className="mainContainerAboutUs__wrapText--icon">
                             <i className="fa-solid fa-person-digging"></i>
                             <Link to="/servicios-y-proyectos">
-                            <h4>servicios y proyectos</h4>
+                            <h4>servicios</h4>
                             </Link>
                             </div>
                             

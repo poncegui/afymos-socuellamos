@@ -6,41 +6,35 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
- 
-
-
 }
 
 .header_superior {
   background-color: #c796b7;
-
   width: 100%;
 
   &--title {
     font-size: 80px;
-    //text-transform: uppercase;
+    text-transform: uppercase;
     color: black;
     margin: auto;
     margin-top: 0px;
   }
 
-  
-
   .header_superior__container {
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 30%;
-  
+    height: 120px;
+
+
     &--logo {
       display: none;
     }
 
     &--title {
-      font-size: 60px;
-
+      font-size: 45px;
+      text-transform: uppercase;
     }
 
     &--title:first-letter {
@@ -48,20 +42,48 @@
       font-weight: bold;
     }
 
-
     &--facebook {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
     }
 
     @media (min-width: 768px) {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       margin: auto;
       visibility: visible;
-      justify-content: space-evenly;
+      height: 170px;
+
+      &--logo {
+        display: block;
+        height: 100px;
+      }
+
+      &--title {
+        display: flex;
+        justify-content: center;
+        font-size: 80px;
+        text-transform: uppercase;
+        color: black;
+        margin-top: 0px;
+      }
+
+      &--facebook {
+        height: 80px;
+        width: 80px;
+
+        :hover {
+          color: grey;
+        }
+      }
+    }
+
+    @media (min-width: 1090px) {
+      align-items: center;
+      margin: auto;
+      visibility: visible;
       height: 200px;
 
       &--logo {
@@ -71,25 +93,21 @@
 
       &--title {
         display: flex;
-        font-size: 100px;
+        font-size: 120px;
         text-transform: uppercase;
         color: black;
         margin-top: 0px;
-        margin-left: 430px;
+ 
       }
 
       &--facebook {
         height: 100px;
         width: 100px;
-        cursor: pointer;
-
-
+   
         :hover {
-         color: grey;
+          color: grey;
         }
       }
-
-      
     }
   }
 }
@@ -100,8 +118,6 @@
   img {
     height: 80px;
   }
-
-  
 
   @media (min-width: 768px) {
     visibility: hidden;
@@ -115,7 +131,7 @@
   padding: 0px 20px;
 
   .menu {
-    //max-width: 1000px;
+
     margin: auto;
     height: 100%;
   }
@@ -177,7 +193,7 @@
     }
   }
 
-  .homeIcon{
+  .homeIcon {
     width: 50px;
     height: 50px;
 
@@ -186,7 +202,6 @@
       height: 30px;
     }
   }
-
 
   //SubMenu//
 
@@ -215,7 +230,6 @@
     content: " ";
     width: 0;
     height: 0;
-
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-bottom: 12px solid white;
@@ -234,7 +248,6 @@
     text-transform: uppercase;
     font-size: 14px;
     transition: all 300ms ease;
-
   }
 
   nav ul li ul li a:hover {
@@ -252,7 +265,6 @@
 }
 
 .header__menu {
- 
   background-color: black;
   width: 44px;
   height: 44px;
@@ -296,7 +308,14 @@
 
   &__text {
     margin: auto;
-    margin-bottom:700px;
+
+    @media (min-width: 7680px) {
+      position: relative;
+    }
+
+    @media (min-width: 1090px) {
+
+    }
   }
 
   &__text--btn {
@@ -304,31 +323,22 @@
     margin-top: 100px;
 
     @media (min-width: 1200px) {
-    
-        margin-bottom: 13px;
-      
+      margin-bottom: 13px;
     }
   }
 
- 
   &__text--main {
     font-size: 42px;
     text-transform: uppercase;
 
     @media (min-width: 768px) {
-
-        font-size: 80px;
-      
+      font-size: 80px;
     }
-  
+
     @media (min-width: 1200px) {
-  
-        font-size: 100px;
-      
+      font-size: 100px;
     }
   }
-
-
 
   &__text--phrase {
     font-size: 16px;
@@ -336,20 +346,14 @@
     margin-top: 20px;
 
     @media (min-width: 768px) {
-      margin: 0PX;
-        font-size: 32px;
-      
+      margin: 0px;
+      font-size: 32px;
     }
-  
+
     @media (min-width: 1200px) {
-    
-        font-size: 50px;
-  
+      font-size: 50px;
     }
-
   }
-
- 
 
   &__text--author {
     font-size: 12px;
@@ -357,7 +361,6 @@
     margin-top: 20px;
     font-weight: bold;
     font-style: italic;
-  
   }
 
   @media (min-width: 768px) {
@@ -374,13 +377,8 @@
     width: 30px;
     padding: 18px 12px 15.3px 13px;
     border-radius: 50%;
-    //margin-top: 45px;
 
-    @media (min-width: 768px) {
-      &__text--btn {
-        //margin-top: 45px;
-      }
-    }
+
   }
 
   &__text--btn:hover {
@@ -389,4 +387,4 @@
   }
 }
 
-//Menú lateral v. mobile//
+
