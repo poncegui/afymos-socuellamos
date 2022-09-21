@@ -31,18 +31,18 @@ const AboutUs = (props) => {
            
         
         <div className="mainContainerAboutUs__wrapText">
-                
+{/*                 
                             <div className="mainContainerAboutUs__wrapText--icon">
                             <i className="fa-solid fa-person-digging"></i>
                             <Link to="/servicios-y-proyectos">
                             <h4>servicios</h4>
                             </Link>
-                            </div>
+                            </div> */}
                             
                             <div className="mainContainerAboutUs__wrapText--icon">
                             <i className="fa-solid fa-hand-holding-heart"></i>
                             <a href="https://www.falconmaters.com">
-                            <h4>diversidad funcional</h4>
+                            <h4>sensibilización</h4>
                             </a>
                             </div>
 

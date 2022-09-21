@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <>
     <NavBarTemplate/>
-      <div className="hero">
+    <div className="hero">
         <h1>
           servicios y <span>proyectos</span>
         </h1>
@@ -42,6 +42,7 @@ const Projects = () => {
           alt="Logo Afymos"
         />
       </div>
+    
 
      
 
@@ -60,7 +61,7 @@ const Projects = () => {
             className="service"
             to="/servicios-y-proyectos/atencion-familias"
           >
-            <h3>atención a las familias</h3>
+            <h3>atención a familias</h3>
 			<i class="fa-solid fa-people-roof"></i>
           </Link>
         </div>

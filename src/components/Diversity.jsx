@@ -20,26 +20,37 @@ const Diversity = (props) => {
           </div>
 
           <div className="mainContainerDiversity__wrapText">
-            <div className="mainContainerDiversity__wrapText--icon title">
-              {/* <i className="fa-solid fa-house-user"></i> */}
+            {/* <div className="mainContainerDiversity__wrapText--icon title">
+              <i className="fa-solid fa-house-user"></i>
               <Link to="/centro-diversidad" >
                 <h4>centro diversidad</h4>
-          
+              </Link>
+            </div> */}
+            <div className="mainContainerDiversity__wrapText--icon">
+              <i className="fa-solid fa-house-user"></i>
+              <Link to="/servicios-y-proyectos">
+                <h4>centro diversidad</h4>
+              </Link>
+            </div>
+            <div className="mainContainerDiversity__wrapText--icon">
+            <i class="fa-solid fa-rectangle-list"></i>
+              <Link to="/servicios-y-proyectos">
+                <h4>programas</h4>
               </Link>
             </div>
 
             <div className="mainContainerDiversity__wrapText--icon">
-            <i className="fa-solid fa-person-digging"></i>
+              <i className="fa-solid fa-person-digging"></i>
               <Link to="/servicios-y-proyectos">
                 <h4>servicios</h4>
               </Link>
             </div>
 
             <div className="mainContainerDiversity__wrapText--icon">
-            <i className="fa-solid fa-graduation-cap"></i>
-              <a href="https://www.falconmaters.com">
+              <i className="fa-solid fa-graduation-cap"></i>
+              <Link to="/certificados">
                 <h4>nuestros certificados</h4>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

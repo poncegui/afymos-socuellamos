@@ -41,10 +41,12 @@ const Header = props => {
               /> */}
             </div>
           </div>
-          <h3 className="slogan__text--phrase">
+          <div className="slogan__text--phrase">
+          <h3>
             "Dadme un punto de apoyo y moveré el mundo."
           </h3>
           <h1 className="slogan__text--author"> Arquímedes de Siracusa</h1>
+          </div>
 
         </section>
       </div>

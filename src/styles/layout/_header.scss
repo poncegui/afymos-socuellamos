@@ -9,7 +9,7 @@
 }
 
 .header_superior {
-  background-color: #c796b7;
+  background-color: rgb(245, 159, 175);
   width: 100%;
 
   &--title {
@@ -309,12 +309,13 @@
   &__text {
     margin: auto;
 
-    @media (min-width: 7680px) {
+    @media (min-width: 768px) {
       position: relative;
+      height: 80vh;
     }
 
     @media (min-width: 1090px) {
-
+      height: 100vh;
     }
   }
 
@@ -322,7 +323,7 @@
     margin: auto;
     margin-top: 100px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1090px) {
       margin-bottom: 13px;
     }
   }
@@ -335,7 +336,7 @@
       font-size: 80px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1090px) {
       font-size: 100px;
     }
   }

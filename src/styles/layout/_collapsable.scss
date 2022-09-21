@@ -1,10 +1,8 @@
 //Collapsable BTNS
 
-
-
 .containerCollapsable {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   width: 45px;
   height: 30px;
@@ -15,12 +13,8 @@
 
   @media (max-width: 768px) {
     margin: 20px 0px;
-    
+  }
 }
-
-
-}
-
 
 .close {
   justify-content: center;
@@ -32,8 +26,6 @@
   transform: translateX(19px);
   transition: all 0.8s ease-out;
   cursor: pointer;
-
-
 }
 
 .open {
@@ -46,7 +38,133 @@
   transform: translateX(0px);
   transition: all 0.8s ease-out;
   cursor: pointer;
-
-
 }
 
+//COLLAPSABLE
+
+//   &__pharagraf {
+//     padding: 0px 50px;
+//     font-size: 14px;
+//   }
+
+//   @media (min-width: 768px) {
+//     &__pharagraf {
+//       padding: 0px 150px;
+//       font-size: 20px;
+//       font-weight: bold;
+//     }
+//   }
+
+//   @media (min-width: 1200px) {
+//     &__pharagraf {
+//       padding: 0px 150px;
+//       font-size: 18px;
+//     }
+//   }
+
+//   &__link {
+//     border: 1px solid pink;
+//     background-color: black;
+//     height: 45px;
+//     width: 150px;
+//     line-height: 2.25;
+//     margin: 30px 214px 0px 0px;
+//     padding: 0 25px 0 26px;
+//     border-radius: 22.5px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     a {
+//       color: pink;
+//     }
+
+//     @media (min-width: 768px) {
+//     }
+
+//     &:hover {
+//       background-color: 0.5s linear;
+//       font-size: 20px;
+//       border-radius: 50px;
+//       border: 1px solid #ffffff;
+//       box-shadow: 0 0 15px #8ccbea;
+//       transform: translateY(5px);
+//       transition: all 0.5s ease-out;
+//     }
+
+//     &--btn {
+//       text-decoration: none;
+//       // text-transform: capitalize;
+//       color: #ffffff;
+//       font-size: 16px;
+//       padding: 20px 15px;
+
+//       &:hover {
+//         background-color: 0.8s linear;
+//       }
+//     }
+//   }
+// }
+
+// .containerBoxBtns {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin: 50px 50px;
+//   cursor: pointer;
+
+//   @media (max-width: 768px) {
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//   }
+
+//   &__nav {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid pink;
+//     background-color: black;
+//     height: 30px;
+//     width: 100px;
+//     line-height: 2.25;
+//     padding: 0 25px 0 26px;
+//     border-radius: 22.5px;
+//     margin: 10px 0px;
+
+//     a {
+//       color: pink;
+//       font-size: 10px;
+//       font-style: to-lower-case($string: "");
+//       font-weight: bold;
+//     }
+
+//     @media (min-width: 768px) {
+//       height: 45px;
+//       width: 150px;
+
+//       a {
+//         font-size: 16px;
+//       }
+//     }
+
+//     &:hover {
+//       background-color: 0.5s linear;
+//       font-size: 20px;
+//       border-radius: 50px;
+//       border: 1px solid #ffffff;
+//       transform: translateY(5px);
+//       transition: all 0.5s ease-out;
+//     }
+
+//     &--btn {
+//       text-decoration: none;
+//       color: #ffffff;
+//       font-size: 16px;
+
+//       &:hover {
+//         background-color: 0.8s linear;
+//       }
+//     }
+//   }
