@@ -16,6 +16,7 @@ import Main from "./Main";
 import Donation from "./Donation";
 import Projects from "./Projects";
 import AboutUs from "./AboutUs";
+import Slider from "./Carrousel/Slider";
 import Diversity from "./Diversity";
 import ContactUs from "./ContactUs";
 import Programs from "./Programs";
@@ -49,7 +50,9 @@ const App = () => {
 
         <Route path="/organigrama" element={<Chart />} />
 
-        <Route path="/colaboradores" element={<Partners />} />
+        {/* <Route path="/colaboradores" element={<Partners />} /> */}
+
+        <Route path="/colaboradores" element={<Slider />} />
 
         <Route
           path="/"
@@ -62,6 +65,7 @@ const App = () => {
                 toggleStatusMain={textIsOpenMain}
               />
               <AboutUs />
+              <Slider />
               <Diversity />
         
               <div className="container__cards"></div>

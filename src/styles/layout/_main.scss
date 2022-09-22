@@ -47,7 +47,7 @@
       font-size: 50px;
       background: black;
       border-left: 3px solid pink;
-      animation: typing 5s steps(20) infinite alternate;
+      animation: typing 5s steps(25) infinite alternate;
 
 
 
@@ -68,6 +68,28 @@
         width: 30%;
       }
 
+    }
+
+    @media (min-width: 360px) {
+      @keyframes typing {
+        from {
+          width: 58%;
+        }
+        to {
+          width: 5%;
+        }
+      }
+    }
+
+    @media (min-width: 390px) {
+      @keyframes typing {
+        from {
+          width: 60%;
+        }
+        to {
+          width: 10%;
+        }
+      }
     }
 
     @media (min-width: 768px) {
@@ -98,7 +120,7 @@
           width: 78%;
         }
         to {
-          width: 45%;
+          width: 30%;
         }
       }
     }

@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.a2943aa5.css",
-    "main.js": "./static/js/main.3cac95d2.js",
+    "main.css": "./static/css/main.911ee7a7.css",
+    "main.js": "./static/js/main.6f2a1e09.js",
+    "static/media/proyecto-crea.png": "./static/media/proyecto-crea.6ec0cb25b42a58195a0e.png",
     "static/media/sala-fisioterapia.png": "./static/media/sala-fisioterapia.4936dbb0451e351d6569.png",
     "static/media/sala-ocupacional.png": "./static/media/sala-ocupacional.ea5ef010a858f21c8a50.png",
     "static/media/informatica.png": "./static/media/informatica.79e22a532c3609ed1de0.png",
     "static/media/sala-formacion.png": "./static/media/sala-formacion.a5c5cc523104b9ae31fb.png",
+    "static/media/loteria.jpg.png": "./static/media/loteria.jpg.b71979be7f6a3c643225.png",
     "static/media/cocina.png": "./static/media/cocina.dddf8cae8b29de25da13.png",
-    "static/media/foto7.jpg": "./static/media/foto7.190634458463d2fd0d4e.jpg",
+    "static/media/landing-about-us.png": "./static/media/landing-about-us.230868365759e3cbd2fb.png",
     "static/media/foto4.jpg": "./static/media/foto4.d8380d5686e1353b4386.jpg",
     "static/media/foto1.jpg": "./static/media/foto1.43d683a7a843ce24a36b.jpg",
     "static/media/chart1.jpg": "./static/media/chart1.939926714c12e3253447.jpg",
@@ -20,6 +22,7 @@
     "static/media/voluntariado1.jpg": "./static/media/voluntariado1.dec7f91296482557d404.jpg",
     "static/media/fomento-autonomia1.jpg": "./static/media/fomento-autonomia1.e064204ba10cb9f39656.jpg",
     "static/media/voluntariado2.jpg": "./static/media/voluntariado2.fccbcfb128e2d24b9cb0.jpg",
+    "static/media/un-dia-afymos.jpg": "./static/media/un-dia-afymos.5756d2cf953a60a749a0.jpg",
     "static/media/img9.png": "./static/media/img9.2aed5dcbd85e28d327ae.png",
     "static/media/img3.png": "./static/media/img3.20cdf48e6e78ccb2dc16.png",
     "static/media/proyectos.jpg": "./static/media/proyectos.5549db32662680f4092d.jpg",
@@ -46,11 +49,11 @@
     "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
-    "main.a2943aa5.css.map": "./static/css/main.a2943aa5.css.map",
-    "main.3cac95d2.js.map": "./static/js/main.3cac95d2.js.map"
+    "main.911ee7a7.css.map": "./static/css/main.911ee7a7.css.map",
+    "main.6f2a1e09.js.map": "./static/js/main.6f2a1e09.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2943aa5.css",
-    "static/js/main.3cac95d2.js"
+    "static/css/main.911ee7a7.css",
+    "static/js/main.6f2a1e09.js"
   ]
 }

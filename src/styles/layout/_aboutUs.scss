@@ -49,6 +49,7 @@
 
     &--photo {
       image {
+        object-fit: contain;
         position: absolute;
         vertical-align: top;
         height: 100%;

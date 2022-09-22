@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 
 import foto1 from "../images/foto1.jpg";
 import foto2 from "../images/foto2.jpg";
-import foto7 from "../images/foto7.jpg";
+import foto7 from "../images/landing-about-us.png";
 import foto8 from "../images/foto8.jpg";
 import foto5 from "../images/foto5.jpg";
 import foto6 from "../images/foto6.jpg";
