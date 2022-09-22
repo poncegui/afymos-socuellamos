@@ -1,4 +1,4 @@
-import ProfileChart from "./templates/ProfileChart";
+import ProfileChart from "./Chart/ProfileChart";
 // //Media
 import aese from "../logos/logo-aese.jpg";
 import ayuntamiento from "../logos/logo-ayuntamiento.png";

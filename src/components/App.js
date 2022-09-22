@@ -16,11 +16,11 @@ import Main from "./Main";
 import Donation from "./Donation";
 import Projects from "./Projects";
 import AboutUs from "./AboutUs";
-import Slider from "./Carrousel/Slider";
+import Slider from "./Carousel/Slider";
 import Diversity from "./Diversity";
 import ContactUs from "./ContactUs";
 import Programs from "./Programs";
-import Chart from "./Chart";
+import Chart from "./Chart/Chart";
 import Footer from "./Footer";
 import Center from "./Center";
 

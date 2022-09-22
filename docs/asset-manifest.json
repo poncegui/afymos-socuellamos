@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.911ee7a7.css",
-    "main.js": "./static/js/main.6f2a1e09.js",
+    "main.css": "./static/css/main.5ff59751.css",
+    "main.js": "./static/js/main.79dfeac8.js",
     "static/media/proyecto-crea.png": "./static/media/proyecto-crea.6ec0cb25b42a58195a0e.png",
     "static/media/sala-fisioterapia.png": "./static/media/sala-fisioterapia.4936dbb0451e351d6569.png",
     "static/media/sala-ocupacional.png": "./static/media/sala-ocupacional.ea5ef010a858f21c8a50.png",
@@ -14,6 +14,7 @@
     "static/media/foto1.jpg": "./static/media/foto1.43d683a7a843ce24a36b.jpg",
     "static/media/chart1.jpg": "./static/media/chart1.939926714c12e3253447.jpg",
     "static/media/background-contact.jpg": "./static/media/background-contact.56f37ee488983abb7dd5.jpg",
+    "static/media/chart3.jpg": "./static/media/chart3.0316321ca46d46e80912.jpg",
     "static/media/fomento.jpg": "./static/media/fomento.63c89704fef7aefb8f81.jpg",
     "static/media/foto5.jpg": "./static/media/foto5.e6e5d3eacdf24b8f03df.jpg",
     "static/media/foto2.jpg": "./static/media/foto2.16f3f0076c299fa1517a.jpg",
@@ -43,17 +44,18 @@
     "static/media/artesania1.jpg": "./static/media/artesania1.74341adb9970ed124f12.jpg",
     "static/media/logo-afymos.png": "./static/media/logo-afymos.665bbd9817f1c58a0ddb.png",
     "static/media/logo-aese.jpg": "./static/media/logo-aese.97d43fd6c31090877279.jpg",
+    "static/media/chart4.jpg": "./static/media/chart4.ba4e16c95b51a7aed7f8.jpg",
     "static/media/logo-diputacion.png": "./static/media/logo-diputacion.0a4371a2c02713e61274.png",
     "index.html": "./index.html",
     "static/media/home.svg": "./static/media/home.c104e2819c58a9a9198e7ad2a43f7b24.svg",
     "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
-    "main.911ee7a7.css.map": "./static/css/main.911ee7a7.css.map",
-    "main.6f2a1e09.js.map": "./static/js/main.6f2a1e09.js.map"
+    "main.5ff59751.css.map": "./static/css/main.5ff59751.css.map",
+    "main.79dfeac8.js.map": "./static/js/main.79dfeac8.js.map"
   },
   "entrypoints": [
-    "static/css/main.911ee7a7.css",
-    "static/js/main.6f2a1e09.js"
+    "static/css/main.5ff59751.css",
+    "static/js/main.79dfeac8.js"
   ]
 }

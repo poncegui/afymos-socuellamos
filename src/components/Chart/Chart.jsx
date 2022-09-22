@@ -1,35 +1,22 @@
-import ProfileChart from "./templates/ProfileChart";
-import image from "../images-chart/chart1.jpg";
-import image2 from "../images-chart/chart2.jpg";
-import ReactCardFlip from "react-card-flip";
-import logo from "../logos/logo-afymos.png";
+import ProfileChart from "./ProfileChart";
+import NavBarTemplate from "../templates/NavBarTemplate";
+import image from "../../images-chart/chart1.jpg";
+import image2 from "../../images-chart/chart2.jpg";
+import image3 from "../../images-chart/chart3.jpg";
+import image4 from "../../images-chart/chart4.jpg";
+import logo from "../../logos/logo-afymos.png";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "../Footer";
 
 const Chart = () => {
-  const handleBack = () => {
-    window.history.back();
-    console.log("vuelvo");
-  };
+ 
   return (
     <>
-      <div className="hero">
-        <h1>
-          junta <span>directiva</span>
-        </h1>
-        <img
-          className="header_superior__container--logo"
-          src={logo}
-          alt="Logo Afymos"
-        />
-      </div>
-      <Link className="Link" to="/">
-        <div className="btn">
-          <button className="backBtn" onClick={handleBack}>
-            <i className="fa-solid fa-circle-chevron-left"></i> volver
-          </button>
-        </div>
-      </Link>
+    <NavBarTemplate
+    title="junta directiva"
+    alt=""
+    />
+   
 
       <div className="containerChart">
         <ProfileChart
@@ -48,7 +35,7 @@ const Chart = () => {
           position="la de las webs"
         />
           <ProfileChart
-          src={image}
+          src={image3}
           href="https://acortar.link/tvNjS0"
           name="Lourdes Requena"
           profession="educadora social"
@@ -56,7 +43,7 @@ const Chart = () => {
         />
 
         <ProfileChart
-          src={image2}
+          src={image4}
           href="https://acortar.link/tvNjS0"
           name="Pilar Alarcón"
           profession="Licenciada"
@@ -82,7 +69,7 @@ const Chart = () => {
           position="la de las webs"
         />
           <ProfileChart
-          src={image}
+          src={image3}
           href="https://acortar.link/tvNjS0"
           name="Lourdes Requena"
           profession="educadora social"
@@ -90,7 +77,7 @@ const Chart = () => {
         />
 
         <ProfileChart
-          src={image2}
+          src={image4}
           href="https://acortar.link/tvNjS0"
           name="Pilar Alarcón"
           profession="Licenciada"

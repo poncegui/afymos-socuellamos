@@ -9,6 +9,7 @@ import empleo from "../images-programs/integracion-laboral1.jpg";
 import fomento from "../images-programs/proyectos.jpg";
 import integral from "../images-programs/fomento.jpg";
 import residencial from "../images-programs/fomento.jpg";
+import NavBarTemplate from "./templates/NavBarTemplate";
 import Footer from "./Footer";
 
 const Projects = () => {
@@ -20,10 +21,7 @@ const Projects = () => {
     console.log("click");
   };
 
-  const handleBack = () => {
-    window.history.back();
-    console.log("vuelvo");
-  };
+
 
   useEffect(() => {
     AOS.init({ duration: 1500 });
@@ -31,24 +29,11 @@ const Projects = () => {
 
   return (
     <>
-      <div className="hero">
-        <h1>
-          Programas 
-        </h1>
-        <img
-          className="header_superior__container--logo"
-          src={logo}
-          alt="Logo Afymos"
-        />
-      </div>
+      <NavBarTemplate
+    title="programas"
+    alt=""
+    />
 
-      <Link className="Link" to="/">
-        <div className="btn">
-          <button className="backBtn" onClick={handleBack}>
-            <i className="fa-solid fa-circle-chevron-left"></i> volver
-          </button>
-        </div>
-      </Link>
 
       <div className="containerServices">
         <div className="evento">

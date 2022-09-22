@@ -12,7 +12,7 @@ const Main = () => {
           <div className="article__text">
             <p>
               Asociación de familiares y amigos de personas con alguna
-              discapacidad.
+              discapacidad
             </p>
           </div>
         </div>

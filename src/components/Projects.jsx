@@ -9,21 +9,18 @@ import familias from "../images-services/fomento-autonomia1.jpg";
 import artesania from "../images-services/artesania1.jpg";
 import ocio from "../images-services/voluntariado1.jpg";
 
-
 //COMPONENTS
-import NavBarTemplate from "./templates/NavBarTemplate"
+import NavBarTemplate from "./templates/NavBarTemplate";
 import Footer from "./Footer";
 
 const Projects = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const handleFlipped = event => {
+  const handleFlipped = (event) => {
     event.preventDefault();
     setIsFlipped(!isFlipped);
     console.log("click");
   };
-
-
 
   useEffect(() => {
     AOS.init({ duration: 1500 });
@@ -31,20 +28,7 @@ const Projects = () => {
 
   return (
     <>
-    <NavBarTemplate/>
-    <div className="hero">
-        <h1>
-          servicios y <span>proyectos</span>
-        </h1>
-        <img
-          className="header_superior__container--logo"
-          src={logo}
-          alt="Logo Afymos"
-        />
-      </div>
-    
-
-     
+      <NavBarTemplate title="servicios y proyectos" alt="" />
 
       <div className="containerServices">
         <div className="evento">
@@ -62,7 +46,7 @@ const Projects = () => {
             to="/servicios-y-proyectos/atencion-familias"
           >
             <h3>atención a familias</h3>
-			<i class="fa-solid fa-people-roof"></i>
+            <i class="fa-solid fa-people-roof"></i>
           </Link>
         </div>
         <div className="evento">
@@ -80,9 +64,8 @@ const Projects = () => {
             className="service"
             to="/servicios-y-proyectos/atencion-familias"
           >
-			<i class="fa-solid fa-hands-holding-child"></i>
+            <i class="fa-solid fa-hands-holding-child"></i>
             <h3>ocio y voluntariado</h3>
-			
           </Link>
         </div>
 
@@ -102,7 +85,7 @@ const Projects = () => {
             to="/servicios-y-proyectos/atencion-familias"
           >
             <h3>fomento de la autonomia</h3>
-			<i class="fa-regular fa-face-smile-wink"></i>
+            <i class="fa-regular fa-face-smile-wink"></i>
           </Link>
         </div>
 
@@ -121,7 +104,7 @@ const Projects = () => {
             className="service"
             to="/servicios-y-proyectos/atencion-familias"
           >
-			<i class="fa-solid fa-paintbrush"></i>
+            <i class="fa-solid fa-paintbrush"></i>
             <h3>taller de artesanía</h3>
           </Link>
         </div>
