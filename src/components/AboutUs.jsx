@@ -1,4 +1,5 @@
 import SlidesShowAboutUs from "./SlidesShowAboutUs";
+import centerAfymos from "../pictogramas/centro-afymos.png";
 
 const AboutUs = (props) => {
   const links = document.querySelectorAll(".links");
@@ -25,10 +26,15 @@ const AboutUs = (props) => {
 
           <div className="mainContainerAboutUs__wrapText">
             <div className="mainContainerAboutUs__wrapText--icon">
-              {/* <i className="fa-solid fa-hand-holding-heart"></i> */}
-
-              <h4>vida en comunidad:</h4>
-              <h5>"Integración, inclusión y otra"</h5>
+              <img
+                src={centerAfymos}
+                className="centro-afymos"
+                alt="pictograma-centro"
+              ></img>
+              <div className="container--text">
+                <h4>vida en comunidad:</h4>
+                <h5>"Integración, inclusión y otra"</h5>
+              </div>
             </div>
           </div>
         </div>
