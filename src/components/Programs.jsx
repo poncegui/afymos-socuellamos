@@ -15,13 +15,11 @@ import Footer from "./Footer";
 const Projects = () => {
   const [isFlipped, setIsFlipped] = useState(true);
 
-  const handleFlipped = event => {
+  const handleFlipped = (event) => {
     event.preventDefault();
     setIsFlipped(!isFlipped);
     console.log("click");
   };
-
-
 
   useEffect(() => {
     AOS.init({ duration: 1500 });
@@ -29,11 +27,7 @@ const Projects = () => {
 
   return (
     <>
-      <NavBarTemplate
-    title="programas"
-    alt=""
-    />
-
+      <NavBarTemplate title="programas" alt="" />
 
       <div className="containerServices">
         <div className="evento">
@@ -46,10 +40,7 @@ const Projects = () => {
               <img src={empleo} alt="" onClick={handleFlipped} />
             </div>
           </ReactCardFlip>
-          <Link
-            className="service"
-            to="/programas/empleo-formacion"
-          >
+          <Link className="service" to="/programas/empleo-formacion">
             <h3>empleo y formación</h3>
           </Link>
         </div>
@@ -64,10 +55,7 @@ const Projects = () => {
             </div>
           </ReactCardFlip>
 
-          <Link
-            className="service"
-            to="/programas/fomento-autonomia"
-          >
+          <Link className="service" to="/programas/fomento-autonomia">
             <h3>fomento de la autonomía</h3>
           </Link>
         </div>
@@ -83,10 +71,7 @@ const Projects = () => {
             </div>
           </ReactCardFlip>
 
-          <Link
-            className="service"
-            to="/programas/apoyo-residencial"
-          >
+          <Link className="service" to="/programas/apoyo-residencial">
             <h3>apoyo residencial</h3>
           </Link>
         </div>

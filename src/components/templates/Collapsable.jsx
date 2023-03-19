@@ -1,17 +1,14 @@
-
-
 import { useState } from "react";
 
-const Collapsable = props => {
+const Collapsable = (props) => {
+  // const [btnState, SetBtnState] = useState(false);
 
-// const [btnState, SetBtnState] = useState(false);
+  // const handleState () =>{
+  //   SetBtnState(btnState => !btnState);
+  // }
 
-// const handleState () =>{
-//   SetBtnState(btnState => !btnState);
-// }
+  // let toggleState = btnState ? "open" : "close";
 
-// let toggleState = btnState ? "open" : "close";
- 
   return (
     <>
       <div className="containerCollapsable">
@@ -19,11 +16,7 @@ const Collapsable = props => {
           className="containerCollapsable__btn close"
           id="btn"
           onClick={props.onClick}
-        >
-           
-        </button>
-  
-      
+        ></button>
       </div>
     </>
   );
@@ -31,17 +24,12 @@ const Collapsable = props => {
 
 export default Collapsable;
 
+// const openBtn = () => {
+//   document.getElementsById("btn").className.toggle("open");
+//   console.log("is working");
 
-  // const openBtn = () => {
-  //   document.getElementsById("btn").className.toggle("open");
-  //   console.log("is working");
-   
-  // }
+// }
 
-  // document.getElementsById("btn").onClick = function () {
-  //   openBtn();
-  // }
-
-
-
-
+// document.getElementsById("btn").onClick = function () {
+//   openBtn();
+// }

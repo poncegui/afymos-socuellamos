@@ -16,13 +16,13 @@ function Navbar() {
           Menú <span>Principal</span>
         </h3>
         <div className={`links ${clicked ? "active" : ""}`}>
-        <Link onClick={handleClick} to="/organigrama">
+          <Link onClick={handleClick} to="/organigrama">
             nosotros
           </Link>
           <Link onClick={handleClick} to="/servicios">
             servicios
           </Link>
-      
+
           <Link onClick={handleClick} to="/donaciones">
             donaciones
           </Link>
@@ -46,7 +46,7 @@ function Navbar() {
 export default Navbar;
 
 const NavContainer = styled.nav`
-background-color: #000;
+  background-color: #000;
   height: 10vh;
   width: 100%;
   z-index: 50;
@@ -60,8 +60,6 @@ background-color: #000;
     }
   }
 
-
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,7 +68,6 @@ background-color: #000;
     color: white;
     text-decoration: none;
     margin-right: 5%;
-    
   }
   .links {
     position: absolute;
@@ -105,12 +102,11 @@ background-color: #000;
     }
   }
 
-
   .links.active {
     @media (max-width: 768px) {
       background-color: #000;
-    border-radius: 0 0 80% 0;
-      height:30%;
+      border-radius: 0 0 80% 0;
+      height: 30%;
       width: 100%;
       display: block;
       position: absolute;
@@ -134,14 +130,12 @@ background-color: #000;
         }
       }
     }
-
-
   }
 
   .burguer {
     width: 50px;
     height: 50px;
-    margin:3%;
+    margin: 3%;
 
     @media (min-width: 1090px) {
       display: none;
@@ -150,7 +144,6 @@ background-color: #000;
 `;
 
 const BgDiv = styled.div`
-
   position: absolute;
   top: -1000px;
   left: -1000px;

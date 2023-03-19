@@ -1,22 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat Alternates", sans-serif;
-
-
-
- 
 }
 
-
-
-body{
+body {
   background: #e8d3e0;
-
 }
 
-.container__cards{
+.container__cards {
   margin: 30px 15px 45px 15px;
   max-width: 1200px;
   margin: auto;
@@ -26,7 +19,7 @@ body{
   justify-content: center;
 }
 
-.card{
+.card {
   width: 300px;
   margin: 10px;
   transition: all 300ms;
@@ -34,34 +27,34 @@ body{
   margin-bottom: 10px;
 }
 
-.card:hover{
+.card:hover {
   width: 350px;
 }
 
-.card .cover{
+.card .cover {
   width: 100%;
   height: 250px;
   position: relative;
   overflow: hidden;
 }
 
-.card .cover img{
+.card .cover img {
   width: 250px;
   display: block;
   margin: auto;
   position: relative;
   top: 40px;
   z-index: 1;
-  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
   transition: all 400ms;
 }
 
-.card:hover .cover img{
+.card:hover .cover img {
   top: 0px;
   filter: none;
 }
 
-.card .img__back{
+.card .img__back {
   width: 100%;
   height: 200px;
   position: absolute;
@@ -72,8 +65,7 @@ body{
   transition: all 300ms;
 }
 
-
-.card .description{
+.card .description {
   background: white;
   margin-top: -10px;
   padding: 20px;
@@ -81,23 +73,23 @@ body{
   transition: all 300ms;
 }
 
-.card:hover .description{
+.card:hover .description {
   padding: 40px;
 }
 
-.card .description h2{
+.card .description h2 {
   margin-top: 10px;
 }
 
-.card .description p{
+.card .description p {
   margin-top: 10px;
 }
 
-.card .description input{
+.card .description input {
   padding: 10px 40px;
   margin-top: 20px;
   border: none;
-  background: #A6359D;
+  background: #a6359d;
   color: white;
   font-size: 14px;
   cursor: pointer;
@@ -105,6 +97,6 @@ body{
   transition: all 300ms;
 }
 
-.card .description input:hover{
+.card .description input:hover {
   background: #83277b;
 }

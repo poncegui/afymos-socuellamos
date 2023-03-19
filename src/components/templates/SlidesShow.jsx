@@ -12,9 +12,7 @@ import img7 from "../slidesImages/img7.png";
 import img8 from "../slidesImages/img8.png";
 import img9 from "../slidesImages/img9.png";
 
-
-const GliderShow = props => {
- 
+const GliderShow = (props) => {
   const slideShow = useRef(null);
   const intervalSlides = useRef(null);
 
@@ -68,8 +66,7 @@ const GliderShow = props => {
     }
   };
 
-
-// /AUTOPLAY  (si no queremos autoplay, comentar este código)
+  // /AUTOPLAY  (si no queremos autoplay, comentar este código)
   // useEffect(() => {
   //   intervalSlides.current = setInterval(() => {
   //     next();
@@ -115,18 +112,13 @@ const GliderShow = props => {
 
         <div className="carousel">
           <div className="carousel__contenedor">
-            <button
-              aria-label="Anterior"
-              className="carousel__anterior"
-           
-            
-            >
+            <button aria-label="Anterior" className="carousel__anterior">
               <i className="fa-solid fa-hand-holding-hand"></i>
             </button>
 
             <div className="carousel__lista" ref={slideShow}>
               <div className="carousel__elemento">
-                <img src={img1} alt="Rock and Roll Hall of Fame"  />
+                <img src={img1} alt="Rock and Roll Hall of Fame" />
                 <p>Rock and Roll Hall of Fame</p>
               </div>
               <div className="carousel__elemento">
@@ -134,10 +126,10 @@ const GliderShow = props => {
                 <p>Constitution Square - Tower I</p>
               </div>
               <div className="carousel__elemento">
-					<img src={img3} alt="Rock and Roll Hall of Fame"/>
-						<p>Empire State Building</p>
-					</div>
-					{/* <div className="carousel__elemento">
+                <img src={img3} alt="Rock and Roll Hall of Fame" />
+                <p>Empire State Building</p>
+              </div>
+              {/* <div className="carousel__elemento">
           <img src={img1} alt="Rock and Roll Hall of Fame"/>
 						<p>Harmony Tower</p>
 					</div> */}
@@ -160,21 +152,12 @@ const GliderShow = props => {
 					</div> */}
             </div>
 
-            <button
-              aria-label="Siguiente"
-              className="carousel__siguiente"
-         
-           
-            >
+            <button aria-label="Siguiente" className="carousel__siguiente">
               <i className="fa-solid fa-hand-holding-hand"></i>
             </button>
           </div>
 
-          <div
-            role="tablist"
-            className="carousel__indicadores"
-       
-          ></div>
+          <div role="tablist" className="carousel__indicadores"></div>
         </div>
       </div>
     </>

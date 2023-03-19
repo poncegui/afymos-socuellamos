@@ -10,7 +10,7 @@ import ministerio from "../logos/logo-ministerio.jpg";
 import right from "../icons/right.svg";
 import left from "../icons/left.svg";
 
-const SlidesShow = props => {
+const SlidesShow = (props) => {
   const slideShow = useRef(null);
   const intervalSlides = useRef(null);
 
@@ -64,8 +64,7 @@ const SlidesShow = props => {
     }
   };
 
-
-///AUTOPLAY  (si no queremos autoplay, comentar este código)
+  ///AUTOPLAY  (si no queremos autoplay, comentar este código)
   useEffect(() => {
     intervalSlides.current = setInterval(() => {
       next();

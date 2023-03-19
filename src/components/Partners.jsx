@@ -49,15 +49,15 @@ const Partners = () => {
         />
 
         <ProfileChart
-           src={diputacion}
-           href="https://www.dipucr.es/"
+          src={diputacion}
+          href="https://www.dipucr.es/"
           name="Pilar Alarcón"
           profession="Licenciada"
           position="Diputación de Ciudad Real"
         />
-          <ProfileChart
-           src={castillaLaMancha}
-           href="https://www.jccm.es/"
+        <ProfileChart
+          src={castillaLaMancha}
+          href="https://www.jccm.es/"
           name="Lourdes Requena"
           profession="Junta de Comunidades de Castilla-La Mancha"
           position="Junta de Comunidades de Castilla-La Mancha"
@@ -70,8 +70,6 @@ const Partners = () => {
           profession="Licenciada"
           position="Asociación Española de Empleo con Apoyo"
         />
-  
-    
       </div>
       <div className="containerChart">
         <ProfileChart
@@ -83,21 +81,19 @@ const Partners = () => {
         />
 
         <ProfileChart
-           src={inclusion}
+          src={inclusion}
           href="https://acortar.link/tvNjS0"
           name="Pilar Alarcón"
           profession="Licenciada"
           position="Plena Inclusión"
         />
-          <ProfileChart
+        <ProfileChart
           src={europa}
           href="https://european-union.europa.eu/index_es/"
           name="Lourdes Requena"
           profession="Unión Europea"
           position="directora general afymos"
         />
-
-    
       </div>
 
       <Footer />
@@ -106,5 +102,3 @@ const Partners = () => {
 };
 
 export default Partners;
-
-

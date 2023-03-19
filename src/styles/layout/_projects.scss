@@ -1,13 +1,9 @@
-
-
 .containerServices {
   width: 90%;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
   position: relative;
-
- 
 }
 
 .containerServices::after {
@@ -115,7 +111,6 @@
 .evento:nth-child(even) {
   flex-direction: row-reverse;
   .foto {
-
     img {
       width: 100%;
       @media (max-width: 760px) {

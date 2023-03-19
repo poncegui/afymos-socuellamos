@@ -48,11 +48,11 @@
       @media (min-width: 768px) {
         height: 120px;
         font-size: 30px;
-        
+
         line-height: 35px;
       }
 
-      @media (min-width:1090px) {
+      @media (min-width: 1090px) {
         height: 130px;
 
         h4 span {
@@ -118,7 +118,7 @@
     @media (min-width: 1300px) {
       @keyframes typing {
         from {
-          width:50%;
+          width: 50%;
         }
         to {
           width: 30%;

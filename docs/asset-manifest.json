@@ -54,8 +54,5 @@
     "main.5ff59751.css.map": "./static/css/main.5ff59751.css.map",
     "main.79dfeac8.js.map": "./static/js/main.79dfeac8.js.map"
   },
-  "entrypoints": [
-    "static/css/main.5ff59751.css",
-    "static/js/main.79dfeac8.js"
-  ]
+  "entrypoints": ["static/css/main.5ff59751.css", "static/js/main.79dfeac8.js"]
 }

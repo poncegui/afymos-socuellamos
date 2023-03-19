@@ -88,13 +88,9 @@
 }
 
 .BrainhubCarousel__arrows {
-
   background-color: white;
   border-radius: 50%;
   margin: 20px;
-
-  
-
 
   @media (min-width: 768px) {
     background-color: white;
@@ -143,11 +139,7 @@
   flex-direction: column;
 } */
 
-
-  
-  
-  
-  /* .BrainhubCarousel__arrowLeft{
+/* .BrainhubCarousel__arrowLeft{
     background-color: blue;
     height: 10px;
     width: 10px;
@@ -155,7 +147,6 @@
    
   } */
 
-  .BrainhubCarousel{
-
-    height: 500px;
-  }
+.BrainhubCarousel {
+  height: 500px;
+}

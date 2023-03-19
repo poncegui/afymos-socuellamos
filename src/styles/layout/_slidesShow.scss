@@ -2,11 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 html {
-
   overflow-x: hidden;
 }
 
@@ -16,15 +14,18 @@ html {
   overflow: hidden;
 }
 
-.mainContainer { //contenedorPrincipal
-    position: relative;
-   // margin: auto;
-    
-  &__moveContainer {//contenedorSlideshow
+.mainContainer {
+  //contenedorPrincipal
+  position: relative;
+  // margin: auto;
+
+  &__moveContainer {
+    //contenedorSlideshow
     display: flex;
     flex-wrap: nowrap;
 
-    &--slide { //slice
+    &--slide {
+      //slice
       min-width: 100%;
       overflow: hidden;
       overflow-x: hidden;
@@ -40,7 +41,6 @@ html {
     }
 
     &--textTop {
-     
       background: rgba(0, 0, 0, 0.5);
       color: white;
       width: 100%;
@@ -48,13 +48,13 @@ html {
       text-align: center;
       top: 0px;
 
-       p {
+      p {
         font-size: 30px;
-       }
+      }
 
       @media (max-width: 720px) {
         position: relative;
-        background: #000; 
+        background: #000;
         font-size: 14px;
       }
     }
@@ -68,89 +68,73 @@ html {
       position: absolute;
       bottom: 0px;
 
-       p {
+      p {
         font-size: 30px;
-       }
+      }
 
       @media (max-width: 720px) {
         position: relative;
-        background: #000; 
+        background: #000;
         font-size: 14px;
       }
     }
   }
-
-
 }
-
 
 .mainContainer__containerBtns {
   overflow: hidden;
-    position: absolute;
-    top: 0px;
-    z-index: 20;
-    width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &--left {
+    pointer-events: all;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
     height: 100%;
-    pointer-events: none;
-    
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    transition: 0.3s ease all;
+  }
 
-    &--left {
-      pointer-events: all;
-      border: none;
-      background: none;
-      cursor: pointer;
-      outline: none;
-      width: 50px;
-      height: 100%;
-      text-align: center;
-      justify-content: center;
-      position: absolute;
-      transition: 0.3s ease all;
-     
-     
+  &--left:hover {
+    background: rgba(0, 0, 0, 0.2);
+    path {
+      fill: #fff;
     }
+  }
 
-    &--left:hover {
-      background: rgba(0, 0, 0, 0.2);
-      path {
-        fill: #fff;
-      }
+  &--right {
+    pointer-events: all;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    transition: 0.3s ease all;
+    right: 0;
+  }
 
+  &--right:hover {
+    background: rgba(0, 0, 0, 0.2);
+    path {
+      fill: #fff;
     }
-
-    &--right {
-      pointer-events: all;
-      border: none;
-      background: none;
-      cursor: pointer;
-      outline: none;
-      width: 50px;
-      height: 100%;
-      text-align: center;
-      justify-content: center;
-      position: absolute;
-      transition: 0.3s ease all;
-      right: 0;
-  
-
-    
-    }
-
-    &--right:hover {
-      background: rgba(0, 0, 0, 0.2);
-      path {
-        fill: #fff;
-      }
-
-    }
-
-
+  }
 }
 
-
-
 .slideTransition {
-
   min-width: 100%;
   transition: 0.3 ease all;
   z-index: 10;
@@ -162,11 +146,10 @@ html {
     width: 100vh;
     vertical-align: top;
   }
-  
+
   @media (max-width: 720px) {
     position: relative;
     background: #000;
     max-height: 300px;
   }
-
 }

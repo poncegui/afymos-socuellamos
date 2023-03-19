@@ -9,7 +9,7 @@ import foto6 from "../images/foto6.jpg";
 import right from "../icons/right.svg";
 import left from "../icons/left.svg";
 
-const SlidesShow = props => {
+const SlidesShow = (props) => {
   const slideShow = useRef(null);
   const intervalSlides = useRef(null);
 
@@ -63,8 +63,7 @@ const SlidesShow = props => {
     }
   };
 
-
-///AUTOPLAY  (si no queremos autoplay, comentar este código)
+  ///AUTOPLAY  (si no queremos autoplay, comentar este código)
   // useEffect(() => {
   //   intervalSlides.current = setInterval(() => {
   //     next();
@@ -85,8 +84,6 @@ const SlidesShow = props => {
 
   return (
     <>
-
-
       {/* contenedorPrincipal */}
       <div className="mainContainer">
         {/* contenedorSlidesShow */}
@@ -97,7 +94,6 @@ const SlidesShow = props => {
               <img src={foto7} alt="" />
             </a>
           </div>
-   
         </div>
 
         <div className="mainContainer__containerBtns">
@@ -115,7 +111,6 @@ const SlidesShow = props => {
           </button>
         </div>
       </div>
-   
     </>
   );
 };

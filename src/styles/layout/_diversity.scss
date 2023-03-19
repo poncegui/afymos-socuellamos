@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   margin: 50px 0px;
- 
 
   @media (min-width: 768px) {
     margin: 70px;
@@ -28,7 +27,6 @@
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
- 
   }
 
   &__wrapPhoto {
@@ -113,7 +111,6 @@
       color: black;
     }
 
-
     h4:first-letter {
       font-size: 150%;
       font-weight: bold;
@@ -122,7 +119,6 @@
     @media (min-width: 768px) {
       width: 60%;
       height: 100%;
-  
 
       i,
       h4 {
@@ -143,9 +139,9 @@
         text-align: left;
         cursor: pointer;
         &:hover {
-          color:grey;
-           transition: all 0.5s ease-out;
-         }
+          color: grey;
+          transition: all 0.5s ease-out;
+        }
       }
 
       h4 {
@@ -153,7 +149,7 @@
         text-decoration: none;
 
         &:hover {
-         color:grey;
+          color: grey;
           transition: all 0.5s ease-out;
         }
       }

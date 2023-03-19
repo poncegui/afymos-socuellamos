@@ -5,10 +5,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__btn">
-      <Link to="#menu-principal" className="footer__btn--arrow" alt="menú principal" >
-      <i className="fa-solid fa-chevron-up"></i>
-      </Link>
-      
+        <Link
+          to="#menu-principal"
+          className="footer__btn--arrow"
+          alt="menú principal"
+        >
+          <i className="fa-solid fa-chevron-up"></i>
+        </Link>
       </div>
 
       <div className="index-footer__wrapper">
@@ -17,7 +20,6 @@ const Footer = () => {
           <nav>
             <ul>
               <li>
-    
                 <a
                   className="box1__display--list"
                   href="https://acortar.link/O2NBKp"
@@ -102,27 +104,28 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          
         </div>
       </div>
       <div className="index-footer__contact--socialmedia">
-            {/* <a href="" target="_blank">
+        {/* <a href="" target="_blank">
               <i className="fa-brands fa-linkedin-in"></i>
             </a> */}
-            <a href="https://www.instagram.com/afymos/?hl=es" alt="Instagram" target="_blank">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            {/* <a href="" alt="Twitter" target="_blank">
+        <a
+          href="https://www.instagram.com/afymos/?hl=es"
+          alt="Instagram"
+          target="_blank"
+        >
+          <i className="fa-brands fa-instagram"></i>
+        </a>
+        {/* <a href="" alt="Twitter" target="_blank">
               <i className="fa-brands fa-twitter"></i>
             </a> */}
-            <a href="https://acortar.link/tvNjS0" alt="Facebook" target="_blank" >
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-          </div>
+        <a href="https://acortar.link/tvNjS0" alt="Facebook" target="_blank">
+          <i className="fa-brands fa-facebook"></i>
+        </a>
+      </div>
     </footer>
   );
 };
 
 export default Footer;
-
-

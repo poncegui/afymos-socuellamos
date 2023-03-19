@@ -23,54 +23,50 @@ const Navbar = (props) => {
 
   return (
     <>
-    
-        
       <Hero>
-          <h1>{props.title}</h1>
-          <img
-            className="header_superior__container--logo"
-            src={logo}
-            alt={props.alt}
-          />
-        </Hero>
-        <NavContainer id="menu-principal" data-aos="fade-right">
-          <Link className="Link" to="/" onClick={handleBack}>
-            <div className="containerPrincipal">
-              <i class="fa-solid fa-angles-left"></i>
-              <h3>
-                volver a <span>Principal</span>
-              </h3>
-            </div>
+        <h1>{props.title}</h1>
+        <img
+          className="header_superior__container--logo"
+          src={logo}
+          alt={props.alt}
+        />
+      </Hero>
+      <NavContainer id="menu-principal" data-aos="fade-right">
+        <Link className="Link" to="/" onClick={handleBack}>
+          <div className="containerPrincipal">
+            <i class="fa-solid fa-angles-left"></i>
+            <h3>
+              volver a <span>Principal</span>
+            </h3>
+          </div>
+        </Link>
+
+        <div className={`links ${clicked ? "active" : ""}`}>
+          <Link onClick={handleClick} to="#aboutUs" data-aos="fade-left">
+            nosotros
           </Link>
-
-          <div className={`links ${clicked ? "active" : ""}`}>
-            <Link onClick={handleClick} to="#aboutUs" data-aos="fade-left">
-              nosotros
-            </Link>
-            <Link
-              onClick={handleClick}
-              to="/centro-diversidad"
-              data-aos="fade-left"
-            >
-              centro diversidad
-            </Link>
-            <Link onClick={handleClick} to="/programas" data-aos="fade-left">
-              programas
-            </Link>
-            <Link onClick={handleClick} to="/donaciones" data-aos="fade-left">
-              donaciones
-            </Link>
-            <Link onClick={handleClick} to="/contacto" data-aos="fade-left">
-              contacto
-            </Link>
-          </div>
-          <div className="burguer">
-            <BurguerBtn clicked={clicked} handleClick={handleClick} />
-          </div>
-          <BgDiv className={`initial ${clicked ? " active" : ""}`}></BgDiv>
-        </NavContainer>
-
-   
+          <Link
+            onClick={handleClick}
+            to="/centro-diversidad"
+            data-aos="fade-left"
+          >
+            centro diversidad
+          </Link>
+          <Link onClick={handleClick} to="/programas" data-aos="fade-left">
+            programas
+          </Link>
+          <Link onClick={handleClick} to="/donaciones" data-aos="fade-left">
+            donaciones
+          </Link>
+          <Link onClick={handleClick} to="/contacto" data-aos="fade-left">
+            contacto
+          </Link>
+        </div>
+        <div className="burguer">
+          <BurguerBtn clicked={clicked} handleClick={handleClick} />
+        </div>
+        <BgDiv className={`initial ${clicked ? " active" : ""}`}></BgDiv>
+      </NavContainer>
     </>
   );
 };
@@ -78,13 +74,11 @@ const Navbar = (props) => {
 export default Navbar;
 
 const NavContainer = styled.nav`
-
   background-color: black;
   height: 100px;
   width: 100%;
   position: sticky;
-  top:0;
-
+  top: 0;
 
   z-index: 50;
 
@@ -100,7 +94,6 @@ const NavContainer = styled.nav`
 
     @media (max-width: 768px) {
       margin-left: 40px;
- 
     }
   }
 
@@ -223,16 +216,14 @@ const Hero = styled.nav`
   z-index: 20;
   background-color: pink;
 
-
   h1 {
     text-align: center;
     color: black;
     font-weight: bold;
     text-transform: lowercase;
-    font-size:70px;
+    font-size: 70px;
   }
   img {
-
   }
   span {
     color: white;

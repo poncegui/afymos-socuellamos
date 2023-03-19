@@ -1,2 +1,3 @@
 # Website responsive para la asociación AFYMOS
-#WORK IN PROGRESS...   :)
+
+#WORK IN PROGRESS... :)

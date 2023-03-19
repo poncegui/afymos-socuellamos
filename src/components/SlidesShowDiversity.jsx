@@ -9,7 +9,7 @@ import ocupacional from "../images-center/sala-ocupacional.png";
 import right from "../icons/right.svg";
 import left from "../icons/left.svg";
 
-const SlidesShow = props => {
+const SlidesShow = (props) => {
   const slideShow = useRef(null);
   const intervalSlides = useRef(null);
 
@@ -63,8 +63,7 @@ const SlidesShow = props => {
     }
   };
 
-
-///AUTOPLAY  (si no queremos autoplay, comentar este código)
+  ///AUTOPLAY  (si no queremos autoplay, comentar este código)
   useEffect(() => {
     intervalSlides.current = setInterval(() => {
       next();
@@ -85,34 +84,30 @@ const SlidesShow = props => {
 
   return (
     <>
-
-
       {/* contenedorPrincipal */}
       <div className="mainContainer">
         {/* contenedorSlidesShow */}
-   
-        <div className="mainContainer__moveContainer slideTransition" ref={slideShow}>
-          
-          {/* Slides */}
 
-      
+        <div
+          className="mainContainer__moveContainer slideTransition"
+          ref={slideShow}
+        >
+          {/* Slides */}
 
           <div className="mainContainer__moveContainer--slide ">
             <a href="https://www.falconmaters.com">
               <img src={fisioterapia} alt="" />
             </a>
-    
 
             <div className="mainContainer__moveContainer--textBottom">
               <p>sala de fisioterapia</p>
             </div>
-           
           </div>
           <div className="mainContainer__moveContainer--slide">
             <a href="https://www.falconmaters.com">
               <img src={cocina} alt="" />
             </a>
-     
+
             <div className="mainContainer__moveContainer--textBottom">
               <p>cocina</p>
             </div>
@@ -121,7 +116,6 @@ const SlidesShow = props => {
             <a href="https://www.falconmaters.com">
               <img src={informatica} alt="" />
             </a>
-       
 
             <div className="mainContainer__moveContainer--textBottom">
               <p>sala de informática</p>
@@ -131,7 +125,7 @@ const SlidesShow = props => {
             <a href="https://www.falconmaters.com">
               <img src={formacion} alt="" />
             </a>
-      
+
             <div className="mainContainer__moveContainer--textBottom">
               <p>sala de formación para empleo</p>
             </div>
@@ -140,12 +134,11 @@ const SlidesShow = props => {
             <a href="https://www.falconmaters.com">
               <img src={ocupacional} alt="" />
             </a>
-      
+
             <div className="mainContainer__moveContainer--textBottom">
               <p>sala de terapia ocupacional</p>
             </div>
           </div>
-    
         </div>
 
         <div className="mainContainer__containerBtns">
@@ -159,11 +152,10 @@ const SlidesShow = props => {
             className="mainContainer__containerBtns--right"
             onClick={next}
           >
-           <img src={right} alt="" />
+            <img src={right} alt="" />
           </button>
         </div>
       </div>
-   
     </>
   );
 };

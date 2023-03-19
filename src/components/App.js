@@ -29,7 +29,6 @@ const App = () => {
   //States
   const [textIsOpenMain, setTextIsOpenMain] = useState(false);
 
-
   //Events
   const handleToggleMain = () => {
     setTextIsOpenMain(!textIsOpenMain);
@@ -69,7 +68,7 @@ const App = () => {
               {/* <Job /> */}
               <Slider />
               <Diversity />
-        
+
               <div className="container__cards"></div>
 
               <Footer />

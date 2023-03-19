@@ -21,27 +21,27 @@ const FlipCard = (props) => {
   return (
     <>
       <div className="containerServices">
-      <div className="evento">
-        <ReactCardFlip
-          isFlipped={isFlipped}
-          flipDirection={`${props.flipDirection}`}
-        >
-          <div className="foto" data-aos={`${props.dataAos}`}>
-            <img src={props.srcFront} alt="" onClick={handleFlipped} />
-          </div>
+        <div className="evento">
+          <ReactCardFlip
+            isFlipped={isFlipped}
+            flipDirection={`${props.flipDirection}`}
+          >
+            <div className="foto" data-aos={`${props.dataAos}`}>
+              <img src={props.srcFront} alt="" onClick={handleFlipped} />
+            </div>
 
-          <div className="foto" data-aos={`${props.dataAos}`}>
-            <img
-              src={props.srcBack}
-              alt={`${props.alt}`}
-              onClick={handleFlipped}
-            />
-          </div>
-        </ReactCardFlip>
-        <Link className="service" to={`${props.to}`}>
-          <h3>{props.text}</h3>
-        </Link>
-      </div>
+            <div className="foto" data-aos={`${props.dataAos}`}>
+              <img
+                src={props.srcBack}
+                alt={`${props.alt}`}
+                onClick={handleFlipped}
+              />
+            </div>
+          </ReactCardFlip>
+          <Link className="service" to={`${props.to}`}>
+            <h3>{props.text}</h3>
+          </Link>
+        </div>
       </div>
     </>
   );
