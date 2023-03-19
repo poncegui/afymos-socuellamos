@@ -60,7 +60,7 @@
 
       &--logo {
         display: block;
-        height: 100px;
+        height: 80px;
       }
 
       &--title {
@@ -119,34 +119,44 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  text-align: center;
 
-  &__phrase {
+  &__container {
     display: flex;
-    margin: auto;
-    justify-content: center;
-
-    @media (min-width: 768px) {
-      position: relative;
-      height: 80vh;
-    }
-
+    flex-direction: column;
+    gap: 1rem;
     @media (min-width: 1090px) {
-      height: 100vh;
+      gap: 2rem;
     }
-  }
 
-  &__author {
-    font-size: 12px;
-    font-weight: normal;
-    margin-top: 20px;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 50px;
-  }
+    &--phrase {
+      margin-top: 80px;
+      padding: 0 20px;
+      font-size: 20px;
 
-  @media (min-width: 768px) {
-    &__author {
-      font-size: 24px;
+      @media (min-width: 768px) {
+        padding: 0 50px;
+        font-size: 32px;
+      }
+      @media (min-width: 1090px) {
+        font-size: 36px;
+      }
+    }
+
+    &--author {
+      font-size: 12px;
+      font-weight: normal;
+      margin: 20px 0;
+      font-weight: bold;
+      font-style: italic;
+
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
+
+      @media (min-width: 1090px) {
+        font-size: 28px;
+      }
     }
   }
 }

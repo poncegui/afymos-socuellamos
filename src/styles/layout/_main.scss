@@ -25,6 +25,7 @@
     background: black;
     text-align: center;
     align-items: center;
+    line-height: 20px;
 
     h4 {
       width: 100%;
@@ -33,7 +34,6 @@
       color: #fff;
       padding-left: 15px;
       font-size: 28px;
-      line-height: 32px;
     }
 
     h4 span {
@@ -43,22 +43,23 @@
       font-size: 40px;
       background: black;
       border-left: 3px solid pink;
-      animation: typing 5s steps(25) infinite;
+      line-height: 35px;
+      animation: typing 5s steps(25) normal;
+    }
 
-      @media (min-width: 768px) {
-        height: 120px;
-        font-size: 30px;
-
-        line-height: 35px;
+    @media (min-width: 768px) {
+      h4 {
+        font-size: 36px;
+        white-space: nowrap;
+        line-height: 20px;
       }
+    }
 
-      @media (min-width: 1090px) {
-        height: 130px;
-
-        h4 span {
-          font-size: 32px;
-          line-height: 40px;
-        }
+    @media (min-width: 1090px) {
+      h4 {
+        font-size: 40px;
+        line-height: 10px;
+        min-width: 800px;
       }
     }
 
@@ -67,7 +68,7 @@
         width: 75%;
       }
       to {
-        width: 30%;
+        width: 0%;
       }
     }
 
@@ -85,10 +86,10 @@
     @media (min-width: 320px) {
       @keyframes typing {
         from {
-          width: 65%;
+          width: 70%;
         }
         to {
-          width: 25%;
+          width: 5%;
         }
       }
     }
@@ -99,18 +100,18 @@
           width: 50%;
         }
         to {
-          width: 25%;
+          width: 20%;
         }
       }
     }
 
-    @media (min-width: 1090px) {
+    @media (min-width: 1024px) {
       @keyframes typing {
         from {
           width: 55%;
         }
         to {
-          width: 25%;
+          width: 30%;
         }
       }
     }
@@ -131,22 +132,6 @@
       font-weight: bold;
       color: gray;
       margin-bottom: 20px;
-    }
-
-    @media (min-width: 768px) {
-      h4 {
-        font-size: 36px;
-        white-space: nowrap;
-        line-height: 40px;
-      }
-    }
-
-    @media (min-width: 1090px) {
-      h4 {
-        font-size: 50px;
-        line-height: 60px;
-        min-width: 800px;
-      }
     }
   }
 

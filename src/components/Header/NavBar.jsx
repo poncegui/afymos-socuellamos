@@ -59,7 +59,6 @@ const NavContainer = styled.nav`
       font-weight: bold;
     }
   }
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,13 +68,13 @@ const NavContainer = styled.nav`
     text-decoration: none;
     margin-right: 5%;
   }
+
   .links {
     position: absolute;
     width: 60%;
     top: -700px;
     left: -2000px;
     right: 0;
-
     text-align: center;
     transition: all 0.5s ease;
     a {

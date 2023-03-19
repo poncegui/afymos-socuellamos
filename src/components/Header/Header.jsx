@@ -47,11 +47,12 @@ const Header = () => {
         </div>
 
         <section className="slogan">
-          <h3 className="slogan__phrase">
-            "Dadme un punto de apoyo y moveré el mundo."
-            <br></br>
-            Arquímedes Siracoussa
-          </h3>
+          <div className="slogan__container">
+            <h3 className="slogan__container--phrase">
+              "Dadme un punto de apoyo y moveré el mundo."{" "}
+            </h3>
+            <h5>Arquímedes Siracoussa</h5>
+          </div>
         </section>
       </header>
     </>
