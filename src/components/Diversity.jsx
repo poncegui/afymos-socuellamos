@@ -29,10 +29,10 @@ const Diversity = (props) => {
             <div className="mainContainerDiversity__wrapText--icon">
               <i className="fa-solid fa-house-user"></i>
               <Link to="/servicios-y-proyectos">
-                <h4>centro diversidad</h4>
+                <h4>nuestras instalaciones</h4>
               </Link>
             </div>
-            <div className="mainContainerDiversity__wrapText--icon">
+            {/* <div className="mainContainerDiversity__wrapText--icon">
             <i class="fa-solid fa-rectangle-list"></i>
               <Link to="/servicios-y-proyectos">
                 <h4>programas</h4>
@@ -51,7 +51,7 @@ const Diversity = (props) => {
               <Link to="/certificados">
                 <h4>nuestros certificados</h4>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

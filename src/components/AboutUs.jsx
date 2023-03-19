@@ -1,6 +1,6 @@
-import children from "../images-services/voluntariado2.jpg";
+
 import SlidesShowAboutUs from "./SlidesShowAboutUs";
-import { Link } from "react-router-dom";
+
 
 const AboutUs = (props) => {
   const links = document.querySelectorAll(".links");
@@ -31,41 +31,17 @@ const AboutUs = (props) => {
            
         
         <div className="mainContainerAboutUs__wrapText">
-{/*                 
-                            <div className="mainContainerAboutUs__wrapText--icon">
-                            <i className="fa-solid fa-person-digging"></i>
-                            <Link to="/servicios-y-proyectos">
-                            <h4>servicios</h4>
-                            </Link>
-                            </div> */}
+                
+                  
                             
                             <div className="mainContainerAboutUs__wrapText--icon">
-                            <i className="fa-solid fa-hand-holding-heart"></i>
-                            <a href="https://www.falconmaters.com">
-                            <h4>sensibilización</h4>
-                            </a>
+                            {/* <i className="fa-solid fa-hand-holding-heart"></i> */}
+        
+                            <h4>vida en comunidad:</h4>
+                            <h5>"Integración, inclusión y otra"</h5>
+                    
                             </div>
 
-                            <div className="mainContainerAboutUs__wrapText--icon">
-                            <i className="fa-solid fa-hand-holding-hand"></i>
-                            <Link to="/colaboradores">
-                            <h4>colaboradores</h4>
-                            </Link>
-                            </div>
-
-                            <div className="mainContainerAboutUs__wrapText--icon">
-                            <i className="fa-solid fa-sitemap"></i>
-                            <Link to="/organigrama">
-                            <h4>organigrama</h4>
-                            </Link>
-                            </div>
-
-                            <div className="mainContainerAboutUs__wrapText--icon">
-                            <i className="fa-solid fa-eye"></i>
-                            <a href="https://www.falconmaters.com">
-                            <h4>transparencia</h4>
-                            </a>
-                            </div>
         </div>
 
     </div>

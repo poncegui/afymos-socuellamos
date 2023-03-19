@@ -7,30 +7,30 @@ import Header from "./Header";
 function Navbar() {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
-    //cuando esta true lo pasa a false y vice versa
     setClicked(!clicked);
   };
   return (
     <>
       <NavContainer id="menu-principal">
-        <h2>
+        <h3>
           Menú <span>Principal</span>
-        </h2>
+        </h3>
         <div className={`links ${clicked ? "active" : ""}`}>
-          <Link onClick={handleClick} to="#aboutUs">
+        <Link onClick={handleClick} to="/organigrama">
             nosotros
           </Link>
-          <Link onClick={handleClick} to="/centro-diversidad">
-            centro diversidad
+          <Link onClick={handleClick} to="/servicios">
+            servicios
           </Link>
-          <Link onClick={handleClick} to="/programas">
-            programas
-          </Link>
+      
           <Link onClick={handleClick} to="/donaciones">
             donaciones
           </Link>
           <Link onClick={handleClick} to="/contacto">
             contacto
+          </Link>
+          <Link onClick={handleClick} to="/hazte-socio">
+            hazte socio
           </Link>
         </div>
         <div className="burguer">
@@ -46,34 +46,35 @@ function Navbar() {
 export default Navbar;
 
 const NavContainer = styled.nav`
-  height: 100px;
+background-color: #000;
+  height: 10vh;
   width: 100%;
-
   z-index: 50;
 
-  h2 {
+  h3 {
     color: pink;
     font-weight: 400;
-    margin-left: 20px;
+    margin-left: 5%;
     span {
       font-weight: bold;
     }
   }
-  padding: 0.4rem;
-  //   background-color: #333;
-  background-color: #000;
+
+
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   a {
     color: white;
     text-decoration: none;
-    margin-right: 1.5rem;
+    margin-right: 5%;
     
   }
   .links {
     position: absolute;
-
+    width: 60%;
     top: -700px;
     left: -2000px;
     right: 0;
@@ -85,11 +86,12 @@ const NavContainer = styled.nav`
       font-size: 1.2rem;
       display: block;
     }
+
     @media (min-width: 1090px) {
       position: initial;
       margin: 0;
       a {
-        font-size: 1.8rem;
+        font-size: 18px;
         margin-left: 30px;
         color: white;
         display: inline;
@@ -102,24 +104,26 @@ const NavContainer = styled.nav`
       display: block;
     }
   }
+
+
   .links.active {
-    @media (max-width: 1090px) {
+    @media (max-width: 768px) {
       background-color: #000;
-    border-radius: 0 0 90% 0;
-      height:300px;
+    border-radius: 0 0 80% 0;
+      height:30%;
       width: 100%;
       display: block;
       position: absolute;
       margin-left: auto;
       margin-right: auto;
-      top: 90px;
+      top: 11%;
       left: 0;
       right: 0;
       text-align: center;
 
       a {
-        font-size: 1.6rem;
-        margin-top: 0.8rem;
+        font-size: 18px;
+        margin-top: 5%;
         color: pink;
         cursor: pointer;
 
@@ -131,13 +135,14 @@ const NavContainer = styled.nav`
       }
     }
 
-    @media(max-width: 768px){
-
-    }
 
   }
 
   .burguer {
+    width: 50px;
+    height: 50px;
+    margin:3%;
+
     @media (min-width: 1090px) {
       display: none;
     }
@@ -145,12 +150,12 @@ const NavContainer = styled.nav`
 `;
 
 const BgDiv = styled.div`
-  // background-color: #222;
+
   position: absolute;
   top: -1000px;
   left: -1000px;
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 30%;
   margin-left: 30px;
   z-index: -1;
   transition: all 0.8s ease;
@@ -159,7 +164,7 @@ const BgDiv = styled.div`
     border-radius: 0 0 80% 0;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
   }
 `;

@@ -18,6 +18,7 @@ import Projects from "./Projects";
 import AboutUs from "./AboutUs";
 import Slider from "./Carousel/Slider";
 import Diversity from "./Diversity";
+import Job from "./Job";
 import ContactUs from "./ContactUs";
 import Programs from "./Programs";
 import Chart from "./Chart/Chart";
@@ -65,6 +66,7 @@ const App = () => {
                 toggleStatusMain={textIsOpenMain}
               />
               <AboutUs />
+              {/* <Job /> */}
               <Slider />
               <Diversity />
         

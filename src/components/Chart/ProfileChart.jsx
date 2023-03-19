@@ -15,6 +15,7 @@ const ProfileChart = props =>{
         </div>
         <div class="face back">
             <h3>{props.name}</h3>
+            {/* <img src={props.src} alt=""/> */}
             <p>{props.profession}</p>
             <div class="link">
             <a href={props.href} alt="Facebook" target="_blank" >

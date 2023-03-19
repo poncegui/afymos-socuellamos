@@ -10,26 +10,21 @@
 
   &__entidad {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    @media (min-width: 768px) {
+    @media (min-width: 320px) {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
     }
   }
-
 
   &__title {
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 100px;
     background: black;
-    justify-content: center;
+    text-align: center;
     align-items: center;
-
-    @media (min-width: 768px) {
-      height: 250px;
-    }
 
     h4 {
       width: 100%;
@@ -37,25 +32,32 @@
       float: left;
       color: #fff;
       padding-left: 15px;
-      font-size: 30px;
+      font-size: 28px;
+      line-height: 32px;
     }
 
     h4 span {
       position: absolute;
       right: 0;
       width: 0;
-      font-size: 50px;
+      font-size: 40px;
       background: black;
       border-left: 3px solid pink;
-      animation: typing 5s steps(25) infinite alternate;
-
-
+      animation: typing 5s steps(25) infinite;
 
       @media (min-width: 768px) {
+        height: 120px;
+        font-size: 30px;
+        
+        line-height: 35px;
+      }
+
+      @media (min-width:1090px) {
+        height: 130px;
+
         h4 span {
-          font-size: 50px;
-          line-height: 180px;
-          padding: 0 0 0 50px;
+          font-size: 32px;
+          line-height: 40px;
         }
       }
     }
@@ -67,7 +69,6 @@
       to {
         width: 30%;
       }
-
     }
 
     @media (min-width: 360px) {
@@ -81,13 +82,13 @@
       }
     }
 
-    @media (min-width: 390px) {
+    @media (min-width: 320px) {
       @keyframes typing {
         from {
-          width: 60%;
+          width: 65%;
         }
         to {
-          width: 10%;
+          width: 25%;
         }
       }
     }
@@ -95,10 +96,10 @@
     @media (min-width: 768px) {
       @keyframes typing {
         from {
-          width: 65%;
+          width: 50%;
         }
         to {
-          width: 30%;
+          width: 25%;
         }
       }
     }
@@ -106,10 +107,10 @@
     @media (min-width: 1090px) {
       @keyframes typing {
         from {
-          width: 75%;
+          width: 55%;
         }
         to {
-          width: 35%;
+          width: 25%;
         }
       }
     }
@@ -117,7 +118,7 @@
     @media (min-width: 1300px) {
       @keyframes typing {
         from {
-          width: 78%;
+          width:50%;
         }
         to {
           width: 30%;
@@ -134,16 +135,16 @@
 
     @media (min-width: 768px) {
       h4 {
-        font-size: 50px;
-        line-height: 180px;
-        padding: 0 0 0 50px;
+        font-size: 36px;
+        white-space: nowrap;
+        line-height: 40px;
       }
     }
 
     @media (min-width: 1090px) {
       h4 {
-        font-size: 60px;
-        line-height: 200px;
+        font-size: 50px;
+        line-height: 60px;
         min-width: 800px;
       }
     }
@@ -178,10 +179,9 @@
       background-color: rgb(245, 159, 175);
 
       p {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
       }
     }
   }
-
 }
