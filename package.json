@@ -7,7 +7,6 @@
     "@brainhubeu/react-carousel": "^2.0.4",
     "@glidejs/glide": "^3.5.2",
     "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
     "node-sass": "^7.0.1",
@@ -49,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^12.1.5",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "prettier": "2.8.4"

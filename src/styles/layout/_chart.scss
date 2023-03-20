@@ -31,7 +31,6 @@
 }
 
 .card .front {
-  transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
 }
 
@@ -54,7 +53,6 @@
 }
 
 .card .back {
-  transform: perspective(600px) rotateY(180deg);
   background: black;
   padding: 15px;
   color: pink;
@@ -93,23 +91,18 @@
   letter-spacing: 1px;
 }
 
-.card:hover .front {
-  transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back {
-  transform: perspective(600px) rotateY(360deg);
-}
-
 .containerChart {
-  display: flex;
-  flex-direction: row;
-  margin: 100px 200px;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    margin: 50px 80px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 368px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }

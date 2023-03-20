@@ -38,8 +38,8 @@ const App = () => {
     <>
       <Routes>
         <Route path="/contacto" element={<ContactUs />} />
-        {/* <Route 
-                  path='*' element={<NotFoundPage />} 
+        {/* <Route
+                  path='*' element={<NotFoundPage />}
                   /> */}
 
         <Route path="/centro-diversidad" element={<Center />} />

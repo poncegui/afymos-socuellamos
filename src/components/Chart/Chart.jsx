@@ -1,189 +1,32 @@
-import ProfileChart from "./ProfileChart";
-import NavBarTemplate from "../templates/NavBarTemplate";
-import image from "../../images-chart/chart1.jpg";
-import image2 from "../../images-chart/chart2.jpg";
-import image3 from "../../images-chart/chart3.jpg";
-import image4 from "../../images-chart/chart4.jpg";
-import image5 from "../../images-chart/chart5.jpg";
-import image6 from "../../images-chart/chart6.jpg";
-import image7 from "../../images-chart/chart7.jpg";
-import image8 from "../../images-chart/chart8.jpg";
-import image9 from "../../images-chart/chart9.jpg";
-import image10 from "../../images-chart/chart10.jpg";
-import image11 from "../../images-chart/chart11.jpg";
-import image12 from "../../images-chart/chart12.jpg";
-import image13 from "../../images-chart/chart13.jpg";
-import image14 from "../../images-chart/chart14.jpg";
-import image15 from "../../images-chart/chart15.jpg";
-import image16 from "../../images-chart/chart16.jpg";
-import image17 from "../../images-chart/chart17.jpg";
-import image18 from "../../images-chart/chart18.jpg";
-import image19 from "../../images-chart/chart19.jpg";
-import image20 from "../../images-chart/chart20.jpg";
+import React, { useState } from "react";
+import styled from "styled-components";
+import foto from "../../images-chart/chartTeam1.jpg";
 
 import Footer from "../Footer";
+import NavBarTemplate from "../templates/NavBarTemplate";
+import { personsChart } from "../Chart/services/ApiChart";
+import ProfileChart from "./ProfileChart";
 
-const Chart = () => {
+const Chart = (props) => {
+  const [persons, setPersons] = useState(personsChart);
+
   return (
     <>
       <NavBarTemplate title="junta directiva" alt="" />
-      <div className="backgroundChart">Junta Directiva</div>
-
-      <div className="containerChart">
-        <ProfileChart
-          src={image}
-          href="https://acortar.link/tvNjS0"
-          name="Lourdes Requena"
-          profession="educadora social"
-          position="directora general afymos"
-        />
-
-        <ProfileChart
-          src={image2}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image3}
-          href="https://acortar.link/tvNjS0"
-          name="Lourdes Requena"
-          profession="educadora social"
-          position="directora general afymos"
-        />
-
-        <ProfileChart
-          src={image4}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-      </div>
-      <div className="containerChart">
-        <ProfileChart
-          src={image5}
-          href="https://acortar.link/tvNjS0"
-          name="Lourdes Requena"
-          profession="educadora social"
-          position="directora general afymos"
-        />
-
-        <ProfileChart
-          src={image6}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image7}
-          href="https://acortar.link/tvNjS0"
-          name="Lourdes Requena"
-          profession="educadora social"
-          position="directora general afymos"
-        />
-
-        <ProfileChart
-          src={image8}
-          href="https://acortar.link/tvNjS0"
-          name="Victoria Moreno Sáez"
-          profession="Tecnico"
-          position="la de las webs"
-        />
-      </div>
-
-      <div className="containerChart">
-        <ProfileChart
-          src={image9}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image10}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image11}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image12}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-      </div>
-      <div className="containerChart">
-        <ProfileChart
-          src={image13}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image14}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image15}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image16}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-      </div>
-      <div className="containerChart">
-        <ProfileChart
-          src={image17}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image18}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image19}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-        <ProfileChart
-          src={image20}
-          href="https://acortar.link/tvNjS0"
-          name="Pilar Alarcón"
-          profession="Licenciada"
-          position="la de las webs"
-        />
-      </div>
+      <BackgroundChart>Junta Directiva</BackgroundChart>
+      <ContainerListChart>
+        {persons.map((person) => {
+          return (
+            <ProfileChart
+              key={person.id}
+              name={person.name}
+              img={person.img}
+              role={person.role}
+              profession={props.profession}
+            />
+          );
+        })}
+      </ContainerListChart>
 
       <button>Descargar estatutos</button>
       <button>Cuentas anuales</button>
@@ -194,3 +37,33 @@ const Chart = () => {
 };
 
 export default Chart;
+
+export const BackgroundChart = styled.div`
+  background: linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)),
+    url("../../images-chart/chartTeam1.jpg");
+  min-width: 100vh;
+  background-size: 100%;
+  background-position: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  z-index: 20;
+`;
+
+export const ContainerListChart = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 368px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+`;

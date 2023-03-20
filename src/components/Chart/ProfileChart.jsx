@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const target = "_blank";
@@ -8,35 +7,35 @@ const rel = "fa-brands fa-facebook";
 const facebook = "fa-brands fa-facebook";
 
 const ProfileChart = (props) => {
+  const [faceCard, setFaceCard] = useState(true);
   return (
     <>
-      <Card
-        class="card"
-        onClick={(e) => {
-          e.currentTarget();
-          console.log("The link was clicked.");
-        }}
-      >
-        <FaceFront class="face front">
-          <ImgFront src={props.src} alt={props.alt} />
-          <FaceFrontPosition>{props.position}</FaceFrontPosition>
-        </FaceFront>
-        <FaceBack class="face back">
-          <TitleBackName>{props.name}</TitleBackName>
-          {/* <img src={props.src} alt=""/> */}
-          <FaceBackProfession>{props.profession}</FaceBackProfession>
-          <ContainerSocial class="link">
+      {faceCard ? (
+        <Card>
+          <FaceFront>
+            <ImgFront src={props.img} alt={props.alt} />
+            <h3>{props.role}</h3>
+          </FaceFront>
+        </Card>
+      ) : (
+        <Card>
+          <FaceBack>
+            <TitleBackName>{props.name}</TitleBackName>
+            {/* <img src={props.src} alt=""/> */}
+            <FaceBackProfession>{props.profession}</FaceBackProfession>
+            {/* <ContainerSocial class="link">
             <Link
-              to={props.href}
+              href={props.href}
               alt={props.Facebook}
               target={target}
               rel={rel}
             >
               <i className={facebook}></i>
             </Link>
-          </ContainerSocial>
-        </FaceBack>
-      </Card>
+          </ContainerSocial> */}
+          </FaceBack>
+        </Card>
+      )}
     </>
   );
 };
@@ -44,11 +43,12 @@ const ProfileChart = (props) => {
 export default ProfileChart;
 
 export const Card = styled.div`
+  background-color: #f2f2f2;
   display: flex;
-  position: relative;
-  width: 300px;
-  height: 350px;
-  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 250px;
 `;
 
 export const FaceFront = styled.div`
@@ -61,14 +61,9 @@ export const FaceFront = styled.div`
   transform: perspective(600px) rotateY(0deg);
   transition: 0.5s;
   width: 100%;
-
-  :hover {
-    transform: perspective(600px) rotateY(180deg);
-  }
 `;
 
 export const ImgFront = styled.div`
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -83,11 +78,6 @@ export const FaceBack = styled.div`
   justify-content: space-between;
   padding: 15px;
   text-align: center;
-  transform: perspective(600px) rotateY(180deg);
-
-  :hover {
-    transform: perspective(600px) rotateY(180deg);
-  }
 `;
 
 export const TitleBackName = styled.div`
