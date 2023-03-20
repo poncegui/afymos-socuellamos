@@ -12,11 +12,12 @@ import "../styles/main.scss";
 import Header from "./Header/Header";
 import NavBar from "./Header/NavBar";
 import Partners from "./Partners";
-import Main from "./Main";
+import Main from "./main/Main";
 import Donation from "./Donation";
 import Projects from "./Projects";
-import AboutUs from "./AboutUs";
+import PictoSection from "./main/PictoMenuList";
 import Slider from "./Carousel/Slider";
+import AboutUs from "./AboutUs";
 import Diversity from "./Diversity";
 import Job from "./Job";
 import ContactUs from "./ContactUs";
@@ -59,11 +60,11 @@ const App = () => {
           element={
             <>
               <NavBar />
-
               <Main
                 onClick={handleToggleMain}
                 toggleStatusMain={textIsOpenMain}
               />
+              <PictoSection />
               <AboutUs />
               {/* <Job /> */}
               <Slider />

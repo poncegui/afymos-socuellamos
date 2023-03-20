@@ -21,6 +21,7 @@ const Chart = (props) => {
               key={person.id}
               name={person.name}
               img={person.img}
+              alt={person.alt}
               role={person.role}
               profession={props.profession}
             />
