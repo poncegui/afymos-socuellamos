@@ -1,3 +1,5 @@
+import React from "react";
+import styled from "styled-components";
 import SlidesShowAboutUs from "./SlidesShowAboutUs";
 import centerAfymos from "../pictogramas/centro-afymos.png";
 
@@ -11,7 +13,7 @@ const AboutUs = (props) => {
 
   return (
     <>
-      <section className="aboutUs">
+      <Sections className="aboutUs">
         <div className="mainContainerAboutUs">
           <div className="mainContainerAboutUs__wrapPhoto">
             <div className="mainContainerAboutUs__wrapPhoto--photo">
@@ -38,9 +40,21 @@ const AboutUs = (props) => {
             </div>
           </div>
         </div>
-      </section>
+      </Sections>
     </>
   );
 };
 
 export default AboutUs;
+
+const Sections = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1090px) {
+  }
+`;

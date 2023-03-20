@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 import logo from "../logos/logo-afymos.png";
 
-const ContactUs = (props) => {
+const ContactUs = () => {
   const handleBack = () => {
     window.history.back();
     console.log("vuelvo");
@@ -90,7 +90,7 @@ const ContactUs = (props) => {
               </ul>
             </div>
             <div className="img">
-              <img src={logo}></img>
+              <img src={logo} alt="logo-afymos"></img>
             </div>
           </div>
         </div>

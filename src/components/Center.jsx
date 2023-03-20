@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useRef, useEffect } from "react";
 
 // import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 
@@ -55,6 +54,7 @@ const Center = (props) => {
                   className="link"
                   target="_blank"
                   href="https://www.plenainclusion.org/sites/default/files/224_articulos2.pdf"
+                  rel="noreferrer"
                 >
                   "Modelo de Calidad de Vida de Schalock y Verdugo"
                 </a>
