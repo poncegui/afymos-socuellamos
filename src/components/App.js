@@ -26,6 +26,8 @@ import Programs from "./Programs";
 import Projects from "./Projects";
 import Slider from "./Carousel/Slider";
 
+import Features from "./Features/Features";
+
 const App = () => {
   //States
   const [textIsOpenMain, setTextIsOpenMain] = useState(false);
@@ -51,8 +53,6 @@ const App = () => {
 
         <Route path="/organigrama" element={<Chart />} />
 
-        {/* <Route path="/colaboradores" element={<Partners />} /> */}
-
         <Route path="/colaboradores" element={<Slider />} />
 
         <Route
@@ -64,7 +64,7 @@ const App = () => {
                 onClick={handleToggleMain}
                 toggleStatusMain={textIsOpenMain}
               />
-              <PictoSection />
+              <Features />
               <AboutUs />
               {/* <Job /> */}
               <Slider />
