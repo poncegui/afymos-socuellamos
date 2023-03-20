@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import foto from "../../images-chart/chartTeam1.jpg";
-
 import Footer from "../Footer";
 import NavBarTemplate from "../templates/NavBarTemplate";
 import { personsChart } from "../Chart/services/ApiChart";
 import ProfileChart from "./ProfileChart";
+import backgroundChart from "../../images-chart/chartTeam1.jpg";
 
 const Chart = (props) => {
-  const [persons, setPersons] = useState(personsChart);
+  const [persons] = useState(personsChart);
 
   return (
     <>
@@ -41,7 +40,7 @@ export default Chart;
 
 export const BackgroundChart = styled.div`
   background: linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)),
-    url("../../images-chart/chartTeam1.jpg");
+    url(${backgroundChart});
   min-width: 100vh;
   background-size: 100%;
   background-position: cover;

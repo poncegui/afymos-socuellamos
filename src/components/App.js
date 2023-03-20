@@ -9,22 +9,22 @@ import styled from "styled-components";
 //COMPONENTs
 
 import "../styles/main.scss";
+import AboutUs from "./AboutUs";
+import Center from "./Center";
+import Chart from "./Chart/Chart";
+import ContactUs from "./ContactUs";
+import Diversity from "./Diversity";
+import Donation from "./Donation";
+import Footer from "./Footer";
 import Header from "./Header/Header";
+import Job from "./Job";
+import Main from "./main/Main";
 import NavBar from "./Header/NavBar";
 import PartnertList from "./main/PartnerList";
-import Main from "./main/Main";
-import Donation from "./Donation";
-import Projects from "./Projects";
 import PictoSection from "./main/PictoMenuList";
-import Slider from "./Carousel/Slider";
-import AboutUs from "./AboutUs";
-import Diversity from "./Diversity";
-import Job from "./Job";
-import ContactUs from "./ContactUs";
 import Programs from "./Programs";
-import Chart from "./Chart/Chart";
-import Footer from "./Footer";
-import Center from "./Center";
+import Projects from "./Projects";
+import Slider from "./Carousel/Slider";
 
 const App = () => {
   //States
