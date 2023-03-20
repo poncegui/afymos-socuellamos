@@ -11,7 +11,7 @@ import styled from "styled-components";
 import "../styles/main.scss";
 import Header from "./Header/Header";
 import NavBar from "./Header/NavBar";
-import Partners from "./Partners";
+import PartnertList from "./main/PartnerList";
 import Main from "./main/Main";
 import Donation from "./Donation";
 import Projects from "./Projects";
@@ -69,9 +69,7 @@ const App = () => {
               {/* <Job /> */}
               <Slider />
               <Diversity />
-
-              <div className="container__cards"></div>
-
+              <PartnertList />
               <Footer />
             </>
           }
