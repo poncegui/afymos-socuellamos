@@ -19,11 +19,12 @@ export const Content = ({
   img,
   alt,
   reverse,
+  inverse,
 }) => {
   return (
     <Section>
       <Container>
-        <ContentRow reverse={reverse}>
+        <ContentRow reverse={reverse} inverse={inverse}>
           <ContentColumn>
             <TextWrapper>
               <TopLine>{topLine.text}</TopLine>

@@ -64,14 +64,14 @@ const App = () => {
                 toggleStatusMain={textIsOpenMain}
               />
               <Features />
-              <AboutUs />
+              {/* <AboutUs /> */}
               {/* <Job /> */}
               {/* <Slider /> */}
               <Content {...heroOne} />
               <Content {...heroTwo} />
               <Content {...heroThree} />
               <Carousel />
-              <PartnertList />
+              {/* <PartnertList /> */}
               <Footer />
             </>
           }

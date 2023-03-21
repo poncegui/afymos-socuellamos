@@ -46,7 +46,7 @@ function Navbar() {
 export default Navbar;
 
 const NavContainer = styled.nav`
-  background-color: #000;
+  background-color: #071c2f;
   height: 10vh;
   width: 100%;
   z-index: 50;

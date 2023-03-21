@@ -1,6 +1,6 @@
 export const heroOne = {
   reverse: true,
-  inverse: true,
+  inverse: false,
   topLine: {
     text: "Vida en comunidad:",
   },
@@ -15,7 +15,7 @@ export const heroOne = {
 
 export const heroTwo = {
   reverse: false,
-  inverse: false,
+  inverse: true,
   topLine: {
     text: "Sensibilización",
   },
@@ -33,7 +33,7 @@ export const heroTwo = {
 
 export const heroThree = {
   reverse: true,
-  inverse: true,
+  inverse: false,
   topLine: {
     text: "Servicios y proyectos",
   },
