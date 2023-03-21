@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const FeatureTitle = styled.h2`
   text-align: center;
-  font-size: clamp(1.3rem, 13vw, 3.1rem);
+  font-size: 1.2;
   line-height: 1.06;
   letter-spacing: 0.4rem;
   margin: auto;
-  color: white;
 `;
 
 export const FeatureTextWrapper = styled.div`
@@ -16,18 +15,20 @@ export const FeatureTextWrapper = styled.div`
 `;
 
 export const FeatureWrapper = styled.div`
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 4rem;
   grid-gap: 2rem;
 
   @media (max-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 3rem;
   }
 
   @media (max-width: 568px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
@@ -36,27 +37,24 @@ export const FeatureColumn = styled.div`
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #f3f3f3;
   padding: 10px;
-  box-shadow: 0 0 10px 3px #d0d0d0;
+  box-shadow: 0 0 32px 8px #d0d0d0;
   border-radius: 20px;
 `;
 
 export const FeatureImageWrapper = styled.div`
-  border-radius: 5%;
-  border: 2px solid #000;
-  display: grid;
   margin-bottom: 1rem;
-  padding: 30px;
+  border-radius: 20%;
+  border: 2px solid #000;
+  padding: 1rem;
+  display: grid;
   place-content: center;
-
   img {
-    height: 100%;
-    width: 100%;
-    object-fit: center;
+    width: 80%;
+    height: 80%;
   }
 `;
-
 export const FeatureName = styled.h3`
   font-weight: 600;
   font-size: 1.3rem;
@@ -68,7 +66,6 @@ export const FeatureName = styled.h3`
     letter-spacing: 1.3px;
   }
 `;
-
 export const FeatureText = styled.p`
   margin: 1rem 0 auto;
   text-align: center;

@@ -1,5 +1,5 @@
 .footer {
-  background-color: black;
+  background-color: #071c2f;
   width: 100%;
   color: pink;
   font-family: "Montserrat Alternates", sans-serif;
@@ -19,13 +19,13 @@
     justify-content: center;
     border-radius: 50%;
     background-color: white;
-    box-shadow: black 0px 2px 6px;
+    box-shadow: #071c2f 0px 2px 6px;
     transform: translateY(-25px);
     background-color: pink;
 
     &--arrow {
       transform: translateY(3px);
-      color: black;
+      color: #071c2f;
     }
   }
 
@@ -36,7 +36,7 @@
 }
 
 .index-footer {
-  background-color: black;
+  background-color: #071c2f;
   color: pink;
   display: flex;
   flex-direction: column;
@@ -127,13 +127,18 @@
 
         @media (min-width: 768px) {
           font-size: 60px;
-          //  margin-left: 800px;
-          //  margin-bottom: 50px;
         }
       }
 
       &--socialmedia:hover {
         font-style: grey;
+        .facebook:hover,
+        .instagram:hover {
+          margin-top: 0.5rem;
+          border-bottom: 5px solid pink;
+          line-height: 30px;
+          transition: all 0.5s ease-out;
+        }
       }
     }
   }

@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import SlidesShowAboutUs from "./SlidesShowAboutUs";
-import centerAfymos from "../pictogramas/centro-afymos.png";
 
-const AboutUs = (props) => {
+const AboutUs = () => {
   const links = document.querySelectorAll(".links");
   links.forEach((icon) => {
     icon.addEventListener("click", (event) => {

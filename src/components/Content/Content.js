@@ -22,15 +22,20 @@ export const Content = ({
   inverse,
 }) => {
   return (
-    <Section>
+    <Section inverse={inverse}>
       <Container>
-        <ContentRow reverse={reverse} inverse={inverse}>
+        <ContentRow reverse={reverse}>
           <ContentColumn>
             <TextWrapper>
               <TopLine>{topLine.text}</TopLine>
-              <Heading>{headline}</Heading>
-              <Subtitle>{description}</Subtitle>
-              <ContentButton>{buttonLabel}</ContentButton>
+              <Heading inverse={inverse}>{headline}</Heading>
+              <Subtitle inverse={inverse}>{description}</Subtitle>
+              <ContentButton
+                transition={{ delay: 1, duration: 0.6 }}
+                inverse={inverse}
+              >
+                {buttonLabel}
+              </ContentButton>
             </TextWrapper>
           </ContentColumn>
           <ContentColumn>

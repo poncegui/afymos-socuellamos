@@ -30,8 +30,12 @@
     }
 
     &--social {
+      color: #071c2f;
       display: flex;
       align-items: center;
+      a {
+        color: #071c2f;
+      }
     }
 
     .facebook,
@@ -39,6 +43,7 @@
       margin-left: 15px;
       width: 25px;
       height: 25px;
+      color: #071c2f;
       cursor: pointer;
     }
 
@@ -77,6 +82,7 @@
         margin-left: 15px;
         width: 50px;
         height: 50px;
+        color: #071c2f;
         cursor: pointer;
       }
     }

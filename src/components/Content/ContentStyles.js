@@ -21,6 +21,7 @@ export const ContentColumn = styled.div`
   z-index: 10;
   display: flex;
   flex-direction: column;
+
   @media (max-width: 768px) {
     max-width: 100% !important;
     flex-basis: 100%;
@@ -59,23 +60,24 @@ export const ImgWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  font-size: 0.9rem;
-  line-height: 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 550;
   letter-spacing: 1.4px;
   margin-bottom: 1.3rem;
-  color: #979797;
+  color: grey;
 `;
 
 export const Img = styled.img`
   padding-right: 0;
   border: 0;
-  max-width: 100%;
+  max-width: 80%;
   vertical-align: middle;
   display: inline-block;
   object-fit: cover;
   max-height: 700px;
   z-index: 1;
+  border-radius: 20%;
 `;
 
 export const Heading = styled.h2`
@@ -83,7 +85,7 @@ export const Heading = styled.h2`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
+  color: ${({ inverse }) => (inverse ? "#0c4577" : "pink")};
 
   @media (max-width: 768px) {
     text-align: center;
@@ -94,7 +96,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;
-  color: ${({ inverse }) => (inverse ? "#6a6a6a" : "white")};
+  color: ${({ inverse }) => (inverse ? "#6a6a6a" : "pink")};
 `;
 
 export const ContentButton = styled.button`
@@ -107,27 +109,27 @@ export const ContentButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   background: none;
-  color: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
+  color: ${({ inverse }) => (inverse ? "#0c4577" : "pink")};
 
   border-radius: 4px;
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
-  border: 2px solid ${({ inverse }) => (inverse ? "#0c4577" : "white")};
+  border: 2px solid ${({ inverse }) => (inverse ? "#0c4577" : "pink")};
   cursor: pointer;
   position: relative;
   overflow: hidden;
 
   &:before {
-    background: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
+    background: ${({ inverse }) => (inverse ? "#0c4577" : "pink")};
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    transition: all 0.6s ease;
+    transition: all 0.8s ease;
     width: 100%;
     height: 0%;
     transform: translate(-50%, -50%) rotate(45deg);

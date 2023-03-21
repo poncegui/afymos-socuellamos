@@ -4,28 +4,31 @@ import Slider from "react-slick";
 
 export const CarouselImage = styled.img`
   width: 100%;
-  height: 300px;
+  height: 150px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
   vertical-align: middle;
 `;
 
 export const ImageWrapper = styled.div`
-  width: 90%;
+  width: 20%;
   display: flex !important;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
-  height: 430px;
+  height: 100px;
 
-  @media screen and (min-width: 440px) {
+  @media (min-width: 440px) {
     border: 1px solid #bebebe;
+    height: 80px;
+    width: 90%;
   }
 `;
 
 export const ButtonContainer = styled(Row)`
+  margin-top: 2rem;
   & svg {
     margin: 0 1rem;
     cursor: pointer;
@@ -61,13 +64,13 @@ export const ReviewSlider = styled(Slider)`
 `;
 
 export const CardButton = styled.button`
-  background-color: #1d609c;
-  font-size: 1.3rem;
+  background-color: #0c4577;
+  font-size: 1.1rem;
   padding: 5px 10px;
-  color: #fff;
+  color: pink;
   cursor: pointer;
   width: 100%;
-  font-weight: 600;
+  font-weight: 400;
   margin: auto 0 0 0;
   border: none;
   border-radius: 0 0 10px 10px;
