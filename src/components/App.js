@@ -1,10 +1,7 @@
 //HOOKS
-import React, { useEffect, useState } from "react";
-import { useLocation, matchPath } from "react-router";
-import { Link, Route, Routes } from "react-router-dom";
-
-//Styles
-import styled from "styled-components";
+import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import { heroOne, heroTwo, heroThree } from "./Hero/HeroData";
 
 //COMPONENTs
 
@@ -25,6 +22,8 @@ import PictoSection from "./main/PictoMenuList";
 import Programs from "./Programs";
 import Projects from "./Projects";
 import Slider from "./Carousel/Slider";
+import Carousel from "./Carousel/Carousel";
+import { Content } from "./Content/Content";
 
 import Features from "./Features/Features";
 
@@ -67,8 +66,11 @@ const App = () => {
               <Features />
               <AboutUs />
               {/* <Job /> */}
-              <Slider />
-              <Diversity />
+              {/* <Slider /> */}
+              <Content {...heroOne} />
+              <Content {...heroTwo} />
+              <Content {...heroThree} />
+              <Carousel />
               <PartnertList />
               <Footer />
             </>
