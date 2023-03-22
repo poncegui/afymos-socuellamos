@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { heroOne, heroTwo, heroThree } from "./Hero/HeroData";
 
-//COMPONENTs
+//COMPONENTS
 
 import "../styles/main.scss";
 import AboutUs from "./AboutUs";
@@ -23,8 +23,7 @@ import Programs from "./Programs";
 import Projects from "./Projects";
 import Slider from "./Carousel/Slider";
 import Carousel from "./Carousel/Carousel";
-import { Content } from "./Content/Content";
-
+import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
 
 const App = () => {
@@ -72,7 +71,7 @@ const App = () => {
               <Content {...heroTwo} />
               <Content {...heroThree} />
               <Carousel />
-              {/* <PartnertList /> */}
+              <PartnertList />
               <Footer />
             </>
           }

@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Footer from "../Footer";
 import NavBarTemplate from "../templates/NavBarTemplate";
-import { personsChart } from "../Chart/services/ApiChart";
+import { juntaChart } from "../Chart/services/ApiChart";
 import ProfileChart from "./ProfileChart";
 import backgroundChart from "../../images-chart/chartTeam1.jpg";
 
 const Chart = (props) => {
-  const [persons] = useState(personsChart);
+  const [junta] = useState(juntaChart);
 
   return (
     <>
       <NavBarTemplate title="junta directiva" alt="" />
       <BackgroundChart>Junta Directiva</BackgroundChart>
       <ContainerListChart>
-        {persons.map((person) => {
+        {junta.map((person) => {
           return (
             <ProfileChart
               key={person.id}

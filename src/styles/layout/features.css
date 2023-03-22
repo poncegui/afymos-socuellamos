@@ -32,11 +32,13 @@
 
 .icons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   border-radius: 10px;
-  height: 120px;
-  width: 120px;
+  height: 180px;
+  width: 180px;
   background: #e0e0e0;
   box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;
 }
@@ -112,7 +114,7 @@
   }
 
   .title > h3 {
-    font-size: 30px;
+    font-size: 1rem;
     color: black;
     margin: 15% auto;
   }

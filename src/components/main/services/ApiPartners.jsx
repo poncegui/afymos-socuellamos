@@ -1,21 +1,20 @@
-import aese from "../../../logos/logo-aese.jpg";
+import once from "../../../logos/logo-aese.jpg";
 import ayuntamiento from "../../../logos/logo-ayuntamiento.png";
 import castillaLaMancha from "../../../logos/logo-castillaLaMancha.png";
 import diputacion from "../../../logos/logo-diputacion.png";
 import europa from "../../../logos/logo-europa.png";
 import globalcaja from "../../../logos/globalcaja.png";
 import inclusion from "../../../logos/logo-inclusion.png";
-import ministerio from "../../../logos/logo-ministerio.jpg";
 
 const target = "_blank";
 
 export const partenrsData = [
   {
     id: 1,
-    name: "Asociación española de empleo con apoyo",
-    src: aese,
+    name: "Fundación ONCE",
+    src: once,
     target: target,
-    alt: "logo-asociacion-española-de-empleo-con-apoyo",
+    alt: "fundación-once",
     url: "http://www.empleoconapoyo.org/aese/",
   },
   {
@@ -60,18 +59,10 @@ export const partenrsData = [
   },
   {
     id: 7,
-    name: "Ministerio de Empleo y Seguridad Social",
-    src: ministerio,
-    target: target,
-    alt: "logo-ministerio-de-empleo-y-seguridad-social",
-    url: "https://www.mites.gob.es/",
-  },
-  {
-    id: 8,
-    name: "Globalcaja",
+    name: "Fundación Globalcaja",
     src: globalcaja,
     target: target,
     alt: "logo-globalcaja",
-    url: "https://www.globalcaja.es/es",
+    url: "https://fundacionglobalcajahxxii.com/",
   },
 ];

@@ -16,33 +16,7 @@ const Header = () => {
             />
             <h2 className="header_superior__container--title">Afymos</h2>
 
-            <div className="header_superior__container--social">
-              <a
-                className=""
-                href="https://es-es.facebook.com/pages/category/Nonprofit-organization/Afymos-Asociaci%C3%B3n-878470228866846/"
-                target="_blank"
-                title="facebook Afymos"
-                rel="noreferrer"
-              >
-                <img
-                  className="facebook"
-                  src={facebook}
-                  alt="facebook Afymos"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com/afymos/?hl=es"
-                alt="Instagram"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="instagram"
-                  src={instagram}
-                  alt="instagram Afymos"
-                />
-              </a>
-            </div>
+            <div className="header_superior__container--social"></div>
           </div>
         </div>
 

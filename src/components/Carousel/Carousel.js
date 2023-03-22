@@ -15,7 +15,12 @@ const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse>
+    <Section
+      margin="auto"
+      maxWidth="1280px"
+      padding="50px 70px"
+      inverse="white"
+    >
       <Row justify="space-between" margin="1rem" wrap="wrap">
         <Heading width="auto" inverse>
           Noticias y eventos

@@ -7,7 +7,7 @@ import styled from "styled-components";
 // const facebook = "fa-brands fa-facebook";
 
 const ProfileChart = (props) => {
-  const [faceCard, setFaceCard] = useState(true);
+  const [faceCard] = useState(true);
   return (
     <>
       {faceCard ? (

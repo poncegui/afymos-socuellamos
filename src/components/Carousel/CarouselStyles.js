@@ -19,6 +19,7 @@ export const ImageWrapper = styled.div`
   border-radius: 10px;
   outline: none;
   height: 430px;
+  border: solid 1px #071c2f;
 
   @media screen and (min-width: 440px) {
     border: 1px solid #bebebe;
@@ -61,15 +62,15 @@ export const ReviewSlider = styled(Slider)`
 `;
 
 export const CardButton = styled.button`
-  background-color: #1d609c;
+  background-color: #071c2f;
   font-size: 1.3rem;
   padding: 5px 10px;
-  color: #fff;
+  color: pink;
   cursor: pointer;
   width: 100%;
   font-weight: 600;
   margin: auto 0 0 0;
-  border: none;
+  border: solid 1px #071c2f;
   border-radius: 0 0 10px 10px;
 
   &:hover {
