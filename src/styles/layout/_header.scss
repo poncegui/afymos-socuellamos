@@ -29,32 +29,6 @@
       font-weight: bold;
     }
 
-    &--social {
-      color: #071c2f;
-      display: flex;
-      align-items: center;
-      a {
-        color: #071c2f;
-      }
-    }
-
-    .facebook,
-    .instagram {
-      margin-left: 15px;
-      width: 25px;
-      height: 25px;
-      color: #071c2f;
-      cursor: pointer;
-    }
-
-    .facebook:hover,
-    .instagram:hover {
-      margin-top: 0.5rem;
-      border-bottom: 5px solid #071c2f;
-      line-height: 30px;
-      transition: all 0.5s ease-out;
-    }
-
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-evenly;

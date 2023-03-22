@@ -63,6 +63,7 @@ const App = () => {
                 onClick={handleToggleMain}
                 toggleStatusMain={textIsOpenMain}
               />
+
               <Features />
               {/* <AboutUs /> */}
               {/* <Job /> */}
