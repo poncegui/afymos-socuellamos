@@ -1,4 +1,4 @@
-import eventoGlobalcaja from "../../images-news/loteria.jpg.png";
+import eventoGlobalcaja from "../../images-news/un-dia-afymos.jpg";
 import afymos from "../../images-news/un-dia-afymos.jpg";
 import proyecto from "../../images-news/proyecto-crea.png";
 

@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 // import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 
-import fachada from "../images-center/centro-gente.jpg";
-import img2 from "../slidesImages/img2.png";
-import img3 from "../slidesImages/img3.png";
-import img4 from "../slidesImages/img4.png";
-import img5 from "../slidesImages/img5.png";
-import img6 from "../slidesImages/img6.png";
-import img7 from "../slidesImages/img7.png";
-import img8 from "../slidesImages/img8.png";
-import img9 from "../slidesImages/img9.png";
+// import fachada from "../images-center/centro-gente.jpg";
+// import img2 from "../slidesImages/img2.png";
+// import img3 from "../slidesImages/img3.png";
+// import img4 from "../slidesImages/img4.png";
+// import img5 from "../slidesImages/img5.png";
+// import img6 from "../slidesImages/img6.png";
+// import img7 from "../slidesImages/img7.png";
+// import img8 from "../slidesImages/img8.png";
+// import img9 from "../slidesImages/img9.png";
 
 const Center = (props) => {
   const handleBack = () => {
@@ -32,7 +32,7 @@ const Center = (props) => {
           </Link>
           <section className="main-container">
             <img
-              src={fachada}
+              src={"fachada"}
               alt="centro diversidad"
               className="main-container__image"
             />

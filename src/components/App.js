@@ -25,6 +25,7 @@ import Slider from "./Carousel/Slider";
 import Carousel from "./Carousel/Carousel";
 import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
+import FeaturesLanding from "./Features/FeaturesLanding";
 
 const App = () => {
   //States
@@ -45,7 +46,7 @@ const App = () => {
 
         <Route path="/centro-diversidad" element={<Center />} />
 
-        <Route path="/programas" element={<Programs />} />
+        {/* <Route path="/programas" element={<FeaturesLanding />} /> */}
 
         <Route path="/servicios-y-proyectos" element={<Projects />} />
 

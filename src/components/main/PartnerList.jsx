@@ -15,7 +15,6 @@ const PartnerList = () => {
             return (
               <PartnersCard
                 key={partner.id}
-                name={partner.name}
                 src={partner.src}
                 alt={partner.alt}
                 url={partner.url}
@@ -32,24 +31,35 @@ const PartnerList = () => {
 export default PartnerList;
 
 export const SectionPartners = styled.div`
-  display: grid;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  place-content: top;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 0;
+
+  h2 {
+    font-size: 40px;
+  }
 `;
 
 export const ContainerParnertList = styled.div`
-  margin: auto;
+  background-color: white;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 50px;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
   }
 
   @media (min-width: 1090px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 5px;
-  }
+  } */
 `;

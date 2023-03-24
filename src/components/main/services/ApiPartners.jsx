@@ -1,9 +1,9 @@
-import once from "../../../logos/logo-aese.jpg";
+import once from "../../../logos/fundacion-once.png";
 import ayuntamiento from "../../../logos/logo-ayuntamiento.png";
 import castillaLaMancha from "../../../logos/logo-castillaLaMancha.png";
 import diputacion from "../../../logos/logo-diputacion.png";
 import europa from "../../../logos/logo-europa.png";
-import globalcaja from "../../../logos/globalcaja.png";
+import globalcaja from "../../../logos/globalcaja.jpg";
 import inclusion from "../../../logos/logo-inclusion.png";
 
 const target = "_blank";
@@ -15,7 +15,7 @@ export const partenrsData = [
     src: once,
     target: target,
     alt: "fundación-once",
-    url: "http://www.empleoconapoyo.org/aese/",
+    url: "https://www.fundaciononce.es/es",
   },
   {
     id: 2,

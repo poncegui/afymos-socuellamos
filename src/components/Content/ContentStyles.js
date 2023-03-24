@@ -77,7 +77,7 @@ export const Img = styled.img`
   object-fit: cover;
   max-height: 700px;
   z-index: 1;
-  border-radius: 20%;
+  border-radius: 5%;
 `;
 
 export const Heading = styled.h2`
