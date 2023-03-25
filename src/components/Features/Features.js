@@ -7,7 +7,7 @@ import { featuresData, featuresDataDetails } from "./data/FeaturesData";
 
 const Tecno = () => {
   const [devTool, setDevTool] = useState(false);
-  const [pictoData, setpictoData] = useState(featuresData);
+  const [pictoData, setPictoData] = useState(featuresData);
   const [detailsData, setDetailsData] = useState(featuresDataDetails);
   const [dataHouse, setDataHouse] = useState("");
 
@@ -16,11 +16,6 @@ const Tecno = () => {
   };
 
   let toggleClassReact = devTool ? "clicked" : "";
-
-  const onClick = () => {
-    setDevTool(setpictoData);
-    handleClick();
-  };
 
   // const dataRoute = NavLink(`/organigrama/:id`);
 
@@ -42,11 +37,8 @@ const Tecno = () => {
     }
   });
 
-  const handleHouse = (ev) => {
-    // characterFiltered({
-    //   key: ev.id,
-    //   value: ev.currentTarget.value,
-    // });
+  const handleUrl = (ev) => {
+    setPictoData(ev.currentTarget);
     console.log("hola");
     console.log(ev.currentTarget);
   };
@@ -61,39 +53,26 @@ const Tecno = () => {
                 <Icons key={picto.id} value={picto.name}>
                   <h3>{picto.name}</h3>
                   <Link to={picto.url}>
-                    <img
-                      src={picto.img}
-                      alt={picto.alt}
-                      onClick={handleHouse}
-                    />
+                    <img src={picto.img} alt={picto.alt} onClick={handleUrl} />
                   </Link>
                 </Icons>
               ))}
             </ButtonContainer>
-            {/* <Description>
-              {detailsData.map((detail) => (
-                <Icons>
-                  <h3>{detail.name}</h3>
-                  <Link to={detail.url}>
-                    <img src={detail.img} alt={detail.alt} onClick={onClick} />
-                  </Link>
-                </Icons>
-              ))}
-            </Description> */}
           </SectionFeatures>
         </SectionMobile>
-        {/* <SectionMobile>
-        <SectionFeatures>
-          <ButtonContainer>
-            {pictoData.map((picto) => (
-              <Icons>
-                <h3>{picto.name}</h3>
-                <img src={picto.img} alt={picto.alt} onClick={onClick} />
-              </Icons>
-            ))}
-          </ButtonContainer>
+
+        <SectionDesktop>
+          <SectionFeatures>
+            <ButtonContainer>
+              {pictoData.map((picto) => (
+                <Icons key={picto.id} value={picto.name}>
+                  <h3>{picto.name}</h3>
+                  <img src={picto.img} alt={picto.alt} onClick={handleUrl} />
+                </Icons>
+              ))}
+            </ButtonContainer>
           </SectionFeatures>
-        </SectionMobile> */}
+        </SectionDesktop>
       </>
     </>
   );
@@ -102,14 +81,11 @@ const Tecno = () => {
 export default Tecno;
 
 export const SectionDesktop = styled.div`
-  @media (min-width: 768px) {
-    /* display: none; */
-  }
+  display: none;
 `;
 
 export const SectionMobile = styled.div`
-  @media (max-width: 768px) {
-    /* display: none; */
+  @media (min-width: 820px) {
   }
 `;
 
@@ -144,7 +120,8 @@ export const ButtonContainer = styled.div`
   grid-gap: 50px 80px;
   margin: 5%;
 
-  @media (max-width: 820px) {
+  @media (max-width: 768px) {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -178,6 +155,9 @@ export const Icons = styled.div`
   background: #e0e0e0;
   box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;
   gap: 1rem;
+  :hover {
+    background-color: pink;
+  }
 
   h3 {
     font-size: 1rem;
