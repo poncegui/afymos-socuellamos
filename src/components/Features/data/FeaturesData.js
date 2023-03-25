@@ -26,6 +26,7 @@ export const featuresData = [
     role: "Presidenta",
     img: centroDiversidad,
     alt: "/servicios-y-proyectos",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
 
@@ -35,6 +36,7 @@ export const featuresData = [
     role: "Vicepresidenta",
     img: centroDia,
     alt: "/organigrama",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -43,6 +45,7 @@ export const featuresData = [
     role: "Secretaria",
     img: capacitacion,
     alt: "/servicios-y-proyectos",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -51,6 +54,7 @@ export const featuresData = [
     role: "Tesorera",
     img: viviendaSocial,
     alt: "/servicios-y-proyectos",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -59,6 +63,7 @@ export const featuresData = [
     role: "Vocal 1",
     img: servicios,
     alt: "/servicios-y-proyectos",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -67,6 +72,7 @@ export const featuresData = [
     role: "Vocal 2",
     img: diagnostico,
     alt: "/servicios-y-proyectos",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -75,6 +81,7 @@ export const featuresData = [
     role: "Vocal 3",
     img: familias,
     alt: "/servicios-y-proyectos",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -83,6 +90,7 @@ export const featuresData = [
     role: "Vocal 4",
     img: formacion,
     alt: "/servicios-y-proyectos",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -91,6 +99,7 @@ export const featuresData = [
     role: "Vocal 5",
     img: voluntariado,
     alt: "/servicios-y-proyectos",
+    url: "/servicios-y-proyectos",
     description: "Teacher",
   },
 ];

@@ -24,7 +24,7 @@ export const heroTwo = {
     instagram: "",
   },
   headline:
-    "Síguenos en Facebook y podrán ver todas las actividades de sensibilización que llevamos a cabo.",
+    "Síguenos para ver todas las actividades de sensibilización que llevamos a cabo.",
   description:
     "Nuestra organización sin ánimo de lucro se sustenta principalmente de las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda económica que nos puedan prestar.",
   buttonLabel: "Donaciones",

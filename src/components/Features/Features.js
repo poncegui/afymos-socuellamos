@@ -35,7 +35,7 @@ const Tecno = () => {
   // };
 
   const characterFiltered = pictoData.filter((character) => {
-    if (dataHouse === character.url) {
+    if (dataHouse === pictoData.url) {
       return true;
     } else if (dataHouse === character.url) {
       return character.url;
@@ -43,26 +43,30 @@ const Tecno = () => {
   });
 
   const handleHouse = (ev) => {
-    characterFiltered({
-      key: ev.id,
-      name: ev.currentTarget.name,
-    });
+    // characterFiltered({
+    //   key: ev.id,
+    //   value: ev.currentTarget.value,
+    // });
+    console.log("hola");
+    console.log(ev.currentTarget);
   };
 
   return (
     <>
       <>
-        <SectionDesktop>
+        <SectionMobile>
           <SectionFeatures>
             <ButtonContainer>
               {pictoData.map((picto) => (
-                <Icons key={picto.id}>
+                <Icons key={picto.id} value={picto.name}>
                   <h3>{picto.name}</h3>
-                  <img
-                    src={picto.img}
-                    alt={picto.alt}
-                    onClick={characterFiltered}
-                  />
+                  <Link to={picto.url}>
+                    <img
+                      src={picto.img}
+                      alt={picto.alt}
+                      onClick={handleHouse}
+                    />
+                  </Link>
                 </Icons>
               ))}
             </ButtonContainer>
@@ -77,7 +81,7 @@ const Tecno = () => {
               ))}
             </Description> */}
           </SectionFeatures>
-        </SectionDesktop>
+        </SectionMobile>
         {/* <SectionMobile>
         <SectionFeatures>
           <ButtonContainer>
@@ -140,7 +144,7 @@ export const ButtonContainer = styled.div`
   grid-gap: 50px 80px;
   margin: 5%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
