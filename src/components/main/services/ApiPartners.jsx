@@ -67,7 +67,7 @@ export const partenrsData = [
     url: "https://fundacionglobalcajahxxii.com/",
   },
   {
-    id: 7,
+    id: 8,
     name: "Fundación Globalcaja",
     src: gracias,
     target: target,

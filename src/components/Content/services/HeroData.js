@@ -10,7 +10,7 @@ export const FeaturesData = {
   },
   headline: "Integración sociolaboral",
   description:
-    "El Servicio de Capacitación de Afymos con una capacidad de 41 usuarios,  es un servicio de atención diurna que tiene como objetivo principal potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los ámbitos de la vida de la persona (autonomía personal, relaciones interpersonales, utilizaciónsiones).",
+    "El Servicio de Capacitación de Afymos,  es un servicio de atención diurna que tiene como objetivo principal potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los ámbitos de la vida de la persona (autonomía personal, relaciones interpersonales, utilizaciónsiones).",
   buttonLabel: "Saber más",
   img: integracion,
 };

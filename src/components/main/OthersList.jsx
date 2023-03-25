@@ -2,19 +2,20 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "../../styles/layout/features.css";
-import { Content } from "../Content/Content";
-import { featuresData, featuresDataDetails } from "./data/FeaturesData";
+
+import { othersData } from "./services/ApiOthers";
 
 import {
-  detailsDataOne,
-  detailsDataTwo,
-  detailsDataThree,
+  detailsDataFour,
+  detailsDataFive,
+  detailsDataSix,
+  detailsListSeven,
 } from "../Content/services/DetailsData";
 
-const Tecno = () => {
+const OtherInformation = () => {
   const [devTool, setDevTool] = useState(true);
-  const [pictoData, setPictoData] = useState(featuresData);
-  const [detailsData, setDetailsData] = useState(featuresDataDetails);
+  const [others, setOthers] = useState(othersData);
+  // const [ detailsData, setDetailsData ] = useState(featuresDataDetails);
 
   const handleBack = () => {
     window.history.back();
@@ -26,16 +27,16 @@ const Tecno = () => {
   };
 
   const handleUrl = (ev) => {
-    setPictoData(ev.currentTarget);
+    setOthers(ev.currentTarget);
   };
 
   return (
     <>
       <>
         <SectionFeaturesMobile>
-          <h1>Menú de Servicios</h1>
+          <h1>otros Servicios</h1>
           <ButtonContainer>
-            {pictoData.map((picto) => (
+            {others.map((picto) => (
               <Icons key={picto.id} value={picto.name}>
                 <h3>{picto.name}</h3>
                 <Link to={picto.url}>
@@ -48,9 +49,9 @@ const Tecno = () => {
 
         {devTool ? (
           <SectionFeaturesDesktop>
-            <h1>Menú de Servicios</h1>
+            <h1>Y además...</h1>
             <ButtonContainer>
-              {pictoData.map((picto) => (
+              {others.map((picto) => (
                 <Icons key={picto.id} value={picto.name}>
                   <h3>{picto.name}</h3>
                   <img src={picto.img} alt={picto.alt} onClick={handleDetail} />
@@ -60,7 +61,7 @@ const Tecno = () => {
           </SectionFeaturesDesktop>
         ) : (
           <>
-            <h1>Menú de Servicios</h1>
+            <h1>Y además...</h1>
             {/* <SectionFeaturesDesktop>
         <h1>Menú de Servicios</h1>
           <ButtonContainer>
@@ -87,7 +88,7 @@ const Tecno = () => {
   );
 };
 
-export default Tecno;
+export default OtherInformation;
 
 export const SectionFeaturesMobile = styled.div`
   display: flex;
@@ -147,8 +148,8 @@ export const ButtonContainer = styled.div`
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   margin: auto;
   grid-gap: 5% 5%;
   margin: 5%;
@@ -157,7 +158,7 @@ export const ButtonContainer = styled.div`
   @media (max-width: 768px) {
     width: 70%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: auto;
     grid-gap: 30px 30px;
@@ -200,7 +201,7 @@ export const Icons = styled.div`
   }
 
   img {
-    color: black;
+    color: #071c2f;
     height: 100px;
     width: 100px;
     cursor: pointer;
@@ -221,7 +222,7 @@ export const Icons = styled.div`
     }
 
     img {
-      color: black;
+      color: #071c2f;
       height: 40px;
       width: 40px;
     }
@@ -243,51 +244,9 @@ export const Icons = styled.div`
     }
 
     img {
-      color: black;
+      color: #071c2f;
       height: 40px;
       width: 40px;
     }
-  }
-`;
-
-const NavBack = styled.nav`
-  background-color: #071c2f;
-  height: 100px;
-  width: 100%;
-  position: sticky;
-  top: 0;
-
-  z-index: 50;
-
-  display: flex;
-  flex-direction: row;
-
-  i {
-    margin-left: 50px;
-    font-size: 25px;
-    color: pink;
-
-    @media (max-width: 768px) {
-      margin-left: 40px;
-    }
-  }
-
-  h3 {
-    color: pink;
-    font-weight: 400;
-    margin-left: 20px;
-    span {
-      font-weight: bold;
-    }
-  }
-  padding: 0.4rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  a {
-    color: pink;
-    text-decoration: none;
-    margin-right: 1.5rem;
   }
 `;

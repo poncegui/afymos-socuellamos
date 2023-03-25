@@ -26,6 +26,7 @@ import Carousel from "./Carousel/Carousel";
 import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
 import FeaturesLanding from "./Features/FeaturesLanding";
+import OtherInformation from "./main/OthersList";
 
 const App = () => {
   //States
@@ -69,6 +70,7 @@ const App = () => {
               <Content {...heroOne} />
               <Content {...heroTwo} />
               <Content {...heroThree} />
+              <OtherInformation />
               <Carousel />
               <PartnertList />
               <Footer />
