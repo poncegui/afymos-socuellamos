@@ -25,7 +25,7 @@ export const featuresData = [
     name: "Instalaciones Centro",
     role: "Presidenta",
     img: centroDiversidad,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
 
@@ -34,7 +34,7 @@ export const featuresData = [
     name: "Centro de Dia",
     role: "Vicepresidenta",
     img: centroDia,
-    alt: "",
+    alt: "/organigrama",
     description: "Teacher",
   },
   {
@@ -42,7 +42,7 @@ export const featuresData = [
     name: "Servicio de capacitación",
     role: "Secretaria",
     img: capacitacion,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -50,7 +50,7 @@ export const featuresData = [
     name: "Viviendas con apoyo",
     role: "Tesorera",
     img: viviendaSocial,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -58,7 +58,7 @@ export const featuresData = [
     name: "Terapias",
     role: "Vocal 1",
     img: servicios,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -66,7 +66,7 @@ export const featuresData = [
     name: " Valoración y Diagnóstico",
     role: "Vocal 2",
     img: diagnostico,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -74,7 +74,7 @@ export const featuresData = [
     name: " Atención familias",
     role: "Vocal 3",
     img: familias,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -82,7 +82,7 @@ export const featuresData = [
     name: "Centro de Formación",
     role: "Vocal 4",
     img: formacion,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -90,7 +90,7 @@ export const featuresData = [
     name: "Ocio y volunturariado",
     role: "Vocal 5",
     img: voluntariado,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
 ];
@@ -110,7 +110,7 @@ export const featuresDataDetails = [
     name: "Centro de Dia",
     url: "Vicepresidenta",
     img: centroDiaLink,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -118,7 +118,7 @@ export const featuresDataDetails = [
     name: "Servicio de capacitación",
     url: "Secretaria",
     img: capacitacionLink,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -126,7 +126,7 @@ export const featuresDataDetails = [
     name: "Viviendas con apoyo",
     url: "Tesorera",
     img: viviendaSocialLink,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -134,7 +134,7 @@ export const featuresDataDetails = [
     name: "Terapias",
     url: "Vocal 1",
     img: serviciosLink,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -142,7 +142,7 @@ export const featuresDataDetails = [
     name: " Valoración y Diagnóstico",
     url: "Vocal 2",
     img: diagnosticoLink,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -150,7 +150,7 @@ export const featuresDataDetails = [
     name: " Atención familias",
     url: "Vocal 3",
     img: familiasLink,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -158,7 +158,7 @@ export const featuresDataDetails = [
     name: "Centro de Formación",
     url: "Vocal 4",
     img: formacionLink,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
   {
@@ -166,7 +166,7 @@ export const featuresDataDetails = [
     name: "Ocio y volunturariado",
     url: "/servicios-y-formacion",
     img: voluntariadoLink,
-    alt: "",
+    alt: "/servicios-y-proyectos",
     description: "Teacher",
   },
 ];

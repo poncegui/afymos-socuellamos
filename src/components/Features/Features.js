@@ -9,6 +9,7 @@ const Tecno = () => {
   const [devTool, setDevTool] = useState(false);
   const [pictoData, setpictoData] = useState(featuresData);
   const [detailsData, setDetailsData] = useState(featuresDataDetails);
+  const [dataHouse, setDataHouse] = useState("");
 
   const handleClick = () => {
     setDevTool(!devTool);
@@ -20,7 +21,6 @@ const Tecno = () => {
     setDevTool(setpictoData);
     handleClick();
   };
-  <div className={`icons ${toggleClassReact}`}></div>;
 
   // const dataRoute = NavLink(`/organigrama/:id`);
 
@@ -34,6 +34,21 @@ const Tecno = () => {
   //   }
   // };
 
+  const characterFiltered = pictoData.filter((character) => {
+    if (dataHouse === character.url) {
+      return true;
+    } else if (dataHouse === character.url) {
+      return character.url;
+    }
+  });
+
+  const handleHouse = (ev) => {
+    characterFiltered({
+      key: ev.id,
+      name: ev.currentTarget.name,
+    });
+  };
+
   return (
     <>
       <>
@@ -41,9 +56,13 @@ const Tecno = () => {
           <SectionFeatures>
             <ButtonContainer>
               {pictoData.map((picto) => (
-                <Icons>
+                <Icons key={picto.id}>
                   <h3>{picto.name}</h3>
-                  <img src={picto.img} alt={picto.alt} onClick={onClick} />
+                  <img
+                    src={picto.img}
+                    alt={picto.alt}
+                    onClick={characterFiltered}
+                  />
                 </Icons>
               ))}
             </ButtonContainer>
