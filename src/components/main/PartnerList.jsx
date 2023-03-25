@@ -53,6 +53,18 @@ export const SectionPartners = styled.div`
   h2 {
     font-size: 40px;
   }
+
+  @media (max-width: 368px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+
+    section {
+      height: 60px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+  }
 `;
 
 export const ContainerParnertList = styled.div`
@@ -64,13 +76,13 @@ export const ContainerParnertList = styled.div`
   align-items: center;
   gap: 50px;
 
-  /* @media (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width: 1090px) {
-    grid-template-columns: repeat(8, 1fr);
+  @media (max-width: 368px) {
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-  } */
+    padding: 30px 0;
+  }
 `;

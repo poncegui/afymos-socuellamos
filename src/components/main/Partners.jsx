@@ -49,6 +49,7 @@ export const LogoPartner = styled.img`
   height: 100%;
   object-fit: center;
 `;
+
 export const Card = styled.div`
   align-items: center;
   display: flex;

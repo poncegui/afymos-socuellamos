@@ -52,8 +52,6 @@ const App = () => {
 
         <Route path="/organigrama" element={<Chart />} />
 
-        <Route path="/colaboradores" element={<Slider />} />
-
         <Route
           path="/"
           element={

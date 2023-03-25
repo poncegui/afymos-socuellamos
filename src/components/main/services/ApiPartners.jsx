@@ -5,6 +5,7 @@ import diputacion from "../../../logos/logo-diputacion.png";
 import europa from "../../../logos/logo-europa.png";
 import globalcaja from "../../../logos/globalcaja.jpg";
 import inclusion from "../../../logos/logo-inclusion.png";
+import gracias from "../../../logos/gracias.png";
 
 const target = "_blank";
 
@@ -64,5 +65,13 @@ export const partenrsData = [
     target: target,
     alt: "logo-globalcaja",
     url: "https://fundacionglobalcajahxxii.com/",
+  },
+  {
+    id: 7,
+    name: "Fundación Globalcaja",
+    src: gracias,
+    target: target,
+    alt: "logo-agradecimiemto-a-colaboradores",
+    url: "",
   },
 ];
