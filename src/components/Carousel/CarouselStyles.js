@@ -11,6 +11,7 @@ export const CarouselImage = styled.img`
 `;
 
 export const ImageWrapper = styled.div`
+  background-color: white;
   width: 90%;
   display: flex !important;
   justify-content: center;

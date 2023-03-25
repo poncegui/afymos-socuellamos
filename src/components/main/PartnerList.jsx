@@ -9,7 +9,10 @@ const PartnerList = () => {
   return (
     <>
       <SectionPartners>
-        <h2>Cofinanciaciones</h2>
+        <section>
+          <h2>Cofinanciaciones</h2>
+        </section>
+
         <ContainerParnertList>
           {partners.map((partner) => {
             return (
@@ -37,10 +40,30 @@ export const SectionPartners = styled.div`
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin: 50px 0;
+  margin: 0 0 0px 0;
+  section {
+    background-color: #071c2f;
+    height: 80px;
+    width: 100%;
+    color: pink;
+    display: grid;
+    place-content: center;
+  }
 
   h2 {
     font-size: 40px;
+  }
+
+  @media (max-width: 368px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+
+    section {
+      height: 60px;
+    }
+    h2 {
+      font-size: 28px;
+    }
   }
 `;
 
@@ -53,13 +76,13 @@ export const ContainerParnertList = styled.div`
   align-items: center;
   gap: 50px;
 
-  /* @media (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width: 1090px) {
-    grid-template-columns: repeat(8, 1fr);
+  @media (max-width: 368px) {
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-  } */
+    padding: 30px 0;
+  }
 `;

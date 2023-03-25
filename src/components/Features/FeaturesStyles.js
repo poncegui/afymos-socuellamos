@@ -22,7 +22,7 @@ export const FeatureWrapper = styled.div`
   margin-top: 4rem;
   grid-gap: 2rem;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1090px) {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 3rem;
   }

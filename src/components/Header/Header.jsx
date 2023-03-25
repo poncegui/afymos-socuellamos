@@ -12,7 +12,7 @@ const Header = () => {
             <img
               className="header_superior__container--logo"
               src={logo}
-              alt="Logo Afymos"
+              alt="logo-afymos"
             />
             <h2 className="header_superior__container--title">Afymos</h2>
 
@@ -23,7 +23,7 @@ const Header = () => {
         <section className="slogan">
           <div className="slogan__container">
             <h3 className="slogan__container--phrase">
-              "Dadme un punto de apoyo y moveré el mundo."{" "}
+              "Dadme un punto de apoyo y moveré el mundo."
             </h3>
             <h5>Arquímedes Siracoussa</h5>
           </div>

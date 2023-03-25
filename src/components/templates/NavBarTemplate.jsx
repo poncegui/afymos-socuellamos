@@ -74,7 +74,7 @@ const Navbar = (props) => {
 export default Navbar;
 
 const NavContainer = styled.nav`
-  background-color: black;
+  background-color: #071c2f;
   height: 100px;
   width: 100%;
   position: sticky;
@@ -148,7 +148,7 @@ const NavContainer = styled.nav`
   }
   .links.active {
     @media (max-width: 1090px) {
-      background-color: black;
+      background-color: #071c2f;
       border-radius: 0 0 90% 0;
       height: 300px;
       width: 100%;
@@ -196,7 +196,7 @@ const BgDiv = styled.div`
   transition: all 0.6s ease;
 
   &.active {
-    background-color: black;
+    background-color: #071c2f;
     border-radius: 0 0 80% 0;
     top: 0;
     left: 0;
@@ -218,7 +218,7 @@ const Hero = styled.nav`
 
   h1 {
     text-align: center;
-    color: black;
+    color: #071c2f;
     font-weight: bold;
     text-transform: lowercase;
     font-size: 70px;
