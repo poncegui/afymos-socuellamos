@@ -8,7 +8,7 @@ import {
   familyDataThree,
 } from "./services/familiasData";
 import { ContentProjects } from "../Content/ContentProjects";
-import Partners from "../main/Partners";
+import PartnersList from "../main/PartnerList";
 
 const ProjectsFamilias = () => {
   return (
@@ -17,7 +17,7 @@ const ProjectsFamilias = () => {
       <ContentProjects {...familyDataOne} inverse />
       <ContentProjects {...familyDataTwo} reverse />
       <ContentProjects {...familyDataThree} inverse />
-      <Partners />
+      <PartnersList />
       <Footer />
     </>
   );

@@ -21,7 +21,7 @@ export const familyDataTwo = {
   topLine: {
     text: "",
   },
-  headline: "Apoyos que presta este sercicio",
+  headline: "Apoyos que presta este sercivicio:",
   description:
     "Elaboración de planes de apoyo familiares, apoyo psicológico, información, orientación y creación de grupos de apoyo.",
   img: apoyofamilia3,
