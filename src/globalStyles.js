@@ -67,6 +67,23 @@ export const Section = styled.section`
   }
 `;
 
+export const SectionProjects = styled.section`
+  padding: ${({ padding }) => (padding ? padding : "60px 0")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  background: ${({ inverse }) => (inverse ? "white" : "#071c2f")};
+  position: ${({ position }) => (position ? position : "")};
+  width: ${({ width }) => (width ? width : "auto")};
+  min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
+  height: ${({ height }) => (height ? height : "auto")};
+  max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
+  min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
+
+  @media (max-width: 768px) {
+    padding: ${({ smPadding }) => (smPadding ? smPadding : "50px 0")};
+  }
+`;
+
 export const Row = styled.div`
   display: flex;
   justify-content: ${({ justify }) => (justify ? justify : "")};

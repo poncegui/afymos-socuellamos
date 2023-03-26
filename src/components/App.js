@@ -18,14 +18,12 @@ import Job from "./Job";
 import Main from "./main/Main";
 import NavBar from "./Header/NavBar";
 import PartnertList from "./main/PartnerList";
-import PictoSection from "./main/PictoMenuList";
 import Programs from "./Programs";
-import Projects from "./Projects";
+import ProjectsFamilias from "./ProjectsFamilias";
 import Slider from "./Carousel/Slider";
 import Carousel from "./Carousel/Carousel";
 import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
-import FeaturesLanding from "./Features/FeaturesLanding";
 import OtherInformation from "./main/OthersList";
 
 const App = () => {
@@ -47,9 +45,7 @@ const App = () => {
 
         <Route path="/centro-diversidad" element={<Center />} />
 
-        {/* <Route path="/programas" element={<FeaturesLanding />} /> */}
-
-        <Route path="/servicios-y-proyectos" element={<Projects />} />
+        <Route path="/apoyo-familias" element={<ProjectsFamilias />} />
 
         <Route path="/organigrama" element={<Chart />} />
 
