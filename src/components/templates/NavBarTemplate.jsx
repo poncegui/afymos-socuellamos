@@ -41,31 +41,7 @@ const Navbar = (props) => {
           </div>
         </Link>
 
-        <div className={`links ${clicked ? "active" : ""}`}>
-          <Link onClick={handleClick} to="#aboutUs" data-aos="fade-left">
-            nosotros
-          </Link>
-          <Link
-            onClick={handleClick}
-            to="/centro-diversidad"
-            data-aos="fade-left"
-          >
-            centro diversidad
-          </Link>
-          <Link onClick={handleClick} to="/programas" data-aos="fade-left">
-            programas
-          </Link>
-          <Link onClick={handleClick} to="/donaciones" data-aos="fade-left">
-            donaciones
-          </Link>
-          <Link onClick={handleClick} to="/contacto" data-aos="fade-left">
-            contacto
-          </Link>
-        </div>
-        <div className="burguer">
-          <BurguerBtn clicked={clicked} handleClick={handleClick} />
-        </div>
-        <BgDiv className={`initial ${clicked ? " active" : ""}`}></BgDiv>
+        <div className={`links ${clicked ? "active" : ""}`}></div>
       </NavContainer>
     </>
   );

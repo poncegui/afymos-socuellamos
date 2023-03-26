@@ -1,4 +1,4 @@
-import { Container, Section } from "../../globalStyles";
+import { Container, SectionProjects } from "../../globalStyles";
 import {
   ContentRow,
   TextWrapper,
@@ -14,14 +14,14 @@ export const ContentProjects = ({
   topLine,
   headline,
   description,
-  buttonLabel,
   img,
   alt,
   reverse,
   inverse,
+  margin,
 }) => {
   return (
-    <Section inverse={inverse}>
+    <SectionProjects inverse={inverse}>
       <Container>
         <ContentRow reverse={reverse}>
           <ContentColumn>
@@ -38,6 +38,6 @@ export const ContentProjects = ({
           </ContentColumn>
         </ContentRow>
       </Container>
-    </Section>
+    </SectionProjects>
   );
 };
