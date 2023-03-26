@@ -53,7 +53,9 @@ const Tecno = () => {
               {pictoData.map((picto) => (
                 <Icons key={picto.id} value={picto.name}>
                   <h3>{picto.name}</h3>
-                  <img src={picto.img} alt={picto.alt} onClick={handleDetail} />
+                  <Link to={picto.url}>
+                    <img src={picto.img} alt={picto.alt} onClick={handleUrl} />
+                  </Link>
                 </Icons>
               ))}
             </ButtonContainer>
@@ -233,19 +235,19 @@ export const Icons = styled.div`
     gap: 0.6rem;
     border-radius: 10px;
     width: 70%;
-    height: 70%;
+    height: 80%;
     box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;
     border: solid 1px #071c2f;
 
     h3 {
       font-size: 0.5rem;
-      padding: 0 0.3rem;
+      padding: 0 0.8rem;
     }
 
     img {
       color: black;
-      height: 40px;
       width: 40px;
+      padding-bottom: 10px;
     }
   }
 `;

@@ -1,17 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import BurguerBtn from "./BurguerBtn";
 import logo from "../../logos/logo-afymos.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Navbar = (props) => {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    setClicked(!clicked);
-  };
-
   const handleBack = () => {
     window.history.back();
     console.log("vuelvo");
@@ -31,8 +25,8 @@ const Navbar = (props) => {
           alt={props.alt}
         />
       </Hero>
-      <NavContainer id="menu-principal" data-aos="fade-right">
-        <Link className="Link" to="/" onClick={handleBack}>
+      <NavContainer id="menu-principal">
+        <Link to="/" onClick={handleBack}>
           <div className="containerPrincipal">
             <i class="fa-solid fa-angles-left"></i>
             <h3>
@@ -40,8 +34,6 @@ const Navbar = (props) => {
             </h3>
           </div>
         </Link>
-
-        <div className={`links ${clicked ? "active" : ""}`}></div>
       </NavContainer>
     </>
   );
@@ -55,7 +47,6 @@ const NavContainer = styled.nav`
   width: 100%;
   position: sticky;
   top: 0;
-
   z-index: 50;
 
   .containerPrincipal {
@@ -91,99 +82,10 @@ const NavContainer = styled.nav`
     text-decoration: none;
     margin-right: 1.5rem;
   }
-  .links {
-    position: absolute;
-    top: -700px;
-    left: -2000px;
-    right: 0;
-
-    text-align: center;
-    transition: all 0.5s ease;
-    a {
-      color: pink;
-      font-size: 1.2rem;
-      display: block;
-    }
-
-    @media (min-width: 1090px) {
-      position: initial;
-      margin: 0;
-      a {
-        font-size: 1.8rem;
-        margin-left: 30px;
-        color: white;
-        display: inline;
-
-        &:hover {
-          transition: all 0.5s ease-out;
-          text-decoration: underline;
-        }
-      }
-      display: block;
-    }
-  }
-  .links.active {
-    @media (max-width: 1090px) {
-      background-color: #071c2f;
-      border-radius: 0 0 90% 0;
-      height: 300px;
-      width: 100%;
-      display: block;
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      top: 90px;
-      left: 0;
-      right: 0;
-      text-align: center;
-
-      a {
-        font-size: 1.6rem;
-        margin-top: 0.8rem;
-        color: pink;
-        cursor: pointer;
-
-        &:hover {
-          color: gray;
-          font-weight: bold;
-          transition: all 0.5s ease-out;
-        }
-      }
-    }
-
-    @media (max-width: 768px) {
-    }
-  }
-  .burguer {
-    @media (min-width: 1090px) {
-      display: none;
-    }
-  }
-`;
-
-const BgDiv = styled.div`
-  color: pink;
-  position: absolute;
-  top: -1000px;
-  left: -1000px;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transition: all 0.6s ease;
-
-  &.active {
-    background-color: #071c2f;
-    border-radius: 0 0 80% 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 `;
 
 const Hero = styled.nav`
   display: flex;
-
   align-items: center;
   justify-content: space-evenly;
   min-height: 20vh;
@@ -212,7 +114,6 @@ const Hero = styled.nav`
   @media (max-width: 768px) {
     min-height: 15vh;
     h1 {
-      //   margin: 100px 0px 80px 0;
       font-size: 30px;
     }
     img {
