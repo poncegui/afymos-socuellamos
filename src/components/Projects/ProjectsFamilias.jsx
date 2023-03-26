@@ -1,22 +1,23 @@
 import { React } from "react";
 
-//COMPONENTS
-import NavBarTemplate from "./templates/NavBarTemplate";
-import Footer from "./Footer";
+import NavBarTemplate from "../templates/NavBarTemplate";
+import Footer from "../Footer";
 import {
   familyDataOne,
   familyDataTwo,
   familyDataThree,
-} from "./Content/services/ProjectsData";
-import { ContentProjects } from "./Content/ContentProjects";
+} from "./services/familiasData";
+import { ContentProjects } from "../Content/ContentProjects";
+import Partners from "../main/Partners";
 
 const ProjectsFamilias = () => {
   return (
     <>
-      <NavBarTemplate title="Servicio de atención a familias" alt="" />
+      <NavBarTemplate title="Servicio de atención a familias" />
       <ContentProjects {...familyDataOne} inverse />
       <ContentProjects {...familyDataTwo} reverse />
       <ContentProjects {...familyDataThree} inverse />
+      <Partners />
       <Footer />
     </>
   );

@@ -19,12 +19,13 @@ import Main from "./main/Main";
 import NavBar from "./Header/NavBar";
 import PartnertList from "./main/PartnerList";
 import Programs from "./Programs";
-import ProjectsFamilias from "./ProjectsFamilias";
+import ProjectsFamilias from "./Projects/ProjectsFamilias";
 import Slider from "./Carousel/Slider";
 import Carousel from "./Carousel/Carousel";
 import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
 import OtherInformation from "./main/OthersList";
+import ProjectsTerapias from "./Projects/ProjetsTerapias";
 
 const App = () => {
   //States
@@ -44,6 +45,8 @@ const App = () => {
                   /> */}
 
         <Route path="/centro-diversidad" element={<Center />} />
+
+        <Route path="/terapias" element={<ProjectsTerapias />} />
 
         <Route path="/apoyo-familias" element={<ProjectsFamilias />} />
 
