@@ -26,6 +26,13 @@ import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
 import OtherInformation from "./main/OthersList";
 import ProjectsTerapias from "./Projects/ProjetsTerapias";
+import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
+import ProjectsVivienda from "./Projects/ProjectsVivienda";
+import ProjectsSocioLaboral from "./Projects/ProjectsSocioLaboral";
+import ProjectsCentroDia from "./Projects/ProjecsCentroDia";
+import ProjectsCentroDiversidad from "./Projects/ProjectsCentroDiversidad";
+import ProjectsFormacion from "./Projects/ProjectsFormacion";
+import ProjectsDiagnostico from "./Projects/ProjectsDiagnostico";
 
 const App = () => {
   //States
@@ -44,11 +51,32 @@ const App = () => {
                   path='*' element={<NotFoundPage />}
                   /> */}
 
-        <Route path="/centro-diversidad" element={<Center />} />
-
         <Route path="/terapias" element={<ProjectsTerapias />} />
 
         <Route path="/apoyo-familias" element={<ProjectsFamilias />} />
+
+        <Route path="/ocio-y-voluntariado" element={<ProjectsVoluntariado />} />
+
+        <Route path="/viviendas-con-apoyo" element={<ProjectsVivienda />} />
+
+        <Route path="/centro-de-dia" element={<ProjectsCentroDia />} />
+
+        <Route
+          path="/servicio-capacitacion"
+          element={<ProjectsSocioLaboral />}
+        />
+
+        <Route
+          path="/instalaciones-centro-diversidad"
+          element={<ProjectsCentroDiversidad />}
+        />
+
+        <Route
+          path="/valoracion-y-diagnostico"
+          element={<ProjectsDiagnostico />}
+        />
+
+        <Route path="/formacion" element={<ProjectsFormacion />} />
 
         <Route path="/organigrama" element={<Chart />} />
 

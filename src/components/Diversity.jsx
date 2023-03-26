@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import SlidesShowDiversity from "./SlidesShowDiversity";
-import administracion from "../pictogramas/administracion.png";
+import centroAfymos from "../pictogramas/centro-afymos.png";
+
 const Diversity = () => {
   const links = document.querySelectorAll(".links");
   links.forEach((icon) => {
@@ -28,7 +29,7 @@ const Diversity = () => {
             </div> */}
             <div className="mainContainerDiversity__wrapText--icon">
               <img
-                src={administracion}
+                src={centroAfymos}
                 className="centro-afymos"
                 alt="pictograma-centro"
               ></img>

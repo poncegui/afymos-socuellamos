@@ -1,6 +1,9 @@
-import voluntariado1 from "../../../images-services/apoyo-familias.jpg";
-import voluntariado2 from "../../../images-services/apoyo-familias-2.jpg";
-import voluntariado3 from "../../../images-services/apoyo-familias-3.jpg";
+import voluntariado1 from "../../../images-voluntariado/voluntariado4.jpg";
+import voluntariado2 from "../../../images-voluntariado/voluntariado2.jpg";
+import voluntariado3 from "../../../images-voluntariado/voluntariado7.jpg";
+import voluntariado4 from "../../../images-voluntariado/voluntariado9.jpg";
+import voluntariado5 from "../../../images-voluntariado/voluntariado5.jpg";
+import voluntariado6 from "../../../images-voluntariado/voluntariado6.jpg";
 
 export const voluntariadoOne = {
   reverse: false,
@@ -25,7 +28,7 @@ export const voluntariadoTwo = {
     "Se organizan vacaciones al año subvencionados tanto por FEAPS - IMSERSO",
   description:
     "A lo largo del año, se ofertan estancias de fin de semana en casas o albergues rurales, con el fin de ofrecer unos días de vacaciones al mayor número de usuarios posible.",
-  img: voluntariado2,
+  img: voluntariado6,
 };
 
 export const voluntariadoThree = {
@@ -38,7 +41,7 @@ export const voluntariadoThree = {
     "Se pretende que el ocio sea lo más inclusivo posible, mediante el acompañamiento del Coordinador o personas voluntarias:",
   description:
     "La novedad de este servicio es que ya no es únicamente la Asociación quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando así su autonomía.",
-  img: voluntariado3,
+  img: voluntariado5,
 };
 
 export const voluntariadoFour = {
@@ -77,5 +80,5 @@ export const voluntariadoSix = {
     "Es un proyecto creado por Afymos y financiado en parte por la Concejalía de Bienestar Social de la localidad de Socuéllamos.",
   description:
     "Urban Camp es un campamento urbano para 50 jóvenes (con y sin discapacidad) de la localidad de Socuéllamos de edades comprendidas entre los 12 y 16 años que nació para dar respuesta a las necesidades de ocio de los jóvenes durante el periodo vacacional así como para  ofrecer a las familias un recurso para la conciliación de la vida familiar y laboral durante esta época del año.",
-  img: voluntariado2,
+  img: voluntariado4,
 };
