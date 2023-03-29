@@ -6,13 +6,7 @@ import "../../styles/layout/features.css";
 import { introData } from "./services/introData";
 
 const ProjectsIntro = () => {
-  const [devTool, setDevTool] = useState(true);
   const [others, setOthers] = useState(introData);
-  // const [ detailsData, setDetailsData ] = useState(featuresDataDetails);
-
-  const handleDetail = () => {
-    setDevTool(!devTool);
-  };
 
   const handleUrl = (ev) => {
     setOthers(ev.currentTarget);
@@ -28,49 +22,12 @@ const ProjectsIntro = () => {
               <Icons key={picto.id} value={picto.name}>
                 <h3>{picto.name}</h3>
                 <Link to={picto.url}>
-                  <img src={picto.img} alt={picto.alt} onClick={handleUrl} />
+                  <img src={picto.src} alt={picto.alt} onClick={handleUrl} />
                 </Link>
               </Icons>
             ))}
           </ButtonContainer>
         </SectionFeaturesMobile>
-
-        {devTool ? (
-          <SectionFeaturesDesktop>
-            <h1>Nuestras Terapias</h1>
-            <ButtonContainer>
-              {others.map((picto) => (
-                <Icons key={picto.id} value={picto.name}>
-                  <h3>{picto.name}</h3>
-                  <img src={picto.img} alt={picto.alt} onClick={handleDetail} />
-                </Icons>
-              ))}
-            </ButtonContainer>
-          </SectionFeaturesDesktop>
-        ) : (
-          <>
-            <h1>Y además...</h1>
-            {/* <SectionFeaturesDesktop>
-        <h1>Menú de Servicios</h1>
-          <ButtonContainer>
-            {detailsData.map((detail) => (
-              <Content key={detail.id}  buttonLabel={"saber más"} >
-                <h3>{detail.name}</h3>
-                <img src={detail.img} alt={detail.alt} />
-                <Link className="Link" to="/" onClick={handleBack}>
-          <NavBack>
-            <i class="fa-solid fa-angles-left"></i>
-            <h3>
-              volver a <span>Principal</span>
-            </h3>
-          </NavBack>
-        </Link>
-              </Content>
-            ))}
-          </ButtonContainer>
-        </SectionFeaturesDesktop> */}
-          </>
-        )}
       </>
     </>
   );
@@ -98,37 +55,6 @@ export const SectionFeaturesMobile = styled.div`
     align-items: center;
     margin: 0px;
     background-color: white;
-  }
-
-  @media (min-width: 1090px) {
-    display: none;
-  }
-`;
-
-export const SectionFeaturesDesktop = styled.div`
-  display: none;
-
-  @media (min-width: 1090px) {
-    display: contents;
-    display: flex;
-    width: 100%;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5% 15%;
-    background-color: white;
-
-    @media (max-width: 768px) {
-      display: flex;
-      width: 100%;
-      position: relative;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      margin: 0px;
-      background-color: white;
-    }
   }
 `;
 

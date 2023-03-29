@@ -2,37 +2,28 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { heroOne, heroTwo, heroThree } from "./Hero/HeroData";
+import "../styles/main.scss";
 
 //COMPONENTS
-
-import "../styles/main.scss";
-import AboutUs from "./AboutUs";
-import Center from "./Center";
+import { Content } from "./../components/Content/Content";
+import Carousel from "./Carousel/Carousel";
 import Chart from "./Chart/Chart";
 import ContactUs from "./ContactUs";
-import Diversity from "./Diversity";
-import Donation from "./Donation";
+import Features from "./Features/Features";
 import Footer from "./Footer";
-import Header from "./Header/Header";
-import Job from "./Job";
 import Main from "./main/Main";
 import NavBar from "./Header/NavBar";
-import PartnertList from "./main/PartnerList";
-import Programs from "./Programs";
-import ProjectsFamilias from "./Projects/ProjectsFamilias";
-import Slider from "./Carousel/Slider";
-import Carousel from "./Carousel/Carousel";
-import { Content } from "./../components/Content/Content";
-import Features from "./Features/Features";
 import OtherInformation from "./main/OthersList";
-import ProjectsTerapias from "./Projects/ProjetsTerapias";
-import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
-import ProjectsVivienda from "./Projects/ProjectsVivienda";
-import ProjectsSocioLaboral from "./Projects/ProjectsSocioLaboral";
+import PartnertList from "./main/PartnerList";
 import ProjectsCentroDia from "./Projects/ProjecsCentroDia";
 import ProjectsCentroDiversidad from "./Projects/ProjectsCentroDiversidad";
-import ProjectsFormacion from "./Projects/ProjectsFormacion";
 import ProjectsDiagnostico from "./Projects/ProjectsDiagnostico";
+import ProjectsFamilias from "./Projects/ProjectsFamilias";
+import ProjectsFormacion from "./Projects/ProjectsFormacion";
+import ProjectsSocioLaboral from "./Projects/ProjectsSocioLaboral";
+import ProjectsTerapias from "./Projects/ProjetsTerapias";
+import ProjectsVivienda from "./Projects/ProjectsVivienda";
+import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
 
 const App = () => {
   //States
@@ -78,7 +69,7 @@ const App = () => {
 
         <Route path="/formacion" element={<ProjectsFormacion />} />
 
-        <Route path="/organigrama" element={<Chart />} />
+        <Route path="/junta-directiva" element={<Chart />} />
 
         <Route
           path="/"
