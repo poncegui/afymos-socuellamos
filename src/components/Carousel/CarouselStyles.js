@@ -22,7 +22,7 @@ export const ImageWrapper = styled.div`
   height: 430px;
   border: solid 1px #071c2f;
 
-  @media screen and (min-width: 440px) {
+  @media (min-width: 440px) {
     border: 1px solid #bebebe;
   }
 `;
@@ -37,7 +37,7 @@ export const ButtonContainer = styled(Row)`
     opacity: 0.7;
     transition: opacity 0.2s ease-in;
   }
-  @media screen and (max-width: 960px) {
+  @media (max-width: 960px) {
     margin: 0 auto;
   }
 `;
