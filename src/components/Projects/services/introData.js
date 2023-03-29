@@ -1,9 +1,8 @@
 import logopediaData from "../../../pictogramas/logopeda.png";
 import fisioterapiaData from "../../../pictogramas/fisioterapeuta.png";
 import terapiaOcupacionalData from "../../../pictogramas/terapeuta-ocupacional.png";
-import psicologiaData from "../../../pictogramas/donacion.png";
-// import neuroPsicologiaData from "../../../pictogramas/donacion.png";
-import neuroPsicologiaData from "../../../images/foto1.jpg";
+import psicologiaData from "../../../pictogramas/psicologa.png";
+
 const target = "_blank";
 
 export const introData = [
@@ -33,18 +32,10 @@ export const introData = [
   },
   {
     id: 4,
-    name: "Psicopedagogía",
+    name: "Psicopedagogía y Neuropsicologia",
     src: psicologiaData,
     target: target,
     alt: "pictograma-psicologia",
-    url: "/donar",
-  },
-  {
-    id: 5,
-    name: "NeuroPsicologia",
-    src: neuroPsicologiaData,
-    target: target,
-    alt: "pictograma-neuroPsicologia",
     url: "/donar",
   },
 ];

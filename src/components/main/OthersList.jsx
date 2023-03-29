@@ -16,7 +16,7 @@ const OtherInformation = () => {
     <>
       <>
         <SectionFeaturesMobile>
-          <h1>Conoce toda nuestra información y servicios disponibles</h1>
+          <h1>Nosotros</h1>
           <ButtonContainer>
             {others.map((picto) => (
               <Icons key={picto.id} value={picto.name}>
@@ -47,6 +47,7 @@ export const SectionFeaturesMobile = styled.div`
   background-color: white;
   margin: auto;
   padding-bottom: 5%;
+  padding: 5% 20%;
 
   @media (max-width: 768px) {
     display: flex;

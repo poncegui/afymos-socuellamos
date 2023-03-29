@@ -45,7 +45,7 @@ export const SectionFeaturesMobile = styled.div`
   margin: 0px;
   background-color: white;
   margin: auto;
-  padding-bottom: 5%;
+  padding: 5% 15%;
 
   @media (max-width: 768px) {
     display: flex;
@@ -66,7 +66,7 @@ export const ButtonContainer = styled.div`
   grid-template-rows: 1fr;
   margin: auto;
   grid-gap: 5% 5%;
-  margin: 5%;
+  margin: 5% 20%;
   justify-content: center;
 
   @media (max-width: 768px) {
