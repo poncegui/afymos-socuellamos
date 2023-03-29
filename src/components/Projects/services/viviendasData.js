@@ -1,6 +1,6 @@
-import apoyoVivienda from "../../../images-voluntariado/voluntariado4.jpg";
-import apoyoVivienda2 from "../../../images-voluntariado/voluntariado4.jpg";
-import apoyoVivienda3 from "../../../images-voluntariado/voluntariado4.jpg";
+import apoyoVivienda from "../../../images-viviendas/vivienda-4.jpg";
+import apoyoVivienda2 from "../../../images-viviendas/vivienda-1.jpg";
+import apoyoVivienda3 from "../../../images-viviendas/vivienda-2.jpg";
 
 export const viviendasDataOne = {
   reverse: false,

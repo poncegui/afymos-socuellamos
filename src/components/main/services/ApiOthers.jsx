@@ -1,7 +1,7 @@
 import organigrama from "../../../pictogramas/organigrama.png";
 import contabilidad from "../../../pictogramas/contabilidad.png";
 import artesania from "../../../pictogramas/artesania.png";
-import donaciones from "../../../pictogramas/donacion.png";
+import junta from "../../../pictogramas/junta.png";
 
 const target = "_blank";
 
@@ -16,6 +16,14 @@ export const othersData = [
   },
   {
     id: 2,
+    name: "Junta Directiva",
+    src: junta,
+    target: target,
+    alt: "logo-junta-directiva",
+    url: "/junta-directiva",
+  },
+  {
+    id: 3,
     name: "Cuentas anuales",
     src: contabilidad,
     target: target,
@@ -23,19 +31,11 @@ export const othersData = [
     url: "/descargar-cuentas",
   },
   {
-    id: 3,
+    id: 4,
     name: "Servicio de artesanía",
     src: artesania,
     target: target,
     alt: "logo-servicio-de-artesania",
     url: "/artesania",
-  },
-  {
-    id: 4,
-    name: "Donaciones",
-    src: donaciones,
-    target: target,
-    alt: "logo-donaciones",
-    url: "/donar",
   },
 ];

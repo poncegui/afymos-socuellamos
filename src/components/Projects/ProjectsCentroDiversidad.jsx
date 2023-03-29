@@ -14,7 +14,7 @@ import Diversity from "../Diversity";
 const ProjectsCentroDiversidad = () => {
   return (
     <>
-      <NavBarTemplate title="Centro de Formación" />
+      <NavBarTemplate title="Centro de Atención a la Diversidad Funcional" />
       <ContentProjects {...centroDiversidadDataOne} inverse />
       <ContentProjects {...centroDiversidadDataTwo} reverse />
       <ContentProjects {...centroDiversidadDataThree} inverse />

@@ -12,6 +12,7 @@ export const FeaturesData = {
   description:
     "El Servicio de Capacitación de Afymos,  es un servicio de atención diurna que tiene como objetivo principal potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los ámbitos de la vida de la persona (autonomía personal, relaciones interpersonales, utilizaciónsiones).",
   buttonLabel: "Saber más",
+  linkTo: "/donaciones",
   img: integracion,
 };
 
@@ -42,6 +43,6 @@ export const heroThree = {
   description:
     "También ofrecemos Servicios Terapéuticos de diferentes disciplinas con el fin de mejorar la calidad de vida de las personas.",
   buttonLabel: "Saber más",
-  linkTo: "/servicios-y-proyectos",
+  linkTo: "/trabaja-con-nosotros",
   img: services,
 };
