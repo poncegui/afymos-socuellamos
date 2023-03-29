@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.11e68fc6.css",
-    "main.js": "./static/js/main.03865bbf.js",
+    "main.js": "./static/js/main.461ef958.js",
     "static/media/chart1.jpg": "./static/media/chart1.2489704be749029d9e7e.jpg",
     "static/media/chartTeam1.jpg": "./static/media/chartTeam1.5069bdbc78beba6ba1d8.jpg",
     "static/media/chart5.jpg": "./static/media/chart5.7cafac7a77975632b491.jpg",
@@ -31,6 +31,7 @@
     "static/media/centro-diversidad2.png": "./static/media/centro-diversidad2.a5c5cc523104b9ae31fb.png",
     "static/media/sala-formacion.png": "./static/media/sala-formacion.a5c5cc523104b9ae31fb.png",
     "static/media/voluntariado9.jpg": "./static/media/voluntariado9.016fd9bff3e8233c2176.jpg",
+    "static/media/centroDia-2.jpg": "./static/media/centroDia-2.262a1ab97aee6eb9e254.jpg",
     "static/media/cocina.png": "./static/media/cocina.dddf8cae8b29de25da13.png",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/foto7.jpg": "./static/media/foto7.190634458463d2fd0d4e.jpg",
@@ -43,7 +44,9 @@
     "static/media/fomento.jpg": "./static/media/fomento.63c89704fef7aefb8f81.jpg",
     "static/media/vivienda-1.jpg": "./static/media/vivienda-1.ca2042692b2a1724b683.jpg",
     "static/media/apoyo-familias-3.jpg": "./static/media/apoyo-familias-3.b0d33d5408866371cf22.jpg",
+    "static/media/artesania-1.jpg": "./static/media/artesania-1.874ce9e30386faa9398e.jpg",
     "static/media/apoyo-familias.jpg": "./static/media/apoyo-familias.5c7046f4eacbc38522aa.jpg",
+    "static/media/artesania-2.jpg": "./static/media/artesania-2.35e70c504ac6abe176bc.jpg",
     "static/media/rafa.jpg": "./static/media/rafa.5f8a302f0f8a0bf2c8b7.jpg",
     "static/media/vivienda-4.jpg": "./static/media/vivienda-4.4b2b92330e6560d4f7ce.jpg",
     "static/media/un-dia-afymos.jpg": "./static/media/un-dia-afymos.5756d2cf953a60a749a0.jpg",
@@ -58,7 +61,6 @@
     "static/media/centro-fachada.jpg": "./static/media/centro-fachada.6f18f3b97ba93249fe4f.jpg",
     "static/media/tomas.jpg": "./static/media/tomas.922e38073dce14b1fed2.jpg",
     "static/media/centro-gente.jpg": "./static/media/centro-gente.1043b6337b21eaeb5a22.jpg",
-    "static/media/centroDia-2.jpg": "./static/media/centroDia-2.1043b6337b21eaeb5a22.jpg",
     "static/media/psicologa.png": "./static/media/psicologa.2ac80fd8ae5aadef28b1.png",
     "static/media/sociolaboral.jpg": "./static/media/sociolaboral.96c8118f618f1b3a93ae.jpg",
     "static/media/terapeuta-ocupacional.png": "./static/media/terapeuta-ocupacional.8f11e89651b9edb867df.png",
@@ -87,7 +89,7 @@
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
     "main.11e68fc6.css.map": "./static/css/main.11e68fc6.css.map",
-    "main.03865bbf.js.map": "./static/js/main.03865bbf.js.map"
+    "main.461ef958.js.map": "./static/js/main.461ef958.js.map"
   },
-  "entrypoints": ["static/css/main.11e68fc6.css", "static/js/main.03865bbf.js"]
+  "entrypoints": ["static/css/main.11e68fc6.css", "static/js/main.461ef958.js"]
 }

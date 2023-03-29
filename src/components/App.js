@@ -24,6 +24,7 @@ import ProjectsTerapias from "./Projects/ProjetsTerapias";
 import ProjectsVivienda from "./Projects/ProjectsVivienda";
 import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
 import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
+import ProjectsArtesania from "./Projects/ProjectsArtesania";
 
 const App = () => {
   //States
@@ -52,6 +53,8 @@ const App = () => {
 
         <Route path="/centro-de-dia" element={<ProjectsCentroDia />} />
 
+        <Route path="/artesania" element={<ProjectsArtesania />} />
+
         <Route
           path="/servicio-capacitacion"
           element={<ProjectsCapacitacion />}
@@ -70,7 +73,6 @@ const App = () => {
         <Route path="/formacion" element={<ProjectsFormacion />} />
 
         <Route path="/junta-directiva" element={<Chart />} />
-
         <Route
           path="/"
           element={
