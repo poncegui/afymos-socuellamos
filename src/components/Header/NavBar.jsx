@@ -19,8 +19,8 @@ function Navbar() {
           <Link onClick={handleClick} to="/organigrama">
             nosotros
           </Link>
-          <Link onClick={handleClick} to="/servicios">
-            servicios
+          <Link onClick={handleClick} to="/terapias">
+            terapias
           </Link>
 
           <Link onClick={handleClick} to="/donaciones">

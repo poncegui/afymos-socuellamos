@@ -24,7 +24,7 @@ import ProjectsTerapias from "./Projects/ProjetsTerapias";
 import ProjectsVivienda from "./Projects/ProjectsVivienda";
 import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
 import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
-import ProjectsArtesania from "./Projects/ProjectsArtesania";
+import ProjectsDonaciones from "./Projects/ProjectsDonaciones";
 
 const App = () => {
   //States
@@ -53,7 +53,7 @@ const App = () => {
 
         <Route path="/centro-de-dia" element={<ProjectsCentroDia />} />
 
-        <Route path="/artesania" element={<ProjectsArtesania />} />
+        <Route path="/donaciones" element={<ProjectsDonaciones />} />
 
         <Route
           path="/servicio-capacitacion"
@@ -82,11 +82,7 @@ const App = () => {
                 onClick={handleToggleMain}
                 toggleStatusMain={textIsOpenMain}
               />
-
               <Features />
-              {/* <AboutUs /> */}
-              {/* <Job /> */}
-              {/* <Slider /> */}
               <Content {...heroOne} />
               <Content {...heroTwo} />
               <Content {...heroThree} />

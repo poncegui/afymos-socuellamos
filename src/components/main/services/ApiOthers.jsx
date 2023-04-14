@@ -1,6 +1,6 @@
 import organigrama from "../../../pictogramas/organigrama.png";
 import contabilidad from "../../../pictogramas/contabilidad.png";
-import artesania from "../../../pictogramas/artesania.png";
+import donaciones from "../../../pictogramas/donacion.png";
 import junta from "../../../pictogramas/junta.png";
 
 const target = "_blank";
@@ -32,10 +32,10 @@ export const othersData = [
   },
   {
     id: 4,
-    name: "Servicio de artesanía",
-    src: artesania,
+    name: "Donaciones",
+    src: donaciones,
     target: target,
-    alt: "logo-servicio-de-artesania",
-    url: "/artesania",
+    alt: "logo-donaciones",
+    url: "/donaciones",
   },
 ];

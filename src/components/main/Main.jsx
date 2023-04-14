@@ -9,12 +9,12 @@ const Main = () => {
             </h4>
           </div>
 
-          <div className="article__text">
+          {/* <div className="article__text">
             <p>
               Somos una asociación de familiares y amigos de personas con alguna
               discapacidad
             </p>
-          </div>
+          </div> */}
         </div>
       </article>
     </section>

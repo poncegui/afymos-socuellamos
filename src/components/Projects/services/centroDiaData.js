@@ -1,6 +1,6 @@
-import centroDia from "../../../images-centroDia/centroDia-2.jpg";
-import centroDia2 from "../../../images-centroDia/centroDia-1.jpg";
-import centroDia3 from "../../../images-centroDia/centroDia-2.jpg";
+import centroDia from "../../../images-centroDia/centroDia-6.jpg";
+import centroDia2 from "../../../images-centroDia/centroDia-4.jpg";
+import centroDia3 from "../../../images-centroDia/centroDia-5.jpg";
 
 export const centroDiaDataOne = {
   reverse: false,
@@ -9,7 +9,7 @@ export const centroDiaDataOne = {
     text: "El Centro de Día Afymos",
   },
   headline:
-    "Es un recurso social de atención diurna dirigido a prestar atención especializada a personas cuyo grado de discapacidad intelectual",
+    "El Centro de Día Afymos es un recurso social de atención diurna dirigido a prestar atención especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
   description:
     "Pretendemos favorecer la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente índole, temporales o permanentes, de diferente intensidad y frecuencia.",
   img: centroDia,

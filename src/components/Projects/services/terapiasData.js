@@ -1,4 +1,4 @@
-import introduccion from "../../../images-center/centro-gente.jpg";
+import introduccion from "../../../images-terapias/centroDia-7.jpg";
 import logopedia from "../../../images-chart/chart9.jpg";
 import fisioterapia from "../../../images-chart/chart16.jpg";
 import terapiaOcupacional from "../../../images-chart/chart10.jpg";
@@ -38,7 +38,7 @@ export const fisioterapiaData = {
     text: "FISIOTERAPIA: conóce cómo trabaja nuestra profesional, Amparo Guerrero",
   },
   headline:
-    "¿Tienes dolor? ¿Sufres dolores de cabeza constantemente? ¿Tomas medicación para paliar dolores de manera habitual? ¿Tu peque ha tenido bronquiolitis? ¿Ves cómo tus mayores cada día tienen más dificultades para moverse?:",
+    "Mediante la aplicación de medios físicos, curamos, prevenimos, recuperamos y adaptamos a personas afectadas de disfunciones somáticas.",
   description:
     "Es hora de conocer nuestra terapia en donde llevaremos a cabo una valoración y diagnóstico de fisioterapia, teniendo en cuenta una visión general del problema, dolencia, patología, etc. Después, utilizaremos distintas técnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo",
   img: fisioterapia,

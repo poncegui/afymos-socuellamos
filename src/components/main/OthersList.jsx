@@ -48,7 +48,6 @@ export const SectionFeaturesMobile = styled.div`
   margin: auto;
   padding-bottom: 5%;
   padding: 5% 20%;
-
   @media (max-width: 768px) {
     display: flex;
     position: relative;
@@ -70,7 +69,6 @@ export const ButtonContainer = styled.div`
   grid-gap: 5% 5%;
   margin: 5%;
   justify-content: center;
-
   @media (max-width: 768px) {
     width: 70%;
     display: grid;
@@ -109,20 +107,17 @@ export const Icons = styled.div`
   :hover {
     background-color: pink;
   }
-
   h3 {
     margin-top: 0.5rem;
     font-size: 1rem;
     padding: 0 0.3rem;
   }
-
   img {
     color: #071c2f;
     height: 100px;
     width: 100px;
     cursor: pointer;
   }
-
   @media (max-width: 368px) {
     margin: 5%;
     margin-bottom: 15%;
@@ -131,19 +126,16 @@ export const Icons = styled.div`
     width: 80%;
     box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;
     border: solid 1px #071c2f;
-
     h3 {
       font-size: 0.5rem;
       padding: 0 0.3rem;
     }
-
     img {
       color: #071c2f;
       height: 40px;
       width: 40px;
     }
   }
-
   @media (min-width: 1090) {
     margin: 5%;
     margin-bottom: 15%;
@@ -153,12 +145,10 @@ export const Icons = styled.div`
     height: 70%;
     box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;
     border: solid 1px #071c2f;
-
     h3 {
       font-size: 0.5rem;
       padding: 0 0.3rem;
     }
-
     img {
       color: #071c2f;
       height: 40px;
