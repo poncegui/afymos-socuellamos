@@ -1,9 +1,12 @@
 import introduccion from "../../../images-terapias/centroDia-7.jpg";
-import logopedia from "../../../images-chart/chart9.jpg";
+import logopedia from "../../../images-chart/chart13.jpg";
 import fisioterapia from "../../../images-chart/chart16.jpg";
 import terapiaOcupacional from "../../../images-chart/chart10.jpg";
 import psicologia from "../../../images-chart/chart15.jpg";
-import neuroPiscologia from "../../../images-chart/chart17.jpg";
+import neuroPiscologia from "../../../images-terapias/neuro.jpg";
+import visual from "../../../images-chart/chart10.jpg";
+import auditiva from "../../../images-chart/chart17.jpg";
+import psicologia2 from "../../../images-chart/chart14.jpg";
 
 export const introduccionData = {
   reverse: false,
@@ -22,7 +25,7 @@ export const logopediaData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "LOGOPEDIA: conóce cómo trabajan nuestros profesionales Cristian Olivares y Jorge Sánchez",
+    text: "LOGOPEDIA: conoce cómo trabajan nuestros profesionales Cristina Olivares y Jorge Sánchez",
   },
   headline:
     "La logopedia es la disciplina sanitaria encargada de la prevención, detección, evaluación,diagnóstico y tratamiento de los trastornos implicados en la comunicación humana",
@@ -35,7 +38,7 @@ export const fisioterapiaData = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "FISIOTERAPIA: conóce cómo trabaja nuestra profesional, Amparo Guerrero",
+    text: "FISIOTERAPIA: conoce cómo trabaja nuestra profesional, Amparo Guerrero",
   },
   headline:
     "Mediante la aplicación de medios físicos, curamos, prevenimos, recuperamos y adaptamos a personas afectadas de disfunciones somáticas.",
@@ -48,7 +51,7 @@ export const terapiaOcupacionalData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "TERAPIA OCUPACIONAL: conóce cómo trabaja nuestra profesional, Laura Simancas",
+    text: "TERAPIA OCUPACIONAL: conoce cómo trabaja nuestra profesional, Laura Simancas",
   },
   headline:
     "La terapia ocupacional consiste en intervenir o rehabilitar a través de un conjunto de actividades dirigidas a personas con problemas físicos, psíquicos, sensoriales o sociales.",
@@ -61,7 +64,7 @@ export const neuroPsicologiaData = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "NEUROPSICOLOGÍA: conóce cómo trabaja nuestra profesional, Alicia Collado",
+    text: "NEUROPSICOLOGÍA: conoce cómo trabaja nuestra profesional, Alicia Collado",
   },
   headline:
     "la neuropsicología estudia las bases neuroanatómicas en relación alos procesos mentales como: atención, emoción, memoria, lenguaje y percepción",
@@ -74,11 +77,50 @@ export const psicoPedagogíaData = {
   reverse: true,
   inverse: false,
   topLine: {
-    text: "PSICOPEDAGOGÍA: conóce cómo trabaja nuestra profesional, Mónica Mazzella",
+    text: "PSICOPEDAGOGÍA: conoce cómo trabaja nuestras profesionales, Mónica Mazzella y Alicia Lara chart12",
   },
   headline:
     "La terapia psicopedagógica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
   description:
     "Como psicopedagoga asesoro, evalúo, realizo informes psicopedagógicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y diseño propuestas de intervención para niños, adolescentes, jóvenes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
   img: psicologia,
+};
+
+export const auditivaPsicologiaData = {
+  reverse: false,
+  inverse: false,
+  topLine: {
+    text: "TERAPIA AUDITIVA: conoce cómo trabaja nuestra profesional, Alicia López Collado",
+  },
+  headline:
+    "la neuropsicología estudia las bases neuroanatómicas en relación alos procesos mentales como: atención, emoción, memoria, lenguaje y percepción",
+  description:
+    "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de Día, Servicio de Capacitación o Vivienda con Apoyo. Se prestará mayor intensidad a las familias en cuyo seno conviva una persona que además de discapacidad tenga necesidades específicas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situación de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos económicos, inmigrantes, etc.).",
+  img: auditiva,
+};
+
+export const visualPedagogíaData = {
+  reverse: true,
+  inverse: false,
+  topLine: {
+    text: "TERAPIA VISUAL: conoce cómo trabaja nuestra profesional, Rocío de la Torre",
+  },
+  headline:
+    "La terapia psicopedagógica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
+  description:
+    "Como psicopedagoga asesoro, evalúo, realizo informes psicopedagógicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y diseño propuestas de intervención para niños, adolescentes, jóvenes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
+  img: visual,
+};
+
+export const psicologiaPsicologiaData = {
+  reverse: false,
+  inverse: false,
+  topLine: {
+    text: "PSICOLOGÍA: conoce cómo trabaja nuestra profesional, Beatriz Henales",
+  },
+  headline:
+    "la neuropsicología estudia las bases neuroanatómicas en relación alos procesos mentales como: atención, emoción, memoria, lenguaje y percepción",
+  description:
+    "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de Día, Servicio de Capacitación o Vivienda con Apoyo. Se prestará mayor intensidad a las familias en cuyo seno conviva una persona que además de discapacidad tenga necesidades específicas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situación de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos económicos, inmigrantes, etc.).",
+  img: psicologia2,
 };

@@ -11,7 +11,7 @@ export const viviendasDataOne = {
   headline:
     "Este servicio se encarga de apoyar a las personas con discapacidad intelectual o del desarrollo que viven o quieran llegar a vivir de forma independiente.",
   description:
-    "En nuestras viviendas reside un pequeño grupo de personas con discapacidad intelectual, que aun gozando de autonomía para el autocuidado,necesitan la prestación de apoyos a nivel personalizado para realizar el resto deactividades de la vida diaria y llevar una vida integrada en la comunidad.",
+    "En nuestras viviendas reside un pequeño grupo de personas con discapacidad intelectual, que aun gozando de autonomía para el autocuidado,necesitan la prestación de apoyos a nivel personalizado para realizar el resto de actividades de la vida diaria y llevar una vida integrada en la comunidad.",
   img: apoyoVivienda,
 };
 

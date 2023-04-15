@@ -40,6 +40,6 @@ export const heroThree = {
   description:
     "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administración y mucho más. Contacta con nosotros o envianos tu curriculum",
   buttonLabel: "Contacto",
-  linkTo: "/ contacto",
+  linkTo: "/contacto",
   img: proyectos,
 };

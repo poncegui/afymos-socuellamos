@@ -14,22 +14,19 @@ const OtherInformation = () => {
 
   return (
     <>
-      <>
-        <SectionFeaturesMobile>
-          <h1>Nosotros</h1>
-          <ButtonContainer>
-            {others.map((picto) => (
-              <Icons key={picto.id} value={picto.name}>
-                <h3>{picto.name}</h3>
-                <Link to={picto.url}>
-                  <img src={picto.src} alt={picto.alt} onClick={handleUrl} />
-                </Link>
-              </Icons>
-            ))}
-          </ButtonContainer>
-        </SectionFeaturesMobile>
-        <></>
-      </>
+      <SectionFeaturesMobile>
+        <h1>Más info</h1>
+        <ButtonContainer>
+          {others.map((picto) => (
+            <Icons key={picto.id} value={picto.name}>
+              <h3>{picto.name}</h3>
+              <Link to={picto.url}>
+                <img src={picto.src} alt={picto.alt} onClick={handleUrl} />
+              </Link>
+            </Icons>
+          ))}
+        </ButtonContainer>
+      </SectionFeaturesMobile>
     </>
   );
 };

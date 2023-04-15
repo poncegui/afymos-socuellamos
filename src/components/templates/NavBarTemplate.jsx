@@ -43,7 +43,7 @@ export default Navbar;
 
 const NavContainer = styled.nav`
   background-color: #071c2f;
-  height: 100px;
+  height: 80px;
   width: 100%;
   position: sticky;
   top: 0;
@@ -88,7 +88,7 @@ const Hero = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 20vh;
+  min-height: 15vh;
   text-transform: uppercase;
   width: 100%;
   z-index: 20;
@@ -99,9 +99,10 @@ const Hero = styled.nav`
     color: #071c2f;
     font-weight: bold;
     text-transform: lowercase;
-    font-size: 70px;
+    font-size: 50px;
   }
   img {
+    width: 8%;
   }
   span {
     color: white;

@@ -13,7 +13,7 @@ import PartnersList from "../main/PartnerList";
 const ProjectsDiagnostico = () => {
   return (
     <>
-      <NavBarTemplate title="Centro de Formación" />
+      <NavBarTemplate title="Valoración y diagnostico" />
       <ContentProjects {...diagnosticoDataOne} inverse />
       <ContentProjects {...diagnosticoDataTwo} reverse />
       <ContentProjects {...diagnosticoDataThree} inverse />

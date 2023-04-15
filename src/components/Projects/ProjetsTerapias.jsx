@@ -7,6 +7,9 @@ import {
   terapiaOcupacionalData,
   psicoPedagogíaData,
   neuroPsicologiaData,
+  auditivaPsicologiaData,
+  visualPedagogíaData,
+  psicologiaPsicologiaData,
 } from "./services/terapiasData";
 import { ContentProjects } from "../Content/ContentProjects";
 import ProjectsIntro from "./ProjectsIntro";
@@ -25,6 +28,9 @@ const ProjectsTerapias = () => {
       <ContentProjects {...terapiaOcupacionalData} inverse />
       <ContentProjects {...psicoPedagogíaData} reverse />
       <ContentProjects {...neuroPsicologiaData} inverse />
+      <ContentProjects {...auditivaPsicologiaData} reverse />
+      <ContentProjects {...visualPedagogíaData} inverse />
+      <ContentProjects {...psicologiaPsicologiaData} reverse />
       <PartnersList />
       <Footer />
     </>
