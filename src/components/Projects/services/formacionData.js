@@ -1,40 +1,57 @@
-import apoyofamilia2 from "../../../images-services/apoyo-familias-2.jpg";
+import formacion from "../../../images-formacion/formacion.jpg";
+import formacion2 from "../../../images-formacion/formacion-2.jpg";
+import formacion3 from "../../../images-formacion/formacion-3.png";
+import formacion4 from "../../../images-formacion/formacion-4.png";
+import formacion5 from "../../../images-formacion/formacion-5.png";
 
 export const formacionDataOne = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "El Servicio de Artesanía de Afymos",
+    text: "En el año 2016 obtuvimos la resolución favorable de la Consejería de Economía, Empresas y Empleo para ser Centro de Formación",
   },
   headline:
-    "Pretende que las personas con discapacidad intelectual que trabajan en él,  exploren a través de diversas actividades, los conceptos y los procedimientos técnicos, utilizando como material principal la porcelana fría, manifestando de este modo sus propias habilidades y su creatividad.",
+    "Estamos homologados por La Junta de Castilla la Mancha  en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
   description:
-    "Esta actividad les brinda la posibilidad de desarrollar la capacidad de expresar sus propias ideas con enfoques estéticos, motivando el descubrimiento común mediante una participación activa, desarrollando un verdadero rol de artesano valorado en la comunidad.",
-  img: apoyofamilia2,
+    "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos en personas con discapacidad intelectual.",
+  img: formacion,
 };
 
 export const formacionDataTwo = {
   reverse: true,
   inverse: false,
   topLine: {
-    text: "Con un enfoque ocupacional-laboral",
+    text: "Certificado de Profesionalidad de Operaciones de Grabación y Tratamiento de Datos y Documentos 690 horas (Nivel 1) Garantía Juvenil.",
   },
   headline:
-    "Los usuarios se forman en esta disciplina, aprenden y pasan por todos procesos de la misma desde la compra de materiales, producción, empaquetamiento, márquetin, venta.",
+    "Este certificado fue realizado por 15 jóvenes menores de 30 años. Debemos destacar que 6 de estos chicos tenían discapacidad intelectual, y gracias a los apoyos brindados por los profesionales, lograron terminarlo con éxito.",
   description:
     "Finalmente reciben un incentivo económico obtenido de las ganancias por las ventas de los productos elaborados..",
-  img: apoyofamilia2,
+  img: formacion5,
 };
 
 export const formacionDataThree = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "El Servicio de Artesanía de Afymos",
+    text: " Inserción Laboral de Personas con Discapacidad (Nivel3) 480 horas.",
   },
   headline:
-    "Pretende que las personas con discapacidad intelectual que trabajan en él,  exploren a través de diversas actividades, los conceptos y los procedimientos técnicos, utilizando como material principal la porcelana fría, manifestando de este modo sus propias habilidades y su creatividad.",
+    "Esta formación tiene como objetivo el intervenir en el entorno personal y sociolaboral de las personas con discapacidad aplicando la Metodología de Empleo con Apoyo para facilitar el acceso y mantenimiento del puesto de trabajo.",
   description:
-    "Esta actividad les brinda la posibilidad de desarrollar la capacidad de expresar sus propias ideas con enfoques estéticos, motivando el descubrimiento común mediante una participación activa, desarrollando un verdadero rol de artesano valorado en la comunidad.",
-  img: apoyofamilia2,
+    "Realizamos el entrenamiento de las habilidades sociolaborales necesarias para la inserción, manteniendo contactos con el entorno y colaborando en el análisis de puestos de trabajo.",
+  img: formacion2,
+};
+
+export const formacionDataFour = {
+  reverse: true,
+  inverse: false,
+  topLine: {
+    text: "PROGRAMA CREA",
+  },
+  headline:
+    "Nuestro Proyecto, “Promoviendo la integración sociolaboral de las personas con discapacidad intelectual”, tiene como objetivo la inserción plena de las personas con discapacidad en la comunidad en la que viven.",
+  description:
+    "Son 9 las personas contratadas por 8 empresas de la localidad durante 9 meses y nuestra labor consiste en ofrecer empleo con apoyo y formación inherente al puesto de trabajo a través del trabajo de una Técnico de Orientación e Integración Laboral",
+  img: formacion4,
 };
