@@ -16,7 +16,7 @@ function Navbar() {
           Menú <span>Principal</span>
         </h3>
         <div className={`links ${clicked ? "active" : ""}`}>
-          <Link onClick={handleClick} to="/organigrama">
+          <Link onClick={handleClick} to="/nosotros">
             nosotros
           </Link>
           <Link onClick={handleClick} to="/terapias">

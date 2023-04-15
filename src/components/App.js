@@ -25,6 +25,7 @@ import ProjectsVivienda from "./Projects/ProjectsVivienda";
 import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
 import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
 import ProjectsDonaciones from "./Projects/ProjectsDonaciones";
+import Nosotros from "./main/Nosotros";
 
 const App = () => {
   //States
@@ -44,6 +45,8 @@ const App = () => {
                   /> */}
 
         <Route path="/terapias" element={<ProjectsTerapias />} />
+
+        <Route path="/nosotros" element={<Nosotros />} />
 
         <Route path="/apoyo-familias" element={<ProjectsFamilias />} />
 
