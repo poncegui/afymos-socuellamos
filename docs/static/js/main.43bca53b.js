@@ -1,4 +1,4 @@
-/*! For license information please see main.dc023cf3.js.LICENSE.txt */
+/*! For license information please see main.43bca53b.js.LICENSE.txt */
 !(function () {
   var e = {
       7757: function (e, t, n) {
@@ -13711,6 +13711,11 @@
         "use strict";
         e.exports = n.p + "static/media/proyectos.5549db32662680f4092d.jpg";
       },
+      2770: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/sensibilizacion-8.3972f4cc13811b8f4f03.jpg";
+      },
       4134: function (e, t, n) {
         "use strict";
         e.exports =
@@ -13737,6 +13742,11 @@
       199: function (e, t, n) {
         "use strict";
         e.exports = n.p + "static/media/neuro.0e99cbcb1b389c4cb530.jpg";
+      },
+      847: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/terapeuta-visual.572de5d05c0fe6437da2.jpg";
       },
       4598: function (e, t, n) {
         "use strict";
@@ -13773,10 +13783,6 @@
       9514: function (e, t, n) {
         "use strict";
         e.exports = n.p + "static/media/voluntariado9.016fd9bff3e8233c2176.jpg";
-      },
-      1246: function (e, t, n) {
-        "use strict";
-        e.exports = n.p + "static/media/foto7.190634458463d2fd0d4e.jpg";
       },
       8166: function (e, t, n) {
         "use strict";
@@ -13867,6 +13873,11 @@
         "use strict";
         e.exports = n.p + "static/media/logopeda.d2013f6acea2198b19f2.png";
       },
+      348: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/neuropsicologia.369da4c7dbd183a32dbe.png";
+      },
       8460: function (e, t, n) {
         "use strict";
         e.exports = n.p + "static/media/organigrama.b0d2edcb13a394f7db9d.png";
@@ -13883,15 +13894,30 @@
         "use strict";
         e.exports = n.p + "static/media/psicologa.2ac80fd8ae5aadef28b1.png";
       },
+      4125: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/psicopedagogia.893767e7ba711e2e3d46.png";
+      },
       3480: function (e, t, n) {
         "use strict";
         e.exports =
           n.p + "static/media/terapeuta-ocupacional.8f11e89651b9edb867df.png";
       },
+      9087: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/terapia-auditiva.ab4961b8f235b0a2ab6c.png";
+      },
       2363: function (e, t, n) {
         "use strict";
         e.exports =
           n.p + "static/media/terapia-fisica.9dc49ff627205b86c604.png";
+      },
+      2342: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/terapia-visual.d99b998548ffff566dbd.png";
       },
       3643: function (e, t, n) {
         "use strict";
@@ -14814,7 +14840,7 @@
         return e;
       }
       var K = n(4226),
-        $ = n(1246),
+        $ = n(2770),
         ee = {
           reverse: !1,
           inverse: !1,
@@ -17862,7 +17888,7 @@
         or = $t.nav(
           Wn ||
             (Wn = re([
-              "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  min-height: 15vh;\n  text-transform: uppercase;\n  width: 100%;\n  z-index: 20;\n  background-color: pink;\n\n  h1 {\n    text-align: center;\n    color: #071c2f;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 50px;\n  }\n  img {\n    width:8%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 150%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 30px;\n    }\n    img {\n      display: none;\n    }\n  }\n",
+              "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  min-height: 15vh;\n  text-transform: uppercase;\n  width: 100%;\n  z-index: 20;\n  background-color: pink;\n\n  h1 {\n    text-align: center;\n    color: #071c2f;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 50px;\n  }\n  img {\n    width: 8%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 150%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 30px;\n    }\n    img {\n      display: none;\n    }\n  }\n",
             ]))
         ),
         sr = n(9654),
@@ -20324,7 +20350,8 @@
                                     (0, vn.jsx)("i", {
                                       className: "fas fa-envelope-open-text",
                                     }),
-                                    " afymos@gmail.com",
+                                    " ",
+                                    "afymos@gmail.com",
                                   ],
                                 }),
                               ],
@@ -21351,30 +21378,30 @@
           reverse: !1,
           inverse: !1,
           topLine: {
-            text: "Este recurso tiene como finalidad acompa\xf1ar a las familias",
+            text: "Valoraci\xf3n y diagn\xf3stico para personas con alg\xfan tipo de discapacidad",
           },
           headline:
-            "Ofrecemos asesoramiento y apoyo a familias de personas con cualquier tipo de discapacidad",
+            "Este servicio tiene como objetivo valoraci\xf3n con tests estandarizados y pruebas psicom\xe9tricas objetivas en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
           description:
-            "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas espec\xedficas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
+            "Nuestra valoraci\xf3n se lleva a cabo con tests estandarizados y pruebas psicom\xe9tricas como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
           img: ss,
         },
         ds = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
-          headline: "Apoyos que presta este servicio:",
+          headline: "\xbfC\xf3mo trabajamos?",
           description:
-            "Elaboraci\xf3n de planes de apoyo familiares, apoyo psicol\xf3gico, informaci\xf3n, orientaci\xf3n y creaci\xf3n de grupos de apoyo.",
+            "Se har\xe1n valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
           img: cs,
         },
         fs = {
           reverse: !1,
           inverse: !1,
-          topLine: { text: "Consulta sin compromiso a nuestros profesionales" },
-          headline: "A qui\xe9n va dirigido:",
+          topLine: { text: "Nuestra principal finalidad:" },
+          headline: "Poner nombre a las necesidades de las personas",
           description:
-            "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
+            "Para ello, nuestros profesionales realizar\xe1n una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
           img: ls,
         },
         ps = function () {
@@ -21496,7 +21523,8 @@
         },
         Cs = n(9292),
         Os = n(199),
-        Ps = {
+        Ps = n(847),
+        Ts = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n: AYUDARTE" },
@@ -21506,7 +21534,7 @@
             "Contamos con profesionales de diferentes disciplinas para intervenir seg\xfan las necesidades de los usuarios y actualmente contamos con las los siguientes servicios terap\xe9uticos.",
           img: Cs,
         },
-        Ts = {
+        Ls = {
           reverse: !1,
           inverse: !0,
           topLine: {
@@ -21518,19 +21546,19 @@
             "Realizamos una entrevista con la familia y una evaluaci\xf3n inicial de la cual se elabora unos objetivos y se dise\xf1a una programaci\xf3n individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duraci\xf3n de 30-45 minutos, dependiente de las necesidades de cada paciente.",
           img: br,
         },
-        Ls = {
+        Ns = {
           reverse: !1,
           inverse: !1,
           topLine: {
             text: "FISIOTERAPIA: conoce c\xf3mo trabaja nuestra profesional, Amparo Guerrero",
           },
           headline:
-            "Mediante la aplicaci\xf3n de medios f\xedsicos, curamos, prevenimos, recuperamos y adaptamos a personas afectadas de disfunciones som\xe1ticas.",
+            "La fisioterapia  ofrece tratamiento y rehabilitaci\xf3n f\xedsica para diagnosticar, prevenir y tratar s\xedntomas de m\xfaltiples patolog\xedas, tanto agudas como cr\xf3nicas.",
           description:
-            "Es hora de conocer nuestra terapia en donde llevaremos a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizaremos distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo",
+            "En nuestra terapia llevaremos a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizaremos distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
           img: wr,
         },
-        Ns = {
+        Ms = {
           reverse: !1,
           inverse: !0,
           topLine: {
@@ -21542,7 +21570,7 @@
             "Enfoco mi trabajo en una intervenci\xf3n significativa con objetos pautados previamente con la persona y su familia, realizando actividades con prop\xf3sito claro y definido",
           img: vr,
         },
-        Ms = {
+        zs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -21554,7 +21582,7 @@
             "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
           img: Os,
         },
-        zs = {
+        _s = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -21566,31 +21594,31 @@
             "Como psicopedagoga\xa0asesoro, eval\xfao, realizo informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y dise\xf1o propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
           img: xr,
         },
-        _s = {
+        Ds = {
           reverse: !1,
           inverse: !1,
           topLine: {
             text: "TERAPIA AUDITIVA: conoce c\xf3mo trabaja nuestra profesional, Alicia L\xf3pez Collado",
           },
           headline:
-            "la neuropsicolog\xeda estudia las bases neuroanat\xf3micas en relaci\xf3n alos procesos mentales como: atenci\xf3n, emoci\xf3n, memoria, lenguaje y percepci\xf3n",
+            "La terapia de estimulaci\xf3n auditiva SENA es un tratamiento cuyo objetivo es mejorar la percepci\xf3n auditiva de la persona que lo recibe.",
           description:
-            "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
+            "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopat\xeda para comprobar el estado del canal auditivo, audiometr\xeda para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
           img: kr,
         },
-        Ds = {
-          reverse: !0,
+        Is = {
+          reverse: !1,
           inverse: !1,
           topLine: {
             text: "TERAPIA VISUAL: conoce c\xf3mo trabaja nuestra profesional, Roc\xedo de la Torre",
           },
           headline:
-            "La terapia psicopedag\xf3gica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
+            "La terapia visual consiste en la repetici\xf3n de una serie de ejercicios que consiguen crear nuevas conexiones neurol\xf3gicas y mejorar habilidades visuales alteradas.",
           description:
-            "Como psicopedagoga\xa0asesoro, eval\xfao, realizo informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y dise\xf1o propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
-          img: vr,
+            "Evaluamos el desarrollo y funcionamiento de la visi\xf3n desde el nacimiento. Para ello se analizan habilidades como la acomodaci\xf3n, binocularidad (visi\xf3n en 3D), movimientos oculares y la percepci\xf3n visual..",
+          img: Ps,
         },
-        Is = {
+        Rs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -21602,79 +21630,80 @@
             "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
           img: Ar,
         },
-        Rs = n(5092),
-        Fs = n(1447),
-        Bs = n(3480),
-        Vs = n(7821),
-        Hs = "_blank",
-        Ws = [
+        Fs = n(5092),
+        Bs = n(1447),
+        Vs = n(3480),
+        Hs = n(7821),
+        Ws = n(348),
+        qs = "_blank",
+        Us = [
           {
             id: 1,
             name: "Logopedia",
-            src: Rs,
-            target: Hs,
+            src: Fs,
+            target: qs,
             alt: "pictograma-logopedia",
-            url: "/organigrama",
+            url: "/terapia-logopedia",
           },
           {
             id: 2,
             name: "Fisioterapia",
-            src: Fs,
-            target: Hs,
-            alt: "pictograma-logopedia",
-            url: "/descargar-cuentas",
+            src: Bs,
+            target: qs,
+            alt: "pictograma-fisioterapia",
+            url: "/terapia-fisioterapia",
           },
           {
             id: 3,
             name: "Terapia Ocupacional",
-            src: Bs,
-            target: Hs,
-            alt: "pictograma-logopedia",
-            url: "/artesania",
+            src: Vs,
+            target: qs,
+            alt: "pictograma-terapia-ocupacional",
+            url: "/terapia-ocupacional",
           },
           {
             id: 4,
             name: "Psicopedagog\xeda",
-            src: Vs,
-            target: Hs,
-            alt: "pictograma-psicologia",
-            url: "/donar",
+            src: n(4125),
+            target: qs,
+            alt: "pictograma-psicopedagogia",
+            url: "/terapia-psicopedagogia",
           },
           {
             id: 5,
             name: "Neuropsicologia",
-            src: Vs,
-            target: Hs,
+            src: Ws,
+            target: qs,
             alt: "pictograma-psicologia",
-            url: "/donar",
+            url: "/terapia-neuropsicologia",
           },
           {
             id: 6,
             name: "Auditiva",
-            src: Vs,
-            target: Hs,
-            alt: "pictograma-psicologia",
+            src: n(9087),
+            target: qs,
+            alt: "terapia-auditiva",
             url: "/donar",
           },
           {
             id: 7,
             name: "Visual",
-            src: Vs,
-            target: Hs,
-            alt: "pictograma-psicologia",
-            url: "/donar",
+            src: n(2342),
+            target: qs,
+            alt: "terapia-auditiva",
+            url: "/terapia-visual",
           },
           {
             id: 8,
             name: "Psicologia",
-            src: Vs,
-            target: Hs,
-            alt: "pictograma-psicologia",
-            url: "/donar",
+            src: Hs,
+            target: qs,
+            alt: "terapia-psicologia",
+            url: "/terapia-psicologica",
           },
         ],
-        qs = function () {
-          var e = o((0, t.useState)(Ws), 2),
+        Gs = function () {
+          var e = o((0, t.useState)(Us), 2),
             n = e[0],
             r = e[1],
             a = function (e) {
@@ -21682,13 +21711,13 @@
             };
           return (0, vn.jsx)(vn.Fragment, {
             children: (0, vn.jsx)(vn.Fragment, {
-              children: (0, vn.jsxs)(Us, {
+              children: (0, vn.jsxs)(Qs, {
                 children: [
                   (0, vn.jsx)("h1", { children: "Nuestras Terapias" }),
-                  (0, vn.jsx)(Gs, {
+                  (0, vn.jsx)(Ys, {
                     children: n.map(function (e) {
                       return (0,
-                      vn.jsxs)(Qs, { value: e.name, children: [(0, vn.jsx)("h3", { children: e.name }), (0, vn.jsx)(Y, { to: e.url, children: (0, vn.jsx)("img", { src: e.src, alt: e.alt, onClick: a }) })] }, e.id);
+                      vn.jsxs)(Xs, { value: e.name, children: [(0, vn.jsx)("h3", { children: e.name }), (0, vn.jsx)(Y, { to: e.url, children: (0, vn.jsx)("img", { src: e.src, alt: e.alt, onClick: a }) })] }, e.id);
                     }),
                   }),
                 ],
@@ -21696,19 +21725,19 @@
             }),
           });
         },
-        Us = $t.div(
+        Qs = $t.div(
           Ko ||
             (Ko = re([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
-        Gs = $t.div(
+        Ys = $t.div(
           $o ||
             ($o = re([
               "\n  display: grid;\n  width: 100%;\n  height: 100%;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: 1fr;\n  margin: auto;\n  grid-gap: 5% 5%;\n  margin: 5% 20%;\n  justify-content: center;\n\n  @media (max-width: 768px) {\n    width: 70%;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: 1fr 1fr;\n    margin: auto;\n    grid-gap: 30px 30px;\n    margin: 5%;\n    margin-bottom: 15%;\n    width: 90%;\n  }\n",
             ]))
         ),
-        Qs =
+        Xs =
           ($t.div(
             es ||
               (es = re([
@@ -21718,32 +21747,32 @@
           $t.div(
             ts ||
               (ts = re([
-                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 70%;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  margin: 5% 0%;\n  gap: 1rem;\n  :hover {\n    background-color: pink;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    color: #071c2f;\n    height: 100px;\n    width: 100px;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
+                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n  :hover {\n    background-color: pink;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    color: #071c2f;\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
-        Ys = function () {
+        Zs = function () {
           return (0, vn.jsxs)(vn.Fragment, {
             children: [
               (0, vn.jsx)(ar, { title: "Servicio de Terapia" }),
-              (0, vn.jsx)(qs, {}),
-              (0, vn.jsx)(Ro, J(J({}, Ps), {}, { reverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, Ts), {}, { inverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, Ls), {}, { reverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, Ns), {}, { inverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, zs), {}, { reverse: !0 })),
+              (0, vn.jsx)(Gs, {}),
+              (0, vn.jsx)(Ro, J(J({}, Ts), {}, { reverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, Ls), {}, { inverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, Ns), {}, { reverse: !0 })),
               (0, vn.jsx)(Ro, J(J({}, Ms), {}, { inverse: !0 })),
               (0, vn.jsx)(Ro, J(J({}, _s), {}, { reverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, Ds), {}, { inverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, Is), {}, { reverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, zs), {}, { inverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, Ds), {}, { reverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, Is), {}, { inverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, Rs), {}, { reverse: !0 })),
               (0, vn.jsx)(Po, {}),
               (0, vn.jsx)(er, {}),
             ],
           });
         },
-        Xs = n(8421),
-        Zs = n(4598),
-        Js = n(7877),
-        Ks = {
+        Js = n(8421),
+        Ks = n(4598),
+        $s = n(7877),
+        el = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -21753,9 +21782,9 @@
             "Este servicio se encarga de apoyar a las personas con discapacidad intelectual o del desarrollo que viven o quieran llegar a vivir de forma independiente.",
           description:
             "En nuestras viviendas reside un peque\xf1o grupo de personas con discapacidad intelectual, que aun gozando de autonom\xeda para el autocuidado,necesitan la prestaci\xf3n de apoyos a nivel personalizado para realizar el resto de actividades de la vida diaria y llevar una vida integrada en la comunidad.",
-          img: Xs,
+          img: Js,
         },
-        $s = {
+        tl = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "OBJETIVOS" },
@@ -21763,9 +21792,9 @@
             "Facilitar un hogar lo m\xe1s normalizado posible, en el que se garantice y posibilite un adecuado desarrollo personal, desde la igualdad y la inclusi\xf3n social en la comunidad.",
           description:
             "Fomentar la participaci\xf3n activa y la toma de decisiones en lo relativo a las tareas dom\xe9sticas como al resto de actividades. Adquirir estabilidad y seguridad, en un entorno distinto al hogar familiar, entendi\xe9ndose \xe9stas de forma global y en todos los aspectos que afectan al ser humano (necesidades b\xe1sicas, salud, ocupaci\xf3n laboral,...). ",
-          img: Zs,
+          img: Ks,
         },
-        el = {
+        nl = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "METODOLOG\xcdA" },
@@ -21773,27 +21802,27 @@
             "El modelo metodol\xf3gico a seguir ser\xe1 basado en la Capacitaci\xf3n dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
           description:
             "Los principios metodol\xf3gicos ser\xe1n: integraci\xf3n, individualizaci\xf3n y optimizaci\xf3n. Se ofrecer\xe1 a las personas con especificidad la oportunidad de vivir de la manera m\xe1s aut\xf3noma posible, fomentando la participaci\xf3n activa de la persona objeto de nuestro apoyo en la comunidad de Socu\xe9llamos, desde la igualdad y la plena inclusi\xf3n social..",
-          img: Js,
+          img: $s,
         },
-        tl = function () {
+        rl = function () {
           return (0, vn.jsxs)(vn.Fragment, {
             children: [
               (0, vn.jsx)(ar, { title: "Servicio de atenci\xf3n a Viviendas" }),
-              (0, vn.jsx)(Ro, J(J({}, Ks), {}, { inverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, $s), {}, { reverse: !0 })),
               (0, vn.jsx)(Ro, J(J({}, el), {}, { inverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, tl), {}, { reverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, nl), {}, { inverse: !0 })),
               (0, vn.jsx)(Po, {}),
               (0, vn.jsx)(er, {}),
             ],
           });
         },
-        nl = n(5233),
-        rl = n(5974),
-        al = n(3715),
-        il = n(9514),
-        ol = n(5694),
-        sl = n(7087),
-        ll = {
+        al = n(5233),
+        il = n(5974),
+        ol = n(3715),
+        sl = n(9514),
+        ll = n(5694),
+        cl = n(7087),
+        ul = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Servicio de Ocio y Voluntariado" },
@@ -21801,9 +21830,9 @@
             "Contando con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
           description:
             "La novedad de este servicio es que ya no es \xfanicamente la Asociaci\xf3n quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando as\xed su autonom\xeda.",
-          img: nl,
+          img: al,
         },
-        cl = {
+        dl = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Vacaciones" },
@@ -21811,9 +21840,9 @@
             "Se organizan vacaciones al a\xf1o subvencionados tanto por FEAPS - IMSERSO",
           description:
             "A lo largo del a\xf1o, se ofertan estancias de fin de semana en casas o albergues rurales, con el fin de ofrecer unos d\xedas de vacaciones al mayor n\xfamero de usuarios posible.",
-          img: sl,
+          img: cl,
         },
-        ul = {
+        fl = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Mediaci\xf3n de Ocio" },
@@ -21821,9 +21850,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "La novedad de este servicio es que ya no es \xfanicamente la Asociaci\xf3n quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando as\xed su autonom\xeda.",
-          img: ol,
+          img: ll,
         },
-        dl = {
+        pl = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Ocio Compartido" },
@@ -21831,9 +21860,9 @@
             "Se trata de fomentar grupos de amigos formados por usuarios y voluntarios, que organicen ellos mismos qu\xe9 actividades quieren hacer y cu\xe1ndo, algo que resulta m\xe1s complicado con las actividades programadas",
           description:
             "La novedad de esta \xe1rea es la adaptaci\xf3n y libre elecci\xf3n de las actividades.",
-          img: rl,
+          img: il,
         },
-        fl = {
+        hl = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Actividades programadas" },
@@ -21841,9 +21870,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "Se organizan actividades tan variadas como actividades deportivas (senderismo\u2026), culturales (visitas a museos, cine, teatro\u2026) y actividades recreativas (bolera, salidas nocturnas\u2026).",
-          img: al,
+          img: ol,
         },
-        pl = {
+        ml = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Urban Camp" },
@@ -21851,26 +21880,26 @@
             "Es un proyecto creado por Afymos y financiado en parte por la Concejal\xeda de Bienestar Social de la localidad de Socu\xe9llamos.",
           description:
             "Urban Camp es un campamento urbano para 50 j\xf3venes (con y sin discapacidad) de la localidad de Socu\xe9llamos de edades comprendidas entre los 12 y 16 a\xf1os que naci\xf3 para dar respuesta a las necesidades de ocio de los j\xf3venes durante el periodo vacacional as\xed como para  ofrecer a las familias un recurso para la conciliaci\xf3n de la vida familiar y laboral durante esta \xe9poca del a\xf1o.",
-          img: il,
+          img: sl,
         },
-        hl = function () {
+        vl = function () {
           return (0, vn.jsxs)(vn.Fragment, {
             children: [
               (0, vn.jsx)(ar, { title: "Servicio de Ocio y Voluntariado" }),
-              (0, vn.jsx)(Ro, J(J({}, ll), {}, { inverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, cl), {}, { reverse: !0 })),
               (0, vn.jsx)(Ro, J(J({}, ul), {}, { inverse: !0 })),
               (0, vn.jsx)(Ro, J(J({}, dl), {}, { reverse: !0 })),
               (0, vn.jsx)(Ro, J(J({}, fl), {}, { inverse: !0 })),
               (0, vn.jsx)(Ro, J(J({}, pl), {}, { reverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, hl), {}, { inverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, ml), {}, { reverse: !0 })),
               (0, vn.jsx)(Po, {}),
               (0, vn.jsx)(er, {}),
             ],
           });
         },
-        ml = n(4940),
-        vl = n(4301),
-        gl = {
+        gl = n(4940),
+        yl = n(4301),
+        bl = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "El Servicio de Capacitaci\xf3n Afymos" },
@@ -21878,9 +21907,9 @@
             "Es un servicio de atenci\xf3n diurna que tienen como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
           description:
             "Facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones).",
-          img: ml,
+          img: gl,
         },
-        yl = {
+        Al = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -21890,21 +21919,21 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodolog\xeda detrabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          img: vl,
+          img: yl,
         },
-        bl = function () {
+        xl = function () {
           return (0, vn.jsxs)(vn.Fragment, {
             children: [
               (0, vn.jsx)(ar, { title: "Servicio de Capacitaci\xf3n" }),
-              (0, vn.jsx)(Ro, J(J({}, gl), {}, { inverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, yl), {}, { reverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, bl), {}, { inverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, Al), {}, { reverse: !0 })),
               (0, vn.jsx)(is, {}),
               (0, vn.jsx)(Po, {}),
               (0, vn.jsx)(er, {}),
             ],
           });
         },
-        Al = {
+        wl = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -21915,20 +21944,20 @@
             "Nuestra organizaci\xf3n sin \xe1nimo de lucro se sustenta principalmente de  las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda econ\xf3mica que nos puedan prestar.",
           img: n(346),
         },
-        xl = function () {
+        kl = function () {
           return (0, vn.jsxs)(vn.Fragment, {
             children: [
               (0, vn.jsx)(ar, { title: "Donaciones" }),
-              (0, vn.jsx)(Ro, J(J({}, Al), {}, { inverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, wl), {}, { inverse: !0 })),
               (0, vn.jsx)(Po, {}),
               (0, vn.jsx)(er, {}),
             ],
           });
         },
-        wl = n(4587),
-        kl = n(3861),
-        Sl = n(503),
-        jl = {
+        Sl = n(4587),
+        jl = n(3861),
+        El = n(503),
+        Cl = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra entidad" },
@@ -21936,9 +21965,9 @@
             "AFYMOS fue fundada en el a\xf1o 1991 y los fines que perseguimos seg\xfan nuestros estatutos son:",
           description:
             "Los fines que la Asociaci\xf3n persigue son de car\xe1cter c\xedvico y social, de promoci\xf3n de los valores constitucionales y de los derechos humanos de las personas con discapacidad intelectual, f\xedsica o sensorial.  ",
-          img: wl,
+          img: Sl,
         },
-        El = {
+        Ol = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n" },
@@ -21946,9 +21975,9 @@
             "La Misi\xf3n de Afymos es \u201ccontribuir, desde su compromiso \xe9tico, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de calidad de vida:",
           description:
             " En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan m\xe1s oportunidades de participar en la sociedad. ",
-          img: kl,
+          img: jl,
         },
-        Cl = {
+        Pl = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Compromiso \xe9tico y valores" },
@@ -21956,21 +21985,21 @@
             "Para conseguir estas oportunidades, defendemos sus derechos como ciudadanos plenos, y reivindicamos una sociedad m\xe1s justa y solidaria.",
           description:
             "Todo esto no podemos hacerlo de cualquier manera, sino que tiene que estar orientado por nuestro compromiso \xe9tico, por nuestros valores y en la forma de intervenci\xf3n que est\xe1 basada en el Modelo de  Calidad de Calidad de Vida de Schalock y Verdugo.",
-          img: Sl,
+          img: El,
         },
-        Ol = function () {
+        Tl = function () {
           return (0, vn.jsxs)(vn.Fragment, {
             children: [
               (0, vn.jsx)(ar, { title: "Nosotros" }),
-              (0, vn.jsx)(Ro, J(J({}, jl), {}, { inverse: !0 })),
-              (0, vn.jsx)(Ro, J(J({}, El), {}, { reverse: !0 })),
               (0, vn.jsx)(Ro, J(J({}, Cl), {}, { inverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, Ol), {}, { reverse: !0 })),
+              (0, vn.jsx)(Ro, J(J({}, Pl), {}, { inverse: !0 })),
               (0, vn.jsx)(Po, {}),
               (0, vn.jsx)(er, {}),
             ],
           });
         },
-        Pl = function () {
+        Ll = function () {
           var e = o((0, t.useState)(!1), 2),
             n = e[0],
             r = e[1];
@@ -21983,11 +22012,11 @@
                 }),
                 (0, vn.jsx)(B, {
                   path: "/terapias",
-                  element: (0, vn.jsx)(Ys, {}),
+                  element: (0, vn.jsx)(Zs, {}),
                 }),
                 (0, vn.jsx)(B, {
                   path: "/nosotros",
-                  element: (0, vn.jsx)(Ol, {}),
+                  element: (0, vn.jsx)(Tl, {}),
                 }),
                 (0, vn.jsx)(B, {
                   path: "/apoyo-familias",
@@ -21995,11 +22024,11 @@
                 }),
                 (0, vn.jsx)(B, {
                   path: "/ocio-y-voluntariado",
-                  element: (0, vn.jsx)(hl, {}),
+                  element: (0, vn.jsx)(vl, {}),
                 }),
                 (0, vn.jsx)(B, {
                   path: "/viviendas-con-apoyo",
-                  element: (0, vn.jsx)(tl, {}),
+                  element: (0, vn.jsx)(rl, {}),
                 }),
                 (0, vn.jsx)(B, {
                   path: "/centro-de-dia",
@@ -22011,11 +22040,11 @@
                 }),
                 (0, vn.jsx)(B, {
                   path: "/donaciones",
-                  element: (0, vn.jsx)(xl, {}),
+                  element: (0, vn.jsx)(kl, {}),
                 }),
                 (0, vn.jsx)(B, {
                   path: "/servicio-capacitacion",
-                  element: (0, vn.jsx)(bl, {}),
+                  element: (0, vn.jsx)(xl, {}),
                 }),
                 (0, vn.jsx)(B, {
                   path: "/instalaciones-centro-diversidad",
@@ -22060,9 +22089,9 @@
           });
         };
       r.render(
-        (0, vn.jsx)(Q, { children: (0, vn.jsx)(Pl, {}) }),
+        (0, vn.jsx)(Q, { children: (0, vn.jsx)(Ll, {}) }),
         document.getElementById("root")
       );
     })();
 })();
-//# sourceMappingURL=main.dc023cf3.js.map
+//# sourceMappingURL=main.43bca53b.js.map

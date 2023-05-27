@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.11fb4df1.css",
-    "main.js": "./static/js/main.dc023cf3.js",
+    "main.js": "./static/js/main.43bca53b.js",
     "static/media/chart1.jpg": "./static/media/chart1.2489704be749029d9e7e.jpg",
     "static/media/chartTeam1.jpg": "./static/media/chartTeam1.5069bdbc78beba6ba1d8.jpg",
     "static/media/chart5.jpg": "./static/media/chart5.7cafac7a77975632b491.jpg",
@@ -44,13 +44,13 @@
     "static/media/centroDia-2.jpg": "./static/media/centroDia-2.262a1ab97aee6eb9e254.jpg",
     "static/media/cocina.png": "./static/media/cocina.dddf8cae8b29de25da13.png",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
-    "static/media/foto7.jpg": "./static/media/foto7.190634458463d2fd0d4e.jpg",
     "static/media/donacion.png": "./static/media/donacion.5bcfebb0e44a5d6b7a8d.png",
     "static/media/nosotros-3.png": "./static/media/nosotros-3.85bcd11ffb4b6be95051.png",
     "static/media/foto4.jpg": "./static/media/foto4.d8380d5686e1353b4386.jpg",
     "static/media/voluntariado4.jpg": "./static/media/voluntariado4.2891b620f39cead0e440.jpg",
     "static/media/apoyo-familias-2.jpg": "./static/media/apoyo-familias-2.bf35fdb08d3dea164744.jpg",
     "static/media/voluntariado2.jpg": "./static/media/voluntariado2.fc54ee755a1ca7454b2a.jpg",
+    "static/media/sensibilizacion-8.jpg": "./static/media/sensibilizacion-8.3972f4cc13811b8f4f03.jpg",
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
     "static/media/voluntariado5.jpg": "./static/media/voluntariado5.56f37ee488983abb7dd5.jpg",
     "static/media/fomento.jpg": "./static/media/fomento.63c89704fef7aefb8f81.jpg",
@@ -62,6 +62,7 @@
     "static/media/vivienda-4.jpg": "./static/media/vivienda-4.4b2b92330e6560d4f7ce.jpg",
     "static/media/formacion-5.png": "./static/media/formacion-5.4bb9e4ea800d2d33e55f.png",
     "static/media/formacion-2.jpg": "./static/media/formacion-2.9bf680a150b08045d73e.jpg",
+    "static/media/psicopedagogia.png": "./static/media/psicopedagogia.893767e7ba711e2e3d46.png",
     "static/media/un-dia-afymos.jpg": "./static/media/un-dia-afymos.5756d2cf953a60a749a0.jpg",
     "static/media/vivienda-2.jpg": "./static/media/vivienda-2.74948c4fb956af4f2687.jpg",
     "static/media/proyectos.jpg": "./static/media/proyectos.5549db32662680f4092d.jpg",
@@ -70,11 +71,15 @@
     "static/media/voluntariado6.jpg": "./static/media/voluntariado6.201368e922b467442c39.jpg",
     "static/media/logopeda.png": "./static/media/logopeda.d2013f6acea2198b19f2.png",
     "static/media/artesania2.jpg": "./static/media/artesania2.8195bdba0617ec080498.jpg",
+    "static/media/neuropsicologia.png": "./static/media/neuropsicologia.369da4c7dbd183a32dbe.png",
     "static/media/logo-ayuntamiento.png": "./static/media/logo-ayuntamiento.572c855624433d08e729.png",
     "static/media/centro-fachada.jpg": "./static/media/centro-fachada.6f18f3b97ba93249fe4f.jpg",
     "static/media/tomas.jpg": "./static/media/tomas.922e38073dce14b1fed2.jpg",
+    "static/media/terapeuta-visual.jpg": "./static/media/terapeuta-visual.572de5d05c0fe6437da2.jpg",
     "static/media/psicologa.png": "./static/media/psicologa.2ac80fd8ae5aadef28b1.png",
     "static/media/sociolaboral.jpg": "./static/media/sociolaboral.96c8118f618f1b3a93ae.jpg",
+    "static/media/terapia-visual.png": "./static/media/terapia-visual.d99b998548ffff566dbd.png",
+    "static/media/terapia-auditiva.png": "./static/media/terapia-auditiva.ab4961b8f235b0a2ab6c.png",
     "static/media/terapeuta-ocupacional.png": "./static/media/terapeuta-ocupacional.8f11e89651b9edb867df.png",
     "static/media/logo-inclusion.png": "./static/media/logo-inclusion.72fd29222dc5dd544bbb.png",
     "static/media/fisioterapeuta.png": "./static/media/fisioterapeuta.e41225843d7193a6d76a.png",
@@ -100,7 +105,7 @@
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
     "main.11fb4df1.css.map": "./static/css/main.11fb4df1.css.map",
-    "main.dc023cf3.js.map": "./static/js/main.dc023cf3.js.map"
+    "main.43bca53b.js.map": "./static/js/main.43bca53b.js.map"
   },
-  "entrypoints": ["static/css/main.11fb4df1.css", "static/js/main.dc023cf3.js"]
+  "entrypoints": ["static/css/main.11fb4df1.css", "static/js/main.43bca53b.js"]
 }
