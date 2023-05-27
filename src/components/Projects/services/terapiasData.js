@@ -120,8 +120,8 @@ export const psicologiaPsicologiaData = {
     text: "PSICOLOGÍA: conoce cómo trabaja nuestra profesional, Beatriz Henales",
   },
   headline:
-    "la neuropsicología estudia las bases neuroanatómicas en relación alos procesos mentales como: atención, emoción, memoria, lenguaje y percepción",
+    "Principalemente nos centramos en la psicoeducación y en la reestructuración cognitiva. Buscamos favorecer los procesos de cambio y toma de decisiones para buscar una situación más adaptativa para la persona.",
   description:
-    "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de Día, Servicio de Capacitación o Vivienda con Apoyo. Se prestará mayor intensidad a las familias en cuyo seno conviva una persona que además de discapacidad tenga necesidades específicas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situación de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos económicos, inmigrantes, etc.).",
+    "A nivel psicoeducativo podemos ayudar a las personas a entender sus propios procesos, situaciones personales, patologías, etc, para facilitar su propia adaptación al medio y mitigar sus estados de ansiedad e incertidumbre.",
   img: psicologia2,
 };
