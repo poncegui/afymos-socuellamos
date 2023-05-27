@@ -8,13 +8,6 @@ const Main = () => {
               ¿Quiénes somos y qué ofrecemos?<span>&#160;</span>
             </h4>
           </div>
-
-          {/* <div className="article__text">
-            <p>
-              Somos una asociación de familiares y amigos de personas con alguna
-              discapacidad
-            </p>
-          </div> */}
         </div>
       </article>
     </section>

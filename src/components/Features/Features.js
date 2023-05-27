@@ -2,28 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "../../styles/layout/features.css";
-import { Content } from "../Content/Content";
-import { featuresData, featuresDataDetails } from "./data/FeaturesData";
-
-import {
-  detailsDataOne,
-  detailsDataTwo,
-  detailsDataThree,
-} from "../Content/services/DetailsData";
+import { featuresData } from "./data/FeaturesData";
 
 const Tecno = () => {
   const [devTool, setDevTool] = useState(true);
   const [pictoData, setPictoData] = useState(featuresData);
-  const [detailsData, setDetailsData] = useState(featuresDataDetails);
-
-  const handleBack = () => {
-    window.history.back();
-    console.log("vuelvo");
-  };
-
-  const handleDetail = () => {
-    setDevTool(!devTool);
-  };
 
   const handleUrl = (ev) => {
     setPictoData(ev.currentTarget);
@@ -189,7 +172,7 @@ export const Icons = styled.div`
   width: 70%;
   background: #e0e0e0;
   box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;
-  margin: 5% 0%;
+  padding: 5% 0%;
   gap: 1rem;
   :hover {
     background-color: pink;
