@@ -1,5 +1,5 @@
 import proyectos from "../../images-centroDia/centroDia-2.jpg";
-import sensibility from "../../images/foto7.jpg";
+import sensibility from "../../images-sensibilizacion/sensibilizacion-8.jpg";
 import sociolaboral from "../../images-integracion-sociolaboral/tomas.jpg";
 
 export const heroOne = {

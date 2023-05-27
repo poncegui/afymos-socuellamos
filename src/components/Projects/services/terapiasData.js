@@ -4,7 +4,7 @@ import fisioterapia from "../../../images-chart/chart16.jpg";
 import terapiaOcupacional from "../../../images-chart/chart10.jpg";
 import psicologia from "../../../images-chart/chart15.jpg";
 import neuroPiscologia from "../../../images-terapias/neuro.jpg";
-import visual from "../../../images-chart/chart10.jpg";
+import visual from "../../../images-terapias/terapeuta-visual.jpg";
 import auditiva from "../../../images-chart/chart17.jpg";
 import psicologia2 from "../../../images-chart/chart14.jpg";
 
@@ -41,9 +41,9 @@ export const fisioterapiaData = {
     text: "FISIOTERAPIA: conoce cómo trabaja nuestra profesional, Amparo Guerrero",
   },
   headline:
-    "Mediante la aplicación de medios físicos, curamos, prevenimos, recuperamos y adaptamos a personas afectadas de disfunciones somáticas.",
+    "La fisioterapia  ofrece tratamiento y rehabilitación física para diagnosticar, prevenir y tratar síntomas de múltiples patologías, tanto agudas como crónicas.",
   description:
-    "Es hora de conocer nuestra terapia en donde llevaremos a cabo una valoración y diagnóstico de fisioterapia, teniendo en cuenta una visión general del problema, dolencia, patología, etc. Después, utilizaremos distintas técnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo",
+    "En nuestra terapia llevaremos a cabo una valoración y diagnóstico de fisioterapia, teniendo en cuenta una visión general del problema, dolencia, patología, etc. Después, utilizaremos distintas técnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
   img: fisioterapia,
 };
 
@@ -93,22 +93,23 @@ export const auditivaPsicologiaData = {
     text: "TERAPIA AUDITIVA: conoce cómo trabaja nuestra profesional, Alicia López Collado",
   },
   headline:
-    "la neuropsicología estudia las bases neuroanatómicas en relación alos procesos mentales como: atención, emoción, memoria, lenguaje y percepción",
+    "La terapia de estimulación auditiva SENA es un tratamiento cuyo objetivo es mejorar la percepción auditiva de la persona que lo recibe.",
+
   description:
-    "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de Día, Servicio de Capacitación o Vivienda con Apoyo. Se prestará mayor intensidad a las familias en cuyo seno conviva una persona que además de discapacidad tenga necesidades específicas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situación de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos económicos, inmigrantes, etc.).",
+    "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopatía para comprobar el estado del canal auditivo, audiometría para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
   img: auditiva,
 };
 
 export const visualPedagogíaData = {
-  reverse: true,
+  reverse: false,
   inverse: false,
   topLine: {
     text: "TERAPIA VISUAL: conoce cómo trabaja nuestra profesional, Rocío de la Torre",
   },
   headline:
-    "La terapia psicopedagógica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
+    "La terapia visual consiste en la repetición de una serie de ejercicios que consiguen crear nuevas conexiones neurológicas y mejorar habilidades visuales alteradas.",
   description:
-    "Como psicopedagoga asesoro, evalúo, realizo informes psicopedagógicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y diseño propuestas de intervención para niños, adolescentes, jóvenes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
+    "Evaluamos el desarrollo y funcionamiento de la visión desde el nacimiento. Para ello se analizan habilidades como la acomodación, binocularidad (visión en 3D), movimientos oculares y la percepción visual..",
   img: visual,
 };
 

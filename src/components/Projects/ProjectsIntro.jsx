@@ -99,10 +99,10 @@ export const Icons = styled.div`
   text-align: center;
   align-items: center;
   border-radius: 10px;
-  width: 70%;
+  width: 150px;
   background: #e0e0e0;
   box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;
-  margin: 5% 0%;
+  margin: 5% 5%;
   gap: 1rem;
   :hover {
     background-color: pink;
@@ -118,6 +118,7 @@ export const Icons = styled.div`
     color: #071c2f;
     height: 100px;
     width: 100px;
+    padding-bottom: 5%;
     cursor: pointer;
   }
 

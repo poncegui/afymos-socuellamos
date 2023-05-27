@@ -1,13 +1,3 @@
-// import actividades from "../../../pictogramas/conductor.png";
-// import centroDiversidad from "../../../pictogramas/centro-afymos.png";
-// import cuentas from "../../../pictogramas/cuentas.png";
-// import organigrama from "../../../pictogramas/presidenta-pelirroja.png";
-// import pictoAdmin from "../../../pictogramas/administracion.png";
-// import pt from "../../../pictogramas/pt.png";
-// import servicios from "../../../pictogramas/fisioterapeuta.png";
-// import terapeutaOcupacional from "../../../pictogramas/terapeuta-ocupacional.png";
-// import trabajadoraSocial from "../../../pictogramas/trabajadora-social.png";
-
 import viviendaSocial from "../../../pictogramas/social.png";
 import centroDiversidad from "../../../pictogramas/vivienda-social.png";
 import cuentas from "../../../pictogramas/contabilidad.png";

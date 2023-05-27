@@ -2,6 +2,10 @@ import logopediaData from "../../../pictogramas/logopeda.png";
 import fisioterapiaData from "../../../pictogramas/fisioterapeuta.png";
 import terapiaOcupacionalData from "../../../pictogramas/terapeuta-ocupacional.png";
 import psicologiaData from "../../../pictogramas/psicologa.png";
+import neuropsicologiaData from "../../../pictogramas/neuropsicologia.png";
+import psicopedagogia from "../../../pictogramas/psicopedagogia.png";
+import auditivaData from "../../../pictogramas/terapia-auditiva.png";
+import visualData from "../../../pictogramas/terapia-visual.png";
 
 const target = "_blank";
 
@@ -12,62 +16,62 @@ export const introData = [
     src: logopediaData,
     target: target,
     alt: "pictograma-logopedia",
-    url: "/organigrama",
+    url: "/terapia-logopedia",
   },
   {
     id: 2,
     name: "Fisioterapia",
     src: fisioterapiaData,
     target: target,
-    alt: "pictograma-logopedia",
-    url: "/descargar-cuentas",
+    alt: "pictograma-fisioterapia",
+    url: "/terapia-fisioterapia",
   },
   {
     id: 3,
     name: "Terapia Ocupacional",
     src: terapiaOcupacionalData,
     target: target,
-    alt: "pictograma-logopedia",
-    url: "/artesania",
+    alt: "pictograma-terapia-ocupacional",
+    url: "/terapia-ocupacional",
   },
   {
     id: 4,
     name: "Psicopedagogía",
-    src: psicologiaData,
+    src: psicopedagogia,
     target: target,
-    alt: "pictograma-psicologia",
-    url: "/donar",
+    alt: "pictograma-psicopedagogia",
+    url: "/terapia-psicopedagogia",
   },
   {
     id: 5,
     name: "Neuropsicologia",
-    src: psicologiaData,
+    src: neuropsicologiaData,
     target: target,
     alt: "pictograma-psicologia",
-    url: "/donar",
+    url: "/terapia-neuropsicologia",
   },
   {
     id: 6,
     name: "Auditiva",
-    src: psicologiaData,
+    src: auditivaData,
     target: target,
-    alt: "pictograma-psicologia",
+    alt: "terapia-auditiva",
     url: "/donar",
   },
   {
     id: 7,
     name: "Visual",
-    src: psicologiaData,
+    src: visualData,
     target: target,
-    alt: "pictograma-psicologia",
-    url: "/donar",
+    alt: "terapia-auditiva",
+    url: "/terapia-visual",
   },
   {
     id: 8,
     name: "Psicologia",
     src: psicologiaData,
     target: target,
-    alt: "pictograma-psicologia",
-    url: "/donar",
+    alt: "terapia-psicologia",
+    url: "/terapia-psicologica",
   },
 ];

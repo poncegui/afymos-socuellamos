@@ -15,7 +15,7 @@ import Main from "./main/Main";
 import NavBar from "./Header/NavBar";
 import OtherInformation from "./main/OthersList";
 import PartnertList from "./main/PartnerList";
-import ProjectsCentroDia from "./Projects/ProjecsCentroDia";
+import ProjectsCentroDia from "./Projects/ProjectsCentroDia";
 import ProjectsCentroDiversidad from "./Projects/ProjectsCentroDiversidad";
 import ProjectsDiagnostico from "./Projects/ProjectsDiagnostico";
 import ProjectsFamilias from "./Projects/ProjectsFamilias";

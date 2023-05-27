@@ -1,4 +1,5 @@
 import { Container, Section } from "../../globalStyles";
+import { Link } from "react-router-dom";
 import {
   ContentRow,
   TextWrapper,
