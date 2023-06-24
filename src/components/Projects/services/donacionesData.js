@@ -1,4 +1,4 @@
-import donacion from "../../../images-donacion/donacion.png";
+import donacion from "../../../images-donacion/donaciones.jpg";
 
 export const donacionDataOne = {
   reverse: false,
@@ -10,4 +10,8 @@ export const donacionDataOne = {
   description:
     "Nuestra organización sin ánimo de lucro se sustenta principalmente de  las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda económica que nos puedan prestar.",
   img: donacion,
+  buttonLabel: "ir a Ruralvia",
+  href: "https://www.grupocajarural.es/es",
+  alt: "ir a ruralvia",
+  target: "_blank",
 };

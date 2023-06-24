@@ -122,7 +122,7 @@ export const Button = styled.button`
   border-radius: 4px;
   background: none;
   white-space: nowrap;
-  padding: 10px 20px;
+  padding: 10px 1.25rem;
   font-size: 16px;
   color: #fff;
   outline: none;

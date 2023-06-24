@@ -1,22 +1,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const PartnersCard = (props) => {
+const PartnersCard = ({ url, alt, target, src }) => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!clicked);
   };
   return (
     <>
-      <a
-        onClick={handleClick}
-        href={props.url}
-        alt={props.alt}
-        target={props.target}
-      >
+      <a onClick={handleClick} href={url} alt={alt} target={target}>
         <PartnertCard>
           <PartnertFaceFront>
-            <LogoPartner src={props.src} />
+            <LogoPartner src={src} />
           </PartnertFaceFront>
         </PartnertCard>
       </a>

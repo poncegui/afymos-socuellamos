@@ -1,27 +1,35 @@
 import { Container, Section } from "../../globalStyles";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import {
+  ContentButton,
+  ContentColumn,
   ContentRow,
+  Heading,
+  HomePage,
+  Img,
+  ImgWrapper,
+  Subtitle,
   TextWrapper,
   TopLine,
-  Heading,
-  ContentButton,
-  Subtitle,
-  ImgWrapper,
-  Img,
-  ContentColumn,
 } from "./ContentStyles.js";
 
 export const Content = ({
-  topLine,
-  headline,
-  description,
-  buttonLabel,
-  img,
   alt,
-  reverse,
+  buttonLabel,
+  description,
+  headline,
+  href,
+  img,
   inverse,
+  reverse,
+  target,
+  topLine,
 }) => {
+  const [clicked, setClicked] = useState(false);
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <Section inverse={inverse}>
       <Container>
@@ -35,7 +43,15 @@ export const Content = ({
                 transition={{ delay: 1, duration: 0.6 }}
                 inverse={inverse}
               >
-                {buttonLabel}
+                <HomePage
+                  onClick={handleClick}
+                  href={href}
+                  alt={alt}
+                  target={target}
+                >
+                  {buttonLabel}
+                </HomePage>
+                {/* <Link onClick={handleClick}  to={linkTo}/> */}
               </ContentButton>
             </TextWrapper>
           </ContentColumn>

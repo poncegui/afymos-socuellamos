@@ -85,7 +85,7 @@ export const Heading = styled.h2`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ inverse }) => (inverse ? "#0c4577" : "pink")};
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "pink")};
 
   @media (max-width: 768px) {
     text-align: center;
@@ -99,9 +99,15 @@ export const Subtitle = styled.p`
   color: ${({ inverse }) => (inverse ? "#6a6a6a" : "pink")};
 `;
 
+export const HomePage = styled.a`
+  text-decoration: none;
+  color: grey;
+`;
+
 export const ContentButton = styled.button`
+  text-decoration: none;
   height: 3rem;
-  padding: 16px 32px;
+  padding: 1rem 32px;
   font-weight: 700;
   font-size: 0.8rem;
   line-height: 18px;
@@ -109,20 +115,19 @@ export const ContentButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   background: none;
-  color: ${({ inverse }) => (inverse ? "#0c4577" : "pink")};
-
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "pink")};
   border-radius: 4px;
   white-space: nowrap;
-  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  padding: ${({ big }) => (big ? "12px 64px" : "0.6255rem 1.25rem")};
+  font-size: ${({ fontBig }) => (fontBig ? "1.25rem" : "1rem")};
   outline: none;
-  border: 2px solid ${({ inverse }) => (inverse ? "#0c4577" : "pink")};
+  border: 2px solid ${({ inverse }) => (inverse ? "#071c2f" : "pink")};
   cursor: pointer;
   position: relative;
   overflow: hidden;
 
   &:before {
-    background: ${({ inverse }) => (inverse ? "#0c4577" : "pink")};
+    background: ${({ inverse }) => (inverse ? "#071c2f" : "pink")};
     content: "";
     position: absolute;
     top: 50%;

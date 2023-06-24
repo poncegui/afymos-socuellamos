@@ -8,6 +8,7 @@ import {
   ImgWrapper,
   Img,
   ContentColumn,
+  ContentButton,
 } from "./ContentStyles.js";
 
 export const ContentProjects = ({
@@ -18,7 +19,6 @@ export const ContentProjects = ({
   alt,
   reverse,
   inverse,
-  margin,
 }) => {
   return (
     <SectionProjects inverse={inverse}>
