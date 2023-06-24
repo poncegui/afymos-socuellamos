@@ -41,7 +41,6 @@ export default Chart;
 export const BackgroundChart = styled.div`
   background: linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)),
     url(${backgroundChart});
-  min-width: 100vh;
   background-size: 100%;
   background-position: cover;
   background-size: cover;
@@ -54,11 +53,14 @@ export const BackgroundChart = styled.div`
 
 export const ContainerListChart = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin: 10%;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 

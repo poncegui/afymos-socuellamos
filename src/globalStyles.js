@@ -20,6 +20,13 @@ export const Container = styled.div`
     padding: 0 30px;
   }
 `;
+
+export const Title = styled.h1`
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
+`;
+
 export const MainHeading = styled.h1`
   font-size: clamp(2.3rem, 6vw, 4.5rem);
   margin-bottom: 2rem;

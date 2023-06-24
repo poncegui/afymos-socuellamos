@@ -1,38 +1,26 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-// const target = "_blank";
-// const rel = "fa-brands fa-facebook";
-
-// const facebook = "fa-brands fa-facebook";
-
 const ProfileChart = (props) => {
-  const [faceCard] = useState(true);
+  const [faceCard, setFaceCard] = useState(true);
+
+  const handleClick = () => {
+    setFaceCard(!faceCard);
+  };
   return (
     <>
       {faceCard ? (
         <Card>
           <FaceFront key={props.id}>
-            <ImgFront src={props.img} alt={props.alt} />
+            <ImgFront src={props.img} alt={props.alt} onClick={handleClick} />
             <h3>{props.role}</h3>
           </FaceFront>
         </Card>
       ) : (
         <Card>
-          <FaceBack key={props.id}>
+          <FaceBack key={props.id} onClick={handleClick}>
             <TitleBackName>{props.name}</TitleBackName>
-            {/* <img src={props.src} alt=""/> */}
             <FaceBackProfession>{props.profession}</FaceBackProfession>
-            {/* <ContainerSocial class="link">
-            <Link
-              href={props.href}
-              alt={props.Facebook}
-              target={target}
-              rel={rel}
-            >
-              <i className={facebook}></i>
-            </Link>
-          </ContainerSocial> */}
           </FaceBack>
         </Card>
       )}
@@ -45,9 +33,16 @@ export default ProfileChart;
 export const Card = styled.div`
   display: flex;
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
   margin: 20px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 220px;
+    margin: 10px;
+  }
 `;
 
 export const FaceFront = styled.div`
@@ -62,9 +57,11 @@ export const FaceFront = styled.div`
 
 export const ImgFront = styled.img`
   position: absolute;
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  transition: all 400ms ease-out;
+  will-change: transform;
 `;
 
 export const FaceBack = styled.div`
@@ -84,12 +81,6 @@ export const TitleBackName = styled.div`
   letter-spacing: 2px;
 `;
 
-export const ContainerSocial = styled.div`
-  border-top: solid 1px #f3f3f3;
-  height: 50px;
-  line-height: 50px;
-`;
-
 export const FaceFrontPosition = styled.div`
   position: absolute;
   bottom: 0;
@@ -103,4 +94,11 @@ export const FaceFrontPosition = styled.div`
 
 export const FaceBackProfession = styled.div`
   letter-spacing: 1px;
+`;
+
+export const ImgBack = styled.img`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;

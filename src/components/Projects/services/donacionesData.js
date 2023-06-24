@@ -3,6 +3,7 @@ import donacion from "../../../images-donacion/donaciones.jpg";
 export const donacionDataOne = {
   reverse: false,
   inverse: false,
+  title: "Ayúdanos a seguir creciendo",
   topLine: {
     text: "Si quieres ayudarnos a seguir con este proyecto, puedes hacerlo donando al siguiente número de cuenta de RURALVIA:",
   },

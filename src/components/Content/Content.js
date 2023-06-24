@@ -1,5 +1,6 @@
-import { Container, Section } from "../../globalStyles";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Container, Section, Title } from "../../globalStyles";
 import {
   ContentButton,
   ContentColumn,
@@ -24,6 +25,8 @@ export const Content = ({
   reverse,
   target,
   topLine,
+  linkTo,
+  title,
 }) => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
@@ -36,6 +39,7 @@ export const Content = ({
         <ContentRow reverse={reverse}>
           <ContentColumn>
             <TextWrapper>
+              <Title>{title}</Title>
               <TopLine>{topLine.text}</TopLine>
               <Heading inverse={inverse}>{headline}</Heading>
               <Subtitle inverse={inverse}>{description}</Subtitle>
@@ -51,7 +55,6 @@ export const Content = ({
                 >
                   {buttonLabel}
                 </HomePage>
-                {/* <Link onClick={handleClick}  to={linkTo}/> */}
               </ContentButton>
             </TextWrapper>
           </ContentColumn>

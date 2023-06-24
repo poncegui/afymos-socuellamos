@@ -4,7 +4,7 @@ import styled from "styled-components";
 import "../../styles/layout/features.css";
 import { featuresData } from "./data/FeaturesData";
 
-const Tecno = () => {
+const Features = () => {
   const [devTool, setDevTool] = useState(true);
   const [pictoData, setPictoData] = useState(featuresData);
 
@@ -14,8 +14,22 @@ const Tecno = () => {
 
   return (
     <>
-      <>
-        <SectionFeaturesMobile>
+      <SectionFeaturesMobile>
+        <h1>Menú de Principal de Servicios</h1>
+        <ButtonContainer>
+          {pictoData.map((picto) => (
+            <Icons key={picto.id} value={picto.name}>
+              <h3>{picto.name}</h3>
+              <Link to={picto.url}>
+                <img src={picto.img} alt={picto.alt} onClick={handleUrl} />
+              </Link>
+            </Icons>
+          ))}
+        </ButtonContainer>
+      </SectionFeaturesMobile>
+
+      {devTool ? (
+        <SectionFeaturesDesktop>
           <h1>Menú de Principal de Servicios</h1>
           <ButtonContainer>
             {pictoData.map((picto) => (
@@ -27,52 +41,16 @@ const Tecno = () => {
               </Icons>
             ))}
           </ButtonContainer>
-        </SectionFeaturesMobile>
-
-        {devTool ? (
-          <SectionFeaturesDesktop>
-            <h1>Menú de Principal de Servicios</h1>
-            <ButtonContainer>
-              {pictoData.map((picto) => (
-                <Icons key={picto.id} value={picto.name}>
-                  <h3>{picto.name}</h3>
-                  <Link to={picto.url}>
-                    <img src={picto.img} alt={picto.alt} onClick={handleUrl} />
-                  </Link>
-                </Icons>
-              ))}
-            </ButtonContainer>
-          </SectionFeaturesDesktop>
-        ) : (
-          <>
-            <h1>Menú de Servicios</h1>
-            {/* <SectionFeaturesDesktop>
-        <h1>Menú de Servicios</h1>
-          <ButtonContainer>
-            {detailsData.map((detail) => (
-              <Content key={detail.id}  buttonLabel={"saber más"} >
-                <h3>{detail.name}</h3>
-                <img src={detail.img} alt={detail.alt} />
-                <Link className="Link" to="/" onClick={handleBack}>
-          <NavBack>
-            <i class="fa-solid fa-angles-left"></i>
-            <h3>
-              volver a <span>Principal</span>
-            </h3>
-          </NavBack>
-        </Link>
-              </Content>
-            ))}
-          </ButtonContainer>
-        </SectionFeaturesDesktop> */}
-          </>
-        )}
-      </>
+        </SectionFeaturesDesktop>
+      ) : (
+        <>
+          <h1>Menú de Servicios</h1>
+        </>
+      )}
     </>
   );
 };
-
-export default Tecno;
+export default Features;
 
 export const SectionFeaturesMobile = styled.div`
   display: flex;
