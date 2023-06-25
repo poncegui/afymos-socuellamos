@@ -8,7 +8,7 @@ import "../styles/main.scss";
 import { Content } from "./../components/Content/Content";
 import Carousel from "./Carousel/Carousel";
 import Chart from "./Chart/Chart";
-import ContactUs from "./ContactUs";
+
 import Features from "./Features/Features";
 import Footer from "./Footer";
 import Main from "./main/Main";
@@ -26,6 +26,7 @@ import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
 import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
 import ProjectsDonaciones from "./Projects/ProjectsDonaciones";
 import Nosotros from "./main/Nosotros";
+import ContactForm from "./main/ContactForm";
 
 const App = () => {
   //States
@@ -39,7 +40,6 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/contacto" element={<ContactUs />} />
         {/* <Route
                   path='*' element={<NotFoundPage />}
                   /> */}
@@ -97,6 +97,7 @@ const App = () => {
               <OtherInformation />
               <Carousel />
               <PartnertList />
+              <ContactForm />
               <Footer />
             </>
           }

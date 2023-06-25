@@ -11,15 +11,25 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
   a {
     text-decoration: none;
   }
+  outline: none;
+  border: none;
 }
-
+// body {
+//   background: pink;
+// }
 Link {
   text-decoration: none;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
 /* Sections
      ========================================================================== */
 

@@ -17324,7 +17324,7 @@
               ";\n\n  @media (max-width: 768px) {\n    text-align: center;\n  }\n",
             ])),
           function (e) {
-            return e.inverse ? "#071c2f" : "pink";
+            return e.inverse ? "#071c2f" : "#FFC0BC";
           }
         ),
         gn = tn.p(
@@ -17334,7 +17334,7 @@
               ";\n",
             ])),
           function (e) {
-            return e.inverse ? "#6a6a6a" : "pink";
+            return e.inverse ? "#6a6a6a" : "#FFC0BC";
           }
         ),
         yn = tn.a(
@@ -17352,7 +17352,7 @@
               ";\n  }\n",
             ])),
           function (e) {
-            return e.inverse ? "#071c2f" : "pink";
+            return e.inverse ? "#071c2f" : "#FFC0BC";
           },
           function (e) {
             return e.big ? "12px 64px" : "0.6255rem 1.25rem";
@@ -17361,10 +17361,10 @@
             return e.fontBig ? "1.25rem" : "1rem";
           },
           function (e) {
-            return e.inverse ? "#071c2f" : "pink";
+            return e.inverse ? "#071c2f" : "#FFC0BC";
           },
           function (e) {
-            return e.inverse ? "#071c2f" : "pink";
+            return e.inverse ? "#071c2f" : "#FFC0BC";
           },
           function (e) {
             return e.inverse ? "white" : "black";
@@ -17626,7 +17626,7 @@
         qn = tn.button(
           _n ||
             (_n = re([
-              "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: pink;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
+              "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #FFC0BC;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
         Un = function () {
@@ -17896,13 +17896,13 @@
         cr = tn.nav(
           Gn ||
             (Gn = re([
-              "\n  background-color: #071c2f;\n  height: 80px;\n  width: 100%;\n  position: sticky;\n  top: 0;\n  z-index: 50;\n\n  .containerPrincipal {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .fa-angles-left {\n    margin-left: 50px;\n    font-size: 25px;\n    color: pink;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h3 {\n    color: pink;\n    font-weight: 400;\n    margin-left: 20px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  a {\n    color: pink;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
+              "\n  background-color: #071c2f;\n  height: 80px;\n  width: 100%;\n  position: sticky;\n  top: 0;\n  z-index: 50;\n\n  .containerPrincipal {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .fa-angles-left {\n    margin-left: 50px;\n    font-size: 25px;\n    color: #FFC0BC;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h3 {\n    color: #FFC0BC;\n    font-weight: 400;\n    margin-left: 20px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  a {\n    color: #FFC0BC;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
             ]))
         ),
         ur = tn.nav(
           Qn ||
             (Qn = re([
-              "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  min-height: 15vh;\n  text-transform: uppercase;\n  width: 100%;\n  z-index: 20;\n  background-color: pink;\n\n  h1 {\n    text-align: center;\n    color: #071c2f;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 50px;\n  }\n  img {\n    width: 8%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 150%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 30px;\n    }\n    img {\n      display: none;\n    }\n  }\n",
+              "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  min-height: 15vh;\n  text-transform: uppercase;\n  width: 100%;\n  z-index: 20;\n  background-color: #FFC0BC;\n\n  h1 {\n    text-align: center;\n    color: #071c2f;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 50px;\n  }\n  img {\n    width: 8%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 150%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 30px;\n    }\n    img {\n      display: none;\n    }\n  }\n",
             ]))
         ),
         dr = n(8296),
@@ -18047,7 +18047,7 @@
         Mr = tn.div(
           Jn ||
             (Jn = re([
-              "\n  background: black;\n  box-shadow: 0 5px 10px #000;\n  color: pink;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 15px;\n  text-align: center;\n \n",
+              "\n  background: black;\n  box-shadow: 0 5px 10px #000;\n  color: #FFC0BC;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 15px;\n  text-align: center;\n \n",
             ]))
         ),
         zr = tn.div(
@@ -20543,14 +20543,14 @@
           tn.div(
             ki ||
               (ki = re([
-                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 70%;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  padding: 5% 0%;\n  gap: 1rem;\n  :hover {\n    background-color: pink;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    color: black;\n    height: 100px;\n    width: 100px;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: black;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 80%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.8rem;\n    }\n\n    img {\n      color: black;\n      width: 40px;\n      padding-bottom: 10px;\n    }\n  }\n",
+                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 70%;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  padding: 5% 0%;\n  gap: 1rem;\n  :hover {\n    background-color: #FFC0BC;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    color: black;\n    height: 100px;\n    width: 100px;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: black;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 80%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.8rem;\n    }\n\n    img {\n      color: black;\n      width: 40px;\n      padding-bottom: 10px;\n    }\n  }\n",
               ]))
           )),
         Wi =
           (tn.nav(
             Si ||
               (Si = re([
-                "\n  background-color: #071c2f;\n  height: 100px;\n  width: 100%;\n  position: sticky;\n  top: 0;\n\n  z-index: 50;\n\n  display: flex;\n  flex-direction: row;\n\n  i {\n    margin-left: 50px;\n    font-size: 25px;\n    color: pink;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h3 {\n    color: pink;\n    font-weight: 400;\n    margin-left: 20px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  a {\n    color: pink;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
+                "\n  background-color: #071c2f;\n  height: 100px;\n  width: 100%;\n  position: sticky;\n  top: 0;\n\n  z-index: 50;\n\n  display: flex;\n  flex-direction: row;\n\n  i {\n    margin-left: 50px;\n    font-size: 25px;\n    color: #FFC0BC;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h3 {\n    color: #FFC0BC;\n    font-weight: 400;\n    margin-left: 20px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  a {\n    color: #FFC0BC;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
               ]))
           ),
           function () {
@@ -20718,7 +20718,7 @@
         lo = tn.nav(
           Gi ||
             (Gi = re([
-              "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: pink;\n    font-weight: 400;\n    margin-left: 5%;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: white;\n    text-decoration: none;\n    margin-right: 5%;\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: pink;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 768px) {\n      background-color: #071c2f;\n      border-radius: 0 0 80% 0;\n      height: 30%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 18px;\n        margin-top: 5%;\n        color: pink;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
+              "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #FFC0BC;\n    font-weight: 400;\n    margin-left: 5%;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: white;\n    text-decoration: none;\n    margin-right: 5%;\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #FFC0BC;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 768px) {\n      background-color: #071c2f;\n      border-radius: 0 0 80% 0;\n      height: 30%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 18px;\n        margin-top: 5%;\n        color: #FFC0BC;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
             ]))
         ),
         co = tn.div(
@@ -20807,7 +20807,7 @@
           tn.div(
             Ki ||
               (Ki = re([
-                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 70%;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  margin: 5% 0%;\n  gap: 1rem;\n  :hover {\n    background-color: pink;\n  }\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n  img {\n    color: #071c2f;\n    height: 100px;\n    width: 100px;\n    cursor: pointer;\n  }\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
+                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 70%;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  margin: 5% 0%;\n  gap: 1rem;\n  :hover {\n    background-color: #FFC0BC;\n  }\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n  img {\n    color: #071c2f;\n    height: 100px;\n    width: 100px;\n    cursor: pointer;\n  }\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
         bo = n(8166),
@@ -20964,7 +20964,7 @@
         No = tn.div(
           io ||
             (io = re([
-              "\n  background-color: white;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 50px;\n  margin: 0 0 0px 0;\n  section {\n    background-color: #071c2f;\n    height: 80px;\n    width: 100%;\n    color: pink;\n    display: grid;\n    place-content: center;\n  }\n\n  h2 {\n    font-size: 40px;\n  }\n\n  @media (max-width: 368px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 0px;\n\n    section {\n      height: 60px;\n    }\n    h2 {\n      font-size: 28px;\n    }\n  }\n",
+              "\n  background-color: white;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 50px;\n  margin: 0 0 0px 0;\n  section {\n    background-color: #071c2f;\n    height: 80px;\n    width: 100%;\n    color: #FFC0BC;\n    display: grid;\n    place-content: center;\n  }\n\n  h2 {\n    font-size: 40px;\n  }\n\n  @media (max-width: 368px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 0px;\n\n    section {\n      height: 60px;\n    }\n    h2 {\n      font-size: 28px;\n    }\n  }\n",
             ]))
         ),
         Mo = tn.div(
@@ -21695,7 +21695,7 @@
           tn.div(
             rs ||
               (rs = re([
-                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n  :hover {\n    background-color: pink;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    color: #071c2f;\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
+                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n  :hover {\n    background-color: #FFC0BC;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    color: #071c2f;\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
         Ks = function () {

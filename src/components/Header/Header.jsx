@@ -1,6 +1,5 @@
 import logo from "../../logos/logo-afymos.png";
-import facebook from "../../icons/facebook.svg";
-import instagram from "../../icons/instagram.svg";
+
 // import styled from "styled-components";
 
 const Header = () => {

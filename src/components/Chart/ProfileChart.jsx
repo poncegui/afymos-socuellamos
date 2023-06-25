@@ -67,7 +67,7 @@ export const ImgFront = styled.img`
 export const FaceBack = styled.div`
   background: black;
   box-shadow: 0 5px 10px #000;
-  color: pink;
+  color: #ffc0bc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

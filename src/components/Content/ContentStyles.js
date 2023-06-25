@@ -85,7 +85,7 @@ export const Heading = styled.h2`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ inverse }) => (inverse ? "#071c2f" : "pink")};
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
 
   @media (max-width: 768px) {
     text-align: center;
@@ -96,7 +96,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;
-  color: ${({ inverse }) => (inverse ? "#6a6a6a" : "pink")};
+  color: ${({ inverse }) => (inverse ? "#6a6a6a" : "#FFC0BC")};
 `;
 
 export const HomePage = styled.a`
@@ -115,19 +115,19 @@ export const ContentButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   background: none;
-  color: ${({ inverse }) => (inverse ? "#071c2f" : "pink")};
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
   border-radius: 4px;
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "0.6255rem 1.25rem")};
   font-size: ${({ fontBig }) => (fontBig ? "1.25rem" : "1rem")};
   outline: none;
-  border: 2px solid ${({ inverse }) => (inverse ? "#071c2f" : "pink")};
+  border: 2px solid ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
   cursor: pointer;
   position: relative;
   overflow: hidden;
 
   &:before {
-    background: ${({ inverse }) => (inverse ? "#071c2f" : "pink")};
+    background: ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
     content: "";
     position: absolute;
     top: 50%;

@@ -1,5 +1,5 @@
 .header_superior {
-  background-color: pink;
+  background-color: #ffc0bc;
   width: 100%;
 }
 .header_superior--title {
@@ -84,7 +84,7 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  color: pink;
+  color: #ffc0bc;
   display: grid;
   height: 90vh;
   place-items: center top;
@@ -135,7 +135,7 @@
   }
 }
 .article {
-  color: pink;
+  color: #ffc0bc;
   display: flex;
   flex-direction: column;
   font-family: Montserrat Alternates, sans-serif;
@@ -164,7 +164,7 @@
   width: 100%;
 }
 .article__title h4 {
-  color: pink;
+  color: #ffc0bc;
   float: left;
   font-size: 28px;
   padding-left: 15px;
@@ -175,7 +175,7 @@
   -webkit-animation: typing 5s steps(25) normal;
   animation: typing 5s steps(25) normal;
   background: #071c2f;
-  border-left: 3px solid pink;
+  border-left: 3px solid #ffc0bc;
   font-size: 40px;
   line-height: 35px;
   position: absolute;
@@ -310,7 +310,7 @@
 }
 .article__text {
   align-items: center;
-  background-color: pink;
+  background-color: #ffc0bc;
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -328,7 +328,7 @@
 @media (min-width: 768px) {
   .article__text {
     align-items: center;
-    background-color: pink;
+    background-color: #ffc0bc;
     display: flex;
     justify-content: center;
     padding: 50px;
@@ -340,7 +340,7 @@
 }
 .containerCollapsable {
   align-items: center;
-  background-color: pink;
+  background-color: #ffc0bc;
   border: 1px solid #f9a5b3;
   border-radius: 50px;
   display: flex;
@@ -379,7 +379,7 @@
   justify-content: center;
 }
 .mainContainerAboutUs {
-  background-color: #f59faf;
+  background-color: white;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -681,7 +681,7 @@ html {
   }
 }
 .mainContainerDiversity {
-  background-color: #f59faf;
+  background-color: white;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -873,7 +873,7 @@ html {
   padding: 0;
 }
 body {
-  background: pink;
+  background: #ffc0bc;
 }
 .container__cards {
   display: flex;
@@ -982,7 +982,7 @@ ul {
   text-align: center;
 }
 .logo span {
-  color: pink;
+  color: #ffc0bc;
 }
 .contact-wrapper {
   box-shadow: 0 0 20px 0 hsla(0, 0%, 100%, 0.3);
@@ -995,7 +995,7 @@ ul {
 }
 .contact-form h1,
 .contact-form label {
-  color: pink;
+  color: #ffc0bc;
 }
 .contact-form h1:first-letter {
   font-size: 180%;
@@ -1020,14 +1020,14 @@ ul {
 .contact-form form textarea {
   background: none;
   border: none;
-  border-bottom: 1px solid pink;
+  border-bottom: 1px solid #ffc0bc;
   color: #fff;
   outline: 0;
   padding: 0.7em;
   width: 100%;
 }
 .contact-form form .button {
-  background: pink;
+  background: #ffc0bc;
   border: 0;
   color: #071c2f;
   grid-column: 1/3;
@@ -1041,7 +1041,7 @@ ul {
 .contact-form form .button:focus,
 .contact-form form .button:hover {
   background: #756d6d;
-  color: pink;
+  color: #ffc0bc;
   outline: 0;
   transition: background-color 1s ease-out;
 }
@@ -1051,7 +1051,7 @@ ul {
 .contact-info div,
 .contact-info h3,
 .contact-info ul {
-  color: pink;
+  color: #ffc0bc;
   margin: 0 0 1rem;
   text-align: center;
 }
@@ -1194,7 +1194,7 @@ ul {
 }
 .footer {
   background-color: #071c2f;
-  color: pink;
+  color: #ffc0bc;
   flex-direction: column;
   font-family: Montserrat Alternates, sans-serif;
   line-height: 30px;
@@ -1208,7 +1208,7 @@ ul {
 }
 .footer__btn {
   background-color: #fff;
-  background-color: pink;
+  background-color: #ffc0bc;
   border-radius: 50%;
   box-shadow: 0 2px 6px #071c2f;
   height: 45px;
@@ -1230,7 +1230,7 @@ ul {
 .index-footer {
   align-items: center;
   background-color: #071c2f;
-  color: pink;
+  color: #ffc0bc;
   display: flex;
   flex-direction: column;
 }
@@ -1277,7 +1277,7 @@ ul {
 .index-footer__about-us a,
 .index-footer__contact a,
 .index-footer__shop a {
-  color: pink;
+  color: #ffc0bc;
   font-size: 20px;
   line-height: normal;
   padding-top: 10px;
@@ -1311,7 +1311,7 @@ ul {
   }
 }
 .index-footer__contact--socialmedia a {
-  color: pink;
+  color: #ffc0bc;
   cursor: pointer;
   font-size: 45px;
   height: 100%;
@@ -1330,7 +1330,7 @@ ul {
 }
 .index-footer__contact--socialmedia--socialmedia:hover .facebook:hover,
 .index-footer__contact--socialmedia--socialmedia:hover .instagram:hover {
-  border-bottom: 5px solid pink;
+  border-bottom: 5px solid #ffc0bc;
   line-height: 30px;
   margin-top: 0.5rem;
   transition: all 0.5s ease-out;
@@ -1385,7 +1385,7 @@ ul {
   }
 }
 .title span {
-  color: pink;
+  color: #ffc0bc;
 }
 .title:first-letter {
   font-size: 120%;
@@ -1607,7 +1607,7 @@ ul {
 .card .back {
   background: #000;
   box-shadow: 0 5px 10px #000;
-  color: pink;
+  color: #ffc0bc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

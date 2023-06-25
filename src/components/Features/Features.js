@@ -153,7 +153,7 @@ export const Icons = styled.div`
   padding: 5% 0%;
   gap: 1rem;
   :hover {
-    background-color: pink;
+    background-color: #ffc0bc;
   }
 
   h3 {
@@ -228,7 +228,7 @@ const NavBack = styled.nav`
   i {
     margin-left: 50px;
     font-size: 25px;
-    color: pink;
+    color: #ffc0bc;
 
     @media (max-width: 768px) {
       margin-left: 40px;
@@ -236,7 +236,7 @@ const NavBack = styled.nav`
   }
 
   h3 {
-    color: pink;
+    color: #ffc0bc;
     font-weight: 400;
     margin-left: 20px;
     span {
@@ -249,7 +249,7 @@ const NavBack = styled.nav`
   align-items: center;
   justify-content: space-between;
   a {
-    color: pink;
+    color: #ffc0bc;
     text-decoration: none;
     margin-right: 1.5rem;
   }

@@ -66,7 +66,7 @@ export const CardButton = styled.button`
   background-color: #071c2f;
   font-size: 1.3rem;
   padding: 5px 10px;
-  color: pink;
+  color: #ffc0bc;
   cursor: pointer;
   width: 100%;
   font-weight: 600;

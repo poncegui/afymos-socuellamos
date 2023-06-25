@@ -102,7 +102,7 @@ export const Icons = styled.div`
   margin: 5% 0%;
   gap: 1rem;
   :hover {
-    background-color: pink;
+    background-color: #ffc0bc;
   }
   h3 {
     margin-top: 0.5rem;

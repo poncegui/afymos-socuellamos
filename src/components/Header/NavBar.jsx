@@ -52,7 +52,7 @@ const NavContainer = styled.nav`
   z-index: 50;
 
   h3 {
-    color: pink;
+    color: #ffc0bc;
     font-weight: 400;
     margin-left: 5%;
     span {
@@ -78,7 +78,7 @@ const NavContainer = styled.nav`
     text-align: center;
     transition: all 0.5s ease;
     a {
-      color: pink;
+      color: #ffc0bc;
       font-size: 1.2rem;
       display: block;
     }
@@ -119,7 +119,7 @@ const NavContainer = styled.nav`
       a {
         font-size: 18px;
         margin-top: 5%;
-        color: pink;
+        color: #ffc0bc;
         cursor: pointer;
 
         &:hover {
