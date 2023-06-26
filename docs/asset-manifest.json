@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.40cb1a46.css",
-    "main.js": "./static/js/main.a6bd2912.js",
+    "main.css": "./static/css/main.65574c75.css",
+    "main.js": "./static/js/main.cb0f5940.js",
     "static/media/chartTeam1.jpg": "./static/media/chartTeam1.5069bdbc78beba6ba1d8.jpg",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/chart5.png": "./static/media/chart5.3f0b0941305f74124a8e.png",
@@ -23,7 +23,6 @@
     "static/media/chart13.png": "./static/media/chart13.73aa1dc2e4567f2edb11.png",
     "static/media/chart14.png": "./static/media/chart14.21d6f91df75de5409053.png",
     "static/media/chart12.png": "./static/media/chart12.e9eb8a7784e818704298.png",
-    "static/media/instalaciones.jpg": "./static/media/instalaciones.5556c7e7687a4bd1a79c.jpg",
     "static/media/formacion.jpg": "./static/media/formacion.6efb50312b365fe9d351.jpg",
     "static/media/neuro.jpg": "./static/media/neuro.0e99cbcb1b389c4cb530.jpg",
     "static/media/multisensorial.jpg": "./static/media/multisensorial.d239820e6e39208fa018.jpg",
@@ -31,7 +30,6 @@
     "static/media/nosotros-2.jpg": "./static/media/nosotros-2.85b7dd67acb3e983c150.jpg",
     "static/media/centroDia-4.jpg": "./static/media/centroDia-4.5cbe31dc0faf914e5ace.jpg",
     "static/media/gimnasio.jpg": "./static/media/gimnasio.4e04c626d6463bab502e.jpg",
-    "static/media/formacion-3.png": "./static/media/formacion-3.6ec0cb25b42a58195a0e.png",
     "static/media/proyecto-crea.png": "./static/media/proyecto-crea.6ec0cb25b42a58195a0e.png",
     "static/media/centroDia-7.jpg": "./static/media/centroDia-7.964c97ec12f4e5bdb019.jpg",
     "static/media/centroDia-5.jpg": "./static/media/centroDia-5.813d367cde84113f5509.jpg",
@@ -61,7 +59,6 @@
     "static/media/formacion-5.png": "./static/media/formacion-5.4bb9e4ea800d2d33e55f.png",
     "static/media/formacion-2.jpg": "./static/media/formacion-2.9bf680a150b08045d73e.jpg",
     "static/media/psicopedagogia.png": "./static/media/psicopedagogia.893767e7ba711e2e3d46.png",
-    "static/media/un-dia-afymos.jpg": "./static/media/un-dia-afymos.5756d2cf953a60a749a0.jpg",
     "static/media/donaciones.jpg": "./static/media/donaciones.47345a441a9e602a94a4.jpg",
     "static/media/vivienda-2.jpg": "./static/media/vivienda-2.74948c4fb956af4f2687.jpg",
     "static/media/fundacion-once.png": "./static/media/fundacion-once.eccc006489bd0da4b7d0.png",
@@ -70,7 +67,6 @@
     "static/media/logopeda.png": "./static/media/logopeda.d2013f6acea2198b19f2.png",
     "static/media/neuropsicologia.png": "./static/media/neuropsicologia.369da4c7dbd183a32dbe.png",
     "static/media/logo-ayuntamiento.png": "./static/media/logo-ayuntamiento.572c855624433d08e729.png",
-    "static/media/centro-fachada.jpg": "./static/media/centro-fachada.6f18f3b97ba93249fe4f.jpg",
     "static/media/tomas.jpg": "./static/media/tomas.922e38073dce14b1fed2.jpg",
     "static/media/terapeuta-visual.jpg": "./static/media/terapeuta-visual.572de5d05c0fe6437da2.jpg",
     "static/media/psicologa.png": "./static/media/psicologa.2ac80fd8ae5aadef28b1.png",
@@ -97,13 +93,10 @@
     "static/media/donacion.png": "./static/media/donacion.5bcfebb0e44a5d6b7a8d.png",
     "static/media/historial-medico.png": "./static/media/historial-medico.cdd204e568964ac3e119.png",
     "index.html": "./index.html",
-    "static/media/instagram.svg": "./static/media/instagram.6d5171d58481634549447b4387ccfe0c.svg",
-    "static/media/home.svg": "./static/media/home.c104e2819c58a9a9198e7ad2a43f7b24.svg",
-    "static/media/facebook.svg": "./static/media/facebook.e6b856b56c51f12e2816f77522ce4a54.svg",
     "static/media/left.svg": "./static/media/left.b74b51c4c35fb292f28d63a42b7d73c9.svg",
     "static/media/right.svg": "./static/media/right.b282d2fca8839e80178c1a178ce23993.svg",
-    "main.40cb1a46.css.map": "./static/css/main.40cb1a46.css.map",
-    "main.a6bd2912.js.map": "./static/js/main.a6bd2912.js.map"
+    "main.65574c75.css.map": "./static/css/main.65574c75.css.map",
+    "main.cb0f5940.js.map": "./static/js/main.cb0f5940.js.map"
   },
-  "entrypoints": ["static/css/main.40cb1a46.css", "static/js/main.a6bd2912.js"]
+  "entrypoints": ["static/css/main.65574c75.css", "static/js/main.cb0f5940.js"]
 }

@@ -1,6 +1,6 @@
-import nosotros from "../../../images-nosotros/nosotros-3.png";
-import nosotros2 from "../../../images-nosotros/nosotros.jpg";
-import nosotros3 from "../../../images-nosotros/nosotros-2.jpg";
+import nosotros from "../../../assets/images-nosotros/nosotros-3.png";
+import nosotros2 from "../../../assets/images-nosotros/nosotros.jpg";
+import nosotros3 from "../../../assets/images-nosotros/nosotros-2.jpg";
 
 export const nosotrosDataOne = {
   reverse: false,

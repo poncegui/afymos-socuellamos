@@ -1,9 +1,9 @@
-import voluntariado1 from "../../../images-voluntariado/voluntariado4.jpg";
-import voluntariado2 from "../../../images-voluntariado/voluntariado2.jpg";
-import voluntariado3 from "../../../images-voluntariado/voluntariado7.jpg";
-import voluntariado4 from "../../../images-voluntariado/voluntariado9.jpg";
-import voluntariado5 from "../../../images-voluntariado/voluntariado5.jpg";
-import voluntariado6 from "../../../images-voluntariado/voluntariado6.jpg";
+import voluntariado1 from "../../../assets/images-voluntariado/voluntariado4.jpg";
+import voluntariado2 from "../../../assets/images-voluntariado/voluntariado2.jpg";
+import voluntariado3 from "../../../assets/images-voluntariado/voluntariado7.jpg";
+import voluntariado4 from "../../../assets/images-voluntariado/voluntariado9.jpg";
+import voluntariado5 from "../../../assets/images-voluntariado/voluntariado5.jpg";
+import voluntariado6 from "../../../assets/images-voluntariado/voluntariado6.jpg";
 
 export const voluntariadoOne = {
   reverse: false,
