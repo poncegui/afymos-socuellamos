@@ -1,11 +1,11 @@
-import logopediaData from "../../../pictogramas/logopeda.png";
-import fisioterapiaData from "../../../pictogramas/fisioterapeuta.png";
-import terapiaOcupacionalData from "../../../pictogramas/terapeuta-ocupacional.png";
-import psicologiaData from "../../../pictogramas/psicologa.png";
-import neuropsicologiaData from "../../../pictogramas/neuropsicologia.png";
-import psicopedagogia from "../../../pictogramas/psicopedagogia.png";
-import auditivaData from "../../../pictogramas/terapia-auditiva.png";
-import visualData from "../../../pictogramas/terapia-visual.png";
+import auditivaData from "../../../assets/pictogramas/terapia-auditiva.png";
+import fisioterapiaData from "../../../assets/pictogramas/fisioterapeuta.png";
+import logopediaData from "../../../assets/pictogramas/logopeda.png";
+import neuropsicologiaData from "../../../assets/pictogramas/neuropsicologia.png";
+import psicologiaData from "../../../assets/pictogramas/psicologa.png";
+import psicopedagogia from "../../../assets/pictogramas/psicopedagogia.png";
+import terapiaOcupacionalData from "../../../assets/pictogramas/terapeuta-ocupacional.png";
+import visualData from "../../../assets/pictogramas/terapia-visual.png";
 
 const target = "_blank";
 

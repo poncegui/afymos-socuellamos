@@ -1,7 +1,7 @@
-import organigrama from "../../../pictogramas/organigrama.png";
-import contabilidad from "../../../pictogramas/contabilidad.png";
-import colaboradores from "../../../pictogramas/donacion.png";
-import junta from "../../../pictogramas/junta.png";
+import colaboradores from "../../../assets/pictogramas/donacion.png";
+import contabilidad from "../../../assets/pictogramas/contabilidad.png";
+import junta from "../../../assets/pictogramas/junta.png";
+import organigrama from "../../../assets/pictogramas/organigrama.png";
 
 const target = "_blank";
 

@@ -1,12 +1,12 @@
-import viviendaSocial from "../../../pictogramas/social.png";
-import centroDiversidad from "../../../pictogramas/vivienda-social.png";
-import cuentas from "../../../pictogramas/contabilidad.png";
-import organigrama from "../../../pictogramas/organigrama.png";
-import formacion from "../../../pictogramas/educacion.png";
-import insercionLaboral from "../../../pictogramas/busqueda-de-trabajo.png";
-import familias from "../../../pictogramas/familia.png";
-import voluntariado from "../../../pictogramas/apoyo.png";
-import terapia from "../../../pictogramas/terapia-fisica.png";
+import centroDiversidad from "../../../assets/pictogramas/vivienda-social.png";
+import cuentas from "../../../assets/pictogramas/contabilidad.png";
+import familias from "../../../assets/pictogramas/familia.png";
+import formacion from "../../../assets/pictogramas/educacion.png";
+import insercionLaboral from "../../../assets/pictogramas/busqueda-de-trabajo.png";
+import organigrama from "../../../assets/pictogramas/organigrama.png";
+import terapia from "../../../asstes/pictogramas/terapia-fisica.png";
+import viviendaSocial from "../../../assets/pictogramas/social.png";
+import voluntariado from "../../../assets/pictogramas/apoyo.png";
 
 export const pictoAccessibility = [
   {

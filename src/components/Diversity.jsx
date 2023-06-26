@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import SlidesShowDiversity from "./SlidesShowDiversity";
-import centroAfymos from "../pictogramas/centro-afymos.png";
+import centroAfymos from "../assets/pictogramas/centro-afymos.png";
 
 const Diversity = () => {
   const links = document.querySelectorAll(".links");
