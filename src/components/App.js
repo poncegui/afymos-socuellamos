@@ -96,8 +96,8 @@ const App = () => {
               <Content {...heroThree} />
               <OtherInformation />
               <Carousel />
-              <PartnertList />
               <ContactForm />
+              <PartnertList />
               <Footer />
             </>
           }

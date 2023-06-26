@@ -1,66 +1,73 @@
 import React from "react";
 import styled from "styled-components";
-
 import IconOne from "../../icons/icon-1.png";
 import IconTwo from "../../icons/icon-2.png";
 import IconThree from "../../icons/icon-3.png";
 
 function ContactForm() {
   return (
-    <SectionContact>
+    <>
       <TitleHeadingContainer>
-        <TitleHeading class="heading">
-          <span>Información de contacto</span>
-        </TitleHeading>
+        <TitleHeading>Información de contacto</TitleHeading>
       </TitleHeadingContainer>
-      <BoxContainer class="icons-container">
-        <Box>
-          <ImgBox src={IconOne} alt="" />
-          <TitleBox>Teléfono</TitleBox>
-          <TextBox>926 532 749</TextBox>
-        </Box>
-        <Box>
-          <ImgBox src={IconTwo} alt="" />
-          <TitleBox>Correo Electrónico</TitleBox>
-          <TextBox>afymos@gmail.com</TextBox>
-        </Box>
-        <Box>
-          <ImgBox src={IconThree} alt="" />
-          <TitleBox>Dirección</TitleBox>
-          <TextBox>C. Pedro Arias, 87, 13630 Socuéllamos, Ciudad Real</TextBox>
-        </Box>
-      </BoxContainer>
+      <SectionContact>
+        <BoxContainer>
+          <Box>
+            <ImgBox src={IconOne} />
+            <TitleBox>Teléfono</TitleBox>
+            <TextBox>926 532 749</TextBox>
+          </Box>
+          <Box>
+            <ImgBox src={IconTwo} />
+            <TitleBox>Correo Electrónico</TitleBox>
+            <TextBox
+              href="tel:926532749"
+              target="_blank"
+              title="Teléfono Afymos"
+            >
+              afymos@gmail.com
+            </TextBox>
+          </Box>
+          <Box>
+            <ImgBox src={IconThree} />
+            <TitleBox>Dirección</TitleBox>
+            <TextBox>
+              C. Pedro Arias, 87, 13630 Socuéllamos, Ciudad Real
+            </TextBox>
+          </Box>
+        </BoxContainer>
 
-      <Row>
-        <Form>
-          <InputBox>
-            <Input type="text" placeholder="nombre" />
-            <Input type="number" placeholder="teléfono" />
-          </InputBox>
-          <InputBox>
-            <Input type="email" placeholder="email" />
-            <Input type="text" placeholder="asunto" />
-          </InputBox>
-          <TextArea
-            name=""
-            placeholder="mensaje"
-            id=""
-            cols="30"
-            rows="10"
-          ></TextArea>
-          <InputSubmit
-            type="submit"
-            value="enviar mensaje"
-            class="btn"
-          ></InputSubmit>
-        </Form>
-        <Iframe
-          loading="lazy"
-          allowFullScreen
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.115024827591!2d-2.792748684638135!3d39.28564187951258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68f525d5ea6049%3A0x180a68074859800d!2sAFYMOS!5e0!3m2!1ses!2ses!4v1687676404652!5m2!1ses!2ses"
-        ></Iframe>
-      </Row>
-    </SectionContact>
+        <Row>
+          <Form>
+            <InputBox>
+              <Input type="text" placeholder="nombre" />
+              <Input type="number" placeholder="teléfono" />
+            </InputBox>
+            <InputBox>
+              <Input type="email" placeholder="email" />
+              <Input type="text" placeholder="asunto" />
+            </InputBox>
+            <TextArea
+              name=""
+              placeholder="mensaje"
+              id=""
+              cols="30"
+              rows="10"
+            ></TextArea>
+            <InputSubmit
+              type="submit"
+              value="enviar mensaje"
+              class="btn"
+            ></InputSubmit>
+          </Form>
+          <Iframe
+            loading="lazy"
+            allowFullScreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.115024827591!2d-2.792748684638135!3d39.28564187951258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68f525d5ea6049%3A0x180a68074859800d!2sAFYMOS!5e0!3m2!1ses!2ses!4v1687676404652!5m2!1ses!2ses"
+          ></Iframe>
+        </Row>
+      </SectionContact>
+    </>
   );
 }
 export default ContactForm;
@@ -78,19 +85,19 @@ export const SectionContact = styled.section`
 SectionContact.displayName = "SectionContact";
 
 export const TitleHeadingContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  background-color: #071c2f;
+  height: 40px;
 `;
 TitleHeadingContainer.displayName = "TitleHeadingContainer";
 
-export const TitleHeading = styled.div`
+export const TitleHeading = styled.h2`
   text-align: center;
-  color: #071c2f;
+  color: #ffc0bc;
   font-size: 2rem;
   font-weight: 400;
-  padding-bottom: 3rem;
 
   @media (max-width: 450px) {
     font-size: 1rem;
@@ -130,10 +137,11 @@ export const TitleBox = styled.h3`
 `;
 TitleBox.displayName = "TitleBox";
 
-export const TextBox = styled.p`
+export const TextBox = styled.a`
   font-size: 1rem;
   color: #666;
   padding: 0.2rem 0;
+  cursor: pointer;
 `;
 TextBox.displayName = "TextBox";
 
@@ -176,7 +184,7 @@ export const Input = styled.input`
   margin-top: 1rem;
   padding: 1rem;
   font-size: 1rem;
-  color: #071c2f;
+  color: grey;
   background: #f7f7f7;
   border-radius: 0.5rem;
   text-transform: none;
@@ -190,7 +198,7 @@ export const Input = styled.input`
 Input.displayName = "Input";
 
 export const Row = styled.div`
-  background: #071c2f;
+  background: white;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;

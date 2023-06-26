@@ -1,10 +1,11 @@
-import home from "../icons/home.svg";
+import React from "react";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__btn">
+    <FooterContainer>
+      <ScrollButton>
         <Link
           to="#menu-principal"
           className="footer__btn--arrow"
@@ -12,120 +13,113 @@ const Footer = () => {
         >
           <i className="fa-solid fa-chevron-up"></i>
         </Link>
-      </div>
+      </ScrollButton>
 
-      <div className="index-footer__wrapper">
-        <div className="index-footer__shop">
-          <h4>Contacto</h4>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  className="box1__display--list"
-                  href="https://acortar.link/O2NBKp"
-                  target="_blank"
-                  title="cómo llegar"
-                >
-                  Cómo llegar
-                </a>
-              </li>
-              <li>
-                <a
-                  className="box1__display--list"
-                  href="mailto:afymos@gmail.com"
-                  target="_blank"
-                  title="e-mail Afymos"
-                >
-                  afymos@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  className="box1__display--list"
-                  href="tel:926532749"
-                  target="_blank"
-                  title="Teléfono Afymos"
-                >
-                  926 532 749
-                </a>
-              </li>
-              {/* <li>
-                <a href="https://adalab.es/" target="_blank">
-                  Habitaciones
-                </a>
-              </li> */}
-            </ul>
-          </nav>
-        </div>
-        <div className="index-footer__about-us">
-          <h4></h4>
-          <nav>
-            <ul>
-              <li>
-                <a href="https://adalab.es/" target="_blank"></a>
-              </li>
-              <li>
-                <a href="https://adalab.es/" target="_blank"></a>
-              </li>
-              <li>
-                <a href="https://adalab.es/" target="_blank"></a>
-              </li>
-              <li>
-                <a href="https://adalab.es/" target="_blank"></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div className="index-footer__contact">
-          <div className="index-footer__contact--menu">
-            <h4>Aviso Legal</h4>
-            <nav>
-              <ul>
-                <li>
-                  <a
-                    className=""
-                    href="https://adalab.es/"
-                    target="_blank"
-                    title="Política de Privacidad"
-                  >
-                    Política de Privacidad
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className=""
-                    href="https://adalab.es/"
-                    target="_blank"
-                    title="cookies"
-                  >
-                    Cookies
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div className="index-footer__contact--socialmedia">
-        {/* <a href="" target="_blank">
-              <i className="fa-brands fa-linkedin-in"></i>
-            </a> */}
-        <a
+      <FooterTitle>Síguenos en redes sociales</FooterTitle>
+
+      <SocialMediaContainer className="index-footer__contact--socialmedia">
+        <Instagram
           href="https://www.instagram.com/afymos/?hl=es"
           alt="Instagram"
           target="_blank"
+          rel="noreferrer"
         >
           <i className="fa-brands fa-instagram"></i>
-        </a>
-        {/* <a href="" alt="Twitter" target="_blank">
-              <i className="fa-brands fa-twitter"></i>
-            </a> */}
-        <a href="https://acortar.link/tvNjS0" alt="Facebook" target="_blank">
+        </Instagram>
+        <FaceBook
+          href="https://acortar.link/tvNjS0"
+          alt="Facebook"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="fa-brands fa-facebook"></i>
-        </a>
-      </div>
-    </footer>
+        </FaceBook>
+      </SocialMediaContainer>
+    </FooterContainer>
   );
 };
-
 export default Footer;
+
+export const FooterContainer = styled.div`
+  background-color: #071c2f;
+  width: 100%;
+  color: #ffc0bc;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+`;
+FooterContainer.displayName = "FooterContainer";
+
+export const ScrollButton = styled.div`
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: #071c2f 0px 2px 6px;
+  transform: translateY(-25px);
+  background-color: #ffc0bc;
+  &:hover {
+    transform: translateY(-15px);
+    transition: all 0.8s ease-out;
+  }
+`;
+ScrollButton.displayName = "ScrollButton";
+
+export const FooterTitle = styled.h2`
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  text-align: left;
+  justify-content: center;
+  @media (min-width: 720px) {
+    font-size: 24px;
+  }
+`;
+FooterTitle.displayName = "FooterTitle";
+
+export const SocialMediaContainer = styled.div`
+  display: flex;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+  pointer-events: none;
+
+  @media (min-width: 720px) {
+    justify-content: center;
+  }
+`;
+SocialMediaContainer.displayName = "SocialMediaContainer";
+
+export const FaceBook = styled.a`
+  padding-top: 10px;
+  color: #ffc0bc;
+  line-height: normal;
+  cursor: pointer;
+  pointer-events: all;
+  outline: none;
+  text-align: center;
+  width: 50px;
+  height: 100%;
+  font-size: 45px;
+  margin: 0 20px;
+
+  &:hover {
+    margin-top: 0.5rem;
+    border-bottom: 5px solid #ffc0bc;
+    line-height: 30px;
+    transition: all 0.5s ease-out;
+  }
+`;
+FaceBook.displayName = "FaceBook";
+
+export const Instagram = styled(FaceBook)``;
+Instagram.displayName = "Instagram";

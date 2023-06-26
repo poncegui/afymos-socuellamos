@@ -12,15 +12,16 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   box-sizing: border-box;
+  font-size: 62%;
   a {
     text-decoration: none;
   }
   outline: none;
   border: none;
 }
-// body {
-//   background: pink;
-// }
+body {
+  background: #ffc0bc;
+}
 Link {
   text-decoration: none;
 }
