@@ -1,15 +1,14 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
-import fisioterapia from "../images-center/sala-fisioterapia.png";
 import cocina from "../images-center/cocina.png";
-import informatica from "../images-center/informatica.png";
+import fisioterapia from "../images-center/sala-fisioterapia.png";
 import formacion from "../images-center/sala-formacion.png";
+import informatica from "../images-center/informatica.png";
+import left from "../assets/icons/left.svg";
 import ocupacional from "../images-center/sala-ocupacional.png";
+import right from "../assets/icons/right.svg";
 
-import right from "../icons/right.svg";
-import left from "../icons/left.svg";
-
-const SlidesShow = (props) => {
+const SlidesShow = () => {
   const slideShow = useRef(null);
   const intervalSlides = useRef(null);
 

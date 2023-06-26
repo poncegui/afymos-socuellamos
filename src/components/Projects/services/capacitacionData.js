@@ -1,5 +1,5 @@
-import capacitacion from "../../../images-capacitacion/sociolaboral.jpg";
-import capacitacion2 from "../../../images-capacitacion/rafa.jpg";
+import capacitacion from "../../../assets/images-capacitacion/sociolaboral.jpg";
+import capacitacion2 from "../../../assets/images-capacitacion/rafa.jpg";
 
 export const capacitacionDataOne = {
   reverse: false,

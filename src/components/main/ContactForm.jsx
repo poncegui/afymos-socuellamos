@@ -1,8 +1,8 @@
+import IconOne from "../../assets/icons/icon-1.png";
+import IconThree from "../../assets/icons/icon-3.png";
+import IconTwo from "../../assets/icons/icon-2.png";
 import React from "react";
 import styled from "styled-components";
-import IconOne from "../../icons/icon-1.png";
-import IconTwo from "../../icons/icon-2.png";
-import IconThree from "../../icons/icon-3.png";
 
 function ContactForm() {
   return (
