@@ -1,4 +1,4 @@
-import donacion from "../../../images-donacion/donaciones.jpg";
+import donacion from "../../../assets/images-donacion/donaciones.jpg";
 
 export const donacionDataOne = {
   reverse: false,

@@ -1,9 +1,6 @@
-import salaFisioterapia from "../../../images-center/sala-fisioterapia.png";
-import cocina from "../../../images-center/sala-formacion.png";
-import fachada from "../../../images-center/center2.jpg";
-import gimnasio from "../../../images-instalaciones/gimnasio.jpg";
-import instalaciones from "../../../images-instalaciones/instalaciones.jpg";
-import multisensorial from "../../../images-instalaciones/multisensorial.jpg";
+import fachada from "../../../assets/images-center/center2.jpg";
+import gimnasio from "../../../assets/images-instalaciones/gimnasio.jpg";
+import multisensorial from "../../../assets/images-instalaciones/multisensorial.jpg";
 
 export const centroDiversidadDataOne = {
   reverse: false,

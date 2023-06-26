@@ -1,6 +1,6 @@
-import apoyofamilia from "../../../images-services/apoyo-familias.jpg";
-import apoyofamilia2 from "../../../images-services/apoyo-familias-2.jpg";
-import apoyofamilia3 from "../../../images-services/apoyo-familias-3.jpg";
+import apoyofamilia from "../../../assets/images-services/apoyo-familias.jpg";
+import apoyofamilia2 from "../../../assets/images-services/apoyo-familias-2.jpg";
+import apoyofamilia3 from "../../../assets/images-services/apoyo-familias-3.jpg";
 
 export const familyDataOne = {
   reverse: false,

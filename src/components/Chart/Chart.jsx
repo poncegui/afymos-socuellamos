@@ -13,7 +13,7 @@ const Chart = () => {
   return (
     <>
       <NavBarTemplate title="junta directiva" alt="" />
-      <BackgroundChart>Junta Directiva</BackgroundChart>
+      <BackgroundChart />
       <ContainerListChart>
         {junta.map((person) => {
           return (
@@ -28,10 +28,6 @@ const Chart = () => {
           );
         })}
       </ContainerListChart>
-
-      <button>Descargar estatutos</button>
-      <button>Cuentas anuales</button>
-
       <Footer />
     </>
   );

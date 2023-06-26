@@ -1,8 +1,7 @@
-import formacion from "../../../images-formacion/formacion.jpg";
-import formacion2 from "../../../images-formacion/formacion-2.jpg";
-import formacion3 from "../../../images-formacion/formacion-3.png";
-import formacion4 from "../../../images-formacion/formacion-4.png";
-import formacion5 from "../../../images-formacion/formacion-5.png";
+import formacion from "../../../assets/images-formacion/formacion.jpg";
+import formacion2 from "../../../assets/images-formacion/formacion-2.jpg";
+import formacion4 from "../../../assets/images-formacion/formacion-4.png";
+import formacion5 from "../../../assets/images-formacion/formacion-5.png";
 
 export const formacionDataOne = {
   reverse: false,

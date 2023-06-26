@@ -1,11 +1,11 @@
-import once from "../../../logos/fundacion-once.png";
-import ayuntamiento from "../../../logos/logo-ayuntamiento.png";
-import castillaLaMancha from "../../../logos/logo-castillaLaMancha.png";
-import diputacion from "../../../logos/logo-diputacion.png";
-import europa from "../../../logos/logo-europa.png";
-import globalcaja from "../../../logos/globalcaja.jpg";
-import inclusion from "../../../logos/logo-inclusion.png";
-import gracias from "../../../logos/gracias.png";
+import ayuntamiento from "../../../assets/logos/logo-ayuntamiento.png";
+import castillaLaMancha from "../../../assets/logos/logo-castillaLaMancha.png";
+import diputacion from "../../../assets/logos/logo-diputacion.png";
+import europa from "../../../assets/logos/logo-europa.png";
+import globalcaja from "../../../assets/logos/globalcaja.jpg";
+import gracias from "../../../assets/logos/gracias.png";
+import inclusion from "../../../assets/logos/logo-inclusion.png";
+import once from "../../../assets/logos/fundacion-once.png";
 
 const target = "_blank";
 

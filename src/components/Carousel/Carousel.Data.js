@@ -1,6 +1,6 @@
-import eventoGlobalcaja from "../../images-news/un-dia-afymos.jpg";
-import afymos from "../../images-news/un-dia-afymos.jpg";
-import proyecto from "../../images-news/proyecto-crea.png";
+import afymos from "../../assets/images-news/proyecto-crea.png";
+import eventoGlobalcaja from "../../assets/images-news/proyecto-crea.png";
+import proyecto from "../../assets/images-news/proyecto-crea.png";
 
 export const ApiCarousel = [
   {

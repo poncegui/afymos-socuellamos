@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 
-import cocina from "../images-center/cocina.png";
-import fisioterapia from "../images-center/sala-fisioterapia.png";
-import formacion from "../images-center/sala-formacion.png";
-import informatica from "../images-center/informatica.png";
+import cocina from "../assets/images-center/cocina.png";
+import fisioterapia from "../assets/images-center/sala-fisioterapia.png";
+import formacion from "../assets/images-center/sala-formacion.png";
+import informatica from "../assets/images-center/informatica.png";
 import left from "../assets/icons/left.svg";
-import ocupacional from "../images-center/sala-ocupacional.png";
+import ocupacional from "../assets/images-center/sala-ocupacional.png";
 import right from "../assets/icons/right.svg";
 
 const SlidesShow = () => {

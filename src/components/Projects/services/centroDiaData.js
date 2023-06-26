@@ -1,6 +1,6 @@
-import centroDia from "../../../images-centroDia/centroDia-6.jpg";
-import centroDia2 from "../../../images-centroDia/centroDia-4.jpg";
-import centroDia3 from "../../../images-centroDia/centroDia-5.jpg";
+import centroDia from "../../../assets/images-centroDia/centroDia-6.jpg";
+import centroDia2 from "../../../assets/images-centroDia/centroDia-4.jpg";
+import centroDia3 from "../../../assets/images-centroDia/centroDia-5.jpg";
 
 export const centroDiaDataOne = {
   reverse: false,

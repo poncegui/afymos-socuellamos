@@ -1,14 +1,14 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import logo from "../../logos/logo-afymos.png";
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import AOS from "aos";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logos/logo-afymos.png";
+import styled from "styled-components";
+import { useEffect } from "react";
 
 const Navbar = (props) => {
   const handleBack = () => {
     window.history.back();
-    console.log("vuelvo");
   };
 
   useEffect(() => {

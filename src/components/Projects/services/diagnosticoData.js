@@ -1,6 +1,6 @@
-import diagnostico from "../../../images-services/apoyo-familias.jpg";
-import diagnostico2 from "../../../images-services/apoyo-familias-2.jpg";
-import diagnostico3 from "../../../images-services/apoyo-familias-3.jpg";
+import diagnostico from "../../../assets/images-services/apoyo-familias.jpg";
+import diagnostico2 from "../../../assets/images-services/apoyo-familias-2.jpg";
+import diagnostico3 from "../../../assets/images-services/apoyo-familias-3.jpg";
 
 export const diagnosticoDataOne = {
   reverse: false,

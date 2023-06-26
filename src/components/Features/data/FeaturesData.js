@@ -1,23 +1,21 @@
-//
-import viviendaSocial from "../../../pictogramas/vivienda-social.png";
-import centroDiversidad from "../../../pictogramas/campus-universitario.png";
 import capacitacion from "../../../pictogramas/promocion.png";
-import centroDia from "../../../pictogramas/proteger.png";
-import formacion from "../../../pictogramas/educacion.png";
-import servicios from "../../../pictogramas/terapia-fisica.png";
-import familias from "../../../pictogramas/familia.png";
-import voluntariado from "../../../pictogramas/apoyo.png";
-import diagnostico from "../../../pictogramas/historial-medico.png";
-
-import viviendaSocialLink from "../../../images-center/centro-diversidad2.png";
-import centroDiversidadLink from "../../../pictogramas/campus-universitario.png";
 import capacitacionLink from "../../../pictogramas/promocion.png";
+import centroDia from "../../../pictogramas/proteger.png";
 import centroDiaLink from "../../../pictogramas/organigrama.png";
-import formacionLink from "../../../pictogramas/educacion.png";
-import serviciosLink from "../../../pictogramas/terapia-fisica.png";
-import familiasLink from "../../../pictogramas/familia.png";
-import voluntariadoLink from "../../../pictogramas/apoyo.png";
+import centroDiversidad from "../../../pictogramas/campus-universitario.png";
+import centroDiversidadLink from "../../../pictogramas/campus-universitario.png";
+import diagnostico from "../../../pictogramas/historial-medico.png";
 import diagnosticoLink from "../../../pictogramas/apoyo.png";
+import familias from "../../../pictogramas/familia.png";
+import familiasLink from "../../../pictogramas/familia.png";
+import formacion from "../../../pictogramas/educacion.png";
+import formacionLink from "../../../pictogramas/educacion.png";
+import servicios from "../../../pictogramas/terapia-fisica.png";
+import serviciosLink from "../../../pictogramas/terapia-fisica.png";
+import viviendaSocial from "../../../pictogramas/vivienda-social.png";
+import viviendaSocialLink from "../../../assets/images-center/centro-diversidad2.png";
+import voluntariado from "../../../pictogramas/apoyo.png";
+import voluntariadoLink from "../../../pictogramas/apoyo.png";
 
 export const featuresData = [
   {

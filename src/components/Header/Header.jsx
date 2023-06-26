@@ -1,4 +1,4 @@
-import logo from "../../logos/logo-afymos.png";
+import logo from "../../assets/logos/logo-afymos.png";
 
 // import styled from "styled-components";
 
