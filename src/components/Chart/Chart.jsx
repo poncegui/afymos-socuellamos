@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+
 import Footer from "../Footer";
 import NavBarTemplate from "../templates/NavBarTemplate";
-import { juntaChart } from "../Chart/services/ApiChart";
 import ProfileChart from "./ProfileChart";
-import backgroundChart from "../../images-chart/chartTeam1.jpg";
+import backgroundChart from "../../assets/images-chart-png/chartTeam1.jpg";
+import { juntaChart } from "../Chart/services/ApiChart";
+import styled from "styled-components";
 
-const Chart = (props) => {
+const Chart = () => {
   const [junta] = useState(juntaChart);
 
   return (
@@ -22,7 +23,7 @@ const Chart = (props) => {
               img={person.img}
               alt={person.alt}
               role={person.role}
-              profession={props.profession}
+              profession={person.profession}
             />
           );
         })}

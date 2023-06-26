@@ -1,12 +1,12 @@
-import introduccion from "../../../images-terapias/centroDia-7.jpg";
-import logopedia from "../../../images-chart-png/chart13.png";
-import fisioterapia from "../../../images-chart-png/chart16.png";
-import terapiaOcupacional from "../../../images-chart-png/chart10.png";
-import psicologia from "../../../images-chart-png/chart15.png";
-import neuroPiscologia from "../../../images-terapias/neuro.jpg";
-import visual from "../../../images-terapias/terapeuta-visual.jpg";
-import auditiva from "../../../images-chart-png/chart17.png";
-import psicologia2 from "../../../images-chart-png/chart14.png";
+import auditiva from "../../../assets/images-chart-png/chart17.png";
+import fisioterapia from "../../../assets/images-chart-png/chart16.png";
+import introduccion from "../../../assets/images-terapias/centroDia-7.jpg";
+import logopedia from "../../../assets/images-chart-png/chart13.png";
+import neuroPiscologia from "../../../assets/images-terapias/neuro.jpg";
+import psicologia from "../../../assets/images-chart-png/chart15.png";
+import psicologia2 from "../../../assets/images-chart-png/chart14.png";
+import terapiaOcupacional from "../../../assets/images-chart-png/chart10.png";
+import visual from "../../../assets/images-terapias/terapeuta-visual.jpg";
 
 export const introduccionData = {
   reverse: false,

@@ -1,32 +1,32 @@
+import "../styles/main.scss";
+
 //HOOKS
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { heroOne, heroTwo, heroThree } from "./Hero/HeroData";
-import "../styles/main.scss";
+import { heroOne, heroThree, heroTwo } from "./Hero/HeroData";
 
-//COMPONENTS
-import { Content } from "./../components/Content/Content";
 import Carousel from "./Carousel/Carousel";
 import Chart from "./Chart/Chart";
-
+import ContactForm from "./main/ContactForm";
+//COMPONENTS
+import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
 import Footer from "./Footer";
 import Main from "./main/Main";
 import NavBar from "./Header/NavBar";
+import Nosotros from "./main/Nosotros";
 import OtherInformation from "./main/OthersList";
 import PartnertList from "./main/PartnerList";
+import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
 import ProjectsCentroDia from "./Projects/ProjectsCentroDia";
 import ProjectsCentroDiversidad from "./Projects/ProjectsCentroDiversidad";
 import ProjectsDiagnostico from "./Projects/ProjectsDiagnostico";
+import ProjectsDonaciones from "./Projects/ProjectsDonaciones";
 import ProjectsFamilias from "./Projects/ProjectsFamilias";
 import ProjectsFormacion from "./Projects/ProjectsFormacion";
 import ProjectsTerapias from "./Projects/ProjetsTerapias";
 import ProjectsVivienda from "./Projects/ProjectsVivienda";
 import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
-import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
-import ProjectsDonaciones from "./Projects/ProjectsDonaciones";
-import Nosotros from "./main/Nosotros";
-import ContactForm from "./main/ContactForm";
 
 const App = () => {
   //States
@@ -40,10 +40,6 @@ const App = () => {
   return (
     <>
       <Routes>
-        {/* <Route
-                  path='*' element={<NotFoundPage />}
-                  /> */}
-
         <Route path="/terapias" element={<ProjectsTerapias />} />
 
         <Route path="/nosotros" element={<Nosotros />} />
