@@ -1,18 +1,26 @@
-import React, { useState } from "react";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
-import { IconContext } from "react-icons";
 import { ApiCarousel, sliderSettings } from "../Carousel/Carousel.Data";
-import { Row, Heading, Section, TextWrapper } from "../../globalStyles";
 import {
+  Button,
   ButtonContainer,
-  ReviewSlider,
-  ImageWrapper,
   CarouselImage,
-  CardButton,
+  ContainerButtonLink,
+  ImageWrapper,
+  ReviewSlider,
 } from "./CarouselStyles";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { Heading, Row, Section, TextWrapper } from "../../globalStyles";
+import React, { useState } from "react";
+
+import { IconContext } from "react-icons";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
+  const [news, setNews] = useState(ApiCarousel);
+
+  const handleUrl = (ev) => {
+    setNews(ev.currentTarget);
+  };
 
   return (
     <Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse>
@@ -38,7 +46,11 @@ const Carousel = () => {
             <TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
               {el.description}
             </TextWrapper>
-            <CardButton>conoce más</CardButton>
+            <ContainerButtonLink>
+              <Link to={el.url}>
+                <Button onClick={handleUrl}>conoce más</Button>
+              </Link>
+            </ContainerButtonLink>
           </ImageWrapper>
         ))}
       </ReviewSlider>

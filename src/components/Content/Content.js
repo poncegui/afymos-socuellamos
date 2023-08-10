@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Container, Section, Title } from "../../globalStyles";
 import {
   ContentButton,
@@ -13,6 +11,7 @@ import {
   TextWrapper,
   TopLine,
 } from "./ContentStyles.js";
+import React, { useState } from "react";
 
 export const Content = ({
   alt,
@@ -25,7 +24,6 @@ export const Content = ({
   reverse,
   target,
   topLine,
-  linkTo,
   title,
 }) => {
   const [clicked, setClicked] = useState(false);

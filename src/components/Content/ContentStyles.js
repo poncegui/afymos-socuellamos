@@ -109,7 +109,7 @@ export const ContentButton = styled.button`
   height: 3rem;
   padding: 1rem 32px;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   line-height: 18px;
   letter-spacing: 1.54px;
   text-transform: uppercase;

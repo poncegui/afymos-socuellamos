@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const PictoCard = (props) => {
   const [clicked, setClicked] = useState(false);
@@ -20,7 +21,6 @@ const PictoCard = (props) => {
     </>
   );
 };
-
 export default PictoCard;
 
 export const Card = styled.div`

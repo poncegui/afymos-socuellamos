@@ -23,7 +23,7 @@ export const familyDataTwo = {
   },
   headline: "Apoyos que presta este servicio:",
   description:
-    "Elaboración de planes de apoyo familiares, apoyo psicológico, información, orientación y creación de grupos de apoyo.",
+    "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atención psicológica, además, proporciamos información y orientación tras un estudio minucioso sobre las necesidades de cada caso",
   img: apoyofamilia3,
 };
 

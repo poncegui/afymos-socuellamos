@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+
 import BurguerBtn from "../templates/BurguerBtn";
 import Header from "./Header";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -22,7 +23,6 @@ function Navbar() {
           <Link onClick={handleClick} to="/terapias">
             terapias
           </Link>
-
           <Link onClick={handleClick} to="/donaciones">
             donaciones
           </Link>

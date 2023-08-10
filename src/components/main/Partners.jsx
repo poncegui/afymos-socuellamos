@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import styled from "styled-components";
 
 const PartnersCard = ({ url, alt, target, src }) => {
@@ -30,6 +31,9 @@ export const PartnertCard = styled.div`
   width: 50%;
   gap: 2rem;
   white-space: nowrap;
+
+  @media (max-width: 440px) {
+  }
 `;
 
 export const PartnertFaceFront = styled.div`

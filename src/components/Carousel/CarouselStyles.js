@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import { Row } from "../../globalStyles";
 import Slider from "react-slick";
+import styled from "styled-components";
 
 export const CarouselImage = styled.img`
   width: 100%;
@@ -62,7 +62,24 @@ export const ReviewSlider = styled(Slider)`
   }
 `;
 
-export const CardButton = styled.button`
+export const Button = styled.button`
+  background-color: #071c2f;
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  color: #ffc0bc;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  margin: auto 0 0 0;
+  border: solid 1px #071c2f;
+  border-radius: 0 0 10px 10px;
+
+  &:hover {
+    background-color: #112f4a;
+    transition: background-color 0.2s ease-in;
+  }
+`;
+export const ContainerButtonLink = styled.div`
   background-color: #071c2f;
   font-size: 1.3rem;
   padding: 5px 10px;

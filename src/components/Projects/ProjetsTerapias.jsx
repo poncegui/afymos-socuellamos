@@ -1,21 +1,21 @@
-import { React } from "react";
-
 import {
+  auditivaPsicologiaData,
+  fisioterapiaData,
   introduccionData,
   logopediaData,
-  fisioterapiaData,
-  terapiaOcupacionalData,
-  psicoPedagogíaData,
   neuroPsicologiaData,
-  auditivaPsicologiaData,
-  visualPedagogíaData,
+  psicoPedagogíaData,
   psicologiaPsicologiaData,
+  terapiaOcupacionalData,
+  visualPedagogíaData,
 } from "./services/terapiasData";
+
 import { ContentProjects } from "../Content/ContentProjects";
-import ProjectsIntro from "./ProjectsIntro";
+import Footer from "../Footer";
 import NavBarTemplate from "../templates/NavBarTemplate";
 import PartnersList from "../main/PartnerList";
-import Footer from "../Footer";
+import ProjectsIntro from "./ProjectsIntro";
+import { React } from "react";
 
 const ProjectsTerapias = () => {
   return (
@@ -27,7 +27,7 @@ const ProjectsTerapias = () => {
       <ContentProjects {...fisioterapiaData} reverse />
       <ContentProjects {...terapiaOcupacionalData} inverse />
       <ContentProjects {...psicoPedagogíaData} reverse />
-      <ContentProjects {...neuroPsicologiaData} inverse />
+      <ContentProjects {...neuroPsicologiaData} inverse />j
       <ContentProjects {...auditivaPsicologiaData} reverse />
       <ContentProjects {...visualPedagogíaData} inverse />
       <ContentProjects {...psicologiaPsicologiaData} reverse />

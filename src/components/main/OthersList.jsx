@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
 import "../../styles/layout/features.css";
 
+import { Link } from "react-router-dom";
 import { othersData } from "./services/ApiOthers";
+import styled from "styled-components";
+import { useState } from "react";
 
 const OtherInformation = () => {
   const [others, setOthers] = useState(othersData);
@@ -15,7 +15,7 @@ const OtherInformation = () => {
   return (
     <>
       <SectionFeaturesMobile>
-        <h1>Más info</h1>
+        <h1>Saber más</h1>
         <ButtonContainer>
           {others.map((picto) => (
             <Icons key={picto.id} value={picto.name}>

@@ -1,14 +1,13 @@
 import { Container, SectionProjects } from "../../globalStyles";
 import {
+  ContentColumn,
   ContentRow,
+  Heading,
+  Img,
+  ImgWrapper,
+  Subtitle,
   TextWrapper,
   TopLine,
-  Heading,
-  Subtitle,
-  ImgWrapper,
-  Img,
-  ContentColumn,
-  ContentButton,
 } from "./ContentStyles.js";
 
 export const ContentProjects = ({

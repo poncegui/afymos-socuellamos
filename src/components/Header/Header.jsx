@@ -1,7 +1,5 @@
 import logo from "../../assets/logos/logo-afymos.png";
 
-// import styled from "styled-components";
-
 const Header = () => {
   return (
     <>
@@ -14,11 +12,9 @@ const Header = () => {
               alt="logo-afymos"
             />
             <h2 className="header_superior__container--title">Afymos</h2>
-
             <div className="header_superior__container--social"></div>
           </div>
         </div>
-
         <section className="slogan">
           <div className="slogan__container">
             <h3 className="slogan__container--phrase">
@@ -31,5 +27,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;

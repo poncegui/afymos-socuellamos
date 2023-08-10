@@ -20,6 +20,7 @@ import PartnertList from "./main/PartnerList";
 import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
 import ProjectsCentroDia from "./Projects/ProjectsCentroDia";
 import ProjectsCentroDiversidad from "./Projects/ProjectsCentroDiversidad";
+import ProjectsCrea from "./Projects/ProjecsCrea";
 import ProjectsDiagnostico from "./Projects/ProjectsDiagnostico";
 import ProjectsDonaciones from "./Projects/ProjectsDonaciones";
 import ProjectsFamilias from "./Projects/ProjectsFamilias";
@@ -51,6 +52,8 @@ const App = () => {
         <Route path="/viviendas-con-apoyo" element={<ProjectsVivienda />} />
 
         <Route path="/centro-de-dia" element={<ProjectsCentroDia />} />
+
+        <Route path="/proyecto-crea" element={<ProjectsCrea />} />
 
         <Route
           path="/valoracion-y-diagnostico"

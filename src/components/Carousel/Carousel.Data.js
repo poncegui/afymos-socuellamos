@@ -1,37 +1,31 @@
-import afymos from "../../assets/images-news/proyecto-crea.png";
-import eventoGlobalcaja from "../../assets/images-news/proyecto-crea.png";
-import proyecto from "../../assets/images-news/proyecto-crea.png";
+import congreso from "../../assets/images-noticias/congreso-con-apoyo-burgos/congreso.jpg";
+import proyectoCrea from "../../assets/images-noticias/proyecto-crea/proyecto-crea-01.jpg";
+import somosPortada from "../../assets/images-noticias/somos-portada/somos-portada.jpg";
 
 export const ApiCarousel = [
   {
-    title: "un día en afymos",
-    description: "Loren Ipsum.",
-    image: afymos,
-    alt: "un-día-en-afymos",
+    title: "PROYECTO NUEVO CREA 2023",
+    description:
+      "El pasado 18 de abril de 2023, se presentó la nueva convocatoria",
+    image: proyectoCrea,
+    alt: "proyecto-crea-2023",
+    url: "/proyecto-crea",
   },
   {
-    title: "Proyecto CREA",
-    description: "inauguracion proyecto CREA - abril 2022",
-    image: proyecto,
-    alt: "un-día-en-afymos",
+    title: "Somos Portada de Periódico",
+    description:
+      "Desde Marzo, nuestra asociación ha cambiado su metodología de trabajo",
+    image: somosPortada,
+    url: "/somos-portada",
+    alt: "somos-portada",
   },
   {
-    title: "un día en afymos",
-    description: "Loren Ipsum.",
-    image: eventoGlobalcaja,
+    title: "XIII CONGRESO DE EMPLEO CON APOYO",
+    description:
+      "Los días 13, 14 y 15 de junio se celebró el XIII Congreso de Empleo en la facultad de derecho de Burgos, organizado por AESE y Down Burgos.",
+    image: congreso,
     alt: "un-día-en-afymos",
-  },
-  {
-    title: "un día en afymos",
-    description: "Servicio de Valoración y Diagnóstico",
-    image: afymos,
-    alt: "un-día-en-afymos",
-  },
-  {
-    title: "un día en afymos",
-    description: "Loren Ipsum.",
-    image: afymos,
-    alt: "un-día-en-afymos",
+    url: "/congreso-empleo-apoyo",
   },
 ];
 
