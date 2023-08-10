@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.4",
+    "@emailjs/browser": "^3.11.0",
     "@glidejs/glide": "^3.5.2",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/user-event": "^13.5.0",

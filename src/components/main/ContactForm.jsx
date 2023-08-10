@@ -2,9 +2,22 @@ import IconOne from "../../assets/icons/icon-1.png";
 import IconThree from "../../assets/icons/icon-3.png";
 import IconTwo from "../../assets/icons/icon-2.png";
 import React from "react";
+import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 function ContactForm() {
+  const sendEmail = (event) => {
+    event.preventDefault();
+    emailjs
+      .sendForm(
+        "service_c502dyg",
+        "template_yviiujh",
+        event.target,
+        "q63xnC6xyTolLOuPW"
+      )
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+  };
   return (
     <>
       <TitleHeadingContainer>
@@ -40,15 +53,19 @@ function ContactForm() {
         <Row>
           <Form>
             <InputBox>
-              <Input type="text" placeholder="nombre" />
-              <Input type="number" placeholder="teléfono" />
+              <Input type="text" placeholder="nombre" name="user_name" />
+              <Input
+                type="number"
+                placeholder="teléfono"
+                name="user_telephone"
+              />
             </InputBox>
             <InputBox>
-              <Input type="email" placeholder="email" />
-              <Input type="text" placeholder="asunto" />
+              <Input type="email" placeholder="email" name="user_telephone" />
+              <Input type="text" placeholder="asunto" name="user_telephone" />
             </InputBox>
             <TextArea
-              name=""
+              name="user_message"
               placeholder="mensaje"
               id=""
               cols="30"
@@ -57,7 +74,8 @@ function ContactForm() {
             <InputSubmit
               type="submit"
               value="enviar mensaje"
-              class="btn"
+              className="btn"
+              onSubmit={sendEmail}
             ></InputSubmit>
           </Form>
           <Iframe
