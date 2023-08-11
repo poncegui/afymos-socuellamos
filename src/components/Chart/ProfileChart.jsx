@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import styled from "styled-components";
 
 const ProfileChart = (props) => {
@@ -12,13 +13,17 @@ const ProfileChart = (props) => {
       {faceCard ? (
         <Card>
           <FaceFront key={props.id}>
-            <ImgFront src={props.img} alt={props.alt} onClick={handleClick} />
+            <ImgFront
+              src={props.img}
+              alt={props.alt}
+              onMouseEnter={handleClick}
+            />
             <h3>{props.role}</h3>
           </FaceFront>
         </Card>
       ) : (
         <Card>
-          <FaceBack key={props.id} onClick={handleClick}>
+          <FaceBack key={props.id} onMouseLeave={handleClick}>
             <TitleBackName>{props.name}</TitleBackName>
             <FaceBackProfession>{props.profession}</FaceBackProfession>
           </FaceBack>
@@ -65,12 +70,13 @@ export const ImgFront = styled.img`
 `;
 
 export const FaceBack = styled.div`
-  background: black;
-  box-shadow: 0 5px 10px #000;
+  background: #071c2f;
+  box-shadow: 0 5px 10px #071c2f;
   color: #ffc0bc;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30%;
   padding: 15px;
   text-align: center;
 `;
