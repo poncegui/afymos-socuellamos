@@ -28,6 +28,9 @@ import ProjectsFormacion from "./Projects/ProjectsFormacion";
 import ProjectsTerapias from "./Projects/ProjetsTerapias";
 import ProjectsVivienda from "./Projects/ProjectsVivienda";
 import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
+import VisorPdf20 from "./main/pdf/VisorPdf2020";
+import VisorPdf21 from "./main/pdf/VisorPdf2021";
+import VisorPdfOrganigrama from "./main/pdf/VisorPdfOrganigrama";
 
 const App = () => {
   //States
@@ -76,6 +79,9 @@ const App = () => {
           path="/valoracion-y-diagnostico"
           element={<ProjectsDiagnostico />}
         />
+        <Route path="/organigrama" element={<VisorPdfOrganigrama />} />
+        <Route path="/pdf-cuentas-20" element={<VisorPdf20 />} />
+        <Route path="/pdf-cuentas-21" element={<VisorPdf21 />} />
 
         <Route path="/formacion" element={<ProjectsFormacion />} />
 
@@ -95,7 +101,7 @@ const App = () => {
               <Content {...heroThree} />
               <OtherInformation />
               <Carousel />
-              <ContactForm />
+              <ContactForm id="#contacto" />
               <PartnertList />
               <Footer />
             </>
