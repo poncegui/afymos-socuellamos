@@ -1,20 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <ScrollButton>
-        <Link
-          to="#menu-principal"
-          className="footer__btn--arrow"
-          alt="menú principal"
-        >
-          <i className="fa-solid fa-chevron-up"></i>
-        </Link>
-      </ScrollButton>
-
       <FooterTitle>Síguenos en redes sociales</FooterTitle>
 
       <SocialMediaContainer className="index-footer__contact--socialmedia">
@@ -51,24 +40,6 @@ export const FooterContainer = styled.div`
   text-decoration: none;
 `;
 FooterContainer.displayName = "FooterContainer";
-
-export const ScrollButton = styled.div`
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: #071c2f 0px 2px 6px;
-  transform: translateY(-25px);
-  background-color: #ffc0bc;
-  &:hover {
-    transform: translateY(-15px);
-    transition: all 0.8s ease-out;
-  }
-`;
-ScrollButton.displayName = "ScrollButton";
 
 export const FooterTitle = styled.h2`
   font-weight: bold;

@@ -36,7 +36,7 @@ export const MainHeading = styled.h1`
   text-align: center;
 `;
 
-export const Heading = styled.h2`
+export const Heading = styled.h3`
   font-size: clamp(1.3rem, 13vw, 3.1rem);
   margin: ${({ margin }) => (margin ? margin : "")};
   margin-bottom: ${({ mb }) => (mb ? mb : "")};

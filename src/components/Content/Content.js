@@ -25,6 +25,7 @@ export const Content = ({
   target,
   topLine,
   title,
+  id,
 }) => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
@@ -32,7 +33,7 @@ export const Content = ({
   };
 
   return (
-    <Section inverse={inverse}>
+    <Section id={id} inverse={inverse}>
       <Container>
         <ContentRow reverse={reverse}>
           <ContentColumn>

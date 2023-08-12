@@ -16,7 +16,7 @@ html {
     font-size: 100%;
   }
 
-  H2 {
+  h2 {
     font-size: 30%;
   }
   a {
@@ -24,6 +24,12 @@ html {
   }
   outline: none;
   border: none;
+
+  // @media (max-width: 440px) {
+  //   h2 {
+  //     font-size: 5%;
+  //   }
+  // }
 }
 body {
   background: #ffc0bc;

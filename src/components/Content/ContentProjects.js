@@ -18,9 +18,10 @@ export const ContentProjects = ({
   alt,
   reverse,
   inverse,
+  id,
 }) => {
   return (
-    <SectionProjects inverse={inverse}>
+    <SectionProjects id={id} inverse={inverse}>
       <Container>
         <ContentRow reverse={reverse}>
           <ContentColumn>

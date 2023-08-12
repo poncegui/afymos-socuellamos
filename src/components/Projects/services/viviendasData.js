@@ -3,6 +3,7 @@ import apoyoVivienda2 from "../../../assets/images-viviendas/vivienda-1.jpg";
 import apoyoVivienda3 from "../../../assets/images-viviendas/vivienda-2.jpg";
 
 export const viviendasDataOne = {
+  id: "",
   reverse: false,
   inverse: false,
   topLine: {
@@ -16,6 +17,7 @@ export const viviendasDataOne = {
 };
 
 export const viviendasDataTwo = {
+  id: "",
   reverse: true,
   inverse: false,
   topLine: {
@@ -29,6 +31,7 @@ export const viviendasDataTwo = {
 };
 
 export const viviendasDataThree = {
+  id: "",
   reverse: false,
   inverse: false,
   topLine: {

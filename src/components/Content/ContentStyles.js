@@ -82,13 +82,16 @@ export const Img = styled.img`
 
 export const Heading = styled.h2`
   margin-bottom: 24px;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
 
   @media (max-width: 768px) {
     text-align: center;
+  }
+  @media (max-width: 440px) {
+    font-size: 2rem;
   }
 `;
 

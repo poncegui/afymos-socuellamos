@@ -3,6 +3,7 @@ import diagnostico2 from "../../../assets/images-services/apoyo-familias-2.jpg";
 import diagnostico3 from "../../../assets/images-services/apoyo-familias-3.jpg";
 
 export const diagnosticoDataOne = {
+  id: "diagnosticoDataOne",
   reverse: false,
   inverse: false,
   topLine: {
@@ -17,6 +18,7 @@ export const diagnosticoDataOne = {
 };
 
 export const diagnosticoDataTwo = {
+  id: "diagnosticoDataTwo",
   reverse: true,
   inverse: false,
   topLine: {
@@ -29,6 +31,7 @@ export const diagnosticoDataTwo = {
 };
 
 export const diagnosticoDataThree = {
+  id: "diagnosticoDataThree",
   reverse: false,
   inverse: false,
   topLine: {

@@ -6,6 +6,7 @@ import voluntariado5 from "../../../assets/images-voluntariado/voluntariado5.jpg
 import voluntariado6 from "../../../assets/images-voluntariado/voluntariado6.jpg";
 
 export const voluntariadoOne = {
+  id: "voluntariadoOne",
   reverse: false,
   inverse: false,
   topLine: {
@@ -19,6 +20,7 @@ export const voluntariadoOne = {
 };
 
 export const voluntariadoTwo = {
+  id: "voluntariadoTwo",
   reverse: true,
   inverse: false,
   topLine: {
@@ -32,6 +34,7 @@ export const voluntariadoTwo = {
 };
 
 export const voluntariadoThree = {
+  id: "voluntariadoThree",
   reverse: false,
   inverse: false,
   topLine: {
@@ -45,6 +48,7 @@ export const voluntariadoThree = {
 };
 
 export const voluntariadoFour = {
+  id: "voluntariadoFour",
   reverse: true,
   inverse: false,
   topLine: {
@@ -58,6 +62,7 @@ export const voluntariadoFour = {
 };
 
 export const voluntariadoFive = {
+  id: "voluntariadoFive",
   reverse: false,
   inverse: false,
   topLine: {
@@ -71,6 +76,7 @@ export const voluntariadoFive = {
 };
 
 export const voluntariadoSix = {
+  id: "voluntariadoSix",
   reverse: true,
   inverse: false,
   topLine: {

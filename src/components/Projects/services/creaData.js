@@ -2,6 +2,7 @@ import creaOne from "../../../assets/images-noticias/proyecto-crea/proyecto-crea
 import creaTwo from "../../../assets/images-noticias/proyecto-crea/proyecto-crea-03.jpg";
 
 export const creaDataOne = {
+  id: "creaDataOne",
   reverse: false,
   inverse: false,
   topLine: {
@@ -15,6 +16,7 @@ export const creaDataOne = {
 };
 
 export const creaDataTwo = {
+  id: "creaDataTwo",
   reverse: true,
   inverse: false,
   topLine: {

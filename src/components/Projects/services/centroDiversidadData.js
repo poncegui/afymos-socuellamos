@@ -3,6 +3,7 @@ import gimnasio from "../../../assets/images-instalaciones/gimnasio.jpg";
 import multisensorial from "../../../assets/images-instalaciones/multisensorial.jpg";
 
 export const centroDiversidadDataOne = {
+  id: "centroDiversidadDataOne",
   reverse: false,
   inverse: false,
   topLine: {
@@ -15,6 +16,7 @@ export const centroDiversidadDataOne = {
 };
 
 export const centroDiversidadDataTwo = {
+  id: "centroDiversidadDataTwo",
   reverse: true,
   inverse: false,
   topLine: {
@@ -28,6 +30,7 @@ export const centroDiversidadDataTwo = {
 };
 
 export const centroDiversidadDataThree = {
+  id: "centroDiversidadDataThree",
   reverse: false,
   inverse: false,
   topLine: {

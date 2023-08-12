@@ -22,6 +22,7 @@ export const introduccionData = {
 };
 
 export const logopediaData = {
+  id: "logopedia",
   reverse: false,
   inverse: true,
   topLine: {
@@ -35,6 +36,7 @@ export const logopediaData = {
 };
 
 export const fisioterapiaData = {
+  id: "fisioterapia",
   reverse: false,
   inverse: false,
   topLine: {
@@ -48,6 +50,7 @@ export const fisioterapiaData = {
 };
 
 export const terapiaOcupacionalData = {
+  id: "terapia-ocupacional",
   reverse: false,
   inverse: true,
   topLine: {
@@ -61,6 +64,7 @@ export const terapiaOcupacionalData = {
 };
 
 export const neuroPsicologiaData = {
+  id: "neuropsicologia",
   reverse: false,
   inverse: false,
   topLine: {
@@ -74,6 +78,7 @@ export const neuroPsicologiaData = {
 };
 
 export const psicoPedagogíaData = {
+  id: "psicopedagogia",
   reverse: true,
   inverse: false,
   topLine: {
@@ -87,6 +92,7 @@ export const psicoPedagogíaData = {
 };
 
 export const auditivaPsicologiaData = {
+  id: "auditiva",
   reverse: false,
   inverse: false,
   topLine: {
@@ -101,6 +107,7 @@ export const auditivaPsicologiaData = {
 };
 
 export const visualPedagogíaData = {
+  id: "visual",
   reverse: false,
   inverse: false,
   topLine: {
@@ -113,14 +120,15 @@ export const visualPedagogíaData = {
   img: visual,
 };
 
-export const psicologiaPsicologiaData = {
+export const psicologiaData = {
+  id: "psicologia",
   reverse: false,
   inverse: false,
   topLine: {
     text: "PSICOLOGÍA: conoce cómo trabaja nuestra profesional, Beatriz Henales",
   },
   headline:
-    "Principalemente nos centramos en la psicoeducación y en la reestructuración cognitiva. Buscamos favorecer los procesos de cambio y toma de decisiones para buscar una situación más adaptativa para la persona.",
+    "Nos centramos en la psicoeducación y en la reestructuración cognitiva. Buscamos favorecer los procesos de cambio y toma de decisiones para buscar una situación más adaptativa para la persona.",
   description:
     "A nivel psicoeducativo podemos ayudar a las personas a entender sus propios procesos, situaciones personales, patologías, etc, para facilitar su propia adaptación al medio y mitigar sus estados de ansiedad e incertidumbre.",
   img: psicologia2,

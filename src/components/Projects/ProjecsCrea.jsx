@@ -5,10 +5,12 @@ import Footer from "../Footer";
 import NavBarTemplate from "../templates/NavBarTemplate";
 import PartnersList from "../main/PartnerList";
 import { React } from "react";
+import ScrollToTop from "../ScrollToUp";
 
 const ProjectsCrea = () => {
   return (
     <>
+      <ScrollToTop />
       <NavBarTemplate title="Proyecto CREA 2023" />
       <ContentProjects {...creaDataOne} inverse />
       <ContentProjects {...creaDataTwo} reverse />

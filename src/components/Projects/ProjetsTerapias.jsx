@@ -5,7 +5,7 @@ import {
   logopediaData,
   neuroPsicologiaData,
   psicoPedagogíaData,
-  psicologiaPsicologiaData,
+  psicologiaData,
   terapiaOcupacionalData,
   visualPedagogíaData,
 } from "./services/terapiasData";
@@ -16,10 +16,12 @@ import NavBarTemplate from "../templates/NavBarTemplate";
 import PartnersList from "../main/PartnerList";
 import ProjectsIntro from "./ProjectsIntro";
 import { React } from "react";
+import ScrollToTop from "../ScrollToUp";
 
 const ProjectsTerapias = () => {
   return (
     <>
+      <ScrollToTop />
       <NavBarTemplate title="Servicio de Terapia" />
       <ProjectsIntro />
       <ContentProjects {...introduccionData} reverse />
@@ -27,10 +29,10 @@ const ProjectsTerapias = () => {
       <ContentProjects {...fisioterapiaData} reverse />
       <ContentProjects {...terapiaOcupacionalData} inverse />
       <ContentProjects {...psicoPedagogíaData} reverse />
-      <ContentProjects {...neuroPsicologiaData} inverse />j
+      <ContentProjects {...neuroPsicologiaData} inverse />
       <ContentProjects {...auditivaPsicologiaData} reverse />
       <ContentProjects {...visualPedagogíaData} inverse />
-      <ContentProjects {...psicologiaPsicologiaData} reverse />
+      <ContentProjects {...psicologiaData} reverse />
       <PartnersList />
       <Footer />
     </>

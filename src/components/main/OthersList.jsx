@@ -115,7 +115,7 @@ export const Icons = styled.div`
     width: 100px;
     cursor: pointer;
   }
-  @media (max-width: 368px) {
+  @media (max-width: 440px) {
     margin: 5%;
     margin-bottom: 15%;
     gap: 0.6rem;

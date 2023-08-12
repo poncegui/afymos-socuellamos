@@ -17,14 +17,6 @@ const Navbar = (props) => {
 
   return (
     <>
-      <Hero>
-        <h1>{props.title}</h1>
-        <img
-          className="header_superior__container--logo"
-          src={logo}
-          alt={props.alt}
-        />
-      </Hero>
       <NavContainer id="menu-principal">
         <Link to="/" onClick={handleBack}>
           <div className="containerPrincipal">
@@ -34,6 +26,14 @@ const Navbar = (props) => {
             </h3>
           </div>
         </Link>
+        <RightMenu>
+          <h1>{props.title}</h1>
+          <img
+            className="header_superior__container--logo"
+            src={logo}
+            alt={props.alt}
+          />
+        </RightMenu>
       </NavContainer>
     </>
   );
@@ -65,7 +65,7 @@ const NavContainer = styled.nav`
   }
 
   h3 {
-    color: pink;
+    color: #ffc0bc;
     font-weight: 400;
     margin-left: 20px;
     span {
@@ -84,41 +84,43 @@ const NavContainer = styled.nav`
   }
 `;
 
-const Hero = styled.nav`
+const RightMenu = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 15vh;
   text-transform: uppercase;
-  width: 100%;
-  z-index: 20;
-  background-color: pink;
 
   h1 {
     text-align: center;
-    color: #071c2f;
+    color: #ffc0bc;
     font-weight: bold;
     text-transform: lowercase;
-    font-size: 50px;
+    font-size: 40px;
   }
   img {
-    width: 8%;
+    width: 10%;
   }
   span {
     color: white;
   }
 
   h1:first-letter {
-    font-size: 150%;
+    font-size: 120%;
   }
 
   @media (max-width: 768px) {
     min-height: 15vh;
     h1 {
-      font-size: 30px;
+      font-size: 2rem;
     }
     img {
       display: none;
+    }
+  }
+  @media (max-width: 440px) {
+    min-height: 10vh;
+    h1 {
+      font-size: 1.2rem;
     }
   }
 `;

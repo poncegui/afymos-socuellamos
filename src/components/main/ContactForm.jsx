@@ -5,7 +5,7 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
-function ContactForm() {
+const ContactForm = () => {
   const sendEmail = (event) => {
     event.preventDefault();
     emailjs
@@ -20,7 +20,7 @@ function ContactForm() {
   };
   return (
     <>
-      <TitleHeadingContainer>
+      <TitleHeadingContainer id="contacto">
         <TitleHeading>Información de contacto</TitleHeading>
       </TitleHeadingContainer>
       <SectionContact>
@@ -87,7 +87,7 @@ function ContactForm() {
       </SectionContact>
     </>
   );
-}
+};
 export default ContactForm;
 
 export const SectionContact = styled.section`

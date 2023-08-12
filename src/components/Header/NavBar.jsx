@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import BurguerBtn from "../templates/BurguerBtn";
+import { Link as Contact } from "react-scroll";
 import Header from "./Header";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -23,12 +24,17 @@ function Navbar() {
           <Link onClick={handleClick} to="/terapias">
             terapias
           </Link>
-          <Link onClick={handleClick} to="/donaciones">
+          <Contact
+            to="contacto"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={1000}
+            onClick={handleClick}
+          >
             donaciones
-          </Link>
-          <Link onClick={handleClick} to="/contacto">
-            contacto
-          </Link>
+          </Contact>
+          contacto
           <Link onClick={handleClick} to="/hazte-socio">
             hazte socio
           </Link>

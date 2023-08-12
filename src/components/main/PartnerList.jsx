@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import { partenrsData } from "./services/ApiPartners";
+
 import PartnersCard from "./Partners";
+import { partenrsData } from "./services/ApiPartners";
+import styled from "styled-components";
 
 const PartnerList = () => {
   const [partners] = useState(partenrsData);
@@ -12,7 +13,6 @@ const PartnerList = () => {
         <section>
           <h2>Cofinanciaciones</h2>
         </section>
-
         <ContainerParnertList>
           {partners.map((partner) => {
             return (
@@ -41,6 +41,7 @@ export const SectionPartners = styled.div`
   align-items: center;
   gap: 50px;
   margin: 0 0 0px 0;
+
   section {
     background-color: #071c2f;
     height: 80px;
@@ -54,7 +55,7 @@ export const SectionPartners = styled.div`
     font-size: 40px;
   }
 
-  @media (max-width: 368px) {
+  @media (max-width: 440px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;
 

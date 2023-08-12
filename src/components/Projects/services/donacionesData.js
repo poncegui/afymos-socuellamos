@@ -1,6 +1,7 @@
 import donacion from "../../../assets/images-donacion/donaciones.jpg";
 
 export const donacionDataOne = {
+  id: "donacionDataOne",
   reverse: false,
   inverse: false,
   title: "Ayúdanos a seguir creciendo",

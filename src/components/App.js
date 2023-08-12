@@ -1,14 +1,14 @@
 import "../styles/main.scss";
 
 //HOOKS
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { heroOne, heroThree, heroTwo } from "./Hero/HeroData";
 
+//COMPONENTS
 import Carousel from "./Carousel/Carousel";
 import Chart from "./Chart/Chart";
 import ContactForm from "./main/ContactForm";
-//COMPONENTS
 import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
 import Footer from "./Footer";
@@ -17,6 +17,7 @@ import NavBar from "./Header/NavBar";
 import Nosotros from "./main/Nosotros";
 import OtherInformation from "./main/OthersList";
 import PartnertList from "./main/PartnerList";
+import ProjectCreaVideo from "./ProjectCreaVideo/ProjectCreaVideo";
 import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
 import ProjectsCentroDia from "./Projects/ProjectsCentroDia";
 import ProjectsCentroDiversidad from "./Projects/ProjectsCentroDiversidad";
@@ -28,19 +29,13 @@ import ProjectsFormacion from "./Projects/ProjectsFormacion";
 import ProjectsTerapias from "./Projects/ProjetsTerapias";
 import ProjectsVivienda from "./Projects/ProjectsVivienda";
 import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
+import ScrollToTop from "./ScrollToUp";
+import Testimonials from "./Testimonials";
 import VisorPdf20 from "./main/pdf/VisorPdf2020";
 import VisorPdf21 from "./main/pdf/VisorPdf2021";
 import VisorPdfOrganigrama from "./main/pdf/VisorPdfOrganigrama";
 
 const App = () => {
-  //States
-  const [textIsOpenMain, setTextIsOpenMain] = useState(false);
-
-  //Events
-  const handleToggleMain = () => {
-    setTextIsOpenMain(!textIsOpenMain);
-  };
-
   return (
     <>
       <Routes>
@@ -90,18 +85,18 @@ const App = () => {
           path="/"
           element={
             <>
+              <ScrollToTop />
               <NavBar />
-              <Main
-                onClick={handleToggleMain}
-                toggleStatusMain={textIsOpenMain}
-              />
+              <Main />
               <Features />
               <Content {...heroOne} />
-              <Content {...heroTwo} />
+              <Testimonials />
+              <ProjectCreaVideo />
               <Content {...heroThree} />
+              <Content {...heroTwo} />
               <OtherInformation />
               <Carousel />
-              <ContactForm id="#contacto" />
+              <ContactForm />
               <PartnertList />
               <Footer />
             </>

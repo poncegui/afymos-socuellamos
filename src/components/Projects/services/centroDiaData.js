@@ -3,6 +3,7 @@ import centroDia2 from "../../../assets/images-centroDia/centroDia-4.jpg";
 import centroDia3 from "../../../assets/images-centroDia/centroDia-5.jpg";
 
 export const centroDiaDataOne = {
+  id: "centroDiaDataOne",
   reverse: false,
   inverse: false,
   topLine: {
@@ -16,6 +17,7 @@ export const centroDiaDataOne = {
 };
 
 export const centroDiaDataTwo = {
+  id: "centroDiaDataTwo",
   reverse: true,
   inverse: false,
   topLine: {
@@ -29,6 +31,7 @@ export const centroDiaDataTwo = {
 };
 
 export const centroDiaDataThree = {
+  id: "centroDiaDataThree",
   reverse: false,
   inverse: false,
   topLine: {

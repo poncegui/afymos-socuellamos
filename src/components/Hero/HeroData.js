@@ -36,7 +36,7 @@ export const heroThree = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "En Aymos buscamos profesionales como tú",
+    text: "Buscamos profesionales como tú",
   },
   headline: "Trabaja con nosotros ",
   description:
