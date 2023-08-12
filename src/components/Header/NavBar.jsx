@@ -24,6 +24,9 @@ function Navbar() {
           <Link onClick={handleClick} to="/terapias">
             terapias
           </Link>
+          <Link onClick={handleClick} to="/donaciones">
+            donaciones
+          </Link>
           <Contact
             to="contacto"
             spy={true}
@@ -32,12 +35,18 @@ function Navbar() {
             duration={1000}
             onClick={handleClick}
           >
-            donaciones
+            contacto
           </Contact>
-          contacto
-          <Link onClick={handleClick} to="/hazte-socio">
+          <Contact
+            to="contacto"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={1000}
+            onClick={handleClick}
+          >
             hazte socio
-          </Link>
+          </Contact>
         </div>
         <div className="burguer">
           <BurguerBtn clicked={clicked} handleClick={handleClick} />

@@ -6,6 +6,7 @@ import NavBarTemplate from "../templates/NavBarTemplate";
 import PartnersList from "../main/PartnerList";
 import { React } from "react";
 import ScrollToTop from "../ScrollToUp";
+import VideoCrea from "../VideosFeaatures/VideoCrea";
 
 const ProjectsCrea = () => {
   return (
@@ -14,6 +15,7 @@ const ProjectsCrea = () => {
       <NavBarTemplate title="Proyecto CREA 2023" />
       <ContentProjects {...creaDataOne} inverse />
       <ContentProjects {...creaDataTwo} reverse />
+      <VideoCrea />
       <PartnersList />
       <Footer />
     </>

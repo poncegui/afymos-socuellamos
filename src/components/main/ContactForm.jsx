@@ -20,7 +20,7 @@ const ContactForm = () => {
   };
   return (
     <>
-      <TitleHeadingContainer id="contacto">
+      <TitleHeadingContainer>
         <TitleHeading>Información de contacto</TitleHeading>
       </TitleHeadingContainer>
       <SectionContact>
@@ -51,7 +51,7 @@ const ContactForm = () => {
         </BoxContainer>
 
         <Row>
-          <Form>
+          <Form id="contacto">
             <InputBox>
               <Input type="text" placeholder="nombre" name="user_name" />
               <Input

@@ -6,18 +6,18 @@ const DemoVideo = () => {
     <Demo id="demo">
       <DemoContainer>
         <DemoLeft>
-          <p>Proyecto CREA,</p>
-          <p>Nuestra filosofia</p>
+          <p>Un día en Afymos</p>
+          <p>Queremos visibilizar el trabajo diario que realizamos </p>
           <p>
-            Conoce nuestro Programa de Formación y Empleo para personas con
-            algún tipo de discapacidad en Socuéllamos.
+            Con el fin de mejorar la calidad de vida de las personas con
+            Discapacidad
           </p>
         </DemoLeft>
         <DemoRight>
           <iframe
             width="570"
             height="320"
-            src="https://www.youtube.com/embed/SJI4HjfxSj8"
+            src="https://www.youtube.com/embed/70xM5Dvf5Bk"
             title="Youtube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

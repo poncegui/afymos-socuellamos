@@ -1,14 +1,16 @@
-import { React } from "react";
-
-import NavBarTemplate from "../templates/NavBarTemplate";
-import Footer from "../Footer";
 import {
   nosotrosDataOne,
-  nosotrosDataTwo,
   nosotrosDataThree,
+  nosotrosDataTwo,
 } from "./services/ApiNosotros";
+
 import { ContentProjects } from "../Content/ContentProjects";
+import Footer from "../Footer";
+import NavBarTemplate from "../templates/NavBarTemplate";
+import OtherInformation from "./OthersList";
 import PartnersList from "../main/PartnerList";
+import { React } from "react";
+import UnDiaEnAfymos from "../VideosFeaatures/UndiaEnAfymosVideo";
 
 const Nosotros = () => {
   return (
@@ -17,6 +19,8 @@ const Nosotros = () => {
       <ContentProjects {...nosotrosDataOne} inverse />
       <ContentProjects {...nosotrosDataTwo} reverse />
       <ContentProjects {...nosotrosDataThree} inverse />
+      <UnDiaEnAfymos />
+      <OtherInformation />
       <PartnersList />
       <Footer />
     </>

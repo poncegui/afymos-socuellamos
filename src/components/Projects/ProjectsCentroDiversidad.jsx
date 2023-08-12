@@ -16,7 +16,7 @@ const ProjectsCentroDiversidad = () => {
   return (
     <>
       <ScrollToTop />
-      <NavBarTemplate title="Centro de Atención a la Diversidad Funcional" />
+      <NavBarTemplate title="Nuestro Centro" />
       <ContentProjects {...centroDiversidadDataOne} inverse />
       <ContentProjects {...centroDiversidadDataTwo} reverse />
       <ContentProjects {...centroDiversidadDataThree} inverse />

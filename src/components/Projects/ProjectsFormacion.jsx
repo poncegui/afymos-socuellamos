@@ -16,7 +16,7 @@ const ProjectsFormacion = () => {
   return (
     <>
       <ScrollToTop />
-      <NavBarTemplate title="Centro de Formación" />
+      <NavBarTemplate title="Centro de Formación" id="/formacion" />
       <ContentProjects {...formacionDataOne} inverse />
       <ContentProjects {...formacionDataTwo} reverse />
       <ContentProjects {...formacionDataThree} inverse />

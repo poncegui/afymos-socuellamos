@@ -58,7 +58,7 @@ export const TextWrapper = styled.span`
   margin-top: ${({ mt }) => (mt ? mt : "")};
 `;
 export const Section = styled.section`
-  padding: ${({ padding }) => (padding ? padding : "140px 0")};
+  padding: ${({ padding }) => (padding ? padding : "60px 0")};
   margin: ${({ margin }) => (margin ? margin : "")};
   background: ${({ inverse }) => (inverse ? "#FFC0BC" : "#071c2f")};
   position: ${({ position }) => (position ? position : "")};

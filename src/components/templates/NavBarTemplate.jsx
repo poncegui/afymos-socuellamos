@@ -17,7 +17,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <NavContainer id="menu-principal">
+      <NavContainer id={props.id}>
         <Link to="/" onClick={handleBack}>
           <div className="containerPrincipal">
             <i class="fa-solid fa-angles-left"></i>

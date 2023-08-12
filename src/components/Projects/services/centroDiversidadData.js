@@ -7,11 +7,11 @@ export const centroDiversidadDataOne = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "Nuestro Centro es un edificio que engloba múltiples actuaciones dirigidas a mejorar la Calidad de Vida de las personas con discapacidad se denomina “CENTRO DE ATENCIÓN A LA DIVERSIDAD FUNCIONAL”.",
+    text: "CENTRO DE ATENCIÓN A LA DIVERSIDAD FUNCIONAL",
   },
   headline: "Cuenta con espacio útil de 803,16 m² dividido en dos plantas.",
   description:
-    "El edificio donde está ubicado el nuestros servicios y recursos se denomina 'Centro de Atención a la Diversidad Funcional' y cuenta con unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el año obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun así seguiremos adaptándolo para favorecer la orientación y la comunicación para personas con especiales dificultades en estos aspectos.",
+    "Nuestro Centro es un edificio que engloba múltiples actuaciones dirigidas a mejorar la Calidad de Vida de las personas con discapacidad. El edificio donde está ubicado el nuestros servicios y recursos se denomina 'Centro de Atención a la Diversidad Funcional' y cuenta con unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el año obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun así seguiremos adaptándolo para favorecer la orientación y la comunicación para personas con especiales dificultades en estos aspectos.",
   img: fachada,
 };
 

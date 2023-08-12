@@ -1,7 +1,6 @@
 import "../styles/main.scss";
 
 //HOOKS
-import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { heroOne, heroThree, heroTwo } from "./Hero/HeroData";
 
@@ -17,7 +16,7 @@ import NavBar from "./Header/NavBar";
 import Nosotros from "./main/Nosotros";
 import OtherInformation from "./main/OthersList";
 import PartnertList from "./main/PartnerList";
-import ProjectCreaVideo from "./ProjectCreaVideo/ProjectCreaVideo";
+import ProjectCreaVideo from "./VideosFeaatures/ProjectCreaVideo";
 import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
 import ProjectsCentroDia from "./Projects/ProjectsCentroDia";
 import ProjectsCentroDiversidad from "./Projects/ProjectsCentroDiversidad";

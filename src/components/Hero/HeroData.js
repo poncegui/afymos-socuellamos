@@ -1,5 +1,5 @@
 import proyectos from "../../assets/images-centroDia/centroDia-2.jpg";
-import sensibility from "../../assets/images-sensibilizacion/sensibilizacion-8.jpg";
+import sensibility from "../../assets/images-sensibilizacion/sensibilizacion-1.png";
 import sociolaboral from "../../assets/images-integracion-sociolaboral/tomas.jpg";
 
 export const heroOne = {
@@ -42,6 +42,6 @@ export const heroThree = {
   description:
     "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administración y mucho más. Contacta con nosotros o envianos tu curriculum",
   buttonLabel: "Contacto",
-  href: "#/contacto",
+  href: "contacto",
   img: proyectos,
 };

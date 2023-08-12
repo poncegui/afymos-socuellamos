@@ -48,6 +48,7 @@ export const TitleContainer = styled.div`
   background-color: #ffc0bc;
   display: flex;
   width: 100%;
+  height: 70px;
   margin: auto;
   align-items: center;
   justify-content: center;

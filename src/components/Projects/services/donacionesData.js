@@ -1,4 +1,4 @@
-import donacion from "../../../assets/images-donacion/donaciones.jpg";
+import donacion from "../../../assets/images-donacion/donaciones.png";
 
 export const donacionDataOne = {
   id: "donacionDataOne",
