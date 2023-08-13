@@ -11,6 +11,7 @@ import NavBarTemplate from "../templates/NavBarTemplate";
 import PartnersList from "../main/PartnerList";
 import { React } from "react";
 import ScrollToTop from "../ScrollToUp";
+import SliderNosotros from "../main/SliderNosotros";
 
 const ProjectsCentroDiversidad = () => {
   return (
@@ -20,7 +21,7 @@ const ProjectsCentroDiversidad = () => {
       <ContentProjects {...centroDiversidadDataOne} inverse />
       <ContentProjects {...centroDiversidadDataTwo} reverse />
       <ContentProjects {...centroDiversidadDataThree} inverse />
-      <Diversity />
+      <SliderNosotros />
       <PartnersList />
       <Footer />
     </>

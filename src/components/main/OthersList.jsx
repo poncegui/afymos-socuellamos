@@ -63,20 +63,7 @@ export const ButtonContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   margin: auto;
-  grid-gap: 5% 5%;
-  margin: 5%;
   justify-content: center;
-  @media (max-width: 768px) {
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: auto;
-    grid-gap: 30px 30px;
-    margin: 5%;
-    margin-bottom: 15%;
-    width: 90%;
-  }
 `;
 
 export const Description = styled.div`
@@ -116,7 +103,6 @@ export const Icons = styled.div`
     cursor: pointer;
   }
   @media (max-width: 440px) {
-    margin: 5%;
     margin-bottom: 15%;
     gap: 0.6rem;
     border-radius: 10px;

@@ -60,8 +60,8 @@ export const ImgWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   font-weight: 550;
   letter-spacing: 1.4px;
   margin-bottom: 1.3rem;
@@ -99,6 +99,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;
+  font-size: 1.5rem;
   color: ${({ inverse }) => (inverse ? "#6a6a6a" : "#FFC0BC")};
 `;
 
@@ -109,10 +110,10 @@ export const HomePage = styled.a`
 
 export const ContentButton = styled.button`
   text-decoration: none;
-  height: 3rem;
+  height: 4rem;
   padding: 1rem 32px;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 3rem;
   line-height: 18px;
   letter-spacing: 1.54px;
   text-transform: uppercase;
@@ -122,7 +123,7 @@ export const ContentButton = styled.button`
   border-radius: 4px;
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "0.6255rem 1.25rem")};
-  font-size: ${({ fontBig }) => (fontBig ? "1.25rem" : "1rem")};
+  font-size: ${({ fontBig }) => (fontBig ? "1.5rem" : "1rem")};
   outline: none;
   border: 2px solid ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
   cursor: pointer;

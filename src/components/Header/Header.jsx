@@ -3,7 +3,7 @@ import logo from "../../assets/logos/logo-afymos.png";
 const Header = () => {
   return (
     <>
-      <header className="header" id="header">
+      <header className="header_header" id="header">
         <div className="header_superior">
           <div className="header_superior__container">
             <img

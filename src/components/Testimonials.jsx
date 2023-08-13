@@ -3,11 +3,7 @@ import "./Testimonials.css";
 import React from "react";
 import user1 from "../assets/images-testimonials/rafa.png";
 import user2 from "../assets/images-testimonials/quico.png";
-import user3 from "../assets/images-testimonials/oficina.png";
-
-// import user1 from '../assets/images-testimonials/Pedro.jpg';
-// import user2 from '../assets/images-testimonials/Rafa.jpg';
-// import user3 from '../assets/images-testimonials/Quico.jpg';
+import user3 from "../assets/images-testimonials/pedro.png";
 
 const Testimonials = () => {
   return (
@@ -45,14 +41,16 @@ const Testimonials = () => {
           <div className="card">
             <img src={user3} alt="user1" />
             <p>
-              La empresa INKIELE efectuó la segunda contratación. Tomás tuvo un
-              contrato indefinido y al igual que Quico, su calidad de vida
-              cambió, mejorando su bienestar emocional y su autodeterminación.
+              En la misma línea de trabajo, el objetivo laboral de Pedro es
+              trabajar lijando. Por ello, La empresa Arte Religioso Salmerón, le
+              abrió sus puertas mediante unas prácticas laborales para
+              corroborar si sus habilidades y capacidades eran compatibles con
+              el puesto de trabajo.
             </p>
             <p>
               <span>Tomás</span>
             </p>
-            <p>Trabajador en Inkiele</p>
+            <p>Trabajador en Arte Religioso Salmerón</p>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const DemoVideo = () => {
       <DemoContainer>
         <DemoLeft>
           <p>Proyecto CREA;</p>
-          <p>Nuestra filosofia</p>
+          <p>Nuestra filosofía</p>
           <p>
             Conoce nuestro Programa de Formación y Empleo para personas con
             algún tipo de discapacidad en Socuéllamos.

@@ -98,7 +98,7 @@ const NavContainer = styled.nav`
       display: block;
     }
 
-    @media (min-width: 1090px) {
+    @media (min-width: 800px) {
       position: initial;
       margin: 0;
       a {
@@ -117,7 +117,7 @@ const NavContainer = styled.nav`
   }
 
   .links.active {
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
       background-color: #071c2f;
       border-radius: 0 0 80% 0;
       height: 30%;
@@ -151,7 +151,7 @@ const NavContainer = styled.nav`
     height: 50px;
     margin: 3%;
 
-    @media (min-width: 1090px) {
+    @media (min-width: 800px) {
       display: none;
     }
   }

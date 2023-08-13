@@ -7,7 +7,7 @@ import { heroOne, heroThree, heroTwo } from "./Hero/HeroData";
 //COMPONENTS
 import Carousel from "./Carousel/Carousel";
 import Chart from "./Chart/Chart";
-import ContactForm from "./main/ContactForm";
+import ContactForm2 from "./main/ContactForm2";
 import { Content } from "./../components/Content/Content";
 import Features from "./Features/Features";
 import Footer from "./Footer";
@@ -95,7 +95,7 @@ const App = () => {
               <Content {...heroTwo} />
               <OtherInformation />
               <Carousel />
-              <ContactForm />
+              <ContactForm2 />
               <PartnertList />
               <Footer />
             </>

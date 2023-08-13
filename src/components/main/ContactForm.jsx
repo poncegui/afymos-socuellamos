@@ -26,12 +26,12 @@ const ContactForm = () => {
       <SectionContact>
         <BoxContainer>
           <Box>
-            <ImgBox src={IconOne} />
+            <IconBox src={IconOne} />
             <TitleBox>Teléfono</TitleBox>
             <TextBox>926 532 749</TextBox>
           </Box>
           <Box>
-            <ImgBox src={IconTwo} />
+            <IconBox src={IconTwo} />
             <TitleBox>Correo Electrónico</TitleBox>
             <TextBox
               href="tel:926532749"
@@ -42,7 +42,7 @@ const ContactForm = () => {
             </TextBox>
           </Box>
           <Box>
-            <ImgBox src={IconThree} />
+            <IconBox src={IconThree} />
             <TitleBox>Dirección</TitleBox>
             <TextBox>
               C. Pedro Arias, 87, 13630 Socuéllamos, Ciudad Real
@@ -91,13 +91,11 @@ const ContactForm = () => {
 export default ContactForm;
 
 export const SectionContact = styled.section`
-  padding: 2rem 9%;
-  box-sizing: border-box;
   display: flex;
-  box-sizing: border-box;
   flex-direction: column;
+  place-content: center;
+  align-items: center;
   @media (max-width: 991px) {
-    padding: 1.5rem;
   }
 `;
 SectionContact.displayName = "SectionContact";
@@ -127,26 +125,28 @@ export const BoxContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding-bottom: 2rem;
+  justify-content: center;
+  margin: 5%;
 `;
 BoxContainer.displayName = "BoxContainer";
 
 export const Box = styled.div`
-  flex: 1 1 25rem;
-  background: white;
-  padding: 2rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  text-align: center;
   text-decoration: none;
+  background: white;
+  text-align: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  position: relative;
+  width: 20rem;
 `;
 Box.displayName = "Box";
 
-export const ImgBox = styled.img`
-  height: 3rem;
+export const IconBox = styled.img`
+  height: 2rem;
 `;
-ImgBox.displayName = "ImgBox";
+IconBox.displayName = "ImgBox";
 
 export const TitleBox = styled.h3`
   font-size: 1rem;
@@ -223,6 +223,7 @@ export const Row = styled.div`
   display: flex;
   flex-wrap: wrap-reverse;
   padding: 1rem;
+  width: 60%;
 `;
 Row.displayName = "Row";
 
@@ -237,5 +238,6 @@ export const InputSubmit = styled.input`
   cursor: pointer;
   text-align: center;
   background: pink;
+  width: 20%;
 `;
 InputSubmit.displayName = "InputSubmit";
