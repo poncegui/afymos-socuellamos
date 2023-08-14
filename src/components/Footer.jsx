@@ -1,7 +1,6 @@
 import "./Footer.css";
 
 import React from "react";
-import styled from "styled-components";
 
 const Footer = () => {
   return (
@@ -42,16 +41,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  cookies
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/tv/CKKQgBcIW_Z/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  aviso legal
+                  c. Pedro Arias 87, 13630 Socuéllamos (Ciudad Real)
                 </a>
               </li>
             </ul>

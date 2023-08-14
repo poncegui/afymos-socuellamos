@@ -99,7 +99,9 @@ export const FaceFrontPosition = styled.div`
 `;
 
 export const FaceBackProfession = styled.div`
+  border-radius: 10px;
   letter-spacing: 1px;
+  font-size: 1rem;
 `;
 
 export const ImgBack = styled.img`

@@ -70,6 +70,7 @@ const NavContainer = styled.nav`
     color: #ffc0bc;
     font-weight: 400;
     margin-left: 5%;
+    font-size: 2.2rem;
     span {
       font-weight: bold;
     }
@@ -79,9 +80,10 @@ const NavContainer = styled.nav`
   justify-content: space-between;
 
   a {
-    color: white;
+    color: #ffc0bc;
     text-decoration: none;
     margin-right: 5%;
+    font-weight: 400;
   }
 
   .links {
@@ -119,8 +121,7 @@ const NavContainer = styled.nav`
   .links.active {
     @media (max-width: 1090px) {
       background-color: #071c2f;
-      border-radius: 0 0 80% 0;
-      height: 30%;
+      height: 40%;
       width: 100%;
       display: block;
       position: absolute;
@@ -132,7 +133,7 @@ const NavContainer = styled.nav`
       text-align: center;
 
       a {
-        font-size: 18px;
+        font-size: 3rem;
         margin-top: 5%;
         color: #ffc0bc;
         cursor: pointer;
