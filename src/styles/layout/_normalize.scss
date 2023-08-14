@@ -22,18 +22,19 @@ html {
   }
   outline: none;
   border: none;
-
-  // @media (max-width: 440px) {
-  //   h2 {
-  //     font-size: 5%;
-  //   }
-  // }
 }
 body {
   background: #ffc0bc;
 }
+a {
+  text-decoration: none;
+}
 Link {
   text-decoration: none;
+}
+section {
+  padding: 2rem 9%;
+  background-color: #f7f7f7;
 }
 * {
   margin: 0;

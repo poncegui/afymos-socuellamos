@@ -52,7 +52,7 @@ export const SectionPartners = styled.div`
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   @media (max-width: 440px) {
@@ -63,7 +63,7 @@ export const SectionPartners = styled.div`
       height: 60px;
     }
     h2 {
-      font-size: 28px;
+      font-size: 24px;
     }
   }
 `;
@@ -81,7 +81,7 @@ export const ContainerParnertList = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (max-width: 368px) {
+  @media (max-width: 440px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     padding: 30px 0;

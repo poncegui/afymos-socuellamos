@@ -1,243 +1,133 @@
 import IconOne from "../../assets/icons/icon-1.png";
 import IconThree from "../../assets/icons/icon-3.png";
 import IconTwo from "../../assets/icons/icon-2.png";
-import React from "react";
-import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
-const ContactForm = () => {
-  const sendEmail = (event) => {
-    event.preventDefault();
-    emailjs
-      .sendForm(
-        "service_c502dyg",
-        "template_yviiujh",
-        event.target,
-        "q63xnC6xyTolLOuPW"
-      )
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
-  };
+const ContactForm2 = () => {
   return (
     <>
-      <TitleHeadingContainer>
-        <TitleHeading>Información de contacto</TitleHeading>
-      </TitleHeadingContainer>
-      <SectionContact>
-        <BoxContainer>
-          <Box>
-            <IconBox src={IconOne} />
-            <TitleBox>Teléfono</TitleBox>
-            <TextBox>926 532 749</TextBox>
-          </Box>
-          <Box>
-            <IconBox src={IconTwo} />
-            <TitleBox>Correo Electrónico</TitleBox>
-            <TextBox
-              href="tel:926532749"
-              target="_blank"
-              title="Teléfono Afymos"
-            >
-              afymos@gmail.com
-            </TextBox>
-          </Box>
-          <Box>
-            <IconBox src={IconThree} />
-            <TitleBox>Dirección</TitleBox>
-            <TextBox>
-              C. Pedro Arias, 87, 13630 Socuéllamos, Ciudad Real
-            </TextBox>
-          </Box>
-        </BoxContainer>
+      <section className="contact">
+        <div class="titles">
+          <h1 class="heading">
+            <span></span>
+          </h1>
+        </div>
 
-        <Row>
-          <Form id="contacto">
-            <InputBox>
-              <Input type="text" placeholder="nombre" name="user_name" />
-              <Input
+        <IconsContainer>
+          <Icons>
+            <img src={IconOne} alt="" />
+            <h3>teléfono de contacto</h3>
+            <p>926 532 749</p>
+          </Icons>
+          <Icons>
+            <img src={IconTwo} alt="" />
+            <h3>correo electrónico</h3>
+            <p>
+              <a
+                href="mailto:afymos@gmail.com"
+                target="_blank"
+                title="e-mail afymos"
+                rel="noreferrer"
+              >
+                afymos@gmail.com
+              </a>
+            </p>
+          </Icons>
+          <Icons>
+            <img src={IconThree} alt="" />
+            <h3>Dirección</h3>
+            <p>c. Pedro Arias, 87, 13630 Socuéllamos, Ciudad Real</p>
+          </Icons>
+        </IconsContainer>
+
+        <div className="row">
+          <form
+            action="https://formsubmit.co/ba88b9758fe1eee2f75438dceeafdba3"
+            method="POST"
+          >
+            <div className="inputBox">
+              <input type="text" placeholder="nombre" name="name" required />
+              <input
                 type="number"
-                placeholder="teléfono"
-                name="user_telephone"
+                placeholder="numero de teléfono"
+                name="telefono"
               />
-            </InputBox>
-            <InputBox>
-              <Input type="email" placeholder="email" name="user_telephone" />
-              <Input type="text" placeholder="asunto" name="user_telephone" />
-            </InputBox>
-            <TextArea
-              name="user_message"
+            </div>
+            <div className="inputBox">
+              <input type="email" placeholder="email" name="email" required />
+              <input type="text" placeholder="asunto" name="asunto" required />
+            </div>
+            <textarea
+              type="text"
+              name="mensaje"
               placeholder="mensaje"
-              id=""
+              required
+              id="message"
               cols="30"
               rows="10"
-            ></TextArea>
-            <InputSubmit
-              type="submit"
-              value="enviar mensaje"
-              className="btn"
-              onSubmit={sendEmail}
-            ></InputSubmit>
-          </Form>
-          <Iframe
-            loading="lazy"
-            allowFullScreen
+              class="inputs"
+            ></textarea>
+            <input type="submit" value="enviar mensaje" target="_blank" />
+          </form>
+          <iframe
+            className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.115024827591!2d-2.792748684638135!3d39.28564187951258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68f525d5ea6049%3A0x180a68074859800d!2sAFYMOS!5e0!3m2!1ses!2ses!4v1687676404652!5m2!1ses!2ses"
-          ></Iframe>
-        </Row>
-      </SectionContact>
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
     </>
   );
 };
-export default ContactForm;
+export default ContactForm2;
 
-export const SectionContact = styled.section`
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-  align-items: center;
-  @media (max-width: 991px) {
-  }
+const InputSubmitButton = styled.input`
+  height: 3rem;
+  width: 15rem;
+  margin: 0.5rem 0;
+  color: #071c2f;
+  background-color: #ffc0bc;
+  text-decoration: none;
 `;
-SectionContact.displayName = "SectionContact";
 
-export const TitleHeadingContainer = styled.div`
-  display: grid;
-  place-content: center;
-  width: 100%;
-  background-color: #071c2f;
-  height: 40px;
-`;
-TitleHeadingContainer.displayName = "TitleHeadingContainer";
-
-export const TitleHeading = styled.h2`
-  text-align: center;
-  color: #ffc0bc;
-  font-size: 2rem;
-  font-weight: 400;
-
-  @media (max-width: 450px) {
-    font-size: 1rem;
-  }
-`;
-TitleHeading.displayName = "TitleHeading";
-
-export const BoxContainer = styled.div`
+const IconsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: center;
-  margin: 5%;
+  padding-bottom: 2rem;
 `;
-BoxContainer.displayName = "BoxContainer";
-
-export const Box = styled.div`
-  text-decoration: none;
-  background: white;
-  text-align: center;
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+const Icons = styled.div`
+  flex: 1 1 25rem;
+  background: var(--aux);
   padding: 2rem;
-  position: relative;
-  width: 20rem;
-`;
-Box.displayName = "Box";
-
-export const IconBox = styled.img`
-  height: 2rem;
-`;
-IconBox.displayName = "ImgBox";
-
-export const TitleBox = styled.h3`
-  font-size: 1rem;
-  color: #071c2f;
-  padding: 1rem 0;
-`;
-TitleBox.displayName = "TitleBox";
-
-export const TextBox = styled.a`
-  font-size: 1rem;
-  color: #666;
-  padding: 0.2rem 0;
-  cursor: pointer;
-`;
-TextBox.displayName = "TextBox";
-
-export const InputBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
-InputBox.displayName = "InputBox";
-
-export const TextArea = styled.textarea`
-  margin-top: 1rem;
-  padding: 1rem;
-  font-size: 1rem;
-  color: #071c2f;
-  background: #f7f7f7;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
-  text-transform: none;
-  width: 49%;
-  width: 100%;
-  height: 20rem;
-  resize: none;
-`;
-TextArea.displayName = "TextArea";
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  img {
+    height: 3rem;
+  }
 
-export const Form = styled.form`
-  flex: 1 1 50rem;
-  padding: 0.5rem 1rem;
-`;
-Form.displayName = "Form";
-
-export const Iframe = styled.iframe`
-  flex: 1 1 30rem;
-  width: 100%;
-  padding: 1rem;
-`;
-Iframe.displayName = "Iframe";
-
-export const Input = styled.input`
-  margin-top: 1rem;
-  padding: 1rem;
-  font-size: 1rem;
-  color: grey;
-  background: #f7f7f7;
-  border-radius: 0.5rem;
-  text-transform: none;
-  width: 49%;
-
-  @media (max-width: 450px) {
-    font-size: 1rem;
-    width: 100%;
+  h3 {
+    font-size: 1.5rem;
+    color: #071c2f;
+    padding: 1rem 0;
+  }
+  p {
+    font-size: 1.2rem;
+    color: #071c2f;
+    padding: 0.2rem 0;
+  }
+  p a {
+    font-size: 1.5rem;
+    color: #071c2f;
+    padding: 0.2rem 0;
+  }
+  p:hover {
+    font-size: 1.5rem;
+    color: #071c2f;
+    padding: 0.2rem 0;
   }
 `;
-Input.displayName = "Input";
-
-export const Row = styled.div`
-  background: white;
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  padding: 1rem;
-  width: 60%;
-`;
-Row.displayName = "Row";
-
-export const InputSubmit = styled.input`
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 0.8rem 3.5rem;
-  border-radius: 0.5rem;
-  font-size: 1.7rem;
-  color: #071c2f;
-  background: #071c2f;
-  cursor: pointer;
-  text-align: center;
-  background: pink;
-  width: 20%;
-`;
-InputSubmit.displayName = "InputSubmit";

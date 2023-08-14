@@ -1,19 +1,18 @@
-import "./Testimonials.css";
-
 import React from "react";
+import styled from "styled-components";
 import user1 from "../assets/images-testimonials/rafa.png";
 import user2 from "../assets/images-testimonials/quico.png";
 import user3 from "../assets/images-testimonials/pedro.png";
 
 const Testimonials = () => {
   return (
-    <div className="testimonials" id="testimonials">
-      <div className="container">
+    <TestimonialsSection id="testimonios">
+      <TestimonialsContainer>
         <h2>Historias reales: Proyecto Crea</h2>
         <span className="line"></span>
-        <div className="content">
-          <div className="card">
-            <img src={user1} alt="user1" />
+        <TestimonialsContent>
+          <TestimonialsCard>
+            <img src={user1} alt="rafa" />
             <p>
               Gracias al trabajo, Rafael ha adquirido nuevas rutinas, ha
               cambiado sus hábitos, ha asumido nuevas responsabilidades que le
@@ -23,9 +22,9 @@ const Testimonials = () => {
               <span>Rafa</span>
             </p>
             <p>Trabajador en Destrupapper</p>
-          </div>
-          <div className="card">
-            <img src={user2} alt="user1" />
+          </TestimonialsCard>
+          <TestimonialsCard>
+            <img src={user2} alt="quico" />
             <p>
               Quico, quien tras varios contratos temporales, pasó a ser
               indefinido. Logró la primera inserción socio-laboral, con la
@@ -37,9 +36,9 @@ const Testimonials = () => {
               <span>Quico</span>
             </p>
             <p>Trabajador en Inkiele</p>
-          </div>
-          <div className="card">
-            <img src={user3} alt="user1" />
+          </TestimonialsCard>
+          <TestimonialsCard>
+            <img src={user3} alt="pedro" />
             <p>
               En la misma línea de trabajo, el objetivo laboral de Pedro es
               trabajar lijando. Por ello, La empresa Arte Religioso Salmerón, le
@@ -51,11 +50,69 @@ const Testimonials = () => {
               <span>Tomás</span>
             </p>
             <p>Trabajador en Arte Religioso Salmerón</p>
-          </div>
-        </div>
-      </div>
-    </div>
+          </TestimonialsCard>
+        </TestimonialsContent>
+      </TestimonialsContainer>
+    </TestimonialsSection>
   );
 };
 
 export default Testimonials;
+
+const TestimonialsSection = styled.div`
+  width: 100%;
+  background-color: white;
+`;
+
+const TestimonialsContainer = styled.div`
+  padding: 5%;
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  @media (max-width: 940px) {
+    width: 100%;
+  }
+`;
+
+const TestimonialsContent = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 4rem 0;
+
+  @media (max-width: 940px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const TestimonialsCard = styled.div`
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+  padding: 1rem;
+
+  img {
+    height: 100px;
+    border-radius: 50px;
+    margin-top: -2rem;
+  }
+
+  p {
+    color: #787878;
+    font-size: 1.2rem;
+    margin: 12px;
+  }
+
+  span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: grey;
+  }
+
+  @media (max-width: 940px) {
+    max-width: 100%;
+    margin: 1rem;
+  }
+`;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterTitle>Síguenos en redes sociales</FooterTitle>
+      <FooterTitle></FooterTitle>
 
       <SocialMediaContainer className="index-footer__contact--socialmedia">
         <Instagram

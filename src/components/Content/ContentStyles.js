@@ -123,7 +123,7 @@ export const ContentButton = styled.button`
   border-radius: 4px;
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "0.6255rem 1.25rem")};
-  font-size: ${({ fontBig }) => (fontBig ? "1.5rem" : "1rem")};
+  font-size: ${({ fontBig }) => (fontBig ? "1.8rem" : "1.5rem")};
   outline: none;
   border: 2px solid ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
   cursor: pointer;

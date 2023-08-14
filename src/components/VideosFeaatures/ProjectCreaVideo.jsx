@@ -61,7 +61,7 @@ const DemoContainer = styled.div`
   @media (max-width: 940px) {
     max-width: 100%;
     grid-template-columns: 1fr;
-    grid-gap: 30px;
+    grid-gap: 2rem;
 
     iframe {
       width: 100%;
@@ -74,9 +74,10 @@ const DemoLeft = styled.div`
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 
   p:nth-child(1) {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: italic;
   }
   p:nth-child(2) {
@@ -85,7 +86,7 @@ const DemoLeft = styled.div`
     margin: 0.5rem 0;
   }
   p:nth-child(3) {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 `;

@@ -70,7 +70,7 @@ const DemoLeft = styled.div`
     margin: 0.5rem 0;
   }
   p:nth-child(3) {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
   }
 `;
