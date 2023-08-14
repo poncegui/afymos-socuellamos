@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.ea001163.css",
-    "main.js": "./static/js/main.59b0b893.js",
+    "main.js": "./static/js/main.c87d2456.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion.jpg": "./static/media/formacion.6efb50312b365fe9d351.jpg",
     "static/media/neuro.jpg": "./static/media/neuro.0e99cbcb1b389c4cb530.jpg",
@@ -106,7 +106,7 @@
     "static/media/historial-medico.png": "./static/media/historial-medico.cdd204e568964ac3e119.png",
     "index.html": "./index.html",
     "main.ea001163.css.map": "./static/css/main.ea001163.css.map",
-    "main.59b0b893.js.map": "./static/js/main.59b0b893.js.map"
+    "main.c87d2456.js.map": "./static/js/main.c87d2456.js.map"
   },
-  "entrypoints": ["static/css/main.ea001163.css", "static/js/main.59b0b893.js"]
+  "entrypoints": ["static/css/main.ea001163.css", "static/js/main.c87d2456.js"]
 }

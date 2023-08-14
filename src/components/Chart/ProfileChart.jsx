@@ -38,15 +38,20 @@ export default ProfileChart;
 export const Card = styled.div`
   display: flex;
   position: relative;
-  width: 250px;
-  height: 300px;
-  margin: 20px;
+  width: 15rem;
+  height: 18rem;
+  margin: auto;
+  justify-content: center;
   cursor: pointer;
 
-  @media (max-width: 768px) {
-    width: 180px;
-    height: 220px;
-    margin: 10px;
+  @media (max-width: 1090px) {
+    width: 12rem;
+    height: 15rem;
+  }
+
+  @media (max-width: 440px) {
+    width: 9rem;
+    height: 10rem;
   }
 `;
 

@@ -52,17 +52,13 @@ export const ContainerListChart = styled.div`
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin: 10%;
+  place-content: center;
+  margin: auto;
+  gap: 1.5rem;
 
-  @media (max-width: 768px) {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  @media (max-width: 368px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  @media (max-width: 1090px) {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10% 0;
   }
 `;

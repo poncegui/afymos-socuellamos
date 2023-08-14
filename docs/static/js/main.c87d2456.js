@@ -1,4 +1,4 @@
-/*! For license information please see main.59b0b893.js.LICENSE.txt */
+/*! For license information please see main.c87d2456.js.LICENSE.txt */
 !(function () {
   var e = {
       7945: function (e, t, n) {
@@ -19183,7 +19183,7 @@
         dr = $t.div(
           On ||
             (On = ae([
-              "\n  display: flex;\n  position: relative;\n  width: 250px;\n  height: 300px;\n  margin: 20px;\n  cursor: pointer;\n\n  @media (max-width: 768px) {\n    width: 180px;\n    height: 220px;\n    margin: 10px;\n  }\n",
+              "\n  display: flex;\n  position: relative;\n  width: 15rem;\n  height: 18rem;\n  margin: auto;\n  justify-content: center;\n  cursor: pointer;\n\n  @media (max-width: 1090px) {\n    width: 12rem;\n    height: 15rem;\n  }\n\n  @media (max-width: 440px) {\n    width: 9rem;\n    height: 10rem;\n  }\n",
             ]))
         ),
         fr = $t.div(
@@ -19321,7 +19321,7 @@
         zr = $t.div(
           Nn ||
             (Nn = ae([
-              "\n  display: grid;\n  grid-template-rows: repeat(2, 1fr);\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n  margin: 10%;\n\n  @media (max-width: 768px) {\n    grid-template-rows: repeat(2, 1fr);\n    grid-template-columns: repeat(2, 1fr);\n    gap: 20px;\n  }\n\n  @media (max-width: 368px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 20px;\n  }\n",
+              "\n  display: grid;\n  grid-template-rows: repeat(2, 1fr);\n  grid-template-columns: repeat(3, 1fr);\n  place-content: center;\n  margin: auto;\n  gap: 1.5rem;\n\n\n  @media (max-width: 1090px) {\n    grid-template-rows: repeat(3, 1fr);\n    grid-template-columns: repeat(3, 1fr);\n    padding: 10% 0;\n  }\n",
             ]))
         ),
         Ir = n(581),
@@ -21125,7 +21125,7 @@
             src: Ts,
             target: Is,
             alt: "pictograma-logopedia",
-            url: "terapia-logopedia",
+            url: "logopedia",
           },
           {
             id: "fisioterapia",
@@ -21205,7 +21205,7 @@
         Ns = $t.div(
           na ||
             (na = ae([
-              "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1{\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
+              "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1 {\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
         Bs = $t.div(
@@ -21840,4 +21840,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.59b0b893.js.map
+//# sourceMappingURL=main.c87d2456.js.map

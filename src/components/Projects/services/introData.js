@@ -16,7 +16,7 @@ export const introData = [
     src: logopediaData,
     target: target,
     alt: "pictograma-logopedia",
-    url: "terapia-logopedia",
+    url: "logopedia",
   },
   {
     id: "fisioterapia",
