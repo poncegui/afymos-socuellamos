@@ -49,11 +49,7 @@ const ContactForm = () => {
           >
             <div className="inputBox">
               <input type="text" placeholder="nombre" name="name" required />
-              <input
-                type="number"
-                placeholder="numero de teléfono"
-                name="telefono"
-              />
+              <input type="number" placeholder="teléfono" name="telefono" />
             </div>
             <div className="inputBox">
               <input type="email" placeholder="email" name="email" required />

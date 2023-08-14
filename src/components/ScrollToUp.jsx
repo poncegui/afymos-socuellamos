@@ -49,6 +49,7 @@ const ScrollButton = styled.button`
   border: none;
   opacity: 0.7;
   font-size: 4rem;
+  margin-right: 1.5rem;
 
   @media (max-width: 440px) {
     font-size: 3rem;
