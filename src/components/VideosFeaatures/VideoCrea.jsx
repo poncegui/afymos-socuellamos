@@ -59,9 +59,10 @@ const DemoLeft = styled.div`
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 
   p:nth-child(1) {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: italic;
   }
   p:nth-child(2) {
@@ -70,7 +71,7 @@ const DemoLeft = styled.div`
     margin: 0.5rem 0;
   }
   p:nth-child(3) {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 `;

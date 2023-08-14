@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import { pictoAccessibility } from "./services/ApiMainMenu";
+
 import PictoCard from "./PictoCard";
+import { pictoAccessibility } from "./services/ApiMainMenu";
+import styled from "styled-components";
 
 const PictoSection = () => {
   const [pictos] = useState(pictoAccessibility);
@@ -31,7 +32,7 @@ export const ContainerListMenu = styled.div`
   margin: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 1rem;
   border: 1px solid grey;
   border-radius: 5px;
 

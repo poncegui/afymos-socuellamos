@@ -9,7 +9,7 @@ import ocupacional from "../../assets/images-center/sala-ocupacional.png";
 const SliderNosotros = (props) => {
   return (
     <>
-      <section class="slider">
+      <section>
         <div class="container-all">
           <input type="radio" id="1" name="image-slide" hidden />
           <input type="radio" id="2" name="image-slide" hidden />

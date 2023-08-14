@@ -32,7 +32,7 @@ export const Card = styled.div`
   margin: auto;
   position: relative;
   width: 80%;
-  gap: 1rem;
+  gap: 2rem;
   white-space: nowrap;
 `;
 

@@ -92,6 +92,7 @@ const TestimonialsCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
   padding: 1rem;
+  line-height: 2rem;
 
   img {
     height: 100px;
@@ -103,11 +104,12 @@ const TestimonialsCard = styled.div`
     color: #787878;
     font-size: 1.2rem;
     margin: 12px;
+    font-weight: 500;
   }
 
   span {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 900;
     color: grey;
   }
 
