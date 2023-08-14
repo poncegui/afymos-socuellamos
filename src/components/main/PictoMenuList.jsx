@@ -29,7 +29,7 @@ const PictoSection = () => {
 export default PictoSection;
 
 export const ContainerListMenu = styled.div`
-  margin: 100px;
+  margin: 60rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;

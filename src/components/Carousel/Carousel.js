@@ -24,8 +24,8 @@ const Carousel = () => {
 
   return (
     <Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse>
-      <Row justify="space-between" margin="1rem" wrap="wrap">
-        <Heading width="auto" inverse>
+      <Row justify="center" margin="1rem" wrap="wrap" align="center">
+        <Heading width="auto" inverse margin="2rem">
           Noticias
         </Heading>
         <ButtonContainer>
@@ -40,10 +40,20 @@ const Carousel = () => {
         {ApiCarousel.map((el, index) => (
           <ImageWrapper key={index}>
             <CarouselImage src={el.image} alt={el.alt} />
-            <TextWrapper size="1.1rem" margin="0.4rem 0 0" weight="bold">
+            <TextWrapper
+              size="1.5rem"
+              margin="1rem 0 0"
+              weight="bold"
+              align="center"
+            >
               {el.title}
             </TextWrapper>
-            <TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
+            <TextWrapper
+              size="1.2rem"
+              margin="1.5rem"
+              color="#4f4f4f"
+              align="center"
+            >
               {el.description}
             </TextWrapper>
             <ContainerButtonLink>

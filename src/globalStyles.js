@@ -46,6 +46,11 @@ export const Heading = styled.h3`
   line-height: 1.06;
   text-align: center;
   width: ${({ width }) => (width ? width : "100%")};
+
+  @media (max-width: 440px) {
+    font-size: 2rem;
+    justify-content: center;
+  }
 `;
 export const TextWrapper = styled.span`
   color: ${({ color }) => (color ? color : "")};
