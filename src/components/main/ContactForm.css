@@ -5,6 +5,7 @@
   display: flex;
   flex-wrap: wrap-reverse;
   padding: 1rem;
+  background-color: #ffc0bc;
 }
 
 .contact .row form {
@@ -29,7 +30,7 @@
   margin-top: 1rem;
   padding: 1rem;
   font-size: 1.7rem;
-  color: var(--auxDark);
+  color: #071c2f;
   background: #f7f7f7;
   border-radius: 0.5rem;
   text-transform: none;
@@ -45,4 +46,11 @@
 .contact .row form textarea:focus,
 .contact .row form .inputBox input:focus {
   background-color: rgb(247, 247, 227);
+}
+
+.inputSubmit {
+  margin-top: 1rem;
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.6rem;
 }

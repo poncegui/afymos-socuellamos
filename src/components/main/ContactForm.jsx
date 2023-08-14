@@ -1,12 +1,14 @@
+import "./ContactForm.css";
+
 import IconOne from "../../assets/icons/icon-1.png";
 import IconThree from "../../assets/icons/icon-3.png";
 import IconTwo from "../../assets/icons/icon-2.png";
 import styled from "styled-components";
 
-const ContactForm2 = () => {
+const ContactForm = () => {
   return (
     <>
-      <section className="contact">
+      <section className="contact" id="contacto">
         <div class="titles">
           <h1 class="heading">
             <span></span>
@@ -67,7 +69,12 @@ const ContactForm2 = () => {
               rows="10"
               class="inputs"
             ></textarea>
-            <input type="submit" value="enviar mensaje" target="_blank" />
+            <input
+              type="submit"
+              value="enviar mensaje"
+              target="_blank"
+              className="inputSubmit"
+            />
           </form>
           <iframe
             className="map"
@@ -80,16 +87,7 @@ const ContactForm2 = () => {
     </>
   );
 };
-export default ContactForm2;
-
-const InputSubmitButton = styled.input`
-  height: 3rem;
-  width: 15rem;
-  margin: 0.5rem 0;
-  color: #071c2f;
-  background-color: #ffc0bc;
-  text-decoration: none;
-`;
+export default ContactForm;
 
 const IconsContainer = styled.div`
   display: flex;

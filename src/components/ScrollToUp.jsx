@@ -39,7 +39,6 @@ export default ScrollToTop;
 const ScrollButton = styled.button`
   position: fixed;
   bottom: 40px;
-  font-size: 3rem;
   z-index: 1;
   cursor: pointer;
   color: grey;
@@ -49,8 +48,9 @@ const ScrollButton = styled.button`
   padding: 0px;
   border: none;
   opacity: 0.7;
+  font-size: 4rem;
 
   @media (max-width: 440px) {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 `;
