@@ -19,12 +19,12 @@ const Navbar = (props) => {
     <>
       <NavContainer id={props.id}>
         <Link to="/" onClick={handleBack}>
-          <div className="containerPrincipal">
+          <NavContainerPrincipal>
             <i class="fa-solid fa-angles-left"></i>
             <h3>
               volver a <span>Principal</span>
             </h3>
-          </div>
+          </NavContainerPrincipal>
         </Link>
         <RightMenu>
           <h1>{props.title}</h1>
@@ -46,6 +46,7 @@ const NavContainer = styled.nav`
   height: 80px;
   width: 100%;
   position: sticky;
+  align-items: center;
   top: 0;
   z-index: 50;
 
@@ -56,7 +57,7 @@ const NavContainer = styled.nav`
 
   .fa-angles-left {
     margin-left: 50px;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: pink;
 
     @media (max-width: 768px) {
@@ -67,21 +68,26 @@ const NavContainer = styled.nav`
   h3 {
     color: #ffc0bc;
     font-weight: 400;
-    margin-left: 20px;
+    margin-left: 10px;
     span {
       font-weight: bold;
     }
   }
   padding: 0.4rem;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   a {
     color: pink;
     text-decoration: none;
     margin-right: 1.5rem;
   }
+`;
+
+const NavContainerPrincipal = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const RightMenu = styled.nav`
@@ -95,7 +101,7 @@ const RightMenu = styled.nav`
     color: #ffc0bc;
     font-weight: bold;
     text-transform: lowercase;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   img {
     width: 10%;
@@ -111,7 +117,7 @@ const RightMenu = styled.nav`
   @media (max-width: 768px) {
     min-height: 15vh;
     h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
     img {
       display: none;
@@ -120,7 +126,7 @@ const RightMenu = styled.nav`
   @media (max-width: 440px) {
     min-height: 10vh;
     h1 {
-      font-size: 1.2rem;
+      display: none;
     }
   }
 `;

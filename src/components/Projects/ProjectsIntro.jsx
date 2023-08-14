@@ -9,27 +9,25 @@ const ProjectsIntro = () => {
 
   return (
     <>
-      <>
-        <SectionFeaturesMobile>
-          <h1>Nuestras Terapias</h1>
-          <ButtonContainer>
-            {others.map((picto) => (
-              <Icons key={picto.id} value={picto.name}>
-                <h3>{picto.name}</h3>
-                <Link
-                  to={picto.url}
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={1000}
-                >
-                  <img src={picto.src} alt={picto.alt} />
-                </Link>
-              </Icons>
-            ))}
-          </ButtonContainer>
-        </SectionFeaturesMobile>
-      </>
+      <SectionFeaturesMobile>
+        <h1>Nuestras Terapias</h1>
+        <ButtonContainer>
+          {others.map((picto) => (
+            <Icons key={picto.id} value={picto.name}>
+              <h3>{picto.name}</h3>
+              <Link
+                to={picto.url}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+              >
+                <img src={picto.src} alt={picto.alt} />
+              </Link>
+            </Icons>
+          ))}
+        </ButtonContainer>
+      </SectionFeaturesMobile>
     </>
   );
 };
@@ -47,6 +45,9 @@ export const SectionFeaturesMobile = styled.div`
   background-color: white;
   margin: auto;
   padding: 5% 15%;
+  h1 {
+    font-size: 2.5rem;
+  }
 
   @media (max-width: 768px) {
     display: flex;

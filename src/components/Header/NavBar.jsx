@@ -121,7 +121,7 @@ const NavContainer = styled.nav`
   .links.active {
     @media (max-width: 1090px) {
       background-color: #071c2f;
-      height: 40%;
+      height: 45%;
       width: 100%;
       display: block;
       position: absolute;
