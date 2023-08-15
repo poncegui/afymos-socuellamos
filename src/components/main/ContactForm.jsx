@@ -94,7 +94,6 @@ const IconsContainer = styled.div`
 `;
 const Icons = styled.div`
   flex: 1 1 25rem;
-  background: var(--aux);
   padding: 2rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;

@@ -1,4 +1,4 @@
-/*! For license information please see main.c87d2456.js.LICENSE.txt */
+/*! For license information please see main.540a7bce.js.LICENSE.txt */
 !(function () {
   var e = {
       7945: function (e, t, n) {
@@ -14865,6 +14865,10 @@
         e.exports =
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABXCAYAAACENlLcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA39pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphYTQ0Mzc5MC0wMTAzLTA3NDgtYjU3YS1mODlkZmFlNWM2YTgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjY1MDlERDcxRUJBMTFFQjg3RDhBODI3QzMzNEFCMTQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjY1MDlERDYxRUJBMTFFQjg3RDhBODI3QzMzNEFCMTQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUxZDg0MDA0LTQxNTItNmI0Yy04YjJmLTFkMTdiOTkxODZiYSIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjJlOTliZmQ5LTY2NTctNjE0NS1iZTQ3LTYxZjg1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";
       },
+      5127: function (e, t, n) {
+        "use strict";
+        e.exports = n.p + "static/media/background-1.d8380d5686e1353b4386.jpg";
+      },
       1233: function (e, t, n) {
         "use strict";
         e.exports = n.p + "static/media/rafa.5f8a302f0f8a0bf2c8b7.jpg";
@@ -15221,6 +15225,10 @@
       44: function (e, t, n) {
         "use strict";
         e.exports = n.p + "static/media/contabilidad.9fd6d39a7ec44cc6b43f.png";
+      },
+      1928: function (e, t, n) {
+        "use strict";
+        e.exports = n.p + "static/media/crea.d7e3987fa938680dd9f6.png";
       },
       1480: function (e, t, n) {
         "use strict";
@@ -19128,7 +19136,7 @@
         sr = $t.nav(
           jn ||
             (jn = ae([
-              "\n  background-color: #071c2f;\n  height: 80px;\n  width: 100%;\n  position: sticky;\n  align-items: center;\n  top: 0;\n  z-index: 50;\n\n  .containerPrincipal {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .fa-angles-left {\n    margin-left: 50px;\n    font-size: 1.5rem;\n    color: pink;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 10px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: pink;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
+              "\n  background-color: #071c2f;\n  height: 80px;\n  width: 100%;\n  position: sticky;\n  align-items: center;\n  top: 0;\n  z-index: 50;\n\n  .containerPrincipal {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .fa-angles-left {\n    margin-left: 50px;\n    font-size: 1.5rem;\n    color: #ffc0bc;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 10px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
             ]))
         ),
         lr = $t.div(
@@ -19321,7 +19329,7 @@
         zr = $t.div(
           Nn ||
             (Nn = ae([
-              "\n  display: grid;\n  grid-template-rows: repeat(2, 1fr);\n  grid-template-columns: repeat(3, 1fr);\n  place-content: center;\n  margin: auto;\n  gap: 1.5rem;\n\n\n  @media (max-width: 1090px) {\n    grid-template-rows: repeat(3, 1fr);\n    grid-template-columns: repeat(3, 1fr);\n    padding: 10% 0;\n  }\n",
+              "\n  display: grid;\n  grid-template-rows: repeat(2, 1fr);\n  grid-template-columns: repeat(3, 1fr);\n  place-content: center;\n  margin: auto;\n  gap: 1.5rem;\n\n  @media (max-width: 1090px) {\n    grid-template-rows: repeat(3, 1fr);\n    grid-template-columns: repeat(3, 1fr);\n    padding: 10% 0;\n  }\n",
             ]))
         ),
         Ir = n(581),
@@ -19461,7 +19469,7 @@
         Fr = $t.div(
           Fn ||
             (Fn = ae([
-              "\n  flex: 1 1 25rem;\n  background: var(--aux);\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n",
+              "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n",
             ]))
         ),
         Wr = $t.div(
@@ -19617,13 +19625,15 @@
         Kr = n(6935),
         $r = n(4450),
         ei = n(8179),
-        ti = n(9011),
-        ni = n(133),
-        ri = n(1483),
-        ii = n(8449),
-        ai = n(4697),
-        oi = n(242),
-        si =
+        ti = n(1928),
+        ni = n(9011),
+        ri = n(133),
+        ii = n(1483),
+        ai = n(8449),
+        oi = n(5581),
+        si = n(4697),
+        li = n(242),
+        ci =
           (n(9813),
           [
             {
@@ -19650,99 +19660,97 @@
             {
               id: 4,
               name: "Viviendas con apoyo",
-              img: oi,
+              img: li,
               alt: "viviendas-con-apoyo",
               url: "/viviendas-con-apoyo",
             },
             {
               id: 5,
               name: "Terapias",
-              img: ai,
+              img: si,
               alt: "terapias",
               url: "/terapias",
             },
             {
               id: 6,
               name: " Valoraci\xf3n y Diagn\xf3stico",
-              img: ti,
+              img: ni,
               alt: "/valoraci\xf3n-y-diagn\xf3stico",
               url: "/valoracion-y-diagnostico",
             },
             {
               id: 7,
               name: " Atenci\xf3n familias",
-              img: ri,
+              img: ii,
               alt: "apoyo-familias",
               url: "/apoyo-familias",
             },
             {
               id: 8,
               name: "Centro de Formaci\xf3n",
-              img: ii,
+              img: ai,
               alt: "formacion",
               url: "/formacion",
             },
             {
               id: 9,
               name: "Ocio y volunturariado",
-              img: ni,
+              img: ri,
               alt: "ocio-y-voluntariado",
               url: "/ocio-y-voluntariado",
             },
+            {
+              id: 10,
+              name: "Proyecto Crea",
+              img: ti,
+              alt: "proyecto-crea",
+              url: "/proyecto-crea",
+            },
+            {
+              id: 11,
+              name: "Organigrama",
+              img: $r,
+              alt: "organigrama",
+              url: "/organigrama",
+            },
+            {
+              id: 12,
+              name: "Junta Directiva",
+              img: oi,
+              alt: "junta-directiva",
+              url: "/junta-directiva",
+            },
           ]),
-        li = function () {
-          var e = a((0, t.useState)(si), 2),
-            n = e[0],
-            r = e[1],
-            i = function (e) {
-              r(e.currentTarget);
-            };
-          return (0, er.jsx)(er.Fragment, {
-            children: (0, er.jsxs)(ci, {
-              children: [
-                (0, er.jsx)(ui, {
-                  children: (0, er.jsx)("h2", { children: " Servicios" }),
-                }),
-                (0, er.jsx)(di, {
-                  children: n.map(function (e) {
-                    return (0,
-                    er.jsxs)(fi, { value: e.name, children: [(0, er.jsx)("h3", { children: e.name }), (0, er.jsx)(Z, { to: e.url, children: (0, er.jsx)("img", { src: e.img, alt: e.alt, onClick: i }) })] }, e.id);
-                  }),
-                }),
-              ],
-            }),
-          });
-        },
-        ci = $t.div(
+        ui = $t.div(
           Jn ||
             (Jn = ae([
               "\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  background-color: white;\n  @media (min-width: 768px) {\n  }\n",
             ]))
         );
-      ci.displayName = "SectionFeatures";
-      var ui = $t.div(
+      ui.displayName = "SectionFeatures";
+      var di = $t.div(
         Xn ||
           (Xn = ae([
             "\n  background-color: #ffc0bc;\n  display: flex;\n  width: 100%;\n  height: 70px;\n  margin: auto;\n  align-items: center;\n  justify-content: center;\n  h2 {\n    font-size: 30px;\n  }\n  @media (max-width: 768px) {\n    h2 {\n      font-size: 24px;\n    }\n    @media (max-width: 400px) {\n      h2 {\n        font-size: 20px;\n      }\n    }\n  }\n",
           ]))
       );
-      ui.displayName = "TitleContainer";
-      var di = $t.div(
+      di.displayName = "TitleContainer";
+      var fi = $t.div(
         Kn ||
           (Kn = ae([
             "\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-gap: 5%;\n  margin: 5% 30% 8% 30%;\n\n  @media (max-width: 420px) {\n    margin: 5% 10% 10% 10%;\n  }\n",
           ]))
       );
-      di.displayName = "ButtonContainer";
-      var fi = $t.div(
+      fi.displayName = "ButtonContainer";
+      var pi = $t.div(
         $n ||
           ($n = ae([
             "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 100%;\n  background: #e0e0e0;\n  box-shadow: 20px 20px 20px #949494, -20px -20px 20px #ffffff;\n  gap: 1rem;\n\n  :hover {\n    background-color: #ffc0bc;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    height: 60px;\n    width: 60px;\n    cursor: pointer;\n  }\n\n  @media (max-width: 950px) {\n    box-shadow: 20px 20px 40px #949494, -20px -20px 30px #ffffff;\n\n    h3 {\n      font-size: 0.8rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      height: 50px;\n      width: 50px;\n      cursor: pointer;\n    }\n    @media (max-width: 420px) {\n      gap: 0.6rem;\n      border-radius: 10px;\n      width: 90%;\n      box-shadow: 10px 10px 20px #949494, -10px -10px 20px #ffffff;\n\n      h3 {\n        font-size: 1rem;\n        padding: 0 0.3rem;\n      }\n\n      img {\n        height: 30px;\n        width: 30px;\n        cursor: pointer;\n      }\n    }\n  }\n",
           ]))
       );
-      fi.displayName = "Icons";
-      var pi,
-        hi = function () {
+      pi.displayName = "Icons";
+      var hi,
+        mi = function () {
           return (0, er.jsx)("article", {
             className: "article",
             children: (0, er.jsx)("div", {
@@ -19751,7 +19759,7 @@
                 className: "article__title",
                 children: (0, er.jsxs)("h4", {
                   children: [
-                    "\xbfQui\xe9nes somos y qu\xe9 ofrecemos?",
+                    "Informaci\xf3n y Servicios",
                     (0, er.jsx)("span", { children: "\xa0" }),
                   ],
                 }),
@@ -19759,10 +19767,15 @@
             }),
           });
         };
-      var mi,
-        gi,
-        vi = function (e) {
-          return (0, er.jsx)(yi, {
+      var gi,
+        vi,
+        yi,
+        bi,
+        Ai,
+        wi,
+        xi,
+        Si = function (e) {
+          return (0, er.jsx)(ki, {
             children: (0, er.jsxs)("div", {
               onClick: e.handleClick,
               className: "icon nav-icon-5 ".concat(e.clicked ? "open" : ""),
@@ -19774,72 +19787,74 @@
             }),
           });
         },
-        yi = $t.div(
-          pi ||
-            (pi = ae([
+        ki = $t.div(
+          hi ||
+            (hi = ae([
               "\n  /* nav-icon-5 */\n  .nav-icon-5 {\n    width: 35px;\n    height: 30px;\n    margin: 10px 10px;\n    position: relative;\n    cursor: pointer;\n    display: inline-block;\n  }\n  .nav-icon-5 span {\n    background-color: #ffc0bc;\n    position: absolute;\n    border-radius: 2px;\n    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);\n    width: 100%;\n    height: 4px;\n    transition-duration: 500ms;\n  }\n  .nav-icon-5 span:nth-child(1) {\n    top: 0px;\n    left: 0px;\n  }\n  .nav-icon-5 span:nth-child(2) {\n    top: 13px;\n    left: 0px;\n    opacity: 1;\n  }\n  .nav-icon-5 span:nth-child(3) {\n    bottom: 0px;\n    left: 0px;\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(1) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(2) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(3) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5.open span:nth-child(1) {\n    transform: rotate(45deg);\n    background-color: #ffc0bc;\n    top: 13px;\n  }\n  .nav-icon-5.open span:nth-child(2) {\n    opacity: 0;\n  }\n  .nav-icon-5.open span:nth-child(3) {\n    transform: rotate(-45deg);\n    top: 13px;\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        bi = n(5667),
-        Ai = function () {
+        ji = n(5667),
+        Ei = n(5127),
+        Ci = function () {
           return (0, er.jsx)(er.Fragment, {
-            children: (0, er.jsxs)("header", {
-              className: "header_header",
-              id: "header",
+            children: (0, er.jsxs)(Oi, {
               children: [
-                (0, er.jsx)("div", {
-                  className: "header_superior",
-                  children: (0, er.jsxs)("div", {
-                    className: "header_superior__container",
-                    children: [
-                      (0, er.jsx)("img", {
-                        className: "header_superior__container--logo",
-                        src: ar,
-                        alt: "logo-afymos",
-                      }),
-                      (0, er.jsx)("h2", {
-                        className: "header_superior__container--title",
-                        children: "Afymos",
-                      }),
-                      (0, er.jsx)("div", {
-                        className: "header_superior__container--social",
-                      }),
-                    ],
-                  }),
+                (0, er.jsxs)(Pi, {
+                  children: [
+                    (0, er.jsxs)(Ti, {
+                      children: [
+                        (0, er.jsx)("img", { src: ar, alt: "logo-afymos" }),
+                        (0, er.jsx)("h1", { children: "Afymos" }),
+                      ],
+                    }),
+                    (0, er.jsxs)(Li, {
+                      children: [
+                        (0, er.jsx)("h2", {
+                          children:
+                            '"Dadme un punto de apoyo y mover\xe9 el mundo." ',
+                        }),
+                        (0, er.jsx)("i", {
+                          children: "Arqu\xedmedes Siracoussa",
+                        }),
+                      ],
+                    }),
+                  ],
                 }),
-                (0, er.jsx)("section", {
-                  className: "slogan",
-                  children: (0, er.jsxs)("div", {
-                    className: "slogan__container",
-                    children: [
-                      (0, er.jsx)("h3", {
-                        className: "slogan__container--phrase",
-                        children:
-                          '"Dadme un punto de apoyo y mover\xe9 el mundo."',
-                      }),
-                      (0, er.jsx)("h5", {
-                        children: "Arqu\xedmedes Siracoussa",
-                      }),
-                    ],
-                  }),
+                (0, er.jsx)(Mi, {
+                  style: {
+                    backgroundImage: "url(".concat(Ei, ")"),
+                    WebkitBackgroundSize: "cover",
+                    backgroundPositionY: "center",
+                    height: "100vh",
+                    backgroundRepeat: "no-repeat",
+                    width: "100%",
+                  },
                 }),
               ],
             }),
           });
-        };
-      var wi,
-        xi,
-        Si,
-        ki,
-        ji,
-        Ei,
-        Ci,
-        Oi,
-        Pi,
-        Ti,
-        Li,
-        Mi,
-        zi,
+        },
+        Oi = $t.header(gi || (gi = ae(["\n  margin: auto;\n"]))),
+        Pi = $t.div(
+          vi ||
+            (vi = ae([
+              "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #ffc0bc;\n  width: 100%;\n  gap: 1.5rem;\n  margin: 1.5rem auto;\n",
+            ]))
+        ),
+        Ti = $t.div(
+          yi ||
+            (yi = ae([
+              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n",
+            ]))
+        ),
+        Li = $t.div(
+          bi ||
+            (bi = ae([
+              "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 1rem;\n\n  h2 {\n    font-size: 2rem;\n    color: #071c2f;\n  }\n\n  i {\n    font-size: 1.5rem;\n    color: #071c2f;\n  }\n",
+            ]))
+        ),
+        Mi = $t.section(Ai || (Ai = ae(["\n\n"])));
+      var zi,
         Ii,
         Di,
         Ri,
@@ -19870,7 +19885,22 @@
         sa,
         la,
         ca,
-        ua = function () {
+        ua,
+        da,
+        fa,
+        pa,
+        ha,
+        ma,
+        ga,
+        va,
+        ya,
+        ba,
+        Aa,
+        wa,
+        xa,
+        Sa,
+        ka,
+        ja = function () {
           var e = a((0, t.useState)(!1), 2),
             n = e[0],
             r = e[1],
@@ -19879,7 +19909,7 @@
             };
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsxs)(da, {
+              (0, er.jsxs)(Ea, {
                 id: "menu-principal",
                 children: [
                   (0, er.jsxs)("h3", {
@@ -19906,7 +19936,7 @@
                         to: "/donaciones",
                         children: "donaciones",
                       }),
-                      (0, er.jsx)(bi.rU, {
+                      (0, er.jsx)(ji.rU, {
                         to: "contacto",
                         spy: !0,
                         smooth: !0,
@@ -19915,7 +19945,7 @@
                         onClick: i,
                         children: "contacto",
                       }),
-                      (0, er.jsx)(bi.rU, {
+                      (0, er.jsx)(ji.rU, {
                         to: "contacto",
                         spy: !0,
                         smooth: !0,
@@ -19928,33 +19958,33 @@
                   }),
                   (0, er.jsx)("div", {
                     className: "burguer",
-                    children: (0, er.jsx)(vi, { clicked: n, handleClick: i }),
+                    children: (0, er.jsx)(Si, { clicked: n, handleClick: i }),
                   }),
-                  (0, er.jsx)(fa, {
+                  (0, er.jsx)(Ca, {
                     className: "initial ".concat(n ? " active" : ""),
                   }),
                 ],
               }),
-              (0, er.jsx)(Ai, {}),
+              (0, er.jsx)(Ci, {}),
             ],
           });
         },
-        da = $t.nav(
-          mi ||
-            (mi = ae([
+        Ea = $t.nav(
+          wi ||
+            (wi = ae([
               "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 5%;\n    font-size: 2.2rem;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 5%;\n    font-weight: 400;\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #ffc0bc;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 1090px) {\n      background-color: #071c2f;\n      height: 45%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 3rem;\n        margin-top: 5%;\n        color: #ffc0bc;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
             ]))
         ),
-        fa = $t.div(
-          gi ||
-            (gi = ae([
+        Ca = $t.div(
+          xi ||
+            (xi = ae([
               "\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n  width: 30%;\n  height: 30%;\n  margin-left: 30px;\n  z-index: -1;\n  transition: all 0.8s ease;\n\n  &.active {\n    border-radius: 0 0 80% 0;\n    top: 0;\n    left: 0;\n    width: 50%;\n    height: 50%;\n  }\n",
             ]))
         ),
-        pa = n(6477),
-        ha = n(7088),
-        ma = n(13),
-        ga = {
+        Oa = n(6477),
+        Pa = n(7088),
+        Ta = n(13),
+        La = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra entidad" },
@@ -19962,9 +19992,9 @@
             "AFYMOS fue fundada en el a\xf1o 1991 y los fines que perseguimos seg\xfan nuestros estatutos son:",
           description:
             "Los fines que la Asociaci\xf3n persigue son de car\xe1cter c\xedvico y social, de promoci\xf3n de los valores constitucionales y de los derechos humanos de las personas con discapacidad intelectual, f\xedsica o sensorial.  ",
-          img: pa,
+          img: Oa,
         },
-        va = {
+        Ma = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n" },
@@ -19972,9 +20002,9 @@
             "La Misi\xf3n de Afymos es \u201ccontribuir, desde su compromiso \xe9tico, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de calidad de vida:",
           description:
             " En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan m\xe1s oportunidades de participar en la sociedad. ",
-          img: ha,
+          img: Pa,
         },
-        ya = {
+        za = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Compromiso \xe9tico y valores" },
@@ -19982,9 +20012,9 @@
             "Para conseguir estas oportunidades, defendemos sus derechos como ciudadanos plenos, y reivindicamos una sociedad m\xe1s justa y solidaria.",
           description:
             "Todo esto no podemos hacerlo de cualquier manera, sino que tiene que estar orientado por nuestro compromiso \xe9tico, por nuestros valores y en la forma de intervenci\xf3n que est\xe1 basada en el Modelo de  Calidad de Calidad de Vida de Schalock y Verdugo.",
-          img: ma,
+          img: Ta,
         },
-        ba = function (e) {
+        Ia = function (e) {
           var t = e.topLine,
             n = e.headline,
             r = e.description,
@@ -20019,90 +20049,89 @@
             }),
           });
         },
-        Aa = (n(1480), n(44)),
-        wa = n(5581),
-        xa = "_blank",
-        Sa = [
+        Da = (n(1480), n(44)),
+        Ra = "_blank",
+        Na = [
           {
             id: 1,
             name: "Organigrama",
             src: $r,
-            target: xa,
+            target: Ra,
             alt: "organigrama",
             url: "/organigrama",
           },
           {
             id: 2,
             name: "Junta Directiva",
-            src: wa,
-            target: xa,
+            src: oi,
+            target: Ra,
             alt: "logo-junta-directiva",
             url: "/junta-directiva",
           },
           {
             id: 3,
             name: "Cuentas anuales 2020",
-            src: Aa,
-            target: xa,
+            src: Da,
+            target: Ra,
             alt: "logo-cuentas-anuales",
             url: "/pdf-cuentas-20",
           },
           {
             id: 4,
             name: "Cuentas anuales 2021",
-            src: Aa,
-            target: xa,
+            src: Da,
+            target: Ra,
             alt: "logo-cuentas-anuales",
             url: "/pdf-cuentas-21",
           },
         ],
-        ka = function () {
-          var e = a((0, t.useState)(Sa), 2),
+        Ba = function () {
+          var e = a((0, t.useState)(Na), 2),
             n = e[0],
             r = e[1],
             i = function (e) {
               r(e.currentTarget);
             };
           return (0, er.jsx)(er.Fragment, {
-            children: (0, er.jsxs)(ja, {
+            children: (0, er.jsxs)(Fa, {
               children: [
                 (0, er.jsx)("h1", { children: "Saber m\xe1s" }),
-                (0, er.jsx)(Ea, {
+                (0, er.jsx)(Wa, {
                   children: n.map(function (e) {
                     return (0,
-                    er.jsxs)(Ca, { value: e.name, children: [(0, er.jsx)("h3", { children: e.name }), (0, er.jsx)(Z, { to: e.url, children: (0, er.jsx)("img", { src: e.src, alt: e.alt, onClick: i }) })] }, e.id);
+                    er.jsxs)(Ha, { value: e.name, children: [(0, er.jsx)("h3", { children: e.name }), (0, er.jsx)(Z, { to: e.url, children: (0, er.jsx)("img", { src: e.src, alt: e.alt, onClick: i }) })] }, e.id);
                   }),
                 }),
               ],
             }),
           });
         },
-        ja = $t.div(
-          wi ||
-            (wi = ae([
+        Fa = $t.div(
+          zi ||
+            (zi = ae([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding-bottom: 5%;\n  padding: 5% 20%;\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
-        Ea = $t.div(
-          xi ||
-            (xi = ae([
+        Wa = $t.div(
+          Ii ||
+            (Ii = ae([
               "\n  display: grid;\n  width: 100%;\n  height: 100%;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: 1fr;\n  margin: auto;\n  justify-content: center;\n",
             ]))
         ),
-        Ca =
+        Ha =
           ($t.div(
-            Si ||
-              (Si = ae([
+            Di ||
+              (Di = ae([
                 "\n  display: flex;\n  width: 50%;\n  position: relative;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0px;\n",
               ]))
           ),
           $t.div(
-            ki ||
-              (ki = ae([
+            Ri ||
+              (Ri = ae([
                 "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 70%;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  margin: 5% 0%;\n  gap: 1rem;\n  :hover {\n    background-color: #ffc0bc;\n  }\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n  img {\n    color: #071c2f;\n    height: 100px;\n    width: 100px;\n    cursor: pointer;\n  }\n  @media (max-width: 440px) {\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
-        Oa = function (e) {
+        Ua = function (e) {
           var n = e.url,
             r = e.alt,
             i = e.target,
@@ -20118,159 +20147,159 @@
               href: n,
               alt: r,
               target: i,
-              children: (0, er.jsx)(Pa, {
-                children: (0, er.jsx)(Ta, {
-                  children: (0, er.jsx)(La, { src: o }),
+              children: (0, er.jsx)(Va, {
+                children: (0, er.jsx)(Ga, {
+                  children: (0, er.jsx)(Ya, { src: o }),
                 }),
               }),
             }),
           });
         },
-        Pa = $t.div(
-          ji ||
-            (ji = ae([
+        Va = $t.div(
+          Ni ||
+            (Ni = ae([
               "\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 50%;\n  gap: 2rem;\n  white-space: nowrap;\n\n  @media (max-width: 440px) {\n  }\n",
             ]))
         ),
-        Ta = $t.div(
-          Ei ||
-            (Ei = ae([
+        Ga = $t.div(
+          Bi ||
+            (Bi = ae([
               "\n  background: white;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
             ]))
         ),
-        La = $t.img(
-          Ci ||
-            (Ci = ae([
+        Ya = $t.img(
+          Fi ||
+            (Fi = ae([
               "\n  width: 100%;\n  height: 100%;\n  object-fit: center;\n",
             ]))
         ),
-        Ma =
+        Qa =
           ($t.div(
-            Oi ||
-              (Oi = ae([
+            Wi ||
+              (Wi = ae([
                 "\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 80%;\n  gap: 1rem;\n  white-space: nowrap;\n",
               ]))
           ),
           $t.div(
-            Pi ||
-              (Pi = ae([
+            Hi ||
+              (Hi = ae([
                 "\n  backface-visibility: hidden;\n  background: #e0e0e0;\n  border-radius: 10%;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
               ]))
           ),
           $t.img(
-            Ti || (Ti = ae(["\n  width: 100%;\n  object-fit: center;\n"]))
+            Ui || (Ui = ae(["\n  width: 100%;\n  object-fit: center;\n"]))
           ),
           n(139)),
-        za = n(3721),
-        Ia = n(8019),
-        Da = n(6725),
-        Ra = n(9905),
-        Na = n(2951),
-        Ba = n(2114),
-        Fa = n(3460),
-        Wa = "_blank",
-        Ha = [
+        Za = n(3721),
+        _a = n(8019),
+        qa = n(6725),
+        Ja = n(9905),
+        Xa = n(2951),
+        Ka = n(2114),
+        $a = n(3460),
+        eo = "_blank",
+        to = [
           {
             id: 1,
             name: "Fundaci\xf3n ONCE",
-            src: Fa,
-            target: Wa,
+            src: $a,
+            target: eo,
             alt: "fundaci\xf3n-once",
             url: "https://www.fundaciononce.es/es",
           },
           {
             id: 2,
             name: "Ayuntamiento de Socu\xe9llamos",
-            src: Ma,
-            target: Wa,
+            src: Qa,
+            target: eo,
             alt: "logo-ayuntamiento-de-socuellamos",
             url: "https://socuellamos.es/",
           },
           {
             id: 3,
             name: "Junta de Comunidades de Castilla-La Mancha",
-            src: za,
-            target: Wa,
+            src: Za,
+            target: eo,
             alt: "logo-junta-comunidades-castilla-la-mancha",
             url: "https://www.jccm.es/",
           },
           {
             id: 4,
             name: "Diputaci\xf3n de Ciudad Real",
-            src: Ia,
-            target: Wa,
+            src: _a,
+            target: eo,
             alt: "logo-diputacion-ciudad-real",
             url: "https://www.dipucr.es/",
           },
           {
             id: 5,
             name: "Uni\xf3n Europea",
-            src: Da,
-            target: Wa,
+            src: qa,
+            target: eo,
             alt: "logo-union-europea",
             url: "https://european-union.europa.eu/index_es/",
           },
           {
             id: 6,
             name: "Plena Inclusi\xf3n Castilla La-Mancha",
-            src: Ba,
-            target: Wa,
+            src: Ka,
+            target: eo,
             alt: "logo-plena-inclusion",
             url: "https://www.plenainclusionclm.org/",
           },
           {
             id: 7,
             name: "Fundaci\xf3n Globalcaja",
-            src: Ra,
-            target: Wa,
+            src: Ja,
+            target: eo,
             alt: "logo-globalcaja",
             url: "https://fundacionglobalcajahxxii.com/",
           },
           {
             id: 8,
             name: "Fundaci\xf3n Globalcaja",
-            src: Na,
-            target: Wa,
+            src: Xa,
+            target: eo,
             alt: "logo-agradecimiemto-a-colaboradores",
             url: "",
           },
         ],
-        Ua = function () {
-          var e = a((0, t.useState)(Ha), 1)[0];
+        no = function () {
+          var e = a((0, t.useState)(to), 1)[0];
           return (0, er.jsx)(er.Fragment, {
-            children: (0, er.jsxs)(Va, {
+            children: (0, er.jsxs)(ro, {
               children: [
                 (0, er.jsx)("section", {
                   children: (0, er.jsx)("h2", { children: "Cofinanciaciones" }),
                 }),
-                (0, er.jsx)(Ga, {
+                (0, er.jsx)(io, {
                   children: e.map(function (e) {
                     return (0,
-                    er.jsx)(Oa, { src: e.src, alt: e.alt, url: e.url, target: e.target }, e.id);
+                    er.jsx)(Ua, { src: e.src, alt: e.alt, url: e.url, target: e.target }, e.id);
                   }),
                 }),
               ],
             }),
           });
         },
-        Va = $t.div(
-          Li ||
-            (Li = ae([
+        ro = $t.div(
+          Vi ||
+            (Vi = ae([
               "\n  background-color: white;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 50px;\n  margin: 0 0 0px 0;\n\n  section {\n    background-color: #071c2f;\n    height: 80px;\n    width: 100%;\n    color: #ffc0bc;\n    display: grid;\n    place-content: center;\n  }\n\n  h2 {\n    font-size: 28px;\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 0px;\n\n    section {\n      height: 60px;\n    }\n    h2 {\n      font-size: 24px;\n    }\n  }\n",
             ]))
         ),
-        Ga = $t.div(
-          Mi ||
-            (Mi = ae([
+        io = $t.div(
+          Gi ||
+            (Gi = ae([
               "\n  background-color: white;\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  justify-content: center;\n  flex-direction: row-reverse;\n  align-items: center;\n  gap: 50px;\n\n  @media (max-width: 768px) {\n    grid-template-columns: repeat(3, 1fr);\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 5px;\n    padding: 30px 0;\n  }\n",
             ]))
         ),
-        Ya = function () {
-          return (0, er.jsx)(Qa, {
+        ao = function () {
+          return (0, er.jsx)(oo, {
             id: "demo",
-            children: (0, er.jsxs)(Za, {
+            children: (0, er.jsxs)(so, {
               children: [
-                (0, er.jsxs)(_a, {
+                (0, er.jsxs)(lo, {
                   children: [
                     (0, er.jsx)("p", { children: "Un d\xeda en Afymos" }),
                     (0, er.jsx)("p", {
@@ -20283,7 +20312,7 @@
                     }),
                   ],
                 }),
-                (0, er.jsx)(qa, {
+                (0, er.jsx)(co, {
                   children: (0, er.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -20299,48 +20328,48 @@
             }),
           });
         },
-        Qa = $t.div(
-          zi ||
-            (zi = ae([
+        oo = $t.div(
+          Yi ||
+            (Yi = ae([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        Za = $t.div(
-          Ii ||
-            (Ii = ae([
+        so = $t.div(
+          Qi ||
+            (Qi = ae([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        _a = $t.div(
-          Di ||
-            (Di = ae([
+        lo = $t.div(
+          Zi ||
+            (Zi = ae([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n\n  p:nth-child(1) {\n    font-size: 1.8rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.2rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        qa = $t.div(Ri || (Ri = ae(["\n  margin: auto;\n"]))),
-        Ja = function () {
+        co = $t.div(_i || (_i = ae(["\n  margin: auto;\n"]))),
+        uo = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
               (0, er.jsx)(or, { title: "Nosotros" }),
-              (0, er.jsx)(ba, J(J({}, ga), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, va), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, ya), {}, { inverse: !0 })),
-              (0, er.jsx)(Ya, {}),
-              (0, er.jsx)(ka, {}),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, La), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Ma), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, za), {}, { inverse: !0 })),
+              (0, er.jsx)(ao, {}),
+              (0, er.jsx)(Ba, {}),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        Xa = function (e) {
+        fo = function (e) {
           var n = a((0, t.useState)(!1), 2),
             r = n[0],
             i = n[1];
-          return (0, er.jsx)(Ka, {
+          return (0, er.jsx)(po, {
             id: "demo",
-            children: (0, er.jsxs)($a, {
+            children: (0, er.jsxs)(ho, {
               children: [
-                (0, er.jsxs)(eo, {
+                (0, er.jsxs)(mo, {
                   children: [
                     (0, er.jsx)("p", { children: "Proyecto CREA;" }),
                     (0, er.jsx)("p", { children: "Nuestra filosof\xeda" }),
@@ -20361,7 +20390,7 @@
                     }),
                   ],
                 }),
-                (0, er.jsx)(to, {
+                (0, er.jsx)(go, {
                   children: (0, er.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -20377,28 +20406,25 @@
             }),
           });
         },
-        Ka = $t.div(
-          Ni ||
-            (Ni = ae([
-              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
-            ]))
+        po = $t.div(
+          qi || (qi = ae(["\n  width: 100%;\n  background: white;\n\n"]))
         ),
-        $a = $t.div(
-          Bi ||
-            (Bi = ae([
+        ho = $t.div(
+          Ji ||
+            (Ji = ae([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 2rem;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        eo = $t.div(
-          Fi ||
-            (Fi = ae([
-              "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    font-size: 2rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n  }\n",
+        mo = $t.div(
+          Xi ||
+            (Xi = ae([
+              "\n\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    margin-top: 7%;\n    font-size: 2rem;\n    font-style: italic;\n    color: #071c2f;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n    color: #071c2f;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n    color: #071c2f;\n  }\n",
             ]))
         ),
-        to = $t.div(Wi || (Wi = ae(["\n  margin: auto;\n"]))),
-        no = n(6416),
-        ro = n(1233),
-        io = {
+        go = $t.div(Ki || (Ki = ae(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
+        vo = n(6416),
+        yo = n(1233),
+        bo = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "El Servicio de Capacitaci\xf3n Afymos" },
@@ -20406,9 +20432,9 @@
             "Es un servicio de atenci\xf3n diurna que tienen como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
           description:
             "Facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones).",
-          img: no,
+          img: vo,
         },
-        ao = {
+        Ao = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -20418,9 +20444,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodolog\xeda detrabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          img: ro,
+          img: yo,
         },
-        oo = function () {
+        wo = function () {
           var e = a((0, t.useState)(!1), 2),
             n = e[0],
             r = e[1];
@@ -20429,7 +20455,7 @@
               window.scrollY > 100 ? r(!0) : r(!1);
             });
           }, []);
-          return (0, er.jsx)(so, {
+          return (0, er.jsx)(xo, {
             style: { display: n ? "block" : "none" },
             onClick: function () {
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -20438,28 +20464,28 @@
             children: (0, er.jsx)(kn, {}),
           });
         },
-        so = $t.button(
-          Hi ||
-            (Hi = ae([
+        xo = $t.button(
+          $i ||
+            ($i = ae([
               "\n  position: fixed;\n  bottom: 40px;\n  z-index: 1;\n  cursor: pointer;\n  color: grey;\n  right: 2%;\n  background: none;\n  border-radius: 50px;\n  padding: 0px;\n  border: none;\n  opacity: 0.7;\n  font-size: 4rem;\n  margin-right: 1.5rem;\n\n  @media (max-width: 440px) {\n    font-size: 3rem;\n  }\n",
             ]))
         ),
-        lo = function () {
+        So = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Servicio de Capacitaci\xf3n" }),
-              (0, er.jsx)(ba, J(J({}, io), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, ao), {}, { reverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, bo), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Ao), {}, { reverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        co = n(1855),
-        uo = n(5064),
-        fo = n(5238),
-        po = {
+        ko = n(1855),
+        jo = n(5064),
+        Eo = n(5238),
+        Co = {
           id: "centroDiaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20468,9 +20494,9 @@
             "El Centro de D\xeda Afymos es un recurso social de atenci\xf3n diurna dirigido a prestar atenci\xf3n especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
           description:
             "Pretendemos favorecer la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente \xedndole, temporales o permanentes, de diferente intensidad y frecuencia.",
-          img: co,
+          img: ko,
         },
-        ho = {
+        Oo = {
           id: "centroDiaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20481,9 +20507,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Fomentamos la participaci\xf3n en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social, y contribuyendo a mejorar su calidad de vida. ",
-          img: uo,
+          img: jo,
         },
-        mo = {
+        Po = {
           id: "centroDiaDataThree",
           reverse: !1,
           inverse: !1,
@@ -20494,14 +20520,14 @@
             "Dise\xf1amos un plan personal de apoyos y su plan de futuro personal, donde se recogen los principales objetivos a conseguir en diferentes \xe1mbitos de su vida",
           description:
             "Potenciaremos la utilizaci\xf3n de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
-          img: fo,
+          img: Eo,
         },
-        go = function () {
-          return (0, er.jsx)(vo, {
+        To = function () {
+          return (0, er.jsx)(Lo, {
             id: "demo",
-            children: (0, er.jsxs)(yo, {
+            children: (0, er.jsxs)(Mo, {
               children: [
-                (0, er.jsxs)(bo, {
+                (0, er.jsxs)(zo, {
                   children: [
                     (0, er.jsx)("p", { children: "Centro de d\xeda Afymos" }),
                     (0, er.jsx)("p", {
@@ -20513,7 +20539,7 @@
                     }),
                   ],
                 }),
-                (0, er.jsx)(Ao, {
+                (0, er.jsx)(Io, {
                   children: (0, er.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -20529,43 +20555,43 @@
             }),
           });
         },
-        vo = $t.div(
-          Ui ||
-            (Ui = ae([
+        Lo = $t.div(
+          ea ||
+            (ea = ae([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        yo = $t.div(
-          Vi ||
-            (Vi = ae([
+        Mo = $t.div(
+          ta ||
+            (ta = ae([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        bo = $t.div(
-          Gi ||
-            (Gi = ae([
+        zo = $t.div(
+          na ||
+            (na = ae([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n\n  p:nth-child(1) {\n    font-size: 1.8rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.2rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        Ao = $t.div(Yi || (Yi = ae(["\n  margin: auto;\n"]))),
-        wo = function () {
+        Io = $t.div(ra || (ra = ae(["\n  margin: auto;\n"]))),
+        Do = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Centro de D\xeda" }),
-              (0, er.jsx)(go, {}),
-              (0, er.jsx)(ba, J(J({}, po), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, ho), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, mo), {}, { inverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(To, {}),
+              (0, er.jsx)(Ia, J(J({}, Co), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Oo), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Po), {}, { inverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        xo = n(6203),
-        So = n(7994),
-        ko = n(8569),
-        jo = {
+        Ro = n(6203),
+        No = n(7994),
+        Bo = n(8569),
+        Fo = {
           id: "centroDiversidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -20574,9 +20600,9 @@
             "Cuenta con espacio \xfatil de 803,16 m\xb2 dividido en dos plantas.",
           description:
             "Nuestro Centro es un edificio que engloba m\xfaltiples actuaciones dirigidas a mejorar la Calidad de Vida de las personas con discapacidad. El edificio donde est\xe1 ubicado el nuestros servicios y recursos se denomina 'Centro de Atenci\xf3n a la Diversidad Funcional' y cuenta con unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el a\xf1o obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun as\xed seguiremos adapt\xe1ndolo para favorecer la orientaci\xf3n y la comunicaci\xf3n para personas con especiales dificultades en estos aspectos.",
-          img: xo,
+          img: Ro,
         },
-        Eo = {
+        Wo = {
           id: "centroDiversidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20585,9 +20611,9 @@
             "Contamos con numerosas salas adaptadas para llevar a cabo todos los servicios terapeuticos y de formaci\xf3n de ofrecemos",
           description:
             "Afymos est\xe1 acreditado como Centro de Formaci\xf3n para impartir Formaci\xf3n Profesional para el Empleo en Castilla-La Mancha, dependiente de la Consejer\xeda de Empresas, Econom\xeda y Empleo. Tiene tambi\xe9n como finalidad la cualificaci\xf3n de los profesionales del Espacio de Atenci\xf3n a la Diversidad Funcional, personas con discapacidad intelectual, formaci\xf3n para la comunidad, ponencias y convertirnos en un espacio en el que poder compartir buenas pr\xe1cticas y experiencias en la Atenci\xf3n a la Diversidad Funcional, llegando a ser centro pionero en este \xe1mbito.",
-          img: ko,
+          img: Bo,
         },
-        Co = {
+        Ho = {
           id: "centroDiversidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -20597,47 +20623,47 @@
           headline: "Centro de Atenci\xf3n a la Diversidad Funcional",
           description:
             "Este espacio, de manera global, se define como un conjunto de recursos especializados desde donde se ofrecen servicios y programas personalizados de capacitaci\xf3n y habilitaci\xf3n  individual, de apoyo a la independencia de las personas con diversidad funcional  en todos los \xe1mbitos de la vida cotidiana, dando a cada persona  las herramientas que precise para desarrollarse en todas las dimensiones del  Modelo de Calidad de Vida de Schalock y Verdugo, de manera que tome el control de su propia vida, favoreciendo as\xed el empoderamiento de las personas con Discapacidad Intelectual/Diversidad Funcional/ Especificidad/Dependencia.",
-          img: So,
+          img: No,
         },
-        Oo =
+        Uo =
           (n(9836),
           $t.section(
-            Qi ||
-              (Qi = ae([
+            ia ||
+              (ia = ae([
                 "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 10px;\n\n  @media (min-width: 1090px) {\n    margin: 100px;\n  }\n",
               ]))
           ),
           $t.div(
-            Zi ||
-              (Zi = ae([
+            aa ||
+              (aa = ae([
                 "\n  box-sizing: border-box;\n  display: flex;\n  position: relative;\n  width: 60%;\n  height: 100%;\n  flex-direction: column;\n  background-color: #071c2f;\n  border-radius: 5px;\n\n  @media (min-width: 768px) {\n    height: 50%;\n    width: 100%;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n  }\n\n  @media (min-width: 1090px) {\n    flex-direction: row-reverse;\n  }\n",
               ]))
           ),
           $t.div(
-            _i ||
-              (_i = ae([
+            oa ||
+              (oa = ae([
                 "\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  width: 100%;\n  overflow: hidden;\n  object-fit: cover;\n  object-position: center;\n",
               ]))
           ),
-          $t.div(qi || (qi = ae([""]))),
+          $t.div(sa || (sa = ae([""]))),
           $t.div(
-            Ji ||
-              (Ji = ae([
+            la ||
+              (la = ae([
                 "\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 90%;\n  top: 0px;\n  gap: 30px;\n  padding: 45px 0;\n  z-index: 20;\n  height: 50%;\n\n  img {\n    width: 150px;\n    height: 150px;\n    border-radius: 10%;\n  }\n  h4 {\n    font-size: 22px;\n    text-decoration: none;\n    color: #ffc0bc;\n  }\n\n  h4:first-letter {\n    font-size: 150%;\n    font-weight: bold;\n  }\n\n  @media (min-width: 768px) {\n    width: 60%;\n    height: 100%;\n    gap: 30px;\n    flex-direction: column;\n\n    i,\n    h4 {\n      font-size: 28px;\n    }\n  }\n\n  @media (min-width: 1090px) {\n  }\n",
               ]))
           ),
           $t.div(
-            Xi ||
-              (Xi = ae([
+            ca ||
+              (ca = ae([
                 "\n  position: relative;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  align-items: center;\n  padding-bottom: 10px;\n  flex-direction: column;\n  gap: 30px;\n",
               ]))
           ),
           n(5266)),
-        Po = n(5910),
-        To = n(5689),
-        Lo = n(4275),
-        Mo = n(7505),
-        zo = function (e) {
+        Vo = n(5910),
+        Go = n(5689),
+        Yo = n(4275),
+        Qo = n(7505),
+        Zo = function (e) {
           return (0, er.jsx)(er.Fragment, {
             children: (0, er.jsx)("section", {
               children: (0, er.jsxs)("div", {
@@ -20666,15 +20692,15 @@
                     children: [
                       (0, er.jsx)("div", {
                         class: "item-slide",
-                        children: (0, er.jsx)("img", { src: Oo, alt: e.alt }),
+                        children: (0, er.jsx)("img", { src: Uo, alt: e.alt }),
                       }),
                       (0, er.jsx)("div", {
                         class: "item-slide",
-                        children: (0, er.jsx)("img", { src: Po, alt: e.alt }),
+                        children: (0, er.jsx)("img", { src: Vo, alt: e.alt }),
                       }),
                       (0, er.jsx)("div", {
                         class: "item-slide",
-                        children: (0, er.jsx)("img", { src: To, alt: e.alt }),
+                        children: (0, er.jsx)("img", { src: Go, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20684,17 +20710,17 @@
                       (0, er.jsx)("label", {
                         class: "pagination-item",
                         for: "1",
-                        children: (0, er.jsx)("img", { src: Po, alt: e.alt }),
+                        children: (0, er.jsx)("img", { src: Vo, alt: e.alt }),
                       }),
                       (0, er.jsx)("label", {
                         class: "pagination-item",
                         for: "2",
-                        children: (0, er.jsx)("img", { src: Lo, alt: e.alt }),
+                        children: (0, er.jsx)("img", { src: Yo, alt: e.alt }),
                       }),
                       (0, er.jsx)("label", {
                         class: "pagination-item",
                         for: "3",
-                        children: (0, er.jsx)("img", { src: Mo, alt: e.alt }),
+                        children: (0, er.jsx)("img", { src: Qo, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20703,23 +20729,23 @@
             }),
           });
         },
-        Io = function () {
+        _o = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Nuestro Centro" }),
-              (0, er.jsx)(ba, J(J({}, jo), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Eo), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Co), {}, { inverse: !0 })),
-              (0, er.jsx)(zo, {}),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, Fo), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Wo), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Ho), {}, { inverse: !0 })),
+              (0, er.jsx)(Zo, {}),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        Do = n(7499),
-        Ro = n(8602),
-        No = {
+        qo = n(7499),
+        Jo = n(8602),
+        Xo = {
           id: "creaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20728,9 +20754,9 @@
             " financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
           description:
             "Desde 2017, nuestra Asociaci\xf3n es entidad promotora del Proyecto NUEVO CREA, programa dual de formaci\xf3n y empleo para personas con discapacidad intelectual.",
-          img: Do,
+          img: qo,
         },
-        Bo = {
+        Ko = {
           id: "creaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20739,14 +20765,14 @@
             "Durante 6 meses, de abril a septiembre, 8 personas con discapacidad trabajan en 7 empresas locales;",
           description:
             "Colegio Concertado Virgen de Loreto, Cabezuelo Foods, Grupo Asesor OTS, Josmoral, Transportes F\xe9lix e hijos, Cooperativa Cristo de la Vega y Afymos Asociaci\xf3n, con un contrato de formaci\xf3n en alternancia con el empleo. Simult\xe1neamente, se imparte una especialidad formativa de \u201cOperaciones Auxiliares en el Departamento de Administraci\xf3n y Recepci\xf3n para Personas con Discapacidad Intelectual\u201d.",
-          img: Ro,
+          img: Jo,
         },
-        Fo = function () {
-          return (0, er.jsx)(Wo, {
+        $o = function () {
+          return (0, er.jsx)(es, {
             id: "demo",
-            children: (0, er.jsxs)(Ho, {
+            children: (0, er.jsxs)(ts, {
               children: [
-                (0, er.jsxs)(Uo, {
+                (0, er.jsxs)(ns, {
                   children: [
                     (0, er.jsx)("p", { children: "Proyecto CREA;" }),
                     (0, er.jsx)("p", { children: "Nuestra filosof\xeda" }),
@@ -20756,7 +20782,7 @@
                     }),
                   ],
                 }),
-                (0, er.jsx)(Vo, {
+                (0, er.jsx)(rs, {
                   children: (0, er.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -20772,42 +20798,42 @@
             }),
           });
         },
-        Wo = $t.div(
-          Ki ||
-            (Ki = ae([
+        es = $t.div(
+          ua ||
+            (ua = ae([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        Ho = $t.div(
-          $i ||
-            ($i = ae([
+        ts = $t.div(
+          da ||
+            (da = ae([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        Uo = $t.div(
-          ea ||
-            (ea = ae([
+        ns = $t.div(
+          fa ||
+            (fa = ae([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    font-size: 2rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        Vo = $t.div(ta || (ta = ae(["\n  margin: auto;\n"]))),
-        Go = function () {
+        rs = $t.div(pa || (pa = ae(["\n  margin: auto;\n"]))),
+        is = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Proyecto CREA 2023" }),
-              (0, er.jsx)(ba, J(J({}, No), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Bo), {}, { reverse: !0 })),
-              (0, er.jsx)(Fo, {}),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, Xo), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Ko), {}, { reverse: !0 })),
+              (0, er.jsx)($o, {}),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        Yo = n(6626),
-        Qo = n(266),
-        Zo = n(7854),
-        _o = {
+        as = n(6626),
+        os = n(266),
+        ss = n(7854),
+        ls = {
           id: "diagnosticoDataOne",
           reverse: !1,
           inverse: !1,
@@ -20818,9 +20844,9 @@
             "Este servicio tiene como objetivo valoraci\xf3n con tests estandarizados y pruebas psicom\xe9tricas objetivas en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
           description:
             "Nuestra valoraci\xf3n se lleva a cabo con tests estandarizados y pruebas psicom\xe9tricas como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
-          img: Yo,
+          img: as,
         },
-        qo = {
+        cs = {
           id: "diagnosticoDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20828,9 +20854,9 @@
           headline: "\xbfC\xf3mo trabajamos?",
           description:
             "Se har\xe1n valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
-          img: Zo,
+          img: ss,
         },
-        Jo = {
+        us = {
           id: "diagnosticoDataThree",
           reverse: !1,
           inverse: !1,
@@ -20838,22 +20864,22 @@
           headline: "Poner nombre a las necesidades de las personas",
           description:
             "Para ello, nuestros profesionales realizar\xe1n una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
-          img: Qo,
+          img: os,
         },
-        Xo = function () {
+        ds = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Valoraci\xf3n y diagnostico" }),
-              (0, er.jsx)(ba, J(J({}, _o), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, qo), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Jo), {}, { inverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, ls), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, cs), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, us), {}, { inverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        Ko = {
+        fs = {
           id: "donacionDataOne",
           reverse: !1,
           inverse: !1,
@@ -20870,21 +20896,21 @@
           alt: "ir a ruralvia",
           target: "_blank",
         },
-        $o = function () {
+        ps = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Donaciones" }),
-              (0, er.jsx)(Jr, J(J({}, Ko), {}, { inverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Jr, J(J({}, fs), {}, { inverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        es = n(7231),
-        ts = n(2786),
-        ns = n(1077),
-        rs = {
+        hs = n(7231),
+        ms = n(2786),
+        gs = n(1077),
+        vs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20894,44 +20920,44 @@
             "Ofrecemos asesoramiento y apoyo a familias de personas con cualquier tipo de discapacidad",
           description:
             "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas espec\xedficas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
-          img: es,
+          img: hs,
         },
-        is = {
+        ys = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
           headline: "Apoyos que presta este servicio:",
           description:
             "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atenci\xf3n psicol\xf3gica, adem\xe1s, proporciamos informaci\xf3n y orientaci\xf3n tras un estudio minucioso sobre las necesidades de cada caso",
-          img: ns,
+          img: gs,
         },
-        as = {
+        bs = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Consulta sin compromiso a nuestros profesionales" },
           headline: "A qui\xe9n va dirigido:",
           description:
             "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
-          img: ts,
+          img: ms,
         },
-        os = function () {
+        As = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Servicio de atenci\xf3n a familias" }),
-              (0, er.jsx)(ba, J(J({}, rs), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, is), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, as), {}, { inverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, vs), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, ys), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, bs), {}, { inverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        ss = n(9709),
-        ls = n(5446),
-        cs = n(6723),
-        us = n(2087),
-        ds = {
+        ws = n(9709),
+        xs = n(5446),
+        Ss = n(6723),
+        ks = n(2087),
+        js = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20941,9 +20967,9 @@
             "Estamos homologados por La Junta de Castilla la Mancha  en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
           description:
             "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos en personas con discapacidad intelectual.",
-          img: ss,
+          img: ws,
         },
-        fs = {
+        Es = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -20953,9 +20979,9 @@
             "Este certificado fue realizado por 15 j\xf3venes menores de 30 a\xf1os. Debemos destacar que 6 de estos chicos ten\xedan discapacidad intelectual, y gracias a los apoyos brindados por los profesionales, lograron terminarlo con \xe9xito.",
           description:
             "Finalmente reciben un incentivo econ\xf3mico obtenido de las ganancias por las ventas de los productos elaborados..",
-          img: us,
+          img: ks,
         },
-        ps = {
+        Cs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20965,9 +20991,9 @@
             "Esta formaci\xf3n tiene como objetivo el intervenir en el entorno personal y sociolaboral de las personas con discapacidad aplicando la Metodolog\xeda de Empleo con Apoyo para facilitar el acceso y mantenimiento del puesto de trabajo.",
           description:
             "Realizamos el entrenamiento de las habilidades sociolaborales necesarias para la inserci\xf3n, manteniendo contactos con el entorno y colaborando en el an\xe1lisis de puestos de trabajo.",
-          img: ls,
+          img: xs,
         },
-        hs = {
+        Os = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "PROGRAMA CREA" },
@@ -20975,29 +21001,29 @@
             "Nuestro Proyecto, \u201cPromoviendo la integraci\xf3n sociolaboral de las personas con discapacidad intelectual\u201d, tiene como objetivo la inserci\xf3n plena de las personas con discapacidad en la comunidad en la que viven.",
           description:
             "Son 9 las personas contratadas por 8 empresas de la localidad durante 9 meses y nuestra labor consiste en ofrecer empleo con apoyo y formaci\xf3n inherente al puesto de trabajo a trav\xe9s del trabajo de una T\xe9cnico de Orientaci\xf3n e Integraci\xf3n Laboral",
-          img: cs,
+          img: Ss,
         },
-        ms = function () {
+        Ps = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, {
                 title: "Centro de Formaci\xf3n",
                 id: "/formacion",
               }),
-              (0, er.jsx)(ba, J(J({}, ds), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, fs), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, ps), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, hs), {}, { reverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, js), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Es), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Cs), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Os), {}, { reverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        gs = n(3755),
-        vs = n(3268),
-        ys = n(9242),
-        bs = {
+        Ts = n(3755),
+        Ls = n(3268),
+        Ms = n(9242),
+        zs = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n: AYUDARTE" },
@@ -21005,9 +21031,9 @@
             "Este programa tiene la finalidad de ofrecer Servicios Terap\xe9uticos de diferentes disciplinas con el fin de mejorar la calidad de vida de las personas.",
           description:
             "Contamos con profesionales de diferentes disciplinas para intervenir seg\xfan las necesidades de los usuarios y actualmente contamos con las los siguientes servicios terap\xe9uticos.",
-          img: gs,
+          img: Ts,
         },
-        As = {
+        Is = {
           id: "logopedia",
           reverse: !1,
           inverse: !0,
@@ -21020,7 +21046,7 @@
             "Realizamos una entrevista con la familia y una evaluaci\xf3n inicial de la cual se elabora unos objetivos y se dise\xf1a una programaci\xf3n individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duraci\xf3n de 30-45 minutos, dependiente de las necesidades de cada paciente.",
           img: Ar,
         },
-        ws = {
+        Ds = {
           id: "fisioterapia",
           reverse: !1,
           inverse: !1,
@@ -21033,7 +21059,7 @@
             "En nuestra terapia llevaremos a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizaremos distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
           img: Sr,
         },
-        xs = {
+        Rs = {
           id: "terapia-ocupacional",
           reverse: !1,
           inverse: !0,
@@ -21046,7 +21072,7 @@
             "Enfoco mi trabajo en una intervenci\xf3n significativa con objetos pautados previamente con la persona y su familia, realizando actividades con prop\xf3sito claro y definido",
           img: br,
         },
-        Ss = {
+        Ns = {
           id: "neuropsicologia",
           reverse: !1,
           inverse: !1,
@@ -21057,9 +21083,9 @@
             "la neuropsicolog\xeda estudia las bases neuroanat\xf3micas en relaci\xf3n alos procesos mentales como: atenci\xf3n, emoci\xf3n, memoria, lenguaje y percepci\xf3n",
           description:
             "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
-          img: vs,
+          img: Ls,
         },
-        ks = {
+        Bs = {
           id: "psicopedagogia",
           reverse: !0,
           inverse: !1,
@@ -21072,7 +21098,7 @@
             "Como psicopedagoga\xa0asesoro, eval\xfao, realizo informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y dise\xf1o propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
           img: xr,
         },
-        js = {
+        Fs = {
           id: "auditiva",
           reverse: !1,
           inverse: !1,
@@ -21085,7 +21111,7 @@
             "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopat\xeda para comprobar el estado del canal auditivo, audiometr\xeda para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
           img: kr,
         },
-        Es = {
+        Ws = {
           id: "visual",
           reverse: !1,
           inverse: !1,
@@ -21096,9 +21122,9 @@
             "La terapia visual consiste en la repetici\xf3n de una serie de ejercicios que consiguen crear nuevas conexiones neurol\xf3gicas y mejorar habilidades visuales alteradas.",
           description:
             "Evaluamos el desarrollo y funcionamiento de la visi\xf3n desde el nacimiento. Para ello se analizan habilidades como la acomodaci\xf3n, binocularidad (visi\xf3n en 3D), movimientos oculares y la percepci\xf3n visual..",
-          img: ys,
+          img: Ms,
         },
-        Cs = {
+        Hs = {
           id: "psicologia",
           reverse: !1,
           inverse: !1,
@@ -21111,27 +21137,27 @@
             "A nivel psicoeducativo podemos ayudar a las personas a entender sus propios procesos, situaciones personales, patolog\xedas, etc, para facilitar su propia adaptaci\xf3n al medio y mitigar sus estados de ansiedad e incertidumbre.",
           img: wr,
         },
-        Os = n(7710),
-        Ps = n(9954),
-        Ts = n(4395),
-        Ls = n(8324),
-        Ms = n(2487),
-        zs = n(2777),
-        Is = "_blank",
-        Ds = [
+        Us = n(7710),
+        Vs = n(9954),
+        Gs = n(4395),
+        Ys = n(8324),
+        Qs = n(2487),
+        Zs = n(2777),
+        _s = "_blank",
+        qs = [
           {
             id: "logopedia",
             name: "Logopedia",
-            src: Ts,
-            target: Is,
+            src: Gs,
+            target: _s,
             alt: "pictograma-logopedia",
             url: "logopedia",
           },
           {
             id: "fisioterapia",
             name: "Fisioterapia",
-            src: Ps,
-            target: Is,
+            src: Vs,
+            target: _s,
             alt: "pictograma-fisioterapia",
             url: "fisioterapia",
           },
@@ -21139,31 +21165,31 @@
             id: "terapia-ocupacional",
             name: "Terapia Ocupacional",
             src: n(7238),
-            target: Is,
+            target: _s,
             alt: "pictograma-terapia-ocupacional",
             url: "terapia-ocupacional",
           },
           {
             id: "psicopedagogia",
             name: "Psicopedagog\xeda",
-            src: zs,
-            target: Is,
+            src: Zs,
+            target: _s,
             alt: "pictograma-psicopedagogia",
             url: "psicopedagogia",
           },
           {
             id: "neuropsicologia",
             name: "Neuropsicologia",
-            src: Ls,
-            target: Is,
+            src: Ys,
+            target: _s,
             alt: "pictograma-psicologia",
             url: "neuropsicologia",
           },
           {
             id: "auditiva",
             name: "Auditiva",
-            src: Os,
-            target: Is,
+            src: Us,
+            target: _s,
             alt: "terapia-auditiva",
             url: "auditiva",
           },
@@ -21171,86 +21197,86 @@
             id: "visual",
             name: "Visual",
             src: n(8148),
-            target: Is,
+            target: _s,
             alt: "terapia-auditiva",
             url: "visual",
           },
           {
             id: "psicologia",
             name: "Psicologia",
-            src: Ms,
-            target: Is,
+            src: Qs,
+            target: _s,
             alt: "terapia-psicologia",
             url: "psicologia",
           },
         ],
-        Rs = function () {
-          var e = a((0, t.useState)(Ds), 2),
+        Js = function () {
+          var e = a((0, t.useState)(qs), 2),
             n = e[0];
           e[1];
           return (0, er.jsx)(er.Fragment, {
-            children: (0, er.jsxs)(Ns, {
+            children: (0, er.jsxs)(Xs, {
               children: [
                 (0, er.jsx)("h1", { children: "Nuestras Terapias" }),
-                (0, er.jsx)(Bs, {
+                (0, er.jsx)(Ks, {
                   children: n.map(function (e) {
                     return (0,
-                    er.jsxs)(Fs, { value: e.name, children: [(0, er.jsx)("h3", { children: e.name }), (0, er.jsx)(bi.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, er.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
+                    er.jsxs)($s, { value: e.name, children: [(0, er.jsx)("h3", { children: e.name }), (0, er.jsx)(ji.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, er.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
                   }),
                 }),
               ],
             }),
           });
         },
-        Ns = $t.div(
-          na ||
-            (na = ae([
+        Xs = $t.div(
+          ha ||
+            (ha = ae([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1 {\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
-        Bs = $t.div(
-          ra ||
-            (ra = ae([
+        Ks = $t.div(
+          ma ||
+            (ma = ae([
               "\n  display: grid;\n  width: 100%;\n  height: 100%;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: 1fr;\n  margin: auto;\n  grid-gap: 5% 5%;\n  margin: 5% 20%;\n  justify-content: center;\n\n  @media (max-width: 768px) {\n    width: 70%;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: 1fr 1fr;\n    margin: auto;\n    grid-gap: 30px 30px;\n    margin: 5%;\n    margin-bottom: 15%;\n    width: 90%;\n  }\n",
             ]))
         ),
-        Fs =
+        $s =
           ($t.div(
-            ia ||
-              (ia = ae([
+            ga ||
+              (ga = ae([
                 "\n  display: flex;\n  width: 50%;\n  position: relative;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0px;\n",
               ]))
           ),
           $t.div(
-            aa ||
-              (aa = ae([
-                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  background: #e0e0e0;\n  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n  :hover {\n    background-color: #ffc0bc;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    color: #071c2f;\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
+            va ||
+              (va = ae([
+                "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n\n  :hover {\n    border: 3px solid #ffc0bc;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
-        Ws = function () {
+        el = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Servicio de Terapia" }),
-              (0, er.jsx)(Rs, {}),
-              (0, er.jsx)(ba, J(J({}, bs), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, As), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, ws), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, xs), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, ks), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Ss), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, js), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Es), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Cs), {}, { reverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Js, {}),
+              (0, er.jsx)(Ia, J(J({}, zs), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Is), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Ds), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Rs), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Bs), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Ns), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Fs), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Ws), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, Hs), {}, { reverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        Hs = n(9423),
-        Us = n(8774),
-        Vs = n(8479),
-        Gs = {
+        tl = n(9423),
+        nl = n(8774),
+        rl = n(8479),
+        il = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -21261,9 +21287,9 @@
             "Este servicio se encarga de apoyar a las personas con discapacidad intelectual o del desarrollo que viven o quieran llegar a vivir de forma independiente.",
           description:
             "En nuestras viviendas reside un peque\xf1o grupo de personas con discapacidad intelectual, que aun gozando de autonom\xeda para el autocuidado,necesitan la prestaci\xf3n de apoyos a nivel personalizado para realizar el resto de actividades de la vida diaria y llevar una vida integrada en la comunidad.",
-          img: Hs,
+          img: tl,
         },
-        Ys = {
+        al = {
           id: "",
           reverse: !0,
           inverse: !1,
@@ -21272,9 +21298,9 @@
             "Facilitar un hogar lo m\xe1s normalizado posible, en el que se garantice y posibilite un adecuado desarrollo personal, desde la igualdad y la inclusi\xf3n social en la comunidad.",
           description:
             "Fomentar la participaci\xf3n activa y la toma de decisiones en lo relativo a las tareas dom\xe9sticas como al resto de actividades. Adquirir estabilidad y seguridad, en un entorno distinto al hogar familiar, entendi\xe9ndose \xe9stas de forma global y en todos los aspectos que afectan al ser humano (necesidades b\xe1sicas, salud, ocupaci\xf3n laboral,...). ",
-          img: Us,
+          img: nl,
         },
-        Qs = {
+        ol = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -21283,28 +21309,28 @@
             "El modelo metodol\xf3gico a seguir ser\xe1 basado en la Capacitaci\xf3n dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
           description:
             "Los principios metodol\xf3gicos ser\xe1n: integraci\xf3n, individualizaci\xf3n y optimizaci\xf3n. Se ofrecer\xe1 a las personas con especificidad la oportunidad de vivir de la manera m\xe1s aut\xf3noma posible, fomentando la participaci\xf3n activa de la persona objeto de nuestro apoyo en la comunidad de Socu\xe9llamos, desde la igualdad y la plena inclusi\xf3n social..",
-          img: Vs,
+          img: rl,
         },
-        Zs = function () {
+        sl = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
-              (0, er.jsx)(oo, {}),
+              (0, er.jsx)(wo, {}),
               (0, er.jsx)(or, { title: "Servicio de atenci\xf3n a Viviendas" }),
-              (0, er.jsx)(ba, J(J({}, Gs), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Ys), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, Qs), {}, { inverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, il), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, al), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, ol), {}, { inverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        _s = n(6619),
-        qs = n(5188),
-        Js = n(1093),
-        Xs = n(2313),
-        Ks = n(6444),
-        $s = n(4072),
-        el = {
+        ll = n(6619),
+        cl = n(5188),
+        ul = n(1093),
+        dl = n(2313),
+        fl = n(6444),
+        pl = n(4072),
+        hl = {
           id: "voluntariadoOne",
           reverse: !1,
           inverse: !1,
@@ -21313,9 +21339,9 @@
             "Contando con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
           description:
             "La novedad de este servicio es que ya no es \xfanicamente la Asociaci\xf3n quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando as\xed su autonom\xeda.",
-          img: _s,
+          img: ll,
         },
-        tl = {
+        ml = {
           id: "voluntariadoTwo",
           reverse: !0,
           inverse: !1,
@@ -21324,9 +21350,9 @@
             "Se organizan vacaciones al a\xf1o subvencionados tanto por FEAPS - IMSERSO",
           description:
             "A lo largo del a\xf1o, se ofertan estancias de fin de semana en casas o albergues rurales, con el fin de ofrecer unos d\xedas de vacaciones al mayor n\xfamero de usuarios posible.",
-          img: $s,
+          img: pl,
         },
-        nl = {
+        gl = {
           id: "voluntariadoThree",
           reverse: !1,
           inverse: !1,
@@ -21335,9 +21361,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "La novedad de este servicio es que ya no es \xfanicamente la Asociaci\xf3n quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando as\xed su autonom\xeda.",
-          img: Ks,
+          img: fl,
         },
-        rl = {
+        vl = {
           id: "voluntariadoFour",
           reverse: !0,
           inverse: !1,
@@ -21346,9 +21372,9 @@
             "Se trata de fomentar grupos de amigos formados por usuarios y voluntarios, que organicen ellos mismos qu\xe9 actividades quieren hacer y cu\xe1ndo, algo que resulta m\xe1s complicado con las actividades programadas",
           description:
             "La novedad de esta \xe1rea es la adaptaci\xf3n y libre elecci\xf3n de las actividades.",
-          img: qs,
+          img: cl,
         },
-        il = {
+        yl = {
           id: "voluntariadoFive",
           reverse: !1,
           inverse: !1,
@@ -21357,9 +21383,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "Se organizan actividades tan variadas como actividades deportivas (senderismo\u2026), culturales (visitas a museos, cine, teatro\u2026) y actividades recreativas (bolera, salidas nocturnas\u2026).",
-          img: Js,
+          img: ul,
         },
-        al = {
+        bl = {
           id: "voluntariadoSix",
           reverse: !0,
           inverse: !1,
@@ -21368,40 +21394,71 @@
             "Es un proyecto creado por Afymos y financiado en parte por la Concejal\xeda de Bienestar Social de la localidad de Socu\xe9llamos.",
           description:
             "Urban Camp es un campamento urbano para 50 j\xf3venes (con y sin discapacidad) de la localidad de Socu\xe9llamos de edades comprendidas entre los 12 y 16 a\xf1os que naci\xf3 para dar respuesta a las necesidades de ocio de los j\xf3venes durante el periodo vacacional as\xed como para  ofrecer a las familias un recurso para la conciliaci\xf3n de la vida familiar y laboral durante esta \xe9poca del a\xf1o.",
-          img: Xs,
+          img: dl,
         },
-        ol = function () {
+        Al = function () {
           return (0, er.jsxs)(er.Fragment, {
             children: [
               (0, er.jsx)(or, { title: "Servicio de Ocio y Voluntariado" }),
-              (0, er.jsx)(ba, J(J({}, el), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, tl), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, nl), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, rl), {}, { reverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, il), {}, { inverse: !0 })),
-              (0, er.jsx)(ba, J(J({}, al), {}, { reverse: !0 })),
-              (0, er.jsx)(Ua, {}),
+              (0, er.jsx)(Ia, J(J({}, hl), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, ml), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, gl), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, vl), {}, { reverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, yl), {}, { inverse: !0 })),
+              (0, er.jsx)(Ia, J(J({}, bl), {}, { reverse: !0 })),
+              (0, er.jsx)(no, {}),
               (0, er.jsx)(nr, {}),
             ],
           });
         },
-        sl = n(4337),
-        ll = n(5514),
-        cl = n(8605),
-        ul = function () {
-          return (0, er.jsx)(dl, {
+        wl = function () {
+          var e = a((0, t.useState)(ci), 2),
+            n = e[0];
+          e[1];
+          return (0, er.jsx)(er.Fragment, {
+            children: (0, er.jsx)("section", {
+              className: "contact",
+              id: "contacto",
+              children: (0, er.jsx)(xl, {
+                children: n.map(function (e) {
+                  return (0,
+                  er.jsx)(Sl, { value: e.name, children: (0, er.jsxs)(Z, { to: e.url, children: [(0, er.jsx)("img", { src: e.img, alt: "" }), (0, er.jsx)("h3", { children: e.name })] }) }, e.id);
+                }),
+              }),
+            }),
+          });
+        },
+        xl = $t.div(
+          ya ||
+            (ya = ae([
+              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n\n",
+            ]))
+        ),
+        Sl = $t.div(
+          ba ||
+            (ba = ae([
+              "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
+            ]))
+        ),
+        kl =
+          ($t.button(Aa || (Aa = ae(["\n  width: 8rem;\n  height: 2rem;\n"]))),
+          n(4337)),
+        jl = n(5514),
+        El = n(8605),
+        Cl = function () {
+          return (0, er.jsx)(Ol, {
             id: "testimonios",
-            children: (0, er.jsxs)(fl, {
+            children: (0, er.jsxs)(Pl, {
               children: [
                 (0, er.jsx)("h2", {
                   children: "Historias reales: Proyecto Crea",
                 }),
                 (0, er.jsx)("span", { className: "line" }),
-                (0, er.jsxs)(pl, {
+                (0, er.jsxs)(Tl, {
                   children: [
-                    (0, er.jsxs)(hl, {
+                    (0, er.jsxs)(Ll, {
                       children: [
-                        (0, er.jsx)("img", { src: sl, alt: "rafa" }),
+                        (0, er.jsx)("img", { src: kl, alt: "rafa" }),
                         (0, er.jsx)("p", {
                           children:
                             "Gracias al trabajo, Rafael ha adquirido nuevas rutinas, ha cambiado sus h\xe1bitos, ha asumido nuevas responsabilidades que le han permitido cambia su horizonte vital.",
@@ -21414,9 +21471,9 @@
                         }),
                       ],
                     }),
-                    (0, er.jsxs)(hl, {
+                    (0, er.jsxs)(Ll, {
                       children: [
-                        (0, er.jsx)("img", { src: ll, alt: "quico" }),
+                        (0, er.jsx)("img", { src: jl, alt: "quico" }),
                         (0, er.jsx)("p", {
                           children:
                             "Quico, quien tras varios contratos temporales, pas\xf3 a ser indefinido. Logr\xf3 la primera inserci\xf3n socio-laboral, con la estabilidad que ello supon\xeda para \xe9l, abri\xe9ndole a su vez la puerta a conseguir otros objetivos para mejorar su calidad de vida, por ejemplo independizarse.",
@@ -21427,9 +21484,9 @@
                         (0, er.jsx)("p", { children: "Trabajador en Inkiele" }),
                       ],
                     }),
-                    (0, er.jsxs)(hl, {
+                    (0, er.jsxs)(Ll, {
                       children: [
-                        (0, er.jsx)("img", { src: cl, alt: "pedro" }),
+                        (0, er.jsx)("img", { src: El, alt: "pedro" }),
                         (0, er.jsx)("p", {
                           children:
                             "En la misma l\xednea de trabajo, el objetivo laboral de Pedro es trabajar lijando. Por ello, La empresa Arte Religioso Salmer\xf3n, le abri\xf3 sus puertas mediante unas pr\xe1cticas laborales para corroborar si sus habilidades y capacidades eran compatibles con el puesto de trabajo.",
@@ -21450,32 +21507,32 @@
             }),
           });
         },
-        dl = $t.div(
-          oa || (oa = ae(["\n  width: 100%;\n  background-color: white;\n"]))
+        Ol = $t.div(
+          wa || (wa = ae(["\n  width: 100%;\n  background-color: white;\n"]))
         ),
-        fl = $t.div(
-          sa ||
-            (sa = ae([
+        Pl = $t.div(
+          xa ||
+            (xa = ae([
               "\n  padding: 5%;\n  h2 {\n    font-size: 3rem;\n    text-align: center;\n  }\n\n  @media (max-width: 940px) {\n    width: 100%;\n  }\n",
             ]))
         ),
-        pl = $t.div(
-          la ||
-            (la = ae([
+        Tl = $t.div(
+          Sa ||
+            (Sa = ae([
               "\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 20px;\n  margin: 4rem 0;\n\n  @media (max-width: 940px) {\n    grid-template-columns: 1fr;\n  }\n",
             ]))
         ),
-        hl = $t.div(
-          ca ||
-            (ca = ae([
-              "\n  border: 1px solid #eee;\n  border-radius: 8px;\n  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);\n  padding: 1rem;\n  line-height: 2rem;\n\n  img {\n    height: 100px;\n    border-radius: 50px;\n    margin-top: -2rem;\n  }\n\n  p {\n    color: #787878;\n    font-size: 1.2rem;\n    margin: 12px;\n    font-weight: 500;\n  }\n\n  span {\n    font-size: 1rem;\n    font-weight: 900;\n    color: grey;\n  }\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    margin: 1rem;\n  }\n",
+        Ll = $t.div(
+          ka ||
+            (ka = ae([
+              "\n  border: 1px solid #eee;\n  border-radius: 8px;\n  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);\n  padding: 1rem;\n  line-height: 2rem;\n\n  img {\n    height: 100px;\n    border-radius: 50px;\n    margin-top: -2rem;\n    margin-left: 35%;\n  }\n\n  p {\n    font-size: 1.2rem;\n    margin: 12px;\n    font-weight: 500;\n  }\n\n  span {\n    font-size: 1rem;\n    font-weight: 900;\n    color: grey;\n  }\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    margin: 1rem;\n  }\n",
             ]))
         );
-      function ml(e, t) {
+      function Ml(e, t) {
         if (!(e instanceof t))
           throw new TypeError("Cannot call a class as a function");
       }
-      function gl(e, t) {
+      function zl(e, t) {
         for (var n = 0; n < t.length; n++) {
           var r = t[n];
           (r.enumerable = r.enumerable || !1),
@@ -21484,25 +21541,25 @@
             Object.defineProperty(e, r.key, r);
         }
       }
-      function vl(e, t, n) {
+      function Il(e, t, n) {
         return (
-          t && gl(e.prototype, t),
-          n && gl(e, n),
+          t && zl(e.prototype, t),
+          n && zl(e, n),
           Object.defineProperty(e, "prototype", { writable: !1 }),
           e
         );
       }
-      function yl(e, t) {
+      function Dl(e, t) {
         return (
-          (yl =
+          (Dl =
             Object.setPrototypeOf ||
             function (e, t) {
               return (e.__proto__ = t), e;
             }),
-          yl(e, t)
+          Dl(e, t)
         );
       }
-      function bl(e, t) {
+      function Rl(e, t) {
         if ("function" !== typeof t && null !== t)
           throw new TypeError(
             "Super expression must either be null or a function"
@@ -21511,21 +21568,21 @@
           constructor: { value: e, writable: !0, configurable: !0 },
         })),
           Object.defineProperty(e, "prototype", { writable: !1 }),
-          t && yl(e, t);
+          t && Dl(e, t);
       }
-      function Al(e) {
+      function Nl(e) {
         return (
-          (Al = Object.setPrototypeOf
+          (Nl = Object.setPrototypeOf
             ? Object.getPrototypeOf
             : function (e) {
                 return e.__proto__ || Object.getPrototypeOf(e);
               }),
-          Al(e)
+          Nl(e)
         );
       }
-      function wl(e) {
+      function Bl(e) {
         return (
-          (wl =
+          (Bl =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
@@ -21538,11 +21595,11 @@
                     ? "symbol"
                     : typeof e;
                 }),
-          wl(e)
+          Bl(e)
         );
       }
-      function xl(e, t) {
-        if (t && ("object" === wl(t) || "function" === typeof t)) return t;
+      function Fl(e, t) {
+        if (t && ("object" === Bl(t) || "function" === typeof t)) return t;
         if (void 0 !== t)
           throw new TypeError(
             "Derived constructors may only return object or undefined"
@@ -21555,7 +21612,7 @@
           return e;
         })(e);
       }
-      function Sl(e) {
+      function Wl(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -21573,22 +21630,22 @@
         })();
         return function () {
           var n,
-            r = Al(e);
+            r = Nl(e);
           if (t) {
-            var i = Al(this).constructor;
+            var i = Nl(this).constructor;
             n = Reflect.construct(r, arguments, i);
           } else n = r.apply(this, arguments);
-          return xl(this, n);
+          return Fl(this, n);
         };
       }
-      var kl = (function (e) {
-          bl(r, e);
-          var t = Sl(r);
+      var Hl = (function (e) {
+          Rl(r, e);
+          var t = Wl(r);
           function r() {
-            return ml(this, r), t.apply(this, arguments);
+            return Ml(this, r), t.apply(this, arguments);
           }
           return (
-            vl(r, [
+            Il(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21631,15 +21688,15 @@
             r
           );
         })(t.Component),
-        jl = kl,
-        El = (function (e) {
-          bl(r, e);
-          var t = Sl(r);
+        Ul = Hl,
+        Vl = (function (e) {
+          Rl(r, e);
+          var t = Wl(r);
           function r() {
-            return ml(this, r), t.apply(this, arguments);
+            return Ml(this, r), t.apply(this, arguments);
           }
           return (
-            vl(r, [
+            Il(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21682,15 +21739,15 @@
             r
           );
         })(t.Component),
-        Cl = El,
-        Ol = (function (e) {
-          bl(r, e);
-          var t = Sl(r);
+        Gl = Vl,
+        Yl = (function (e) {
+          Rl(r, e);
+          var t = Wl(r);
           function r() {
-            return ml(this, r), t.apply(this, arguments);
+            return Ml(this, r), t.apply(this, arguments);
           }
           return (
-            vl(r, [
+            Il(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21736,74 +21793,74 @@
             r
           );
         })(t.Component),
-        Pl = Ol,
-        Tl = function () {
+        Ql = Yl,
+        Zl = function () {
           return (0, er.jsx)(er.Fragment, {
             children: (0, er.jsxs)(H, {
               children: [
                 (0, er.jsx)(F, {
                   path: "/terapias",
-                  element: (0, er.jsx)(Ws, {}),
+                  element: (0, er.jsx)(el, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/nosotros",
-                  element: (0, er.jsx)(Ja, {}),
+                  element: (0, er.jsx)(uo, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/apoyo-familias",
-                  element: (0, er.jsx)(os, {}),
+                  element: (0, er.jsx)(As, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/ocio-y-voluntariado",
-                  element: (0, er.jsx)(ol, {}),
+                  element: (0, er.jsx)(Al, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/viviendas-con-apoyo",
-                  element: (0, er.jsx)(Zs, {}),
+                  element: (0, er.jsx)(sl, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/centro-de-dia",
-                  element: (0, er.jsx)(wo, {}),
+                  element: (0, er.jsx)(Do, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/proyecto-crea",
-                  element: (0, er.jsx)(Go, {}),
+                  element: (0, er.jsx)(is, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/valoracion-y-diagnostico",
-                  element: (0, er.jsx)(Xo, {}),
+                  element: (0, er.jsx)(ds, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/donaciones",
-                  element: (0, er.jsx)($o, {}),
+                  element: (0, er.jsx)(ps, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/servicio-capacitacion",
-                  element: (0, er.jsx)(lo, {}),
+                  element: (0, er.jsx)(So, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/instalaciones-centro-diversidad",
-                  element: (0, er.jsx)(Io, {}),
+                  element: (0, er.jsx)(_o, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/valoracion-y-diagnostico",
-                  element: (0, er.jsx)(Xo, {}),
+                  element: (0, er.jsx)(ds, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/organigrama",
-                  element: (0, er.jsx)(Pl, {}),
+                  element: (0, er.jsx)(Ql, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/pdf-cuentas-20",
-                  element: (0, er.jsx)(jl, {}),
+                  element: (0, er.jsx)(Ul, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/pdf-cuentas-21",
-                  element: (0, er.jsx)(Cl, {}),
+                  element: (0, er.jsx)(Gl, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/formacion",
-                  element: (0, er.jsx)(ms, {}),
+                  element: (0, er.jsx)(Ps, {}),
                 }),
                 (0, er.jsx)(F, {
                   path: "/junta-directiva",
@@ -21813,19 +21870,18 @@
                   path: "/",
                   element: (0, er.jsxs)(er.Fragment, {
                     children: [
-                      (0, er.jsx)(oo, {}),
-                      (0, er.jsx)(ua, {}),
-                      (0, er.jsx)(hi, {}),
-                      (0, er.jsx)(li, {}),
+                      (0, er.jsx)(wo, {}),
+                      (0, er.jsx)(ja, {}),
+                      (0, er.jsx)(mi, {}),
+                      (0, er.jsx)(wl, {}),
                       (0, er.jsx)(Jr, J({}, $)),
-                      (0, er.jsx)(ul, {}),
-                      (0, er.jsx)(Xa, {}),
-                      (0, er.jsx)(Jr, J({}, te)),
+                      (0, er.jsx)(fo, {}),
+                      (0, er.jsx)(Cl, {}),
                       (0, er.jsx)(Jr, J({}, ee)),
-                      (0, er.jsx)(ka, {}),
+                      (0, er.jsx)(Jr, J({}, te)),
                       (0, er.jsx)(tr, {}),
                       (0, er.jsx)(Nr, {}),
-                      (0, er.jsx)(Ua, {}),
+                      (0, er.jsx)(no, {}),
                       (0, er.jsx)(nr, {}),
                     ],
                   }),
@@ -21835,9 +21891,9 @@
           });
         };
       r.render(
-        (0, er.jsx)(Q, { children: (0, er.jsx)(Tl, {}) }),
+        (0, er.jsx)(Q, { children: (0, er.jsx)(Zl, {}) }),
         document.getElementById("root")
       );
     })();
 })();
-//# sourceMappingURL=main.c87d2456.js.map
+//# sourceMappingURL=main.540a7bce.js.map

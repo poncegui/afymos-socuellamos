@@ -47,9 +47,8 @@ const DemoVideo = (inverse) => {
 export default DemoVideo;
 
 const Demo = styled.div`
-  margin: 5rem auto;
-  padding: 1rem;
   width: 100%;
+  background: white;
 `;
 
 const DemoContainer = styled.div`
@@ -77,20 +76,25 @@ const DemoLeft = styled.div`
   gap: 1.5rem;
 
   p:nth-child(1) {
+    margin-top: 7%;
     font-size: 2rem;
     font-style: italic;
+    color: #071c2f;
   }
   p:nth-child(2) {
     font-size: 3rem;
     font-weight: 600;
     margin: 0.5rem 0;
+    color: #071c2f;
   }
   p:nth-child(3) {
     font-size: 1.6rem;
     margin-bottom: 1rem;
+    color: #071c2f;
   }
 `;
 
 const DemoRight = styled.div`
   margin: auto;
+  margin: 7% 0;
 `;

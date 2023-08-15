@@ -36,17 +36,6 @@
       font-size: 20px;
     }
 
-    h4 span {
-      position: absolute;
-      right: 0;
-      width: 0;
-      font-size: 40px;
-      background: #071c2f;
-      border-left: 3px solid pink;
-      line-height: 35px;
-      animation: typing 5s steps(25) normal;
-    }
-
     @media (min-width: 768px) {
       h4 {
         font-size: 36px;
@@ -61,77 +50,6 @@
         line-height: 10px;
         min-width: 800px;
       }
-    }
-
-    @keyframes typing {
-      from {
-        width: 75%;
-      }
-      to {
-        width: 0%;
-      }
-    }
-
-    @media (min-width: 360px) {
-      @keyframes typing {
-        from {
-          width: 58%;
-        }
-        to {
-          width: 5%;
-        }
-      }
-    }
-
-    @media (min-width: 320px) {
-      @keyframes typing {
-        from {
-          width: 70%;
-        }
-        to {
-          width: 5%;
-        }
-      }
-    }
-
-    @media (min-width: 768px) {
-      @keyframes typing {
-        from {
-          width: 50%;
-        }
-        to {
-          width: 20%;
-        }
-      }
-    }
-
-    @media (min-width: 1024px) {
-      @keyframes typing {
-        from {
-          width: 55%;
-        }
-        to {
-          width: 30%;
-        }
-      }
-    }
-
-    @media (min-width: 1300px) {
-      @keyframes typing {
-        from {
-          width: 50%;
-        }
-        to {
-          width: 30%;
-        }
-      }
-    }
-
-    h4:first-letter {
-      font-size: 180%;
-      font-weight: bold;
-      color: gray;
-      margin-bottom: 20px;
     }
   }
 
@@ -148,11 +66,6 @@
       font-weight: bold;
       text-align: center;
     }
-  }
-
-  &__text:first-letter {
-    font-size: 200%;
-    font-weight: bold;
   }
 
   @media (min-width: 768px) {

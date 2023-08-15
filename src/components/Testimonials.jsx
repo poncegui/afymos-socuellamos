@@ -98,10 +98,10 @@ const TestimonialsCard = styled.div`
     height: 100px;
     border-radius: 50px;
     margin-top: -2rem;
+    margin-left: 35%;
   }
 
   p {
-    color: #787878;
     font-size: 1.2rem;
     margin: 12px;
     font-weight: 500;

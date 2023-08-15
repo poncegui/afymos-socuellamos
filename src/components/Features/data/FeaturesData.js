@@ -4,12 +4,15 @@ import centroDia from "../../../assets/pictogramas/proteger.png";
 import centroDiaLink from "../../../assets/pictogramas/organigrama.png";
 import centroDiversidad from "../../../assets/pictogramas/campus-universitario.png";
 import centroDiversidadLink from "../../../assets/pictogramas/campus-universitario.png";
+import crea from "../../../assets//pictogramas/crea.png";
 import diagnostico from "../../../assets/pictogramas/historial-medico.png";
 import diagnosticoLink from "../../../assets/pictogramas/apoyo.png";
 import familias from "../../../assets/pictogramas/familia.png";
 import familiasLink from "../../../assets/pictogramas/familia.png";
 import formacion from "../../../assets/pictogramas/educacion.png";
 import formacionLink from "../../../assets/pictogramas/educacion.png";
+import junta from "../../../assets/pictogramas/junta.png";
+import organigrama from "../../../assets/pictogramas/organigrama.png";
 import servicios from "../../../assets/pictogramas/terapia-fisica.png";
 import serviciosLink from "../../../assets/pictogramas/terapia-fisica.png";
 import viviendaSocial from "../../../assets/pictogramas/vivienda-social.png";
@@ -81,6 +84,27 @@ export const featuresData = [
     img: voluntariado,
     alt: "ocio-y-voluntariado",
     url: "/ocio-y-voluntariado",
+  },
+  {
+    id: 10,
+    name: "Proyecto Crea",
+    img: crea,
+    alt: "proyecto-crea",
+    url: "/proyecto-crea",
+  },
+  {
+    id: 11,
+    name: "Organigrama",
+    img: organigrama,
+    alt: "organigrama",
+    url: "/organigrama",
+  },
+  {
+    id: 12,
+    name: "Junta Directiva",
+    img: junta,
+    alt: "junta-directiva",
+    url: "/junta-directiva",
   },
 ];
 

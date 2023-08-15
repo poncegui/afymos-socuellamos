@@ -102,12 +102,12 @@ export const Icons = styled.div`
   align-items: center;
   border-radius: 10px;
   width: 150px;
-  background: #e0e0e0;
-  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;
+  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;
   margin: 5% 5%;
   gap: 1rem;
+
   :hover {
-    background-color: #ffc0bc;
+    border: 3px solid #ffc0bc;
   }
 
   h3 {
@@ -117,7 +117,6 @@ export const Icons = styled.div`
   }
 
   img {
-    color: #071c2f;
     height: 100px;
     width: 100px;
     padding-bottom: 5%;
@@ -130,7 +129,7 @@ export const Icons = styled.div`
     gap: 0.6rem;
     border-radius: 10px;
     width: 80%;
-    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #ffffff;
+    box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;
     border: solid 1px #071c2f;
 
     h3 {
@@ -152,7 +151,7 @@ export const Icons = styled.div`
     border-radius: 10px;
     width: 70%;
     height: 70%;
-    box-shadow: 30px 20px 40px #949494, -41px -41px 82px #ffffff;
+    box-shadow: 30px 20px 40px #949494, -5px -5px 10px #ffffff;
     border: solid 1px #071c2f;
 
     h3 {

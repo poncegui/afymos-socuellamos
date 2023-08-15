@@ -58,7 +58,7 @@ const NavContainer = styled.nav`
   .fa-angles-left {
     margin-left: 50px;
     font-size: 1.5rem;
-    color: pink;
+    color: #ffc0bc;
 
     @media (max-width: 768px) {
       margin-left: 40px;
@@ -79,7 +79,7 @@ const NavContainer = styled.nav`
   justify-content: space-between;
 
   a {
-    color: pink;
+    color: #ffc0bc;
     text-decoration: none;
     margin-right: 1.5rem;
   }

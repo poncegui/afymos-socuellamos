@@ -29,6 +29,7 @@ import ProjectsTerapias from "./Projects/ProjetsTerapias";
 import ProjectsVivienda from "./Projects/ProjectsVivienda";
 import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
 import ScrollToTop from "./ScrollToUp";
+import ServicesTemplate from "./templates/ServicesTemplate";
 import Testimonials from "./Testimonials";
 import VisorPdf20 from "./main/pdf/VisorPdf2020";
 import VisorPdf21 from "./main/pdf/VisorPdf2021";
@@ -87,13 +88,12 @@ const App = () => {
               <ScrollToTop />
               <NavBar />
               <Main />
-              <Features />
+              <ServicesTemplate />
               <Content {...heroOne} />
-              <Testimonials />
               <ProjectCreaVideo />
-              <Content {...heroThree} />
+              <Testimonials />
               <Content {...heroTwo} />
-              <OtherInformation />
+              <Content {...heroThree} />
               <Carousel />
               <ContactForm />
               <PartnertList />
