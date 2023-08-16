@@ -14,20 +14,22 @@ const Chart = () => {
     <>
       <NavBarTemplate title="junta directiva" alt="" />
       <BackgroundChart />
-      <ContainerListChart>
-        {junta.map((person) => {
-          return (
-            <ProfileChart
-              key={person.id}
-              name={person.name}
-              img={person.img}
-              alt={person.alt}
-              role={person.role}
-              profession={person.profession}
-            />
-          );
-        })}
-      </ContainerListChart>
+      <ListChartSection>
+        <ContainerListChart>
+          {junta.map((person) => {
+            return (
+              <ProfileChart
+                key={person.id}
+                name={person.name}
+                img={person.img}
+                alt={person.alt}
+                role={person.role}
+                profession={person.profession}
+              />
+            );
+          })}
+        </ContainerListChart>
+      </ListChartSection>
       <Footer />
     </>
   );
@@ -48,18 +50,21 @@ export const BackgroundChart = styled.div`
   z-index: 20;
 `;
 
-export const ContainerListChart = styled.div`
-  background-color: #071c2f;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  place-content: center;
-  padding: auto 30%;
-  gap: 3rem;
+export const ListChartSection = styled.section`
+  padding: 5rem 12%;
+  background-color: #f7f7f7;
 
-  @media (min-width: 1090px) {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-    white-space: wrap;
+  @media (max-width: 440px) {
+    padding: 2rem 5%;
+  }
+`;
+
+export const ContainerListChart = styled.div`
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 440px) {
+    gap: 2rem;
   }
 `;

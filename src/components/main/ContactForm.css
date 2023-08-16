@@ -1,11 +1,10 @@
 .contact .row {
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(213, 207, 207, 0.2);
   border-radius: 0.5rem;
   display: flex;
   flex-wrap: wrap-reverse;
   padding: 1rem;
-  background-color: rgb(217, 215, 215);
+  background-color: white;
 }
 
 .contact .row form {
@@ -30,7 +29,7 @@
   margin-top: 1rem;
   padding: 1rem;
   font-size: 1.7rem;
-  background: rgb(251, 214, 220);
+  background: white;
   border-radius: 0.5rem;
   text-transform: none;
   width: 49%;
@@ -44,7 +43,7 @@
 
 .contact .row form textarea:focus,
 .contact .row form .inputBox input:focus {
-  background-color: rgb(247, 247, 227);
+  background-color: rgb(247, 227, 237);
 }
 
 .inputSubmit {

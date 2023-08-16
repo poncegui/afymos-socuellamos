@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.23e6601b.css",
-    "main.js": "./static/js/main.4ab7f814.js",
+    "main.css": "./static/css/main.d568a144.css",
+    "main.js": "./static/js/main.84765d26.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion.jpg": "./static/media/formacion.6efb50312b365fe9d351.jpg",
     "static/media/neuro.jpg": "./static/media/neuro.0e99cbcb1b389c4cb530.jpg",
@@ -49,10 +49,10 @@
     "static/media/proyecto-crea-03.jpg": "./static/media/proyecto-crea-03.0501b340293cb969e28c.jpg",
     "static/media/proyecto-crea-02.jpg": "./static/media/proyecto-crea-02.579e1a32019e4dc75eda.jpg",
     "static/media/somos-portada.jpg": "./static/media/somos-portada.1f87966a418b44247713.jpg",
-    "static/media/pedro.png": "./static/media/pedro.db808c1d5687e13da5b6.png",
     "static/media/proyecto-crea-01.jpg": "./static/media/proyecto-crea-01.d0644aac0bddc5198d84.jpg",
     "static/media/nosotros-3.png": "./static/media/nosotros-3.85bcd11ffb4b6be95051.png",
     "static/media/background-1.jpg": "./static/media/background-1.d8380d5686e1353b4386.jpg",
+    "static/media/pedro.png": "./static/media/pedro.41ec318a23a73390c035.png",
     "static/media/voluntariado4.jpg": "./static/media/voluntariado4.2891b620f39cead0e440.jpg",
     "static/media/apoyo-familias-2.jpg": "./static/media/apoyo-familias-2.bf35fdb08d3dea164744.jpg",
     "static/media/voluntariado2.jpg": "./static/media/voluntariado2.fc54ee755a1ca7454b2a.jpg",
@@ -103,8 +103,8 @@
     "static/media/gracias.png": "./static/media/gracias.39137f29f9e9d32fc388.png",
     "static/media/historial-medico.png": "./static/media/historial-medico.cdd204e568964ac3e119.png",
     "index.html": "./index.html",
-    "main.23e6601b.css.map": "./static/css/main.23e6601b.css.map",
-    "main.4ab7f814.js.map": "./static/js/main.4ab7f814.js.map"
+    "main.d568a144.css.map": "./static/css/main.d568a144.css.map",
+    "main.84765d26.js.map": "./static/js/main.84765d26.js.map"
   },
-  "entrypoints": ["static/css/main.23e6601b.css", "static/js/main.4ab7f814.js"]
+  "entrypoints": ["static/css/main.d568a144.css", "static/js/main.84765d26.js"]
 }

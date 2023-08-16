@@ -71,9 +71,13 @@ export const ImgFront = styled.img`
 `;
 
 export const FaceBack = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background: #ffc0bc;
   color: #071c2f;
   display: flex;
+  border-radius: 10px;
   flex-direction: column;
   justify-content: center;
   gap: 30%;
@@ -82,7 +86,7 @@ export const FaceBack = styled.div`
 `;
 
 export const TitleBackName = styled.div`
-  font-size: 30px;
+  font-size: 1.5rem;
   margin-top: 20px;
   letter-spacing: 2px;
 `;

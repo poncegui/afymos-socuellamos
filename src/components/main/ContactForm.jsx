@@ -100,10 +100,10 @@ const Icons = styled.div`
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
   text-decoration: none;
+
   img {
     height: 3rem;
   }
-
   h3 {
     font-size: 1.5rem;
     color: #071c2f;
