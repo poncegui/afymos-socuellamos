@@ -9,12 +9,9 @@ import Carousel from "./Carousel/Carousel";
 import Chart from "./Chart/Chart";
 import ContactForm from "./main/ContactForm";
 import { Content } from "./../components/Content/Content";
-import Features from "./Features/Features";
 import Footer from "./Footer";
-import Main from "./main/Main";
 import NavBar from "./Header/NavBar";
 import Nosotros from "./main/Nosotros";
-import OtherInformation from "./main/OthersList";
 import PartnertList from "./main/PartnerList";
 import ProjectCreaVideo from "./VideosFeaatures/ProjectCreaVideo";
 import ProjectsCapacitacion from "./Projects/ProjectsCapacitacion";
@@ -29,7 +26,8 @@ import ProjectsTerapias from "./Projects/ProjetsTerapias";
 import ProjectsVivienda from "./Projects/ProjectsVivienda";
 import ProjectsVoluntariado from "./Projects/ProjectsVoluntariado";
 import ScrollToTop from "./ScrollToUp";
-import ServicesTemplate from "./templates/ServicesTemplate";
+import SectionAboutUs from "./SectionAboutUs";
+import SectionServices from "./SectionServices";
 import Testimonials from "./Testimonials";
 import VisorPdf20 from "./main/pdf/VisorPdf2020";
 import VisorPdf21 from "./main/pdf/VisorPdf2021";
@@ -57,19 +55,15 @@ const App = () => {
           path="/valoracion-y-diagnostico"
           element={<ProjectsDiagnostico />}
         />
-
         <Route path="/donaciones" element={<ProjectsDonaciones />} />
-
         <Route
           path="/servicio-capacitacion"
           element={<ProjectsCapacitacion />}
         />
-
         <Route
           path="/instalaciones-centro-diversidad"
           element={<ProjectsCentroDiversidad />}
         />
-
         <Route
           path="/valoracion-y-diagnostico"
           element={<ProjectsDiagnostico />}
@@ -87,8 +81,8 @@ const App = () => {
             <>
               <ScrollToTop />
               <NavBar />
-              <Main />
-              <ServicesTemplate />
+              <SectionServices />
+              <SectionAboutUs />
               <Content {...heroOne} />
               <ProjectCreaVideo />
               <Testimonials />

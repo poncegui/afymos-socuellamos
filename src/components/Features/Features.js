@@ -1,12 +1,12 @@
 import "../../styles/layout/features.css";
 
 import { Link } from "react-router-dom";
-import { featuresData } from "./data/FeaturesData";
+import { servicesData } from "./data/FeaturesData";
 import styled from "styled-components";
 import { useState } from "react";
 
 const Features = () => {
-  const [pictoData, setPictoData] = useState(featuresData);
+  const [pictoData, setPictoData] = useState(servicesData);
 
   const handleUrl = (ev) => {
     setPictoData(ev.currentTarget);
@@ -15,9 +15,6 @@ const Features = () => {
   return (
     <>
       <SectionFeatures>
-        <TitleContainer>
-          <h2> Servicios</h2>
-        </TitleContainer>
         <ButtonContainer>
           {pictoData.map((picto) => (
             <Icons key={picto.id} value={picto.name}>

@@ -12,8 +12,8 @@ const Header = () => {
             <h1>Afymos</h1>
           </HeaderTitle>
           <HeaderSubtitle>
-            <h2>"Dadme un punto de apoyo y moveré el mundo." </h2>
-            <i>Arquímedes Siracoussa</i>
+            <h2>"Dadme un punto de apoyo y moveré el mundo" </h2>
+            <i>Arquímedes Siracoussa.</i>
           </HeaderSubtitle>
         </HeaderContainer>
 
@@ -22,6 +22,7 @@ const Header = () => {
             backgroundImage: `url(${background})`,
             WebkitBackgroundSize: "cover",
             backgroundPositionY: "center",
+            backgroundPositionX: "center",
             height: "100vh",
             backgroundRepeat: "no-repeat",
             width: "100%",
@@ -63,13 +64,23 @@ const HeaderTitle = styled.div`
     text-transform: uppercase;
     color: #071c2f;
   }
+
+  @media (max-width: 440px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    img {
+      height: 4rem;
+    }
+  }
 `;
 
 const HeaderSubtitle = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
+  justify-content: end;
   gap: 1rem;
 
   h2 {
@@ -80,6 +91,15 @@ const HeaderSubtitle = styled.div`
   i {
     font-size: 1.5rem;
     color: #071c2f;
+  }
+  @media (max-width: 440px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    i {
+      font-size: 0.8rem;
+    }
   }
 `;
 

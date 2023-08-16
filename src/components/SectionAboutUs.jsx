@@ -1,25 +1,23 @@
-import "../../components/main/ContactForm.css";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
-import { featuresData } from "../Features/data/FeaturesData";
+import TitleSection from "./templates/TitleSection";
+import { aboutUsData } from "./Features/data/FeaturesData";
 import styled from "styled-components";
-import { useState } from "react";
 
-const ContactForm = () => {
-  const [pictoData, setPictoData] = useState(featuresData);
+const SectionServices = () => {
+  const [data] = useState(aboutUsData);
 
-  const handleUrl = (ev) => {
-    setPictoData(ev.currentTarget);
-  };
   return (
     <>
-      <section className="contact" id="contacto">
+      <section>
+        <TitleSection title="Sobre Nosotros" />
         <IconsContainer>
-          {pictoData.map((picto) => (
-            <Icons key={picto.id} value={picto.name}>
-              <Link to={picto.url}>
-                <img src={picto.img} alt="" />
-                <h3>{picto.name}</h3>
+          {data.map((item) => (
+            <Icons key={item.id} value={item.name}>
+              <Link to={item.url}>
+                <img src={item.img} alt="" />
+                <h3>{item.name}</h3>
               </Link>
             </Icons>
           ))}
@@ -28,13 +26,13 @@ const ContactForm = () => {
     </>
   );
 };
-export default ContactForm;
+export default SectionServices;
 
 const IconsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding-bottom: 2rem;
+  margin-bottom: 4rem;
 `;
 const Icons = styled.div`
   flex: 1 1 25rem;
@@ -71,9 +69,4 @@ const Icons = styled.div`
   :hover {
     background-color: #ffc0bc;
   }
-`;
-
-const ButtonCard = styled.button`
-  width: 8rem;
-  height: 2rem;
 `;

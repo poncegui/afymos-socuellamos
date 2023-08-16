@@ -1,0 +1,45 @@
+import React from "react";
+import styled from "styled-components";
+
+const TitleSection = ({ title, size, inverse }) => {
+  return (
+    <TitleSectionContainer size={size} inverse={inverse}>
+      <h2>{title}</h2>
+    </TitleSectionContainer>
+  );
+};
+export default TitleSection;
+
+const TitleSectionContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  background: ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
+  text-align: center;
+  align-items: center;
+  line-height: 1.5rem;
+  font-size: ${({ size }) => (size ? "1.8rem" : "1.5rem")};
+  margin-bottom: 2rem;
+
+  h2 {
+    width: 100%;
+    position: relative;
+    color: ${({ inverse }) => (inverse ? "#FFC0BC" : "#071c2f")};
+  }
+
+  /* @media (min-width: 768px) {
+  h2 {
+      font-size: 36px;
+      white-space: nowrap;
+      line-height: 20px;
+    }
+  }
+
+  @media (min-width: 1090px) {
+  h2 {
+      font-size: 40px;
+      line-height: 10px;
+      min-width: 800px;
+    }
+  } */
+`;

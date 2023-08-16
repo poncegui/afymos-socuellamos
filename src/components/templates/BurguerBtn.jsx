@@ -21,7 +21,7 @@ export default BurguerButton;
 const Burguer = styled.div`
   /* nav-icon-5 */
   .nav-icon-5 {
-    width: 35px;
+    width: 30px;
     height: 30px;
     margin: 10px 10px;
     position: relative;
@@ -34,7 +34,7 @@ const Burguer = styled.div`
     border-radius: 2px;
     transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
     width: 100%;
-    height: 4px;
+    height: 3px;
     transition-duration: 500ms;
   }
   .nav-icon-5 span:nth-child(1) {

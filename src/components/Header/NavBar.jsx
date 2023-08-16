@@ -86,6 +86,12 @@ const NavContainer = styled.nav`
     font-weight: 400;
   }
 
+  @media (max-width: 440px) {
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+
   .links {
     position: absolute;
     width: 60%;
