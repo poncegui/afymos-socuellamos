@@ -90,7 +90,7 @@ const App = () => {
               <Content {...heroThree} />
               <Carousel />
               <ContactForm />
-              <PartnertList />
+              <PartnertList size inverse marginBottom />
               <Footer />
             </>
           }

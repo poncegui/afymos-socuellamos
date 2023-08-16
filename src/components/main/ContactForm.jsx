@@ -3,18 +3,14 @@ import "./ContactForm.css";
 import IconOne from "../../assets/icons/icon-1.png";
 import IconThree from "../../assets/icons/icon-3.png";
 import IconTwo from "../../assets/icons/icon-2.png";
+import TitleSection from "../templates/TitleSection";
 import styled from "styled-components";
 
 const ContactForm = () => {
   return (
     <>
+      <TitleSection title="Información de contacto" size inverse marginBottom />
       <section className="contact" id="contacto">
-        <div class="titles">
-          <h1 class="heading">
-            <span></span>
-          </h1>
-        </div>
-
         <IconsContainer>
           <Icons>
             <img src={IconOne} alt="" />

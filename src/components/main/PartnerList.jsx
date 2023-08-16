@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 
 import PartnersCard from "./Partners";
+import TitleSection from "../templates/TitleSection";
 import { partenrsData } from "./services/ApiPartners";
 import styled from "styled-components";
 
-const PartnerList = () => {
+const PartnerList = ({ size, inverse }) => {
   const [partners] = useState(partenrsData);
 
   return (
     <>
+      <TitleSection title="Cofinanciaciones" inverse={inverse} size={size} />
       <SectionPartners>
-        <section>
-          <h2>Cofinanciaciones</h2>
-        </section>
         <ContainerParnertList>
           {partners.map((partner) => {
             return (
@@ -41,6 +40,7 @@ export const SectionPartners = styled.div`
   align-items: center;
   gap: 50px;
   margin: 0 0 0px 0;
+  padding: 2rem;
 
   section {
     background-color: #071c2f;

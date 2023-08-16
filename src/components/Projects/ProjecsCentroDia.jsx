@@ -19,7 +19,7 @@ const ProjectsCentroDia = () => {
       <ContentProjects {...centroDiaDataOne} inverse />
       <ContentProjects {...centroDiaDataTwo} reverse />
       <ContentProjects {...centroDiaDataThree} inverse />
-      <PartnersList />
+      <PartnersList size inverse marginBottom />
       <Footer />
     </>
   );

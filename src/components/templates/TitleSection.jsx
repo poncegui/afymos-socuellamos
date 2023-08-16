@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const TitleSection = ({ title, size, inverse }) => {
+const TitleSection = ({ title, size, inverse, marginBottom }) => {
   return (
-    <TitleSectionContainer size={size} inverse={inverse}>
+    <TitleSectionContainer
+      size={size}
+      inverse={inverse}
+      marginBottom={marginBottom}
+    >
       <h2>{title}</h2>
     </TitleSectionContainer>
   );
@@ -19,7 +23,7 @@ const TitleSectionContainer = styled.div`
   align-items: center;
   line-height: 1.5rem;
   font-size: ${({ size }) => (size ? "1.8rem" : "1.5rem")};
-  margin-bottom: 2rem;
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? "2rem" : "")};
 
   h2 {
     width: 100%;

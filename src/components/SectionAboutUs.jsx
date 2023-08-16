@@ -11,7 +11,7 @@ const SectionServices = () => {
   return (
     <>
       <section>
-        <TitleSection title="Sobre Nosotros" />
+        <TitleSection title="Sobre Nosotros" marginBottom />
         <IconsContainer>
           {data.map((item) => (
             <Icons key={item.id} value={item.name}>
