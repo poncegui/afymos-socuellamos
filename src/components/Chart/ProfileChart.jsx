@@ -39,15 +39,11 @@ export const Card = styled.div`
   display: flex;
   position: relative;
   width: 15rem;
-  height: 18rem;
+  height: 20rem;
   margin: auto;
   justify-content: center;
+  gap: 2rem;
   cursor: pointer;
-
-  @media (max-width: 1090px) {
-    width: 12rem;
-    height: 15rem;
-  }
 
   @media (max-width: 440px) {
     width: 9rem;
@@ -75,9 +71,8 @@ export const ImgFront = styled.img`
 `;
 
 export const FaceBack = styled.div`
-  background: #071c2f;
-  box-shadow: 0 5px 10px #071c2f;
-  color: #ffc0bc;
+  background: #ffc0bc;
+  color: #071c2f;
   display: flex;
   flex-direction: column;
   justify-content: center;

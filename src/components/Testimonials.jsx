@@ -1,4 +1,5 @@
 import React from "react";
+import TitleSection from "./templates/TitleSection";
 import styled from "styled-components";
 import user1 from "../assets/images-testimonials/rafa.png";
 import user2 from "../assets/images-testimonials/quico.png";
@@ -8,8 +9,7 @@ const Testimonials = () => {
   return (
     <TestimonialsSection id="testimonios">
       <TestimonialsContainer>
-        <h2>Historias reales: Proyecto Crea</h2>
-        <span className="line"></span>
+        <TitleSection title="Historias reales: Proyecto Crea" inverse />
         <TestimonialsContent>
           <TestimonialsCard>
             <img src={user1} alt="rafa" />

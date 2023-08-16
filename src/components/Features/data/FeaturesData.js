@@ -33,27 +33,7 @@ export const servicesData = [
     alt: "viviendas-con-apoyo",
     url: "/viviendas-con-apoyo",
   },
-  {
-    id: 4,
-    name: "Terapias",
-    img: servicios,
-    alt: "terapias",
-    url: "/terapias",
-  },
-  {
-    id: 5,
-    name: " Valoración y Diagnóstico",
-    img: diagnostico,
-    alt: "/valoración-y-diagnóstico",
-    url: "/valoracion-y-diagnostico",
-  },
-  {
-    id: 6,
-    name: " Atención familias",
-    img: familias,
-    alt: "apoyo-familias",
-    url: "/apoyo-familias",
-  },
+
   {
     id: 7,
     name: "Centro de Formación",
@@ -67,6 +47,27 @@ export const servicesData = [
     img: voluntariado,
     alt: "ocio-y-voluntariado",
     url: "/ocio-y-voluntariado",
+  },
+  {
+    id: 5,
+    name: " Valoración y Diagnóstico",
+    img: diagnostico,
+    alt: "/valoración-y-diagnóstico",
+    url: "/valoracion-y-diagnostico",
+  },
+  {
+    id: 4,
+    name: "Terapias",
+    img: servicios,
+    alt: "terapias",
+    url: "/terapias",
+  },
+  {
+    id: 6,
+    name: " Atención familias",
+    img: familias,
+    alt: "apoyo-familias",
+    url: "/apoyo-familias",
   },
 ];
 

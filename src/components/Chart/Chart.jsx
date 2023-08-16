@@ -49,16 +49,17 @@ export const BackgroundChart = styled.div`
 `;
 
 export const ContainerListChart = styled.div`
+  background-color: #071c2f;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   place-content: center;
-  margin: auto;
-  gap: 1.5rem;
+  padding: auto 30%;
+  gap: 3rem;
 
-  @media (max-width: 1090px) {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10% 0;
+  @media (min-width: 1090px) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    white-space: wrap;
   }
 `;
