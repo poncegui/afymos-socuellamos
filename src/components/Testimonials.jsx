@@ -9,7 +9,7 @@ const Testimonials = () => {
   return (
     <TestimonialsSection id="testimonios">
       <TestimonialsContainer>
-        <TitleSection title="Historias reales: Proyecto Crea" inverse />
+        <TitleSection title="Historias reales" inverse />
         <TestimonialsContent>
           <TestimonialsCard>
             <img src={user1} alt="rafa" />

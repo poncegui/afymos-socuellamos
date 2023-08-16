@@ -1,5 +1,5 @@
 .contact .row {
-  border: 0.1rem solid rgba(213, 207, 207, 0.2);
+  border: 0.5rem solid rgba(213, 207, 207, 0.2);
   border-radius: 0.5rem;
   display: flex;
   flex-wrap: wrap-reverse;

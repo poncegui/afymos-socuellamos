@@ -4,7 +4,7 @@ import { ContentButton } from "../Content/ContentStyles";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const DemoVideo = (inverse) => {
+const DemoVideo = () => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!clicked);
@@ -20,10 +20,7 @@ const DemoVideo = (inverse) => {
             algún tipo de discapacidad en Socuéllamos.
           </p>
           <Link onClick={handleClick} to="/proyecto-crea">
-            <ContentButton
-              transition={{ delay: 1, duration: 0.6 }}
-              inverse={inverse}
-            >
+            <ContentButton transition={{ delay: 1, duration: 0.6 }}>
               Saber más
             </ContentButton>
           </Link>

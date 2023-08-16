@@ -51,7 +51,7 @@ export const BackgroundChart = styled.div`
 `;
 
 export const ListChartSection = styled.section`
-  padding: 5rem 12%;
+  padding: 5rem 18%;
   background-color: #f7f7f7;
 
   @media (max-width: 440px) {

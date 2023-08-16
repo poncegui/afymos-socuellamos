@@ -1,4 +1,4 @@
-/*! For license information please see main.84765d26.js.LICENSE.txt */
+/*! For license information please see main.cb543975.js.LICENSE.txt */
 !(function () {
   var e = {
       7945: function (e, t, n) {
@@ -19316,7 +19316,7 @@
         Lr = $t.section(
           Nn ||
             (Nn = ae([
-              "\npadding: 5rem 12%;\n  background-color: #f7f7f7;\n\n  @media (max-width: 440px) {\n    padding: 2rem 5%;\n  }\n",
+              "\n  padding: 5rem 18%;\n  background-color: #f7f7f7;\n\n  @media (max-width: 440px) {\n    padding: 2rem 5%;\n  }\n",
             ]))
         ),
         Mr = $t.div(
@@ -20213,10 +20213,10 @@
             ],
           });
         },
-        qa = function (e) {
-          var n = a((0, t.useState)(!1), 2),
-            r = n[0],
-            i = n[1];
+        qa = function () {
+          var e = a((0, t.useState)(!1), 2),
+            n = e[0],
+            r = e[1];
           return (0, Kn.jsx)(Ja, {
             id: "demo",
             children: (0, Kn.jsxs)(Xa, {
@@ -20231,12 +20231,11 @@
                     }),
                     (0, Kn.jsx)(Z, {
                       onClick: function () {
-                        i(!r);
+                        r(!n);
                       },
                       to: "/proyecto-crea",
                       children: (0, Kn.jsx)(_r, {
                         transition: { delay: 1, duration: 0.6 },
-                        inverse: e,
                         children: "Saber m\xe1s",
                       }),
                     }),
@@ -21450,10 +21449,7 @@
             id: "testimonios",
             children: (0, Kn.jsxs)(Cl, {
               children: [
-                (0, Kn.jsx)(al, {
-                  title: "Historias reales: Proyecto Crea",
-                  inverse: !0,
-                }),
+                (0, Kn.jsx)(al, { title: "Historias reales", inverse: !0 }),
                 (0, Kn.jsxs)(Ol, {
                   children: [
                     (0, Kn.jsxs)(Pl, {
@@ -21896,4 +21892,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.84765d26.js.map
+//# sourceMappingURL=main.cb543975.js.map
