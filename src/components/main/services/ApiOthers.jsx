@@ -1,4 +1,3 @@
-import colaboradores from "../../../assets/pictogramas/donacion.png";
 import contabilidad from "../../../assets/pictogramas/contabilidad.png";
 import junta from "../../../assets/pictogramas/junta.png";
 import organigrama from "../../../assets/pictogramas/organigrama.png";

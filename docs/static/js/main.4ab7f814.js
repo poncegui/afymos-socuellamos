@@ -1,4 +1,4 @@
-/*! For license information please see main.6ac0bc5a.js.LICENSE.txt */
+/*! For license information please see main.4ab7f814.js.LICENSE.txt */
 !(function () {
   var e = {
       7945: function (e, t, n) {
@@ -15221,10 +15221,6 @@
         "use strict";
         e.exports = n.p + "static/media/contabilidad.9fd6d39a7ec44cc6b43f.png";
       },
-      1480: function (e, t, n) {
-        "use strict";
-        e.exports = n.p + "static/media/donacion.5bcfebb0e44a5d6b7a8d.png";
-      },
       8449: function (e, t, n) {
         "use strict";
         e.exports = n.p + "static/media/educacion.00af39000f7a1fcd5de3.png";
@@ -19687,13 +19683,13 @@
         li = $t.div(
           Jr ||
             (Jr = ae([
-              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width:440px) {\n    h1 {\n    font-size: 3rem;\n  }\n\n  img {\n    height: 4rem;\n  }\n    }\n",
+              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size: 3rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
             ]))
         ),
         ci = $t.div(
           Xr ||
             (Xr = ae([
-              "\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n  justify-content: end;\n  gap: 1rem;\n\n\n  h2 {\n    font-size: 2rem;\n    color: #071c2f;\n  }\n\n  i {\n    font-size: 1.5rem;\n    color: #071c2f;\n\n  }\n  @media (max-width:440px) {\n    h2 {\n    font-size: 1.2rem;\n  }\n\n  i {\n    font-size: 0.8rem;\n  }\n    }\n",
+              "\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n  justify-content: end;\n  gap: 1rem;\n\n  h2 {\n    font-size: 2rem;\n    color: #071c2f;\n  }\n\n  i {\n    font-size: 1.5rem;\n    color: #071c2f;\n  }\n  @media (max-width: 440px) {\n    h2 {\n      font-size: 1.2rem;\n    }\n\n    i {\n      font-size: 0.8rem;\n    }\n  }\n",
             ]))
         ),
         ui = $t.section(Kr || (Kr = ae([""])));
@@ -19817,7 +19813,7 @@
         oa = $t.nav(
           $r ||
             ($r = ae([
-              "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 5%;\n    font-size: 2.2rem;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 5%;\n    font-weight: 400;\n  }\n\n  @media (max-width: 440px) {\n    h3 {\n    font-size: 1.6rem;\n\n  }\n    }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #ffc0bc;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 1090px) {\n      background-color: #071c2f;\n      height: 45%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 3rem;\n        margin-top: 5%;\n        color: #ffc0bc;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
+              "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 5%;\n    font-size: 2.2rem;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 5%;\n    font-weight: 400;\n  }\n\n  @media (max-width: 440px) {\n    h3 {\n      font-size: 1.6rem;\n    }\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #ffc0bc;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 1090px) {\n      background-color: #071c2f;\n      height: 45%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 3rem;\n        margin-top: 5%;\n        color: #ffc0bc;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
             ]))
         ),
         sa = $t.div(
@@ -19894,7 +19890,7 @@
             }),
           });
         },
-        ma = (n(1480), n(44)),
+        ma = n(44),
         ga = n(5581),
         va = n(4450),
         ya = "_blank",
@@ -21271,7 +21267,7 @@
         il = $t.div(
           Ji ||
             (Ji = ae([
-              "\n  display: flex;\n  width: 100%;\n  height: 7rem;\n  background:",
+              "\n  display: flex;\n  width: 100%;\n  height: 7rem;\n  background: ",
               ";\n  text-align: center;\n  align-items: center;\n  line-height: 1.5rem;\n  font-size: ",
               ";\n  margin-bottom: 2rem;\n\n  h2 {\n    width: 100%;\n    position: relative;\n    color: ",
               ";\n  }\n\n  /* @media (min-width: 768px) {\n  h2 {\n      font-size: 36px;\n      white-space: nowrap;\n      line-height: 20px;\n    }\n  }\n\n  @media (min-width: 1090px) {\n  h2 {\n      font-size: 40px;\n      line-height: 10px;\n      min-width: 800px;\n    }\n  } */\n",
@@ -21373,6 +21369,13 @@
             alt: "junta-directiva",
             url: "/junta-directiva",
           },
+          {
+            id: 4,
+            name: "Cuentas anuales 2021",
+            img: ma,
+            alt: "logo-cuentas-anuales",
+            url: "/pdf-cuentas-21",
+          },
         ],
         hl = function () {
           var e = a((0, t.useState)(pl), 1)[0];
@@ -21393,7 +21396,7 @@
         ml = $t.div(
           Xi ||
             (Xi = ae([
-              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  margin-bottom: 4rem;\n\n",
+              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  margin-bottom: 4rem;\n",
             ]))
         ),
         gl = $t.div(
@@ -21884,4 +21887,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.6ac0bc5a.js.map
+//# sourceMappingURL=main.4ab7f814.js.map

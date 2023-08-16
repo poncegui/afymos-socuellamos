@@ -1,6 +1,7 @@
 import capacitacion from "../../../assets/pictogramas/promocion.png";
 import centroDia from "../../../assets/pictogramas/proteger.png";
 import centroDiversidad from "../../../assets/pictogramas/campus-universitario.png";
+import contabilidad from "../../../assets/pictogramas/contabilidad.png";
 import diagnostico from "../../../assets/pictogramas/historial-medico.png";
 import familias from "../../../assets/pictogramas/familia.png";
 import formacion from "../../../assets/pictogramas/educacion.png";
@@ -90,5 +91,12 @@ export const aboutUsData = [
     img: junta,
     alt: "junta-directiva",
     url: "/junta-directiva",
+  },
+  {
+    id: 4,
+    name: "Cuentas anuales 2021",
+    img: contabilidad,
+    alt: "logo-cuentas-anuales",
+    url: "/pdf-cuentas-21",
   },
 ];
