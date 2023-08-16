@@ -7,7 +7,6 @@ import {
 import { ContentProjects } from "../Content/ContentProjects";
 import Footer from "../Footer";
 import NavBarTemplate from "../templates/NavBarTemplate";
-import OtherInformation from "./OthersList";
 import PartnersList from "../main/PartnerList";
 import { React } from "react";
 import UnDiaEnAfymos from "../VideosFeaatures/UndiaEnAfymosVideo";
@@ -20,7 +19,6 @@ const Nosotros = () => {
       <ContentProjects {...nosotrosDataTwo} reverse />
       <ContentProjects {...nosotrosDataThree} inverse />
       <UnDiaEnAfymos />
-      <OtherInformation />
       <PartnersList />
       <Footer />
     </>

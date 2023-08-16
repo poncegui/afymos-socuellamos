@@ -15,8 +15,8 @@ const Testimonials = () => {
             <img src={user1} alt="rafa" />
             <p>
               Gracias al trabajo, Rafael ha adquirido nuevas rutinas, ha
-              cambiado sus hábitos, ha asumido nuevas responsabilidades que le
-              han permitido cambia su horizonte vital.
+              cambiado sus hábitos y ha asumido nuevas responsabilidades que le
+              han permitido cambiar su horizonte vital.
             </p>
             <p>
               <span>Rafa</span>
@@ -47,7 +47,7 @@ const Testimonials = () => {
               el puesto de trabajo.
             </p>
             <p>
-              <span>Tomás</span>
+              <span>Pedro</span>
             </p>
             <p>Trabajador en Arte Religioso Salmerón</p>
           </TestimonialsCard>

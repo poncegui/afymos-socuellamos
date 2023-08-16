@@ -1272,112 +1272,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
   margin-top: 1rem;
   width: 15rem;
 }
-.tecno-main {
-  background-color: #fff;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  margin: 0;
-  position: relative;
-  width: 100%;
-}
-.tecno-main,
-.title {
-  align-items: center;
-  display: flex;
-}
-.title {
-  justify-content: center;
-  width: 40%;
-}
-.title > h3 {
-  color: #000;
-  font-size: 45px;
-}
-.gridContainer {
-  grid-gap: 50px 80px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 5%;
-}
-.icons {
-  box-shadow: 41px 41px 82px #949494, -41px -41px 82px #fff;
-  flex-direction: column;
-  height: 180px;
-  text-align: center;
-  width: 180px;
-}
-.clicked,
-.icons {
-  align-items: center;
-  background: #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-}
-.clicked {
-  box-shadow: 5px 5px 10px #797979, -5px -5px 10px #fff;
-  height: 120px;
-  width: 120px;
-}
-.icons > img {
-  cursor: pointer;
-}
-.clicked > img,
-.icons > img {
-  color: #000;
-  height: 100px;
-  width: 100px;
-}
-@media (max-width: 768px) {
-  .tecno-main {
-    align-items: center;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0;
-    position: relative;
-    width: 100%;
-  }
-  .gridContainer {
-    grid-gap: 30px 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 5% 5% 15%;
-  }
-  .title {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 90%;
-  }
-  .clicke > img,
-  .icons > img {
-    color: #000;
-    height: 40px;
-    width: 40px;
-  }
-  .icons {
-    border-radius: 10px;
-    box-shadow: 41px 41px 82px #949494, -41px -41px 82px #fff;
-    height: 80px;
-    width: 80px;
-  }
-  .title > h3 {
-    color: #000;
-    font-size: 1rem;
-    margin: 15% auto;
-  }
-  .clicked {
-    background: #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #797979, -5px -5px 10px #fff;
-    height: 80px;
-    width: 80px;
-  }
-}
 .slider {
   align-items: center;
   background-color: var(--background-sections);
@@ -1531,4 +1425,4 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     transform: translate3d(-200%, 0, 0);
   }
 }
-/*# sourceMappingURL=main.89682400.css.map*/
+/*# sourceMappingURL=main.a157865f.css.map*/

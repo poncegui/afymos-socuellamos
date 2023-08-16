@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.89682400.css",
-    "main.js": "./static/js/main.b4ea5210.js",
+    "main.css": "./static/css/main.a157865f.css",
+    "main.js": "./static/js/main.e29f51d4.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion.jpg": "./static/media/formacion.6efb50312b365fe9d351.jpg",
     "static/media/neuro.jpg": "./static/media/neuro.0e99cbcb1b389c4cb530.jpg",
@@ -103,8 +103,8 @@
     "static/media/gracias.png": "./static/media/gracias.39137f29f9e9d32fc388.png",
     "static/media/historial-medico.png": "./static/media/historial-medico.cdd204e568964ac3e119.png",
     "index.html": "./index.html",
-    "main.89682400.css.map": "./static/css/main.89682400.css.map",
-    "main.b4ea5210.js.map": "./static/js/main.b4ea5210.js.map"
+    "main.a157865f.css.map": "./static/css/main.a157865f.css.map",
+    "main.e29f51d4.js.map": "./static/js/main.e29f51d4.js.map"
   },
-  "entrypoints": ["static/css/main.89682400.css", "static/js/main.b4ea5210.js"]
+  "entrypoints": ["static/css/main.a157865f.css", "static/js/main.e29f51d4.js"]
 }
