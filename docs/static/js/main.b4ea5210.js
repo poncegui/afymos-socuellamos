@@ -1,4 +1,4 @@
-/*! For license information please see main.cb543975.js.LICENSE.txt */
+/*! For license information please see main.b4ea5210.js.LICENSE.txt */
 !(function () {
   var e = {
       7945: function (e, t, n) {
@@ -19434,7 +19434,7 @@
                         }),
                         (0, Kn.jsx)("input", {
                           type: "submit",
-                          value: "enviar mensaje",
+                          value: "enviar",
                           target: "_blank",
                           className: "inputSubmit",
                         }),
@@ -21892,4 +21892,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.cb543975.js.map
+//# sourceMappingURL=main.b4ea5210.js.map

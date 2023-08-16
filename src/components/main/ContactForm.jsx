@@ -67,7 +67,7 @@ const ContactForm = () => {
             ></textarea>
             <input
               type="submit"
-              value="enviar mensaje"
+              value="enviar"
               target="_blank"
               className="inputSubmit"
             />
