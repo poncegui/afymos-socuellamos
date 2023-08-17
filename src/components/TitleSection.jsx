@@ -6,7 +6,6 @@ import styled from "styled-components";
 const TitleSection = ({ title, size, inverse, marginBottom, display }) => {
   return (
     <>
-      {/* <TitleSection> */}
       <TitleSectionContainer
         size={size}
         inverse={inverse}
@@ -14,23 +13,6 @@ const TitleSection = ({ title, size, inverse, marginBottom, display }) => {
       >
         <h2>{title}</h2>
       </TitleSectionContainer>
-      {/* <SocialLinks display={display}>
-          <a
-            href="https://www.facebook.com/profile.php?id=100067093413028"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/tv/CKKQgBcIW_Z/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-        </SocialLinks> */}
-      {/* </TitleSection> */}
     </>
   );
 };
@@ -52,8 +34,9 @@ const TitleSectionContainer = styled.div`
     position: relative;
     color: ${({ inverse }) => (inverse ? "#FFC0BC" : "#071c2f")};
   }
-`;
 
-const SocialLinks = styled.div`
-  display: ${({ display }) => (display ? "flex" : "none")};
+  @media (max-width: 440px) {
+    font-size: ${({ size }) => (size ? "1.2rem" : "1rem")};
+    line-height: 2.5rem;
+  }
 `;

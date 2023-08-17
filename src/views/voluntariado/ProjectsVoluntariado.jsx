@@ -12,11 +12,13 @@ import Footer from "../../components/Footer/Footer";
 import NavBarTemplate from "../../components/Header/NavBarViews";
 import PartnersList from "../../components/Partners/PartnerList";
 import { React } from "react";
+import TitleSection from "../../components/TitleSection";
 
 const ProjectsVoluntariado = () => {
   return (
     <>
       <NavBarTemplate title="Servicio de Ocio y Voluntariado" />
+      <TitleSection title="Nuestro programa de voluntariado" size />
       <ContentProjects {...voluntariadoOne} inverse />
       <ContentProjects {...voluntariadoTwo} reverse />
       <ContentProjects {...voluntariadoThree} inverse />

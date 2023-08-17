@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 
 import { Link } from "react-scroll";
+import TitleSection from "../../../components/TitleSection";
 import { introData } from "./services/introData";
 import styled from "styled-components";
 
@@ -9,25 +10,27 @@ const ProjectsIntro = () => {
 
   return (
     <>
-      <SectionFeaturesMobile>
-        <h1>Nuestras Terapias</h1>
-        <ButtonContainer>
-          {others.map((picto) => (
-            <Icons key={picto.id} value={picto.name}>
-              <h3>{picto.name}</h3>
-              <Link
-                to={picto.url}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-              >
-                <img src={picto.src} alt={picto.alt} />
-              </Link>
-            </Icons>
-          ))}
-        </ButtonContainer>
-      </SectionFeaturesMobile>
+      <TitleSection title="Nuestras Terapias" size />
+      <section>
+        <SectionFeaturesMobile>
+          <ButtonContainer>
+            {others.map((picto) => (
+              <Icons key={picto.id} value={picto.name}>
+                <h3>{picto.name}</h3>
+                <Link
+                  to={picto.url}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={1000}
+                >
+                  <img src={picto.src} alt={picto.alt} />
+                </Link>
+              </Icons>
+            ))}
+          </ButtonContainer>
+        </SectionFeaturesMobile>
+      </section>
     </>
   );
 };

@@ -11,12 +11,14 @@ import NavBarViews from "../../components/Header/NavBarViews";
 import PartnersList from "../../components/Partners/PartnerList";
 import { React } from "react";
 import ScrollToTop from "../../components/ScrollToUp";
+import TitleSection from "../../components/TitleSection";
 
 const ProjectsFormacion = () => {
   return (
     <>
       <ScrollToTop />
       <NavBarViews title="Centro de Formación" id="/formacion" />
+      <TitleSection title="Fomentamos la formación" size />
       <ContentProjects {...formacionDataOne} inverse />
       <ContentProjects {...formacionDataTwo} reverse />
       <ContentProjects {...formacionDataThree} inverse />

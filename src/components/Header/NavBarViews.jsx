@@ -27,7 +27,6 @@ const Navbar = (props) => {
           />
         </RightMenu>
       </NavContainer>
-      <TitleSection display></TitleSection>
     </>
   );
 };
@@ -77,6 +76,7 @@ const NavContainer = styled.nav`
     margin-right: 1.5rem;
   }
 `;
+NavContainer.displayName = "NavContainer";
 
 const NavContainerPrincipal = styled.div`
   display: flex;
@@ -112,11 +112,13 @@ const RightMenu = styled.nav`
     h1 {
       font-size: 2.2rem;
     }
-    img {
-      display: none;
-    }
   }
   @media (max-width: 440px) {
+    display: flex;
+    flex-direction: end;
+    img {
+      width: 20%;
+    }
     min-height: 10vh;
     h1 {
       display: none;

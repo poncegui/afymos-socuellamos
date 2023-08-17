@@ -11,12 +11,14 @@ import PartnersList from "../../components/Partners/PartnerList";
 import { React } from "react";
 import ScrollToTop from "../../components/ScrollToUp";
 import SliderNosotros from "../nosotros/components/SliderNosotros";
+import TitleSection from "../../components/TitleSection";
 
 const ProjectsCentroDiversidad = () => {
   return (
     <>
       <ScrollToTop />
       <NavBarViews title="Nuestro Centro" />
+      <TitleSection title="Centro de atención a la Diversidad Funcional" size />
       <ContentProjects {...centroDiversidadDataOne} inverse />
       <ContentProjects {...centroDiversidadDataTwo} reverse />
       <ContentProjects {...centroDiversidadDataThree} inverse />
