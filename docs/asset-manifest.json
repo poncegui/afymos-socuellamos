@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.a157865f.css",
-    "main.js": "./static/js/main.90e67f24.js",
+    "main.css": "./static/css/main.99616e20.css",
+    "main.js": "./static/js/main.187c80e9.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion.jpg": "./static/media/formacion.6efb50312b365fe9d351.jpg",
     "static/media/neuro.jpg": "./static/media/neuro.0e99cbcb1b389c4cb530.jpg",
@@ -27,15 +27,14 @@
     "static/media/chart8.png": "./static/media/chart8.c6d738d35c4bac985323.png",
     "static/media/chart9.png": "./static/media/chart9.fcd0b8909473a35c1dc4.png",
     "static/media/chart14.png": "./static/media/chart14.783c366cb781566c24e7.png",
-    "static/media/centroDia-7.jpg": "./static/media/centroDia-7.964c97ec12f4e5bdb019.jpg",
     "static/media/chart16.png": "./static/media/chart16.87febe9c3dfd0d23d0f6.png",
     "static/media/chart13.png": "./static/media/chart13.b128dd46744456c463a0.png",
     "static/media/chart17.png": "./static/media/chart17.9da20963178447ea8317.png",
     "static/media/chart4.png": "./static/media/chart4.135461782bb7ebee7f6a.png",
-    "static/media/sensibilizacion-1.png": "./static/media/sensibilizacion-1.5692065983e11f77431e.png",
     "static/media/centroDia-5.jpg": "./static/media/centroDia-5.813d367cde84113f5509.jpg",
     "static/media/cuentas-anuales-2021.pdf": "./static/media/cuentas-anuales-2021.af62e07980ca0fffd333.pdf",
     "static/media/cuentas-anuales-2020.pdf": "./static/media/cuentas-anuales-2020.629b34d84f2be34967b5.pdf",
+    "static/media/sensibilizacion-1.png": "./static/media/sensibilizacion-1.efaf1e47b35721684da4.png",
     "static/media/diagnostico-2.png": "./static/media/diagnostico-2.d4a6f2b32d4dc3498277.png",
     "static/media/sala-fisioterapia.png": "./static/media/sala-fisioterapia.4936dbb0451e351d6569.png",
     "static/media/diagnostico.png": "./static/media/diagnostico.990df81de23703eae354.png",
@@ -72,7 +71,6 @@
     "static/media/vivienda-2.jpg": "./static/media/vivienda-2.74948c4fb956af4f2687.jpg",
     "static/media/congreso.jpg": "./static/media/congreso.f5930c829249440ebc97.jpg",
     "static/media/fundacion-once.png": "./static/media/fundacion-once.eccc006489bd0da4b7d0.png",
-    "static/media/centro-afymos.png": "./static/media/centro-afymos.8aa8e8fbc55c746c4717.png",
     "static/media/voluntariado6.jpg": "./static/media/voluntariado6.201368e922b467442c39.jpg",
     "static/media/logopeda.png": "./static/media/logopeda.d2013f6acea2198b19f2.png",
     "static/media/neuropsicologia.png": "./static/media/neuropsicologia.369da4c7dbd183a32dbe.png",
@@ -103,8 +101,8 @@
     "static/media/gracias.png": "./static/media/gracias.39137f29f9e9d32fc388.png",
     "static/media/historial-medico.png": "./static/media/historial-medico.cdd204e568964ac3e119.png",
     "index.html": "./index.html",
-    "main.a157865f.css.map": "./static/css/main.a157865f.css.map",
-    "main.90e67f24.js.map": "./static/js/main.90e67f24.js.map"
+    "main.99616e20.css.map": "./static/css/main.99616e20.css.map",
+    "main.187c80e9.js.map": "./static/js/main.187c80e9.js.map"
   },
-  "entrypoints": ["static/css/main.a157865f.css", "static/js/main.90e67f24.js"]
+  "entrypoints": ["static/css/main.99616e20.css", "static/js/main.187c80e9.js"]
 }

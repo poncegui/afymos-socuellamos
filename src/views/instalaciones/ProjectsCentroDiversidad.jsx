@@ -1,0 +1,30 @@
+import {
+  centroDiversidadDataOne,
+  centroDiversidadDataThree,
+  centroDiversidadDataTwo,
+} from "./services/centroDiversidadData";
+
+import { ContentProjects } from "../../components/Content/ContentProjects";
+import Footer from "../../components/Footer/Footer";
+import NavBarViews from "../../components/Header/NavBarViews";
+import PartnersList from "../../components/Partners/PartnerList";
+import { React } from "react";
+import ScrollToTop from "../../components/ScrollToUp";
+import SliderNosotros from "../nosotros/components/SliderNosotros";
+
+const ProjectsCentroDiversidad = () => {
+  return (
+    <>
+      <ScrollToTop />
+      <NavBarViews title="Nuestro Centro" />
+      <ContentProjects {...centroDiversidadDataOne} inverse />
+      <ContentProjects {...centroDiversidadDataTwo} reverse />
+      <ContentProjects {...centroDiversidadDataThree} inverse />
+      <SliderNosotros />
+      <PartnersList />
+      <Footer />
+    </>
+  );
+};
+
+export default ProjectsCentroDiversidad;
