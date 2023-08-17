@@ -1,12 +1,12 @@
 import auditiva from "../../juntaDirectiva/assets/images-chart-png/chart17.png";
 import fisioterapia from "../../juntaDirectiva/assets/images-chart-png/chart16.png";
 import introduccion from "../../centroDia/assets/images-centroDia/centroDia-6.jpg";
-import logopedia from "../../juntaDirectiva/assets/images-chart-png/chart13.png";
-import neuroPiscologia from "../assets/images-terapias/neuro.jpg";
-import psicologia from "../../juntaDirectiva/assets/images-chart-png/chart15.png";
-import psicologia2 from "../../juntaDirectiva/assets/images-chart-png/chart14.png";
+import logopedia from "../assets/images-terapias/combinada.png";
+import neuroPiscologia from "../assets/images-terapias/sala.png";
+import psicologia from "../../juntaDirectiva/assets/images-chart-png/chart14.png";
+import psicopedagogia from "../assets/images-terapias/combinada-2.png";
 import terapiaOcupacional from "../../juntaDirectiva/assets/images-chart-png/chart10.png";
-import visual from "../components/assets/pictogramas/terapeuta-visual.jpg";
+import visual from "../assets/images-terapias/visual.png";
 
 export const introduccionData = {
   reverse: false,
@@ -26,7 +26,7 @@ export const logopediaData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "LOGOPEDIA: conoce cómo trabajan nuestros profesionales Cristina Olivares y Jorge Sánchez",
+    text: "LOGOPEDIA: conoce cómo trabajan nuestros profesionales Jorge Sánchez y Cristina Olivares",
   },
   headline:
     "La logopedia es la disciplina sanitaria encargada de la prevención, detección, evaluación,diagnóstico y tratamiento de los trastornos implicados en la comunicación humana",
@@ -82,13 +82,13 @@ export const psicoPedagogíaData = {
   reverse: true,
   inverse: false,
   topLine: {
-    text: "PSICOPEDAGOGÍA: conoce cómo trabaja nuestras profesionales, Mónica Mazzella y Alicia Lara chart12",
+    text: "PSICOPEDAGOGÍA: conoce cómo trabaja nuestras profesionales, Alicia Lara y Mónica Mazzella",
   },
   headline:
     "La terapia psicopedagógica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
   description:
     "Como psicopedagoga asesoro, evalúo, realizo informes psicopedagógicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y diseño propuestas de intervención para niños, adolescentes, jóvenes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
-  img: psicologia,
+  img: psicopedagogia,
 };
 
 export const auditivaPsicologiaData = {
@@ -131,5 +131,5 @@ export const psicologiaData = {
     "Nos centramos en la psicoeducación y en la reestructuración cognitiva. Buscamos favorecer los procesos de cambio y toma de decisiones para buscar una situación más adaptativa para la persona.",
   description:
     "A nivel psicoeducativo podemos ayudar a las personas a entender sus propios procesos, situaciones personales, patologías, etc, para facilitar su propia adaptación al medio y mitigar sus estados de ansiedad e incertidumbre.",
-  img: psicologia2,
+  img: psicologia,
 };
