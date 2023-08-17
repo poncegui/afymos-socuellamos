@@ -3,7 +3,7 @@ import "../components/Footer/styles/Footer.css";
 import React from "react";
 import styled from "styled-components";
 
-const TitleSection = ({ title, size, inverse, marginBottom, display }) => {
+const TitleSection = ({ title, size, inverse, marginBottom }) => {
   return (
     <>
       <TitleSectionContainer

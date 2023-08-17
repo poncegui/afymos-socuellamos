@@ -67,7 +67,7 @@ const HeaderTitle = styled.div`
 
   @media (max-width: 440px) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 5rem;
     }
 
     img {
@@ -94,7 +94,7 @@ const HeaderSubtitle = styled.div`
   }
   @media (max-width: 440px) {
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     i {

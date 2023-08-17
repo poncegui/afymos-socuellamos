@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import TitleSection from "../TitleSection";
 import logo from "./logos/logo-afymos.png";
 import styled from "styled-components";
 
@@ -13,9 +12,9 @@ const Navbar = (props) => {
         <Link to="/" onClick={handleBack}>
           <NavContainerPrincipal>
             <i class="fa-solid fa-angles-left"></i>
-            <h3>
+            <h2>
               volver a <span>Principal</span>
-            </h3>
+            </h2>
           </NavContainerPrincipal>
         </Link>
         <RightMenu>
@@ -57,9 +56,7 @@ const NavContainer = styled.nav`
     }
   }
 
-  h3 {
-    color: #ffc0bc;
-    font-weight: 400;
+  h2 {
     margin-left: 10px;
     span {
       font-weight: bold;
