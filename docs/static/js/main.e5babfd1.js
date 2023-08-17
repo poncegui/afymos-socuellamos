@@ -1,4 +1,4 @@
-/*! For license information please see main.8729fad6.js.LICENSE.txt */
+/*! For license information please see main.e5babfd1.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -834,39 +834,39 @@
           T = 60113,
           L = 60120,
           M = 60115,
-          z = 60116,
-          I = 60121,
-          R = 60128,
-          D = 60129,
+          I = 60116,
+          z = 60121,
+          D = 60128,
+          R = 60129,
           N = 60130,
-          B = 60131;
+          F = 60131;
         if ("function" === typeof Symbol && Symbol.for) {
-          var F = Symbol.for;
-          (w = F("react.element")),
-            (S = F("react.portal")),
-            (k = F("react.fragment")),
-            (j = F("react.strict_mode")),
-            (E = F("react.profiler")),
-            (C = F("react.provider")),
-            (O = F("react.context")),
-            (P = F("react.forward_ref")),
-            (T = F("react.suspense")),
-            (L = F("react.suspense_list")),
-            (M = F("react.memo")),
-            (z = F("react.lazy")),
-            (I = F("react.block")),
-            F("react.scope"),
-            (R = F("react.opaque.id")),
-            (D = F("react.debug_trace_mode")),
-            (N = F("react.offscreen")),
-            (B = F("react.legacy_hidden"));
+          var B = Symbol.for;
+          (w = B("react.element")),
+            (S = B("react.portal")),
+            (k = B("react.fragment")),
+            (j = B("react.strict_mode")),
+            (E = B("react.profiler")),
+            (C = B("react.provider")),
+            (O = B("react.context")),
+            (P = B("react.forward_ref")),
+            (T = B("react.suspense")),
+            (L = B("react.suspense_list")),
+            (M = B("react.memo")),
+            (I = B("react.lazy")),
+            (z = B("react.block")),
+            B("react.scope"),
+            (D = B("react.opaque.id")),
+            (R = B("react.debug_trace_mode")),
+            (N = B("react.offscreen")),
+            (F = B("react.legacy_hidden"));
         }
         var W,
-          H = "function" === typeof Symbol && Symbol.iterator;
-        function U(e) {
+          U = "function" === typeof Symbol && Symbol.iterator;
+        function H(e) {
           return null === e || "object" !== typeof e
             ? null
-            : "function" === typeof (e = (H && e[H]) || e["@@iterator"])
+            : "function" === typeof (e = (U && e[U]) || e["@@iterator"])
             ? e
             : null;
         }
@@ -1004,9 +1004,9 @@
                 );
               case M:
                 return Z(e.type);
-              case I:
-                return Z(e._render);
               case z:
+                return Z(e._render);
+              case I:
                 (t = e._payload), (e = e._init);
                 try {
                   return Z(e(t));
@@ -1014,7 +1014,7 @@
             }
           return null;
         }
-        function _(e) {
+        function q(e) {
           switch (typeof e) {
             case "boolean":
             case "number":
@@ -1026,7 +1026,7 @@
               return "";
           }
         }
-        function q(e) {
+        function _(e) {
           var t = e.type;
           return (
             (e = e.nodeName) &&
@@ -1037,7 +1037,7 @@
         function J(e) {
           e._valueTracker ||
             (e._valueTracker = (function (e) {
-              var t = q(e) ? "checked" : "value",
+              var t = _(e) ? "checked" : "value",
                 n = Object.getOwnPropertyDescriptor(e.constructor.prototype, t),
                 r = "" + e[t];
               if (
@@ -1081,7 +1081,7 @@
           var n = t.getValue(),
             r = "";
           return (
-            e && (r = q(e) ? (e.checked ? "true" : "false") : e.value),
+            e && (r = _(e) ? (e.checked ? "true" : "false") : e.value),
             (e = r) !== n && (t.setValue(e), !0)
           );
         }
@@ -1110,7 +1110,7 @@
         function ee(e, t) {
           var n = null == t.defaultValue ? "" : t.defaultValue,
             r = null != t.checked ? t.checked : t.defaultChecked;
-          (n = _(null != t.value ? t.value : n)),
+          (n = q(null != t.value ? t.value : n)),
             (e._wrapperState = {
               initialChecked: r,
               initialValue: n,
@@ -1125,7 +1125,7 @@
         }
         function ne(e, t) {
           te(e, t);
-          var n = _(t.value),
+          var n = q(t.value),
             r = t.type;
           if (null != n)
             "number" === r
@@ -1137,7 +1137,7 @@
           t.hasOwnProperty("value")
             ? ie(e, t.type, n)
             : t.hasOwnProperty("defaultValue") &&
-              ie(e, t.type, _(t.defaultValue)),
+              ie(e, t.type, q(t.defaultValue)),
             null == t.checked &&
               null != t.defaultChecked &&
               (e.defaultChecked = !!t.defaultChecked);
@@ -1190,7 +1190,7 @@
                 e[n].selected !== i && (e[n].selected = i),
                 i && r && (e[n].defaultSelected = !0);
           } else {
-            for (n = "" + _(n), t = null, i = 0; i < e.length; i++) {
+            for (n = "" + q(n), t = null, i = 0; i < e.length; i++) {
               if (e[i].value === n)
                 return (
                   (e[i].selected = !0), void (r && (e[i].defaultSelected = !0))
@@ -1221,11 +1221,11 @@
             }
             null == t && (t = ""), (n = t);
           }
-          e._wrapperState = { initialValue: _(n) };
+          e._wrapperState = { initialValue: q(n) };
         }
         function ce(e, t) {
-          var n = _(t.value),
-            r = _(t.defaultValue);
+          var n = q(t.value),
+            r = q(t.defaultValue);
           null != n &&
             ((n = "" + n) !== e.value && (e.value = n),
             null == t.defaultValue &&
@@ -1444,18 +1444,18 @@
               for (e = 0; e < t.length; e++) Te(t[e]);
           }
         }
-        function ze(e, t) {
+        function Ie(e, t) {
           return e(t);
         }
-        function Ie(e, t, n, r, i) {
+        function ze(e, t, n, r, i) {
           return e(t, n, r, i);
         }
-        function Re() {}
-        var De = ze,
+        function De() {}
+        var Re = Ie,
           Ne = !1,
-          Be = !1;
-        function Fe() {
-          (null === Oe && null === Pe) || (Re(), Me());
+          Fe = !1;
+        function Be() {
+          (null === Oe && null === Pe) || (De(), Me());
         }
         function We(e, t) {
           var n = e.stateNode;
@@ -1491,19 +1491,19 @@
           if (n && "function" !== typeof n) throw Error(o(231, t, typeof n));
           return n;
         }
-        var He = !1;
+        var Ue = !1;
         if (d)
           try {
-            var Ue = {};
-            Object.defineProperty(Ue, "passive", {
+            var He = {};
+            Object.defineProperty(He, "passive", {
               get: function () {
-                He = !0;
+                Ue = !0;
               },
             }),
-              window.addEventListener("test", Ue, Ue),
-              window.removeEventListener("test", Ue, Ue);
+              window.addEventListener("test", He, He),
+              window.removeEventListener("test", He, He);
           } catch (ge) {
-            He = !1;
+            Ue = !1;
           }
         function Ve(e, t, n, r, i, a, o, s, l) {
           var c = Array.prototype.slice.call(arguments, 3);
@@ -1517,13 +1517,13 @@
           Ye = null,
           Qe = !1,
           Ze = null,
-          _e = {
+          qe = {
             onError: function (e) {
               (Ge = !0), (Ye = e);
             },
           };
-        function qe(e, t, n, r, i, a, o, s, l) {
-          (Ge = !1), (Ye = null), Ve.apply(_e, arguments);
+        function _e(e, t, n, r, i, a, o, s, l) {
+          (Ge = !1), (Ye = null), Ve.apply(qe, arguments);
         }
         function Je(e) {
           var t = e,
@@ -1827,8 +1827,8 @@
           Tt = Ct("animationstart"),
           Lt = Ct("transitionend"),
           Mt = new Map(),
-          zt = new Map(),
-          It = [
+          It = new Map(),
+          zt = [
             "abort",
             "abort",
             Ot,
@@ -1880,81 +1880,81 @@
             "waiting",
             "waiting",
           ];
-        function Rt(e, t) {
+        function Dt(e, t) {
           for (var n = 0; n < e.length; n += 2) {
             var r = e[n],
               i = e[n + 1];
             (i = "on" + (i[0].toUpperCase() + i.slice(1))),
-              zt.set(r, t),
+              It.set(r, t),
               Mt.set(r, i),
               c(i, [r]);
           }
         }
         (0, a.unstable_now)();
-        var Dt = 8;
+        var Rt = 8;
         function Nt(e) {
-          if (0 !== (1 & e)) return (Dt = 15), 1;
-          if (0 !== (2 & e)) return (Dt = 14), 2;
-          if (0 !== (4 & e)) return (Dt = 13), 4;
+          if (0 !== (1 & e)) return (Rt = 15), 1;
+          if (0 !== (2 & e)) return (Rt = 14), 2;
+          if (0 !== (4 & e)) return (Rt = 13), 4;
           var t = 24 & e;
           return 0 !== t
-            ? ((Dt = 12), t)
+            ? ((Rt = 12), t)
             : 0 !== (32 & e)
-            ? ((Dt = 11), 32)
+            ? ((Rt = 11), 32)
             : 0 !== (t = 192 & e)
-            ? ((Dt = 10), t)
+            ? ((Rt = 10), t)
             : 0 !== (256 & e)
-            ? ((Dt = 9), 256)
+            ? ((Rt = 9), 256)
             : 0 !== (t = 3584 & e)
-            ? ((Dt = 8), t)
+            ? ((Rt = 8), t)
             : 0 !== (4096 & e)
-            ? ((Dt = 7), 4096)
+            ? ((Rt = 7), 4096)
             : 0 !== (t = 4186112 & e)
-            ? ((Dt = 6), t)
+            ? ((Rt = 6), t)
             : 0 !== (t = 62914560 & e)
-            ? ((Dt = 5), t)
+            ? ((Rt = 5), t)
             : 67108864 & e
-            ? ((Dt = 4), 67108864)
+            ? ((Rt = 4), 67108864)
             : 0 !== (134217728 & e)
-            ? ((Dt = 3), 134217728)
+            ? ((Rt = 3), 134217728)
             : 0 !== (t = 805306368 & e)
-            ? ((Dt = 2), t)
+            ? ((Rt = 2), t)
             : 0 !== (1073741824 & e)
-            ? ((Dt = 1), 1073741824)
-            : ((Dt = 8), e);
+            ? ((Rt = 1), 1073741824)
+            : ((Rt = 8), e);
         }
-        function Bt(e, t) {
+        function Ft(e, t) {
           var n = e.pendingLanes;
-          if (0 === n) return (Dt = 0);
+          if (0 === n) return (Rt = 0);
           var r = 0,
             i = 0,
             a = e.expiredLanes,
             o = e.suspendedLanes,
             s = e.pingedLanes;
-          if (0 !== a) (r = a), (i = Dt = 15);
+          if (0 !== a) (r = a), (i = Rt = 15);
           else if (0 !== (a = 134217727 & n)) {
             var l = a & ~o;
             0 !== l
-              ? ((r = Nt(l)), (i = Dt))
-              : 0 !== (s &= a) && ((r = Nt(s)), (i = Dt));
+              ? ((r = Nt(l)), (i = Rt))
+              : 0 !== (s &= a) && ((r = Nt(s)), (i = Rt));
           } else
             0 !== (a = n & ~o)
-              ? ((r = Nt(a)), (i = Dt))
-              : 0 !== s && ((r = Nt(s)), (i = Dt));
+              ? ((r = Nt(a)), (i = Rt))
+              : 0 !== s && ((r = Nt(s)), (i = Rt));
           if (0 === r) return 0;
           if (
             ((r = n & (((0 > (r = 31 - Gt(r)) ? 0 : 1 << r) << 1) - 1)),
             0 !== t && t !== r && 0 === (t & o))
           ) {
-            if ((Nt(t), i <= Dt)) return t;
-            Dt = i;
+            if ((Nt(t), i <= Rt)) return t;
+            Rt = i;
           }
           if (0 !== (t = e.entangledLanes))
             for (e = e.entanglements, t &= r; 0 < t; )
               (i = 1 << (n = 31 - Gt(t))), (r |= e[n]), (t &= ~i);
           return r;
         }
-        function Ft(e) {
+        function Bt(e) {
           return 0 !== (e = -1073741825 & e.pendingLanes)
             ? e
             : 1073741824 & e
@@ -1968,25 +1968,25 @@
             case 14:
               return 2;
             case 12:
-              return 0 === (e = Ht(24 & ~t)) ? Wt(10, t) : e;
+              return 0 === (e = Ut(24 & ~t)) ? Wt(10, t) : e;
             case 10:
-              return 0 === (e = Ht(192 & ~t)) ? Wt(8, t) : e;
+              return 0 === (e = Ut(192 & ~t)) ? Wt(8, t) : e;
             case 8:
               return (
-                0 === (e = Ht(3584 & ~t)) &&
-                  0 === (e = Ht(4186112 & ~t)) &&
+                0 === (e = Ut(3584 & ~t)) &&
+                  0 === (e = Ut(4186112 & ~t)) &&
                   (e = 512),
                 e
               );
             case 2:
-              return 0 === (t = Ht(805306368 & ~t)) && (t = 268435456), t;
+              return 0 === (t = Ut(805306368 & ~t)) && (t = 268435456), t;
           }
           throw Error(o(358, e));
         }
-        function Ht(e) {
+        function Ut(e) {
           return e & -e;
         }
-        function Ut(e) {
+        function Ht(e) {
           for (var t = [], n = 0; 31 > n; n++) t.push(e);
           return t;
         }
@@ -2005,25 +2005,25 @@
           Yt = Math.log,
           Qt = Math.LN2;
         var Zt = a.unstable_UserBlockingPriority,
-          _t = a.unstable_runWithPriority,
-          qt = !0;
+          qt = a.unstable_runWithPriority,
+          _t = !0;
         function Jt(e, t, n, r) {
-          Ne || Re();
+          Ne || De();
           var i = Kt,
             a = Ne;
           Ne = !0;
           try {
-            Ie(i, e, t, n, r);
+            ze(i, e, t, n, r);
           } finally {
-            (Ne = a) || Fe();
+            (Ne = a) || Be();
           }
         }
         function Xt(e, t, n, r) {
-          _t(Zt, Kt.bind(null, e, t, n, r));
+          qt(Zt, Kt.bind(null, e, t, n, r));
         }
         function Kt(e, t, n, r) {
           var i;
-          if (qt)
+          if (_t)
             if ((i = 0 === (4 & t)) && 0 < ot.length && -1 < pt.indexOf(e))
               (e = ht(null, e, t, n, r)), ot.push(e);
             else {
@@ -2060,7 +2060,7 @@
                     return;
                   mt(e, r);
                 }
-                Rr(e, t, r, null, n);
+                Dr(e, t, r, null, n);
               }
             }
         }
@@ -2081,7 +2081,7 @@
               } else a !== i && (i = null);
             }
           }
-          return Rr(e, t, r, i, n), null;
+          return Dr(e, t, r, i, n), null;
         }
         var en = null,
           tn = null,
@@ -2362,10 +2362,10 @@
               getModifierState: On,
             })
           ),
-          zn = ln(
+          In = ln(
             i({}, fn, { propertyName: 0, elapsedTime: 0, pseudoElement: 0 })
           ),
-          In = i({}, gn, {
+          zn = i({}, gn, {
             deltaX: function (e) {
               return "deltaX" in e
                 ? e.deltaX
@@ -2385,19 +2385,19 @@
             deltaZ: 0,
             deltaMode: 0,
           }),
-          Rn = ln(In),
-          Dn = [9, 13, 27, 32],
+          Dn = ln(zn),
+          Rn = [9, 13, 27, 32],
           Nn = d && "CompositionEvent" in window,
-          Bn = null;
-        d && "documentMode" in document && (Bn = document.documentMode);
-        var Fn = d && "TextEvent" in window && !Bn,
-          Wn = d && (!Nn || (Bn && 8 < Bn && 11 >= Bn)),
-          Hn = String.fromCharCode(32),
-          Un = !1;
+          Fn = null;
+        d && "documentMode" in document && (Fn = document.documentMode);
+        var Bn = d && "TextEvent" in window && !Fn,
+          Wn = d && (!Nn || (Fn && 8 < Fn && 11 >= Fn)),
+          Un = String.fromCharCode(32),
+          Hn = !1;
         function Vn(e, t) {
           switch (e) {
             case "keyup":
-              return -1 !== Dn.indexOf(t.keyCode);
+              return -1 !== Rn.indexOf(t.keyCode);
             case "keydown":
               return 229 !== t.keyCode;
             case "keypress":
@@ -2435,13 +2435,13 @@
           var t = e && e.nodeName && e.nodeName.toLowerCase();
           return "input" === t ? !!Qn[e.type] : "textarea" === t;
         }
-        function _n(e, t, n, r) {
+        function qn(e, t, n, r) {
           Le(r),
             0 < (t = Nr(t, "onChange")).length &&
               ((n = new pn("onChange", "change", null, n, r)),
               e.push({ event: n, listeners: t }));
         }
-        var qn = null,
+        var _n = null,
           Jn = null;
         function Xn(e) {
           Pr(e, 0);
@@ -2467,25 +2467,25 @@
           er = tr && (!document.documentMode || 9 < document.documentMode);
         }
         function ir() {
-          qn && (qn.detachEvent("onpropertychange", ar), (Jn = qn = null));
+          _n && (_n.detachEvent("onpropertychange", ar), (Jn = _n = null));
         }
         function ar(e) {
           if ("value" === e.propertyName && Kn(Jn)) {
             var t = [];
-            if ((_n(t, Jn, e, Ee(e)), (e = Xn), Ne)) e(t);
+            if ((qn(t, Jn, e, Ee(e)), (e = Xn), Ne)) e(t);
             else {
               Ne = !0;
               try {
-                ze(e, t);
+                Ie(e, t);
               } finally {
-                (Ne = !1), Fe();
+                (Ne = !1), Be();
               }
             }
           }
         }
         function or(e, t, n) {
           "focusin" === e
-            ? (ir(), (Jn = n), (qn = t).attachEvent("onpropertychange", ar))
+            ? (ir(), (Jn = n), (_n = t).attachEvent("onpropertychange", ar))
             : "focusout" === e && ir();
         }
         function sr(e) {
@@ -2622,19 +2622,19 @@
                 e.push({ event: t, listeners: r }),
                 (t.target = br))));
         }
-        Rt(
+        Dt(
           "cancel cancel click click close close contextmenu contextMenu copy copy cut cut auxclick auxClick dblclick doubleClick dragend dragEnd dragstart dragStart drop drop focusin focus focusout blur input input invalid invalid keydown keyDown keypress keyPress keyup keyUp mousedown mouseDown mouseup mouseUp paste paste pause pause play play pointercancel pointerCancel pointerdown pointerDown pointerup pointerUp ratechange rateChange reset reset seeked seeked submit submit touchcancel touchCancel touchend touchEnd touchstart touchStart volumechange volumeChange".split(
             " "
           ),
           0
         ),
-          Rt(
+          Dt(
             "drag drag dragenter dragEnter dragexit dragExit dragleave dragLeave dragover dragOver mousemove mouseMove mouseout mouseOut mouseover mouseOver pointermove pointerMove pointerout pointerOut pointerover pointerOver scroll scroll toggle toggle touchmove touchMove wheel wheel".split(
               " "
             ),
             1
           ),
-          Rt(It, 2);
+          Dt(zt, 2);
         for (
           var kr =
               "change selectionchange textInput compositionstart compositionend compositionupdate".split(
@@ -2644,7 +2644,7 @@
           jr < kr.length;
           jr++
         )
-          zt.set(kr[jr], 0);
+          It.set(kr[jr], 0);
         u("onMouseEnter", ["mouseout", "mouseover"]),
           u("onMouseLeave", ["mouseout", "mouseover"]),
           u("onPointerEnter", ["pointerout", "pointerover"]),
@@ -2696,7 +2696,7 @@
           var r = e.type || "unknown-event";
           (e.currentTarget = n),
             (function (e, t, n, r, i, a, s, l, c) {
-              if ((qe.apply(this, arguments), Ge)) {
+              if ((_e.apply(this, arguments), Ge)) {
                 if (!Ge) throw Error(o(198));
                 var u = Ye;
                 (Ge = !1), (Ye = null), Qe || ((Qe = !0), (Ze = u));
@@ -2739,17 +2739,17 @@
         function Tr(e, t) {
           var n = oi(t),
             r = e + "__bubble";
-          n.has(r) || (Ir(t, e, 2, !1), n.add(r));
+          n.has(r) || (zr(t, e, 2, !1), n.add(r));
         }
         var Lr = "_reactListening" + Math.random().toString(36).slice(2);
         function Mr(e) {
           e[Lr] ||
             ((e[Lr] = !0),
             s.forEach(function (t) {
-              Cr.has(t) || zr(t, !1, e, null), zr(t, !0, e, null);
+              Cr.has(t) || Ir(t, !1, e, null), Ir(t, !0, e, null);
             }));
         }
-        function zr(e, t, n, r) {
+        function Ir(e, t, n, r) {
           var i =
               4 < arguments.length && void 0 !== arguments[4]
                 ? arguments[4]
@@ -2766,10 +2766,10 @@
           }
           var o = oi(a),
             s = e + "__" + (t ? "capture" : "bubble");
-          o.has(s) || (t && (i |= 4), Ir(a, e, i, t), o.add(s));
+          o.has(s) || (t && (i |= 4), zr(a, e, i, t), o.add(s));
         }
-        function Ir(e, t, n, r) {
-          var i = zt.get(t);
+        function zr(e, t, n, r) {
+          var i = It.get(t);
           switch (void 0 === i ? 2 : i) {
             case 0:
               i = Jt;
@@ -2782,7 +2782,7 @@
           }
           (n = i.bind(null, t, n, e)),
             (i = void 0),
-            !He ||
+            !Ue ||
               ("touchstart" !== t && "touchmove" !== t && "wheel" !== t) ||
               (i = !0),
             r
@@ -2793,7 +2793,7 @@
               ? e.addEventListener(t, n, { passive: i })
               : e.addEventListener(t, n, !1);
         }
-        function Rr(e, t, n, r, i) {
+        function Dr(e, t, n, r, i) {
           var a = r;
           if (0 === (1 & t) && 0 === (2 & t) && null !== r)
             e: for (;;) {
@@ -2825,12 +2825,12 @@
               r = r.return;
             }
           !(function (e, t, n) {
-            if (Be) return e(t, n);
-            Be = !0;
+            if (Fe) return e(t, n);
+            Fe = !0;
             try {
-              De(e, t, n);
+              Re(e, t, n);
             } finally {
-              (Be = !1), Fe();
+              (Fe = !1), Be();
             }
           })(function () {
             var r = a,
@@ -2892,13 +2892,13 @@
                     l = An;
                     break;
                   case Lt:
-                    l = zn;
+                    l = In;
                     break;
                   case "scroll":
                     l = mn;
                     break;
                   case "wheel":
-                    l = Rn;
+                    l = Dn;
                     break;
                   case "copy":
                   case "cut":
@@ -2927,7 +2927,7 @@
                       ((p = m),
                       null !== f &&
                         null != (m = We(h, f)) &&
-                        u.push(Dr(h, m, p))),
+                        u.push(Rr(h, m, p))),
                     d)
                   )
                     break;
@@ -2986,19 +2986,19 @@
                   l && c)
                 )
                   e: {
-                    for (f = c, h = 0, p = u = l; p; p = Br(p)) h++;
-                    for (p = 0, m = f; m; m = Br(m)) p++;
-                    for (; 0 < h - p; ) (u = Br(u)), h--;
-                    for (; 0 < p - h; ) (f = Br(f)), p--;
+                    for (f = c, h = 0, p = u = l; p; p = Fr(p)) h++;
+                    for (p = 0, m = f; m; m = Fr(m)) p++;
+                    for (; 0 < h - p; ) (u = Fr(u)), h--;
+                    for (; 0 < p - h; ) (f = Fr(f)), p--;
                     for (; h--; ) {
                       if (u === f || (null !== f && u === f.alternate)) break e;
-                      (u = Br(u)), (f = Br(f));
+                      (u = Fr(u)), (f = Fr(f));
                     }
                     u = null;
                   }
                 else u = null;
-                null !== l && Fr(o, s, l, u, !1),
-                  null !== c && null !== d && Fr(o, d, c, u, !0);
+                null !== l && Br(o, s, l, u, !1),
+                  null !== c && null !== d && Br(o, d, c, u, !0);
               }
               if (
                 "select" ===
@@ -3021,7 +3021,7 @@
                   (g = lr);
               switch (
                 (g && (g = g(e, r))
-                  ? _n(o, g, n, i)
+                  ? qn(o, g, n, i)
                   : (v && v(e, s, r),
                     "focusout" === e &&
                       (v = s._wrapperState) &&
@@ -3085,15 +3085,15 @@
                   ((b = new Sn(b, e, null, n, i)),
                   o.push({ event: b, listeners: v }),
                   y ? (b.data = y) : null !== (y = Gn(n)) && (b.data = y))),
-                (y = Fn
+                (y = Bn
                   ? (function (e, t) {
                       switch (e) {
                         case "compositionend":
                           return Gn(t);
                         case "keypress":
-                          return 32 !== t.which ? null : ((Un = !0), Hn);
+                          return 32 !== t.which ? null : ((Hn = !0), Un);
                         case "textInput":
-                          return (e = t.data) === Hn && Un ? null : e;
+                          return (e = t.data) === Un && Hn ? null : e;
                         default:
                           return null;
                       }
@@ -3128,7 +3128,7 @@
             Pr(o, t);
           });
         }
-        function Dr(e, t, n) {
+        function Rr(e, t, n) {
           return { instance: e, listener: t, currentTarget: n };
         }
         function Nr(e, t) {
@@ -3138,20 +3138,20 @@
             5 === i.tag &&
               null !== a &&
               ((i = a),
-              null != (a = We(e, n)) && r.unshift(Dr(e, a, i)),
-              null != (a = We(e, t)) && r.push(Dr(e, a, i))),
+              null != (a = We(e, n)) && r.unshift(Rr(e, a, i)),
+              null != (a = We(e, t)) && r.push(Rr(e, a, i))),
               (e = e.return);
           }
           return r;
         }
-        function Br(e) {
+        function Fr(e) {
           if (null === e) return null;
           do {
             e = e.return;
           } while (e && 5 !== e.tag);
           return e || null;
         }
-        function Fr(e, t, n, r, i) {
+        function Br(e, t, n, r, i) {
           for (var a = t._reactName, o = []; null !== n && n !== r; ) {
             var s = n,
               l = s.alternate,
@@ -3161,15 +3161,15 @@
               null !== c &&
               ((s = c),
               i
-                ? null != (l = We(n, a)) && o.unshift(Dr(n, l, s))
-                : i || (null != (l = We(n, a)) && o.push(Dr(n, l, s)))),
+                ? null != (l = We(n, a)) && o.unshift(Rr(n, l, s))
+                : i || (null != (l = We(n, a)) && o.push(Rr(n, l, s)))),
               (n = n.return);
           }
           0 !== o.length && e.push({ event: t, listeners: o });
         }
         function Wr() {}
-        var Hr = null,
-          Ur = null;
+        var Ur = null,
+          Hr = null;
         function Vr(e, t) {
           switch (e) {
             case "button":
@@ -3199,14 +3199,14 @@
             ? (e.textContent = "")
             : 9 === e.nodeType && null != (e = e.body) && (e.textContent = "");
         }
-        function _r(e) {
+        function qr(e) {
           for (; null != e; e = e.nextSibling) {
             var t = e.nodeType;
             if (1 === t || 3 === t) break;
           }
           return e;
         }
-        function qr(e) {
+        function _r(e) {
           e = e.previousSibling;
           for (var t = 0; e; ) {
             if (8 === e.nodeType) {
@@ -3235,9 +3235,9 @@
                 ((n = t.alternate),
                 null !== t.child || (null !== n && null !== n.child))
               )
-                for (e = qr(e); null !== e; ) {
+                for (e = _r(e); null !== e; ) {
                   if ((n = e[Kr])) return n;
-                  e = qr(e);
+                  e = _r(e);
                 }
               return t;
             }
@@ -3348,33 +3348,33 @@
           Ti = a.unstable_now,
           Li = a.unstable_getCurrentPriorityLevel,
           Mi = a.unstable_ImmediatePriority,
-          zi = a.unstable_UserBlockingPriority,
-          Ii = a.unstable_NormalPriority,
-          Ri = a.unstable_LowPriority,
-          Di = a.unstable_IdlePriority,
+          Ii = a.unstable_UserBlockingPriority,
+          zi = a.unstable_NormalPriority,
+          Di = a.unstable_LowPriority,
+          Ri = a.unstable_IdlePriority,
           Ni = {},
-          Bi = void 0 !== Pi ? Pi : function () {},
-          Fi = null,
+          Fi = void 0 !== Pi ? Pi : function () {},
+          Bi = null,
           Wi = null,
-          Hi = !1,
-          Ui = Ti(),
+          Ui = !1,
+          Hi = Ti(),
           Vi =
-            1e4 > Ui
+            1e4 > Hi
               ? Ti
               : function () {
-                  return Ti() - Ui;
+                  return Ti() - Hi;
                 };
         function Gi() {
           switch (Li()) {
             case Mi:
               return 99;
-            case zi:
-              return 98;
             case Ii:
+              return 98;
+            case zi:
               return 97;
-            case Ri:
-              return 96;
             case Di:
+              return 96;
+            case Ri:
               return 95;
             default:
               throw Error(o(332));
@@ -3385,13 +3385,13 @@
             case 99:
               return Mi;
             case 98:
-              return zi;
-            case 97:
               return Ii;
+            case 97:
+              return zi;
             case 96:
-              return Ri;
-            case 95:
               return Di;
+            case 95:
+              return Ri;
             default:
               throw Error(o(332));
           }
@@ -3402,19 +3402,19 @@
         function Zi(e, t, n) {
           return (e = Yi(e)), Ei(e, t, n);
         }
-        function _i() {
+        function qi() {
           if (null !== Wi) {
             var e = Wi;
             (Wi = null), Ci(e);
           }
-          qi();
+          _i();
         }
-        function qi() {
-          if (!Hi && null !== Fi) {
-            Hi = !0;
+        function _i() {
+          if (!Ui && null !== Bi) {
+            Ui = !0;
             var e = 0;
             try {
-              var t = Fi;
+              var t = Bi;
               Qi(99, function () {
                 for (; e < t.length; e++) {
                   var n = t[e];
@@ -3423,11 +3423,11 @@
                   } while (null !== n);
                 }
               }),
-                (Fi = null);
+                (Bi = null);
             } catch (n) {
-              throw (null !== Fi && (Fi = Fi.slice(e + 1)), Ei(Mi, _i), n);
+              throw (null !== Bi && (Bi = Bi.slice(e + 1)), Ei(Mi, qi), n);
             } finally {
-              Hi = !1;
+              Ui = !1;
             }
           }
         }
@@ -3649,7 +3649,7 @@
               (a.baseState = c),
               (a.firstBaseUpdate = u),
               (a.lastBaseUpdate = d),
-              (Hs |= s),
+              (Us |= s),
               (e.lanes = s),
               (e.memoizedState = f);
           }
@@ -3885,7 +3885,7 @@
           }
           function d(e, t, n, r, a) {
             return null === t || 7 !== t.tag
-              ? (((t = _l(n, e.mode, r, a)).return = e), t)
+              ? (((t = ql(n, e.mode, r, a)).return = e), t)
               : (((t = i(t, n)).return = e), t);
           }
           function f(e, t, n) {
@@ -3906,8 +3906,8 @@
                 case S:
                   return ((t = Xl(t, e.mode, n)).return = e), t;
               }
-              if (wa(t) || U(t))
-                return ((t = _l(t, e.mode, n, null)).return = e), t;
+              if (wa(t) || H(t))
+                return ((t = ql(t, e.mode, n, null)).return = e), t;
               ka(e, t);
             }
             return null;
@@ -3927,7 +3927,7 @@
                 case S:
                   return n.key === i ? u(e, t, n, r) : null;
               }
-              if (wa(n) || U(n)) return null !== i ? null : d(e, t, n, r, null);
+              if (wa(n) || H(n)) return null !== i ? null : d(e, t, n, r, null);
               ka(e, n);
             }
             return null;
@@ -3952,7 +3952,7 @@
                     i
                   );
               }
-              if (wa(r) || U(r))
+              if (wa(r) || H(r))
                 return d(t, (e = e.get(n) || null), r, i, null);
               ka(t, r);
             }
@@ -4002,7 +4002,7 @@
             );
           }
           function g(i, s, l, c) {
-            var u = U(l);
+            var u = H(l);
             if ("function" !== typeof u) throw Error(o(150));
             if (null == (l = u.call(l))) throw Error(o(151));
             for (
@@ -4081,7 +4081,7 @@
                       t(e, c), (c = c.sibling);
                     }
                     a.type === k
-                      ? (((r = _l(a.props.children, e.mode, l, a.key)).return =
+                      ? (((r = ql(a.props.children, e.mode, l, a.key)).return =
                           e),
                         (e = r))
                       : (((l = Zl(
@@ -4128,7 +4128,7 @@
                 s(e)
               );
             if (wa(a)) return m(e, r, a, l);
-            if (U(a)) return g(e, r, a, l);
+            if (H(a)) return g(e, r, a, l);
             if ((u && ka(e, a), "undefined" === typeof a && !c))
               switch (e.tag) {
                 case 1:
@@ -4151,7 +4151,7 @@
           if (e === Oa) throw Error(o(174));
           return e;
         }
-        function za(e, t) {
+        function Ia(e, t) {
           switch ((di(La, t), di(Ta, e), di(Pa, Oa), (e = t.nodeType))) {
             case 9:
             case 11:
@@ -4165,20 +4165,20 @@
           }
           ui(Pa), di(Pa, t);
         }
-        function Ia() {
+        function za() {
           ui(Pa), ui(Ta), ui(La);
         }
-        function Ra(e) {
+        function Da(e) {
           Ma(La.current);
           var t = Ma(Pa.current),
             n = he(t, e.type);
           t !== n && (di(Ta, e), di(Pa, n));
         }
-        function Da(e) {
+        function Ra(e) {
           Ta.current === e && (ui(Pa), ui(Ta));
         }
         var Na = ci(0);
-        function Ba(e) {
+        function Fa(e) {
           for (var t = e; null !== t; ) {
             if (13 === t.tag) {
               var n = t.memoizedState;
@@ -4204,10 +4204,10 @@
           }
           return null;
         }
-        var Fa = null,
+        var Ba = null,
           Wa = null,
-          Ha = !1;
-        function Ua(e, t) {
+          Ua = !1;
+        function Ha(e, t) {
           var n = Gl(5, null, null, 0);
           (n.elementType = "DELETED"),
             (n.type = "DELETED"),
@@ -4241,19 +4241,19 @@
           }
         }
         function Ga(e) {
-          if (Ha) {
+          if (Ua) {
             var t = Wa;
             if (t) {
               var n = t;
               if (!Va(e, t)) {
-                if (!(t = _r(n.nextSibling)) || !Va(e, t))
+                if (!(t = qr(n.nextSibling)) || !Va(e, t))
                   return (
-                    (e.flags = (-1025 & e.flags) | 2), (Ha = !1), void (Fa = e)
+                    (e.flags = (-1025 & e.flags) | 2), (Ua = !1), void (Ba = e)
                   );
-                Ua(Fa, n);
+                Ha(Ba, n);
               }
-              (Fa = e), (Wa = _r(t.firstChild));
-            } else (e.flags = (-1025 & e.flags) | 2), (Ha = !1), (Fa = e);
+              (Ba = e), (Wa = qr(t.firstChild));
+            } else (e.flags = (-1025 & e.flags) | 2), (Ua = !1), (Ba = e);
           }
         }
         function Ya(e) {
@@ -4263,17 +4263,17 @@
 
           )
             e = e.return;
-          Fa = e;
+          Ba = e;
         }
         function Qa(e) {
-          if (e !== Fa) return !1;
-          if (!Ha) return Ya(e), (Ha = !0), !1;
+          if (e !== Ba) return !1;
+          if (!Ua) return Ya(e), (Ua = !0), !1;
           var t = e.type;
           if (
             5 !== e.tag ||
             ("head" !== t && "body" !== t && !Gr(t, e.memoizedProps))
           )
-            for (t = Wa; t; ) Ua(e, t), (t = _r(t.nextSibling));
+            for (t = Wa; t; ) Ha(e, t), (t = qr(t.nextSibling));
           if ((Ya(e), 13 === e.tag)) {
             if (!(e = null !== (e = e.memoizedState) ? e.dehydrated : null))
               throw Error(o(317));
@@ -4283,7 +4283,7 @@
                   var n = e.data;
                   if ("/$" === n) {
                     if (0 === t) {
-                      Wa = _r(e.nextSibling);
+                      Wa = qr(e.nextSibling);
                       break e;
                     }
                     t--;
@@ -4293,17 +4293,17 @@
               }
               Wa = null;
             }
-          } else Wa = Fa ? _r(e.stateNode.nextSibling) : null;
+          } else Wa = Ba ? qr(e.stateNode.nextSibling) : null;
           return !0;
         }
         function Za() {
-          (Wa = Fa = null), (Ha = !1);
+          (Wa = Ba = null), (Ua = !1);
         }
-        var _a = [];
-        function qa() {
-          for (var e = 0; e < _a.length; e++)
-            _a[e]._workInProgressVersionPrimary = null;
-          _a.length = 0;
+        var qa = [];
+        function _a() {
+          for (var e = 0; e < qa.length; e++)
+            qa[e]._workInProgressVersionPrimary = null;
+          qa.length = 0;
         }
         var Ja = x.ReactCurrentDispatcher,
           Xa = x.ReactCurrentBatchConfig,
@@ -4329,7 +4329,7 @@
             (t.memoizedState = null),
             (t.updateQueue = null),
             (t.lanes = 0),
-            (Ja.current = null === e || null === e.memoizedState ? zo : Io),
+            (Ja.current = null === e || null === e.memoizedState ? Io : zo),
             (e = n(r, i)),
             ro)
           ) {
@@ -4339,7 +4339,7 @@
               (a += 1),
                 (to = eo = null),
                 (t.updateQueue = null),
-                (Ja.current = Ro),
+                (Ja.current = Do),
                 (e = n(r, i));
             } while (ro);
           }
@@ -4431,7 +4431,7 @@
                 };
                 null === l ? ((s = l = d), (a = r)) : (l = l.next = d),
                   ($a.lanes |= u),
-                  (Hs |= u);
+                  (Us |= u);
               }
               c = c.next;
             } while (null !== c && c !== i);
@@ -4474,14 +4474,14 @@
               ? (e = i === r)
               : ((e = e.mutableReadLanes),
                 (e = (Ka & e) === e) &&
-                  ((t._workInProgressVersionPrimary = r), _a.push(t))),
+                  ((t._workInProgressVersionPrimary = r), qa.push(t))),
             e)
           )
             return n(t._source);
-          throw (_a.push(t), Error(o(350)));
+          throw (qa.push(t), Error(o(350)));
         }
         function ho(e, t, n, r) {
-          var i = zs;
+          var i = Is;
           if (null === i) throw Error(o(349));
           var a = t._getVersion,
             s = a(t._source),
@@ -4721,7 +4721,7 @@
             useOpaqueIdentifier: io,
             unstable_isNewReconciler: !1,
           },
-          zo = {
+          Io = {
             readContext: oa,
             useCallback: function (e, t) {
               return (so().memoizedState = [e, void 0 === t ? null : t]), e;
@@ -4802,10 +4802,10 @@
               );
             },
             useOpaqueIdentifier: function () {
-              if (Ha) {
+              if (Ua) {
                 var e = !1,
                   t = (function (e) {
-                    return { $$typeof: R, toString: e, valueOf: e };
+                    return { $$typeof: D, toString: e, valueOf: e };
                   })(function () {
                     throw (
                       (e || ((e = !0), n("r:" + (Jr++).toString(36))),
@@ -4831,7 +4831,7 @@
             },
             unstable_isNewReconciler: !1,
           },
-          Io = {
+          zo = {
             readContext: oa,
             useCallback: Oo,
             useContext: oa,
@@ -4875,7 +4875,7 @@
             },
             unstable_isNewReconciler: !1,
           },
-          Ro = {
+          Do = {
             readContext: oa,
             useCallback: Oo,
             useContext: oa,
@@ -4919,19 +4919,19 @@
             },
             unstable_isNewReconciler: !1,
           },
-          Do = x.ReactCurrentOwner,
+          Ro = x.ReactCurrentOwner,
           No = !1;
-        function Bo(e, t, n, r) {
+        function Fo(e, t, n, r) {
           t.child = null === e ? Ca(t, null, n, r) : Ea(t, e.child, n, r);
         }
-        function Fo(e, t, n, r, i) {
+        function Bo(e, t, n, r, i) {
           n = n.render;
           var a = t.ref;
           return (
             aa(t, i),
             (r = oo(e, t, n, r, a, i)),
             null === e || No
-              ? ((t.flags |= 1), Bo(e, t, r, i), t.child)
+              ? ((t.flags |= 1), Fo(e, t, r, i), t.child)
               : ((t.updateQueue = e.updateQueue),
                 (t.flags &= -517),
                 (e.lanes &= ~i),
@@ -4949,7 +4949,7 @@
               ? (((e = Zl(n.type, null, r, t, t.mode, a)).ref = t.ref),
                 (e.return = t),
                 (t.child = e))
-              : ((t.tag = 15), (t.type = o), Ho(e, t, o, r, i, a));
+              : ((t.tag = 15), (t.type = o), Uo(e, t, o, r, i, a));
           }
           return (
             (o = e.child),
@@ -4963,7 +4963,7 @@
                 (t.child = e))
           );
         }
-        function Ho(e, t, n, r, i, a) {
+        function Uo(e, t, n, r, i, a) {
           if (null !== e && fr(e.memoizedProps, r) && e.ref === t.ref) {
             if (((No = !1), 0 === (a & i)))
               return (t.lanes = e.lanes), as(e, t, a);
@@ -4971,7 +4971,7 @@
           }
           return Go(e, t, n, r, a);
         }
-        function Uo(e, t, n) {
+        function Ho(e, t, n) {
           var r = t.pendingProps,
             i = r.children,
             a = null !== e ? e.memoizedState : null;
@@ -4995,7 +4995,7 @@
               ? ((r = a.baseLanes | n), (t.memoizedState = null))
               : (r = n),
               wl(t, r);
-          return Bo(e, t, i, n), t.child;
+          return Fo(e, t, i, n), t.child;
         }
         function Vo(e, t) {
           var n = t.ref;
@@ -5009,7 +5009,7 @@
             aa(t, i),
             (n = oo(e, t, n, r, a, i)),
             null === e || No
-              ? ((t.flags |= 1), Bo(e, t, n, i), t.child)
+              ? ((t.flags |= 1), Fo(e, t, n, i), t.child)
               : ((t.updateQueue = e.updateQueue),
                 (t.flags &= -517),
                 (e.lanes &= ~i),
@@ -5136,7 +5136,7 @@
           Vo(e, t);
           var o = 0 !== (64 & t.flags);
           if (!r && !o) return i && wi(t, n, !1), as(e, t, a);
-          (r = t.stateNode), (Do.current = t);
+          (r = t.stateNode), (Ro.current = t);
           var s =
             o && "function" !== typeof n.getDerivedStateFromError
               ? null
@@ -5146,7 +5146,7 @@
             null !== e && o
               ? ((t.child = Ea(t, e.child, null, a)),
                 (t.child = Ea(t, null, s, a)))
-              : Bo(e, t, s, a),
+              : Fo(e, t, s, a),
             (t.memoizedState = r.state),
             i && wi(t, n, !0),
             t.child
@@ -5157,10 +5157,10 @@
           t.pendingContext
             ? bi(0, t.pendingContext, t.pendingContext !== t.context)
             : t.context && bi(0, t.context, !1),
-            za(e, t.containerInfo);
+            Ia(e, t.containerInfo);
         }
-        var _o,
-          qo,
+        var qo,
+          _o,
           Jo,
           Xo = { dehydrated: null, retryLane: 0 };
         function Ko(e, t, n) {
@@ -5193,7 +5193,7 @@
                     (t.memoizedState = Xo),
                     (t.lanes = 33554432),
                     e)
-                  : (((n = ql(
+                  : (((n = _l(
                       { mode: "visible", children: e },
                       t.mode,
                       n,
@@ -5224,8 +5224,8 @@
             (t = { mode: "hidden", children: t }),
             0 === (2 & i) && null !== a
               ? ((a.childLanes = 0), (a.pendingProps = t))
-              : (a = ql(t, i, 0, null)),
-            (n = _l(n, i, r, null)),
+              : (a = _l(t, i, 0, null)),
+            (n = ql(n, i, r, null)),
             (a.return = e),
             (n.return = e),
             (a.sibling = n),
@@ -5263,7 +5263,7 @@
                     (o.nextEffect = null))
                   : (t.firstEffect = t.lastEffect = null))
               : (n = Ql(o, s)),
-            null !== e ? (r = Ql(e, r)) : ((r = _l(r, a, i, null)).flags |= 2),
+            null !== e ? (r = Ql(e, r)) : ((r = ql(r, a, i, null)).flags |= 2),
             (r.return = t),
             (n.return = t),
             (n.sibling = r),
@@ -5300,7 +5300,7 @@
           var r = t.pendingProps,
             i = r.revealOrder,
             a = r.tail;
-          if ((Bo(e, t, r.children, n), 0 !== (2 & (r = Na.current))))
+          if ((Fo(e, t, r.children, n), 0 !== (2 & (r = Na.current))))
             (r = (1 & r) | 2), (t.flags |= 64);
           else {
             if (null !== e && 0 !== (64 & e.flags))
@@ -5325,7 +5325,7 @@
             switch (i) {
               case "forwards":
                 for (n = t.child, i = null; null !== n; )
-                  null !== (e = n.alternate) && null === Ba(e) && (i = n),
+                  null !== (e = n.alternate) && null === Fa(e) && (i = n),
                     (n = n.sibling);
                 null === (n = i)
                   ? ((i = t.child), (t.child = null))
@@ -5334,7 +5334,7 @@
                 break;
               case "backwards":
                 for (n = null, i = t.child, t.child = null; null !== i; ) {
-                  if (null !== (e = i.alternate) && null === Ba(e)) {
+                  if (null !== (e = i.alternate) && null === Fa(e)) {
                     t.child = i;
                     break;
                   }
@@ -5353,7 +5353,7 @@
         function as(e, t, n) {
           if (
             (null !== e && (t.dependencies = e.dependencies),
-            (Hs |= t.lanes),
+            (Us |= t.lanes),
             0 !== (n & t.childLanes))
           ) {
             if (null !== e && t.child !== e.child) throw Error(o(153));
@@ -5374,7 +5374,7 @@
           return null;
         }
         function os(e, t) {
-          if (!Ha)
+          if (!Ua)
             switch (e.tailMode) {
               case "hidden":
                 t = e.tail;
@@ -5412,10 +5412,10 @@
               return vi(t.type) && yi(), null;
             case 3:
               return (
-                Ia(),
+                za(),
                 ui(hi),
                 ui(pi),
-                qa(),
+                _a(),
                 (r = t.stateNode).pendingContext &&
                   ((r.context = r.pendingContext), (r.pendingContext = null)),
                 (null !== e && null !== e.child) ||
@@ -5423,10 +5423,10 @@
                 null
               );
             case 5:
-              Da(t);
+              Ra(t);
               var a = Ma(La.current);
               if (((n = t.type), null !== e && null != t.stateNode))
-                qo(e, t, n, r), e.ref !== t.ref && (t.flags |= 128);
+                _o(e, t, n, r), e.ref !== t.ref && (t.flags |= 128);
               else {
                 if (!r) {
                   if (null === t.stateNode) throw Error(o(166));
@@ -5516,7 +5516,7 @@
                       : (e = c.createElementNS(e, n)),
                     (e[Kr] = t),
                     (e[$r] = r),
-                    _o(e, t),
+                    qo(e, t),
                     (t.stateNode = e),
                     (c = je(n, r)),
                     n)
@@ -5591,7 +5591,7 @@
                       break;
                     case "option":
                       null != r.value &&
-                        e.setAttribute("value", "" + _(r.value));
+                        e.setAttribute("value", "" + q(r.value));
                       break;
                     case "select":
                       (e.multiple = !!r.multiple),
@@ -5643,17 +5643,17 @@
                       ((null === e &&
                         !0 !== t.memoizedProps.unstable_avoidThisFallback) ||
                       0 !== (1 & Na.current)
-                        ? 0 === Bs && (Bs = 3)
-                        : ((0 !== Bs && 3 !== Bs) || (Bs = 4),
-                          null === zs ||
-                            (0 === (134217727 & Hs) &&
-                              0 === (134217727 & Us)) ||
-                            yl(zs, Rs))),
+                        ? 0 === Fs && (Fs = 3)
+                        : ((0 !== Fs && 3 !== Fs) || (Fs = 4),
+                          null === Is ||
+                            (0 === (134217727 & Us) &&
+                              0 === (134217727 & Hs)) ||
+                            yl(Is, Ds))),
                     (r || n) && (t.flags |= 4),
                     null)
               );
             case 4:
-              return Ia(), null === e && Mr(t.stateNode.containerInfo), null;
+              return za(), null === e && Mr(t.stateNode.containerInfo), null;
             case 10:
               return ra(t), null;
             case 19:
@@ -5661,9 +5661,9 @@
               if (((s = 0 !== (64 & t.flags)), null === (c = r.rendering)))
                 if (s) os(r, !1);
                 else {
-                  if (0 !== Bs || (null !== e && 0 !== (64 & e.flags)))
+                  if (0 !== Fs || (null !== e && 0 !== (64 & e.flags)))
                     for (e = t.child; null !== e; ) {
-                      if (null !== (c = Ba(e))) {
+                      if (null !== (c = Fa(e))) {
                         for (
                           t.flags |= 64,
                             os(r, !1),
@@ -5719,7 +5719,7 @@
                 }
               else {
                 if (!s)
-                  if (null !== (e = Ba(c))) {
+                  if (null !== (e = Fa(c))) {
                     if (
                       ((t.flags |= 64),
                       (s = !0),
@@ -5729,7 +5729,7 @@
                       null === r.tail &&
                         "hidden" === r.tailMode &&
                         !c.alternate &&
-                        !Ha)
+                        !Ua)
                     )
                       return (
                         null !== (t = t.lastEffect = r.lastEffect) &&
@@ -5779,11 +5779,11 @@
               var t = e.flags;
               return 4096 & t ? ((e.flags = (-4097 & t) | 64), e) : null;
             case 3:
-              if ((Ia(), ui(hi), ui(pi), qa(), 0 !== (64 & (t = e.flags))))
+              if ((za(), ui(hi), ui(pi), _a(), 0 !== (64 & (t = e.flags))))
                 throw Error(o(285));
               return (e.flags = (-4097 & t) | 64), e;
             case 5:
-              return Da(e), null;
+              return Ra(e), null;
             case 13:
               return (
                 ui(Na),
@@ -5792,7 +5792,7 @@
             case 19:
               return ui(Na), null;
             case 4:
-              return Ia(), null;
+              return za(), null;
             case 10:
               return ra(e), null;
             case 23:
@@ -5824,7 +5824,7 @@
             });
           }
         }
-        (_o = function (e, t) {
+        (qo = function (e, t) {
           for (var n = t.child; null !== n; ) {
             if (5 === n.tag || 6 === n.tag) e.appendChild(n.stateNode);
             else if (4 !== n.tag && null !== n.child) {
@@ -5839,7 +5839,7 @@
             (n.sibling.return = n.return), (n = n.sibling);
           }
         }),
-          (qo = function (e, t, n, r) {
+          (_o = function (e, t, n, r) {
             var a = e.memoizedProps;
             if (a !== r) {
               (e = t.stateNode), Ma(Pa.current);
@@ -5912,7 +5912,7 @@
                             s || c === u || (s = []))
                           : "object" === typeof u &&
                             null !== u &&
-                            u.$$typeof === R
+                            u.$$typeof === D
                           ? u.toString()
                           : (s = s || []).push(d, u));
               }
@@ -6028,7 +6028,7 @@
                   (r = i.next),
                     0 !== (4 & (i = i.tag)) &&
                       0 !== (1 & i) &&
-                      (Nl(n, e), Dl(n, e)),
+                      (Nl(n, e), Rl(n, e)),
                     (e = r);
                 } while (e !== t);
               }
@@ -6425,7 +6425,7 @@
             var n = e.stateNode;
             null === n && (n = e.stateNode = new hs()),
               t.forEach(function (t) {
-                var r = Ul.bind(null, e, t);
+                var r = Hl.bind(null, e, t);
                 n.has(t) || (n.add(t), t.then(r, r));
               });
           }
@@ -6442,16 +6442,16 @@
           Ts = x.ReactCurrentDispatcher,
           Ls = x.ReactCurrentOwner,
           Ms = 0,
-          zs = null,
           Is = null,
-          Rs = 0,
+          zs = null,
           Ds = 0,
+          Rs = 0,
           Ns = ci(0),
-          Bs = 0,
-          Fs = null,
+          Fs = 0,
+          Bs = null,
           Ws = 0,
-          Hs = 0,
           Us = 0,
+          Hs = 0,
           Vs = 0,
           Gs = null,
           Ys = 0,
@@ -6459,8 +6459,8 @@
         function Zs() {
           Qs = Vi() + 500;
         }
-        var _s,
-          qs = null,
+        var qs,
+          _s = null,
           Js = !1,
           Xs = null,
           Ks = null,
@@ -6521,12 +6521,12 @@
         function hl(e, t, n) {
           if (50 < al) throw ((al = 0), (ol = null), Error(o(185)));
           if (null === (e = ml(e, t))) return null;
-          Vt(e, t, n), e === zs && ((Us |= t), 4 === Bs && yl(e, Rs));
+          Vt(e, t, n), e === Is && ((Hs |= t), 4 === Fs && yl(e, Ds));
           var r = Gi();
           1 === t
             ? 0 !== (8 & Ms) && 0 === (48 & Ms)
               ? bl(e)
-              : (gl(e, n), 0 === Ms && (Zs(), _i()))
+              : (gl(e, n), 0 === Ms && (Zs(), qi()))
             : (0 === (4 & Ms) ||
                 (98 !== r && 99 !== r) ||
                 (null === il ? (il = new Set([e])) : il.add(e)),
@@ -6559,13 +6559,13 @@
             if (-1 === u) {
               if (0 === (c & r) || 0 !== (c & i)) {
                 (u = t), Nt(c);
-                var d = Dt;
+                var d = Rt;
                 a[l] = 10 <= d ? u + 250 : 6 <= d ? u + 5e3 : -1;
               }
             } else u <= t && (e.expiredLanes |= c);
             s &= ~c;
           }
-          if (((r = Bt(e, e === zs ? Rs : 0)), (t = Dt), 0 === r))
+          if (((r = Ft(e, e === Is ? Ds : 0)), (t = Rt), 0 === r))
             null !== n &&
               (n !== Ni && Ci(n),
               (e.callbackNode = null),
@@ -6577,7 +6577,7 @@
             }
             15 === t
               ? ((n = bl.bind(null, e)),
-                null === Fi ? ((Fi = [n]), (Wi = Ei(Mi, qi))) : Fi.push(n),
+                null === Bi ? ((Bi = [n]), (Wi = Ei(Mi, _i))) : Bi.push(n),
                 (n = Ni))
               : 14 === t
               ? (n = Zi(99, bl.bind(null, e)))
@@ -6616,14 +6616,14 @@
         function vl(e) {
           if (((sl = -1), (cl = ll = 0), 0 !== (48 & Ms))) throw Error(o(327));
           var t = e.callbackNode;
-          if (Rl() && e.callbackNode !== t) return null;
-          var n = Bt(e, e === zs ? Rs : 0);
+          if (Dl() && e.callbackNode !== t) return null;
+          var n = Ft(e, e === Is ? Ds : 0);
           if (0 === n) return null;
           var r = n,
             i = Ms;
           Ms |= 16;
           var a = El();
-          for ((zs === e && Rs === r) || (Zs(), kl(e, r)); ; )
+          for ((Is === e && Ds === r) || (Zs(), kl(e, r)); ; )
             try {
               Pl();
               break;
@@ -6634,8 +6634,8 @@
             (na(),
             (Ts.current = a),
             (Ms = i),
-            null !== Is ? (r = 0) : ((zs = null), (Rs = 0), (r = Bs)),
-            0 !== (Ws & Us))
+            null !== zs ? (r = 0) : ((Is = null), (Ds = 0), (r = Fs)),
+            0 !== (Ws & Hs))
           )
             kl(e, 0);
           else if (0 !== r) {
@@ -6643,10 +6643,10 @@
               (2 === r &&
                 ((Ms |= 64),
                 e.hydrate && ((e.hydrate = !1), Zr(e.containerInfo)),
-                0 !== (n = Ft(e)) && (r = Cl(e, n))),
+                0 !== (n = Bt(e)) && (r = Cl(e, n))),
               1 === r)
             )
-              throw ((t = Fs), kl(e, 0), yl(e, n), gl(e, Vi()), t);
+              throw ((t = Bs), kl(e, 0), yl(e, n), gl(e, Vi()), t);
             switch (
               ((e.finishedWork = e.current.alternate), (e.finishedLanes = n), r)
             ) {
@@ -6661,7 +6661,7 @@
                 if (
                   (yl(e, n), (62914560 & n) === n && 10 < (r = Ys + 500 - Vi()))
                 ) {
-                  if (0 !== Bt(e, 0)) break;
+                  if (0 !== Ft(e, 0)) break;
                   if (((i = e.suspendedLanes) & n) !== n) {
                     fl(), (e.pingedLanes |= e.suspendedLanes & i);
                     break;
@@ -6709,7 +6709,7 @@
         function yl(e, t) {
           for (
             t &= ~Vs,
-              t &= ~Us,
+              t &= ~Hs,
               e.suspendedLanes |= t,
               e.pingedLanes &= ~t,
               e = e.expirationTimes;
@@ -6723,20 +6723,20 @@
         }
         function bl(e) {
           if (0 !== (48 & Ms)) throw Error(o(327));
-          if ((Rl(), e === zs && 0 !== (e.expiredLanes & Rs))) {
-            var t = Rs,
+          if ((Dl(), e === Is && 0 !== (e.expiredLanes & Ds))) {
+            var t = Ds,
               n = Cl(e, t);
-            0 !== (Ws & Us) && (n = Cl(e, (t = Bt(e, t))));
-          } else n = Cl(e, (t = Bt(e, 0)));
+            0 !== (Ws & Hs) && (n = Cl(e, (t = Ft(e, t))));
+          } else n = Cl(e, (t = Ft(e, 0)));
           if (
             (0 !== e.tag &&
               2 === n &&
               ((Ms |= 64),
               e.hydrate && ((e.hydrate = !1), Zr(e.containerInfo)),
-              0 !== (t = Ft(e)) && (n = Cl(e, t))),
+              0 !== (t = Bt(e)) && (n = Cl(e, t))),
             1 === n)
           )
-            throw ((n = Fs), kl(e, 0), yl(e, t), gl(e, Vi()), n);
+            throw ((n = Bs), kl(e, 0), yl(e, t), gl(e, Vi()), n);
           return (
             (e.finishedWork = e.current.alternate),
             (e.finishedLanes = t),
@@ -6751,7 +6751,7 @@
           try {
             return e(t);
           } finally {
-            0 === (Ms = n) && (Zs(), _i());
+            0 === (Ms = n) && (Zs(), qi());
           }
         }
         function xl(e, t) {
@@ -6760,20 +6760,20 @@
           try {
             return e(t);
           } finally {
-            0 === (Ms = n) && (Zs(), _i());
+            0 === (Ms = n) && (Zs(), qi());
           }
         }
         function wl(e, t) {
-          di(Ns, Ds), (Ds |= t), (Ws |= t);
+          di(Ns, Rs), (Rs |= t), (Ws |= t);
         }
         function Sl() {
-          (Ds = Ns.current), ui(Ns);
+          (Rs = Ns.current), ui(Ns);
         }
         function kl(e, t) {
           (e.finishedWork = null), (e.finishedLanes = 0);
           var n = e.timeoutHandle;
-          if ((-1 !== n && ((e.timeoutHandle = -1), Qr(n)), null !== Is))
-            for (n = Is.return; null !== n; ) {
+          if ((-1 !== n && ((e.timeoutHandle = -1), Qr(n)), null !== zs))
+            for (n = zs.return; null !== n; ) {
               var r = n;
               switch (r.tag) {
                 case 1:
@@ -6782,13 +6782,13 @@
                     yi();
                   break;
                 case 3:
-                  Ia(), ui(hi), ui(pi), qa();
+                  za(), ui(hi), ui(pi), _a();
                   break;
                 case 5:
-                  Da(r);
+                  Ra(r);
                   break;
                 case 4:
-                  Ia();
+                  za();
                   break;
                 case 13:
                 case 19:
@@ -6803,16 +6803,16 @@
               }
               n = n.return;
             }
-          (zs = e),
-            (Is = Ql(e.current, null)),
-            (Rs = Ds = Ws = t),
-            (Bs = 0),
-            (Fs = null),
-            (Vs = Us = Hs = 0);
+          (Is = e),
+            (zs = Ql(e.current, null)),
+            (Ds = Rs = Ws = t),
+            (Fs = 0),
+            (Bs = null),
+            (Vs = Hs = Us = 0);
         }
         function jl(e, t) {
           for (;;) {
-            var n = Is;
+            var n = zs;
             try {
               if ((na(), (Ja.current = Mo), no)) {
                 for (var r = $a.memoizedState; null !== r; ) {
@@ -6828,7 +6828,7 @@
                 (Ls.current = null),
                 null === n || null === n.return)
               ) {
-                (Bs = 1), (Fs = t), (Is = null);
+                (Fs = 1), (Bs = t), (zs = null);
                 break;
               }
               e: {
@@ -6837,7 +6837,7 @@
                   s = n,
                   l = t;
                 if (
-                  ((t = Rs),
+                  ((t = Ds),
                   (s.flags |= 2048),
                   (s.firstEffect = s.lastEffect = null),
                   null !== l &&
@@ -6900,7 +6900,7 @@
                         !l.has(s))
                       ) {
                         l.add(s);
-                        var A = Hl.bind(null, a, c, s);
+                        var A = Ul.bind(null, a, c, s);
                         c.then(A, A);
                       }
                       (f.flags |= 4096), (f.lanes = t);
@@ -6913,7 +6913,7 @@
                       " suspended while rendering, but no fallback UI was specified.\n\nAdd a <Suspense fallback=...> component higher in the tree to provide a loading indicator or placeholder to display."
                   );
                 }
-                5 !== Bs && (Bs = 2), (l = cs(l, s)), (f = o);
+                5 !== Fs && (Fs = 2), (l = cs(l, s)), (f = o);
                 do {
                   switch (f.tag) {
                     case 3:
@@ -6946,7 +6946,7 @@
               }
               Ll(n);
             } catch (S) {
-              (t = S), Is === n && null !== n && (Is = n = n.return);
+              (t = S), zs === n && null !== n && (zs = n = n.return);
               continue;
             }
             break;
@@ -6960,27 +6960,27 @@
           var n = Ms;
           Ms |= 16;
           var r = El();
-          for ((zs === e && Rs === t) || kl(e, t); ; )
+          for ((Is === e && Ds === t) || kl(e, t); ; )
             try {
               Ol();
               break;
             } catch (i) {
               jl(e, i);
             }
-          if ((na(), (Ms = n), (Ts.current = r), null !== Is))
+          if ((na(), (Ms = n), (Ts.current = r), null !== zs))
             throw Error(o(261));
-          return (zs = null), (Rs = 0), Bs;
+          return (Is = null), (Ds = 0), Fs;
         }
         function Ol() {
-          for (; null !== Is; ) Tl(Is);
+          for (; null !== zs; ) Tl(zs);
         }
         function Pl() {
-          for (; null !== Is && !Oi(); ) Tl(Is);
+          for (; null !== zs && !Oi(); ) Tl(zs);
         }
         function Tl(e) {
-          var t = _s(e.alternate, e, Ds);
+          var t = qs(e.alternate, e, Rs);
           (e.memoizedProps = e.pendingProps),
-            null === t ? Ll(e) : (Is = t),
+            null === t ? Ll(e) : (zs = t),
             (Ls.current = null);
         }
         function Ll(e) {
@@ -6988,11 +6988,11 @@
           do {
             var n = t.alternate;
             if (((e = t.return), 0 === (2048 & t.flags))) {
-              if (null !== (n = ss(n, t, Ds))) return void (Is = n);
+              if (null !== (n = ss(n, t, Rs))) return void (zs = n);
               if (
                 (24 !== (n = t).tag && 23 !== n.tag) ||
                 null === n.memoizedState ||
-                0 !== (1073741824 & Ds) ||
+                0 !== (1073741824 & Rs) ||
                 0 === (4 & n.mode)
               ) {
                 for (var r = 0, i = n.child; null !== i; )
@@ -7012,22 +7012,22 @@
                     : (e.firstEffect = t),
                   (e.lastEffect = t)));
             } else {
-              if (null !== (n = ls(t))) return (n.flags &= 2047), void (Is = n);
+              if (null !== (n = ls(t))) return (n.flags &= 2047), void (zs = n);
               null !== e &&
                 ((e.firstEffect = e.lastEffect = null), (e.flags |= 2048));
             }
-            if (null !== (t = t.sibling)) return void (Is = t);
-            Is = t = e;
+            if (null !== (t = t.sibling)) return void (zs = t);
+            zs = t = e;
           } while (null !== t);
-          0 === Bs && (Bs = 5);
+          0 === Fs && (Fs = 5);
         }
         function Ml(e) {
           var t = Gi();
-          return Qi(99, zl.bind(null, e, t)), null;
+          return Qi(99, Il.bind(null, e, t)), null;
         }
-        function zl(e, t) {
+        function Il(e, t) {
           do {
-            Rl();
+            Dl();
           } while (null !== el);
           if (0 !== (48 & Ms)) throw Error(o(327));
           var n = e.finishedWork;
@@ -7052,7 +7052,7 @@
           }
           if (
             (null !== il && 0 === (24 & r) && il.has(e) && il.delete(e),
-            e === zs && ((Is = zs = null), (Rs = 0)),
+            e === Is && ((zs = Is = null), (Ds = 0)),
             1 < n.flags
               ? null !== n.lastEffect
                 ? ((n.lastEffect.nextEffect = n), (r = n.firstEffect))
@@ -7064,7 +7064,7 @@
               ((i = Ms),
               (Ms |= 32),
               (Ls.current = null),
-              (Hr = qt),
+              (Ur = _t),
               vr((s = gr())))
             ) {
               if ("selectionStart" in s)
@@ -7118,26 +7118,26 @@
                 } else l = null;
               l = l || { start: 0, end: 0 };
             } else l = null;
-            (Ur = { focusedElem: s, selectionRange: l }),
-              (qt = !1),
+            (Hr = { focusedElem: s, selectionRange: l }),
+              (_t = !1),
               (ul = null),
               (dl = !1),
-              (qs = r);
+              (_s = r);
             do {
               try {
-                Il();
+                zl();
               } catch (E) {
-                if (null === qs) throw Error(o(330));
-                Wl(qs, E), (qs = qs.nextEffect);
+                if (null === _s) throw Error(o(330));
+                Wl(_s, E), (_s = _s.nextEffect);
               }
-            } while (null !== qs);
-            (ul = null), (qs = r);
+            } while (null !== _s);
+            (ul = null), (_s = r);
             do {
               try {
-                for (s = e; null !== qs; ) {
-                  var b = qs.flags;
-                  if ((16 & b && ye(qs.stateNode, ""), 128 & b)) {
-                    var A = qs.alternate;
+                for (s = e; null !== _s; ) {
+                  var b = _s.flags;
+                  if ((16 & b && ye(_s.stateNode, ""), 128 & b)) {
+                    var A = _s.alternate;
                     if (null !== A) {
                       var x = A.ref;
                       null !== x &&
@@ -7148,34 +7148,34 @@
                   }
                   switch (1038 & b) {
                     case 2:
-                      ws(qs), (qs.flags &= -3);
+                      ws(_s), (_s.flags &= -3);
                       break;
                     case 6:
-                      ws(qs), (qs.flags &= -3), Es(qs.alternate, qs);
+                      ws(_s), (_s.flags &= -3), Es(_s.alternate, _s);
                       break;
                     case 1024:
-                      qs.flags &= -1025;
+                      _s.flags &= -1025;
                       break;
                     case 1028:
-                      (qs.flags &= -1025), Es(qs.alternate, qs);
+                      (_s.flags &= -1025), Es(_s.alternate, _s);
                       break;
                     case 4:
-                      Es(qs.alternate, qs);
+                      Es(_s.alternate, _s);
                       break;
                     case 8:
-                      js(s, (l = qs));
+                      js(s, (l = _s));
                       var w = l.alternate;
                       As(l), null !== w && As(w);
                   }
-                  qs = qs.nextEffect;
+                  _s = _s.nextEffect;
                 }
               } catch (E) {
-                if (null === qs) throw Error(o(330));
-                Wl(qs, E), (qs = qs.nextEffect);
+                if (null === _s) throw Error(o(330));
+                Wl(_s, E), (_s = _s.nextEffect);
               }
-            } while (null !== qs);
+            } while (null !== _s);
             if (
-              ((x = Ur),
+              ((x = Hr),
               (A = gr()),
               (b = x.focusedElem),
               (s = x.selectionRange),
@@ -7225,38 +7225,38 @@
                 ((x = A[b]).element.scrollLeft = x.left),
                   (x.element.scrollTop = x.top);
             }
-            (qt = !!Hr), (Ur = Hr = null), (e.current = n), (qs = r);
+            (_t = !!Ur), (Hr = Ur = null), (e.current = n), (_s = r);
             do {
               try {
-                for (b = e; null !== qs; ) {
-                  var S = qs.flags;
-                  if ((36 & S && vs(b, qs.alternate, qs), 128 & S)) {
+                for (b = e; null !== _s; ) {
+                  var S = _s.flags;
+                  if ((36 & S && vs(b, _s.alternate, _s), 128 & S)) {
                     A = void 0;
-                    var k = qs.ref;
+                    var k = _s.ref;
                     if (null !== k) {
-                      var j = qs.stateNode;
-                      qs.tag,
+                      var j = _s.stateNode;
+                      _s.tag,
                         (A = j),
                         "function" === typeof k ? k(A) : (k.current = A);
                     }
                   }
-                  qs = qs.nextEffect;
+                  _s = _s.nextEffect;
                 }
               } catch (E) {
-                if (null === qs) throw Error(o(330));
-                Wl(qs, E), (qs = qs.nextEffect);
+                if (null === _s) throw Error(o(330));
+                Wl(_s, E), (_s = _s.nextEffect);
               }
-            } while (null !== qs);
-            (qs = null), Bi(), (Ms = i);
+            } while (null !== _s);
+            (_s = null), Fi(), (Ms = i);
           } else e.current = n;
           if ($s) ($s = !1), (el = e), (tl = t);
           else
-            for (qs = r; null !== qs; )
-              (t = qs.nextEffect),
-                (qs.nextEffect = null),
-                8 & qs.flags &&
-                  (((S = qs).sibling = null), (S.stateNode = null)),
-                (qs = t);
+            for (_s = r; null !== _s; )
+              (t = _s.nextEffect),
+                (_s.nextEffect = null),
+                8 & _s.flags &&
+                  (((S = _s).sibling = null), (S.stateNode = null)),
+                (_s = t);
           if (
             (0 === (r = e.pendingLanes) && (Ks = null),
             1 === r ? (e === ol ? al++ : ((al = 0), (ol = e))) : (al = 0),
@@ -7272,40 +7272,40 @@
               );
             } catch (E) {}
           if ((gl(e, Vi()), Js)) throw ((Js = !1), (e = Xs), (Xs = null), e);
-          return 0 !== (8 & Ms) || _i(), null;
+          return 0 !== (8 & Ms) || qi(), null;
         }
-        function Il() {
-          for (; null !== qs; ) {
-            var e = qs.alternate;
+        function zl() {
+          for (; null !== _s; ) {
+            var e = _s.alternate;
             dl ||
               null === ul ||
-              (0 !== (8 & qs.flags)
-                ? et(qs, ul) && (dl = !0)
-                : 13 === qs.tag && Os(e, qs) && et(qs, ul) && (dl = !0));
-            var t = qs.flags;
-            0 !== (256 & t) && gs(e, qs),
+              (0 !== (8 & _s.flags)
+                ? et(_s, ul) && (dl = !0)
+                : 13 === _s.tag && Os(e, _s) && et(_s, ul) && (dl = !0));
+            var t = _s.flags;
+            0 !== (256 & t) && gs(e, _s),
               0 === (512 & t) ||
                 $s ||
                 (($s = !0),
                 Zi(97, function () {
-                  return Rl(), null;
+                  return Dl(), null;
                 })),
-              (qs = qs.nextEffect);
+              (_s = _s.nextEffect);
           }
         }
-        function Rl() {
+        function Dl() {
           if (90 !== tl) {
             var e = 97 < tl ? 97 : tl;
-            return (tl = 90), Qi(e, Bl);
+            return (tl = 90), Qi(e, Fl);
           }
           return !1;
         }
-        function Dl(e, t) {
+        function Rl(e, t) {
           nl.push(t, e),
             $s ||
               (($s = !0),
               Zi(97, function () {
-                return Rl(), null;
+                return Dl(), null;
               }));
         }
         function Nl(e, t) {
@@ -7313,10 +7313,10 @@
             $s ||
               (($s = !0),
               Zi(97, function () {
-                return Rl(), null;
+                return Dl(), null;
               }));
         }
-        function Bl() {
+        function Fl() {
           if (null === el) return !1;
           var e = el;
           if (((el = null), 0 !== (48 & Ms))) throw Error(o(331));
@@ -7351,19 +7351,19 @@
               (l.nextEffect = null),
               8 & l.flags && ((l.sibling = null), (l.stateNode = null)),
               (l = e);
-          return (Ms = t), _i(), !0;
+          return (Ms = t), qi(), !0;
         }
-        function Fl(e, t, n) {
+        function Bl(e, t, n) {
           da(e, (t = fs(0, (t = cs(n, t)), 1))),
             (t = fl()),
             null !== (e = ml(e, 1)) && (Vt(e, 1, t), gl(e, t));
         }
         function Wl(e, t) {
-          if (3 === e.tag) Fl(e, e, t);
+          if (3 === e.tag) Bl(e, e, t);
           else
             for (var n = e.return; null !== n; ) {
               if (3 === n.tag) {
-                Fl(n, e, t);
+                Bl(n, e, t);
                 break;
               }
               if (1 === n.tag) {
@@ -7389,20 +7389,20 @@
               n = n.return;
             }
         }
-        function Hl(e, t, n) {
+        function Ul(e, t, n) {
           var r = e.pingCache;
           null !== r && r.delete(t),
             (t = fl()),
             (e.pingedLanes |= e.suspendedLanes & n),
-            zs === e &&
-              (Rs & n) === n &&
-              (4 === Bs ||
-              (3 === Bs && (62914560 & Rs) === Rs && 500 > Vi() - Ys)
+            Is === e &&
+              (Ds & n) === n &&
+              (4 === Fs ||
+              (3 === Fs && (62914560 & Ds) === Ds && 500 > Vi() - Ys)
                 ? kl(e, 0)
                 : (Vs |= n)),
             gl(e, t);
         }
-        function Ul(e, t) {
+        function Hl(e, t) {
           var n = e.stateNode;
           null !== n && n.delete(t),
             0 === (t = 0) &&
@@ -7411,7 +7411,7 @@
                 : 0 === (4 & t)
                 ? (t = 99 === Gi() ? 1 : 2)
                 : (0 === ll && (ll = Ws),
-                  0 === (t = Ht(62914560 & ~ll)) && (t = 4194304))),
+                  0 === (t = Ut(62914560 & ~ll)) && (t = 4194304))),
             (n = fl()),
             null !== (e = ml(e, t)) && (Vt(e, t, n), gl(e, n));
         }
@@ -7485,8 +7485,8 @@
           else
             e: switch (e) {
               case k:
-                return _l(n.children, i, a, t);
-              case D:
+                return ql(n.children, i, a, t);
+              case R:
                 (s = 8), (i |= 16);
                 break;
               case j:
@@ -7511,10 +7511,10 @@
                   ((e = Gl(19, n, t, i)).elementType = L), (e.lanes = a), e
                 );
               case N:
-                return ql(n, i, a, t);
-              case B:
+                return _l(n, i, a, t);
+              case F:
                 return (
-                  ((e = Gl(24, n, t, i)).elementType = B), (e.lanes = a), e
+                  ((e = Gl(24, n, t, i)).elementType = F), (e.lanes = a), e
                 );
               default:
                 if ("object" === typeof e && null !== e)
@@ -7531,10 +7531,10 @@
                     case M:
                       s = 14;
                       break e;
-                    case z:
+                    case I:
                       (s = 16), (r = null);
                       break e;
-                    case I:
+                    case z:
                       s = 22;
                       break e;
                   }
@@ -7547,10 +7547,10 @@
             t
           );
         }
-        function _l(e, t, n, r) {
+        function ql(e, t, n, r) {
           return ((e = Gl(7, e, r, t)).lanes = n), e;
         }
-        function ql(e, t, n, r) {
+        function _l(e, t, n, r) {
           return ((e = Gl(23, e, r, t)).elementType = N), (e.lanes = n), e;
         }
         function Jl(e, t, n) {
@@ -7585,8 +7585,8 @@
             (this.hydrate = n),
             (this.callbackNode = null),
             (this.callbackPriority = 0),
-            (this.eventTimes = Ut(0)),
-            (this.expirationTimes = Ut(-1)),
+            (this.eventTimes = Ht(0)),
+            (this.expirationTimes = Ht(-1)),
             (this.entangledLanes =
               this.finishedLanes =
               this.mutableReadLanes =
@@ -7595,7 +7595,7 @@
               this.suspendedLanes =
               this.pendingLanes =
                 0),
-            (this.entanglements = Ut(0)),
+            (this.entanglements = Ht(0)),
             (this.mutableSourceEagerHydrationData = null);
         }
         function $l(e, t, n) {
@@ -7757,7 +7757,7 @@
           if (!ac(t)) throw Error(o(200));
           return $l(e, t, null, n);
         }
-        (_s = function (e, t, n) {
+        (qs = function (e, t, n) {
           var r = t.lanes;
           if (null !== e)
             if (e.memoizedProps !== t.pendingProps || hi.current) No = !0;
@@ -7768,13 +7768,13 @@
                     Zo(t), Za();
                     break;
                   case 5:
-                    Ra(t);
+                    Da(t);
                     break;
                   case 1:
                     vi(t.type) && xi(t);
                     break;
                   case 4:
-                    za(t, t.stateNode.containerInfo);
+                    Ia(t, t.stateNode.containerInfo);
                     break;
                   case 10:
                     r = t.memoizedProps.value;
@@ -7808,7 +7808,7 @@
                     return null;
                   case 23:
                   case 24:
-                    return (t.lanes = 0), Uo(e, t, n);
+                    return (t.lanes = 0), Ho(e, t, n);
                 }
                 return as(e, t, n);
               }
@@ -7850,7 +7850,7 @@
                   (i._reactInternals = t),
                   xa(t, r, e, n),
                   (t = Qo(null, t, r, !0, a, n));
-              } else (t.tag = 0), Bo(null, t, i, n), (t = t.child);
+              } else (t.tag = 0), Fo(null, t, i, n), (t = t.child);
               return t;
             case 16:
               i = t.elementType;
@@ -7882,7 +7882,7 @@
                     t = Yo(null, t, i, e, n);
                     break e;
                   case 11:
-                    t = Fo(null, t, i, e, n);
+                    t = Bo(null, t, i, e, n);
                     break e;
                   case 14:
                     t = Wo(null, t, i, Xi(i.type, e), r, n);
@@ -7917,24 +7917,24 @@
               else {
                 if (
                   ((a = (i = t.stateNode).hydrate) &&
-                    ((Wa = _r(t.stateNode.containerInfo.firstChild)),
-                    (Fa = t),
-                    (a = Ha = !0)),
+                    ((Wa = qr(t.stateNode.containerInfo.firstChild)),
+                    (Ba = t),
+                    (a = Ua = !0)),
                   a)
                 ) {
                   if (null != (e = i.mutableSourceEagerHydrationData))
                     for (i = 0; i < e.length; i += 2)
                       ((a = e[i])._workInProgressVersionPrimary = e[i + 1]),
-                        _a.push(a);
+                        qa.push(a);
                   for (n = Ca(t, null, r, n), t.child = n; n; )
                     (n.flags = (-3 & n.flags) | 1024), (n = n.sibling);
-                } else Bo(e, t, r, n), Za();
+                } else Fo(e, t, r, n), Za();
                 t = t.child;
               }
               return t;
             case 5:
               return (
-                Ra(t),
+                Da(t),
                 null === e && Ga(t),
                 (r = t.type),
                 (i = t.pendingProps),
@@ -7944,7 +7944,7 @@
                   ? (s = null)
                   : null !== a && Gr(r, a) && (t.flags |= 16),
                 Vo(e, t),
-                Bo(e, t, s, n),
+                Fo(e, t, s, n),
                 t.child
               );
             case 6:
@@ -7953,22 +7953,22 @@
               return Ko(e, t, n);
             case 4:
               return (
-                za(t, t.stateNode.containerInfo),
+                Ia(t, t.stateNode.containerInfo),
                 (r = t.pendingProps),
-                null === e ? (t.child = Ea(t, null, r, n)) : Bo(e, t, r, n),
+                null === e ? (t.child = Ea(t, null, r, n)) : Fo(e, t, r, n),
                 t.child
               );
             case 11:
               return (
                 (r = t.type),
                 (i = t.pendingProps),
-                Fo(e, t, r, (i = t.elementType === r ? i : Xi(r, i)), n)
+                Bo(e, t, r, (i = t.elementType === r ? i : Xi(r, i)), n)
               );
             case 7:
-              return Bo(e, t, t.pendingProps, n), t.child;
+              return Fo(e, t, t.pendingProps, n), t.child;
             case 8:
             case 12:
-              return Bo(e, t, t.pendingProps.children, n), t.child;
+              return Fo(e, t, t.pendingProps.children, n), t.child;
             case 10:
               e: {
                 (r = t.type._context),
@@ -8031,7 +8031,7 @@
                         }
                       l = s;
                     }
-                Bo(e, t, i.children, n), (t = t.child);
+                Fo(e, t, i.children, n), (t = t.child);
               }
               return t;
             case 9:
@@ -8041,7 +8041,7 @@
                 aa(t, n),
                 (r = r((i = oa(i, a.unstable_observedBits)))),
                 (t.flags |= 1),
-                Bo(e, t, r, n),
+                Fo(e, t, r, n),
                 t.child
               );
             case 14:
@@ -8050,7 +8050,7 @@
                 Wo(e, t, i, (a = Xi(i.type, a)), r, n)
               );
             case 15:
-              return Ho(e, t, t.type, t.pendingProps, r, n);
+              return Uo(e, t, t.type, t.pendingProps, r, n);
             case 17:
               return (
                 (r = t.type),
@@ -8069,7 +8069,7 @@
               return is(e, t, n);
             case 23:
             case 24:
-              return Uo(e, t, n);
+              return Ho(e, t, n);
           }
           throw Error(o(156, t.tag));
         }),
@@ -8128,17 +8128,17 @@
                 null != (t = n.value) && oe(e, !!n.multiple, t, !1);
             }
           }),
-          (ze = Al),
-          (Ie = function (e, t, n, r, i) {
+          (Ie = Al),
+          (ze = function (e, t, n, r, i) {
             var a = Ms;
             Ms |= 4;
             try {
               return Qi(98, e.bind(null, t, n, r, i));
             } finally {
-              0 === (Ms = a) && (Zs(), _i());
+              0 === (Ms = a) && (Zs(), qi());
             }
           }),
-          (Re = function () {
+          (De = function () {
             0 === (49 & Ms) &&
               ((function () {
                 if (null !== il) {
@@ -8148,20 +8148,20 @@
                       (e.expiredLanes |= 24 & e.pendingLanes), gl(e, Vi());
                     });
                 }
-                _i();
+                qi();
               })(),
-              Rl());
+              Dl());
           }),
-          (De = function (e, t) {
+          (Re = function (e, t) {
             var n = Ms;
             Ms |= 2;
             try {
               return e(t);
             } finally {
-              0 === (Ms = n) && (Zs(), _i());
+              0 === (Ms = n) && (Zs(), qi());
             }
           });
-        var lc = { Events: [ri, ii, ai, Le, Me, Rl, { current: !1 }] },
+        var lc = { Events: [ri, ii, ai, Le, Me, Dl, { current: !1 }] },
           cc = {
             findFiberByHostInstance: ni,
             bundleType: 0,
@@ -8222,7 +8222,7 @@
             try {
               if (e) return Qi(99, e.bind(null, t));
             } finally {
-              (Ms = n), _i();
+              (Ms = n), qi();
             }
           }),
           (t.hydrate = function (e, t, n) {
@@ -12640,18 +12640,18 @@
             var L = (l ? -1 : 1) * (x.curX > x.startX ? 1 : -1);
             s && (L = x.curY > x.startY ? 1 : -1);
             var M = Math.ceil(g / b),
-              z = v(t.touchObject, s),
-              I = x.swipeLength;
+              I = v(t.touchObject, s),
+              z = x.swipeLength;
             return (
               A ||
-                (((0 === u && ("right" === z || "down" === z)) ||
-                  (u + 1 >= M && ("left" === z || "up" === z)) ||
-                  (!y(t) && ("left" === z || "up" === z))) &&
-                  ((I = x.swipeLength * d),
-                  !1 === f && p && (p(z), (O.edgeDragged = !0)))),
-              !h && w && (w(z), (O.swiped = !0)),
-              (C = i ? P + I * (k / E) * L : l ? P - I * L : P + I * L),
-              s && (C = P + I * L),
+                (((0 === u && ("right" === I || "down" === I)) ||
+                  (u + 1 >= M && ("left" === I || "up" === I)) ||
+                  (!y(t) && ("left" === I || "up" === I))) &&
+                  ((z = x.swipeLength * d),
+                  !1 === f && p && (p(I), (O.edgeDragged = !0)))),
+              !h && w && (w(I), (O.swiped = !0)),
+              (C = i ? P + z * (k / E) * L : l ? P - z * L : P + z * L),
+              s && (C = P + z * L),
               (O = o(
                 o({}, O),
                 {},
@@ -13995,8 +13995,8 @@
           T = 3,
           L = !1,
           M = !1,
-          z = !1;
-        function I(e) {
+          I = !1;
+        function z(e) {
           for (var t = S(C); null !== t; ) {
             if (null === t.callback) k(C);
             else {
@@ -14006,20 +14006,20 @@
             t = S(C);
           }
         }
-        function R(e) {
-          if (((z = !1), I(e), !M))
-            if (null !== S(E)) (M = !0), n(D);
+        function D(e) {
+          if (((I = !1), z(e), !M))
+            if (null !== S(E)) (M = !0), n(R);
             else {
               var t = S(C);
-              null !== t && r(R, t.startTime - e);
+              null !== t && r(D, t.startTime - e);
             }
         }
-        function D(e, n) {
-          (M = !1), z && ((z = !1), i()), (L = !0);
+        function R(e, n) {
+          (M = !1), I && ((I = !1), i()), (L = !0);
           var a = T;
           try {
             for (
-              I(n), P = S(E);
+              z(n), P = S(E);
               null !== P &&
               (!(P.expirationTime > n) || (e && !t.unstable_shouldYield()));
 
@@ -14032,14 +14032,14 @@
                   "function" === typeof s
                     ? (P.callback = s)
                     : P === S(E) && k(E),
-                  I(n);
+                  z(n);
               } else k(E);
               P = S(E);
             }
             if (null !== P) var l = !0;
             else {
               var c = S(C);
-              null !== c && r(R, c.startTime - n), (l = !1);
+              null !== c && r(D, c.startTime - n), (l = !1);
             }
             return l;
           } finally {
@@ -14057,7 +14057,7 @@
             e.callback = null;
           }),
           (t.unstable_continueExecution = function () {
-            M || L || ((M = !0), n(D));
+            M || L || ((M = !0), n(R));
           }),
           (t.unstable_getCurrentPriorityLevel = function () {
             return T;
@@ -14141,8 +14141,8 @@
                   w(C, e),
                   null === S(E) &&
                     e === S(C) &&
-                    (z ? i() : (z = !0), r(R, o - s)))
-                : ((e.sortIndex = l), w(E, e), M || L || ((M = !0), n(D))),
+                    (I ? i() : (I = !0), r(D, o - s)))
+                : ((e.sortIndex = l), w(E, e), M || L || ((M = !0), n(R))),
               e
             );
           }),
@@ -15242,11 +15242,11 @@
           return e && "#" !== e ? (e.startsWith("#") ? e : "#" + e) : "";
         };
       function M(e) {
-        z() || y(!1);
+        I() || y(!1);
         var t = (0, h.useContext)(m),
           n = t.basename,
           r = t.navigator,
-          i = D(e),
+          i = R(e),
           a = i.hash,
           o = i.pathname,
           s = i.search,
@@ -15264,19 +15264,19 @@
         }
         return r.createHref({ pathname: l, search: s, hash: a });
       }
-      function z() {
+      function I() {
         return null != (0, h.useContext)(g);
       }
-      function I() {
-        return z() || y(!1), (0, h.useContext)(g).location;
+      function z() {
+        return I() || y(!1), (0, h.useContext)(g).location;
       }
-      function R() {
-        z() || y(!1);
+      function D() {
+        I() || y(!1);
         var e = (0, h.useContext)(m),
           t = e.basename,
           n = e.navigator,
           r = (0, h.useContext)(v).matches,
-          i = I().pathname,
+          i = z().pathname,
           a = JSON.stringify(
             r.map(function (e) {
               return e.pathnameBase;
@@ -15300,9 +15300,9 @@
           )
         );
       }
-      function D(e) {
+      function R(e) {
         var t = (0, h.useContext)(v).matches,
-          n = I().pathname,
+          n = z().pathname,
           r = JSON.stringify(
             t.map(function (e) {
               return e.pathnameBase;
@@ -15326,10 +15326,10 @@
               }, null)
         );
       }
-      function B(e) {
+      function F(e) {
         y(!1);
       }
-      function F(e) {
+      function B(e) {
         var t = e.basename,
           n = void 0 === t ? "/" : t,
           r = e.children,
@@ -15340,7 +15340,7 @@
           c = e.navigator,
           u = e.static,
           d = void 0 !== u && u;
-        z() && y(!1);
+        I() && y(!1);
         var f = P(n),
           v = (0, h.useMemo)(
             function () {
@@ -15384,13 +15384,13 @@
         var t = e.children,
           n = e.location;
         return (function (e, t) {
-          z() || y(!1);
+          I() || y(!1);
           var n,
             r = (0, h.useContext)(v).matches,
             i = r[r.length - 1],
             a = i ? i.params : {},
             o = (i && i.pathname, i ? i.pathnameBase : "/"),
-            s = (i && i.route, I());
+            s = (i && i.route, z());
           if (t) {
             var l,
               c = "string" === typeof t ? p(t) : t;
@@ -15413,29 +15413,106 @@
               }),
             r
           );
-        })(H(t), n);
+        })(U(t), n);
       }
-      function H(e) {
+      function U(e) {
         var t = [];
         return (
           h.Children.forEach(e, function (e) {
             if ((0, h.isValidElement)(e))
               if (e.type !== h.Fragment) {
-                e.type !== B && y(!1);
+                e.type !== F && y(!1);
                 var n = {
                   caseSensitive: e.props.caseSensitive,
                   element: e.props.element,
                   index: e.props.index,
                   path: e.props.path,
                 };
-                e.props.children && (n.children = H(e.props.children)),
+                e.props.children && (n.children = U(e.props.children)),
                   t.push(n);
-              } else t.push.apply(t, H(e.props.children));
+              } else t.push.apply(t, U(e.props.children));
           }),
           t
         );
       }
-      function U(e, t) {
+      function H(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      function V(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable;
+            })),
+            n.push.apply(n, r);
+        }
+        return n;
+      }
+      function G(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {};
+          t % 2
+            ? V(Object(n), !0).forEach(function (t) {
+                H(e, t, n[t]);
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : V(Object(n)).forEach(function (t) {
+                Object.defineProperty(
+                  e,
+                  t,
+                  Object.getOwnPropertyDescriptor(n, t)
+                );
+              });
+        }
+        return e;
+      }
+      var Y = {
+          id: "avisoLegalDataOne",
+          reverse: !1,
+          inverse: !1,
+          topLine: { text: "AVISO LEGAL" },
+          headline:
+            "AVISO LEGAL En cumplimiento de lo establecido en el art\xedculo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci\xf3n y de Comercio Electr\xf3nico (en adelante, LSSI-CE), se informa de modo expreso, preciso e inequ\xedvoco, tanto a los destinatarios del servicio como a los \xf3rganos competentes, de los siguientes aspectos relativos al prestador de servicios de la sociedad de la informaci\xf3n:",
+          description:
+            "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) con CIF G13159173 y domicilio social en CL. PEDRO ARIAS, 87 C.P. 13630 de SOCUELLAMOS (CIUDAD REAL), con direcci\xf3n de correo afymos@gmail.com",
+          img: "",
+        },
+        Q = {
+          id: "avisoLegalDataTwo",
+          reverse: !0,
+          inverse: !1,
+          topLine: { text: "OBJETO" },
+          headline:
+            "Este Aviso Legal es aplicable \xfanicamente a la informaci\xf3n recogida en el presente Sitio Web. En ning\xfan caso se entender\xe1 aplicable a los contenidos recogidos en las p\xe1ginas de terceros enlazados desde el presente Sitio Web.",
+          description:
+            "El presente Aviso Legal informa de las condiciones de navegaci\xf3n por el sitio web https://afymos.org/ (en adelante, el sitio web). El mero acceso al sitio web implica el conocimiento y la aceptaci\xf3n de dicho Aviso Legal. La navegaci\xf3n por el presente Sitio Web atribuye al navegante la condici\xf3n de Usuario del sitio, lo cual implica la aceptaci\xf3n del mismo en el momento en que se acceda al mismo. El Titular del Sitio Web recomienda su atenta lectura y aceptaci\xf3n, debi\xe9ndose abstener el usuario si no existe conformidad con las mismas. El Usuario es consciente y acepta que el uso y navegaci\xf3n a trav\xe9s del presente Sitio Web se realiza en todo caso bajo su \xfanica y exclusiva responsabilidad. El Titular del Sitio Web podr\xe1 modificar en cualquier momento las condiciones aqu\xed determinadas, siendo debidamente expuestas con la antelaci\xf3n suficiente.",
+          img: "",
+        },
+        Z = {
+          id: "avisoLegalDataThree",
+          reverse: !1,
+          inverse: !1,
+          topLine: { text: "PROPIEDAD INTELECTUAL" },
+          headline:
+            "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
+          description:
+            "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) es titular de todos los derechos sobre el software de la publicaci\xf3n digital as\xed como de los derechos de propiedad industrial e intelectual referidos a los contenidos que se incluyan, a excepci\xf3n de los derechos sobre productos y servicios de car\xe1cter p\xfablico que no son propiedad de esta empresa..",
+          img: "",
+        };
+      function q(e, t) {
         return (
           t || (t = e.slice(0)),
           Object.freeze(
@@ -15443,224 +15520,10 @@
           )
         );
       }
-      var V = n(184),
-        G = function () {
-          return (0, V.jsx)("div", {
-            class: "footer",
-            children: (0, V.jsx)("div", {
-              class: "container",
-              children: (0, V.jsxs)("div", {
-                class: "row",
-                children: [
-                  (0, V.jsxs)("div", {
-                    class: "footer-col",
-                    children: [
-                      (0, V.jsx)("h4", { children: "contacto" }),
-                      (0, V.jsxs)("ul", {
-                        children: [
-                          (0, V.jsx)("li", {
-                            children: (0, V.jsx)("a", {
-                              href: "mailto:afymos@gmail.com",
-                              target: "_blank",
-                              title: "e-mail afymos",
-                              rel: "noreferrer",
-                              children: "info@afymos.es",
-                            }),
-                          }),
-                          (0, V.jsx)("li", {
-                            children: (0, V.jsx)("a", {
-                              href: "tel:610427459",
-                              target: "_blank",
-                              title: "Tel\xe9fono afymos",
-                              rel: "noreferrer",
-                              children: "(+34) 926 532 749",
-                            }),
-                          }),
-                        ],
-                      }),
-                    ],
-                  }),
-                  (0, V.jsxs)("div", {
-                    class: "footer-col",
-                    children: [
-                      (0, V.jsx)("h4", { children: "direcci\xf3n" }),
-                      (0, V.jsx)("ul", {
-                        children: (0, V.jsx)("li", {
-                          children: (0, V.jsx)("a", {
-                            href: "https://www.instagram.com/tv/CKKQgBcIW_Z/",
-                            target: "_blank",
-                            rel: "noreferrer",
-                            children:
-                              "c. Pedro Arias 87, 13630 Socu\xe9llamos (Ciudad Real)",
-                          }),
-                        }),
-                      }),
-                    ],
-                  }),
-                  (0, V.jsxs)("div", {
-                    class: "footer-col",
-                    children: [
-                      (0, V.jsx)("h4", {
-                        children: "pol\xedtica de privacidad",
-                      }),
-                      (0, V.jsxs)("ul", {
-                        children: [
-                          (0, V.jsx)("li", {
-                            children: (0, V.jsx)("a", {
-                              href: "https://www.instagram.com/tv/CKKQgBcIW_Z/",
-                              target: "_blank",
-                              rel: "noreferrer",
-                              children: "cookies",
-                            }),
-                          }),
-                          (0, V.jsx)("li", {
-                            children: (0, V.jsx)("a", {
-                              href: "https://www.instagram.com/tv/CKKQgBcIW_Z/",
-                              target: "_blank",
-                              rel: "noreferrer",
-                              children: "aviso legal",
-                            }),
-                          }),
-                        ],
-                      }),
-                    ],
-                  }),
-                  (0, V.jsxs)("div", {
-                    class: "footer-col",
-                    children: [
-                      (0, V.jsx)("h4", { children: "s\xedguenos" }),
-                      (0, V.jsxs)("div", {
-                        class: "social-links",
-                        children: [
-                          (0, V.jsx)("a", {
-                            href: "https://www.facebook.com/profile.php?id=100067093413028",
-                            target: "_blank",
-                            rel: "noreferrer",
-                            children: (0, V.jsx)("i", {
-                              class: "fab fa-facebook-f",
-                            }),
-                          }),
-                          (0, V.jsx)("a", {
-                            href: "https://www.instagram.com/tv/CKKQgBcIW_Z/",
-                            target: "_blank",
-                            rel: "noreferrer",
-                            children: (0, V.jsx)("i", {
-                              class: "fab fa-instagram",
-                            }),
-                          }),
-                        ],
-                      }),
-                    ],
-                  }),
-                ],
-              }),
-            }),
-          });
-        };
-      function Y() {
-        return (
-          (Y =
-            Object.assign ||
-            function (e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = arguments[t];
-                for (var r in n)
-                  Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
-              }
-              return e;
-            }),
-          Y.apply(this, arguments)
-        );
-      }
-      function Q(e, t) {
-        if (null == e) return {};
-        var n,
-          r,
-          i = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++)
-          (n = a[r]), t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i;
-      }
-      var Z = ["onClick", "reloadDocument", "replace", "state", "target", "to"];
-      function _(e) {
-        var n = e.basename,
-          r = e.children,
-          i = e.window,
-          a = (0, h.useRef)();
-        null == a.current && (a.current = l({ window: i }));
-        var o = a.current,
-          s = t((0, h.useState)({ action: o.action, location: o.location }), 2),
-          c = s[0],
-          u = s[1];
-        return (
-          (0, h.useLayoutEffect)(
-            function () {
-              return o.listen(u);
-            },
-            [o]
-          ),
-          (0, h.createElement)(F, {
-            basename: n,
-            children: r,
-            location: c.location,
-            navigationType: c.action,
-            navigator: o,
-          })
-        );
-      }
-      var q = (0, h.forwardRef)(function (e, t) {
-        var n = e.onClick,
-          r = e.reloadDocument,
-          i = e.replace,
-          a = void 0 !== i && i,
-          o = e.state,
-          s = e.target,
-          l = e.to,
-          c = Q(e, Z),
-          u = M(l),
-          d = (function (e, t) {
-            var n = void 0 === t ? {} : t,
-              r = n.target,
-              i = n.replace,
-              a = n.state,
-              o = R(),
-              s = I(),
-              l = D(e);
-            return (0, h.useCallback)(
-              function (t) {
-                if (
-                  0 === t.button &&
-                  (!r || "_self" === r) &&
-                  !(function (e) {
-                    return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey);
-                  })(t)
-                ) {
-                  t.preventDefault();
-                  var n = !!i || f(s) === f(l);
-                  o(e, { replace: n, state: a });
-                }
-              },
-              [s, o, l, i, a, r, e]
-            );
-          })(l, { replace: a, state: o, target: s });
-        return (0, h.createElement)(
-          "a",
-          Y({}, c, {
-            href: u,
-            onClick: function (e) {
-              n && n(e), e.defaultPrevented || r || d(e);
-            },
-            ref: t,
-            target: s,
-          })
-        );
-      });
-      var J = n(4302),
-        X = n(7441),
-        K = n(9613),
-        $ = n.n(K);
-      var ee = function (e) {
+      var _ = n(7441),
+        J = n(9613),
+        X = n.n(J);
+      var K = function (e) {
           function t(e, r, l, c, f) {
             for (
               var p,
@@ -15674,33 +15537,33 @@
                 j = 0,
                 E = 0,
                 M = 0,
-                I = (m = p = 0),
-                D = 0,
+                z = (m = p = 0),
+                R = 0,
                 N = 0,
-                B = 0,
                 F = 0,
+                B = 0,
                 W = l.length,
-                H = W - 1,
-                U = "",
+                U = W - 1,
+                H = "",
                 V = "",
                 G = "",
                 Y = "";
-              D < W;
+              R < W;
 
             ) {
               if (
-                ((h = l.charCodeAt(D)),
-                D === H &&
+                ((h = l.charCodeAt(R)),
+                R === U &&
                   0 !== S + j + k + w &&
                   (0 !== S && (h = 47 === S ? 10 : 47),
                   (j = k = w = 0),
                   W++,
-                  H++),
+                  U++),
                 0 === S + j + k + w)
               ) {
                 if (
-                  D === H &&
-                  (0 < N && (U = U.replace(d, "")), 0 < U.trim().length)
+                  R === U &&
+                  (0 < N && (H = H.replace(d, "")), 0 < H.trim().length)
                 ) {
                   switch (h) {
                     case 32:
@@ -15710,18 +15573,18 @@
                     case 10:
                       break;
                     default:
-                      U += l.charAt(D);
+                      H += l.charAt(R);
                   }
                   h = 59;
                 }
                 switch (h) {
                   case 123:
                     for (
-                      p = (U = U.trim()).charCodeAt(0), m = 1, F = ++D;
-                      D < W;
+                      p = (H = H.trim()).charCodeAt(0), m = 1, B = ++R;
+                      R < W;
 
                     ) {
-                      switch ((h = l.charCodeAt(D))) {
+                      switch ((h = l.charCodeAt(R))) {
                         case 123:
                           m++;
                           break;
@@ -15729,29 +15592,29 @@
                           m--;
                           break;
                         case 47:
-                          switch ((h = l.charCodeAt(D + 1))) {
+                          switch ((h = l.charCodeAt(R + 1))) {
                             case 42:
                             case 47:
                               e: {
-                                for (I = D + 1; I < H; ++I)
-                                  switch (l.charCodeAt(I)) {
+                                for (z = R + 1; z < U; ++z)
+                                  switch (l.charCodeAt(z)) {
                                     case 47:
                                       if (
                                         42 === h &&
-                                        42 === l.charCodeAt(I - 1) &&
-                                        D + 2 !== I
+                                        42 === l.charCodeAt(z - 1) &&
+                                        R + 2 !== z
                                       ) {
-                                        D = I + 1;
+                                        R = z + 1;
                                         break e;
                                       }
                                       break;
                                     case 10:
                                       if (47 === h) {
-                                        D = I + 1;
+                                        R = z + 1;
                                         break e;
                                       }
                                   }
-                                D = I;
+                                R = z;
                               }
                           }
                           break;
@@ -15761,19 +15624,19 @@
                           h++;
                         case 34:
                         case 39:
-                          for (; D++ < H && l.charCodeAt(D) !== h; );
+                          for (; R++ < U && l.charCodeAt(R) !== h; );
                       }
                       if (0 === m) break;
-                      D++;
+                      R++;
                     }
                     if (
-                      ((m = l.substring(F, D)),
+                      ((m = l.substring(B, R)),
                       0 === p &&
-                        (p = (U = U.replace(u, "").trim()).charCodeAt(0)),
+                        (p = (H = H.replace(u, "").trim()).charCodeAt(0)),
                       64 === p)
                     ) {
                       switch (
-                        (0 < N && (U = U.replace(d, "")), (h = U.charCodeAt(1)))
+                        (0 < N && (H = H.replace(d, "")), (h = H.charCodeAt(1)))
                       ) {
                         case 100:
                         case 109:
@@ -15785,72 +15648,72 @@
                           N = L;
                       }
                       if (
-                        ((F = (m = t(r, N, m, h, f + 1)).length),
-                        0 < z &&
-                          ((A = s(3, m, (N = n(L, U, B)), r, O, C, F, h, f, c)),
-                          (U = N.join("")),
+                        ((B = (m = t(r, N, m, h, f + 1)).length),
+                        0 < I &&
+                          ((A = s(3, m, (N = n(L, H, F)), r, O, C, B, h, f, c)),
+                          (H = N.join("")),
                           void 0 !== A &&
-                            0 === (F = (m = A.trim()).length) &&
+                            0 === (B = (m = A.trim()).length) &&
                             ((h = 0), (m = ""))),
-                        0 < F)
+                        0 < B)
                       )
                         switch (h) {
                           case 115:
-                            U = U.replace(x, o);
+                            H = H.replace(x, o);
                           case 100:
                           case 109:
                           case 45:
-                            m = U + "{" + m + "}";
+                            m = H + "{" + m + "}";
                             break;
                           case 107:
-                            (m = (U = U.replace(v, "$1 $2")) + "{" + m + "}"),
+                            (m = (H = H.replace(v, "$1 $2")) + "{" + m + "}"),
                               (m =
                                 1 === T || (2 === T && a("@" + m, 3))
                                   ? "@-webkit-" + m + "@" + m
                                   : "@" + m);
                             break;
                           default:
-                            (m = U + m), 112 === c && ((V += m), (m = ""));
+                            (m = H + m), 112 === c && ((V += m), (m = ""));
                         }
                       else m = "";
-                    } else m = t(r, n(r, U, B), m, c, f + 1);
+                    } else m = t(r, n(r, H, F), m, c, f + 1);
                     (G += m),
-                      (m = B = N = I = p = 0),
-                      (U = ""),
-                      (h = l.charCodeAt(++D));
+                      (m = F = N = z = p = 0),
+                      (H = ""),
+                      (h = l.charCodeAt(++R));
                     break;
                   case 125:
                   case 59:
                     if (
                       1 <
-                      (F = (U = (0 < N ? U.replace(d, "") : U).trim()).length)
+                      (B = (H = (0 < N ? H.replace(d, "") : H).trim()).length)
                     )
                       switch (
-                        (0 === I &&
-                          ((p = U.charCodeAt(0)),
+                        (0 === z &&
+                          ((p = H.charCodeAt(0)),
                           45 === p || (96 < p && 123 > p)) &&
-                          (F = (U = U.replace(" ", ":")).length),
-                        0 < z &&
+                          (B = (H = H.replace(" ", ":")).length),
+                        0 < I &&
                           void 0 !==
-                            (A = s(1, U, r, e, O, C, V.length, c, f, c)) &&
-                          0 === (F = (U = A.trim()).length) &&
-                          (U = "\0\0"),
-                        (p = U.charCodeAt(0)),
-                        (h = U.charCodeAt(1)),
+                            (A = s(1, H, r, e, O, C, V.length, c, f, c)) &&
+                          0 === (B = (H = A.trim()).length) &&
+                          (H = "\0\0"),
+                        (p = H.charCodeAt(0)),
+                        (h = H.charCodeAt(1)),
                         p)
                       ) {
                         case 0:
                           break;
                         case 64:
                           if (105 === h || 99 === h) {
-                            Y += U + l.charAt(D);
+                            Y += H + l.charAt(R);
                             break;
                           }
                         default:
-                          58 !== U.charCodeAt(F - 1) &&
-                            (V += i(U, p, h, U.charCodeAt(2)));
+                          58 !== H.charCodeAt(B - 1) &&
+                            (V += i(H, p, h, H.charCodeAt(2)));
                       }
-                    (B = N = I = p = 0), (U = ""), (h = l.charCodeAt(++D));
+                    (F = N = z = p = 0), (H = ""), (h = l.charCodeAt(++R));
                 }
               }
               switch (h) {
@@ -15860,9 +15723,9 @@
                     ? (S = 0)
                     : 0 === 1 + p &&
                       107 !== c &&
-                      0 < U.length &&
-                      ((N = 1), (U += "\0")),
-                    0 < z * R && s(0, U, r, e, O, C, V.length, c, f, c),
+                      0 < H.length &&
+                      ((N = 1), (H += "\0")),
+                    0 < I * D && s(0, H, r, e, O, C, V.length, c, f, c),
                     (C = 1),
                     O++;
                   break;
@@ -15873,7 +15736,7 @@
                     break;
                   }
                 default:
-                  switch ((C++, (g = l.charAt(D)), h)) {
+                  switch ((C++, (g = l.charAt(R)), h)) {
                     case 9:
                     case 32:
                       if (0 === j + w + S)
@@ -15898,19 +15761,19 @@
                       g = "\\v";
                       break;
                     case 38:
-                      0 === j + S + w && ((N = B = 1), (g = "\f" + g));
+                      0 === j + S + w && ((N = F = 1), (g = "\f" + g));
                       break;
                     case 108:
-                      if (0 === j + S + w + P && 0 < I)
-                        switch (D - I) {
+                      if (0 === j + S + w + P && 0 < z)
+                        switch (R - z) {
                           case 2:
-                            112 === E && 58 === l.charCodeAt(D - 3) && (P = E);
+                            112 === E && 58 === l.charCodeAt(R - 3) && (P = E);
                           case 8:
                             111 === M && (P = M);
                         }
                       break;
                     case 58:
-                      0 === j + S + w && (I = D);
+                      0 === j + S + w && (z = R);
                       break;
                     case 44:
                       0 === S + k + j + w && ((N = 1), (g += "\r"));
@@ -15937,40 +15800,40 @@
                       }
                       break;
                     case 64:
-                      0 === S + k + j + w + I + m && (m = 1);
+                      0 === S + k + j + w + z + m && (m = 1);
                       break;
                     case 42:
                     case 47:
                       if (!(0 < j + w + k))
                         switch (S) {
                           case 0:
-                            switch (2 * h + 3 * l.charCodeAt(D + 1)) {
+                            switch (2 * h + 3 * l.charCodeAt(R + 1)) {
                               case 235:
                                 S = 47;
                                 break;
                               case 220:
-                                (F = D), (S = 42);
+                                (B = R), (S = 42);
                             }
                             break;
                           case 42:
                             47 === h &&
                               42 === E &&
-                              F + 2 !== D &&
-                              (33 === l.charCodeAt(F + 2) &&
-                                (V += l.substring(F, D + 1)),
+                              B + 2 !== R &&
+                              (33 === l.charCodeAt(B + 2) &&
+                                (V += l.substring(B, R + 1)),
                               (g = ""),
                               (S = 0));
                         }
                   }
-                  0 === S && (U += g);
+                  0 === S && (H += g);
               }
-              (M = E), (E = h), D++;
+              (M = E), (E = h), R++;
             }
-            if (0 < (F = V.length)) {
+            if (0 < (B = V.length)) {
               if (
                 ((N = r),
-                0 < z &&
-                  void 0 !== (A = s(2, V, N, e, O, C, F, c, f, c)) &&
+                0 < I &&
+                  void 0 !== (A = s(2, V, N, e, O, C, B, c, f, c)) &&
                   0 === (V = A).length)
               )
                 return Y + V + G;
@@ -16231,7 +16094,7 @@
               r = e.substring(0, 3 !== t ? n : 10);
             return (
               (n = e.substring(n + 1, e.length - 1)),
-              I(2 !== t ? r : r.replace(k, "$1"), n, t)
+              z(2 !== t ? r : r.replace(k, "$1"), n, t)
             );
           }
           function o(e, t) {
@@ -16241,7 +16104,7 @@
               : "(" + t + ")";
           }
           function s(e, t, n, r, i, a, o, s, l, u) {
-            for (var d, f = 0, p = t; f < z; ++f)
+            for (var d, f = 0, p = t; f < I; ++f)
               switch ((d = M[f].call(c, e, p, n, r, i, a, o, s, l, u))) {
                 case void 0:
                 case !1:
@@ -16256,24 +16119,24 @@
           function l(e) {
             return (
               void 0 !== (e = e.prefix) &&
-                ((I = null),
+                ((z = null),
                 e
                   ? "function" !== typeof e
                     ? (T = 1)
-                    : ((T = 2), (I = e))
+                    : ((T = 2), (z = e))
                   : (T = 0)),
               l
             );
           }
           function c(e, n) {
             var r = e;
-            if ((33 > r.charCodeAt(0) && (r = r.trim()), (r = [r]), 0 < z)) {
+            if ((33 > r.charCodeAt(0) && (r = r.trim()), (r = [r]), 0 < I)) {
               var i = s(-1, n, r, r, O, C, 0, 0, 0, 0);
               void 0 !== i && "string" === typeof i && (n = i);
             }
             var a = t(L, r, n, 0, 0);
             return (
-              0 < z &&
+              0 < I &&
                 void 0 !== (i = s(-2, a, r, r, O, C, a.length, 0, 0, 0)) &&
                 (a = i),
               "",
@@ -16305,21 +16168,21 @@
             T = 1,
             L = [],
             M = [],
-            z = 0,
-            I = null,
-            R = 0;
+            I = 0,
+            z = null,
+            D = 0;
           return (
             (c.use = function e(t) {
               switch (t) {
                 case void 0:
                 case null:
-                  z = M.length = 0;
+                  I = M.length = 0;
                   break;
                 default:
-                  if ("function" === typeof t) M[z++] = t;
+                  if ("function" === typeof t) M[I++] = t;
                   else if ("object" === typeof t)
                     for (var n = 0, r = t.length; n < r; ++n) e(t[n]);
-                  else R = 0 | !!t;
+                  else D = 0 | !!t;
               }
               return e;
             }),
@@ -16328,7 +16191,7 @@
             c
           );
         },
-        te = {
+        $ = {
           animationIterationCount: 1,
           borderImageOutset: 1,
           borderImageSlice: 1,
@@ -16375,25 +16238,25 @@
           strokeOpacity: 1,
           strokeWidth: 1,
         };
-      var ne =
+      var ee =
           /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|enterKeyHint|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/,
-        re = (function (e) {
+        te = (function (e) {
           var t = Object.create(null);
           return function (n) {
             return void 0 === t[n] && (t[n] = e(n)), t[n];
           };
         })(function (e) {
           return (
-            ne.test(e) ||
+            ee.test(e) ||
             (111 === e.charCodeAt(0) &&
               110 === e.charCodeAt(1) &&
               e.charCodeAt(2) < 91)
           );
         }),
-        ie = n(2110),
-        ae = n.n(ie);
-      function oe() {
-        return (oe =
+        ne = n(2110),
+        re = n.n(ne);
+      function ie() {
+        return (ie =
           Object.assign ||
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -16404,32 +16267,32 @@
             return e;
           }).apply(this, arguments);
       }
-      var se = function (e, t) {
+      var ae = function (e, t) {
           for (var n = [e[0]], r = 0, i = t.length; r < i; r += 1)
             n.push(t[r], e[r + 1]);
           return n;
         },
-        le = function (e) {
+        oe = function (e) {
           return (
             null !== e &&
             "object" == typeof e &&
             "[object Object]" ===
               (e.toString ? e.toString() : Object.prototype.toString.call(e)) &&
-            !(0, X.typeOf)(e)
+            !(0, _.typeOf)(e)
           );
         },
-        ce = Object.freeze([]),
-        ue = Object.freeze({});
-      function de(e) {
+        se = Object.freeze([]),
+        le = Object.freeze({});
+      function ce(e) {
         return "function" == typeof e;
       }
-      function fe(e) {
+      function ue(e) {
         return e.displayName || e.name || "Component";
       }
-      function pe(e) {
+      function de(e) {
         return e && "string" == typeof e.styledComponentId;
       }
-      var he =
+      var fe =
           ("undefined" != typeof process &&
             ({
               NODE_ENV: "production",
@@ -16448,8 +16311,8 @@
                 FAST_REFRESH: !0,
               }.SC_ATTR)) ||
           "data-styled",
-        me = "undefined" != typeof window && "HTMLElement" in window,
-        ge = Boolean(
+        pe = "undefined" != typeof window && "HTMLElement" in window,
+        he = Boolean(
           "boolean" == typeof SC_DISABLE_SPEEDY
             ? SC_DISABLE_SPEEDY
             : "undefined" != typeof process &&
@@ -16525,8 +16388,8 @@
                 FAST_REFRESH: !0,
               }.SC_DISABLE_SPEEDY
         ),
-        ve = {};
-      function ye(e) {
+        me = {};
+      function ge(e) {
         for (
           var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1;
           r < t;
@@ -16540,7 +16403,7 @@
             (n.length > 0 ? " Args: " + n.join(", ") : "")
         );
       }
-      var be = (function () {
+      var ve = (function () {
           function e(e) {
             (this.groupSizes = new Uint32Array(512)),
               (this.length = 512),
@@ -16555,7 +16418,7 @@
             (t.insertRules = function (e, t) {
               if (e >= this.groupSizes.length) {
                 for (var n = this.groupSizes, r = n.length, i = r; e >= i; )
-                  (i <<= 1) < 0 && ye(16, "" + e);
+                  (i <<= 1) < 0 && ge(16, "" + e);
                 (this.groupSizes = new Uint32Array(i)),
                   this.groupSizes.set(n),
                   (this.length = i);
@@ -16594,30 +16457,30 @@
             e
           );
         })(),
-        Ae = new Map(),
-        xe = new Map(),
-        we = 1,
-        Se = function (e) {
-          if (Ae.has(e)) return Ae.get(e);
-          for (; xe.has(we); ) we++;
-          var t = we++;
-          return Ae.set(e, t), xe.set(t, e), t;
+        ye = new Map(),
+        be = new Map(),
+        Ae = 1,
+        xe = function (e) {
+          if (ye.has(e)) return ye.get(e);
+          for (; be.has(Ae); ) Ae++;
+          var t = Ae++;
+          return ye.set(e, t), be.set(t, e), t;
         },
-        ke = function (e) {
-          return xe.get(e);
+        we = function (e) {
+          return be.get(e);
         },
-        je = function (e, t) {
-          t >= we && (we = t + 1), Ae.set(e, t), xe.set(t, e);
+        Se = function (e, t) {
+          t >= Ae && (Ae = t + 1), ye.set(e, t), be.set(t, e);
         },
-        Ee = "style[" + he + '][data-styled-version="5.3.5"]',
-        Ce = new RegExp(
-          "^" + he + '\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'
+        ke = "style[" + fe + '][data-styled-version="5.3.5"]',
+        je = new RegExp(
+          "^" + fe + '\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'
         ),
-        Oe = function (e, t, n) {
+        Ee = function (e, t, n) {
           for (var r, i = n.split(","), a = 0, o = i.length; a < o; a++)
             (r = i[a]) && e.registerName(t, r);
         },
-        Pe = function (e, t) {
+        Ce = function (e, t) {
           for (
             var n = (t.textContent || "").split("/*!sc*/\n"),
               r = [],
@@ -16628,42 +16491,42 @@
           ) {
             var o = n[i].trim();
             if (o) {
-              var s = o.match(Ce);
+              var s = o.match(je);
               if (s) {
                 var l = 0 | parseInt(s[1], 10),
                   c = s[2];
                 0 !== l &&
-                  (je(c, l), Oe(e, c, s[3]), e.getTag().insertRules(l, r)),
+                  (Se(c, l), Ee(e, c, s[3]), e.getTag().insertRules(l, r)),
                   (r.length = 0);
               } else r.push(o);
             }
           }
         },
-        Te = function () {
+        Oe = function () {
           return "undefined" != typeof window &&
             void 0 !== window.__webpack_nonce__
             ? window.__webpack_nonce__
             : null;
         },
-        Le = function (e) {
+        Pe = function (e) {
           var t = document.head,
             n = e || t,
             r = document.createElement("style"),
             i = (function (e) {
               for (var t = e.childNodes, n = t.length; n >= 0; n--) {
                 var r = t[n];
-                if (r && 1 === r.nodeType && r.hasAttribute(he)) return r;
+                if (r && 1 === r.nodeType && r.hasAttribute(fe)) return r;
               }
             })(n),
             a = void 0 !== i ? i.nextSibling : null;
-          r.setAttribute(he, "active"),
+          r.setAttribute(fe, "active"),
             r.setAttribute("data-styled-version", "5.3.5");
-          var o = Te();
+          var o = Oe();
           return o && r.setAttribute("nonce", o), n.insertBefore(r, a), r;
         },
-        Me = (function () {
+        Te = (function () {
           function e(e) {
-            var t = (this.element = Le(e));
+            var t = (this.element = Pe(e));
             t.appendChild(document.createTextNode("")),
               (this.sheet = (function (e) {
                 if (e.sheet) return e.sheet;
@@ -16675,7 +16538,7 @@
                   var i = t[n];
                   if (i.ownerNode === e) return i;
                 }
-                ye(17);
+                ge(17);
               })(t)),
               (this.length = 0);
           }
@@ -16700,9 +16563,9 @@
             e
           );
         })(),
-        ze = (function () {
+        Le = (function () {
           function e(e) {
-            var t = (this.element = Le(e));
+            var t = (this.element = Pe(e));
             (this.nodes = t.childNodes), (this.length = 0);
           }
           var t = e.prototype;
@@ -16726,7 +16589,7 @@
             e
           );
         })(),
-        Ie = (function () {
+        Me = (function () {
           function e(e) {
             (this.rules = []), (this.length = 0);
           }
@@ -16747,35 +16610,35 @@
             e
           );
         })(),
-        Re = me,
-        De = { isServer: !me, useCSSOMInjection: !ge },
-        Ne = (function () {
+        Ie = pe,
+        ze = { isServer: !pe, useCSSOMInjection: !he },
+        De = (function () {
           function e(e, t, n) {
-            void 0 === e && (e = ue),
+            void 0 === e && (e = le),
               void 0 === t && (t = {}),
-              (this.options = oe({}, De, {}, e)),
+              (this.options = ie({}, ze, {}, e)),
               (this.gs = t),
               (this.names = new Map(n)),
               (this.server = !!e.isServer),
               !this.server &&
-                me &&
-                Re &&
-                ((Re = !1),
+                pe &&
+                Ie &&
+                ((Ie = !1),
                 (function (e) {
                   for (
-                    var t = document.querySelectorAll(Ee), n = 0, r = t.length;
+                    var t = document.querySelectorAll(ke), n = 0, r = t.length;
                     n < r;
                     n++
                   ) {
                     var i = t[n];
                     i &&
-                      "active" !== i.getAttribute(he) &&
-                      (Pe(e, i), i.parentNode && i.parentNode.removeChild(i));
+                      "active" !== i.getAttribute(fe) &&
+                      (Ce(e, i), i.parentNode && i.parentNode.removeChild(i));
                   }
                 })(this));
           }
           e.registerId = function (e) {
-            return Se(e);
+            return xe(e);
           };
           var t = e.prototype;
           return (
@@ -16783,7 +16646,7 @@
               return (
                 void 0 === n && (n = !0),
                 new e(
-                  oe({}, this.options, {}, t),
+                  ie({}, this.options, {}, t),
                   this.gs,
                   (n && this.names) || void 0
                 )
@@ -16799,8 +16662,8 @@
                   ((n = (t = this.options).isServer),
                   (r = t.useCSSOMInjection),
                   (i = t.target),
-                  (e = n ? new Ie(i) : r ? new Me(i) : new ze(i)),
-                  new be(e)))
+                  (e = n ? new Me(i) : r ? new Te(i) : new Le(i)),
+                  new ve(e)))
               );
               var e, t, n, r, i;
             }),
@@ -16808,20 +16671,20 @@
               return this.names.has(e) && this.names.get(e).has(t);
             }),
             (t.registerName = function (e, t) {
-              if ((Se(e), this.names.has(e))) this.names.get(e).add(t);
+              if ((xe(e), this.names.has(e))) this.names.get(e).add(t);
               else {
                 var n = new Set();
                 n.add(t), this.names.set(e, n);
               }
             }),
             (t.insertRules = function (e, t, n) {
-              this.registerName(e, t), this.getTag().insertRules(Se(e), n);
+              this.registerName(e, t), this.getTag().insertRules(xe(e), n);
             }),
             (t.clearNames = function (e) {
               this.names.has(e) && this.names.get(e).clear();
             }),
             (t.clearRules = function (e) {
-              this.getTag().clearGroup(Se(e)), this.clearNames(e);
+              this.getTag().clearGroup(xe(e)), this.clearNames(e);
             }),
             (t.clearTag = function () {
               this.tag = void 0;
@@ -16833,12 +16696,12 @@
                   i < n;
                   i++
                 ) {
-                  var a = ke(i);
+                  var a = we(i);
                   if (void 0 !== a) {
                     var o = e.names.get(a),
                       s = t.getGroup(i);
                     if (o && s && o.size) {
-                      var l = he + ".g" + i + '[id="' + a + '"]',
+                      var l = fe + ".g" + i + '[id="' + a + '"]',
                         c = "";
                       void 0 !== o &&
                         o.forEach(function (e) {
@@ -16854,40 +16717,40 @@
             e
           );
         })(),
-        Be = /(a)(d)/gi,
-        Fe = function (e) {
+        Re = /(a)(d)/gi,
+        Ne = function (e) {
           return String.fromCharCode(e + (e > 25 ? 39 : 97));
         };
-      function We(e) {
+      function Fe(e) {
         var t,
           n = "";
-        for (t = Math.abs(e); t > 52; t = (t / 52) | 0) n = Fe(t % 52) + n;
-        return (Fe(t % 52) + n).replace(Be, "$1-$2");
+        for (t = Math.abs(e); t > 52; t = (t / 52) | 0) n = Ne(t % 52) + n;
+        return (Ne(t % 52) + n).replace(Re, "$1-$2");
       }
-      var He = function (e, t) {
+      var Be = function (e, t) {
           for (var n = t.length; n; ) e = (33 * e) ^ t.charCodeAt(--n);
           return e;
         },
-        Ue = function (e) {
-          return He(5381, e);
+        We = function (e) {
+          return Be(5381, e);
         };
-      function Ve(e) {
+      function Ue(e) {
         for (var t = 0; t < e.length; t += 1) {
           var n = e[t];
-          if (de(n) && !pe(n)) return !1;
+          if (ce(n) && !de(n)) return !1;
         }
         return !0;
       }
-      var Ge = Ue("5.3.5"),
-        Ye = (function () {
+      var He = We("5.3.5"),
+        Ve = (function () {
           function e(e, t, n) {
             (this.rules = e),
               (this.staticRulesId = ""),
-              (this.isStatic = (void 0 === n || n.isStatic) && Ve(e)),
+              (this.isStatic = (void 0 === n || n.isStatic) && Ue(e)),
               (this.componentId = t),
-              (this.baseHash = He(Ge, t)),
+              (this.baseHash = Be(He, t)),
               (this.baseStyle = n),
-              Ne.registerId(t);
+              De.registerId(t);
           }
           return (
             (e.prototype.generateAndInjectStyles = function (e, t, n) {
@@ -16901,8 +16764,8 @@
                 if (this.staticRulesId && t.hasNameForId(r, this.staticRulesId))
                   i.push(this.staticRulesId);
                 else {
-                  var a = ct(this.rules, e, t, n).join(""),
-                    o = We(He(this.baseHash, a) >>> 0);
+                  var a = st(this.rules, e, t, n).join(""),
+                    o = Fe(Be(this.baseHash, a) >>> 0);
                   if (!t.hasNameForId(r, o)) {
                     var s = n(a, "." + o, void 0, r);
                     t.insertRules(r, o, s);
@@ -16912,7 +16775,7 @@
               else {
                 for (
                   var l = this.rules.length,
-                    c = He(this.baseHash, n.hash),
+                    c = Be(this.baseHash, n.hash),
                     u = "",
                     d = 0;
                   d < l;
@@ -16921,13 +16784,13 @@
                   var f = this.rules[d];
                   if ("string" == typeof f) u += f;
                   else if (f) {
-                    var p = ct(f, e, t, n),
+                    var p = st(f, e, t, n),
                       h = Array.isArray(p) ? p.join("") : p;
-                    (c = He(c, h + d)), (u += h);
+                    (c = Be(c, h + d)), (u += h);
                   }
                 }
                 if (u) {
-                  var m = We(c >>> 0);
+                  var m = Fe(c >>> 0);
                   if (!t.hasNameForId(r, m)) {
                     var g = n(u, "." + m, void 0, r);
                     t.insertRules(r, m, g);
@@ -16940,19 +16803,19 @@
             e
           );
         })(),
-        Qe = /^\s*\/\/.*$/gm,
-        Ze = [":", "[", ".", "#"];
-      function _e(e) {
+        Ge = /^\s*\/\/.*$/gm,
+        Ye = [":", "[", ".", "#"];
+      function Qe(e) {
         var t,
           n,
           r,
           i,
-          a = void 0 === e ? ue : e,
+          a = void 0 === e ? le : e,
           o = a.options,
-          s = void 0 === o ? ue : o,
+          s = void 0 === o ? le : o,
           l = a.plugins,
-          c = void 0 === l ? ce : l,
-          u = new ee(s),
+          c = void 0 === l ? se : l,
+          u = new K(s),
           d = [],
           f = (function (e) {
             function t(t) {
@@ -16985,13 +16848,13 @@
             d.push(e);
           }),
           p = function (e, r, a) {
-            return (0 === r && -1 !== Ze.indexOf(a[n.length])) || a.match(i)
+            return (0 === r && -1 !== Ye.indexOf(a[n.length])) || a.match(i)
               ? e
               : "." + t;
           };
         function h(e, a, o, s) {
           void 0 === s && (s = "&");
-          var l = e.replace(Qe, ""),
+          var l = e.replace(Ge, ""),
             c = a && o ? o + " " + a + " { " + l + " }" : l;
           return (
             (t = s),
@@ -17022,28 +16885,28 @@
           (h.hash = c.length
             ? c
                 .reduce(function (e, t) {
-                  return t.name || ye(15), He(e, t.name);
+                  return t.name || ge(15), Be(e, t.name);
                 }, 5381)
                 .toString()
             : ""),
           h
         );
       }
-      var qe = h.createContext(),
-        Je = (qe.Consumer, h.createContext()),
-        Xe = (Je.Consumer, new Ne()),
-        Ke = _e();
-      function $e() {
-        return (0, h.useContext)(qe) || Xe;
+      var Ze = h.createContext(),
+        qe = (Ze.Consumer, h.createContext()),
+        _e = (qe.Consumer, new De()),
+        Je = Qe();
+      function Xe() {
+        return (0, h.useContext)(Ze) || _e;
       }
-      function et() {
-        return (0, h.useContext)(Je) || Ke;
+      function Ke() {
+        return (0, h.useContext)(qe) || Je;
       }
-      function tt(e) {
+      function $e(e) {
         var t = (0, h.useState)(e.stylisPlugins),
           n = t[0],
           r = t[1],
-          i = $e(),
+          i = Xe(),
           a = (0, h.useMemo)(
             function () {
               var t = i;
@@ -17061,7 +16924,7 @@
           ),
           o = (0, h.useMemo)(
             function () {
-              return _e({
+              return Qe({
                 options: { prefix: !e.disableVendorPrefixes },
                 plugins: n,
               });
@@ -17071,28 +16934,28 @@
         return (
           (0, h.useEffect)(
             function () {
-              $()(n, e.stylisPlugins) || r(e.stylisPlugins);
+              X()(n, e.stylisPlugins) || r(e.stylisPlugins);
             },
             [e.stylisPlugins]
           ),
           h.createElement(
-            qe.Provider,
+            Ze.Provider,
             { value: a },
-            h.createElement(Je.Provider, { value: o }, e.children)
+            h.createElement(qe.Provider, { value: o }, e.children)
           )
         );
       }
-      var nt = (function () {
+      var et = (function () {
           function e(e, t) {
             var n = this;
             (this.inject = function (e, t) {
-              void 0 === t && (t = Ke);
+              void 0 === t && (t = Je);
               var r = n.name + t.hash;
               e.hasNameForId(n.id, r) ||
                 e.insertRules(n.id, r, t(n.rules, r, "@keyframes"));
             }),
               (this.toString = function () {
-                return ye(12, String(n.name));
+                return ge(12, String(n.name));
               }),
               (this.name = e),
               (this.id = "sc-keyframes-" + e),
@@ -17100,65 +16963,65 @@
           }
           return (
             (e.prototype.getName = function (e) {
-              return void 0 === e && (e = Ke), this.name + e.hash;
+              return void 0 === e && (e = Je), this.name + e.hash;
             }),
             e
           );
         })(),
-        rt = /([A-Z])/,
-        it = /([A-Z])/g,
-        at = /^ms-/,
-        ot = function (e) {
+        tt = /([A-Z])/,
+        nt = /([A-Z])/g,
+        rt = /^ms-/,
+        it = function (e) {
           return "-" + e.toLowerCase();
         };
-      function st(e) {
-        return rt.test(e) ? e.replace(it, ot).replace(at, "-ms-") : e;
+      function at(e) {
+        return tt.test(e) ? e.replace(nt, it).replace(rt, "-ms-") : e;
       }
-      var lt = function (e) {
+      var ot = function (e) {
         return null == e || !1 === e || "" === e;
       };
-      function ct(e, t, n, r) {
+      function st(e, t, n, r) {
         if (Array.isArray(e)) {
           for (var i, a = [], o = 0, s = e.length; o < s; o += 1)
-            "" !== (i = ct(e[o], t, n, r)) &&
+            "" !== (i = st(e[o], t, n, r)) &&
               (Array.isArray(i) ? a.push.apply(a, i) : a.push(i));
           return a;
         }
-        return lt(e)
+        return ot(e)
           ? ""
-          : pe(e)
-          ? "." + e.styledComponentId
           : de(e)
+          ? "." + e.styledComponentId
+          : ce(e)
           ? "function" != typeof (l = e) ||
             (l.prototype && l.prototype.isReactComponent) ||
             !t
             ? e
-            : ct(e(t), t, n, r)
-          : e instanceof nt
+            : st(e(t), t, n, r)
+          : e instanceof et
           ? n
             ? (e.inject(n, r), e.getName(r))
             : e
-          : le(e)
+          : oe(e)
           ? (function e(t, n) {
               var r,
                 i,
                 a = [];
               for (var o in t)
                 t.hasOwnProperty(o) &&
-                  !lt(t[o]) &&
-                  ((Array.isArray(t[o]) && t[o].isCss) || de(t[o])
-                    ? a.push(st(o) + ":", t[o], ";")
-                    : le(t[o])
+                  !ot(t[o]) &&
+                  ((Array.isArray(t[o]) && t[o].isCss) || ce(t[o])
+                    ? a.push(at(o) + ":", t[o], ";")
+                    : oe(t[o])
                     ? a.push.apply(a, e(t[o], o))
                     : a.push(
-                        st(o) +
+                        at(o) +
                           ": " +
                           ((r = o),
                           (null == (i = t[o]) ||
                           "boolean" == typeof i ||
                           "" === i
                             ? ""
-                            : "number" != typeof i || 0 === i || r in te
+                            : "number" != typeof i || 0 === i || r in $
                             ? String(i).trim()
                             : i + "px") + ";")
                       ));
@@ -17167,54 +17030,54 @@
           : e.toString();
         var l;
       }
-      var ut = function (e) {
+      var lt = function (e) {
         return Array.isArray(e) && (e.isCss = !0), e;
       };
-      function dt(e) {
+      function ct(e) {
         for (
           var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1;
           r < t;
           r++
         )
           n[r - 1] = arguments[r];
-        return de(e) || le(e)
-          ? ut(ct(se(ce, [e].concat(n))))
+        return ce(e) || oe(e)
+          ? lt(st(ae(se, [e].concat(n))))
           : 0 === n.length && 1 === e.length && "string" == typeof e[0]
           ? e
-          : ut(ct(se(e, n)));
+          : lt(st(ae(e, n)));
       }
       new Set();
-      var ft = function (e, t, n) {
+      var ut = function (e, t, n) {
           return (
-            void 0 === n && (n = ue),
+            void 0 === n && (n = le),
             (e.theme !== n.theme && e.theme) || t || n.theme
           );
         },
-        pt = /[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g,
-        ht = /(^-|-$)/g;
-      function mt(e) {
-        return e.replace(pt, "-").replace(ht, "");
+        dt = /[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g,
+        ft = /(^-|-$)/g;
+      function pt(e) {
+        return e.replace(dt, "-").replace(ft, "");
       }
-      var gt = function (e) {
-        return We(Ue(e) >>> 0);
+      var ht = function (e) {
+        return Fe(We(e) >>> 0);
       };
-      function vt(e) {
+      function mt(e) {
         return "string" == typeof e && !0;
       }
-      var yt = function (e) {
+      var gt = function (e) {
           return (
             "function" == typeof e ||
             ("object" == typeof e && null !== e && !Array.isArray(e))
           );
         },
-        bt = function (e) {
+        vt = function (e) {
           return "__proto__" !== e && "constructor" !== e && "prototype" !== e;
         };
-      function At(e, t, n) {
+      function yt(e, t, n) {
         var r = e[n];
-        yt(t) && yt(r) ? xt(r, t) : (e[n] = t);
+        gt(t) && gt(r) ? bt(r, t) : (e[n] = t);
       }
-      function xt(e) {
+      function bt(e) {
         for (
           var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1;
           r < t;
@@ -17223,25 +17086,25 @@
           n[r - 1] = arguments[r];
         for (var i = 0, a = n; i < a.length; i++) {
           var o = a[i];
-          if (yt(o)) for (var s in o) bt(s) && At(e, o[s], s);
+          if (gt(o)) for (var s in o) vt(s) && yt(e, o[s], s);
         }
         return e;
       }
-      var wt = h.createContext();
-      wt.Consumer;
-      var St = {};
-      function kt(e, t, n) {
-        var r = pe(e),
-          i = !vt(e),
+      var At = h.createContext();
+      At.Consumer;
+      var xt = {};
+      function wt(e, t, n) {
+        var r = de(e),
+          i = !mt(e),
           a = t.attrs,
-          o = void 0 === a ? ce : a,
+          o = void 0 === a ? se : a,
           s = t.componentId,
           l =
             void 0 === s
               ? (function (e, t) {
-                  var n = "string" != typeof e ? "sc" : mt(e);
-                  St[n] = (St[n] || 0) + 1;
-                  var r = n + "-" + gt("5.3.5" + n + St[n]);
+                  var n = "string" != typeof e ? "sc" : pt(e);
+                  xt[n] = (xt[n] || 0) + 1;
+                  var r = n + "-" + ht("5.3.5" + n + xt[n]);
                   return t ? t + "-" + r : r;
                 })(t.displayName, t.parentComponentId)
               : s,
@@ -17249,12 +17112,12 @@
           u =
             void 0 === c
               ? (function (e) {
-                  return vt(e) ? "styled." + e : "Styled(" + fe(e) + ")";
+                  return mt(e) ? "styled." + e : "Styled(" + ue(e) + ")";
                 })(e)
               : c,
           d =
             t.displayName && t.componentId
-              ? mt(t.displayName) + "-" + t.componentId
+              ? pt(t.displayName) + "-" + t.componentId
               : t.componentId || l,
           f =
             r && e.attrs
@@ -17271,7 +17134,7 @@
               }
             : e.shouldForwardProp);
         var m,
-          g = new Ye(n, d, r ? e.componentStyle : void 0),
+          g = new Ve(n, d, r ? e.componentStyle : void 0),
           v = g.isStatic && 0 === o.length,
           y = function (e, t) {
             return (function (e, t, n, r) {
@@ -17283,8 +17146,8 @@
                 c = e.styledComponentId,
                 u = e.target,
                 d = (function (e, t, n) {
-                  void 0 === e && (e = ue);
-                  var r = oe({}, t, { theme: e }),
+                  void 0 === e && (e = le);
+                  var r = ie({}, t, { theme: e }),
                     i = {};
                   return (
                     n.forEach(function (e) {
@@ -17292,7 +17155,7 @@
                         n,
                         a,
                         o = e;
-                      for (t in (de(o) && (o = o(r)), o))
+                      for (t in (ce(o) && (o = o(r)), o))
                         r[t] = i[t] =
                           "className" === t
                             ? ((n = i[t]),
@@ -17302,31 +17165,31 @@
                     }),
                     [r, i]
                   );
-                })(ft(t, (0, h.useContext)(wt), o) || ue, t, i),
+                })(ut(t, (0, h.useContext)(At), o) || le, t, i),
                 f = d[0],
                 p = d[1],
                 m = (function (e, t, n, r) {
-                  var i = $e(),
-                    a = et();
+                  var i = Xe(),
+                    a = Ke();
                   return t
-                    ? e.generateAndInjectStyles(ue, i, a)
+                    ? e.generateAndInjectStyles(le, i, a)
                     : e.generateAndInjectStyles(n, i, a);
                 })(a, r, f),
                 g = n,
                 v = p.$as || t.$as || p.as || t.as || u,
-                y = vt(v),
-                b = p !== t ? oe({}, t, {}, p) : t,
+                y = mt(v),
+                b = p !== t ? ie({}, t, {}, p) : t,
                 A = {};
               for (var x in b)
                 "$" !== x[0] &&
                   "as" !== x &&
                   ("forwardedAs" === x
                     ? (A.as = b[x])
-                    : (l ? l(x, re, v) : !y || re(x)) && (A[x] = b[x]));
+                    : (l ? l(x, te, v) : !y || te(x)) && (A[x] = b[x]));
               return (
                 t.style &&
                   p.style !== t.style &&
-                  (A.style = oe({}, t.style, {}, p.style)),
+                  (A.style = ie({}, t.style, {}, p.style)),
                 (A.className = Array.prototype
                   .concat(s, c, m !== c ? m : null, t.className, p.className)
                   .filter(Boolean)
@@ -17344,7 +17207,7 @@
           (m.shouldForwardProp = p),
           (m.foldedComponentIds = r
             ? Array.prototype.concat(e.foldedComponentIds, e.styledComponentId)
-            : ce),
+            : se),
           (m.styledComponentId = d),
           (m.target = r ? e.target : e),
           (m.withComponent = function (e) {
@@ -17359,22 +17222,22 @@
                   (n = a[r]), t.indexOf(n) >= 0 || (i[n] = e[n]);
                 return i;
               })(t, ["componentId"]),
-              a = r && r + "-" + (vt(e) ? e : mt(fe(e)));
-            return kt(e, oe({}, i, { attrs: f, componentId: a }), n);
+              a = r && r + "-" + (mt(e) ? e : pt(ue(e)));
+            return wt(e, ie({}, i, { attrs: f, componentId: a }), n);
           }),
           Object.defineProperty(m, "defaultProps", {
             get: function () {
               return this._foldedDefaultProps;
             },
             set: function (t) {
-              this._foldedDefaultProps = r ? xt({}, e.defaultProps, t) : t;
+              this._foldedDefaultProps = r ? bt({}, e.defaultProps, t) : t;
             },
           }),
           (m.toString = function () {
             return "." + m.styledComponentId;
           }),
           i &&
-            ae()(m, e, {
+            re()(m, e, {
               attrs: !0,
               componentStyle: !0,
               displayName: !0,
@@ -17387,29 +17250,29 @@
           m
         );
       }
-      var jt = function (e) {
+      var St = function (e) {
         return (function e(t, n, r) {
-          if ((void 0 === r && (r = ue), !(0, X.isValidElementType)(n)))
-            return ye(1, String(n));
+          if ((void 0 === r && (r = le), !(0, _.isValidElementType)(n)))
+            return ge(1, String(n));
           var i = function () {
-            return t(n, r, dt.apply(void 0, arguments));
+            return t(n, r, ct.apply(void 0, arguments));
           };
           return (
             (i.withConfig = function (i) {
-              return e(t, n, oe({}, r, {}, i));
+              return e(t, n, ie({}, r, {}, i));
             }),
             (i.attrs = function (i) {
               return e(
                 t,
                 n,
-                oe({}, r, {
+                ie({}, r, {
                   attrs: Array.prototype.concat(r.attrs, i).filter(Boolean),
                 })
               );
             }),
             i
           );
-        })(kt, e);
+        })(wt, e);
       };
       [
         "a",
@@ -17549,19 +17412,19 @@
         "textPath",
         "tspan",
       ].forEach(function (e) {
-        jt[e] = jt(e);
+        St[e] = St(e);
       });
-      var Et = (function () {
+      var kt = (function () {
         function e(e, t) {
           (this.rules = e),
             (this.componentId = t),
-            (this.isStatic = Ve(e)),
-            Ne.registerId(this.componentId + 1);
+            (this.isStatic = Ue(e)),
+            De.registerId(this.componentId + 1);
         }
         var t = e.prototype;
         return (
           (t.createStyles = function (e, t, n, r) {
-            var i = r(ct(this.rules, t, n, r).join(""), ""),
+            var i = r(st(this.rules, t, n, r).join(""), ""),
               a = this.componentId + e;
             n.insertRules(a, a, i);
           }),
@@ -17569,7 +17432,7 @@
             t.clearRules(this.componentId + e);
           }),
           (t.renderStyles = function (e, t, n, r) {
-            e > 2 && Ne.registerId(this.componentId + e),
+            e > 2 && De.registerId(this.componentId + e),
               this.removeStyles(e, n),
               this.createStyles(e, t, n, r);
           }),
@@ -17582,12 +17445,12 @@
           (this._emitSheetCSS = function () {
             var t = e.instance.toString();
             if (!t) return "";
-            var n = Te();
+            var n = Oe();
             return (
               "<style " +
               [
                 n && 'nonce="' + n + '"',
-                he + '="true"',
+                fe + '="true"',
                 'data-styled-version="5.3.5"',
               ]
                 .filter(Boolean)
@@ -17598,432 +17461,63 @@
             );
           }),
             (this.getStyleTags = function () {
-              return e.sealed ? ye(2) : e._emitSheetCSS();
+              return e.sealed ? ge(2) : e._emitSheetCSS();
             }),
             (this.getStyleElement = function () {
               var t;
-              if (e.sealed) return ye(2);
+              if (e.sealed) return ge(2);
               var n =
-                  (((t = {})[he] = ""),
+                  (((t = {})[fe] = ""),
                   (t["data-styled-version"] = "5.3.5"),
                   (t.dangerouslySetInnerHTML = {
                     __html: e.instance.toString(),
                   }),
                   t),
-                r = Te();
+                r = Oe();
               return (
                 r && (n.nonce = r),
-                [h.createElement("style", oe({}, n, { key: "sc-0-0" }))]
+                [h.createElement("style", ie({}, n, { key: "sc-0-0" }))]
               );
             }),
             (this.seal = function () {
               e.sealed = !0;
             }),
-            (this.instance = new Ne({ isServer: !0 })),
+            (this.instance = new De({ isServer: !0 })),
             (this.sealed = !1);
         }
         var t = e.prototype;
         (t.collectStyles = function (e) {
           return this.sealed
-            ? ye(2)
-            : h.createElement(tt, { sheet: this.instance }, e);
+            ? ge(2)
+            : h.createElement($e, { sheet: this.instance }, e);
         }),
           (t.interleaveWithNodeStream = function (e) {
-            return ye(3);
+            return ge(3);
           });
       })();
-      var Ct,
+      var jt,
+        Et,
+        Ct,
         Ot,
         Pt,
-        Tt = jt,
-        Lt = function (e) {
-          return (0, V.jsx)(V.Fragment, {
-            children: (0, V.jsxs)(Mt, {
-              id: e.id,
-              children: [
-                (0, V.jsx)(q, {
-                  to: "/",
-                  onClick: function () {
-                    window.history.back();
-                  },
-                  children: (0, V.jsxs)(Gt, {
-                    children: [
-                      (0, V.jsx)("i", { class: "fa-solid fa-angles-left" }),
-                      (0, V.jsxs)("h2", {
-                        children: [
-                          "volver a ",
-                          (0, V.jsx)("span", { children: "Principal" }),
-                        ],
-                      }),
-                    ],
-                  }),
-                }),
-                (0, V.jsxs)(Yt, {
-                  children: [
-                    (0, V.jsx)("h1", { children: e.title }),
-                    (0, V.jsx)("img", {
-                      className: "header_superior__container--logo",
-                      src: J,
-                      alt: e.alt,
-                    }),
-                  ],
-                }),
-              ],
-            }),
-          });
-        },
-        Mt = Tt.nav(
-          Ct ||
-            (Ct = U([
-              "\n  background-color: #071c2f;\n  height: 80px;\n  width: 100%;\n  position: sticky;\n  align-items: center;\n  top: 0;\n  z-index: 50;\n\n  .containerPrincipal {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .fa-angles-left {\n    margin-left: 50px;\n    font-size: 1.5rem;\n    color: #ffc0bc;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h2{\n    margin-left: 10px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
-            ]))
-        );
-      Mt.displayName = "NavContainer";
-      var zt,
+        Tt,
+        Lt,
+        Mt,
         It,
-        Rt,
+        zt,
         Dt,
+        Rt,
         Nt,
-        Bt,
         Ft,
+        Bt,
         Wt,
-        Ht,
         Ut,
+        Ht,
         Vt,
-        Gt = Tt.div(
-          Ot || (Ot = U(["\n  display: flex;\n  align-items: center;\n"]))
-        ),
-        Yt = Tt.nav(
-          Pt ||
-            (Pt = U([
-              "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  text-transform: uppercase;\n\n  h1 {\n    text-align: center;\n    color: #ffc0bc;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 2.5rem;\n  }\n  img {\n    width: 10%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 120%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 2.2rem;\n    }\n  }\n  @media (max-width: 440px) {\n    display: flex;\n    flex-direction: end;\n    img {\n      width: 20%;\n    }\n    min-height: 10vh;\n    h1 {\n      display: none;\n    }\n  }\n",
-            ]))
-        ),
-        Qt = function (e) {
-          var n = t((0, h.useState)(!0), 2),
-            r = n[0],
-            i = n[1],
-            a = function () {
-              i(!r);
-            };
-          return (0, V.jsx)(V.Fragment, {
-            children: r
-              ? (0, V.jsx)(Zt, {
-                  children: (0, V.jsxs)(
-                    _t,
-                    {
-                      children: [
-                        (0, V.jsx)(qt, {
-                          src: e.img,
-                          alt: e.alt,
-                          onMouseEnter: a,
-                        }),
-                        (0, V.jsx)("h3", { children: e.role }),
-                      ],
-                    },
-                    e.id
-                  ),
-                })
-              : (0, V.jsx)(Zt, {
-                  children: (0, V.jsxs)(
-                    Jt,
-                    {
-                      onMouseLeave: a,
-                      children: [
-                        (0, V.jsx)(Xt, { children: e.name }),
-                        (0, V.jsx)(Kt, { children: e.profession }),
-                      ],
-                    },
-                    e.id
-                  ),
-                }),
-          });
-        },
-        Zt = Tt.div(
-          zt ||
-            (zt = U([
-              "\n  display: flex;\n  position: relative;\n  width: 15rem;\n  height: 20rem;\n  margin: auto;\n  justify-content: center;\n  gap: 2rem;\n  cursor: pointer;\n\n  @media (max-width: 440px) {\n    width: 9rem;\n    height: 10rem;\n  }\n",
-            ]))
-        ),
-        _t = Tt.div(
-          It ||
-            (It = U([
-              "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  backface-visibility: hidden;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: 0.5s;\n",
-            ]))
-        ),
-        qt = Tt.img(
-          Rt ||
-            (Rt = U([
-              "\n  position: absolute;\n  object-fit: cover;\n  width: 100%;\n  height: 100%;\n  transition: all 400ms ease-out;\n  will-change: transform;\n",
-            ]))
-        ),
-        Jt = Tt.div(
-          Dt ||
-            (Dt = U([
-              "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #ffc0bc;\n  color: #071c2f;\n  display: flex;\n  border-radius: 10px;\n  flex-direction: column;\n  justify-content: center;\n  gap: 30%;\n  padding: 15px;\n  text-align: center;\n",
-            ]))
-        ),
-        Xt = Tt.div(
-          Nt ||
-            (Nt = U([
-              "\n  font-size: 1.5rem;\n  margin-top: 20px;\n  letter-spacing: 2px;\n",
-            ]))
-        ),
-        Kt =
-          (Tt.div(
-            Bt ||
-              (Bt = U([
-                "\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 45px;\n  line-height: 45px;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.4);\n  text-align: center;\n",
-              ]))
-          ),
-          Tt.div(
-            Ft ||
-              (Ft = U([
-                "\n  border-radius: 10px;\n  letter-spacing: 1px;\n  font-size: 1rem;\n",
-              ]))
-          )),
-        $t =
-          (Tt.img(
-            Wt ||
-              (Wt = U([
-                "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n",
-              ]))
-          ),
-          n(3912)),
-        en = n(9545),
-        tn = n(9729),
-        nn = (n(5614), n(8095), n(9821), n(2358)),
-        rn = (n(6358), n(9403)),
-        an = n(2236),
-        on = (n(1011), n(2637), n(5079)),
-        sn = n(8309),
-        ln = n(2186),
-        cn = n(5991),
-        un = n(1715),
-        dn = [
-          {
-            id: 1,
-            name: "Pilar Alarc\xf3n",
-            img: on,
-            profession: "Presidenta",
-          },
-          {
-            id: 2,
-            name: "Nieves Fern\xe1ndez",
-            img: ln,
-            profession: "Vicepresidenta",
-          },
-          {
-            id: 3,
-            name: "Maricruz Collado",
-            img: en,
-            profession: "Secretaria",
-          },
-          {
-            id: 4,
-            name: "Visitaci\xf3n S\xe1ez",
-            img: n(4147),
-            profession: "Tesorera",
-          },
-          {
-            id: 5,
-            name: "Ana Bel\xe9n Garc\xeda",
-            img: sn,
-            profession: "Vocal 1",
-          },
-          {
-            id: 6,
-            name: " Victoria Moreno",
-            img: n(8607),
-            profession: "Vocal 2",
-          },
-          {
-            id: 7,
-            name: " Francisca Izquierdo",
-            img: cn,
-            profession: "Vocal 3",
-          },
-          { id: 8, name: "Teresa Martinez", img: un, profession: "Vocal 4" },
-          {
-            id: 9,
-            name: "Francisco Javier Rom\xe1n",
-            img: n(8490),
-            profession: "Vocal 5",
-          },
-        ],
-        fn = function () {
-          var e = t((0, h.useState)(dn), 1)[0];
-          return (0, V.jsxs)(V.Fragment, {
-            children: [
-              (0, V.jsx)(Lt, { title: "junta directiva", alt: "" }),
-              (0, V.jsx)(pn, {}),
-              (0, V.jsx)(hn, {
-                children: (0, V.jsx)(mn, {
-                  children: e.map(function (e) {
-                    return (0,
-                    V.jsx)(Qt, { name: e.name, img: e.img, alt: e.alt, role: e.role, profession: e.profession }, e.id);
-                  }),
-                }),
-              }),
-              (0, V.jsx)(G, {}),
-            ],
-          });
-        },
-        pn = Tt.div(
-          Ht ||
-            (Ht = U([
-              "\n  background: linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)),\n    url(",
-              ");\n  background-size: 100%;\n  background-position: cover;\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  height: 100vh;\n  z-index: 20;\n",
-            ])),
-          $t
-        ),
-        hn = Tt.section(
-          Ut ||
-            (Ut = U([
-              "\n  padding: 5rem 18%;\n  background-color: #f7f7f7;\n\n  @media (max-width: 440px) {\n    padding: 2rem 5%;\n  }\n",
-            ]))
-        ),
-        mn = Tt.div(
-          Vt ||
-            (Vt = U([
-              "\n  display: flex;\n  gap: 5rem;\n  flex-wrap: wrap;\n\n  @media (max-width: 440px) {\n    gap: 2rem;\n  }\n",
-            ]))
-        );
-      function gn(e, t, n) {
-        return (
-          t in e
-            ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0,
-              })
-            : (e[t] = n),
-          e
-        );
-      }
-      function vn(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable;
-            })),
-            n.push.apply(n, r);
-        }
-        return n;
-      }
-      function yn(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {};
-          t % 2
-            ? vn(Object(n), !0).forEach(function (t) {
-                gn(e, t, n[t]);
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : vn(Object(n)).forEach(function (t) {
-                Object.defineProperty(
-                  e,
-                  t,
-                  Object.getOwnPropertyDescriptor(n, t)
-                );
-              });
-        }
-        return e;
-      }
-      var bn,
-        An,
-        xn,
-        wn,
-        Sn,
-        kn,
-        jn,
-        En,
-        Cn,
-        On,
-        Pn,
-        Tn,
-        Ln,
-        Mn,
-        zn,
-        In,
-        Rn,
-        Dn = n(5562),
-        Nn = n(599),
-        Bn = {
-          reverse: !1,
-          inverse: !1,
-          topLine: { text: "Vida en comunidad:" },
-          headline: "Integraci\xf3n sociolaboral",
-          description:
-            "Nuestro objetivo es potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones), haciendo especial \xe9nfasis en las habilidades de car\xe1cter laboral para facilitar su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian del Centro de D\xeda por la metodolog\xeda de trabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          buttonLabel: "Saber m\xe1s",
-          href: "#/servicio-capacitacion",
-          img: n(6453),
-        },
-        Fn = {
-          href: "#/donaciones",
-          reverse: !0,
-          inverse: !0,
-          topLine: { text: "Sensibilizaci\xf3n" },
-          headline:
-            "S\xedgue nuestras redes para ver todas las actividades de sensibilizaci\xf3n que llevamos a cabo.",
-          description:
-            "Nuestra organizaci\xf3n sin \xe1nimo de lucro se sustenta principalmente de las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda econ\xf3mica que nos puedan prestar.",
-          buttonLabel: "Donaciones",
-          img: Nn,
-        },
-        Wn = {
-          reverse: !1,
-          inverse: !1,
-          topLine: { text: "Buscamos profesionales como t\xfa" },
-          headline: "Trabaja con nosotros ",
-          description:
-            "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administraci\xf3n y mucho m\xe1s. Contacta con nosotros o envianos tu curriculum",
-          buttonLabel: "Contacto",
-          href: "contacto",
-          img: Dn,
-        },
-        Hn = n(1795),
-        Un = [
-          {
-            title: "PROYECTO NUEVO CREA 2023",
-            description:
-              "El pasado 18 de abril de 2023, se present\xf3 la nueva convocatoria",
-            image: n(1965),
-            alt: "proyecto-crea-2023",
-            url: "/proyecto-crea",
-          },
-          {
-            title: "Somos Portada de Peri\xf3dico",
-            description:
-              "Desde Marzo, nuestra asociaci\xf3n ha cambiado su metodolog\xeda de trabajo",
-            image: n(2572),
-            url: "/somos-portada",
-            alt: "somos-portada",
-          },
-          {
-            title: "XIII CONGRESO DE EMPLEO CON APOYO",
-            description:
-              "Los d\xedas 13, 14 y 15 de junio se celebr\xf3 el XIII Congreso de Empleo en la facultad de derecho de Burgos, organizado por AESE y Down Burgos.",
-            image: Hn,
-            alt: "un-d\xeda-en-afymos",
-            url: "/congreso-empleo-apoyo",
-          },
-        ],
-        Vn = {
-          arrows: !1,
-          slidesToShow: 3,
-          focusOnselect: !1,
-          accessability: !1,
-          responsive: [
-            { breakpoint: 1280, settings: { slidesToShow: 2 } },
-            { breakpoint: 900, settings: { slidesToShow: 1 } },
-          ],
-        },
-        Gn =
+        Gt,
+        Yt,
+        Qt = St,
+        Zt =
           ((function (e) {
             for (
               var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1;
@@ -18031,13 +17525,13 @@
               r++
             )
               n[r - 1] = arguments[r];
-            var i = dt.apply(void 0, [e].concat(n)),
-              a = "sc-global-" + gt(JSON.stringify(i)),
-              o = new Et(i, a);
+            var i = ct.apply(void 0, [e].concat(n)),
+              a = "sc-global-" + ht(JSON.stringify(i)),
+              o = new kt(i, a);
             function s(e) {
-              var t = $e(),
-                n = et(),
-                r = (0, h.useContext)(wt),
+              var t = Xe(),
+                n = Ke(),
+                r = (0, h.useContext)(At),
                 i = (0, h.useRef)(t.allocateGSInstance(a)).current;
               return (
                 t.server && l(i, e, t, r, n),
@@ -18057,35 +17551,35 @@
               );
             }
             function l(e, t, n, r, i) {
-              if (o.isStatic) o.renderStyles(e, ve, n, i);
+              if (o.isStatic) o.renderStyles(e, me, n, i);
               else {
-                var a = oe({}, t, { theme: ft(t, r, s.defaultProps) });
+                var a = ie({}, t, { theme: ut(t, r, s.defaultProps) });
                 o.renderStyles(e, a, n, i);
               }
             }
             h.memo(s);
           })(
-            bn ||
-              (bn = U([
+            jt ||
+              (jt = q([
                 "\n  *{\n box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: 'Montserrat', sans-serif;\n  }\n",
               ]))
           ),
-          Tt.div(
-            An ||
-              (An = U([
+          Qt.div(
+            Et ||
+              (Et = q([
                 "\n  width: 100%;\n  max-width: 1300px;\n  margin-right: auto;\n  margin-left: auto;\n  padding: 0 50px;\n\n  @media (max-width: 960px) {\n    padding: 0 30px;\n  }\n",
               ]))
           )),
-        Yn = Tt.h1(
-          xn ||
-            (xn = U([
+        qt = Qt.h1(
+          Ct ||
+            (Ct = q([
               "\n  margin-bottom: 15px;\n  text-transform: uppercase;\n  white-space: nowrap;\n",
             ]))
         ),
-        Qn =
-          (Tt.h1(
-            wn ||
-              (wn = U([
+        _t =
+          (Qt.h1(
+            Ot ||
+              (Ot = q([
                 "\n  font-size: clamp(2.3rem, 6vw, 4.5rem);\n  margin-bottom: 2rem;\n  color: ",
                 ";\n  width: 100%;\n  letter-spacing: 4px;\n  text-align: center;\n",
               ])),
@@ -18093,9 +17587,9 @@
               return e.inverse ? "#071c2f" : "#FFC0BC";
             }
           ),
-          Tt.h3(
-            Sn ||
-              (Sn = U([
+          Qt.h3(
+            Pt ||
+              (Pt = q([
                 "\n  font-size: clamp(1.3rem, 13vw, 3.1rem);\n  margin: ",
                 ";\n  margin-bottom: ",
                 ";\n  margin-top: ",
@@ -18123,9 +17617,9 @@
               return t || "100%";
             }
           )),
-        Zn = Tt.span(
-          kn ||
-            (kn = U([
+        Jt = Qt.span(
+          Tt ||
+            (Tt = q([
               "\n  color: ",
               ";\n  font-size: ",
               ";\n  font-weight: ",
@@ -18169,9 +17663,9 @@
             return t || "";
           }
         ),
-        _n = Tt.section(
-          jn ||
-            (jn = U([
+        Xt = Qt.section(
+          Lt ||
+            (Lt = q([
               "\n  padding: ",
               ";\n  margin: ",
               ";\n  background: ",
@@ -18229,9 +17723,9 @@
             return t || "70px 0";
           }
         ),
-        qn = Tt.section(
-          En ||
-            (En = U([
+        Kt = Qt.section(
+          Mt ||
+            (Mt = q([
               "\n  padding: ",
               ";\n  margin: ",
               ";\n  background: ",
@@ -18289,9 +17783,9 @@
             return t || "50px 0";
           }
         ),
-        Jn = Tt.div(
-          Cn ||
-            (Cn = U([
+        $t = Qt.div(
+          It ||
+            (It = q([
               "\n  display: flex;\n  justify-content: ",
               ";\n  align-items: ",
               ";\n  gap: ",
@@ -18360,10 +17854,10 @@
             return t || "";
           }
         ),
-        Xn =
-          (Tt.div(
-            On ||
-              (On = U([
+        en =
+          (Qt.div(
+            zt ||
+              (zt = q([
                 "\n  display: flex;\n  flex-direction: column;\n  justify-content: ",
                 ";\n  align-items: ",
                 ";\n  gap: ",
@@ -18427,488 +17921,55 @@
               return t || "auto";
             }
           ),
-          Tt.button(
-            Pn ||
-              (Pn = U([
+          Qt.button(
+            Dt ||
+              (Dt = q([
                 '\n  border-radius: 4px;\n  background: none;\n  white-space: nowrap;\n  padding: 10px 1.25rem;\n  font-size: 16px;\n  color: #fff;\n  outline: none;\n  border: 2px solid #fff;\n  cursor: pointer;\n  overflow: hidden;\n  position: relative;\n\n  &:before {\n    background: #fff;\n    content: "";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    z-index: -1;\n    transition: all 0.6s ease;\n    width: 100%;\n    height: 0%;\n    transform: translate(-50%, -50%) rotate(45deg);\n  }\n\n  &:hover:before {\n    height: 500%;\n  }\n\n  &:hover {\n    color: black;\n  }\n',
               ]))
           ),
-          n(5717)),
-        Kn = Tt.img(
-          Tn ||
-            (Tn = U([
-              "\n  width: 100%;\n  height: 300px;\n  border-radius: 10px 10px 0 0;\n  object-fit: cover;\n  vertical-align: middle;\n",
-            ]))
-        ),
-        $n = Tt.div(
-          Ln ||
-            (Ln = U([
-              "\n  background-color: white;\n  width: 90%;\n  display: flex !important;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  border-radius: 10px;\n  outline: none;\n  height: 430px;\n  border: solid 1px #071c2f;\n\n  @media (min-width: 440px) {\n    border: 1px solid #bebebe;\n  }\n",
-            ]))
-        ),
-        er = Tt(Jn)(
-          Mn ||
-            (Mn = U([
-              "\n  & svg {\n    margin: 0 1rem;\n    cursor: pointer;\n  }\n\n  & svg:hover {\n    opacity: 0.7;\n    transition: opacity 0.2s ease-in;\n  }\n  @media (max-width: 960px) {\n    margin: 0 auto;\n  }\n",
-            ]))
-        ),
-        tr = Tt(Xn.Z)(
-          zn ||
-            (zn = U([
-              "\n  width: 100%;\n\n  .slick-track {\n    display: flex;\n    padding: 30px;\n    gap: 3rem;\n  }\n  .slick-slide {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 1;\n    outline: none;\n  }\n\n  .slick-list {\n    overflow: hidden;\n  }\n",
-            ]))
-        ),
-        nr = Tt.button(
-          In ||
-            (In = U([
-              "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
-            ]))
-        ),
-        rr = Tt.div(
-          Rn ||
-            (Rn = U([
-              "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
-            ]))
-        ),
-        ir = {
-          color: void 0,
-          size: void 0,
-          className: void 0,
-          style: void 0,
-          attr: void 0,
-        },
-        ar = h.createContext && h.createContext(ir),
-        or = function () {
-          return (
-            (or =
-              Object.assign ||
-              function (e) {
-                for (var t, n = 1, r = arguments.length; n < r; n++)
-                  for (var i in (t = arguments[n]))
-                    Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
-                return e;
-              }),
-            or.apply(this, arguments)
-          );
-        },
-        sr = function (e, t) {
-          var n = {};
-          for (var r in e)
-            Object.prototype.hasOwnProperty.call(e, r) &&
-              t.indexOf(r) < 0 &&
-              (n[r] = e[r]);
-          if (null != e && "function" === typeof Object.getOwnPropertySymbols) {
-            var i = 0;
-            for (r = Object.getOwnPropertySymbols(e); i < r.length; i++)
-              t.indexOf(r[i]) < 0 &&
-                Object.prototype.propertyIsEnumerable.call(e, r[i]) &&
-                (n[r[i]] = e[r[i]]);
-          }
-          return n;
-        };
-      function lr(e) {
-        return (
-          e &&
-          e.map(function (e, t) {
-            return h.createElement(e.tag, or({ key: t }, e.attr), lr(e.child));
-          })
-        );
-      }
-      function cr(e) {
-        return function (t) {
-          return h.createElement(
-            ur,
-            or({ attr: or({}, e.attr) }, t),
-            lr(e.child)
-          );
-        };
-      }
-      function ur(e) {
-        var t = function (t) {
-          var n,
-            r = e.attr,
-            i = e.size,
-            a = e.title,
-            o = sr(e, ["attr", "size", "title"]),
-            s = i || t.size || "1em";
-          return (
-            t.className && (n = t.className),
-            e.className && (n = (n ? n + " " : "") + e.className),
-            h.createElement(
-              "svg",
-              or(
-                {
-                  stroke: "currentColor",
-                  fill: "currentColor",
-                  strokeWidth: "0",
-                },
-                t.attr,
-                r,
-                o,
-                {
-                  className: n,
-                  style: or(
-                    or({ color: e.color || t.color }, t.style),
-                    e.style
-                  ),
-                  height: s,
-                  width: s,
-                  xmlns: "http://www.w3.org/2000/svg",
-                }
-              ),
-              a && h.createElement("title", null, a),
-              e.children
-            )
-          );
-        };
-        return void 0 !== ar
-          ? h.createElement(ar.Consumer, null, function (e) {
-              return t(e);
-            })
-          : t(ir);
-      }
-      function dr(e) {
-        return cr({
-          tag: "svg",
-          attr: { viewBox: "0 0 512 512" },
-          child: [
-            {
-              tag: "path",
-              attr: {
-                d: "M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm28.9-143.6L209.4 288H392c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24H209.4l75.5-72.4c9.7-9.3 9.9-24.8.4-34.3l-11-10.9c-9.4-9.4-24.6-9.4-33.9 0L107.7 239c-9.4 9.4-9.4 24.6 0 33.9l132.7 132.7c9.4 9.4 24.6 9.4 33.9 0l11-10.9c9.5-9.5 9.3-25-.4-34.3z",
-              },
-            },
-          ],
-        })(e);
-      }
-      function fr(e) {
-        return cr({
-          tag: "svg",
-          attr: { viewBox: "0 0 512 512" },
-          child: [
-            {
-              tag: "path",
-              attr: {
-                d: "M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z",
-              },
-            },
-          ],
-        })(e);
-      }
-      function pr(e) {
-        return cr({
-          tag: "svg",
-          attr: { viewBox: "0 0 512 512" },
-          child: [
-            {
-              tag: "path",
-              attr: {
-                d: "M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z",
-              },
-            },
-          ],
-        })(e);
-      }
-      var hr,
-        mr,
-        gr,
-        vr,
-        yr,
-        br,
-        Ar,
-        xr,
-        wr,
-        Sr,
-        kr,
-        jr,
-        Er,
-        Cr,
-        Or,
-        Pr = function () {
-          var e = t((0, h.useState)(null), 2),
-            n = e[0],
-            r = e[1],
-            i = t((0, h.useState)(Un), 2),
-            a = (i[0], i[1]),
-            o = function (e) {
-              a(e.currentTarget);
-            };
-          return (0, V.jsxs)(_n, {
-            margin: "auto",
-            maxWidth: "1280px",
-            padding: "50px 70px",
-            inverse: !0,
-            children: [
-              (0, V.jsxs)(Jn, {
-                justify: "center",
-                margin: "1rem",
-                wrap: "wrap",
-                align: "center",
-                children: [
-                  (0, V.jsx)(Qn, {
-                    width: "auto",
-                    inverse: !0,
-                    margin: "2rem",
-                    children: "Noticias",
-                  }),
-                  (0, V.jsx)(er, {
-                    children: (0, V.jsxs)(ar.Provider, {
-                      value: { size: "3rem", color: "#071c2f" },
-                      children: [
-                        (0, V.jsx)(dr, {
-                          onClick:
-                            null === n || void 0 === n ? void 0 : n.slickPrev,
-                        }),
-                        (0, V.jsx)(fr, {
-                          onClick:
-                            null === n || void 0 === n ? void 0 : n.slickNext,
-                        }),
-                      ],
-                    }),
-                  }),
-                ],
-              }),
-              (0, V.jsx)(
-                tr,
-                yn(
-                  yn({}, Vn),
-                  {},
-                  {
-                    ref: r,
-                    children: Un.map(function (e, t) {
-                      return (0,
-                      V.jsxs)($n, { children: [(0, V.jsx)(Kn, { src: e.image, alt: e.alt }), (0, V.jsx)(Zn, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, V.jsx)(Zn, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, V.jsx)(rr, { children: (0, V.jsx)(q, { to: e.url, children: (0, V.jsx)(nr, { onClick: o, children: "conoce m\xe1s" }) }) })] }, t);
-                    }),
-                  }
-                )
-              ),
-            ],
-          });
-        },
-        Tr = n(9951),
-        Lr = n(7646),
-        Mr = n(3104),
-        zr = function (e) {
-          var t = e.title,
-            n = e.size,
-            r = e.inverse,
-            i = e.marginBottom;
-          return (0, V.jsx)(V.Fragment, {
-            children: (0, V.jsx)(Ir, {
-              size: n,
-              inverse: r,
-              marginBottom: i,
-              children: (0, V.jsx)("h2", { children: t }),
-            }),
-          });
-        },
-        Ir = Tt.div(
-          hr ||
-            (hr = U([
-              "\n  display: flex;\n  width: 100%;\n  height: 7rem;\n  background: ",
-              ";\n  text-align: center;\n  align-items: center;\n  line-height: 1.5rem;\n  font-size: ",
-              ";\n  margin-bottom: ",
-              ";\n\n  h2 {\n    width: 100%;\n    position: relative;\n    color: ",
-              ";\n  }\n\n  @media (max-width: 440px) {\n    font-size: ",
-              ";\n    line-height: 2.5rem;\n  }\n",
-            ])),
-          function (e) {
-            return e.inverse ? "#071c2f" : "#FFC0BC";
-          },
-          function (e) {
-            return e.size ? "1.8rem" : "1.5rem";
-          },
-          function (e) {
-            return e.marginBottom ? "2rem" : "";
-          },
-          function (e) {
-            return e.inverse ? "#FFC0BC" : "#071c2f";
-          },
-          function (e) {
-            return e.size ? "1.2rem" : "1rem";
-          }
-        ),
-        Rr = function () {
-          return (0, V.jsxs)(V.Fragment, {
-            children: [
-              (0, V.jsx)(zr, {
-                title: "Informaci\xf3n de contacto",
-                size: !0,
-                inverse: !0,
-                marginBottom: !0,
-              }),
-              (0, V.jsxs)("section", {
-                className: "contact",
-                id: "contacto",
-                children: [
-                  (0, V.jsxs)(Dr, {
-                    children: [
-                      (0, V.jsxs)(Nr, {
-                        children: [
-                          (0, V.jsx)("img", { src: Tr, alt: "" }),
-                          (0, V.jsx)("h3", {
-                            children: "tel\xe9fono de contacto",
-                          }),
-                          (0, V.jsx)("p", { children: "926 532 749" }),
-                        ],
-                      }),
-                      (0, V.jsxs)(Nr, {
-                        children: [
-                          (0, V.jsx)("img", { src: Mr, alt: "" }),
-                          (0, V.jsx)("h3", {
-                            children: "correo electr\xf3nico",
-                          }),
-                          (0, V.jsx)("p", {
-                            children: (0, V.jsx)("a", {
-                              href: "mailto:afymos@gmail.com",
-                              target: "_blank",
-                              title: "e-mail afymos",
-                              rel: "noreferrer",
-                              children: "afymos@gmail.com",
-                            }),
-                          }),
-                        ],
-                      }),
-                      (0, V.jsxs)(Nr, {
-                        children: [
-                          (0, V.jsx)("img", { src: Lr, alt: "" }),
-                          (0, V.jsx)("h3", { children: "Direcci\xf3n" }),
-                          (0, V.jsx)("p", {
-                            children:
-                              "c. Pedro Arias, 87, 13630 Socu\xe9llamos, Ciudad Real",
-                          }),
-                        ],
-                      }),
-                    ],
-                  }),
-                  (0, V.jsxs)("div", {
-                    className: "row",
-                    children: [
-                      (0, V.jsxs)("form", {
-                        action:
-                          "https://formsubmit.co/ba88b9758fe1eee2f75438dceeafdba3",
-                        method: "POST",
-                        children: [
-                          (0, V.jsxs)("div", {
-                            className: "inputBox",
-                            children: [
-                              (0, V.jsx)("input", {
-                                type: "text",
-                                placeholder: "nombre",
-                                name: "name",
-                                required: !0,
-                              }),
-                              (0, V.jsx)("input", {
-                                type: "number",
-                                placeholder: "tel\xe9fono",
-                                name: "telefono",
-                              }),
-                            ],
-                          }),
-                          (0, V.jsxs)("div", {
-                            className: "inputBox",
-                            children: [
-                              (0, V.jsx)("input", {
-                                type: "email",
-                                placeholder: "email",
-                                name: "email",
-                                required: !0,
-                              }),
-                              (0, V.jsx)("input", {
-                                type: "text",
-                                placeholder: "asunto",
-                                name: "asunto",
-                                required: !0,
-                              }),
-                            ],
-                          }),
-                          (0, V.jsx)("textarea", {
-                            type: "text",
-                            name: "mensaje",
-                            placeholder: "mensaje",
-                            required: !0,
-                            id: "message",
-                            cols: "30",
-                            rows: "10",
-                            class: "inputs",
-                          }),
-                          (0, V.jsx)("input", {
-                            type: "submit",
-                            value: "enviar",
-                            target: "_blank",
-                            className: "inputSubmit",
-                          }),
-                        ],
-                      }),
-                      (0, V.jsx)("iframe", {
-                        title: "map",
-                        className: "map",
-                        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.115024827591!2d-2.792748684638135!3d39.28564187951258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68f525d5ea6049%3A0x180a68074859800d!2sAFYMOS!5e0!3m2!1ses!2ses!4v1687676404652!5m2!1ses!2ses",
-                        allowfullscreen: "",
-                        loading: "lazy",
-                      }),
-                    ],
-                  }),
-                ],
-              }),
-            ],
-          });
-        },
-        Dr = Tt.div(
-          mr ||
-            (mr = U([
-              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n",
-            ]))
-        ),
-        Nr = Tt.div(
-          gr ||
-            (gr = U([
-              "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n\n  img {\n    height: 3rem;\n  }\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n",
-            ]))
-        ),
-        Br = Tt.div(
-          vr ||
-            (vr = U([
-              "\n  display: flex;\n  margin: 0 -15px -15px -15px;\n  flex-wrap: wrap;\n  align-items: center;\n  flex-direction: ",
-              ";\n  justify-content: space-around;\n\n  @media screen and (max-width: 768px) {\n    flex-direction: column-reverse;\n  }\n",
-            ])),
-          function (e) {
-            return e.reverse ? "row-reverse" : "row";
-          }
-        ),
-        Fr = Tt.div(
-          yr ||
-            (yr = U([
+          Qt.div(
+            Rt ||
+              (Rt = q([
+                "\n  display: flex;\n  margin: 0 -15px -15px -15px;\n  flex-wrap: wrap;\n  align-items: center;\n  flex-direction: ",
+                ";\n  justify-content: space-around;\n\n  @media screen and (max-width: 768px) {\n    flex-direction: column-reverse;\n  }\n",
+              ])),
+            function (e) {
+              return e.reverse ? "row-reverse" : "row";
+            }
+          )),
+        tn = Qt.div(
+          Nt ||
+            (Nt = q([
               "\n  margin-bottom: 15px;\n  padding-right: 15px;\n  padding-left: 15px;\n  flex: 1;\n  z-index: 10;\n  display: flex;\n  flex-direction: column;\n\n  @media (max-width: 768px) {\n    max-width: 100% !important;\n    flex-basis: 100%;\n    justify-content: center;\n    align-items: center;\n  }\n",
             ]))
         ),
-        Wr = Tt.div(
-          br ||
-            (br = U([
+        nn = Qt.div(
+          Ft ||
+            (Ft = q([
               "\n  max-width: 540px;\n  padding-top: 0;\n\n  @media (max-width: 768px) {\n    padding-bottom: 65px;\n    > h1,\n    p {\n      text-align: center;\n    }\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  > img {\n    width: 300px;\n    margin-left: -3px;\n  }\n",
             ]))
         ),
-        Hr = Tt.div(
-          Ar ||
-            (Ar = U([
+        rn = Qt.div(
+          Bt ||
+            (Bt = q([
               '\n  display: flex;\n  justify-content: "flex-end";\n  max-height: 700px;\n  justify-content: center;\n  position: relative;\n',
             ]))
         ),
-        Ur = Tt.div(
-          xr ||
-            (xr = U([
+        an = Qt.div(
+          Wt ||
+            (Wt = q([
               "\n  font-size: 2rem;\n  line-height: 2.5rem;\n  font-weight: 550;\n  letter-spacing: 1.4px;\n  margin-bottom: 1.3rem;\n  color: grey;\n",
             ]))
         ),
-        Vr = Tt.img(
-          wr ||
-            (wr = U([
+        on = Qt.img(
+          Ut ||
+            (Ut = q([
               "\n  padding-right: 0;\n  border: 0;\n  max-width: 80%;\n  vertical-align: middle;\n  display: inline-block;\n  object-fit: cover;\n  max-height: 700px;\n  z-index: 1;\n  border-radius: 5%;\n",
             ]))
         ),
-        Gr = Tt.h2(
-          Sr ||
-            (Sr = U([
+        sn = Qt.h2(
+          Ht ||
+            (Ht = q([
               "\n  margin-bottom: 24px;\n  font-size: 2rem;\n  line-height: 1.1;\n  font-weight: 600;\n  color: ",
               ";\n\n  @media (max-width: 768px) {\n    text-align: center;\n  }\n  @media (max-width: 440px) {\n    font-size: 2rem;\n  }\n",
             ])),
@@ -18916,9 +17977,9 @@
             return e.inverse ? "#071c2f" : "#FFC0BC";
           }
         ),
-        Yr = Tt.p(
-          kr ||
-            (kr = U([
+        ln = Qt.p(
+          Vt ||
+            (Vt = q([
               "\n  max-width: 440px;\n  margin-bottom: 35px;\n  line-height: 24px;\n  font-size: 1.5rem;\n  color: ",
               ";\n",
             ])),
@@ -18926,12 +17987,12 @@
             return e.inverse ? "#6a6a6a" : "#FFC0BC";
           }
         ),
-        Qr = Tt.a(
-          jr || (jr = U(["\n  text-decoration: none;\n  color: grey;\n"]))
+        cn = Qt.a(
+          Gt || (Gt = q(["\n  text-decoration: none;\n  color: grey;\n"]))
         ),
-        Zr = Tt.button(
-          Er ||
-            (Er = U([
+        un = Qt.button(
+          Yt ||
+            (Yt = q([
               "\n  text-decoration: none;\n  height: 4rem;\n  padding: 1rem 32px;\n  font-weight: 700;\n  font-size: 3rem;\n  line-height: 18px;\n  letter-spacing: 1.54px;\n  text-transform: uppercase;\n  cursor: pointer;\n  background: none;\n  color: ",
               ";\n  border-radius: 4px;\n  white-space: nowrap;\n  padding: ",
               ";\n  font-size: ",
@@ -18959,7 +18020,1232 @@
             return e.inverse ? "white" : "black";
           }
         ),
-        _r = function (e) {
+        dn = n(184),
+        fn = function (e) {
+          var t = e.topLine,
+            n = e.headline,
+            r = e.description,
+            i = e.img,
+            a = e.alt,
+            o = e.reverse,
+            s = e.inverse,
+            l = e.id;
+          return (0, dn.jsx)(Kt, {
+            id: l,
+            inverse: s,
+            children: (0, dn.jsx)(Zt, {
+              children: (0, dn.jsxs)(en, {
+                reverse: o,
+                children: [
+                  (0, dn.jsx)(tn, {
+                    children: (0, dn.jsxs)(nn, {
+                      children: [
+                        (0, dn.jsx)(an, { children: t.text }),
+                        (0, dn.jsx)(sn, { inverse: s, children: n }),
+                        (0, dn.jsx)(ln, { inverse: s, children: r }),
+                      ],
+                    }),
+                  }),
+                  (0, dn.jsx)(tn, {
+                    children: (0, dn.jsx)(rn, {
+                      children: (0, dn.jsx)(on, { src: i, alt: a }),
+                    }),
+                  }),
+                ],
+              }),
+            }),
+          });
+        };
+      function pn() {
+        return (
+          (pn =
+            Object.assign ||
+            function (e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = arguments[t];
+                for (var r in n)
+                  Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              }
+              return e;
+            }),
+          pn.apply(this, arguments)
+        );
+      }
+      function hn(e, t) {
+        if (null == e) return {};
+        var n,
+          r,
+          i = {},
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++)
+          (n = a[r]), t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i;
+      }
+      var mn = [
+        "onClick",
+        "reloadDocument",
+        "replace",
+        "state",
+        "target",
+        "to",
+      ];
+      function gn(e) {
+        var n = e.basename,
+          r = e.children,
+          i = e.window,
+          a = (0, h.useRef)();
+        null == a.current && (a.current = l({ window: i }));
+        var o = a.current,
+          s = t((0, h.useState)({ action: o.action, location: o.location }), 2),
+          c = s[0],
+          u = s[1];
+        return (
+          (0, h.useLayoutEffect)(
+            function () {
+              return o.listen(u);
+            },
+            [o]
+          ),
+          (0, h.createElement)(B, {
+            basename: n,
+            children: r,
+            location: c.location,
+            navigationType: c.action,
+            navigator: o,
+          })
+        );
+      }
+      var vn = (0, h.forwardRef)(function (e, t) {
+        var n = e.onClick,
+          r = e.reloadDocument,
+          i = e.replace,
+          a = void 0 !== i && i,
+          o = e.state,
+          s = e.target,
+          l = e.to,
+          c = hn(e, mn),
+          u = M(l),
+          d = (function (e, t) {
+            var n = void 0 === t ? {} : t,
+              r = n.target,
+              i = n.replace,
+              a = n.state,
+              o = D(),
+              s = z(),
+              l = R(e);
+            return (0, h.useCallback)(
+              function (t) {
+                if (
+                  0 === t.button &&
+                  (!r || "_self" === r) &&
+                  !(function (e) {
+                    return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey);
+                  })(t)
+                ) {
+                  t.preventDefault();
+                  var n = !!i || f(s) === f(l);
+                  o(e, { replace: n, state: a });
+                }
+              },
+              [s, o, l, i, a, r, e]
+            );
+          })(l, { replace: a, state: o, target: s });
+        return (0, h.createElement)(
+          "a",
+          pn({}, c, {
+            href: u,
+            onClick: function (e) {
+              n && n(e), e.defaultPrevented || r || d(e);
+            },
+            ref: t,
+            target: s,
+          })
+        );
+      });
+      var yn,
+        bn,
+        An,
+        xn = function () {
+          return (0, dn.jsx)("div", {
+            class: "footer",
+            children: (0, dn.jsx)("div", {
+              class: "container",
+              children: (0, dn.jsxs)("div", {
+                class: "row",
+                children: [
+                  (0, dn.jsxs)("div", {
+                    class: "footer-col",
+                    children: [
+                      (0, dn.jsx)("h4", { children: "contacto" }),
+                      (0, dn.jsxs)("ul", {
+                        children: [
+                          (0, dn.jsx)("li", {
+                            children: (0, dn.jsx)("a", {
+                              href: "mailto:afymos@gmail.com",
+                              target: "_blank",
+                              title: "e-mail afymos",
+                              rel: "noreferrer",
+                              children: "afymos@gmail.com",
+                            }),
+                          }),
+                          (0, dn.jsx)("li", {
+                            children: (0, dn.jsx)("a", {
+                              href: "tel:926532749",
+                              target: "_blank",
+                              title: "Tel\xe9fono afymos",
+                              rel: "noreferrer",
+                              children: "(+34) 926 532 749",
+                            }),
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                  (0, dn.jsxs)("div", {
+                    class: "footer-col",
+                    children: [
+                      (0, dn.jsx)("h4", { children: "direcci\xf3n" }),
+                      (0, dn.jsx)("ul", {
+                        children: (0, dn.jsx)("li", {
+                          children: (0, dn.jsx)("a", {
+                            href: "https://www.google.com/maps/place/C.+Pedro+Arias,+87,+13630+Socu%C3%A9llamos,+Ciudad+Real/@39.285737,-2.7934746,17z/data=!3m1!4b1!4m6!3m5!1s0xd68f559a43eaaab:0x2895536363daa787!8m2!3d39.285737!4d-2.7908997!16s%2Fg%2F11fx7fcy55?entry=ttu",
+                            target: "_blank",
+                            rel: "noreferrer",
+                            children:
+                              "c. Pedro Arias 87, 13630 Socu\xe9llamos (Ciudad Real)",
+                          }),
+                        }),
+                      }),
+                    ],
+                  }),
+                  (0, dn.jsxs)("div", {
+                    class: "footer-col",
+                    children: [
+                      (0, dn.jsx)("h4", {
+                        children: "pol\xedtica de privacidad",
+                      }),
+                      (0, dn.jsxs)("ul", {
+                        children: [
+                          (0, dn.jsx)("li", {
+                            children: (0, dn.jsx)(vn, {
+                              to: "/politica-privacidad",
+                              target: "_blank",
+                              rel: "noreferrer",
+                              children: "cookies",
+                            }),
+                          }),
+                          (0, dn.jsx)("li", {
+                            children: (0, dn.jsx)(vn, {
+                              to: "/aviso-legal",
+                              target: "_blank",
+                              rel: "noreferrer",
+                              children: "aviso legal",
+                            }),
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                  (0, dn.jsxs)("div", {
+                    class: "footer-col",
+                    children: [
+                      (0, dn.jsx)("h4", { children: "s\xedguenos" }),
+                      (0, dn.jsxs)("div", {
+                        class: "social-links",
+                        children: [
+                          (0, dn.jsx)("a", {
+                            href: "https://www.facebook.com/profile.php?id=100067093413028",
+                            target: "_blank",
+                            rel: "noreferrer",
+                            children: (0, dn.jsx)("i", {
+                              class: "fab fa-facebook-f",
+                            }),
+                          }),
+                          (0, dn.jsx)("a", {
+                            href: "https://www.instagram.com/tv/CKKQgBcIW_Z/",
+                            target: "_blank",
+                            rel: "noreferrer",
+                            children: (0, dn.jsx)("i", {
+                              class: "fab fa-instagram",
+                            }),
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            }),
+          });
+        },
+        wn = n(4302),
+        Sn = function (e) {
+          return (0, dn.jsx)(dn.Fragment, {
+            children: (0, dn.jsxs)(kn, {
+              id: e.id,
+              children: [
+                (0, dn.jsx)(vn, {
+                  to: "/",
+                  onClick: function () {
+                    window.history.back();
+                  },
+                  children: (0, dn.jsxs)(Dn, {
+                    children: [
+                      (0, dn.jsx)("i", { class: "fa-solid fa-angles-left" }),
+                      (0, dn.jsxs)("h2", {
+                        children: [
+                          "volver a ",
+                          (0, dn.jsx)("span", { children: "Principal" }),
+                        ],
+                      }),
+                    ],
+                  }),
+                }),
+                (0, dn.jsxs)(Rn, {
+                  children: [
+                    (0, dn.jsx)("h1", { children: e.title }),
+                    (0, dn.jsx)("img", {
+                      className: "header_superior__container--logo",
+                      src: wn,
+                      alt: e.alt,
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          });
+        },
+        kn = Qt.nav(
+          yn ||
+            (yn = q([
+              "\n  background-color: #071c2f;\n  height: 80px;\n  width: 100%;\n  position: sticky;\n  align-items: center;\n  top: 0;\n  z-index: 50;\n\n  .containerPrincipal {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .fa-angles-left {\n    margin-left: 50px;\n    font-size: 1.5rem;\n    color: #ffc0bc;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h2 {\n    margin-left: 10px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
+            ]))
+        );
+      kn.displayName = "NavContainer";
+      var jn,
+        En,
+        Cn,
+        On,
+        Pn,
+        Tn,
+        Ln,
+        Mn,
+        In,
+        zn,
+        Dn = Qt.div(
+          bn || (bn = q(["\n  display: flex;\n  align-items: center;\n"]))
+        ),
+        Rn = Qt.nav(
+          An ||
+            (An = q([
+              "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  text-transform: uppercase;\n\n  h1 {\n    text-align: center;\n    color: #ffc0bc;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 2.5rem;\n  }\n  img {\n    width: 10%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 120%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 2.2rem;\n    }\n  }\n  @media (max-width: 440px) {\n    display: flex;\n    flex-direction: end;\n    img {\n      width: 20%;\n    }\n    min-height: 10vh;\n    h1 {\n      display: none;\n    }\n  }\n",
+            ]))
+        ),
+        Nn = function (e) {
+          var n = e.url,
+            r = e.alt,
+            i = e.target,
+            a = e.src,
+            o = t((0, h.useState)(!1), 2),
+            s = o[0],
+            l = o[1];
+          return (0, dn.jsx)(dn.Fragment, {
+            children: (0, dn.jsx)("a", {
+              onClick: function () {
+                l(!s);
+              },
+              href: n,
+              alt: r,
+              target: i,
+              children: (0, dn.jsx)(Fn, {
+                children: (0, dn.jsx)(Bn, {
+                  children: (0, dn.jsx)(Wn, { src: a }),
+                }),
+              }),
+            }),
+          });
+        },
+        Fn = Qt.div(
+          jn ||
+            (jn = q([
+              "\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 50%;\n  gap: 2rem;\n  white-space: nowrap;\n\n  @media (max-width: 440px) {\n  }\n",
+            ]))
+        ),
+        Bn = Qt.div(
+          En ||
+            (En = q([
+              "\n  background: white;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
+            ]))
+        ),
+        Wn = Qt.img(
+          Cn ||
+            (Cn = q([
+              "\n  width: 100%;\n  height: 100%;\n  object-fit: center;\n",
+            ]))
+        ),
+        Un =
+          (Qt.div(
+            On ||
+              (On = q([
+                "\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 80%;\n  gap: 1rem;\n  white-space: nowrap;\n",
+              ]))
+          ),
+          Qt.div(
+            Pn ||
+              (Pn = q([
+                "\n  backface-visibility: hidden;\n  background: #e0e0e0;\n  border-radius: 10%;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
+              ]))
+          ),
+          Qt.img(Tn || (Tn = q(["\n  width: 100%;\n  object-fit: center;\n"]))),
+          function (e) {
+            var t = e.title,
+              n = e.size,
+              r = e.inverse,
+              i = e.marginBottom;
+            return (0, dn.jsx)(dn.Fragment, {
+              children: (0, dn.jsx)(Hn, {
+                size: n,
+                inverse: r,
+                marginBottom: i,
+                children: (0, dn.jsx)("h2", { children: t }),
+              }),
+            });
+          }),
+        Hn = Qt.div(
+          Ln ||
+            (Ln = q([
+              "\n  display: flex;\n  width: 100%;\n  height: 7rem;\n  background: ",
+              ";\n  text-align: center;\n  align-items: center;\n  line-height: 1.5rem;\n  font-size: ",
+              ";\n  margin-bottom: ",
+              ";\n\n  h2 {\n    width: 100%;\n    position: relative;\n    color: ",
+              ";\n  }\n\n  @media (max-width: 440px) {\n    font-size: ",
+              ";\n    line-height: 2.5rem;\n  }\n",
+            ])),
+          function (e) {
+            return e.inverse ? "#071c2f" : "#FFC0BC";
+          },
+          function (e) {
+            return e.size ? "1.8rem" : "1.5rem";
+          },
+          function (e) {
+            return e.marginBottom ? "2rem" : "";
+          },
+          function (e) {
+            return e.inverse ? "#FFC0BC" : "#071c2f";
+          },
+          function (e) {
+            return e.size ? "1.2rem" : "1rem";
+          }
+        ),
+        Vn = n(8718),
+        Gn = n(8971),
+        Yn = n(4696),
+        Qn = n(8514),
+        Zn = n(8121),
+        qn = n(9133),
+        _n = n(945),
+        Jn = "_blank",
+        Xn = [
+          {
+            id: 1,
+            name: "Fundaci\xf3n ONCE",
+            src: n(5951),
+            target: Jn,
+            alt: "fundaci\xf3n-once",
+            url: "https://www.fundaciononce.es/es",
+          },
+          {
+            id: 2,
+            name: "Ayuntamiento de Socu\xe9llamos",
+            src: Vn,
+            target: Jn,
+            alt: "logo-ayuntamiento-de-socuellamos",
+            url: "https://socuellamos.es/",
+          },
+          {
+            id: 3,
+            name: "Junta de Comunidades de Castilla-La Mancha",
+            src: Gn,
+            target: Jn,
+            alt: "logo-junta-comunidades-castilla-la-mancha",
+            url: "https://www.jccm.es/",
+          },
+          {
+            id: 4,
+            name: "Diputaci\xf3n de Ciudad Real",
+            src: Yn,
+            target: Jn,
+            alt: "logo-diputacion-ciudad-real",
+            url: "https://www.dipucr.es/",
+          },
+          {
+            id: 5,
+            name: "Uni\xf3n Europea",
+            src: Qn,
+            target: Jn,
+            alt: "logo-union-europea",
+            url: "https://european-union.europa.eu/index_es/",
+          },
+          {
+            id: 6,
+            name: "Plena Inclusi\xf3n Castilla La-Mancha",
+            src: _n,
+            target: Jn,
+            alt: "logo-plena-inclusion",
+            url: "https://www.plenainclusionclm.org/",
+          },
+          {
+            id: 7,
+            name: "Fundaci\xf3n Globalcaja",
+            src: Zn,
+            target: Jn,
+            alt: "logo-globalcaja",
+            url: "https://fundacionglobalcajahxxii.com/",
+          },
+          {
+            id: 8,
+            name: "Fundaci\xf3n Globalcaja",
+            src: qn,
+            target: Jn,
+            alt: "logo-agradecimiemto-a-colaboradores",
+            url: "",
+          },
+        ],
+        Kn = function (e) {
+          var n = e.size,
+            r = e.inverse,
+            i = t((0, h.useState)(Xn), 1)[0];
+          return (0, dn.jsxs)(dn.Fragment, {
+            children: [
+              (0, dn.jsx)(Un, {
+                title: "Cofinanciaciones",
+                inverse: r,
+                size: n,
+              }),
+              (0, dn.jsx)($n, {
+                children: (0, dn.jsx)(er, {
+                  children: i.map(function (e) {
+                    return (0,
+                    dn.jsx)(Nn, { src: e.src, alt: e.alt, url: e.url, target: e.target }, e.id);
+                  }),
+                }),
+              }),
+            ],
+          });
+        },
+        $n = Qt.div(
+          Mn ||
+            (Mn = q([
+              "\n  background-color: white;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 50px;\n  margin: 0 0 0px 0;\n  padding: 2rem;\n\n  section {\n    background-color: #071c2f;\n    height: 80px;\n    width: 100%;\n    color: #ffc0bc;\n    display: grid;\n    place-content: center;\n  }\n\n  h2 {\n    font-size: 28px;\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 0px;\n\n    section {\n      height: 60px;\n    }\n    h2 {\n      font-size: 24px;\n    }\n  }\n",
+            ]))
+        ),
+        er = Qt.div(
+          In ||
+            (In = q([
+              "\n  background-color: white;\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  justify-content: center;\n  flex-direction: row-reverse;\n  align-items: center;\n  gap: 50px;\n\n  @media (max-width: 768px) {\n    grid-template-columns: repeat(3, 1fr);\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 5px;\n    padding: 30px 0;\n  }\n",
+            ]))
+        ),
+        tr = {
+          color: void 0,
+          size: void 0,
+          className: void 0,
+          style: void 0,
+          attr: void 0,
+        },
+        nr = h.createContext && h.createContext(tr),
+        rr = function () {
+          return (
+            (rr =
+              Object.assign ||
+              function (e) {
+                for (var t, n = 1, r = arguments.length; n < r; n++)
+                  for (var i in (t = arguments[n]))
+                    Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
+                return e;
+              }),
+            rr.apply(this, arguments)
+          );
+        },
+        ir = function (e, t) {
+          var n = {};
+          for (var r in e)
+            Object.prototype.hasOwnProperty.call(e, r) &&
+              t.indexOf(r) < 0 &&
+              (n[r] = e[r]);
+          if (null != e && "function" === typeof Object.getOwnPropertySymbols) {
+            var i = 0;
+            for (r = Object.getOwnPropertySymbols(e); i < r.length; i++)
+              t.indexOf(r[i]) < 0 &&
+                Object.prototype.propertyIsEnumerable.call(e, r[i]) &&
+                (n[r[i]] = e[r[i]]);
+          }
+          return n;
+        };
+      function ar(e) {
+        return (
+          e &&
+          e.map(function (e, t) {
+            return h.createElement(e.tag, rr({ key: t }, e.attr), ar(e.child));
+          })
+        );
+      }
+      function or(e) {
+        return function (t) {
+          return h.createElement(
+            sr,
+            rr({ attr: rr({}, e.attr) }, t),
+            ar(e.child)
+          );
+        };
+      }
+      function sr(e) {
+        var t = function (t) {
+          var n,
+            r = e.attr,
+            i = e.size,
+            a = e.title,
+            o = ir(e, ["attr", "size", "title"]),
+            s = i || t.size || "1em";
+          return (
+            t.className && (n = t.className),
+            e.className && (n = (n ? n + " " : "") + e.className),
+            h.createElement(
+              "svg",
+              rr(
+                {
+                  stroke: "currentColor",
+                  fill: "currentColor",
+                  strokeWidth: "0",
+                },
+                t.attr,
+                r,
+                o,
+                {
+                  className: n,
+                  style: rr(
+                    rr({ color: e.color || t.color }, t.style),
+                    e.style
+                  ),
+                  height: s,
+                  width: s,
+                  xmlns: "http://www.w3.org/2000/svg",
+                }
+              ),
+              a && h.createElement("title", null, a),
+              e.children
+            )
+          );
+        };
+        return void 0 !== nr
+          ? h.createElement(nr.Consumer, null, function (e) {
+              return t(e);
+            })
+          : t(tr);
+      }
+      function lr(e) {
+        return or({
+          tag: "svg",
+          attr: { viewBox: "0 0 512 512" },
+          child: [
+            {
+              tag: "path",
+              attr: {
+                d: "M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm28.9-143.6L209.4 288H392c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24H209.4l75.5-72.4c9.7-9.3 9.9-24.8.4-34.3l-11-10.9c-9.4-9.4-24.6-9.4-33.9 0L107.7 239c-9.4 9.4-9.4 24.6 0 33.9l132.7 132.7c9.4 9.4 24.6 9.4 33.9 0l11-10.9c9.5-9.5 9.3-25-.4-34.3z",
+              },
+            },
+          ],
+        })(e);
+      }
+      function cr(e) {
+        return or({
+          tag: "svg",
+          attr: { viewBox: "0 0 512 512" },
+          child: [
+            {
+              tag: "path",
+              attr: {
+                d: "M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z",
+              },
+            },
+          ],
+        })(e);
+      }
+      function ur(e) {
+        return or({
+          tag: "svg",
+          attr: { viewBox: "0 0 512 512" },
+          child: [
+            {
+              tag: "path",
+              attr: {
+                d: "M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z",
+              },
+            },
+          ],
+        })(e);
+      }
+      var dr,
+        fr,
+        pr,
+        hr,
+        mr,
+        gr,
+        vr,
+        yr,
+        br,
+        Ar,
+        xr,
+        wr,
+        Sr,
+        kr,
+        jr,
+        Er,
+        Cr,
+        Or,
+        Pr,
+        Tr,
+        Lr,
+        Mr = function () {
+          var e = t((0, h.useState)(!1), 2),
+            n = e[0],
+            r = e[1];
+          (0, h.useEffect)(function () {
+            window.addEventListener("scroll", function () {
+              window.scrollY > 100 ? r(!0) : r(!1);
+            });
+          }, []);
+          return (0, dn.jsx)(Ir, {
+            style: { display: n ? "block" : "none" },
+            onClick: function () {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            },
+            "aria-label": "inicio",
+            children: (0, dn.jsx)(ur, {}),
+          });
+        },
+        Ir = Qt.button(
+          zn ||
+            (zn = q([
+              "\n  position: fixed;\n  bottom: 40px;\n  z-index: 1;\n  cursor: pointer;\n  color: grey;\n  right: 2%;\n  background: none;\n  border-radius: 50px;\n  padding: 0px;\n  border: none;\n  opacity: 0.7;\n  font-size: 4rem;\n  margin-right: 1.5rem;\n\n  @media (max-width: 440px) {\n    font-size: 3rem;\n  }\n",
+            ]))
+        ),
+        zr = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
+            children: [
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Aviso Legal" }),
+              (0, dn.jsx)(Un, { title: "Politicas de Privacidad", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, Y), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Q), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Z), {}, { inverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
+            ],
+          });
+        },
+        Dr = function (e) {
+          var n = t((0, h.useState)(!0), 2),
+            r = n[0],
+            i = n[1],
+            a = function () {
+              i(!r);
+            };
+          return (0, dn.jsx)(dn.Fragment, {
+            children: r
+              ? (0, dn.jsx)(Rr, {
+                  children: (0, dn.jsxs)(
+                    Nr,
+                    {
+                      children: [
+                        (0, dn.jsx)(Fr, {
+                          src: e.img,
+                          alt: e.alt,
+                          onMouseEnter: a,
+                        }),
+                        (0, dn.jsx)("h3", { children: e.role }),
+                      ],
+                    },
+                    e.id
+                  ),
+                })
+              : (0, dn.jsx)(Rr, {
+                  children: (0, dn.jsxs)(
+                    Br,
+                    {
+                      onMouseLeave: a,
+                      children: [
+                        (0, dn.jsx)(Wr, { children: e.name }),
+                        (0, dn.jsx)(Ur, { children: e.profession }),
+                      ],
+                    },
+                    e.id
+                  ),
+                }),
+          });
+        },
+        Rr = Qt.div(
+          dr ||
+            (dr = q([
+              "\n  display: flex;\n  position: relative;\n  width: 15rem;\n  height: 20rem;\n  margin: auto;\n  justify-content: center;\n  gap: 2rem;\n  cursor: pointer;\n\n  @media (max-width: 440px) {\n    width: 9rem;\n    height: 10rem;\n  }\n",
+            ]))
+        ),
+        Nr = Qt.div(
+          fr ||
+            (fr = q([
+              "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  backface-visibility: hidden;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: 0.5s;\n",
+            ]))
+        ),
+        Fr = Qt.img(
+          pr ||
+            (pr = q([
+              "\n  position: absolute;\n  object-fit: cover;\n  width: 100%;\n  height: 100%;\n  transition: all 400ms ease-out;\n  will-change: transform;\n",
+            ]))
+        ),
+        Br = Qt.div(
+          hr ||
+            (hr = q([
+              "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #ffc0bc;\n  color: #071c2f;\n  display: flex;\n  border-radius: 10px;\n  flex-direction: column;\n  justify-content: center;\n  gap: 30%;\n  padding: 15px;\n  text-align: center;\n",
+            ]))
+        ),
+        Wr = Qt.div(
+          mr ||
+            (mr = q([
+              "\n  font-size: 1.5rem;\n  margin-top: 20px;\n  letter-spacing: 2px;\n",
+            ]))
+        ),
+        Ur =
+          (Qt.div(
+            gr ||
+              (gr = q([
+                "\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 45px;\n  line-height: 45px;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.4);\n  text-align: center;\n",
+              ]))
+          ),
+          Qt.div(
+            vr ||
+              (vr = q([
+                "\n  border-radius: 10px;\n  letter-spacing: 1px;\n  font-size: 1rem;\n",
+              ]))
+          )),
+        Hr =
+          (Qt.img(
+            yr ||
+              (yr = q([
+                "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n",
+              ]))
+          ),
+          n(3912)),
+        Vr = n(9545),
+        Gr = n(9729),
+        Yr = (n(5614), n(8095), n(9821), n(2358)),
+        Qr = (n(6358), n(9403)),
+        Zr = n(2236),
+        qr = (n(1011), n(2637), n(5079)),
+        _r = n(8309),
+        Jr = n(2186),
+        Xr = n(5991),
+        Kr = n(1715),
+        $r = [
+          {
+            id: 1,
+            name: "Pilar Alarc\xf3n",
+            img: qr,
+            profession: "Presidenta",
+          },
+          {
+            id: 2,
+            name: "Nieves Fern\xe1ndez",
+            img: Jr,
+            profession: "Vicepresidenta",
+          },
+          {
+            id: 3,
+            name: "Maricruz Collado",
+            img: Vr,
+            profession: "Secretaria",
+          },
+          {
+            id: 4,
+            name: "Visitaci\xf3n S\xe1ez",
+            img: n(4147),
+            profession: "Tesorera",
+          },
+          {
+            id: 5,
+            name: "Ana Bel\xe9n Garc\xeda",
+            img: _r,
+            profession: "Vocal 1",
+          },
+          {
+            id: 6,
+            name: " Victoria Moreno",
+            img: n(8607),
+            profession: "Vocal 2",
+          },
+          {
+            id: 7,
+            name: " Francisca Izquierdo",
+            img: Xr,
+            profession: "Vocal 3",
+          },
+          { id: 8, name: "Teresa Martinez", img: Kr, profession: "Vocal 4" },
+          {
+            id: 9,
+            name: "Francisco Javier Rom\xe1n",
+            img: n(8490),
+            profession: "Vocal 5",
+          },
+        ],
+        ei = function () {
+          var e = t((0, h.useState)($r), 1)[0];
+          return (0, dn.jsxs)(dn.Fragment, {
+            children: [
+              (0, dn.jsx)(Sn, { title: "junta directiva", alt: "" }),
+              (0, dn.jsx)(ti, {}),
+              (0, dn.jsx)(ni, {
+                children: (0, dn.jsx)(ri, {
+                  children: e.map(function (e) {
+                    return (0,
+                    dn.jsx)(Dr, { name: e.name, img: e.img, alt: e.alt, role: e.role, profession: e.profession }, e.id);
+                  }),
+                }),
+              }),
+              (0, dn.jsx)(xn, {}),
+            ],
+          });
+        },
+        ti = Qt.div(
+          br ||
+            (br = q([
+              "\n  background: linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)),\n    url(",
+              ");\n  background-size: 100%;\n  background-position: cover;\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  height: 100vh;\n  z-index: 20;\n",
+            ])),
+          Hr
+        ),
+        ni = Qt.section(
+          Ar ||
+            (Ar = q([
+              "\n  padding: 5rem 18%;\n  background-color: #f7f7f7;\n\n  @media (max-width: 440px) {\n    padding: 2rem 5%;\n  }\n",
+            ]))
+        ),
+        ri = Qt.div(
+          xr ||
+            (xr = q([
+              "\n  display: flex;\n  gap: 5rem;\n  flex-wrap: wrap;\n\n  @media (max-width: 440px) {\n    gap: 2rem;\n  }\n",
+            ]))
+        ),
+        ii = n(5562),
+        ai = n(599),
+        oi = {
+          reverse: !1,
+          inverse: !1,
+          topLine: { text: "Vida en comunidad:" },
+          headline: "Integraci\xf3n sociolaboral",
+          description:
+            "Nuestro objetivo es potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones), haciendo especial \xe9nfasis en las habilidades de car\xe1cter laboral para facilitar su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian del Centro de D\xeda por la metodolog\xeda de trabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
+          buttonLabel: "Saber m\xe1s",
+          href: "#/servicio-capacitacion",
+          img: n(6453),
+        },
+        si = {
+          href: "#/donaciones",
+          reverse: !0,
+          inverse: !0,
+          topLine: { text: "Sensibilizaci\xf3n" },
+          headline:
+            "S\xedgue nuestras redes para ver todas las actividades de sensibilizaci\xf3n que llevamos a cabo.",
+          description:
+            "Nuestra organizaci\xf3n sin \xe1nimo de lucro se sustenta principalmente de las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda econ\xf3mica que nos puedan prestar.",
+          buttonLabel: "Donaciones",
+          img: ai,
+        },
+        li = {
+          reverse: !1,
+          inverse: !1,
+          topLine: { text: "Buscamos profesionales como t\xfa" },
+          headline: "Trabaja con nosotros ",
+          description:
+            "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administraci\xf3n y mucho m\xe1s. Contacta con nosotros o envianos tu curriculum",
+          buttonLabel: "Contacto",
+          href: "contacto",
+          img: ii,
+        },
+        ci = n(1795),
+        ui = [
+          {
+            title: "PROYECTO NUEVO CREA 2023",
+            description:
+              "El pasado 18 de abril de 2023, se present\xf3 la nueva convocatoria",
+            image: n(1965),
+            alt: "proyecto-crea-2023",
+            url: "/proyecto-crea",
+          },
+          {
+            title: "Somos Portada de Peri\xf3dico",
+            description:
+              "Desde Marzo, nuestra asociaci\xf3n ha cambiado su metodolog\xeda de trabajo",
+            image: n(2572),
+            url: "/somos-portada",
+            alt: "somos-portada",
+          },
+          {
+            title: "XIII CONGRESO DE EMPLEO CON APOYO",
+            description:
+              "Los d\xedas 13, 14 y 15 de junio se celebr\xf3 el XIII Congreso de Empleo en la facultad de derecho de Burgos, organizado por AESE y Down Burgos.",
+            image: ci,
+            alt: "un-d\xeda-en-afymos",
+            url: "/congreso-empleo-apoyo",
+          },
+        ],
+        di = {
+          arrows: !1,
+          slidesToShow: 3,
+          focusOnselect: !1,
+          accessability: !1,
+          responsive: [
+            { breakpoint: 1280, settings: { slidesToShow: 2 } },
+            { breakpoint: 900, settings: { slidesToShow: 1 } },
+          ],
+        },
+        fi = n(5717),
+        pi = Qt.img(
+          wr ||
+            (wr = q([
+              "\n  width: 100%;\n  height: 300px;\n  border-radius: 10px 10px 0 0;\n  object-fit: cover;\n  vertical-align: middle;\n",
+            ]))
+        ),
+        hi = Qt.div(
+          Sr ||
+            (Sr = q([
+              "\n  background-color: white;\n  width: 90%;\n  display: flex !important;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  border-radius: 10px;\n  outline: none;\n  height: 430px;\n  border: solid 1px #071c2f;\n\n  @media (min-width: 440px) {\n    border: 1px solid #bebebe;\n  }\n",
+            ]))
+        ),
+        mi = Qt($t)(
+          kr ||
+            (kr = q([
+              "\n  & svg {\n    margin: 0 1rem;\n    cursor: pointer;\n  }\n\n  & svg:hover {\n    opacity: 0.7;\n    transition: opacity 0.2s ease-in;\n  }\n  @media (max-width: 960px) {\n    margin: 0 auto;\n  }\n",
+            ]))
+        ),
+        gi = Qt(fi.Z)(
+          jr ||
+            (jr = q([
+              "\n  width: 100%;\n\n  .slick-track {\n    display: flex;\n    padding: 30px;\n    gap: 3rem;\n  }\n  .slick-slide {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 1;\n    outline: none;\n  }\n\n  .slick-list {\n    overflow: hidden;\n  }\n",
+            ]))
+        ),
+        vi = Qt.button(
+          Er ||
+            (Er = q([
+              "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
+            ]))
+        ),
+        yi = Qt.div(
+          Cr ||
+            (Cr = q([
+              "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
+            ]))
+        ),
+        bi = function () {
+          var e = t((0, h.useState)(null), 2),
+            n = e[0],
+            r = e[1],
+            i = t((0, h.useState)(ui), 2),
+            a = (i[0], i[1]),
+            o = function (e) {
+              a(e.currentTarget);
+            };
+          return (0, dn.jsxs)(Xt, {
+            margin: "auto",
+            maxWidth: "1280px",
+            padding: "50px 70px",
+            inverse: !0,
+            children: [
+              (0, dn.jsxs)($t, {
+                justify: "center",
+                margin: "1rem",
+                wrap: "wrap",
+                align: "center",
+                children: [
+                  (0, dn.jsx)(_t, {
+                    width: "auto",
+                    inverse: !0,
+                    margin: "2rem",
+                    children: "Noticias",
+                  }),
+                  (0, dn.jsx)(mi, {
+                    children: (0, dn.jsxs)(nr.Provider, {
+                      value: { size: "3rem", color: "#071c2f" },
+                      children: [
+                        (0, dn.jsx)(lr, {
+                          onClick:
+                            null === n || void 0 === n ? void 0 : n.slickPrev,
+                        }),
+                        (0, dn.jsx)(cr, {
+                          onClick:
+                            null === n || void 0 === n ? void 0 : n.slickNext,
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
+              (0, dn.jsx)(
+                gi,
+                G(
+                  G({}, di),
+                  {},
+                  {
+                    ref: r,
+                    children: ui.map(function (e, t) {
+                      return (0,
+                      dn.jsxs)(hi, { children: [(0, dn.jsx)(pi, { src: e.image, alt: e.alt }), (0, dn.jsx)(Jt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, dn.jsx)(Jt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, dn.jsx)(yi, { children: (0, dn.jsx)(vn, { to: e.url, children: (0, dn.jsx)(vi, { onClick: o, children: "conoce m\xe1s" }) }) })] }, t);
+                    }),
+                  }
+                )
+              ),
+            ],
+          });
+        },
+        Ai = n(9951),
+        xi = n(7646),
+        wi = n(3104),
+        Si = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
+            children: [
+              (0, dn.jsx)(Un, {
+                title: "Informaci\xf3n de contacto",
+                size: !0,
+                inverse: !0,
+                marginBottom: !0,
+              }),
+              (0, dn.jsxs)("section", {
+                className: "contact",
+                id: "contacto",
+                children: [
+                  (0, dn.jsxs)(ki, {
+                    children: [
+                      (0, dn.jsxs)(ji, {
+                        children: [
+                          (0, dn.jsx)("img", { src: Ai, alt: "" }),
+                          (0, dn.jsx)("h3", {
+                            children: "tel\xe9fono de contacto",
+                          }),
+                          (0, dn.jsx)("p", { children: "926 532 749" }),
+                        ],
+                      }),
+                      (0, dn.jsxs)(ji, {
+                        children: [
+                          (0, dn.jsx)("img", { src: wi, alt: "" }),
+                          (0, dn.jsx)("h3", {
+                            children: "correo electr\xf3nico",
+                          }),
+                          (0, dn.jsx)("p", {
+                            children: (0, dn.jsx)("a", {
+                              href: "mailto:afymos@gmail.com",
+                              target: "_blank",
+                              title: "e-mail afymos",
+                              rel: "noreferrer",
+                              children: "afymos@gmail.com",
+                            }),
+                          }),
+                        ],
+                      }),
+                      (0, dn.jsxs)(ji, {
+                        children: [
+                          (0, dn.jsx)("img", { src: xi, alt: "" }),
+                          (0, dn.jsx)("h3", { children: "Direcci\xf3n" }),
+                          (0, dn.jsx)("p", {
+                            children:
+                              "c. Pedro Arias, 87, 13630 Socu\xe9llamos, Ciudad Real",
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                  (0, dn.jsxs)("div", {
+                    className: "row",
+                    children: [
+                      (0, dn.jsxs)("form", {
+                        action:
+                          "https://formsubmit.co/ba88b9758fe1eee2f75438dceeafdba3",
+                        method: "POST",
+                        children: [
+                          (0, dn.jsxs)("div", {
+                            className: "inputBox",
+                            children: [
+                              (0, dn.jsx)("input", {
+                                type: "text",
+                                placeholder: "nombre",
+                                name: "name",
+                                required: !0,
+                              }),
+                              (0, dn.jsx)("input", {
+                                type: "number",
+                                placeholder: "tel\xe9fono",
+                                name: "telefono",
+                              }),
+                            ],
+                          }),
+                          (0, dn.jsxs)("div", {
+                            className: "inputBox",
+                            children: [
+                              (0, dn.jsx)("input", {
+                                type: "email",
+                                placeholder: "email",
+                                name: "email",
+                                required: !0,
+                              }),
+                              (0, dn.jsx)("input", {
+                                type: "text",
+                                placeholder: "asunto",
+                                name: "asunto",
+                                required: !0,
+                              }),
+                            ],
+                          }),
+                          (0, dn.jsx)("textarea", {
+                            type: "text",
+                            name: "mensaje",
+                            placeholder: "mensaje",
+                            required: !0,
+                            id: "message",
+                            cols: "30",
+                            rows: "10",
+                            class: "inputs",
+                          }),
+                          (0, dn.jsx)("input", {
+                            type: "submit",
+                            value: "enviar",
+                            target: "_blank",
+                            className: "inputSubmit",
+                          }),
+                        ],
+                      }),
+                      (0, dn.jsx)("iframe", {
+                        title: "map",
+                        className: "map",
+                        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.115024827591!2d-2.792748684638135!3d39.28564187951258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68f525d5ea6049%3A0x180a68074859800d!2sAFYMOS!5e0!3m2!1ses!2ses!4v1687676404652!5m2!1ses!2ses",
+                        allowfullscreen: "",
+                        loading: "lazy",
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            ],
+          });
+        },
+        ki = Qt.div(
+          Or ||
+            (Or = q([
+              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n",
+            ]))
+        ),
+        ji = Qt.div(
+          Pr ||
+            (Pr = q([
+              "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n\n  img {\n    height: 3rem;\n  }\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n",
+            ]))
+        ),
+        Ei = function (e) {
           var n = e.alt,
             r = e.buttonLabel,
             i = e.description,
@@ -18975,24 +19261,24 @@
             m = t((0, h.useState)(!1), 2),
             g = m[0],
             v = m[1];
-          return (0, V.jsx)(_n, {
+          return (0, dn.jsx)(Xt, {
             id: p,
             inverse: l,
-            children: (0, V.jsx)(Gn, {
-              children: (0, V.jsxs)(Br, {
+            children: (0, dn.jsx)(Zt, {
+              children: (0, dn.jsxs)(en, {
                 reverse: c,
                 children: [
-                  (0, V.jsx)(Fr, {
-                    children: (0, V.jsxs)(Wr, {
+                  (0, dn.jsx)(tn, {
+                    children: (0, dn.jsxs)(nn, {
                       children: [
-                        (0, V.jsx)(Yn, { children: f }),
-                        (0, V.jsx)(Ur, { children: d.text }),
-                        (0, V.jsx)(Gr, { inverse: l, children: a }),
-                        (0, V.jsx)(Yr, { inverse: l, children: i }),
-                        (0, V.jsx)(Zr, {
+                        (0, dn.jsx)(qt, { children: f }),
+                        (0, dn.jsx)(an, { children: d.text }),
+                        (0, dn.jsx)(sn, { inverse: l, children: a }),
+                        (0, dn.jsx)(ln, { inverse: l, children: i }),
+                        (0, dn.jsx)(un, {
                           transition: { delay: 1, duration: 0.6 },
                           inverse: l,
-                          children: (0, V.jsx)(Qr, {
+                          children: (0, dn.jsx)(cn, {
                             onClick: function () {
                               v(!g);
                             },
@@ -19005,9 +19291,9 @@
                       ],
                     }),
                   }),
-                  (0, V.jsx)(Fr, {
-                    children: (0, V.jsx)(Hr, {
-                      children: (0, V.jsx)(Vr, { src: s, alt: n }),
+                  (0, dn.jsx)(tn, {
+                    children: (0, dn.jsx)(rn, {
+                      children: (0, dn.jsx)(on, { src: s, alt: n }),
                     }),
                   }),
                 ],
@@ -19015,29 +19301,29 @@
             }),
           });
         },
-        qr = function (e) {
+        Ci = function (e) {
           e.title, e.size, e.inverse, e.marginBottom, e.display;
-          return (0, V.jsxs)("div", {
+          return (0, dn.jsxs)("div", {
             class: "aviso-cookies",
             id: "aviso-cookies",
             children: [
-              (0, V.jsx)("img", {
+              (0, dn.jsx)("img", {
                 class: "galleta",
                 src: "./img/cookie.svg",
                 alt: "Galleta",
               }),
-              (0, V.jsx)("h3", { class: "titulo", children: "Cookies" }),
-              (0, V.jsx)("p", {
+              (0, dn.jsx)("h3", { class: "titulo", children: "Cookies" }),
+              (0, dn.jsx)("p", {
                 class: "parrafo",
                 children:
                   "Utilizamos cookies propias y de terceros para mejorar nuestros servicios.",
               }),
-              (0, V.jsx)("button", {
+              (0, dn.jsx)("button", {
                 class: "boton",
                 id: "btn-aceptar-cookies",
                 children: "De acuerdo",
               }),
-              (0, V.jsx)("a", {
+              (0, dn.jsx)("a", {
                 class: "enlace",
                 href: "aviso-cookies.html",
                 children: "Aviso de Cookies",
@@ -19045,69 +19331,69 @@
             ],
           });
         };
-      Tt.div(
-        Cr ||
-          (Cr = U([
+      Qt.div(
+        Tr ||
+          (Tr = q([
             "\n  display: none;\n  background: #fff;\n  padding: 20px;\n  width: calc(100% - 40px);\n  max-width: 300px;\n  line-height: 150%;\n  border-radius: 10px;\n  position: fixed;\n  bottom: 20px;\n  left: 20px;\n  z-index: 100;\n  padding-top: 60px;\n  box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, 0.25);\n  text-align: center;\n\n  img {\n    max-width: 100px;\n    position: absolute;\n    top: -50px;\n    left: calc(50% - 50px);\n  }\n",
           ]))
       );
-      var Jr,
-        Xr,
-        Kr,
-        $r,
-        ei,
-        ti,
-        ni,
-        ri = function (e) {
-          return (0, V.jsx)(ii, {
-            children: (0, V.jsxs)("div", {
+      var Oi,
+        Pi,
+        Ti,
+        Li,
+        Mi,
+        Ii,
+        zi,
+        Di = function (e) {
+          return (0, dn.jsx)(Ri, {
+            children: (0, dn.jsxs)("div", {
               onClick: e.handleClick,
               className: "icon nav-icon-5 ".concat(e.clicked ? "open" : ""),
               children: [
-                (0, V.jsx)("span", {}),
-                (0, V.jsx)("span", {}),
-                (0, V.jsx)("span", {}),
+                (0, dn.jsx)("span", {}),
+                (0, dn.jsx)("span", {}),
+                (0, dn.jsx)("span", {}),
               ],
             }),
           });
         },
-        ii = Tt.div(
-          Or ||
-            (Or = U([
+        Ri = Qt.div(
+          Lr ||
+            (Lr = q([
               "\n  /* nav-icon-5 */\n  .nav-icon-5 {\n    width: 30px;\n    height: 30px;\n    margin: 10px 10px;\n    position: relative;\n    cursor: pointer;\n    display: inline-block;\n  }\n  .nav-icon-5 span {\n    background-color: #ffc0bc;\n    position: absolute;\n    border-radius: 2px;\n    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);\n    width: 100%;\n    height: 3px;\n    transition-duration: 500ms;\n  }\n  .nav-icon-5 span:nth-child(1) {\n    top: 0px;\n    left: 0px;\n  }\n  .nav-icon-5 span:nth-child(2) {\n    top: 13px;\n    left: 0px;\n    opacity: 1;\n  }\n  .nav-icon-5 span:nth-child(3) {\n    bottom: 0px;\n    left: 0px;\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(1) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(2) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(3) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5.open span:nth-child(1) {\n    transform: rotate(45deg);\n    background-color: #ffc0bc;\n    top: 13px;\n  }\n  .nav-icon-5.open span:nth-child(2) {\n    opacity: 0;\n  }\n  .nav-icon-5.open span:nth-child(3) {\n    transform: rotate(-45deg);\n    top: 13px;\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        ai = n(5667),
-        oi = n(9356),
-        si = n(6129),
-        li = function () {
-          return (0, V.jsx)(V.Fragment, {
-            children: (0, V.jsxs)(ci, {
+        Ni = n(5667),
+        Fi = n(9356),
+        Bi = n(6129),
+        Wi = function () {
+          return (0, dn.jsx)(dn.Fragment, {
+            children: (0, dn.jsxs)(Ui, {
               children: [
-                (0, V.jsxs)(ui, {
+                (0, dn.jsxs)(Hi, {
                   children: [
-                    (0, V.jsxs)(di, {
+                    (0, dn.jsxs)(Vi, {
                       children: [
-                        (0, V.jsx)("img", { src: si, alt: "logo-afymos" }),
-                        (0, V.jsx)("h1", { children: "Afymos" }),
+                        (0, dn.jsx)("img", { src: Bi, alt: "logo-afymos" }),
+                        (0, dn.jsx)("h1", { children: "Afymos" }),
                       ],
                     }),
-                    (0, V.jsxs)(fi, {
+                    (0, dn.jsxs)(Gi, {
                       children: [
-                        (0, V.jsx)("h2", {
+                        (0, dn.jsx)("h2", {
                           children:
                             '"Dadme un punto de apoyo y mover\xe9 el mundo" ',
                         }),
-                        (0, V.jsx)("i", {
+                        (0, dn.jsx)("i", {
                           children: "Arqu\xedmedes Siracoussa.",
                         }),
                       ],
                     }),
                   ],
                 }),
-                (0, V.jsx)(pi, {
+                (0, dn.jsx)(Yi, {
                   style: {
-                    backgroundImage: "url(".concat(oi, ")"),
+                    backgroundImage: "url(".concat(Fi, ")"),
                     WebkitBackgroundSize: "cover",
                     backgroundPositionY: "center",
                     backgroundPositionX: "center",
@@ -19120,96 +19406,87 @@
             }),
           });
         },
-        ci = Tt.header(Jr || (Jr = U(["\n  margin: auto;\n"]))),
-        ui = Tt.div(
-          Xr ||
-            (Xr = U([
+        Ui = Qt.header(Oi || (Oi = q(["\n  margin: auto;\n"]))),
+        Hi = Qt.div(
+          Pi ||
+            (Pi = q([
               "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #ffc0bc;\n  width: 100%;\n  gap: 1.5rem;\n  margin: 1.5rem auto;\n",
             ]))
         ),
-        di = Tt.div(
-          Kr ||
-            (Kr = U([
-              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size:5rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
+        Vi = Qt.div(
+          Ti ||
+            (Ti = q([
+              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size: 5rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
             ]))
         ),
-        fi = Tt.div(
-          $r ||
-            ($r = U([
+        Gi = Qt.div(
+          Li ||
+            (Li = q([
               "\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n  justify-content: end;\n  gap: 1rem;\n\n  h2 {\n    font-size: 2rem;\n    color: #071c2f;\n  }\n\n  i {\n    font-size: 1.5rem;\n    color: #071c2f;\n  }\n  @media (max-width: 440px) {\n    h2 {\n      font-size: 1.4rem;\n    }\n\n    i {\n      font-size: 0.8rem;\n    }\n  }\n",
             ]))
         ),
-        pi = Tt.section(ei || (ei = U([""])));
-      var hi,
-        mi,
-        gi,
-        vi,
-        yi,
-        bi,
-        Ai,
-        xi,
-        wi,
-        Si,
-        ki,
-        ji,
-        Ei,
-        Ci,
-        Oi,
-        Pi,
-        Ti,
-        Li,
-        Mi,
-        zi,
-        Ii,
-        Ri,
-        Di,
-        Ni,
-        Bi,
-        Fi,
-        Wi,
-        Hi,
-        Ui,
-        Vi,
-        Gi,
-        Yi,
-        Qi,
-        Zi = function () {
+        Yi = Qt.section(Mi || (Mi = q([""])));
+      var Qi,
+        Zi,
+        qi,
+        _i,
+        Ji,
+        Xi,
+        Ki,
+        $i,
+        ea,
+        ta,
+        na,
+        ra,
+        ia,
+        aa,
+        oa,
+        sa,
+        la,
+        ca,
+        ua,
+        da,
+        fa,
+        pa,
+        ha,
+        ma,
+        ga = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1],
             i = function () {
               r(!n);
             };
-          return (0, V.jsxs)(V.Fragment, {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsxs)(_i, {
+              (0, dn.jsxs)(va, {
                 id: "menu-principal",
                 children: [
-                  (0, V.jsxs)("h3", {
+                  (0, dn.jsxs)("h3", {
                     children: [
                       "Men\xfa ",
-                      (0, V.jsx)("span", { children: "Principal" }),
+                      (0, dn.jsx)("span", { children: "Principal" }),
                     ],
                   }),
-                  (0, V.jsxs)("div", {
+                  (0, dn.jsxs)("div", {
                     className: "links ".concat(n ? "active" : ""),
                     children: [
-                      (0, V.jsx)(q, {
+                      (0, dn.jsx)(vn, {
                         onClick: i,
                         to: "/nosotros",
                         children: "nosotros",
                       }),
-                      (0, V.jsx)(q, {
+                      (0, dn.jsx)(vn, {
                         onClick: i,
                         to: "/terapias",
                         children: "terapias",
                       }),
-                      (0, V.jsx)(q, {
+                      (0, dn.jsx)(vn, {
                         onClick: i,
                         to: "/donaciones",
                         children: "donaciones",
                       }),
-                      (0, V.jsx)(ai.rU, {
+                      (0, dn.jsx)(Ni.rU, {
                         to: "contacto",
                         spy: !0,
                         smooth: !0,
@@ -19218,7 +19495,7 @@
                         onClick: i,
                         children: "contacto",
                       }),
-                      (0, V.jsx)(ai.rU, {
+                      (0, dn.jsx)(Ni.rU, {
                         to: "contacto",
                         spy: !0,
                         smooth: !0,
@@ -19229,210 +19506,45 @@
                       }),
                     ],
                   }),
-                  (0, V.jsx)("div", {
+                  (0, dn.jsx)("div", {
                     className: "burguer",
-                    children: (0, V.jsx)(ri, { clicked: n, handleClick: i }),
+                    children: (0, dn.jsx)(Di, { clicked: n, handleClick: i }),
                   }),
-                  (0, V.jsx)(qi, {
+                  (0, dn.jsx)(ya, {
                     className: "initial ".concat(n ? " active" : ""),
                   }),
                 ],
               }),
-              (0, V.jsx)(li, {}),
+              (0, dn.jsx)(Wi, {}),
             ],
           });
         },
-        _i = Tt.nav(
-          ti ||
-            (ti = U([
+        va = Qt.nav(
+          Ii ||
+            (Ii = q([
               "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 5%;\n    font-size: 2.2rem;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 5%;\n    font-weight: 400;\n  }\n\n  @media (max-width: 440px) {\n    h3 {\n      font-size: 1.6rem;\n    }\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #ffc0bc;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 1090px) {\n      background-color: #071c2f;\n      height: 45%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 3rem;\n        margin-top: 5%;\n        color: #ffc0bc;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
             ]))
         ),
-        qi = Tt.div(
-          ni ||
-            (ni = U([
+        ya = Qt.div(
+          zi ||
+            (zi = q([
               "\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n  width: 30%;\n  height: 30%;\n  margin-left: 30px;\n  z-index: -1;\n  transition: all 0.8s ease;\n\n  &.active {\n    border-radius: 0 0 80% 0;\n    top: 0;\n    left: 0;\n    width: 50%;\n    height: 50%;\n  }\n",
             ]))
         ),
-        Ji = function (e) {
-          var n = e.url,
-            r = e.alt,
-            i = e.target,
-            a = e.src,
-            o = t((0, h.useState)(!1), 2),
-            s = o[0],
-            l = o[1];
-          return (0, V.jsx)(V.Fragment, {
-            children: (0, V.jsx)("a", {
-              onClick: function () {
-                l(!s);
-              },
-              href: n,
-              alt: r,
-              target: i,
-              children: (0, V.jsx)(Xi, {
-                children: (0, V.jsx)(Ki, {
-                  children: (0, V.jsx)($i, { src: a }),
-                }),
-              }),
-            }),
-          });
-        },
-        Xi = Tt.div(
-          hi ||
-            (hi = U([
-              "\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 50%;\n  gap: 2rem;\n  white-space: nowrap;\n\n  @media (max-width: 440px) {\n  }\n",
-            ]))
-        ),
-        Ki = Tt.div(
-          mi ||
-            (mi = U([
-              "\n  background: white;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
-            ]))
-        ),
-        $i = Tt.img(
-          gi ||
-            (gi = U([
-              "\n  width: 100%;\n  height: 100%;\n  object-fit: center;\n",
-            ]))
-        ),
-        ea =
-          (Tt.div(
-            vi ||
-              (vi = U([
-                "\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 80%;\n  gap: 1rem;\n  white-space: nowrap;\n",
-              ]))
-          ),
-          Tt.div(
-            yi ||
-              (yi = U([
-                "\n  backface-visibility: hidden;\n  background: #e0e0e0;\n  border-radius: 10%;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
-              ]))
-          ),
-          Tt.img(bi || (bi = U(["\n  width: 100%;\n  object-fit: center;\n"]))),
-          n(8718)),
-        ta = n(8971),
-        na = n(4696),
-        ra = n(8514),
-        ia = n(8121),
-        aa = n(9133),
-        oa = n(945),
-        sa = n(5951),
-        la = "_blank",
-        ca = [
-          {
-            id: 1,
-            name: "Fundaci\xf3n ONCE",
-            src: sa,
-            target: la,
-            alt: "fundaci\xf3n-once",
-            url: "https://www.fundaciononce.es/es",
-          },
-          {
-            id: 2,
-            name: "Ayuntamiento de Socu\xe9llamos",
-            src: ea,
-            target: la,
-            alt: "logo-ayuntamiento-de-socuellamos",
-            url: "https://socuellamos.es/",
-          },
-          {
-            id: 3,
-            name: "Junta de Comunidades de Castilla-La Mancha",
-            src: ta,
-            target: la,
-            alt: "logo-junta-comunidades-castilla-la-mancha",
-            url: "https://www.jccm.es/",
-          },
-          {
-            id: 4,
-            name: "Diputaci\xf3n de Ciudad Real",
-            src: na,
-            target: la,
-            alt: "logo-diputacion-ciudad-real",
-            url: "https://www.dipucr.es/",
-          },
-          {
-            id: 5,
-            name: "Uni\xf3n Europea",
-            src: ra,
-            target: la,
-            alt: "logo-union-europea",
-            url: "https://european-union.europa.eu/index_es/",
-          },
-          {
-            id: 6,
-            name: "Plena Inclusi\xf3n Castilla La-Mancha",
-            src: oa,
-            target: la,
-            alt: "logo-plena-inclusion",
-            url: "https://www.plenainclusionclm.org/",
-          },
-          {
-            id: 7,
-            name: "Fundaci\xf3n Globalcaja",
-            src: ia,
-            target: la,
-            alt: "logo-globalcaja",
-            url: "https://fundacionglobalcajahxxii.com/",
-          },
-          {
-            id: 8,
-            name: "Fundaci\xf3n Globalcaja",
-            src: aa,
-            target: la,
-            alt: "logo-agradecimiemto-a-colaboradores",
-            url: "",
-          },
-        ],
-        ua = function (e) {
-          var n = e.size,
-            r = e.inverse,
-            i = t((0, h.useState)(ca), 1)[0];
-          return (0, V.jsxs)(V.Fragment, {
-            children: [
-              (0, V.jsx)(zr, {
-                title: "Cofinanciaciones",
-                inverse: r,
-                size: n,
-              }),
-              (0, V.jsx)(da, {
-                children: (0, V.jsx)(fa, {
-                  children: i.map(function (e) {
-                    return (0,
-                    V.jsx)(Ji, { src: e.src, alt: e.alt, url: e.url, target: e.target }, e.id);
-                  }),
-                }),
-              }),
-            ],
-          });
-        },
-        da = Tt.div(
-          Ai ||
-            (Ai = U([
-              "\n  background-color: white;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 50px;\n  margin: 0 0 0px 0;\n  padding: 2rem;\n\n  section {\n    background-color: #071c2f;\n    height: 80px;\n    width: 100%;\n    color: #ffc0bc;\n    display: grid;\n    place-content: center;\n  }\n\n  h2 {\n    font-size: 28px;\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 0px;\n\n    section {\n      height: 60px;\n    }\n    h2 {\n      font-size: 24px;\n    }\n  }\n",
-            ]))
-        ),
-        fa = Tt.div(
-          xi ||
-            (xi = U([
-              "\n  background-color: white;\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  justify-content: center;\n  flex-direction: row-reverse;\n  align-items: center;\n  gap: 50px;\n\n  @media (max-width: 768px) {\n    grid-template-columns: repeat(3, 1fr);\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 5px;\n    padding: 30px 0;\n  }\n",
-            ]))
-        ),
-        pa = function () {
+        ba = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1];
-          return (0, V.jsxs)(V.Fragment, {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(zr, { title: "Proyecto Crea", size: !0 }),
-              (0, V.jsx)("section", {
-                children: (0, V.jsx)(ha, {
+              (0, dn.jsx)(Un, { title: "Proyecto Crea", size: !0 }),
+              (0, dn.jsx)("section", {
+                children: (0, dn.jsx)(Aa, {
                   id: "demo",
-                  children: (0, V.jsxs)(ma, {
+                  children: (0, dn.jsxs)(xa, {
                     children: [
-                      (0, V.jsx)(va, {
-                        children: (0, V.jsx)("iframe", {
+                      (0, dn.jsx)(Sa, {
+                        children: (0, dn.jsx)("iframe", {
                           width: "570",
                           height: "320",
                           src: "https://www.youtube.com/embed/SJI4HjfxSj8",
@@ -19443,20 +19555,22 @@
                           allowFullScreen: !0,
                         }),
                       }),
-                      (0, V.jsxs)(ga, {
+                      (0, dn.jsxs)(wa, {
                         children: [
-                          (0, V.jsx)("p", { children: "Proyecto CREA;" }),
-                          (0, V.jsx)("p", { children: "Nuestra filosof\xeda" }),
-                          (0, V.jsx)("p", {
+                          (0, dn.jsx)("p", { children: "Proyecto CREA;" }),
+                          (0, dn.jsx)("p", {
+                            children: "Nuestra filosof\xeda",
+                          }),
+                          (0, dn.jsx)("p", {
                             children:
                               "Conoce nuestro Programa de Formaci\xf3n y Empleo para personas con alg\xfan tipo de discapacidad en Socu\xe9llamos.",
                           }),
-                          (0, V.jsx)(q, {
+                          (0, dn.jsx)(vn, {
                             onClick: function () {
                               r(!n);
                             },
                             to: "/proyecto-crea",
-                            children: (0, V.jsx)(Zr, {
+                            children: (0, dn.jsx)(un, {
                               transition: { delay: 1, duration: 0.6 },
                               children: "Saber m\xe1s",
                             }),
@@ -19470,255 +19584,233 @@
             ],
           });
         },
-        ha = Tt.div(
-          wi || (wi = U(["\n  width: 100%;\n  background: white;\n"]))
+        Aa = Qt.div(
+          Qi || (Qi = q(["\n  width: 100%;\n  background: white;\n"]))
         ),
-        ma = Tt.div(
-          Si ||
-            (Si = U([
+        xa = Qt.div(
+          Zi ||
+            (Zi = q([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 2rem;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        ga = Tt.div(
-          ki ||
-            (ki = U([
+        wa = Qt.div(
+          qi ||
+            (qi = q([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    margin-top: 7%;\n    font-size: 2rem;\n    font-style: italic;\n    color: #071c2f;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n    color: #071c2f;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n    color: #071c2f;\n  }\n",
             ]))
         ),
-        va = Tt.div(ji || (ji = U(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
-        ya = function () {
-          var e = t((0, h.useState)(!1), 2),
-            n = e[0],
-            r = e[1];
-          (0, h.useEffect)(function () {
-            window.addEventListener("scroll", function () {
-              window.scrollY > 100 ? r(!0) : r(!1);
-            });
-          }, []);
-          return (0, V.jsx)(ba, {
-            style: { display: n ? "block" : "none" },
-            onClick: function () {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            },
-            "aria-label": "inicio",
-            children: (0, V.jsx)(pr, {}),
-          });
-        },
-        ba = Tt.button(
-          Ei ||
-            (Ei = U([
-              "\n  position: fixed;\n  bottom: 40px;\n  z-index: 1;\n  cursor: pointer;\n  color: grey;\n  right: 2%;\n  background: none;\n  border-radius: 50px;\n  padding: 0px;\n  border: none;\n  opacity: 0.7;\n  font-size: 4rem;\n  margin-right: 1.5rem;\n\n  @media (max-width: 440px) {\n    font-size: 3rem;\n  }\n",
-            ]))
-        ),
-        Aa = n(8335),
-        xa = n(8299),
-        wa = n(5025),
-        Sa = n(1254),
-        ka = n(587),
-        ja = n(5178),
-        Ea = n(4993),
-        Ca = n(3602),
-        Oa = n(181),
-        Pa = n(9302),
-        Ta = [
+        Sa = Qt.div(_i || (_i = q(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
+        ka = n(8335),
+        ja = n(8299),
+        Ea = n(5025),
+        Ca = n(1254),
+        Oa = n(587),
+        Pa = n(5178),
+        Ta = n(4993),
+        La = n(3602),
+        Ma = n(181),
+        Ia = n(9302),
+        za = n(4418),
+        Da = n(3468),
+        Ra = [
           {
             id: 1,
             name: "Centro de Dia",
-            img: xa,
+            img: ja,
             alt: "centro-de-dia",
             url: "/centro-de-dia",
           },
           {
             id: 2,
             name: "Servicio de capacitaci\xf3n",
-            img: Aa,
+            img: ka,
             alt: "servicio-capacitacion",
             url: "/servicio-capacitacion",
           },
           {
             id: 3,
             name: "Viviendas con apoyo",
-            img: n(4418),
+            img: za,
             alt: "viviendas-con-apoyo",
             url: "/viviendas-con-apoyo",
           },
           {
             id: 4,
             name: "Centro de Formaci\xf3n",
-            img: Ea,
+            img: Ta,
             alt: "formacion",
             url: "/formacion",
           },
           {
             id: 5,
             name: "Ocio y volunturariado",
-            img: n(3468),
+            img: Da,
             alt: "ocio-y-voluntariado",
             url: "/ocio-y-voluntariado",
           },
           {
             id: 6,
             name: " Valoraci\xf3n y Diagn\xf3stico",
-            img: ka,
+            img: Oa,
             alt: "/valoraci\xf3n-y-diagn\xf3stico",
             url: "/valoracion-y-diagnostico",
           },
           {
             id: 7,
             name: "Terapias",
-            img: Pa,
+            img: Ia,
             alt: "terapias",
             url: "/terapias",
           },
           {
             id: 8,
             name: " Atenci\xf3n familias",
-            img: ja,
+            img: Pa,
             alt: "apoyo-familias",
             url: "/apoyo-familias",
           },
         ],
-        La = [
+        Na = [
           {
             id: 1,
             name: "Instalaciones Centro",
-            img: wa,
+            img: Ea,
             alt: "instalaciones-centro-diversidad",
             url: "/instalaciones-centro-diversidad",
           },
           {
             id: 2,
             name: "Organigrama",
-            img: Oa,
+            img: Ma,
             alt: "organigrama",
             url: "/organigrama",
           },
           {
             id: 3,
             name: "Junta Directiva",
-            img: Ca,
+            img: La,
             alt: "junta-directiva",
             url: "/junta-directiva",
           },
           {
             id: 4,
             name: "Cuentas anuales 2021",
-            img: Sa,
+            img: Ca,
             alt: "logo-cuentas-anuales",
             url: "/pdf-cuentas-21",
           },
         ],
-        Ma = function () {
-          var e = t((0, h.useState)(La), 1)[0];
-          return (0, V.jsx)(V.Fragment, {
-            children: (0, V.jsxs)("section", {
+        Fa = function () {
+          var e = t((0, h.useState)(Na), 1)[0];
+          return (0, dn.jsx)(dn.Fragment, {
+            children: (0, dn.jsxs)("section", {
               children: [
-                (0, V.jsx)(zr, { title: "Sobre Nosotros", marginBottom: !0 }),
-                (0, V.jsx)(za, {
+                (0, dn.jsx)(Un, { title: "Sobre Nosotros", marginBottom: !0 }),
+                (0, dn.jsx)(Ba, {
                   children: e.map(function (e) {
                     return (0,
-                    V.jsx)(Ia, { value: e.name, children: (0, V.jsxs)(q, { to: e.url, children: [(0, V.jsx)("img", { src: e.img, alt: "" }), (0, V.jsx)("h3", { children: e.name })] }) }, e.id);
+                    dn.jsx)(Wa, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               ],
             }),
           });
         },
-        za = Tt.div(
-          Ci ||
-            (Ci = U([
+        Ba = Qt.div(
+          Ji ||
+            (Ji = q([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  margin-bottom: 4rem;\n",
             ]))
         ),
-        Ia = Tt.div(
-          Oi ||
-            (Oi = U([
+        Wa = Qt.div(
+          Xi ||
+            (Xi = q([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ra = function () {
-          var e = t((0, h.useState)(Ta), 1)[0];
-          return (0, V.jsxs)(V.Fragment, {
+        Ua = function () {
+          var e = t((0, h.useState)(Ra), 1)[0];
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(zr, {
+              (0, dn.jsx)(Un, {
                 title: "Servicios",
                 inverse: !0,
                 size: !0,
                 marginBottom: !0,
               }),
-              (0, V.jsx)("section", {
-                children: (0, V.jsx)(Da, {
+              (0, dn.jsx)("section", {
+                children: (0, dn.jsx)(Ha, {
                   children: e.map(function (e) {
                     return (0,
-                    V.jsx)(Na, { value: e.name, children: (0, V.jsxs)(q, { to: e.url, children: [(0, V.jsx)("img", { src: e.img, alt: "" }), (0, V.jsx)("h3", { children: e.name })] }) }, e.id);
+                    dn.jsx)(Va, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               }),
             ],
           });
         },
-        Da = Tt.div(
-          Pi ||
-            (Pi = U([
+        Ha = Qt.div(
+          Ki ||
+            (Ki = q([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n  margin: 2rem auto;\n",
             ]))
         ),
-        Na = Tt.div(
-          Ti ||
-            (Ti = U([
+        Va = Qt.div(
+          $i ||
+            ($i = q([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ba = n(4830),
-        Fa = n(6219),
-        Wa = n(8413),
-        Ha = function () {
-          return (0, V.jsx)(Ua, {
+        Ga = n(4830),
+        Ya = n(6219),
+        Qa = n(8413),
+        Za = function () {
+          return (0, dn.jsx)(qa, {
             id: "testimonios",
-            children: (0, V.jsxs)(Va, {
+            children: (0, dn.jsxs)(_a, {
               children: [
-                (0, V.jsx)(zr, { title: "Historias reales", inverse: !0 }),
-                (0, V.jsxs)(Ga, {
+                (0, dn.jsx)(Un, { title: "Historias reales", inverse: !0 }),
+                (0, dn.jsxs)(Ja, {
                   children: [
-                    (0, V.jsxs)(Ya, {
+                    (0, dn.jsxs)(Xa, {
                       children: [
-                        (0, V.jsx)("img", { src: Ba, alt: "rafa" }),
-                        (0, V.jsx)("p", {
+                        (0, dn.jsx)("img", { src: Ga, alt: "rafa" }),
+                        (0, dn.jsx)("p", {
                           children:
                             "Gracias al trabajo, Rafael adquir\xf3 nuevas rutinas, cambiando sus h\xe1bitos y asumiendo nuevas responsabilidades, esto le ha permitido permitido cambiar su horizonte vital.",
                         }),
-                        (0, V.jsx)("p", {
-                          children: (0, V.jsx)("span", { children: "Rafa" }),
+                        (0, dn.jsx)("p", {
+                          children: (0, dn.jsx)("span", { children: "Rafa" }),
                         }),
-                        (0, V.jsx)("p", {
+                        (0, dn.jsx)("p", {
                           children: "Trabajador en Destrupapper",
                         }),
                       ],
                     }),
-                    (0, V.jsxs)(Ya, {
+                    (0, dn.jsxs)(Xa, {
                       children: [
-                        (0, V.jsx)("img", { src: Fa, alt: "quico" }),
-                        (0, V.jsx)("p", {
+                        (0, dn.jsx)("img", { src: Ya, alt: "quico" }),
+                        (0, dn.jsx)("p", {
                           children:
                             "Quico, quien tras varios contratos temporales, pas\xf3 a ser indefinido. Logr\xf3 la primera inserci\xf3n socio-laboral, con la estabilidad que ello supon\xeda para \xe9l, abri\xe9ndole a su vez la puerta a conseguir otros objetivos para mejorar su calidad de vida, por ejemplo independizarse.",
                         }),
-                        (0, V.jsx)("p", {
-                          children: (0, V.jsx)("span", { children: "Quico" }),
+                        (0, dn.jsx)("p", {
+                          children: (0, dn.jsx)("span", { children: "Quico" }),
                         }),
-                        (0, V.jsx)("p", { children: "Trabajador en Inkiele" }),
+                        (0, dn.jsx)("p", { children: "Trabajador en Inkiele" }),
                       ],
                     }),
-                    (0, V.jsxs)(Ya, {
+                    (0, dn.jsxs)(Xa, {
                       children: [
-                        (0, V.jsx)("img", { src: Wa, alt: "pedro" }),
-                        (0, V.jsx)("p", {
+                        (0, dn.jsx)("img", { src: Qa, alt: "pedro" }),
+                        (0, dn.jsx)("p", {
                           children:
                             "En la misma l\xednea de trabajo, el objetivo laboral de Pedro es trabajar lijando. Por ello, La empresa Arte Religioso Salmer\xf3n, le abri\xf3 sus puertas mediante unas pr\xe1cticas laborales para corroborar si sus habilidades y capacidades eran compatibles con el puesto de trabajo.",
                         }),
-                        (0, V.jsx)("p", {
-                          children: (0, V.jsx)("span", { children: "Pedro" }),
+                        (0, dn.jsx)("p", {
+                          children: (0, dn.jsx)("span", { children: "Pedro" }),
                         }),
-                        (0, V.jsx)("p", {
+                        (0, dn.jsx)("p", {
                           children: "Trabajador en Arte Religioso Salmer\xf3n",
                         }),
                       ],
@@ -19729,51 +19821,51 @@
             }),
           });
         },
-        Ua = Tt.div(
-          Li || (Li = U(["\n  width: 100%;\n  background-color: white;\n"]))
+        qa = Qt.div(
+          ea || (ea = q(["\n  width: 100%;\n  background-color: white;\n"]))
         ),
-        Va = Tt.div(
-          Mi ||
-            (Mi = U([
+        _a = Qt.div(
+          ta ||
+            (ta = q([
               "\n  padding: 5%;\n  h2 {\n    font-size: 3rem;\n    text-align: center;\n  }\n\n  @media (max-width: 940px) {\n    width: 100%;\n  }\n",
             ]))
         ),
-        Ga = Tt.div(
-          zi ||
-            (zi = U([
+        Ja = Qt.div(
+          na ||
+            (na = q([
               "\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 20px;\n  margin: 4rem 0;\n\n  @media (max-width: 940px) {\n    grid-template-columns: 1fr;\n  }\n",
             ]))
         ),
-        Ya = Tt.div(
-          Ii ||
-            (Ii = U([
+        Xa = Qt.div(
+          ra ||
+            (ra = q([
               "\n  border: 1px solid #eee;\n  border-radius: 8px;\n  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);\n  padding: 1rem;\n  line-height: 2rem;\n\n  img {\n    height: 100px;\n    border-radius: 50px;\n    margin-top: -2rem;\n    margin-left: 35%;\n  }\n\n  p {\n    font-size: 1.2rem;\n    margin: 12px;\n    font-weight: 500;\n  }\n\n  span {\n    font-size: 1rem;\n    font-weight: 900;\n    color: grey;\n  }\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    margin: 1rem;\n  }\n",
             ]))
         ),
-        Qa = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        Ka = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Zi, {}),
-              (0, V.jsx)(Ra, {}),
-              (0, V.jsx)(Ma, {}),
-              (0, V.jsx)(_r, yn({}, Bn)),
-              (0, V.jsx)(pa, {}),
-              (0, V.jsx)(Ha, {}),
-              (0, V.jsx)(_r, yn({}, Fn)),
-              (0, V.jsx)(_r, yn({}, Wn)),
-              (0, V.jsx)(Pr, {}),
-              (0, V.jsx)(Rr, {}),
-              (0, V.jsx)(ua, { size: !0, inverse: !0, marginBottom: !0 }),
-              (0, V.jsx)(qr, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(ga, {}),
+              (0, dn.jsx)(Ua, {}),
+              (0, dn.jsx)(Fa, {}),
+              (0, dn.jsx)(Ei, G({}, oi)),
+              (0, dn.jsx)(ba, {}),
+              (0, dn.jsx)(Za, {}),
+              (0, dn.jsx)(Ei, G({}, si)),
+              (0, dn.jsx)(Ei, G({}, li)),
+              (0, dn.jsx)(bi, {}),
+              (0, dn.jsx)(Si, {}),
+              (0, dn.jsx)(Kn, { size: !0, inverse: !0, marginBottom: !0 }),
+              (0, dn.jsx)(Ci, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Za = n(4534),
-        _a = n(5629),
-        qa = n(543),
-        Ja = {
+        $a = n(4534),
+        eo = n(5629),
+        to = n(543),
+        no = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra entidad" },
@@ -19781,9 +19873,9 @@
             "AFYMOS fue fundada en el a\xf1o 1991 y los fines que perseguimos seg\xfan nuestros estatutos son:",
           description:
             "Los fines que la Asociaci\xf3n persigue son de car\xe1cter c\xedvico y social, de promoci\xf3n de los valores constitucionales y de los derechos humanos de las personas con discapacidad intelectual, f\xedsica o sensorial.  ",
-          img: Za,
+          img: $a,
         },
-        Xa = {
+        ro = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n" },
@@ -19791,9 +19883,9 @@
             "La Misi\xf3n de Afymos es \u201ccontribuir, desde su compromiso \xe9tico, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de calidad de vida:",
           description:
             " En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan m\xe1s oportunidades de participar en la sociedad. ",
-          img: _a,
+          img: eo,
         },
-        Ka = {
+        io = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Compromiso \xe9tico y valores" },
@@ -19801,51 +19893,16 @@
             "Para conseguir estas oportunidades, defendemos sus derechos como ciudadanos plenos, y reivindicamos una sociedad m\xe1s justa y solidaria.",
           description:
             "Todo esto no podemos hacerlo de cualquier manera, sino que tiene que estar orientado por nuestro compromiso \xe9tico, por nuestros valores y en la forma de intervenci\xf3n que est\xe1 basada en el Modelo de  Calidad de Calidad de Vida de Schalock y Verdugo.",
-          img: qa,
+          img: to,
         },
-        $a = function (e) {
-          var t = e.topLine,
-            n = e.headline,
-            r = e.description,
-            i = e.img,
-            a = e.alt,
-            o = e.reverse,
-            s = e.inverse,
-            l = e.id;
-          return (0, V.jsx)(qn, {
-            id: l,
-            inverse: s,
-            children: (0, V.jsx)(Gn, {
-              children: (0, V.jsxs)(Br, {
-                reverse: o,
-                children: [
-                  (0, V.jsx)(Fr, {
-                    children: (0, V.jsxs)(Wr, {
-                      children: [
-                        (0, V.jsx)(Ur, { children: t.text }),
-                        (0, V.jsx)(Gr, { inverse: s, children: n }),
-                        (0, V.jsx)(Yr, { inverse: s, children: r }),
-                      ],
-                    }),
-                  }),
-                  (0, V.jsx)(Fr, {
-                    children: (0, V.jsx)(Hr, {
-                      children: (0, V.jsx)(Vr, { src: i, alt: a }),
-                    }),
-                  }),
-                ],
-              }),
-            }),
-          });
-        },
-        eo = function (e) {
-          return (0, V.jsx)(to, {
+        ao = function (e) {
+          return (0, dn.jsx)(oo, {
             id: "demo",
-            children: (0, V.jsxs)(no, {
+            children: (0, dn.jsxs)(so, {
               wrapReverse: e,
               children: [
-                (0, V.jsx)(io, {
-                  children: (0, V.jsx)("iframe", {
+                (0, dn.jsx)(co, {
+                  children: (0, dn.jsx)("iframe", {
                     width: "570",
                     height: "320",
                     src: "https://www.youtube.com/embed/70xM5Dvf5Bk",
@@ -19856,14 +19913,14 @@
                     allowFullScreen: !0,
                   }),
                 }),
-                (0, V.jsxs)(ro, {
+                (0, dn.jsxs)(lo, {
                   children: [
-                    (0, V.jsx)("p", { children: "Un d\xeda en Afymos" }),
-                    (0, V.jsx)("p", {
+                    (0, dn.jsx)("p", { children: "Un d\xeda en Afymos" }),
+                    (0, dn.jsx)("p", {
                       children:
                         "Queremos visibilizar el trabajo diario que realizamos ",
                     }),
-                    (0, V.jsx)("p", {
+                    (0, dn.jsx)("p", {
                       children:
                         "Con el fin de mejorar la calidad de vida de las personas con Discapacidad",
                     }),
@@ -19873,42 +19930,87 @@
             }),
           });
         },
-        to = Tt.div(
-          Ri ||
-            (Ri = U([
+        oo = Qt.div(
+          ia ||
+            (ia = q([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        no = Tt.div(
-          Di ||
-            (Di = U([
+        so = Qt.div(
+          aa ||
+            (aa = q([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        ro = Tt.div(
-          Ni ||
-            (Ni = U([
+        lo = Qt.div(
+          oa ||
+            (oa = q([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n\n  p:nth-child(1) {\n    font-size: 1.8rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.2rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        io = Tt.div(Bi || (Bi = U(["\n  margin: auto;\n"]))),
-        ao = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        co = Qt.div(sa || (sa = q(["\n  margin: auto;\n"]))),
+        uo = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(Lt, { title: "Nosotros" }),
-              (0, V.jsx)(zr, { title: "Nuestra Entidad", size: !0 }),
-              (0, V.jsx)($a, yn(yn({}, Ja), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, Xa), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, Ka), {}, { inverse: !0 })),
-              (0, V.jsx)(eo, { wrapReverse: !0 }),
-              (0, V.jsx)(ua, { inverse: !0 }),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Sn, { title: "Nosotros" }),
+              (0, dn.jsx)(Un, { title: "Nuestra Entidad", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, no), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ro), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, io), {}, { inverse: !0 })),
+              (0, dn.jsx)(ao, { wrapReverse: !0 }),
+              (0, dn.jsx)(Kn, { inverse: !0 }),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        oo = n(6493),
-        so = n(5900),
-        lo = {
+        fo = {
+          id: "politicaPrivacidadDataOne",
+          reverse: !1,
+          inverse: !1,
+          topLine: { text: "POL\xcdTICA DE PRIVACIDAD" },
+          headline: "RESPONSABLE DEL TRATAMIENTO:",
+          description:
+            "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) con CIF G13159173 y domicilio social en CL. PEDRO ARIAS, 87 C.P. 13630 de SOCUELLAMOS (CIUDAD REAL), con direcci\xf3n de correo afymos@gmail.com",
+          img: "",
+        },
+        po = {
+          id: "politicaPrivacidadDataTwo",
+          reverse: !0,
+          inverse: !1,
+          topLine: { text: "CUMPLIMIENTO DE LA NORMATIVA" },
+          headline: "",
+          description:
+            "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) garantiza en todo momento el \xedntegro y pleno cumplimiento de las obligaciones dispuestas por la normativa de protecci\xf3n de datos y de servicios de la sociedad de la informaci\xf3n, as\xed como por cualquier otra Ley o norma que complemente o sustituya a las anteriores.",
+          img: "",
+        },
+        ho = {
+          id: "politicaPrivacidadDataThree",
+          reverse: !1,
+          inverse: !1,
+          topLine: { text: "FINALIDAD DEL TRATAMIENTO" },
+          headline:
+            "Le informamos de modo expreso, preciso e inequ\xedvoco que los datos facilitados por usted ser\xe1n utilizados:",
+          description:
+            "Para impulsar la asistencia social, promoci\xf3n y asesoramiento a discapacitados as\xed como a sus familiares, fomentar la igualdad de oportunidades entre personas con discapacidad y sin ella.  Para gestionar la formaci\xf3n ocupacional dirigida a su inserci\xf3n laboral, programas para garantizar la autonom\xeda personal, terapias rehabilitadoras, as\xed como llevar a cabo cualquier otra actividad formativa o l\xfadica en beneficio de los miembros de nuestra Asociaci\xf3n.Para prestar el apoyo y la atenci\xf3n que necesitan los residentes de las viviendas, como ser\xeda la formaci\xf3n orientada al desarrollo de la autonom\xeda en la vivienda, ayudar a desarrollar sus habilidades en su d\xeda a d\xeda, apoyos y cuidados de car\xe1cter m\xe9dico-sanitario, actuaciones para promover el desarrollo psico-social, as\xed como participar en los talleres y dem\xe1s actividades que lleva a cabo el centro teniendo en cuenta sus caracter\xedsticas y condiciones.Para asesorar y orientar a los socios y sus familias, as\xed como cualquier otra acci\xf3n que forme, informe o divulgue sobre cualquier aspecto que ata\xf1a a los intereses de los asociados. Como llevar a cabo la correspondiente gesti\xf3n administrativa derivada de estas actuaciones. Para impartir formaci\xf3n tanto a personas con discapacidad intelectual as\xed como a profesionales relacionados con el sector. Para responder cualquier consulta a trav\xe9s del tel\xe9fono, correo electr\xf3nico o medios de comunicaci\xf3n electr\xf3nica, de la misma manera poder resolver cualquier duda, sugerencia, queja, reclamaci\xf3n, etc. relacionada con nuestros servicios, que puedan realizar a trav\xe9s de cualquier formulario dispuesto en nuestras instalaciones. Para gestionar la relaci\xf3n con los voluntarios y llevar a cabo las acciones oportunas. Para el mantenimiento de las relaciones con clientes, como ser\xeda, por ejemplo, la compra de productos de AFYMOS y la consiguiente gesti\xf3n derivada de la misma. Para gestionar las donaciones recibidas por esta Asociaci\xf3n y la correspondiente gesti\xf3n administrativa con estos donantes.Para el tratamiento de los datos personales de empresarios individuales y personas de contacto de empresas en su mantenimiento de relaciones, independientemente de que sean comerciales/transaccionales o no. Para gestionar los curr\xedculum vitae recibidos y poder as\xed participar en los diferentes procesos de selecci\xf3n de personal que se lleven a cabo en la entidad..",
+          img: "",
+        },
+        mo = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
+            children: [
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "politica Privacidad" }),
+              (0, dn.jsx)(Un, { title: "Cookies y Privacidad", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, fo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, po), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ho), {}, { inverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
+            ],
+          });
+        },
+        go = n(6493),
+        vo = n(5900),
+        yo = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "El Servicio de Capacitaci\xf3n Afymos" },
@@ -19916,9 +20018,9 @@
             "Es un servicio de atenci\xf3n diurna que tienen como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
           description:
             "Facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones).",
-          img: oo,
+          img: go,
         },
-        co = {
+        bo = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -19928,28 +20030,28 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodolog\xeda detrabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          img: so,
+          img: vo,
         },
-        uo = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        Ao = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Servicio de Capacitaci\xf3n" }),
-              (0, V.jsx)(zr, {
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Servicio de Capacitaci\xf3n" }),
+              (0, dn.jsx)(Un, {
                 title: "Programa habilitaci\xf3n laboral",
                 size: !0,
               }),
-              (0, V.jsx)($a, yn(yn({}, lo), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, co), {}, { reverse: !0 })),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(fn, G(G({}, yo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, bo), {}, { reverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        fo = n(3494),
-        po = n(843),
-        ho = n(6808),
-        mo = {
+        xo = n(3494),
+        wo = n(843),
+        So = n(6808),
+        ko = {
           id: "centroDiaDataOne",
           reverse: !1,
           inverse: !1,
@@ -19958,9 +20060,9 @@
             "El Centro de D\xeda Afymos es un recurso social de atenci\xf3n diurna dirigido a prestar atenci\xf3n especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
           description:
             "Pretendemos favorecer la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente \xedndole, temporales o permanentes, de diferente intensidad y frecuencia.",
-          img: fo,
+          img: xo,
         },
-        go = {
+        jo = {
           id: "centroDiaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -19971,9 +20073,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Fomentamos la participaci\xf3n en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social, y contribuyendo a mejorar su calidad de vida. ",
-          img: po,
+          img: wo,
         },
-        vo = {
+        Eo = {
           id: "centroDiaDataThree",
           reverse: !1,
           inverse: !1,
@@ -19984,26 +20086,26 @@
             "Dise\xf1amos un plan personal de apoyos y su plan de futuro personal, donde se recogen los principales objetivos a conseguir en diferentes \xe1mbitos de su vida",
           description:
             "Potenciaremos la utilizaci\xf3n de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
-          img: ho,
+          img: So,
         },
-        yo = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        Co = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Centro de D\xeda" }),
-              (0, V.jsx)(zr, { title: "Nuestro Centro de d\xeda", size: !0 }),
-              (0, V.jsx)($a, yn(yn({}, mo), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, go), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, vo), {}, { inverse: !0 })),
-              (0, V.jsx)(ua, { size: !0, inverse: !0, marginBottom: !0 }),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Centro de D\xeda" }),
+              (0, dn.jsx)(Un, { title: "Nuestro Centro de d\xeda", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, ko), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, jo), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Eo), {}, { inverse: !0 })),
+              (0, dn.jsx)(Kn, { size: !0, inverse: !0, marginBottom: !0 }),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        bo = n(4441),
-        Ao = n(3208),
-        xo = n(4058),
-        wo = {
+        Oo = n(4441),
+        Po = n(3208),
+        To = n(4058),
+        Lo = {
           id: "centroDiversidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -20012,9 +20114,9 @@
             "Cuenta con espacio \xfatil de 803,16 m\xb2 dividido en dos plantas.",
           description:
             "Nuestro Centro es un edificio que engloba m\xfaltiples actuaciones dirigidas a mejorar la Calidad de Vida de las personas con discapacidad. El edificio donde est\xe1 ubicado el nuestros servicios y recursos se denomina 'Centro de Atenci\xf3n a la Diversidad Funcional' y cuenta con unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el a\xf1o obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun as\xed seguiremos adapt\xe1ndolo para favorecer la orientaci\xf3n y la comunicaci\xf3n para personas con especiales dificultades en estos aspectos.",
-          img: bo,
+          img: Oo,
         },
-        So = {
+        Mo = {
           id: "centroDiversidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20023,9 +20125,9 @@
             "Contamos con numerosas salas adaptadas para llevar a cabo todos los servicios terapeuticos y de formaci\xf3n de ofrecemos",
           description:
             "Afymos est\xe1 acreditado como Centro de Formaci\xf3n para impartir Formaci\xf3n Profesional para el Empleo en Castilla-La Mancha, dependiente de la Consejer\xeda de Empresas, Econom\xeda y Empleo. Tiene tambi\xe9n como finalidad la cualificaci\xf3n de los profesionales del Espacio de Atenci\xf3n a la Diversidad Funcional, personas con discapacidad intelectual, formaci\xf3n para la comunidad, ponencias y convertirnos en un espacio en el que poder compartir buenas pr\xe1cticas y experiencias en la Atenci\xf3n a la Diversidad Funcional, llegando a ser centro pionero en este \xe1mbito.",
-          img: xo,
+          img: To,
         },
-        ko = {
+        Io = {
           id: "centroDiversidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -20035,71 +20137,71 @@
           headline: "Centro de Atenci\xf3n a la Diversidad Funcional",
           description:
             "Este espacio, de manera global, se define como un conjunto de recursos especializados desde donde se ofrecen servicios y programas personalizados de capacitaci\xf3n y habilitaci\xf3n  individual, de apoyo a la independencia de las personas con diversidad funcional  en todos los \xe1mbitos de la vida cotidiana, dando a cada persona  las herramientas que precise para desarrollarse en todas las dimensiones del  Modelo de Calidad de Vida de Schalock y Verdugo, de manera que tome el control de su propia vida, favoreciendo as\xed el empoderamiento de las personas con Discapacidad Intelectual/Diversidad Funcional/ Especificidad/Dependencia.",
-          img: Ao,
+          img: Po,
         },
-        jo = n(737),
-        Eo = n(8919),
-        Co = n(9002),
-        Oo = n(1197),
-        Po = n(556),
-        To = function (e) {
-          return (0, V.jsx)(V.Fragment, {
-            children: (0, V.jsx)("section", {
-              children: (0, V.jsxs)("div", {
+        zo = n(737),
+        Do = n(8919),
+        Ro = n(9002),
+        No = n(1197),
+        Fo = n(556),
+        Bo = function (e) {
+          return (0, dn.jsx)(dn.Fragment, {
+            children: (0, dn.jsx)("section", {
+              children: (0, dn.jsxs)("div", {
                 class: "container-all",
                 children: [
-                  (0, V.jsx)("input", {
+                  (0, dn.jsx)("input", {
                     type: "radio",
                     id: "1",
                     name: "image-slide",
                     hidden: !0,
                   }),
-                  (0, V.jsx)("input", {
+                  (0, dn.jsx)("input", {
                     type: "radio",
                     id: "2",
                     name: "image-slide",
                     hidden: !0,
                   }),
-                  (0, V.jsx)("input", {
+                  (0, dn.jsx)("input", {
                     type: "radio",
                     id: "3",
                     name: "image-slide",
                     hidden: !0,
                   }),
-                  (0, V.jsxs)("div", {
+                  (0, dn.jsxs)("div", {
                     class: "slide",
                     children: [
-                      (0, V.jsx)("div", {
+                      (0, dn.jsx)("div", {
                         class: "item-slide",
-                        children: (0, V.jsx)("img", { src: jo, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: zo, alt: e.alt }),
                       }),
-                      (0, V.jsx)("div", {
+                      (0, dn.jsx)("div", {
                         class: "item-slide",
-                        children: (0, V.jsx)("img", { src: Eo, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Do, alt: e.alt }),
                       }),
-                      (0, V.jsx)("div", {
+                      (0, dn.jsx)("div", {
                         class: "item-slide",
-                        children: (0, V.jsx)("img", { src: Co, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
                       }),
                     ],
                   }),
-                  (0, V.jsxs)("div", {
+                  (0, dn.jsxs)("div", {
                     class: "pagination",
                     children: [
-                      (0, V.jsx)("label", {
+                      (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "1",
-                        children: (0, V.jsx)("img", { src: Eo, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Do, alt: e.alt }),
                       }),
-                      (0, V.jsx)("label", {
+                      (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "2",
-                        children: (0, V.jsx)("img", { src: Oo, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: No, alt: e.alt }),
                       }),
-                      (0, V.jsx)("label", {
+                      (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "3",
-                        children: (0, V.jsx)("img", { src: Po, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Fo, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20108,27 +20210,27 @@
             }),
           });
         },
-        Lo = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        Wo = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Nuestro Centro" }),
-              (0, V.jsx)(zr, {
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Nuestro Centro" }),
+              (0, dn.jsx)(Un, {
                 title: "Centro de atenci\xf3n a la Diversidad Funcional",
                 size: !0,
               }),
-              (0, V.jsx)($a, yn(yn({}, wo), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, So), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, ko), {}, { inverse: !0 })),
-              (0, V.jsx)(To, {}),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(fn, G(G({}, Lo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Mo), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Io), {}, { inverse: !0 })),
+              (0, dn.jsx)(Bo, {}),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Mo = n(6281),
-        zo = n(6627),
-        Io = {
+        Uo = n(6281),
+        Ho = n(6627),
+        Vo = {
           id: "creaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20137,9 +20239,9 @@
             " financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
           description:
             "Desde 2017, nuestra Asociaci\xf3n es entidad promotora del Proyecto NUEVO CREA, programa dual de formaci\xf3n y empleo para personas con discapacidad intelectual.",
-          img: Mo,
+          img: Uo,
         },
-        Ro = {
+        Go = {
           id: "creaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20148,25 +20250,25 @@
             "Durante 6 meses, de abril a septiembre, 8 personas con discapacidad trabajan en 7 empresas locales;",
           description:
             "Colegio Concertado Virgen de Loreto, Cabezuelo Foods, Grupo Asesor OTS, Josmoral, Transportes F\xe9lix e hijos, Cooperativa Cristo de la Vega y Afymos Asociaci\xf3n, con un contrato de formaci\xf3n en alternancia con el empleo. Simult\xe1neamente, se imparte una especialidad formativa de \u201cOperaciones Auxiliares en el Departamento de Administraci\xf3n y Recepci\xf3n para Personas con Discapacidad Intelectual\u201d.",
-          img: zo,
+          img: Ho,
         },
-        Do = function () {
-          return (0, V.jsx)(No, {
+        Yo = function () {
+          return (0, dn.jsx)(Qo, {
             id: "demo",
-            children: (0, V.jsxs)(Bo, {
+            children: (0, dn.jsxs)(Zo, {
               children: [
-                (0, V.jsxs)(Fo, {
+                (0, dn.jsxs)(qo, {
                   children: [
-                    (0, V.jsx)("p", { children: "Proyecto CREA;" }),
-                    (0, V.jsx)("p", { children: "Nuestra filosof\xeda" }),
-                    (0, V.jsx)("p", {
+                    (0, dn.jsx)("p", { children: "Proyecto CREA;" }),
+                    (0, dn.jsx)("p", { children: "Nuestra filosof\xeda" }),
+                    (0, dn.jsx)("p", {
                       children:
                         "Conoce nuestro Programa de Formaci\xf3n y Empleo para personas con alg\xfan tipo de discapacidad en Socu\xe9llamos.",
                     }),
                   ],
                 }),
-                (0, V.jsx)(Wo, {
-                  children: (0, V.jsx)("iframe", {
+                (0, dn.jsx)(_o, {
+                  children: (0, dn.jsx)("iframe", {
                     width: "570",
                     height: "320",
                     src: "https://www.youtube.com/embed/ZrI1CD7kdjQ",
@@ -20181,42 +20283,42 @@
             }),
           });
         },
-        No = Tt.div(
-          Fi ||
-            (Fi = U([
+        Qo = Qt.div(
+          la ||
+            (la = q([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        Bo = Tt.div(
-          Wi ||
-            (Wi = U([
+        Zo = Qt.div(
+          ca ||
+            (ca = q([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        Fo = Tt.div(
-          Hi ||
-            (Hi = U([
+        qo = Qt.div(
+          ua ||
+            (ua = q([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    font-size: 2rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        Wo = Tt.div(Ui || (Ui = U(["\n  margin: auto;\n"]))),
-        Ho = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        _o = Qt.div(da || (da = q(["\n  margin: auto;\n"]))),
+        Jo = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Proyecto CREA 2023" }),
-              (0, V.jsx)($a, yn(yn({}, Io), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, Ro), {}, { reverse: !0 })),
-              (0, V.jsx)(Do, {}),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Proyecto CREA 2023" }),
+              (0, dn.jsx)(fn, G(G({}, Vo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Go), {}, { reverse: !0 })),
+              (0, dn.jsx)(Yo, {}),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Uo = n(8039),
-        Vo = n(7878),
-        Go = n(3960),
-        Yo = {
+        Xo = n(8039),
+        Ko = n(7878),
+        $o = n(3960),
+        es = {
           id: "diagnosticoDataOne",
           reverse: !1,
           inverse: !1,
@@ -20227,9 +20329,9 @@
             "Este servicio tiene como objetivo valoraci\xf3n con tests estandarizados y pruebas psicom\xe9tricas objetivas en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
           description:
             "Nuestra valoraci\xf3n se lleva a cabo con tests estandarizados y pruebas psicom\xe9tricas como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
-          img: Uo,
+          img: Xo,
         },
-        Qo = {
+        ts = {
           id: "diagnosticoDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20237,9 +20339,9 @@
           headline: "\xbfC\xf3mo trabajamos?",
           description:
             "Se har\xe1n valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
-          img: Go,
+          img: $o,
         },
-        Zo = {
+        ns = {
           id: "diagnosticoDataThree",
           reverse: !1,
           inverse: !1,
@@ -20247,22 +20349,22 @@
           headline: "Poner nombre a las necesidades de las personas",
           description:
             "Para ello, nuestros profesionales realizar\xe1n una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
-          img: Vo,
+          img: Ko,
         },
-        _o = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        rs = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Valoraci\xf3n y diagnostico" }),
-              (0, V.jsx)($a, yn(yn({}, Yo), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, Qo), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, Zo), {}, { inverse: !0 })),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Valoraci\xf3n y diagnostico" }),
+              (0, dn.jsx)(fn, G(G({}, es), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ts), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ns), {}, { inverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        qo = {
+        is = {
           id: "donacionDataOne",
           reverse: !1,
           inverse: !1,
@@ -20279,22 +20381,22 @@
           alt: "ir a ruralvia",
           target: "_blank",
         },
-        Jo = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        as = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Donaciones" }),
-              (0, V.jsx)(zr, { title: "Crecemos contigo", size: !0 }),
-              (0, V.jsx)($a, yn(yn({}, qo), {}, { inverse: !0 })),
-              (0, V.jsx)(ua, { inverse: !0, size: !0 }),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Donaciones" }),
+              (0, dn.jsx)(Un, { title: "Crecemos contigo", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, is), {}, { inverse: !0 })),
+              (0, dn.jsx)(Kn, { inverse: !0, size: !0 }),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Xo = n(3166),
-        Ko = n(2451),
-        $o = n(7637),
-        es = {
+        os = n(3166),
+        ss = n(2451),
+        ls = n(7637),
+        cs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20304,45 +20406,45 @@
             "Ofrecemos asesoramiento y apoyo a familias de personas con cualquier tipo de discapacidad",
           description:
             "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas espec\xedficas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
-          img: Xo,
+          img: os,
         },
-        ts = {
+        us = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
           headline: "Apoyos que presta este servicio:",
           description:
             "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atenci\xf3n psicol\xf3gica, adem\xe1s, proporciamos informaci\xf3n y orientaci\xf3n tras un estudio minucioso sobre las necesidades de cada caso",
-          img: $o,
+          img: ls,
         },
-        ns = {
+        ds = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Consulta sin compromiso a nuestros profesionales" },
           headline: "A qui\xe9n va dirigido:",
           description:
             "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
-          img: Ko,
+          img: ss,
         },
-        rs = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        fs = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Servicio de atenci\xf3n a familias" }),
-              (0, V.jsx)(zr, { title: "Apoyo a familiares", size: !0 }),
-              (0, V.jsx)($a, yn(yn({}, es), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, ts), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, ns), {}, { inverse: !0 })),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Servicio de atenci\xf3n a familias" }),
+              (0, dn.jsx)(Un, { title: "Apoyo a familiares", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, cs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, us), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ds), {}, { inverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        is = n(7449),
-        as = n(6878),
-        os = n(5412),
-        ss = n(5866),
-        ls = {
+        ps = n(7449),
+        hs = n(6878),
+        ms = n(5412),
+        gs = n(5866),
+        vs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20352,9 +20454,9 @@
             "Estamos homologados por La Junta de Castilla la Mancha  en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
           description:
             "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos en personas con discapacidad intelectual.",
-          img: is,
+          img: ps,
         },
-        cs = {
+        ys = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -20364,9 +20466,9 @@
             "Este certificado fue realizado por 15 j\xf3venes menores de 30 a\xf1os. Debemos destacar que 6 de estos chicos ten\xedan discapacidad intelectual, y gracias a los apoyos brindados por los profesionales, lograron terminarlo con \xe9xito.",
           description:
             "Finalmente reciben un incentivo econ\xf3mico obtenido de las ganancias por las ventas de los productos elaborados..",
-          img: ss,
+          img: gs,
         },
-        us = {
+        bs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20376,9 +20478,9 @@
             "Esta formaci\xf3n tiene como objetivo el intervenir en el entorno personal y sociolaboral de las personas con discapacidad aplicando la Metodolog\xeda de Empleo con Apoyo para facilitar el acceso y mantenimiento del puesto de trabajo.",
           description:
             "Realizamos el entrenamiento de las habilidades sociolaborales necesarias para la inserci\xf3n, manteniendo contactos con el entorno y colaborando en el an\xe1lisis de puestos de trabajo.",
-          img: as,
+          img: hs,
         },
-        ds = {
+        As = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "PROGRAMA CREA" },
@@ -20386,31 +20488,34 @@
             "Nuestro Proyecto, \u201cPromoviendo la integraci\xf3n sociolaboral de las personas con discapacidad intelectual\u201d, tiene como objetivo la inserci\xf3n plena de las personas con discapacidad en la comunidad en la que viven.",
           description:
             "Son 9 las personas contratadas por 8 empresas de la localidad durante 9 meses y nuestra labor consiste en ofrecer empleo con apoyo y formaci\xf3n inherente al puesto de trabajo a trav\xe9s del trabajo de una T\xe9cnico de Orientaci\xf3n e Integraci\xf3n Laboral",
-          img: os,
+          img: ms,
         },
-        fs = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        xs = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, {
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, {
                 title: "Centro de Formaci\xf3n",
                 id: "/formacion",
               }),
-              (0, V.jsx)(zr, { title: "Fomentamos la formaci\xf3n", size: !0 }),
-              (0, V.jsx)($a, yn(yn({}, ls), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, cs), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, us), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, ds), {}, { reverse: !0 })),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Un, {
+                title: "Fomentamos la formaci\xf3n",
+                size: !0,
+              }),
+              (0, dn.jsx)(fn, G(G({}, vs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ys), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, bs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, As), {}, { reverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        ps = n(1919),
-        hs = n(3523),
-        ms = n(3977),
-        gs = n(9501),
-        vs = {
+        ws = n(1919),
+        Ss = n(3523),
+        ks = n(3977),
+        js = n(9501),
+        Es = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n: AYUDARTE" },
@@ -20418,9 +20523,9 @@
             "Este programa tiene la finalidad de ofrecer Servicios Terap\xe9uticos de diferentes disciplinas con el fin de mejorar la calidad de vida de las personas.",
           description:
             "Contamos con profesionales de diferentes disciplinas para intervenir seg\xfan las necesidades de los usuarios y actualmente contamos con las los siguientes servicios terap\xe9uticos.",
-          img: fo,
+          img: xo,
         },
-        ys = {
+        Cs = {
           id: "logopedia",
           reverse: !1,
           inverse: !0,
@@ -20431,9 +20536,9 @@
             "La logopedia es la disciplina sanitaria encargada de la prevenci\xf3n, detecci\xf3n, evaluaci\xf3n,diagn\xf3stico y tratamiento de los trastornos implicados en la comunicaci\xf3n humana",
           description:
             "Realizamos una entrevista con la familia y una evaluaci\xf3n inicial de la cual se elabora unos objetivos y se dise\xf1a una programaci\xf3n individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duraci\xf3n de 30-45 minutos, dependiente de las necesidades de cada paciente.",
-          img: ps,
+          img: ws,
         },
-        bs = {
+        Os = {
           id: "fisioterapia",
           reverse: !1,
           inverse: !1,
@@ -20444,9 +20549,9 @@
             "La fisioterapia  ofrece tratamiento y rehabilitaci\xf3n f\xedsica para diagnosticar, prevenir y tratar s\xedntomas de m\xfaltiples patolog\xedas, tanto agudas como cr\xf3nicas.",
           description:
             "En nuestra terapia llevaremos a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizaremos distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
-          img: rn,
+          img: Qr,
         },
-        As = {
+        Ps = {
           id: "terapia-ocupacional",
           reverse: !1,
           inverse: !0,
@@ -20457,9 +20562,9 @@
             "La terapia ocupacional consiste en intervenir o rehabilitar a trav\xe9s de un conjunto de actividades dirigidas a personas con problemas f\xedsicos, ps\xedquicos, sensoriales o sociales.",
           description:
             "Enfoco mi trabajo en una intervenci\xf3n significativa con objetos pautados previamente con la persona y su familia, realizando actividades con prop\xf3sito claro y definido",
-          img: tn,
+          img: Gr,
         },
-        xs = {
+        Ts = {
           id: "neuropsicologia",
           reverse: !1,
           inverse: !1,
@@ -20470,9 +20575,9 @@
             "la neuropsicolog\xeda estudia las bases neuroanat\xf3micas en relaci\xf3n alos procesos mentales como: atenci\xf3n, emoci\xf3n, memoria, lenguaje y percepci\xf3n",
           description:
             "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
-          img: hs,
+          img: Ss,
         },
-        ws = {
+        Ls = {
           id: "psicopedagogia",
           reverse: !0,
           inverse: !1,
@@ -20483,9 +20588,9 @@
             "La terapia psicopedag\xf3gica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
           description:
             "Como psicopedagoga\xa0asesoro, eval\xfao, realizo informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y dise\xf1o propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
-          img: ms,
+          img: ks,
         },
-        Ss = {
+        Ms = {
           id: "auditiva",
           reverse: !1,
           inverse: !1,
@@ -20496,9 +20601,9 @@
             "La terapia de estimulaci\xf3n auditiva SENA es un tratamiento cuyo objetivo es mejorar la percepci\xf3n auditiva de la persona que lo recibe.",
           description:
             "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopat\xeda para comprobar el estado del canal auditivo, audiometr\xeda para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
-          img: an,
+          img: Zr,
         },
-        ks = {
+        Is = {
           id: "visual",
           reverse: !1,
           inverse: !1,
@@ -20509,9 +20614,9 @@
             "La terapia visual consiste en la repetici\xf3n de una serie de ejercicios que consiguen crear nuevas conexiones neurol\xf3gicas y mejorar habilidades visuales alteradas.",
           description:
             "Evaluamos el desarrollo y funcionamiento de la visi\xf3n desde el nacimiento. Para ello se analizan habilidades como la acomodaci\xf3n, binocularidad (visi\xf3n en 3D), movimientos oculares y la percepci\xf3n visual..",
-          img: gs,
+          img: js,
         },
-        js = {
+        zs = {
           id: "psicologia",
           reverse: !1,
           inverse: !1,
@@ -20522,29 +20627,29 @@
             "Nos centramos en la psicoeducaci\xf3n y en la reestructuraci\xf3n cognitiva. Buscamos favorecer los procesos de cambio y toma de decisiones para buscar una situaci\xf3n m\xe1s adaptativa para la persona.",
           description:
             "A nivel psicoeducativo podemos ayudar a las personas a entender sus propios procesos, situaciones personales, patolog\xedas, etc, para facilitar su propia adaptaci\xf3n al medio y mitigar sus estados de ansiedad e incertidumbre.",
-          img: nn,
+          img: Yr,
         },
-        Es = n(3829),
-        Cs = n(775),
-        Os = n(5950),
-        Ps = n(7353),
-        Ts = n(900),
-        Ls = n(8663),
-        Ms = "_blank",
-        zs = [
+        Ds = n(3829),
+        Rs = n(775),
+        Ns = n(5950),
+        Fs = n(7353),
+        Bs = n(900),
+        Ws = n(8663),
+        Us = "_blank",
+        Hs = [
           {
             id: "logopedia",
             name: "Logopedia",
-            src: Os,
-            target: Ms,
+            src: Ns,
+            target: Us,
             alt: "pictograma-logopedia",
             url: "logopedia",
           },
           {
             id: "fisioterapia",
             name: "Fisioterapia",
-            src: Cs,
-            target: Ms,
+            src: Rs,
+            target: Us,
             alt: "pictograma-fisioterapia",
             url: "fisioterapia",
           },
@@ -20552,31 +20657,31 @@
             id: "terapia-ocupacional",
             name: "Terapia Ocupacional",
             src: n(7257),
-            target: Ms,
+            target: Us,
             alt: "pictograma-terapia-ocupacional",
             url: "terapia-ocupacional",
           },
           {
             id: "psicopedagogia",
             name: "Psicopedagog\xeda",
-            src: Ls,
-            target: Ms,
+            src: Ws,
+            target: Us,
             alt: "pictograma-psicopedagogia",
             url: "psicopedagogia",
           },
           {
             id: "neuropsicologia",
             name: "Neuropsicologia",
-            src: Ps,
-            target: Ms,
+            src: Fs,
+            target: Us,
             alt: "pictograma-psicologia",
             url: "neuropsicologia",
           },
           {
             id: "auditiva",
             name: "Auditiva",
-            src: Es,
-            target: Ms,
+            src: Ds,
+            target: Us,
             alt: "terapia-auditiva",
             url: "auditiva",
           },
@@ -20584,30 +20689,30 @@
             id: "visual",
             name: "Visual",
             src: n(1933),
-            target: Ms,
+            target: Us,
             alt: "terapia-auditiva",
             url: "visual",
           },
           {
             id: "psicologia",
             name: "Psicologia",
-            src: Ts,
-            target: Ms,
+            src: Bs,
+            target: Us,
             alt: "terapia-psicologia",
             url: "psicologia",
           },
         ],
-        Is = function () {
-          var e = t((0, h.useState)(zs), 1)[0];
-          return (0, V.jsxs)(V.Fragment, {
+        Vs = function () {
+          var e = t((0, h.useState)(Hs), 1)[0];
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(zr, { title: "Nuestras Terapias", size: !0 }),
-              (0, V.jsx)("section", {
-                children: (0, V.jsx)(Rs, {
-                  children: (0, V.jsx)(Ds, {
+              (0, dn.jsx)(Un, { title: "Nuestras Terapias", size: !0 }),
+              (0, dn.jsx)("section", {
+                children: (0, dn.jsx)(Gs, {
+                  children: (0, dn.jsx)(Ys, {
                     children: e.map(function (e) {
                       return (0,
-                      V.jsxs)(Ns, { value: e.name, children: [(0, V.jsx)("h3", { children: e.name }), (0, V.jsx)(ai.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, V.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
+                      dn.jsxs)(Qs, { value: e.name, children: [(0, dn.jsx)("h3", { children: e.name }), (0, dn.jsx)(Ni.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, dn.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
                     }),
                   }),
                 }),
@@ -20615,55 +20720,55 @@
             ],
           });
         },
-        Rs = Tt.div(
-          Vi ||
-            (Vi = U([
+        Gs = Qt.div(
+          fa ||
+            (fa = q([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1 {\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
-        Ds = Tt.div(
-          Gi ||
-            (Gi = U([
+        Ys = Qt.div(
+          pa ||
+            (pa = q([
               "\n  display: grid;\n  width: 100%;\n  height: 100%;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: 1fr;\n  margin: auto;\n  grid-gap: 5% 5%;\n  margin: 5% 20%;\n  justify-content: center;\n\n  @media (max-width: 768px) {\n    width: 70%;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: 1fr 1fr;\n    margin: auto;\n    grid-gap: 30px 30px;\n    margin: 5%;\n    margin-bottom: 15%;\n    width: 90%;\n  }\n",
             ]))
         ),
-        Ns =
-          (Tt.div(
-            Yi ||
-              (Yi = U([
+        Qs =
+          (Qt.div(
+            ha ||
+              (ha = q([
                 "\n  display: flex;\n  width: 50%;\n  position: relative;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0px;\n",
               ]))
           ),
-          Tt.div(
-            Qi ||
-              (Qi = U([
+          Qt.div(
+            ma ||
+              (ma = q([
                 "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n\n  :hover {\n    border: 3px solid #ffc0bc;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
-        Bs = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        Zs = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Servicio de Terapia" }),
-              (0, V.jsx)(Is, {}),
-              (0, V.jsx)($a, yn(yn({}, vs), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, ys), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, bs), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, As), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, ws), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, xs), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, Ss), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, ks), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, js), {}, { reverse: !0 })),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Servicio de Terapia" }),
+              (0, dn.jsx)(Vs, {}),
+              (0, dn.jsx)(fn, G(G({}, Es), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Cs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Os), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Ps), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Ls), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Ts), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Ms), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Is), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, zs), {}, { reverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Fs = n(9958),
-        Ws = n(8540),
-        Hs = n(5688),
-        Us = {
+        qs = n(9958),
+        _s = n(8540),
+        Js = n(5688),
+        Xs = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -20674,9 +20779,9 @@
             "Este servicio se encarga de apoyar a las personas con discapacidad intelectual o del desarrollo que viven o quieran llegar a vivir de forma independiente.",
           description:
             "En nuestras viviendas reside un peque\xf1o grupo de personas con discapacidad intelectual, que aun gozando de autonom\xeda para el autocuidado,necesitan la prestaci\xf3n de apoyos a nivel personalizado para realizar el resto de actividades de la vida diaria y llevar una vida integrada en la comunidad.",
-          img: Fs,
+          img: qs,
         },
-        Vs = {
+        Ks = {
           id: "",
           reverse: !0,
           inverse: !1,
@@ -20685,9 +20790,9 @@
             "Facilitar un hogar lo m\xe1s normalizado posible, en el que se garantice y posibilite un adecuado desarrollo personal, desde la igualdad y la inclusi\xf3n social en la comunidad.",
           description:
             "Fomentar la participaci\xf3n activa y la toma de decisiones en lo relativo a las tareas dom\xe9sticas como al resto de actividades. Adquirir estabilidad y seguridad, en un entorno distinto al hogar familiar, entendi\xe9ndose \xe9stas de forma global y en todos los aspectos que afectan al ser humano (necesidades b\xe1sicas, salud, ocupaci\xf3n laboral,...). ",
-          img: Ws,
+          img: _s,
         },
-        Gs = {
+        $s = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -20696,29 +20801,29 @@
             "El modelo metodol\xf3gico a seguir ser\xe1 basado en la Capacitaci\xf3n dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
           description:
             "Los principios metodol\xf3gicos ser\xe1n: integraci\xf3n, individualizaci\xf3n y optimizaci\xf3n. Se ofrecer\xe1 a las personas con especificidad la oportunidad de vivir de la manera m\xe1s aut\xf3noma posible, fomentando la participaci\xf3n activa de la persona objeto de nuestro apoyo en la comunidad de Socu\xe9llamos, desde la igualdad y la plena inclusi\xf3n social..",
-          img: Hs,
+          img: Js,
         },
-        Ys = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        el = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(ya, {}),
-              (0, V.jsx)(Lt, { title: "Servicio de atenci\xf3n a Viviendas" }),
-              (0, V.jsx)(zr, { title: "Apoyo acceso viviendas", size: !0 }),
-              (0, V.jsx)($a, yn(yn({}, Us), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, Vs), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, Gs), {}, { inverse: !0 })),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(Mr, {}),
+              (0, dn.jsx)(Sn, { title: "Servicio de atenci\xf3n a Viviendas" }),
+              (0, dn.jsx)(Un, { title: "Apoyo acceso viviendas", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, Xs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Ks), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, $s), {}, { inverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Qs = n(5568),
-        Zs = n(2450),
-        _s = n(9916),
-        qs = n(3103),
-        Js = n(2727),
-        Xs = n(4306),
-        Ks = {
+        tl = n(5568),
+        nl = n(2450),
+        rl = n(9916),
+        il = n(3103),
+        al = n(2727),
+        ol = n(4306),
+        sl = {
           id: "voluntariadoOne",
           reverse: !1,
           inverse: !1,
@@ -20727,9 +20832,9 @@
             "Contando con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
           description:
             "La novedad de este servicio es que ya no es \xfanicamente la Asociaci\xf3n quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando as\xed su autonom\xeda.",
-          img: Qs,
+          img: tl,
         },
-        $s = {
+        ll = {
           id: "voluntariadoTwo",
           reverse: !0,
           inverse: !1,
@@ -20738,9 +20843,9 @@
             "Se organizan vacaciones al a\xf1o subvencionados tanto por FEAPS - IMSERSO",
           description:
             "A lo largo del a\xf1o, se ofertan estancias de fin de semana en casas o albergues rurales, con el fin de ofrecer unos d\xedas de vacaciones al mayor n\xfamero de usuarios posible.",
-          img: Xs,
+          img: ol,
         },
-        el = {
+        cl = {
           id: "voluntariadoThree",
           reverse: !1,
           inverse: !1,
@@ -20749,9 +20854,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "La novedad de este servicio es que ya no es \xfanicamente la Asociaci\xf3n quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando as\xed su autonom\xeda.",
-          img: Js,
+          img: al,
         },
-        tl = {
+        ul = {
           id: "voluntariadoFour",
           reverse: !0,
           inverse: !1,
@@ -20760,9 +20865,9 @@
             "Se trata de fomentar grupos de amigos formados por usuarios y voluntarios, que organicen ellos mismos qu\xe9 actividades quieren hacer y cu\xe1ndo, algo que resulta m\xe1s complicado con las actividades programadas",
           description:
             "La novedad de esta \xe1rea es la adaptaci\xf3n y libre elecci\xf3n de las actividades.",
-          img: Zs,
+          img: nl,
         },
-        nl = {
+        dl = {
           id: "voluntariadoFive",
           reverse: !1,
           inverse: !1,
@@ -20771,9 +20876,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "Se organizan actividades tan variadas como actividades deportivas (senderismo\u2026), culturales (visitas a museos, cine, teatro\u2026) y actividades recreativas (bolera, salidas nocturnas\u2026).",
-          img: _s,
+          img: rl,
         },
-        rl = {
+        fl = {
           id: "voluntariadoSix",
           reverse: !0,
           inverse: !1,
@@ -20782,32 +20887,32 @@
             "Es un proyecto creado por Afymos y financiado en parte por la Concejal\xeda de Bienestar Social de la localidad de Socu\xe9llamos.",
           description:
             "Urban Camp es un campamento urbano para 50 j\xf3venes (con y sin discapacidad) de la localidad de Socu\xe9llamos de edades comprendidas entre los 12 y 16 a\xf1os que naci\xf3 para dar respuesta a las necesidades de ocio de los j\xf3venes durante el periodo vacacional as\xed como para  ofrecer a las familias un recurso para la conciliaci\xf3n de la vida familiar y laboral durante esta \xe9poca del a\xf1o.",
-          img: qs,
+          img: il,
         },
-        il = function () {
-          return (0, V.jsxs)(V.Fragment, {
+        pl = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, V.jsx)(Lt, { title: "Servicio de Ocio y Voluntariado" }),
-              (0, V.jsx)(zr, {
+              (0, dn.jsx)(Sn, { title: "Servicio de Ocio y Voluntariado" }),
+              (0, dn.jsx)(Un, {
                 title: "Nuestro programa de voluntariado",
                 size: !0,
               }),
-              (0, V.jsx)($a, yn(yn({}, Ks), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, $s), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, el), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, tl), {}, { reverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, nl), {}, { inverse: !0 })),
-              (0, V.jsx)($a, yn(yn({}, rl), {}, { reverse: !0 })),
-              (0, V.jsx)(ua, {}),
-              (0, V.jsx)(G, {}),
+              (0, dn.jsx)(fn, G(G({}, sl), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ll), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, cl), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ul), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, dl), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, fl), {}, { reverse: !0 })),
+              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(xn, {}),
             ],
           });
         };
-      function al(e, t) {
+      function hl(e, t) {
         if (!(e instanceof t))
           throw new TypeError("Cannot call a class as a function");
       }
-      function ol(e, t) {
+      function ml(e, t) {
         for (var n = 0; n < t.length; n++) {
           var r = t[n];
           (r.enumerable = r.enumerable || !1),
@@ -20816,25 +20921,25 @@
             Object.defineProperty(e, r.key, r);
         }
       }
-      function sl(e, t, n) {
+      function gl(e, t, n) {
         return (
-          t && ol(e.prototype, t),
-          n && ol(e, n),
+          t && ml(e.prototype, t),
+          n && ml(e, n),
           Object.defineProperty(e, "prototype", { writable: !1 }),
           e
         );
       }
-      function ll(e, t) {
+      function vl(e, t) {
         return (
-          (ll =
+          (vl =
             Object.setPrototypeOf ||
             function (e, t) {
               return (e.__proto__ = t), e;
             }),
-          ll(e, t)
+          vl(e, t)
         );
       }
-      function cl(e, t) {
+      function yl(e, t) {
         if ("function" !== typeof t && null !== t)
           throw new TypeError(
             "Super expression must either be null or a function"
@@ -20843,21 +20948,21 @@
           constructor: { value: e, writable: !0, configurable: !0 },
         })),
           Object.defineProperty(e, "prototype", { writable: !1 }),
-          t && ll(e, t);
+          t && vl(e, t);
       }
-      function ul(e) {
+      function bl(e) {
         return (
-          (ul = Object.setPrototypeOf
+          (bl = Object.setPrototypeOf
             ? Object.getPrototypeOf
             : function (e) {
                 return e.__proto__ || Object.getPrototypeOf(e);
               }),
-          ul(e)
+          bl(e)
         );
       }
-      function dl(e) {
+      function Al(e) {
         return (
-          (dl =
+          (Al =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
@@ -20870,11 +20975,11 @@
                     ? "symbol"
                     : typeof e;
                 }),
-          dl(e)
+          Al(e)
         );
       }
-      function fl(e, t) {
-        if (t && ("object" === dl(t) || "function" === typeof t)) return t;
+      function xl(e, t) {
+        if (t && ("object" === Al(t) || "function" === typeof t)) return t;
         if (void 0 !== t)
           throw new TypeError(
             "Derived constructors may only return object or undefined"
@@ -20887,7 +20992,7 @@
           return e;
         })(e);
       }
-      function pl(e) {
+      function wl(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -20905,22 +21010,22 @@
         })();
         return function () {
           var n,
-            r = ul(e);
+            r = bl(e);
           if (t) {
-            var i = ul(this).constructor;
+            var i = bl(this).constructor;
             n = Reflect.construct(r, arguments, i);
           } else n = r.apply(this, arguments);
-          return fl(this, n);
+          return xl(this, n);
         };
       }
-      var hl = (function (e) {
-          cl(r, e);
-          var t = pl(r);
+      var Sl = (function (e) {
+          yl(r, e);
+          var t = wl(r);
           function r() {
-            return al(this, r), t.apply(this, arguments);
+            return hl(this, r), t.apply(this, arguments);
           }
           return (
-            sl(r, [
+            gl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -20932,20 +21037,20 @@
               {
                 key: "render",
                 value: function () {
-                  return (0, V.jsx)("div", {
+                  return (0, dn.jsx)("div", {
                     style: {
                       position: "absolute",
                       width: "100%",
                       height: "100%",
                     },
-                    children: (0, V.jsxs)("object", {
+                    children: (0, dn.jsxs)("object", {
                       data: n(583),
                       type: "application/pdf",
                       width: "100%",
                       height: "100%",
                       children: [
-                        (0, V.jsx)("br", {}),
-                        (0, V.jsx)("a", {
+                        (0, dn.jsx)("br", {}),
+                        (0, dn.jsx)("a", {
                           href: n(1200),
                           rel: "noreferrer",
                           target: "_blank",
@@ -20963,15 +21068,15 @@
             r
           );
         })(h.Component),
-        ml = hl,
-        gl = (function (e) {
-          cl(r, e);
-          var t = pl(r);
+        kl = Sl,
+        jl = (function (e) {
+          yl(r, e);
+          var t = wl(r);
           function r() {
-            return al(this, r), t.apply(this, arguments);
+            return hl(this, r), t.apply(this, arguments);
           }
           return (
-            sl(r, [
+            gl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -20983,20 +21088,20 @@
               {
                 key: "render",
                 value: function () {
-                  return (0, V.jsx)("div", {
+                  return (0, dn.jsx)("div", {
                     style: {
                       position: "absolute",
                       width: "100%",
                       height: "100%",
                     },
-                    children: (0, V.jsxs)("object", {
+                    children: (0, dn.jsxs)("object", {
                       data: n(1200),
                       type: "application/pdf",
                       width: "100%",
                       height: "100%",
                       children: [
-                        (0, V.jsx)("br", {}),
-                        (0, V.jsx)("a", {
+                        (0, dn.jsx)("br", {}),
+                        (0, dn.jsx)("a", {
                           href: n(1200),
                           rel: "noreferrer",
                           target: "_blank",
@@ -21014,15 +21119,15 @@
             r
           );
         })(h.Component),
-        vl = gl,
-        yl = (function (e) {
-          cl(r, e);
-          var t = pl(r);
+        El = jl,
+        Cl = (function (e) {
+          yl(r, e);
+          var t = wl(r);
           function r() {
-            return al(this, r), t.apply(this, arguments);
+            return hl(this, r), t.apply(this, arguments);
           }
           return (
-            sl(r, [
+            gl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21036,21 +21141,21 @@
               {
                 key: "render",
                 value: function () {
-                  return (0, V.jsx)("div", {
+                  return (0, dn.jsx)("div", {
                     style: {
                       position: "center",
                       width: "100%",
                       height: "100%",
                     },
-                    children: (0, V.jsxs)("object", {
+                    children: (0, dn.jsxs)("object", {
                       data: n(4446),
                       type: "application/pdf",
                       width: "100%",
                       height: "100%",
                       children: [
-                        (0, V.jsx)("br", {}),
-                        (0, V.jsx)("button", {
-                          children: (0, V.jsx)("a", {
+                        (0, dn.jsx)("br", {}),
+                        (0, dn.jsx)("button", {
+                          children: (0, dn.jsx)("a", {
                             href: n(4446),
                             rel: "noreferrer",
                             target: "_blank",
@@ -21068,88 +21173,96 @@
             r
           );
         })(h.Component),
-        bl = yl,
-        Al = function () {
-          return (0, V.jsx)(V.Fragment, {
-            children: (0, V.jsxs)(W, {
+        Ol = Cl,
+        Pl = function () {
+          return (0, dn.jsx)(dn.Fragment, {
+            children: (0, dn.jsxs)(W, {
               children: [
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/terapias",
-                  element: (0, V.jsx)(Bs, {}),
+                  element: (0, dn.jsx)(Zs, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/nosotros",
-                  element: (0, V.jsx)(ao, {}),
+                  element: (0, dn.jsx)(uo, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/apoyo-familias",
-                  element: (0, V.jsx)(rs, {}),
+                  element: (0, dn.jsx)(fs, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/ocio-y-voluntariado",
-                  element: (0, V.jsx)(il, {}),
+                  element: (0, dn.jsx)(pl, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/viviendas-con-apoyo",
-                  element: (0, V.jsx)(Ys, {}),
+                  element: (0, dn.jsx)(el, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/centro-de-dia",
-                  element: (0, V.jsx)(yo, {}),
+                  element: (0, dn.jsx)(Co, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/proyecto-crea",
-                  element: (0, V.jsx)(Ho, {}),
+                  element: (0, dn.jsx)(Jo, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/valoracion-y-diagnostico",
-                  element: (0, V.jsx)(_o, {}),
+                  element: (0, dn.jsx)(rs, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/donaciones",
-                  element: (0, V.jsx)(Jo, {}),
+                  element: (0, dn.jsx)(as, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/servicio-capacitacion",
-                  element: (0, V.jsx)(uo, {}),
+                  element: (0, dn.jsx)(Ao, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/instalaciones-centro-diversidad",
-                  element: (0, V.jsx)(Lo, {}),
+                  element: (0, dn.jsx)(Wo, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/valoracion-y-diagnostico",
-                  element: (0, V.jsx)(_o, {}),
+                  element: (0, dn.jsx)(rs, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/organigrama",
-                  element: (0, V.jsx)(bl, {}),
+                  element: (0, dn.jsx)(Ol, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/pdf-cuentas-20",
-                  element: (0, V.jsx)(ml, {}),
+                  element: (0, dn.jsx)(kl, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/pdf-cuentas-21",
-                  element: (0, V.jsx)(vl, {}),
+                  element: (0, dn.jsx)(El, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/formacion",
-                  element: (0, V.jsx)(fs, {}),
+                  element: (0, dn.jsx)(xs, {}),
                 }),
-                (0, V.jsx)(B, {
+                (0, dn.jsx)(F, {
                   path: "/junta-directiva",
-                  element: (0, V.jsx)(fn, {}),
+                  element: (0, dn.jsx)(ei, {}),
                 }),
-                (0, V.jsx)(B, { path: "/", element: (0, V.jsx)(Qa, {}) }),
+                (0, dn.jsx)(F, {
+                  path: "/politica-privacidad",
+                  element: (0, dn.jsx)(mo, {}),
+                }),
+                (0, dn.jsx)(F, {
+                  path: "/aviso-legal",
+                  element: (0, dn.jsx)(zr, {}),
+                }),
+                (0, dn.jsx)(F, { path: "/", element: (0, dn.jsx)(Ka, {}) }),
               ],
             }),
           });
         };
       n(4164).render(
-        (0, V.jsx)(_, { children: (0, V.jsx)(Al, {}) }),
+        (0, dn.jsx)(gn, { children: (0, dn.jsx)(Pl, {}) }),
         document.getElementById("root")
       );
     })();
 })();
-//# sourceMappingURL=main.8729fad6.js.map
+//# sourceMappingURL=main.e5babfd1.js.map

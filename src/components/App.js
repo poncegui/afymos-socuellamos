@@ -3,10 +3,12 @@ import "../styles/main.scss";
 //HOOKS
 import { Route, Routes } from "react-router-dom";
 
+import AvisoLegal from "./Footer/AvisoLegal";
 //COMPONENTS
 import Chart from "../views/juntaDirectiva/Chart";
 import LandingView from "../views/Landing/LandingView";
 import Nosotros from "../views/nosotros/Nosotros";
+import PoliticaPrivacidad from "./Footer/PoliticaDePrivacidad";
 import ProjectsCapacitacion from "../views/capacitacion/ProjectsCapacitacion";
 import ProjectsCentroDia from "../views/centroDia/ProjecsCentroDia";
 import ProjectsCentroDiversidad from "../views/instalaciones/ProjectsCentroDiversidad";
@@ -18,7 +20,6 @@ import ProjectsFormacion from "../views/formacion/ProjectsFormacion";
 import ProjectsTerapias from "../views/terapias/ProjetsTerapias";
 import ProjectsVivienda from "../views/viviendasApoyo/ProjectsVivienda";
 import ProjectsVoluntariado from "../views/voluntariado/ProjectsVoluntariado";
-import TitleSection from "./TitleSection";
 import VisorPdf20 from "../views/Landing/components/pdf/VisorPdf2020";
 import VisorPdf21 from "../views/Landing/components/pdf/VisorPdf2021";
 import VisorPdfOrganigrama from "../views/Landing/components/pdf/VisorPdfOrganigrama";
@@ -56,6 +57,8 @@ const App = () => {
         <Route path="/pdf-cuentas-21" element={<VisorPdf21 />} />
         <Route path="/formacion" element={<ProjectsFormacion />} />
         <Route path="/junta-directiva" element={<Chart />} />
+        <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+        <Route path="/aviso-legal" element={<AvisoLegal />} />
         <Route path="/" element={<LandingView />} />
       </Routes>
     </>
