@@ -1,5 +1,5 @@
-import voluntariado1 from "../assets/images-voluntariado/voluntariado4.jpg";
-import voluntariado2 from "../assets/images-voluntariado/voluntariado2.jpg";
+import voluntariado1 from "../assets/images-voluntariado/voluntariado1.jpg";
+import voluntariado2 from "../assets/images-voluntariado/voluntariado10.png";
 import voluntariado3 from "../assets/images-voluntariado/voluntariado7.jpg";
 import voluntariado4 from "../assets/images-voluntariado/voluntariado9.jpg";
 import voluntariado5 from "../assets/images-voluntariado/voluntariado5.jpg";

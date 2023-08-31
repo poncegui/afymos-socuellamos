@@ -1,4 +1,4 @@
-import apoyofamilia from "../assets/images-familias/apoyo-familias.jpg";
+import apoyofamilia1 from "../assets/images-familias/apoyo-familias-1.png";
 import apoyofamilia2 from "../assets/images-familias/apoyo-familias-2.jpg";
 import apoyofamilia3 from "../assets/images-familias/apoyo-familias-3.jpg";
 
@@ -12,7 +12,7 @@ export const familyDataOne = {
     "Ofrecemos asesoramiento y apoyo a familias de personas con cualquier tipo de discapacidad",
   description:
     "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas específicas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
-  img: apoyofamilia,
+  img: apoyofamilia1,
 };
 
 export const familyDataTwo = {
