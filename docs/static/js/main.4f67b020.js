@@ -1,4 +1,4 @@
-/*! For license information please see main.ba0208c4.js.LICENSE.txt */
+/*! For license information please see main.4f67b020.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -231,7 +231,7 @@
                 var y = f(n, v);
                 try {
                   c(t, v, y);
-                } catch (b) {}
+                } catch (A) {}
               }
             }
           }
@@ -338,16 +338,16 @@
               a = i;
             return (r = i = void 0), (c = t), (o = e.apply(a, n));
           }
-          function b(e) {
+          function A(e) {
             return (c = e), (s = setTimeout(x, t)), u ? y(e) : o;
           }
-          function A(e) {
+          function b(e) {
             var n = e - l;
             return void 0 === l || n >= t || n < 0 || (d && e - c >= a);
           }
           function x() {
             var e = h();
-            if (A(e)) return w(e);
+            if (b(e)) return w(e);
             s = setTimeout(
               x,
               (function (e) {
@@ -361,9 +361,9 @@
           }
           function S() {
             var e = h(),
-              n = A(e);
+              n = b(e);
             if (((r = arguments), (i = this), (l = e), n)) {
-              if (void 0 === s) return b(l);
+              if (void 0 === s) return A(l);
               if (d) return (s = setTimeout(x, t)), y(l);
             }
             return void 0 === s && (s = setTimeout(x, t)), o;
@@ -414,13 +414,13 @@
             f = !1,
             g = !0;
           if ("function" != typeof e) throw new TypeError(r);
-          function b(t) {
+          function A(t) {
             var n = i,
               r = a;
             return (i = a = void 0), (u = t), (s = e.apply(r, n));
           }
-          function A(e) {
-            return (u = e), (l = setTimeout(w, t)), d ? b(e) : s;
+          function b(e) {
+            return (u = e), (l = setTimeout(w, t)), d ? A(e) : s;
           }
           function x(e) {
             var n = e - c;
@@ -438,14 +438,14 @@
             );
           }
           function S(e) {
-            return (l = void 0), g && i ? b(e) : ((i = a = void 0), s);
+            return (l = void 0), g && i ? A(e) : ((i = a = void 0), s);
           }
           function k() {
             var e = m(),
               n = x(e);
             if (((i = arguments), (a = this), (c = e), n)) {
-              if (void 0 === l) return A(c);
-              if (f) return (l = setTimeout(w, t)), b(c);
+              if (void 0 === l) return b(c);
+              if (f) return (l = setTimeout(w, t)), A(c);
             }
             return void 0 === l && (l = setTimeout(w, t)), s;
           }
@@ -713,10 +713,10 @@
             v[e] = new g(e, 5, !1, e.toLowerCase(), null, !1, !1);
           });
         var y = /[\-:]([a-z])/g;
-        function b(e) {
+        function A(e) {
           return e[1].toUpperCase();
         }
-        function A(e, t, n, r) {
+        function b(e, t, n, r) {
           var i = v.hasOwnProperty(t) ? v[t] : null;
           (null !== i
             ? 0 === i.type
@@ -786,17 +786,17 @@
         "accent-height alignment-baseline arabic-form baseline-shift cap-height clip-path clip-rule color-interpolation color-interpolation-filters color-profile color-rendering dominant-baseline enable-background fill-opacity fill-rule flood-color flood-opacity font-family font-size font-size-adjust font-stretch font-style font-variant font-weight glyph-name glyph-orientation-horizontal glyph-orientation-vertical horiz-adv-x horiz-origin-x image-rendering letter-spacing lighting-color marker-end marker-mid marker-start overline-position overline-thickness paint-order panose-1 pointer-events rendering-intent shape-rendering stop-color stop-opacity strikethrough-position strikethrough-thickness stroke-dasharray stroke-dashoffset stroke-linecap stroke-linejoin stroke-miterlimit stroke-opacity stroke-width text-anchor text-decoration text-rendering underline-position underline-thickness unicode-bidi unicode-range units-per-em v-alphabetic v-hanging v-ideographic v-mathematical vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mode xmlns:xlink x-height"
           .split(" ")
           .forEach(function (e) {
-            var t = e.replace(y, b);
+            var t = e.replace(y, A);
             v[t] = new g(t, 1, !1, e, null, !1, !1);
           }),
           "xlink:actuate xlink:arcrole xlink:role xlink:show xlink:title xlink:type"
             .split(" ")
             .forEach(function (e) {
-              var t = e.replace(y, b);
+              var t = e.replace(y, A);
               v[t] = new g(t, 1, !1, e, "http://www.w3.org/1999/xlink", !1, !1);
             }),
           ["xml:base", "xml:lang", "xml:space"].forEach(function (e) {
-            var t = e.replace(y, b);
+            var t = e.replace(y, A);
             v[t] = new g(
               t,
               1,
@@ -1014,7 +1014,7 @@
             }
           return null;
         }
-        function q(e) {
+        function _(e) {
           switch (typeof e) {
             case "boolean":
             case "number":
@@ -1026,7 +1026,7 @@
               return "";
           }
         }
-        function _(e) {
+        function q(e) {
           var t = e.type;
           return (
             (e = e.nodeName) &&
@@ -1037,7 +1037,7 @@
         function J(e) {
           e._valueTracker ||
             (e._valueTracker = (function (e) {
-              var t = _(e) ? "checked" : "value",
+              var t = q(e) ? "checked" : "value",
                 n = Object.getOwnPropertyDescriptor(e.constructor.prototype, t),
                 r = "" + e[t];
               if (
@@ -1081,7 +1081,7 @@
           var n = t.getValue(),
             r = "";
           return (
-            e && (r = _(e) ? (e.checked ? "true" : "false") : e.value),
+            e && (r = q(e) ? (e.checked ? "true" : "false") : e.value),
             (e = r) !== n && (t.setValue(e), !0)
           );
         }
@@ -1110,7 +1110,7 @@
         function ee(e, t) {
           var n = null == t.defaultValue ? "" : t.defaultValue,
             r = null != t.checked ? t.checked : t.defaultChecked;
-          (n = q(null != t.value ? t.value : n)),
+          (n = _(null != t.value ? t.value : n)),
             (e._wrapperState = {
               initialChecked: r,
               initialValue: n,
@@ -1121,11 +1121,11 @@
             });
         }
         function te(e, t) {
-          null != (t = t.checked) && A(e, "checked", t, !1);
+          null != (t = t.checked) && b(e, "checked", t, !1);
         }
         function ne(e, t) {
           te(e, t);
-          var n = q(t.value),
+          var n = _(t.value),
             r = t.type;
           if (null != n)
             "number" === r
@@ -1137,7 +1137,7 @@
           t.hasOwnProperty("value")
             ? ie(e, t.type, n)
             : t.hasOwnProperty("defaultValue") &&
-              ie(e, t.type, q(t.defaultValue)),
+              ie(e, t.type, _(t.defaultValue)),
             null == t.checked &&
               null != t.defaultChecked &&
               (e.defaultChecked = !!t.defaultChecked);
@@ -1190,7 +1190,7 @@
                 e[n].selected !== i && (e[n].selected = i),
                 i && r && (e[n].defaultSelected = !0);
           } else {
-            for (n = "" + q(n), t = null, i = 0; i < e.length; i++) {
+            for (n = "" + _(n), t = null, i = 0; i < e.length; i++) {
               if (e[i].value === n)
                 return (
                   (e[i].selected = !0), void (r && (e[i].defaultSelected = !0))
@@ -1221,11 +1221,11 @@
             }
             null == t && (t = ""), (n = t);
           }
-          e._wrapperState = { initialValue: q(n) };
+          e._wrapperState = { initialValue: _(n) };
         }
         function ce(e, t) {
-          var n = q(t.value),
-            r = q(t.defaultValue);
+          var n = _(t.value),
+            r = _(t.defaultValue);
           null != n &&
             ((n = "" + n) !== e.value && (e.value = n),
             null == t.defaultValue &&
@@ -1291,7 +1291,7 @@
           }
           e.textContent = t;
         }
-        var be = {
+        var Ae = {
             animationIterationCount: !0,
             borderImageOutset: !0,
             borderImageSlice: !0,
@@ -1335,14 +1335,14 @@
             strokeOpacity: !0,
             strokeWidth: !0,
           },
-          Ae = ["Webkit", "ms", "Moz", "O"];
+          be = ["Webkit", "ms", "Moz", "O"];
         function xe(e, t, n) {
           return null == t || "boolean" === typeof t || "" === t
             ? ""
             : n ||
               "number" !== typeof t ||
               0 === t ||
-              (be.hasOwnProperty(e) && be[e])
+              (Ae.hasOwnProperty(e) && Ae[e])
             ? ("" + t).trim()
             : t + "px";
         }
@@ -1355,10 +1355,10 @@
                 r ? e.setProperty(n, i) : (e[n] = i);
             }
         }
-        Object.keys(be).forEach(function (e) {
-          Ae.forEach(function (t) {
+        Object.keys(Ae).forEach(function (e) {
+          be.forEach(function (t) {
             (t = t + e.charAt(0).toUpperCase() + e.substring(1)),
-              (be[t] = be[e]);
+              (Ae[t] = Ae[e]);
           });
         });
         var Se = i(
@@ -1517,13 +1517,13 @@
           Ye = null,
           Qe = !1,
           Ze = null,
-          qe = {
+          _e = {
             onError: function (e) {
               (Ge = !0), (Ye = e);
             },
           };
-        function _e(e, t, n, r, i, a, o, s, l) {
-          (Ge = !1), (Ye = null), Ve.apply(qe, arguments);
+        function qe(e, t, n, r, i, a, o, s, l) {
+          (Ge = !1), (Ye = null), Ve.apply(_e, arguments);
         }
         function Je(e) {
           var t = e,
@@ -1726,10 +1726,10 @@
           }
           return !0;
         }
-        function bt(e, t, n) {
+        function At(e, t, n) {
           yt(e) && n.delete(t);
         }
-        function At() {
+        function bt() {
           for (at = !1; 0 < ot.length; ) {
             var e = ot[0];
             if (null !== e.blockedOn) {
@@ -1754,15 +1754,15 @@
           null !== st && yt(st) && (st = null),
             null !== lt && yt(lt) && (lt = null),
             null !== ct && yt(ct) && (ct = null),
-            ut.forEach(bt),
-            dt.forEach(bt);
+            ut.forEach(At),
+            dt.forEach(At);
         }
         function xt(e, t) {
           e.blockedOn === t &&
             ((e.blockedOn = null),
             at ||
               ((at = !0),
-              a.unstable_scheduleCallback(a.unstable_NormalPriority, At)));
+              a.unstable_scheduleCallback(a.unstable_NormalPriority, bt)));
         }
         function wt(e) {
           function t(t) {
@@ -2005,8 +2005,8 @@
           Yt = Math.log,
           Qt = Math.LN2;
         var Zt = a.unstable_UserBlockingPriority,
-          qt = a.unstable_runWithPriority,
-          _t = !0;
+          _t = a.unstable_runWithPriority,
+          qt = !0;
         function Jt(e, t, n, r) {
           Ne || De();
           var i = Kt,
@@ -2019,11 +2019,11 @@
           }
         }
         function Xt(e, t, n, r) {
-          qt(Zt, Kt.bind(null, e, t, n, r));
+          _t(Zt, Kt.bind(null, e, t, n, r));
         }
         function Kt(e, t, n, r) {
           var i;
-          if (_t)
+          if (qt)
             if ((i = 0 === (4 & t)) && 0 < ot.length && -1 < pt.indexOf(e))
               (e = ht(null, e, t, n, r)), ot.push(e);
             else {
@@ -2218,8 +2218,8 @@
           }),
           vn = ln(gn),
           yn = ln(i({}, gn, { dataTransfer: 0 })),
-          bn = ln(i({}, hn, { relatedTarget: 0 })),
-          An = ln(
+          An = ln(i({}, hn, { relatedTarget: 0 })),
+          bn = ln(
             i({}, fn, { animationName: 0, elapsedTime: 0, pseudoElement: 0 })
           ),
           xn = i({}, fn, {
@@ -2435,13 +2435,13 @@
           var t = e && e.nodeName && e.nodeName.toLowerCase();
           return "input" === t ? !!Qn[e.type] : "textarea" === t;
         }
-        function qn(e, t, n, r) {
+        function _n(e, t, n, r) {
           Le(r),
             0 < (t = Nr(t, "onChange")).length &&
               ((n = new pn("onChange", "change", null, n, r)),
               e.push({ event: n, listeners: t }));
         }
-        var _n = null,
+        var qn = null,
           Jn = null;
         function Xn(e) {
           Pr(e, 0);
@@ -2467,12 +2467,12 @@
           er = tr && (!document.documentMode || 9 < document.documentMode);
         }
         function ir() {
-          _n && (_n.detachEvent("onpropertychange", ar), (Jn = _n = null));
+          qn && (qn.detachEvent("onpropertychange", ar), (Jn = qn = null));
         }
         function ar(e) {
           if ("value" === e.propertyName && Kn(Jn)) {
             var t = [];
-            if ((qn(t, Jn, e, Ee(e)), (e = Xn), Ne)) e(t);
+            if ((_n(t, Jn, e, Ee(e)), (e = Xn), Ne)) e(t);
             else {
               Ne = !0;
               try {
@@ -2485,7 +2485,7 @@
         }
         function or(e, t, n) {
           "focusin" === e
-            ? (ir(), (Jn = n), (_n = t).attachEvent("onpropertychange", ar))
+            ? (ir(), (Jn = n), (qn = t).attachEvent("onpropertychange", ar))
             : "focusout" === e && ir();
         }
         function sr(e) {
@@ -2590,8 +2590,8 @@
           );
         }
         var yr = d && "documentMode" in document && 11 >= document.documentMode,
-          br = null,
           Ar = null,
+          br = null,
           xr = null,
           wr = !1;
         function Sr(e, t, n) {
@@ -2602,9 +2602,9 @@
               ? n
               : n.ownerDocument;
           wr ||
-            null == br ||
-            br !== K(r) ||
-            ("selectionStart" in (r = br) && vr(r)
+            null == Ar ||
+            Ar !== K(r) ||
+            ("selectionStart" in (r = Ar) && vr(r)
               ? (r = { start: r.selectionStart, end: r.selectionEnd })
               : (r = {
                   anchorNode: (r = (
@@ -2617,10 +2617,10 @@
                 }),
             (xr && fr(xr, r)) ||
               ((xr = r),
-              0 < (r = Nr(Ar, "onSelect")).length &&
+              0 < (r = Nr(br, "onSelect")).length &&
                 ((t = new pn("onSelect", "select", null, t, n)),
                 e.push({ event: t, listeners: r }),
-                (t.target = br))));
+                (t.target = Ar))));
         }
         Dt(
           "cancel cancel click click close close contextmenu contextMenu copy copy cut cut auxclick auxClick dblclick doubleClick dragend dragEnd dragstart dragStart drop drop focusin focus focusout blur input input invalid invalid keydown keyDown keypress keyPress keyup keyUp mousedown mouseDown mouseup mouseUp paste paste pause pause play play pointercancel pointerCancel pointerdown pointerDown pointerup pointerUp ratechange rateChange reset reset seeked seeked submit submit touchcancel touchCancel touchend touchEnd touchstart touchStart volumechange volumeChange".split(
@@ -2696,7 +2696,7 @@
           var r = e.type || "unknown-event";
           (e.currentTarget = n),
             (function (e, t, n, r, i, a, s, l, c) {
-              if ((_e.apply(this, arguments), Ge)) {
+              if ((qe.apply(this, arguments), Ge)) {
                 if (!Ge) throw Error(o(198));
                 var u = Ye;
                 (Ge = !1), (Ye = null), Qe || ((Qe = !0), (Ze = u));
@@ -2849,14 +2849,14 @@
                     l = Tn;
                     break;
                   case "focusin":
-                    (c = "focus"), (l = bn);
+                    (c = "focus"), (l = An);
                     break;
                   case "focusout":
-                    (c = "blur"), (l = bn);
+                    (c = "blur"), (l = An);
                     break;
                   case "beforeblur":
                   case "afterblur":
-                    l = bn;
+                    l = An;
                     break;
                   case "click":
                     if (2 === n.button) break e;
@@ -2889,7 +2889,7 @@
                   case Ot:
                   case Pt:
                   case Tt:
-                    l = An;
+                    l = bn;
                     break;
                   case Lt:
                     l = In;
@@ -3021,7 +3021,7 @@
                   (g = lr);
               switch (
                 (g && (g = g(e, r))
-                  ? qn(o, g, n, i)
+                  ? _n(o, g, n, i)
                   : (v && v(e, s, r),
                     "focusout" === e &&
                       (v = s._wrapperState) &&
@@ -3033,10 +3033,10 @@
               ) {
                 case "focusin":
                   (Zn(v) || "true" === v.contentEditable) &&
-                    ((br = v), (Ar = r), (xr = null));
+                    ((Ar = v), (br = r), (xr = null));
                   break;
                 case "focusout":
-                  xr = Ar = br = null;
+                  xr = br = Ar = null;
                   break;
                 case "mousedown":
                   wr = !0;
@@ -3057,34 +3057,34 @@
                 e: {
                   switch (e) {
                     case "compositionstart":
-                      var b = "onCompositionStart";
+                      var A = "onCompositionStart";
                       break e;
                     case "compositionend":
-                      b = "onCompositionEnd";
+                      A = "onCompositionEnd";
                       break e;
                     case "compositionupdate":
-                      b = "onCompositionUpdate";
+                      A = "onCompositionUpdate";
                       break e;
                   }
-                  b = void 0;
+                  A = void 0;
                 }
               else
                 Yn
-                  ? Vn(e, n) && (b = "onCompositionEnd")
+                  ? Vn(e, n) && (A = "onCompositionEnd")
                   : "keydown" === e &&
                     229 === n.keyCode &&
-                    (b = "onCompositionStart");
-              b &&
+                    (A = "onCompositionStart");
+              A &&
                 (Wn &&
                   "ko" !== n.locale &&
-                  (Yn || "onCompositionStart" !== b
-                    ? "onCompositionEnd" === b && Yn && (y = rn())
+                  (Yn || "onCompositionStart" !== A
+                    ? "onCompositionEnd" === A && Yn && (y = rn())
                     : ((tn = "value" in (en = i) ? en.value : en.textContent),
                       (Yn = !0))),
-                0 < (v = Nr(r, b)).length &&
-                  ((b = new Sn(b, e, null, n, i)),
-                  o.push({ event: b, listeners: v }),
-                  y ? (b.data = y) : null !== (y = Gn(n)) && (b.data = y))),
+                0 < (v = Nr(r, A)).length &&
+                  ((A = new Sn(A, e, null, n, i)),
+                  o.push({ event: A, listeners: v }),
+                  y ? (A.data = y) : null !== (y = Gn(n)) && (A.data = y))),
                 (y = Bn
                   ? (function (e, t) {
                       switch (e) {
@@ -3199,14 +3199,14 @@
             ? (e.textContent = "")
             : 9 === e.nodeType && null != (e = e.body) && (e.textContent = "");
         }
-        function qr(e) {
+        function _r(e) {
           for (; null != e; e = e.nextSibling) {
             var t = e.nodeType;
             if (1 === t || 3 === t) break;
           }
           return e;
         }
-        function _r(e) {
+        function qr(e) {
           e = e.previousSibling;
           for (var t = 0; e; ) {
             if (8 === e.nodeType) {
@@ -3235,9 +3235,9 @@
                 ((n = t.alternate),
                 null !== t.child || (null !== n && null !== n.child))
               )
-                for (e = _r(e); null !== e; ) {
+                for (e = qr(e); null !== e; ) {
                   if ((n = e[Kr])) return n;
-                  e = _r(e);
+                  e = qr(e);
                 }
               return t;
             }
@@ -3300,11 +3300,11 @@
         function yi() {
           ui(hi), ui(pi);
         }
-        function bi(e, t, n) {
+        function Ai(e, t, n) {
           if (pi.current !== fi) throw Error(o(168));
           di(pi, t), di(hi, n);
         }
-        function Ai(e, t, n) {
+        function bi(e, t, n) {
           var r = e.stateNode;
           if (
             ((e = t.childContextTypes), "function" !== typeof r.getChildContext)
@@ -3330,7 +3330,7 @@
           var r = e.stateNode;
           if (!r) throw Error(o(169));
           n
-            ? ((e = Ai(e, t, mi)),
+            ? ((e = bi(e, t, mi)),
               (r.__reactInternalMemoizedMergedChildContext = e),
               ui(hi),
               ui(pi),
@@ -3402,14 +3402,14 @@
         function Zi(e, t, n) {
           return (e = Yi(e)), Ei(e, t, n);
         }
-        function qi() {
+        function _i() {
           if (null !== Wi) {
             var e = Wi;
             (Wi = null), Ci(e);
           }
-          _i();
+          qi();
         }
-        function _i() {
+        function qi() {
           if (!Ui && null !== Bi) {
             Ui = !0;
             var e = 0;
@@ -3425,7 +3425,7 @@
               }),
                 (Bi = null);
             } catch (n) {
-              throw (null !== Bi && (Bi = Bi.slice(e + 1)), Ei(Mi, qi), n);
+              throw (null !== Bi && (Bi = Bi.slice(e + 1)), Ei(Mi, _i), n);
             } finally {
               Ui = !1;
             }
@@ -3719,7 +3719,7 @@
                 !fr(n, r) ||
                 !fr(i, a);
         }
-        function ba(e, t, n) {
+        function Aa(e, t, n) {
           var r = !1,
             i = fi,
             a = t.contextType;
@@ -3743,7 +3743,7 @@
             t
           );
         }
-        function Aa(e, t, n, r) {
+        function ba(e, t, n, r) {
           (e = t.state),
             "function" === typeof t.componentWillReceiveProps &&
               t.componentWillReceiveProps(n, r),
@@ -3885,7 +3885,7 @@
           }
           function d(e, t, n, r, a) {
             return null === t || 7 !== t.tag
-              ? (((t = ql(n, e.mode, r, a)).return = e), t)
+              ? (((t = _l(n, e.mode, r, a)).return = e), t)
               : (((t = i(t, n)).return = e), t);
           }
           function f(e, t, n) {
@@ -3907,7 +3907,7 @@
                   return ((t = Xl(t, e.mode, n)).return = e), t;
               }
               if (wa(t) || H(t))
-                return ((t = ql(t, e.mode, n, null)).return = e), t;
+                return ((t = _l(t, e.mode, n, null)).return = e), t;
               ka(e, t);
             }
             return null;
@@ -4011,15 +4011,15 @@
               g++, y = l.next()
             ) {
               m.index > g ? ((v = m), (m = null)) : (v = m.sibling);
-              var b = p(i, m, y.value, c);
-              if (null === b) {
+              var A = p(i, m, y.value, c);
+              if (null === A) {
                 null === m && (m = v);
                 break;
               }
-              e && m && null === b.alternate && t(i, m),
-                (s = a(b, s, g)),
-                null === d ? (u = b) : (d.sibling = b),
-                (d = b),
+              e && m && null === A.alternate && t(i, m),
+                (s = a(A, s, g)),
+                null === d ? (u = A) : (d.sibling = A),
+                (d = A),
                 (m = v);
             }
             if (y.done) return n(i, m), u;
@@ -4081,7 +4081,7 @@
                       t(e, c), (c = c.sibling);
                     }
                     a.type === k
-                      ? (((r = ql(a.props.children, e.mode, l, a.key)).return =
+                      ? (((r = _l(a.props.children, e.mode, l, a.key)).return =
                           e),
                         (e = r))
                       : (((l = Zl(
@@ -4246,13 +4246,13 @@
             if (t) {
               var n = t;
               if (!Va(e, t)) {
-                if (!(t = qr(n.nextSibling)) || !Va(e, t))
+                if (!(t = _r(n.nextSibling)) || !Va(e, t))
                   return (
                     (e.flags = (-1025 & e.flags) | 2), (Ua = !1), void (Ba = e)
                   );
                 Ha(Ba, n);
               }
-              (Ba = e), (Wa = qr(t.firstChild));
+              (Ba = e), (Wa = _r(t.firstChild));
             } else (e.flags = (-1025 & e.flags) | 2), (Ua = !1), (Ba = e);
           }
         }
@@ -4273,7 +4273,7 @@
             5 !== e.tag ||
             ("head" !== t && "body" !== t && !Gr(t, e.memoizedProps))
           )
-            for (t = Wa; t; ) Ha(e, t), (t = qr(t.nextSibling));
+            for (t = Wa; t; ) Ha(e, t), (t = _r(t.nextSibling));
           if ((Ya(e), 13 === e.tag)) {
             if (!(e = null !== (e = e.memoizedState) ? e.dehydrated : null))
               throw Error(o(317));
@@ -4283,7 +4283,7 @@
                   var n = e.data;
                   if ("/$" === n) {
                     if (0 === t) {
-                      Wa = qr(e.nextSibling);
+                      Wa = _r(e.nextSibling);
                       break e;
                     }
                     t--;
@@ -4293,17 +4293,17 @@
               }
               Wa = null;
             }
-          } else Wa = Ba ? qr(e.stateNode.nextSibling) : null;
+          } else Wa = Ba ? _r(e.stateNode.nextSibling) : null;
           return !0;
         }
         function Za() {
           (Wa = Ba = null), (Ua = !1);
         }
-        var qa = [];
-        function _a() {
-          for (var e = 0; e < qa.length; e++)
-            qa[e]._workInProgressVersionPrimary = null;
-          qa.length = 0;
+        var _a = [];
+        function qa() {
+          for (var e = 0; e < _a.length; e++)
+            _a[e]._workInProgressVersionPrimary = null;
+          _a.length = 0;
         }
         var Ja = x.ReactCurrentDispatcher,
           Xa = x.ReactCurrentBatchConfig,
@@ -4474,11 +4474,11 @@
               ? (e = i === r)
               : ((e = e.mutableReadLanes),
                 (e = (Ka & e) === e) &&
-                  ((t._workInProgressVersionPrimary = r), qa.push(t))),
+                  ((t._workInProgressVersionPrimary = r), _a.push(t))),
             e)
           )
             return n(t._source);
-          throw (qa.push(t), Error(o(350)));
+          throw (_a.push(t), Error(o(350)));
         }
         function ho(e, t, n, r) {
           var i = Is;
@@ -4589,10 +4589,10 @@
         function yo(e) {
           return (e = { current: e }), (so().memoizedState = e);
         }
-        function bo() {
+        function Ao() {
           return lo().memoizedState;
         }
-        function Ao(e, t, n, r) {
+        function bo(e, t, n, r) {
           var i = so();
           ($a.flags |= e),
             (i.memoizedState = vo(1 | t, n, void 0, void 0 === r ? null : r));
@@ -4609,7 +4609,7 @@
           ($a.flags |= e), (i.memoizedState = vo(1 | t, n, a, r));
         }
         function wo(e, t) {
-          return Ao(516, 4, e, t);
+          return bo(516, 4, e, t);
         }
         function So(e, t) {
           return xo(516, 4, e, t);
@@ -4731,11 +4731,11 @@
             useImperativeHandle: function (e, t, n) {
               return (
                 (n = null !== n && void 0 !== n ? n.concat([e]) : null),
-                Ao(4, 2, jo.bind(null, t, e), n)
+                bo(4, 2, jo.bind(null, t, e), n)
               );
             },
             useLayoutEffect: function (e, t) {
-              return Ao(4, 2, e, t);
+              return bo(4, 2, e, t);
             },
             useMemo: function (e, t) {
               var n = so();
@@ -4840,7 +4840,7 @@
             useLayoutEffect: ko,
             useMemo: Po,
             useReducer: uo,
-            useRef: bo,
+            useRef: Ao,
             useState: function () {
               return uo(co);
             },
@@ -4867,7 +4867,7 @@
             },
             useTransition: function () {
               var e = uo(co)[0];
-              return [bo().current, e];
+              return [Ao().current, e];
             },
             useMutableSource: mo,
             useOpaqueIdentifier: function () {
@@ -4884,7 +4884,7 @@
             useLayoutEffect: ko,
             useMemo: Po,
             useReducer: fo,
-            useRef: bo,
+            useRef: Ao,
             useState: function () {
               return fo(co);
             },
@@ -4911,7 +4911,7 @@
             },
             useTransition: function () {
               var e = fo(co)[0];
-              return [bo().current, e];
+              return [Ao().current, e];
             },
             useMutableSource: mo,
             useOpaqueIdentifier: function () {
@@ -5024,7 +5024,7 @@
           if ((aa(t, i), null === t.stateNode))
             null !== e &&
               ((e.alternate = null), (t.alternate = null), (t.flags |= 2)),
-              ba(t, n, r),
+              Aa(t, n, r),
               xa(t, n, r, i),
               (r = !0);
           else if (null === e) {
@@ -5043,7 +5043,7 @@
             d ||
               ("function" !== typeof o.UNSAFE_componentWillReceiveProps &&
                 "function" !== typeof o.componentWillReceiveProps) ||
-              ((s !== r || l !== c) && Aa(t, o, r, c)),
+              ((s !== r || l !== c) && ba(t, o, r, c)),
               (sa = !1);
             var f = t.memoizedState;
             (o.state = f),
@@ -5089,7 +5089,7 @@
               "function" === typeof o.getSnapshotBeforeUpdate) ||
               ("function" !== typeof o.UNSAFE_componentWillReceiveProps &&
                 "function" !== typeof o.componentWillReceiveProps) ||
-              ((s !== d || f !== l) && Aa(t, o, r, l)),
+              ((s !== d || f !== l) && ba(t, o, r, l)),
               (sa = !1),
               (f = t.memoizedState),
               (o.state = f),
@@ -5155,12 +5155,12 @@
         function Zo(e) {
           var t = e.stateNode;
           t.pendingContext
-            ? bi(0, t.pendingContext, t.pendingContext !== t.context)
-            : t.context && bi(0, t.context, !1),
+            ? Ai(0, t.pendingContext, t.pendingContext !== t.context)
+            : t.context && Ai(0, t.context, !1),
             Ia(e, t.containerInfo);
         }
-        var qo,
-          _o,
+        var _o,
+          qo,
           Jo,
           Xo = { dehydrated: null, retryLane: 0 };
         function Ko(e, t, n) {
@@ -5193,7 +5193,7 @@
                     (t.memoizedState = Xo),
                     (t.lanes = 33554432),
                     e)
-                  : (((n = _l(
+                  : (((n = ql(
                       { mode: "visible", children: e },
                       t.mode,
                       n,
@@ -5224,8 +5224,8 @@
             (t = { mode: "hidden", children: t }),
             0 === (2 & i) && null !== a
               ? ((a.childLanes = 0), (a.pendingProps = t))
-              : (a = _l(t, i, 0, null)),
-            (n = ql(n, i, r, null)),
+              : (a = ql(t, i, 0, null)),
+            (n = _l(n, i, r, null)),
             (a.return = e),
             (n.return = e),
             (a.sibling = n),
@@ -5263,7 +5263,7 @@
                     (o.nextEffect = null))
                   : (t.firstEffect = t.lastEffect = null))
               : (n = Ql(o, s)),
-            null !== e ? (r = Ql(e, r)) : ((r = ql(r, a, i, null)).flags |= 2),
+            null !== e ? (r = Ql(e, r)) : ((r = _l(r, a, i, null)).flags |= 2),
             (r.return = t),
             (n.return = t),
             (n.sibling = r),
@@ -5415,7 +5415,7 @@
                 za(),
                 ui(hi),
                 ui(pi),
-                _a(),
+                qa(),
                 (r = t.stateNode).pendingContext &&
                   ((r.context = r.pendingContext), (r.pendingContext = null)),
                 (null !== e && null !== e.child) ||
@@ -5426,7 +5426,7 @@
               Ra(t);
               var a = Ma(La.current);
               if (((n = t.type), null !== e && null != t.stateNode))
-                _o(e, t, n, r), e.ref !== t.ref && (t.flags |= 128);
+                qo(e, t, n, r), e.ref !== t.ref && (t.flags |= 128);
               else {
                 if (!r) {
                   if (null === t.stateNode) throw Error(o(166));
@@ -5516,7 +5516,7 @@
                       : (e = c.createElementNS(e, n)),
                     (e[Kr] = t),
                     (e[$r] = r),
-                    qo(e, t),
+                    _o(e, t),
                     (t.stateNode = e),
                     (c = je(n, r)),
                     n)
@@ -5580,7 +5580,7 @@
                           "autoFocus" !== s &&
                           (l.hasOwnProperty(s)
                             ? null != d && "onScroll" === s && Tr("scroll", e)
-                            : null != d && A(e, s, d, c));
+                            : null != d && b(e, s, d, c));
                     }
                   switch (n) {
                     case "input":
@@ -5591,7 +5591,7 @@
                       break;
                     case "option":
                       null != r.value &&
-                        e.setAttribute("value", "" + q(r.value));
+                        e.setAttribute("value", "" + _(r.value));
                       break;
                     case "select":
                       (e.multiple = !!r.multiple),
@@ -5779,7 +5779,7 @@
               var t = e.flags;
               return 4096 & t ? ((e.flags = (-4097 & t) | 64), e) : null;
             case 3:
-              if ((za(), ui(hi), ui(pi), _a(), 0 !== (64 & (t = e.flags))))
+              if ((za(), ui(hi), ui(pi), qa(), 0 !== (64 & (t = e.flags))))
                 throw Error(o(285));
               return (e.flags = (-4097 & t) | 64), e;
             case 5:
@@ -5824,7 +5824,7 @@
             });
           }
         }
-        (qo = function (e, t) {
+        (_o = function (e, t) {
           for (var n = t.child; null !== n; ) {
             if (5 === n.tag || 6 === n.tag) e.appendChild(n.stateNode);
             else if (4 !== n.tag && null !== n.child) {
@@ -5839,7 +5839,7 @@
             (n.sibling.return = n.return), (n = n.sibling);
           }
         }),
-          (_o = function (e, t, n, r) {
+          (qo = function (e, t, n, r) {
             var a = e.memoizedProps;
             if (a !== r) {
               (e = t.stateNode), Ma(Pa.current);
@@ -6128,7 +6128,7 @@
             (n.sibling.return = n.return), (n = n.sibling);
           }
         }
-        function bs(e, t) {
+        function As(e, t) {
           if (ki && "function" === typeof ki.onCommitFiberUnmount)
             try {
               ki.onCommitFiberUnmount(Si, t);
@@ -6178,7 +6178,7 @@
               js(e, t);
           }
         }
-        function As(e) {
+        function bs(e) {
           (e.alternate = null),
             (e.child = null),
             (e.dependencies = null),
@@ -6288,7 +6288,7 @@
             }
             if (5 === i.tag || 6 === i.tag) {
               e: for (var s = e, l = i, c = l; ; )
-                if ((bs(s, c), null !== c.child && 4 !== c.tag))
+                if ((As(s, c), null !== c.child && 4 !== c.tag))
                   (c.child.return = c), (c = c.child);
                 else {
                   if (c === l) break e;
@@ -6313,7 +6313,7 @@
                   (i = i.child);
                 continue;
               }
-            } else if ((bs(e, i), null !== i.child)) {
+            } else if ((As(e, i), null !== i.child)) {
               (i.child.return = i), (i = i.child);
               continue;
             }
@@ -6375,7 +6375,7 @@
                       ? ve(n, l)
                       : "children" === s
                       ? ye(n, l)
-                      : A(n, s, l, t);
+                      : b(n, s, l, t);
                   }
                   switch (e) {
                     case "input":
@@ -6459,8 +6459,8 @@
         function Zs() {
           Qs = Vi() + 500;
         }
-        var qs,
-          _s = null,
+        var _s,
+          qs = null,
           Js = !1,
           Xs = null,
           Ks = null,
@@ -6525,8 +6525,8 @@
           var r = Gi();
           1 === t
             ? 0 !== (8 & Ms) && 0 === (48 & Ms)
-              ? bl(e)
-              : (gl(e, n), 0 === Ms && (Zs(), qi()))
+              ? Al(e)
+              : (gl(e, n), 0 === Ms && (Zs(), _i()))
             : (0 === (4 & Ms) ||
                 (98 !== r && 99 !== r) ||
                 (null === il ? (il = new Set([e])) : il.add(e)),
@@ -6576,11 +6576,11 @@
               n !== Ni && Ci(n);
             }
             15 === t
-              ? ((n = bl.bind(null, e)),
-                null === Bi ? ((Bi = [n]), (Wi = Ei(Mi, _i))) : Bi.push(n),
+              ? ((n = Al.bind(null, e)),
+                null === Bi ? ((Bi = [n]), (Wi = Ei(Mi, qi))) : Bi.push(n),
                 (n = Ni))
               : 14 === t
-              ? (n = Zi(99, bl.bind(null, e)))
+              ? (n = Zi(99, Al.bind(null, e)))
               : ((n = (function (e) {
                   switch (e) {
                     case 15:
@@ -6721,7 +6721,7 @@
             (e[n] = -1), (t &= ~r);
           }
         }
-        function bl(e) {
+        function Al(e) {
           if (0 !== (48 & Ms)) throw Error(o(327));
           if ((Dl(), e === Is && 0 !== (e.expiredLanes & Ds))) {
             var t = Ds,
@@ -6745,13 +6745,13 @@
             null
           );
         }
-        function Al(e, t) {
+        function bl(e, t) {
           var n = Ms;
           Ms |= 1;
           try {
             return e(t);
           } finally {
-            0 === (Ms = n) && (Zs(), qi());
+            0 === (Ms = n) && (Zs(), _i());
           }
         }
         function xl(e, t) {
@@ -6760,7 +6760,7 @@
           try {
             return e(t);
           } finally {
-            0 === (Ms = n) && (Zs(), qi());
+            0 === (Ms = n) && (Zs(), _i());
           }
         }
         function wl(e, t) {
@@ -6782,7 +6782,7 @@
                     yi();
                   break;
                 case 3:
-                  za(), ui(hi), ui(pi), _a();
+                  za(), ui(hi), ui(pi), qa();
                   break;
                 case 5:
                   Ra(r);
@@ -6889,19 +6889,19 @@
                         break e;
                       }
                       (l = void 0), (s = t);
-                      var b = a.pingCache;
+                      var A = a.pingCache;
                       if (
-                        (null === b
-                          ? ((b = a.pingCache = new ds()),
+                        (null === A
+                          ? ((A = a.pingCache = new ds()),
                             (l = new Set()),
-                            b.set(c, l))
-                          : void 0 === (l = b.get(c)) &&
-                            ((l = new Set()), b.set(c, l)),
+                            A.set(c, l))
+                          : void 0 === (l = A.get(c)) &&
+                            ((l = new Set()), A.set(c, l)),
                         !l.has(s))
                       ) {
                         l.add(s);
-                        var A = Ul.bind(null, a, c, s);
-                        c.then(A, A);
+                        var b = Ul.bind(null, a, c, s);
+                        c.then(b, b);
                       }
                       (f.flags |= 4096), (f.lanes = t);
                       break e;
@@ -6978,7 +6978,7 @@
           for (; null !== zs && !Oi(); ) Tl(zs);
         }
         function Tl(e) {
-          var t = qs(e.alternate, e, Rs);
+          var t = _s(e.alternate, e, Rs);
           (e.memoizedProps = e.pendingProps),
             null === t ? Ll(e) : (zs = t),
             (Ls.current = null);
@@ -7064,7 +7064,7 @@
               ((i = Ms),
               (Ms |= 32),
               (Ls.current = null),
-              (Ur = _t),
+              (Ur = qt),
               vr((s = gr())))
             ) {
               if ("selectionStart" in s)
@@ -7119,88 +7119,88 @@
               l = l || { start: 0, end: 0 };
             } else l = null;
             (Hr = { focusedElem: s, selectionRange: l }),
-              (_t = !1),
+              (qt = !1),
               (ul = null),
               (dl = !1),
-              (_s = r);
+              (qs = r);
             do {
               try {
                 zl();
               } catch (E) {
-                if (null === _s) throw Error(o(330));
-                Wl(_s, E), (_s = _s.nextEffect);
+                if (null === qs) throw Error(o(330));
+                Wl(qs, E), (qs = qs.nextEffect);
               }
-            } while (null !== _s);
-            (ul = null), (_s = r);
+            } while (null !== qs);
+            (ul = null), (qs = r);
             do {
               try {
-                for (s = e; null !== _s; ) {
-                  var b = _s.flags;
-                  if ((16 & b && ye(_s.stateNode, ""), 128 & b)) {
-                    var A = _s.alternate;
-                    if (null !== A) {
-                      var x = A.ref;
+                for (s = e; null !== qs; ) {
+                  var A = qs.flags;
+                  if ((16 & A && ye(qs.stateNode, ""), 128 & A)) {
+                    var b = qs.alternate;
+                    if (null !== b) {
+                      var x = b.ref;
                       null !== x &&
                         ("function" === typeof x
                           ? x(null)
                           : (x.current = null));
                     }
                   }
-                  switch (1038 & b) {
+                  switch (1038 & A) {
                     case 2:
-                      ws(_s), (_s.flags &= -3);
+                      ws(qs), (qs.flags &= -3);
                       break;
                     case 6:
-                      ws(_s), (_s.flags &= -3), Es(_s.alternate, _s);
+                      ws(qs), (qs.flags &= -3), Es(qs.alternate, qs);
                       break;
                     case 1024:
-                      _s.flags &= -1025;
+                      qs.flags &= -1025;
                       break;
                     case 1028:
-                      (_s.flags &= -1025), Es(_s.alternate, _s);
+                      (qs.flags &= -1025), Es(qs.alternate, qs);
                       break;
                     case 4:
-                      Es(_s.alternate, _s);
+                      Es(qs.alternate, qs);
                       break;
                     case 8:
-                      js(s, (l = _s));
+                      js(s, (l = qs));
                       var w = l.alternate;
-                      As(l), null !== w && As(w);
+                      bs(l), null !== w && bs(w);
                   }
-                  _s = _s.nextEffect;
+                  qs = qs.nextEffect;
                 }
               } catch (E) {
-                if (null === _s) throw Error(o(330));
-                Wl(_s, E), (_s = _s.nextEffect);
+                if (null === qs) throw Error(o(330));
+                Wl(qs, E), (qs = qs.nextEffect);
               }
-            } while (null !== _s);
+            } while (null !== qs);
             if (
               ((x = Hr),
-              (A = gr()),
-              (b = x.focusedElem),
+              (b = gr()),
+              (A = x.focusedElem),
               (s = x.selectionRange),
-              A !== b &&
-                b &&
-                b.ownerDocument &&
-                mr(b.ownerDocument.documentElement, b))
+              b !== A &&
+                A &&
+                A.ownerDocument &&
+                mr(A.ownerDocument.documentElement, A))
             ) {
               null !== s &&
-                vr(b) &&
-                ((A = s.start),
-                void 0 === (x = s.end) && (x = A),
-                "selectionStart" in b
-                  ? ((b.selectionStart = A),
-                    (b.selectionEnd = Math.min(x, b.value.length)))
+                vr(A) &&
+                ((b = s.start),
+                void 0 === (x = s.end) && (x = b),
+                "selectionStart" in A
+                  ? ((A.selectionStart = b),
+                    (A.selectionEnd = Math.min(x, A.value.length)))
                   : (x =
-                      ((A = b.ownerDocument || document) && A.defaultView) ||
+                      ((b = A.ownerDocument || document) && b.defaultView) ||
                       window).getSelection &&
                     ((x = x.getSelection()),
-                    (l = b.textContent.length),
+                    (l = A.textContent.length),
                     (w = Math.min(s.start, l)),
                     (s = void 0 === s.end ? w : Math.min(s.end, l)),
                     !x.extend && w > s && ((l = s), (s = w), (w = l)),
-                    (l = hr(b, w)),
-                    (a = hr(b, s)),
+                    (l = hr(A, w)),
+                    (a = hr(A, s)),
                     l &&
                       a &&
                       (1 !== x.rangeCount ||
@@ -7208,55 +7208,55 @@
                         x.anchorOffset !== l.offset ||
                         x.focusNode !== a.node ||
                         x.focusOffset !== a.offset) &&
-                      ((A = A.createRange()).setStart(l.node, l.offset),
+                      ((b = b.createRange()).setStart(l.node, l.offset),
                       x.removeAllRanges(),
                       w > s
-                        ? (x.addRange(A), x.extend(a.node, a.offset))
-                        : (A.setEnd(a.node, a.offset), x.addRange(A))))),
-                (A = []);
-              for (x = b; (x = x.parentNode); )
+                        ? (x.addRange(b), x.extend(a.node, a.offset))
+                        : (b.setEnd(a.node, a.offset), x.addRange(b))))),
+                (b = []);
+              for (x = A; (x = x.parentNode); )
                 1 === x.nodeType &&
-                  A.push({ element: x, left: x.scrollLeft, top: x.scrollTop });
+                  b.push({ element: x, left: x.scrollLeft, top: x.scrollTop });
               for (
-                "function" === typeof b.focus && b.focus(), b = 0;
-                b < A.length;
-                b++
+                "function" === typeof A.focus && A.focus(), A = 0;
+                A < b.length;
+                A++
               )
-                ((x = A[b]).element.scrollLeft = x.left),
+                ((x = b[A]).element.scrollLeft = x.left),
                   (x.element.scrollTop = x.top);
             }
-            (_t = !!Ur), (Hr = Ur = null), (e.current = n), (_s = r);
+            (qt = !!Ur), (Hr = Ur = null), (e.current = n), (qs = r);
             do {
               try {
-                for (b = e; null !== _s; ) {
-                  var S = _s.flags;
-                  if ((36 & S && vs(b, _s.alternate, _s), 128 & S)) {
-                    A = void 0;
-                    var k = _s.ref;
+                for (A = e; null !== qs; ) {
+                  var S = qs.flags;
+                  if ((36 & S && vs(A, qs.alternate, qs), 128 & S)) {
+                    b = void 0;
+                    var k = qs.ref;
                     if (null !== k) {
-                      var j = _s.stateNode;
-                      _s.tag,
-                        (A = j),
-                        "function" === typeof k ? k(A) : (k.current = A);
+                      var j = qs.stateNode;
+                      qs.tag,
+                        (b = j),
+                        "function" === typeof k ? k(b) : (k.current = b);
                     }
                   }
-                  _s = _s.nextEffect;
+                  qs = qs.nextEffect;
                 }
               } catch (E) {
-                if (null === _s) throw Error(o(330));
-                Wl(_s, E), (_s = _s.nextEffect);
+                if (null === qs) throw Error(o(330));
+                Wl(qs, E), (qs = qs.nextEffect);
               }
-            } while (null !== _s);
-            (_s = null), Fi(), (Ms = i);
+            } while (null !== qs);
+            (qs = null), Fi(), (Ms = i);
           } else e.current = n;
           if ($s) ($s = !1), (el = e), (tl = t);
           else
-            for (_s = r; null !== _s; )
-              (t = _s.nextEffect),
-                (_s.nextEffect = null),
-                8 & _s.flags &&
-                  (((S = _s).sibling = null), (S.stateNode = null)),
-                (_s = t);
+            for (qs = r; null !== qs; )
+              (t = qs.nextEffect),
+                (qs.nextEffect = null),
+                8 & qs.flags &&
+                  (((S = qs).sibling = null), (S.stateNode = null)),
+                (qs = t);
           if (
             (0 === (r = e.pendingLanes) && (Ks = null),
             1 === r ? (e === ol ? al++ : ((al = 0), (ol = e))) : (al = 0),
@@ -7272,25 +7272,25 @@
               );
             } catch (E) {}
           if ((gl(e, Vi()), Js)) throw ((Js = !1), (e = Xs), (Xs = null), e);
-          return 0 !== (8 & Ms) || qi(), null;
+          return 0 !== (8 & Ms) || _i(), null;
         }
         function zl() {
-          for (; null !== _s; ) {
-            var e = _s.alternate;
+          for (; null !== qs; ) {
+            var e = qs.alternate;
             dl ||
               null === ul ||
-              (0 !== (8 & _s.flags)
-                ? et(_s, ul) && (dl = !0)
-                : 13 === _s.tag && Os(e, _s) && et(_s, ul) && (dl = !0));
-            var t = _s.flags;
-            0 !== (256 & t) && gs(e, _s),
+              (0 !== (8 & qs.flags)
+                ? et(qs, ul) && (dl = !0)
+                : 13 === qs.tag && Os(e, qs) && et(qs, ul) && (dl = !0));
+            var t = qs.flags;
+            0 !== (256 & t) && gs(e, qs),
               0 === (512 & t) ||
                 $s ||
                 (($s = !0),
                 Zi(97, function () {
                   return Dl(), null;
                 })),
-              (_s = _s.nextEffect);
+              (qs = qs.nextEffect);
           }
         }
         function Dl() {
@@ -7351,7 +7351,7 @@
               (l.nextEffect = null),
               8 & l.flags && ((l.sibling = null), (l.stateNode = null)),
               (l = e);
-          return (Ms = t), qi(), !0;
+          return (Ms = t), _i(), !0;
         }
         function Bl(e, t, n) {
           da(e, (t = fs(0, (t = cs(n, t)), 1))),
@@ -7485,7 +7485,7 @@
           else
             e: switch (e) {
               case k:
-                return ql(n.children, i, a, t);
+                return _l(n.children, i, a, t);
               case R:
                 (s = 8), (i |= 16);
                 break;
@@ -7511,7 +7511,7 @@
                   ((e = Gl(19, n, t, i)).elementType = L), (e.lanes = a), e
                 );
               case N:
-                return _l(n, i, a, t);
+                return ql(n, i, a, t);
               case F:
                 return (
                   ((e = Gl(24, n, t, i)).elementType = F), (e.lanes = a), e
@@ -7547,10 +7547,10 @@
             t
           );
         }
-        function ql(e, t, n, r) {
+        function _l(e, t, n, r) {
           return ((e = Gl(7, e, r, t)).lanes = n), e;
         }
-        function _l(e, t, n, r) {
+        function ql(e, t, n, r) {
           return ((e = Gl(23, e, r, t)).elementType = N), (e.lanes = n), e;
         }
         function Jl(e, t, n) {
@@ -7638,7 +7638,7 @@
             if (1 === n.tag) {
               var c = n.type;
               if (vi(c)) {
-                n = Ai(n, c, l);
+                n = bi(n, c, l);
                 break e;
               }
             }
@@ -7757,7 +7757,7 @@
           if (!ac(t)) throw Error(o(200));
           return $l(e, t, null, n);
         }
-        (qs = function (e, t, n) {
+        (_s = function (e, t, n) {
           var r = t.lanes;
           if (null !== e)
             if (e.memoizedProps !== t.pendingProps || hi.current) No = !0;
@@ -7917,7 +7917,7 @@
               else {
                 if (
                   ((a = (i = t.stateNode).hydrate) &&
-                    ((Wa = qr(t.stateNode.containerInfo.firstChild)),
+                    ((Wa = _r(t.stateNode.containerInfo.firstChild)),
                     (Ba = t),
                     (a = Ua = !0)),
                   a)
@@ -7925,7 +7925,7 @@
                   if (null != (e = i.mutableSourceEagerHydrationData))
                     for (i = 0; i < e.length; i += 2)
                       ((a = e[i])._workInProgressVersionPrimary = e[i + 1]),
-                        qa.push(a);
+                        _a.push(a);
                   for (n = Ca(t, null, r, n), t.child = n; n; )
                     (n.flags = (-3 & n.flags) | 1024), (n = n.sibling);
                 } else Fo(e, t, r, n), Za();
@@ -8061,7 +8061,7 @@
                 (t.tag = 1),
                 vi(r) ? ((e = !0), xi(t)) : (e = !1),
                 aa(t, n),
-                ba(t, r, i),
+                Aa(t, r, i),
                 xa(t, r, i, n),
                 Qo(null, t, r, !0, e, n)
               );
@@ -8128,14 +8128,14 @@
                 null != (t = n.value) && oe(e, !!n.multiple, t, !1);
             }
           }),
-          (Ie = Al),
+          (Ie = bl),
           (ze = function (e, t, n, r, i) {
             var a = Ms;
             Ms |= 4;
             try {
               return Qi(98, e.bind(null, t, n, r, i));
             } finally {
-              0 === (Ms = a) && (Zs(), qi());
+              0 === (Ms = a) && (Zs(), _i());
             }
           }),
           (De = function () {
@@ -8148,7 +8148,7 @@
                       (e.expiredLanes |= 24 & e.pendingLanes), gl(e, Vi());
                     });
                 }
-                qi();
+                _i();
               })(),
               Dl());
           }),
@@ -8158,7 +8158,7 @@
             try {
               return e(t);
             } finally {
-              0 === (Ms = n) && (Zs(), qi());
+              0 === (Ms = n) && (Zs(), _i());
             }
           });
         var lc = { Events: [ri, ii, ai, Le, Me, Dl, { current: !1 }] },
@@ -8222,7 +8222,7 @@
             try {
               if (e) return Qi(99, e.bind(null, t));
             } finally {
-              (Ms = n), qi();
+              (Ms = n), _i();
             }
           }),
           (t.hydrate = function (e, t, n) {
@@ -8245,7 +8245,7 @@
               !0)
             );
           }),
-          (t.unstable_batchedUpdates = Al),
+          (t.unstable_batchedUpdates = bl),
           (t.unstable_createPortal = function (e, t) {
             return sc(
               e,
@@ -8296,8 +8296,8 @@
           g = n ? Symbol.for("react.lazy") : 60116,
           v = n ? Symbol.for("react.block") : 60121,
           y = n ? Symbol.for("react.fundamental") : 60117,
-          b = n ? Symbol.for("react.responder") : 60118,
-          A = n ? Symbol.for("react.scope") : 60119;
+          A = n ? Symbol.for("react.responder") : 60118,
+          b = n ? Symbol.for("react.scope") : 60119;
         function x(e) {
           if ("object" === typeof e && null !== e) {
             var t = e.$$typeof;
@@ -8399,8 +8399,8 @@
                   e.$$typeof === c ||
                   e.$$typeof === f ||
                   e.$$typeof === y ||
-                  e.$$typeof === b ||
                   e.$$typeof === A ||
+                  e.$$typeof === b ||
                   e.$$typeof === v))
             );
           }),
@@ -9652,12 +9652,12 @@
                         y = i.getBoundingClientRect().top;
                       if (!s || e.props.isDynamic) {
                         if (!(s = n.get(o))) return;
-                        var b = s.getBoundingClientRect();
-                        v = (g = b.top - y + r) + b.height;
+                        var A = s.getBoundingClientRect();
+                        v = (g = A.top - y + r) + A.height;
                       }
-                      var A = r - e.props.offset;
-                      (l = A >= Math.floor(g) && A < Math.floor(v)),
-                        (u = A < Math.floor(g) || A >= Math.floor(v));
+                      var b = r - e.props.offset;
+                      (l = b >= Math.floor(g) && b < Math.floor(v)),
+                        (u = b < Math.floor(g) || b >= Math.floor(v));
                     }
                     var x = n.getActiveLink();
                     if (u) {
@@ -10129,9 +10129,9 @@
           })();
           return function () {
             var n,
-              r = b(e);
+              r = A(e);
             if (t) {
-              var i = b(this).constructor;
+              var i = A(this).constructor;
               n = Reflect.construct(r, arguments, i);
             } else n = r.apply(this, arguments);
             return y(this, n);
@@ -10151,17 +10151,17 @@
             return e;
           })(e);
         }
-        function b(e) {
+        function A(e) {
           return (
-            (b = Object.setPrototypeOf
+            (A = Object.setPrototypeOf
               ? Object.getPrototypeOf
               : function (e) {
                   return e.__proto__ || Object.getPrototypeOf(e);
                 }),
-            b(e)
+            A(e)
           );
         }
-        var A = (function (e) {
+        var b = (function (e) {
           m(n, e);
           var t = v(n);
           function n() {
@@ -10212,7 +10212,7 @@
             n
           );
         })(i.default.PureComponent);
-        t.PrevArrow = A;
+        t.PrevArrow = b;
         var x = (function (e) {
           m(n, e);
           var t = v(n);
@@ -10516,12 +10516,12 @@
                     y < m;
                     y++
                   ) {
-                    var b = (y + 1) * d - 1,
-                      A = u ? b : (0, o.clamp)(b, 0, p - 1),
-                      x = A - (d - 1),
+                    var A = (y + 1) * d - 1,
+                      b = u ? A : (0, o.clamp)(A, 0, p - 1),
+                      x = b - (d - 1),
                       w = u ? x : (0, o.clamp)(x, 0, p - 1),
                       S = (0, a.default)({
-                        "slick-active": u ? h >= w && h <= A : h === w,
+                        "slick-active": u ? h >= w && h <= b : h === w,
                       }),
                       k = {
                         message: "dots",
@@ -10727,17 +10727,17 @@
               Object.defineProperty(e, r.key, r);
           }
         }
-        function b(e, t) {
+        function A(e, t) {
           return (
-            (b =
+            (A =
               Object.setPrototypeOf ||
               function (e, t) {
                 return (e.__proto__ = t), e;
               }),
-            b(e, t)
+            A(e, t)
           );
         }
-        function A(e) {
+        function b(e) {
           var t = (function () {
             if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
             if (Reflect.construct.sham) return !1;
@@ -10811,12 +10811,12 @@
               constructor: { value: e, writable: !0, configurable: !0 },
             })),
               Object.defineProperty(e, "prototype", { writable: !1 }),
-              t && b(e, t);
+              t && A(e, t);
           })(x, e);
           var t,
             n,
             f,
-            g = A(x);
+            g = b(x);
           function x(e) {
             var t;
             !(function (e, t) {
@@ -11009,14 +11009,14 @@
                   m = (0, s.getPreClones)(h) + (0, s.getPostClones)(h) + p,
                   g = (100 / t.props.slidesToShow) * m,
                   y = 100 / m,
-                  b =
+                  A =
                     (-y * ((0, s.getPreClones)(h) + t.state.currentSlide) * g) /
                     100;
                 return (
-                  t.props.centerMode && (b += (100 - (y * g) / 100) / 2),
+                  t.props.centerMode && (A += (100 - (y * g) / 100) / 2),
                   {
                     slideWidth: y + "%",
-                    trackStyle: { width: g + "%", left: b + "%" },
+                    trackStyle: { width: g + "%", left: A + "%" },
                   }
                 );
               }),
@@ -11415,15 +11415,15 @@
                   t.props.arrows &&
                     ((n = r.default.createElement(u.PrevArrow, y)),
                     (i = r.default.createElement(u.NextArrow, y)));
-                var b = null;
-                t.props.vertical && (b = { height: t.state.listHeight });
                 var A = null;
+                t.props.vertical && (A = { height: t.state.listHeight });
+                var b = null;
                 !1 === t.props.vertical
                   ? !0 === t.props.centerMode &&
-                    (A = { padding: "0px " + t.props.centerPadding })
+                    (b = { padding: "0px " + t.props.centerPadding })
                   : !0 === t.props.centerMode &&
-                    (A = { padding: t.props.centerPadding + " 0px" });
-                var x = v(v({}, b), A),
+                    (b = { padding: t.props.centerPadding + " 0px" });
+                var x = v(v({}, A), b),
                   w = t.props.touchMove,
                   S = {
                     className: "slick-list",
@@ -11579,7 +11579,7 @@
             var n = null != arguments[t] ? arguments[t] : {};
             t % 2
               ? d(Object(n), !0).forEach(function (t) {
-                  b(e, t, n[t]);
+                  A(e, t, n[t]);
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -11663,7 +11663,7 @@
             y(e)
           );
         }
-        function b(e, t, n) {
+        function A(e, t, n) {
           return (
             t in e
               ? Object.defineProperty(e, t, {
@@ -11676,7 +11676,7 @@
             e
           );
         }
-        var A = (0, l.canUseDOM)() && n(8153),
+        var b = (0, l.canUseDOM)() && n(8153),
           x = (function (e) {
             !(function (e, t) {
               if ("function" !== typeof t && null !== t)
@@ -11700,30 +11700,30 @@
                   if (!(e instanceof t))
                     throw new TypeError("Cannot call a class as a function");
                 })(this, d),
-                b(
+                A(
                   v((t = c.call(this, e))),
                   "innerSliderRefHandler",
                   function (e) {
                     return (t.innerSlider = e);
                   }
                 ),
-                b(v(t), "slickPrev", function () {
+                A(v(t), "slickPrev", function () {
                   return t.innerSlider.slickPrev();
                 }),
-                b(v(t), "slickNext", function () {
+                A(v(t), "slickNext", function () {
                   return t.innerSlider.slickNext();
                 }),
-                b(v(t), "slickGoTo", function (e) {
+                A(v(t), "slickGoTo", function (e) {
                   var n =
                     arguments.length > 1 &&
                     void 0 !== arguments[1] &&
                     arguments[1];
                   return t.innerSlider.slickGoTo(e, n);
                 }),
-                b(v(t), "slickPause", function () {
+                A(v(t), "slickPause", function () {
                   return t.innerSlider.pause("paused");
                 }),
-                b(v(t), "slickPlay", function () {
+                A(v(t), "slickPlay", function () {
                   return t.innerSlider.autoPlay("play");
                 }),
                 (t.state = { breakpoint: null }),
@@ -11737,7 +11737,7 @@
                 {
                   key: "media",
                   value: function (e, t) {
-                    A.register(e, t),
+                    b.register(e, t),
                       this._responsiveMediaHandlers.push({
                         query: e,
                         handler: t,
@@ -11781,7 +11781,7 @@
                   key: "componentWillUnmount",
                   value: function () {
                     this._responsiveMediaHandlers.forEach(function (e) {
-                      A.unregister(e.query, e.handler);
+                      b.unregister(e.query, e.handler);
                     });
                   },
                 },
@@ -12051,7 +12051,7 @@
             e
           );
         }
-        var b = function (e) {
+        var A = function (e) {
             var t, n, r, i, a;
             return (
               (r =
@@ -12080,7 +12080,7 @@
               }
             );
           },
-          A = function (e, t) {
+          b = function (e, t) {
             return e.key || t;
           },
           x = function (e) {
@@ -12130,11 +12130,11 @@
                     );
                   })(v(v({}, e), {}, { index: f })),
                   g = p.props.className || "",
-                  y = b(v(v({}, e), {}, { index: f }));
+                  y = A(v(v({}, e), {}, { index: f }));
                 if (
                   (n.push(
                     i.default.cloneElement(p, {
-                      key: "original" + A(p, f),
+                      key: "original" + b(p, f),
                       "data-index": f,
                       className: (0, a.default)(y, g),
                       tabIndex: "-1",
@@ -12152,10 +12152,10 @@
                   x <= (0, o.getPreClones)(e) &&
                     l !== e.slidesToShow &&
                     ((t = -x) >= c && (p = d),
-                    (y = b(v(v({}, e), {}, { index: t }))),
+                    (y = A(v(v({}, e), {}, { index: t }))),
                     r.push(
                       i.default.cloneElement(p, {
-                        key: "precloned" + A(p, t),
+                        key: "precloned" + b(p, t),
                         "data-index": t,
                         tabIndex: "-1",
                         className: (0, a.default)(y, g),
@@ -12169,10 +12169,10 @@
                     )),
                     l !== e.slidesToShow &&
                       ((t = l + f) < u && (p = d),
-                      (y = b(v(v({}, e), {}, { index: t }))),
+                      (y = A(v(v({}, e), {}, { index: t }))),
                       s.push(
                         i.default.cloneElement(p, {
-                          key: "postcloned" + A(p, t),
+                          key: "postcloned" + b(p, t),
                           "data-index": t,
                           tabIndex: "-1",
                           className: (0, a.default)(y, g),
@@ -12488,8 +12488,8 @@
             g = e.lazyLoadedList;
           if (t && n) return {};
           var v,
-            b,
             A,
+            b,
             x = a,
             w = {},
             E = {},
@@ -12516,28 +12516,28 @@
                 : x >= s &&
                   ((v = x - s), i ? s % p !== 0 && (v = 0) : (v = s - h)),
               !i && x + h >= s && (v = s - h),
-              (b = j(o(o({}, e), {}, { slideIndex: x }))),
-              (A = j(o(o({}, e), {}, { slideIndex: v }))),
-              i || (b === A && (x = v), (b = A)),
+              (A = j(o(o({}, e), {}, { slideIndex: x }))),
+              (b = j(o(o({}, e), {}, { slideIndex: v }))),
+              i || (A === b && (x = v), (A = b)),
               c && (g = g.concat(u(o(o({}, e), {}, { currentSlide: x })))),
               m
                 ? ((w = {
                     animating: !0,
                     currentSlide: v,
-                    trackStyle: k(o(o({}, e), {}, { left: b })),
+                    trackStyle: k(o(o({}, e), {}, { left: A })),
                     lazyLoadedList: g,
                     targetSlide: C,
                   }),
                   (E = {
                     animating: !1,
                     currentSlide: v,
-                    trackStyle: S(o(o({}, e), {}, { left: A })),
+                    trackStyle: S(o(o({}, e), {}, { left: b })),
                     swipeLeft: null,
                     targetSlide: C,
                   }))
                 : (w = {
                     currentSlide: v,
-                    trackStyle: S(o(o({}, e), {}, { left: A })),
+                    trackStyle: S(o(o({}, e), {}, { left: b })),
                     lazyLoadedList: g,
                     targetSlide: C,
                   });
@@ -12617,8 +12617,8 @@
             h = t.swiped,
             m = t.swiping,
             g = t.slideCount,
-            b = t.slidesToScroll,
-            A = t.infinite,
+            A = t.slidesToScroll,
+            b = t.infinite,
             x = t.touchObject,
             w = t.swipeEvent,
             k = t.listHeight,
@@ -12639,11 +12639,11 @@
             s && (x.swipeLength = T);
             var L = (l ? -1 : 1) * (x.curX > x.startX ? 1 : -1);
             s && (L = x.curY > x.startY ? 1 : -1);
-            var M = Math.ceil(g / b),
+            var M = Math.ceil(g / A),
               I = v(t.touchObject, s),
               z = x.swipeLength;
             return (
-              A ||
+              b ||
                 (((0 === u && ("right" === I || "down" === I)) ||
                   (u + 1 >= M && ("left" === I || "up" === I)) ||
                   (!y(t) && ("left" === I || "up" === I))) &&
@@ -12683,7 +12683,7 @@
             g = t.infinite;
           if (!n) return r && c(e), {};
           var y = l ? u / s : a / s,
-            b = v(i, l),
+            A = v(i, l),
             w = {
               dragging: !1,
               edgeDragged: !1,
@@ -12697,16 +12697,16 @@
           if (!i.swipeLength) return w;
           if (i.swipeLength > y) {
             var S, E;
-            c(e), p && p(b);
+            c(e), p && p(A);
             var C = g ? m : h;
-            switch (b) {
+            switch (A) {
               case "left":
               case "up":
-                (E = C + x(t)), (S = d ? A(t, E) : E), (w.currentDirection = 0);
+                (E = C + x(t)), (S = d ? b(t, E) : E), (w.currentDirection = 0);
                 break;
               case "right":
               case "down":
-                (E = C - x(t)), (S = d ? A(t, E) : E), (w.currentDirection = 1);
+                (E = C - x(t)), (S = d ? b(t, E) : E), (w.currentDirection = 1);
                 break;
               default:
                 S = C;
@@ -12718,7 +12718,7 @@
           }
           return w;
         };
-        var b = function (e) {
+        var A = function (e) {
           for (
             var t = e.infinite ? 2 * e.slideCount : e.slideCount,
               n = e.infinite ? -1 * e.slidesToShow : 0,
@@ -12732,9 +12732,9 @@
               (r += Math.min(e.slidesToScroll, e.slidesToShow));
           return i;
         };
-        t.getNavigableIndexes = b;
-        var A = function (e, t) {
-          var n = b(e),
+        t.getNavigableIndexes = A;
+        var b = function (e, t) {
+          var n = A(e),
             r = 0;
           if (t > n[n.length - 1]) t = n[n.length - 1];
           else
@@ -12747,7 +12747,7 @@
             }
           return t;
         };
-        t.checkNavigable = A;
+        t.checkNavigable = b;
         var x = function (e) {
           var t = e.centerMode
             ? e.slideWidth * Math.floor(e.slidesToShow / 2)
@@ -12901,8 +12901,8 @@
               !0 === o)
             ) {
               (v = a ? r + E(e) : r), (n = y && y.children[v]), (t = 0);
-              for (var b = 0; b < v; b++)
-                t -= y && y.children[b] && y.children[b].offsetWidth;
+              for (var A = 0; A < v; A++)
+                t -= y && y.children[A] && y.children[A].offsetWidth;
               (t -= parseInt(e.centerPadding)),
                 (t += n && (d - n.offsetWidth) / 2);
             }
@@ -13083,9 +13083,9 @@
             this.updater.enqueueForceUpdate(this, e, "forceUpdate");
           }),
           (v.prototype = g.prototype);
-        var b = (y.prototype = new v());
-        (b.constructor = y), r(b, g.prototype), (b.isPureReactComponent = !0);
-        var A = { current: null },
+        var A = (y.prototype = new v());
+        (A.constructor = y), r(A, g.prototype), (A.isPureReactComponent = !0);
+        var b = { current: null },
           x = Object.prototype.hasOwnProperty,
           w = { key: !0, ref: !0, __self: !0, __source: !0 };
         function S(e, t, n) {
@@ -13112,7 +13112,7 @@
             key: o,
             ref: s,
             props: a,
-            _owner: A.current,
+            _owner: b.current,
           };
         }
         function k(e) {
@@ -13252,7 +13252,7 @@
         var M = {
           ReactCurrentDispatcher: T,
           ReactCurrentBatchConfig: { transition: 0 },
-          ReactCurrentOwner: A,
+          ReactCurrentOwner: b,
           IsSomeRendererActing: { current: !1 },
           assign: r,
         };
@@ -13299,7 +13299,7 @@
               l = e._owner;
             if (null != t) {
               if (
-                (void 0 !== t.ref && ((s = t.ref), (l = A.current)),
+                (void 0 !== t.ref && ((s = t.ref), (l = b.current)),
                 void 0 !== t.key && (o = "" + t.key),
                 e.type && e.type.defaultProps)
               )
@@ -13688,7 +13688,7 @@
         function y(e, t, n, r) {
           return { x: e, y: t, width: n, height: r };
         }
-        var b = (function () {
+        var A = (function () {
             function e(e) {
               (this.broadcastWidth = 0),
                 (this.broadcastHeight = 0),
@@ -13715,7 +13715,7 @@
               e
             );
           })(),
-          A = function (e, t) {
+          b = function (e, t) {
             var n = (function (e) {
               var t = e.x,
                 n = e.y,
@@ -13772,7 +13772,7 @@
                     );
                   var t = this.observations_;
                   t.has(e) ||
-                    (t.set(e, new b(e)),
+                    (t.set(e, new A(e)),
                     this.controller_.addObserver(this),
                     this.controller_.refresh());
                 }
@@ -13812,7 +13812,7 @@
                 if (this.hasActive()) {
                   var e = this.callbackCtx_,
                     t = this.activeObservations_.map(function (e) {
-                      return new A(e.target, e.broadcastRect());
+                      return new b(e.target, e.broadcastRect());
                     });
                   this.callback_.call(e, t, e), this.clearActive();
                 }
@@ -13909,9 +13909,9 @@
             g = null,
             v = -1,
             y = 5,
-            b = 0;
+            A = 0;
           (t.unstable_shouldYield = function () {
-            return t.unstable_now() >= b;
+            return t.unstable_now() >= A;
           }),
             (a = function () {}),
             (t.unstable_forceFrameRate = function (e) {
@@ -13921,12 +13921,12 @@
                   )
                 : (y = 0 < e ? Math.floor(1e3 / e) : 5);
             });
-          var A = new MessageChannel(),
-            x = A.port2;
-          (A.port1.onmessage = function () {
+          var b = new MessageChannel(),
+            x = b.port2;
+          (b.port1.onmessage = function () {
             if (null !== g) {
               var e = t.unstable_now();
-              b = e + y;
+              A = e + y;
               try {
                 g(!0, e) ? x.postMessage(null) : ((m = !1), (g = null));
               } catch (n) {
@@ -14359,15 +14359,10 @@
         "use strict";
         e.exports = n.p + "static/media/somos-portada.1f87966a418b44247713.jpg";
       },
-      5165: function (e, t, n) {
-        "use strict";
-        e.exports =
-          n.p + "static/media/apoyo-familias-1.a08664650e513942e9aa.png";
-      },
       2451: function (e, t, n) {
         "use strict";
         e.exports =
-          n.p + "static/media/apoyo-familias-2.bf35fdb08d3dea164744.jpg";
+          n.p + "static/media/apoyo-familias-2.aca377e4954f1b8ad83c.jpg";
       },
       7637: function (e, t, n) {
         "use strict";
@@ -14398,21 +14393,13 @@
         "use strict";
         e.exports = n.p + "static/media/centroDia-6.7156e82fa7acf119f426.jpg";
       },
-      6878: function (e, t, n) {
+      9140: function (e, t, n) {
         "use strict";
-        e.exports = n.p + "static/media/formacion-2.9bf680a150b08045d73e.jpg";
+        e.exports = n.p + "static/media/formacion-1.6efb50312b365fe9d351.jpg";
       },
-      5412: function (e, t, n) {
+      1654: function (e, t, n) {
         "use strict";
-        e.exports = n.p + "static/media/formacion-4.3981ebfaafb899a14634.png";
-      },
-      5866: function (e, t, n) {
-        "use strict";
-        e.exports = n.p + "static/media/formacion-5.4bb9e4ea800d2d33e55f.png";
-      },
-      7449: function (e, t, n) {
-        "use strict";
-        e.exports = n.p + "static/media/formacion.6efb50312b365fe9d351.jpg";
+        e.exports = n.p + "static/media/formacion-2.ff1a7fa55e6d77b7bb03.png";
       },
       4441: function (e, t, n) {
         "use strict";
@@ -14617,9 +14604,10 @@
         e.exports =
           n.p + "static/media/apoyo-familias-2.bf35fdb08d3dea164744.jpg";
       },
-      8039: function (e, t, n) {
+      6450: function (e, t, n) {
         "use strict";
-        e.exports = n.p + "static/media/diagnostico-2.d4a6f2b32d4dc3498277.png";
+        e.exports =
+          n.p + "static/media/apoyo-familias-4.bd9c2a63d8f26350c326.jpg";
       },
       3960: function (e, t, n) {
         "use strict";
@@ -14646,9 +14634,13 @@
         e.exports =
           n.p + "static/media/voluntariado10.b22e4ca8ed6f14cb7af6.png";
       },
+      101: function (e, t, n) {
+        "use strict";
+        e.exports = n.p + "static/media/voluntariado3.f366bf5b1249d359686d.jpg";
+      },
       2727: function (e, t, n) {
         "use strict";
-        e.exports = n.p + "static/media/voluntariado5.56f37ee488983abb7dd5.jpg";
+        e.exports = n.p + "static/media/voluntariado5.dec7f91296482557d404.jpg";
       },
       4306: function (e, t, n) {
         "use strict";
@@ -14657,10 +14649,6 @@
       9916: function (e, t, n) {
         "use strict";
         e.exports = n.p + "static/media/voluntariado7.c62ea73f9adcf24227f8.jpg";
-      },
-      3103: function (e, t, n) {
-        "use strict";
-        e.exports = n.p + "static/media/voluntariado9.016fd9bff3e8233c2176.jpg";
       },
     },
     t = {};
@@ -14829,7 +14817,7 @@
               r = t[1];
             if (w.length) {
               if (null != n) {
-                var a = b - n;
+                var a = A - n;
                 a &&
                   ((m = {
                     action: e,
@@ -14845,12 +14833,12 @@
         }
         n.addEventListener(s, g),
           n.addEventListener("hashchange", function () {
-            f(h()[1]) !== f(A) && g();
+            f(h()[1]) !== f(b) && g();
           });
         var v = i.Pop,
           y = h(),
-          b = y[0],
-          A = y[1],
+          A = y[0],
+          b = y[1],
           x = u(),
           w = u();
         function S(e) {
@@ -14874,7 +14862,7 @@
             void 0 === t && (t = null),
             a(
               r(
-                { pathname: A.pathname, hash: "", search: "" },
+                { pathname: b.pathname, hash: "", search: "" },
                 "string" === typeof e ? p(e) : e,
                 { state: t, key: d() }
               )
@@ -14892,18 +14880,18 @@
         function C(e) {
           v = e;
           var t = h();
-          (b = t[0]), (A = t[1]), x.call({ action: v, location: A });
+          (A = t[0]), (b = t[1]), x.call({ action: v, location: b });
         }
         function O(e) {
           l.go(e);
         }
-        null == b && ((b = 0), l.replaceState(r({}, l.state, { idx: b }), ""));
+        null == A && ((A = 0), l.replaceState(r({}, l.state, { idx: A }), ""));
         var P = {
           get action() {
             return v;
           },
           get location() {
-            return A;
+            return b;
           },
           createHref: S,
           push: function e(t, r) {
@@ -14914,7 +14902,7 @@
                 e(t, r);
               })
             ) {
-              var s = j(o, b + 1),
+              var s = j(o, A + 1),
                 c = s[0],
                 u = s[1];
               try {
@@ -14933,7 +14921,7 @@
                 e(t, n);
               })
             ) {
-              var o = j(a, b),
+              var o = j(a, A),
                 s = o[0],
                 c = o[1];
               l.replaceState(s, "", c), C(r);
@@ -15021,11 +15009,11 @@
       function y(e, t) {
         if (!e) throw new Error(t);
       }
-      function b(e, t, n) {
+      function A(e, t, n) {
         void 0 === n && (n = "/");
         var r = C(("string" === typeof t ? p(t) : t).pathname || "/", n);
         if (null == r) return null;
-        var i = A(e);
+        var i = b(e);
         !(function (e) {
           e.sort(function (e, t) {
             return e.score !== t.score
@@ -15051,7 +15039,7 @@
           a = k(i[o], r);
         return a;
       }
-      function A(e, t, n, r) {
+      function b(e, t, n, r) {
         return (
           void 0 === t && (t = []),
           void 0 === n && (n = []),
@@ -15070,7 +15058,7 @@
               s = n.concat(a);
             e.children &&
               e.children.length > 0 &&
-              (!0 === e.index && y(!1), A(e.children, t, s, o)),
+              (!0 === e.index && y(!1), b(e.children, t, s, o)),
               (null != e.path || e.index) &&
                 t.push({ path: o, score: S(o, e.index), routesMeta: s });
           }),
@@ -15346,16 +15334,16 @@
             [f, c, d]
           );
         "string" === typeof o && (o = p(o));
-        var b = o,
-          A = b.pathname,
-          x = void 0 === A ? "/" : A,
-          w = b.search,
+        var A = o,
+          b = A.pathname,
+          x = void 0 === b ? "/" : b,
+          w = A.search,
           S = void 0 === w ? "" : w,
-          k = b.hash,
+          k = A.hash,
           j = void 0 === k ? "" : k,
-          E = b.state,
+          E = A.state,
           O = void 0 === E ? null : E,
-          T = b.key,
+          T = A.key,
           L = void 0 === T ? "default" : T,
           M = (0, h.useMemo)(
             function () {
@@ -15397,7 +15385,7 @@
               (n = c);
           } else n = s;
           var u = n.pathname || "/",
-            d = b(e, { pathname: "/" === o ? u : u.slice(o.length) || "/" });
+            d = A(e, { pathname: "/" === o ? u : u.slice(o.length) || "/" });
           return N(
             d &&
               d.map(function (e) {
@@ -15509,7 +15497,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) es titular de todos los derechos sobre el software de la publicaci\xf3n digital as\xed como de los derechos de propiedad industrial e intelectual referidos a los contenidos que se incluyan, a excepci\xf3n de los derechos sobre productos y servicios de car\xe1cter p\xfablico que no son propiedad de esta empresa..",
           img: "",
         };
-      function q(e, t) {
+      function _(e, t) {
         return (
           t || (t = e.slice(0)),
           Object.freeze(
@@ -15517,7 +15505,7 @@
           )
         );
       }
-      var _ = n(7441),
+      var q = n(7441),
         J = n(9613),
         X = n.n(J);
       var K = function (e) {
@@ -15527,7 +15515,7 @@
                 h,
                 m,
                 g,
-                A,
+                b,
                 w = 0,
                 S = 0,
                 k = 0,
@@ -15647,10 +15635,10 @@
                       if (
                         ((B = (m = t(r, N, m, h, f + 1)).length),
                         0 < I &&
-                          ((A = s(3, m, (N = n(L, H, F)), r, O, C, B, h, f, c)),
+                          ((b = s(3, m, (N = n(L, H, F)), r, O, C, B, h, f, c)),
                           (H = N.join("")),
-                          void 0 !== A &&
-                            0 === (B = (m = A.trim()).length) &&
+                          void 0 !== b &&
+                            0 === (B = (m = b.trim()).length) &&
                             ((h = 0), (m = ""))),
                         0 < B)
                       )
@@ -15692,8 +15680,8 @@
                           (B = (H = H.replace(" ", ":")).length),
                         0 < I &&
                           void 0 !==
-                            (A = s(1, H, r, e, O, C, V.length, c, f, c)) &&
-                          0 === (B = (H = A.trim()).length) &&
+                            (b = s(1, H, r, e, O, C, V.length, c, f, c)) &&
+                          0 === (B = (H = b.trim()).length) &&
                           (H = "\0\0"),
                         (p = H.charCodeAt(0)),
                         (h = H.charCodeAt(1)),
@@ -15830,14 +15818,14 @@
               if (
                 ((N = r),
                 0 < I &&
-                  void 0 !== (A = s(2, V, N, e, O, C, B, c, f, c)) &&
-                  0 === (V = A).length)
+                  void 0 !== (b = s(2, V, N, e, O, C, B, c, f, c)) &&
+                  0 === (V = b).length)
               )
                 return Y + V + G;
               if (((V = N.join(",") + "{" + V + "}"), 0 !== T * P)) {
                 switch ((2 !== T || a(V, 2) || (P = 0), P)) {
                   case 111:
-                    V = V.replace(b, ":-moz-$1") + V;
+                    V = V.replace(A, ":-moz-$1") + V;
                     break;
                   case 112:
                     V =
@@ -15978,13 +15966,13 @@
                   l.charCodeAt(0) + l.charCodeAt(t))
                 ) {
                   case 226:
-                    l = o.replace(A, "tb");
+                    l = o.replace(b, "tb");
                     break;
                   case 232:
-                    l = o.replace(A, "tb-rl");
+                    l = o.replace(b, "tb-rl");
                     break;
                   case 220:
-                    l = o.replace(A, "lr");
+                    l = o.replace(b, "lr");
                     break;
                   default:
                     return o;
@@ -16151,8 +16139,8 @@
             g = /([\t\r\n ])*\f?&/g,
             v = /@(k\w+)\s*(\S*)\s*/,
             y = /::(place)/g,
-            b = /:(read-only)/g,
-            A = /[svh]\w+-[tblr]{2}/,
+            A = /:(read-only)/g,
+            b = /[svh]\w+-[tblr]{2}/,
             x = /\(\s*(.*)\s*\)/g,
             w = /([\s\S]*?);/g,
             S = /-self|flex-/g,
@@ -16275,7 +16263,7 @@
             "object" == typeof e &&
             "[object Object]" ===
               (e.toString ? e.toString() : Object.prototype.toString.call(e)) &&
-            !(0, _.typeOf)(e)
+            !(0, q.typeOf)(e)
           );
         },
         se = Object.freeze([]),
@@ -16455,19 +16443,19 @@
           );
         })(),
         ye = new Map(),
-        be = new Map(),
-        Ae = 1,
+        Ae = new Map(),
+        be = 1,
         xe = function (e) {
           if (ye.has(e)) return ye.get(e);
-          for (; be.has(Ae); ) Ae++;
-          var t = Ae++;
-          return ye.set(e, t), be.set(t, e), t;
+          for (; Ae.has(be); ) be++;
+          var t = be++;
+          return ye.set(e, t), Ae.set(t, e), t;
         },
         we = function (e) {
-          return be.get(e);
+          return Ae.get(e);
         },
         Se = function (e, t) {
-          t >= Ae && (Ae = t + 1), ye.set(e, t), be.set(t, e);
+          t >= be && (be = t + 1), ye.set(e, t), Ae.set(t, e);
         },
         ke = "style[" + fe + '][data-styled-version="5.3.5"]',
         je = new RegExp(
@@ -16890,14 +16878,14 @@
         );
       }
       var Ze = h.createContext(),
-        qe = (Ze.Consumer, h.createContext()),
-        _e = (qe.Consumer, new De()),
+        _e = (Ze.Consumer, h.createContext()),
+        qe = (_e.Consumer, new De()),
         Je = Qe();
       function Xe() {
-        return (0, h.useContext)(Ze) || _e;
+        return (0, h.useContext)(Ze) || qe;
       }
       function Ke() {
-        return (0, h.useContext)(qe) || Je;
+        return (0, h.useContext)(_e) || Je;
       }
       function $e(e) {
         var t = (0, h.useState)(e.stylisPlugins),
@@ -16938,7 +16926,7 @@
           h.createElement(
             Ze.Provider,
             { value: a },
-            h.createElement(qe.Provider, { value: o }, e.children)
+            h.createElement(_e.Provider, { value: o }, e.children)
           )
         );
       }
@@ -17072,9 +17060,9 @@
         };
       function yt(e, t, n) {
         var r = e[n];
-        gt(t) && gt(r) ? bt(r, t) : (e[n] = t);
+        gt(t) && gt(r) ? At(r, t) : (e[n] = t);
       }
-      function bt(e) {
+      function At(e) {
         for (
           var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1;
           r < t;
@@ -17087,8 +17075,8 @@
         }
         return e;
       }
-      var At = h.createContext();
-      At.Consumer;
+      var bt = h.createContext();
+      bt.Consumer;
       var xt = {};
       function wt(e, t, n) {
         var r = de(e),
@@ -17162,7 +17150,7 @@
                     }),
                     [r, i]
                   );
-                })(ut(t, (0, h.useContext)(At), o) || le, t, i),
+                })(ut(t, (0, h.useContext)(bt), o) || le, t, i),
                 f = d[0],
                 p = d[1],
                 m = (function (e, t, n, r) {
@@ -17175,24 +17163,24 @@
                 g = n,
                 v = p.$as || t.$as || p.as || t.as || u,
                 y = mt(v),
-                b = p !== t ? ie({}, t, {}, p) : t,
-                A = {};
-              for (var x in b)
+                A = p !== t ? ie({}, t, {}, p) : t,
+                b = {};
+              for (var x in A)
                 "$" !== x[0] &&
                   "as" !== x &&
                   ("forwardedAs" === x
-                    ? (A.as = b[x])
-                    : (l ? l(x, te, v) : !y || te(x)) && (A[x] = b[x]));
+                    ? (b.as = A[x])
+                    : (l ? l(x, te, v) : !y || te(x)) && (b[x] = A[x]));
               return (
                 t.style &&
                   p.style !== t.style &&
-                  (A.style = ie({}, t.style, {}, p.style)),
-                (A.className = Array.prototype
+                  (b.style = ie({}, t.style, {}, p.style)),
+                (b.className = Array.prototype
                   .concat(s, c, m !== c ? m : null, t.className, p.className)
                   .filter(Boolean)
                   .join(" ")),
-                (A.ref = g),
-                (0, h.createElement)(v, A)
+                (b.ref = g),
+                (0, h.createElement)(v, b)
               );
             })(m, e, t, v);
           };
@@ -17227,7 +17215,7 @@
               return this._foldedDefaultProps;
             },
             set: function (t) {
-              this._foldedDefaultProps = r ? bt({}, e.defaultProps, t) : t;
+              this._foldedDefaultProps = r ? At({}, e.defaultProps, t) : t;
             },
           }),
           (m.toString = function () {
@@ -17249,7 +17237,7 @@
       }
       var St = function (e) {
         return (function e(t, n, r) {
-          if ((void 0 === r && (r = le), !(0, _.isValidElementType)(n)))
+          if ((void 0 === r && (r = le), !(0, q.isValidElementType)(n)))
             return ge(1, String(n));
           var i = function () {
             return t(n, r, ct.apply(void 0, arguments));
@@ -17528,7 +17516,7 @@
             function s(e) {
               var t = Xe(),
                 n = Ke(),
-                r = (0, h.useContext)(At),
+                r = (0, h.useContext)(bt),
                 i = (0, h.useRef)(t.allocateGSInstance(a)).current;
               return (
                 t.server && l(i, e, t, r, n),
@@ -17557,26 +17545,26 @@
             h.memo(s);
           })(
             jt ||
-              (jt = q([
+              (jt = _([
                 "\n  *{\n box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: 'Montserrat', sans-serif;\n  }\n",
               ]))
           ),
           Qt.div(
             Et ||
-              (Et = q([
+              (Et = _([
                 "\n  width: 100%;\n  max-width: 1300px;\n  margin-right: auto;\n  margin-left: auto;\n  padding: 0 50px;\n\n  @media (max-width: 960px) {\n    padding: 0 30px;\n  }\n",
               ]))
           )),
-        qt = Qt.h1(
+        _t = Qt.h1(
           Ct ||
-            (Ct = q([
+            (Ct = _([
               "\n  margin-bottom: 15px;\n  text-transform: uppercase;\n  white-space: nowrap;\n",
             ]))
         ),
-        _t =
+        qt =
           (Qt.h1(
             Ot ||
-              (Ot = q([
+              (Ot = _([
                 "\n  font-size: clamp(2.3rem, 6vw, 4.5rem);\n  margin-bottom: 2rem;\n  color: ",
                 ";\n  width: 100%;\n  letter-spacing: 4px;\n  text-align: center;\n",
               ])),
@@ -17586,7 +17574,7 @@
           ),
           Qt.h3(
             Pt ||
-              (Pt = q([
+              (Pt = _([
                 "\n  font-size: clamp(1.3rem, 13vw, 3.1rem);\n  margin: ",
                 ";\n  margin-bottom: ",
                 ";\n  margin-top: ",
@@ -17616,7 +17604,7 @@
           )),
         Jt = Qt.span(
           Tt ||
-            (Tt = q([
+            (Tt = _([
               "\n  color: ",
               ";\n  font-size: ",
               ";\n  font-weight: ",
@@ -17662,7 +17650,7 @@
         ),
         Xt = Qt.section(
           Lt ||
-            (Lt = q([
+            (Lt = _([
               "\n  padding: ",
               ";\n  margin: ",
               ";\n  background: ",
@@ -17722,7 +17710,7 @@
         ),
         Kt = Qt.section(
           Mt ||
-            (Mt = q([
+            (Mt = _([
               "\n  padding: ",
               ";\n  margin: ",
               ";\n  background: ",
@@ -17782,7 +17770,7 @@
         ),
         $t = Qt.div(
           It ||
-            (It = q([
+            (It = _([
               "\n  display: flex;\n  justify-content: ",
               ";\n  align-items: ",
               ";\n  gap: ",
@@ -17854,7 +17842,7 @@
         en =
           (Qt.div(
             zt ||
-              (zt = q([
+              (zt = _([
                 "\n  display: flex;\n  flex-direction: column;\n  justify-content: ",
                 ";\n  align-items: ",
                 ";\n  gap: ",
@@ -17920,13 +17908,13 @@
           ),
           Qt.button(
             Dt ||
-              (Dt = q([
+              (Dt = _([
                 '\n  border-radius: 4px;\n  background: none;\n  white-space: nowrap;\n  padding: 10px 1.25rem;\n  font-size: 16px;\n  color: #fff;\n  outline: none;\n  border: 2px solid #fff;\n  cursor: pointer;\n  overflow: hidden;\n  position: relative;\n\n  &:before {\n    background: #fff;\n    content: "";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    z-index: -1;\n    transition: all 0.6s ease;\n    width: 100%;\n    height: 0%;\n    transform: translate(-50%, -50%) rotate(45deg);\n  }\n\n  &:hover:before {\n    height: 500%;\n  }\n\n  &:hover {\n    color: black;\n  }\n',
               ]))
           ),
           Qt.div(
             Rt ||
-              (Rt = q([
+              (Rt = _([
                 "\n  display: flex;\n  margin: 0 -15px -15px -15px;\n  flex-wrap: wrap;\n  align-items: center;\n  flex-direction: ",
                 ";\n  justify-content: space-around;\n\n  @media screen and (max-width: 768px) {\n    flex-direction: column-reverse;\n  }\n",
               ])),
@@ -17936,37 +17924,37 @@
           )),
         tn = Qt.div(
           Nt ||
-            (Nt = q([
+            (Nt = _([
               "\n  margin-bottom: 15px;\n  padding-right: 15px;\n  padding-left: 15px;\n  flex: 1;\n  z-index: 10;\n  display: flex;\n  flex-direction: column;\n\n  @media (max-width: 768px) {\n    max-width: 100% !important;\n    flex-basis: 100%;\n    justify-content: center;\n    align-items: center;\n  }\n",
             ]))
         ),
         nn = Qt.div(
           Ft ||
-            (Ft = q([
+            (Ft = _([
               "\n  max-width: 540px;\n  padding-top: 0;\n\n  @media (max-width: 768px) {\n    padding-bottom: 65px;\n    > h1,\n    p {\n      text-align: center;\n    }\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  > img {\n    width: 300px;\n    margin-left: -3px;\n  }\n",
             ]))
         ),
         rn = Qt.div(
           Bt ||
-            (Bt = q([
+            (Bt = _([
               '\n  display: flex;\n  justify-content: "flex-end";\n  max-height: 700px;\n  justify-content: center;\n  position: relative;\n',
             ]))
         ),
         an = Qt.div(
           Wt ||
-            (Wt = q([
+            (Wt = _([
               "\n  font-size: 2rem;\n  line-height: 2.5rem;\n  font-weight: 550;\n  letter-spacing: 1.4px;\n  margin-bottom: 1.3rem;\n  color: grey;\n",
             ]))
         ),
         on = Qt.img(
           Ut ||
-            (Ut = q([
+            (Ut = _([
               "\n  padding-right: 0;\n  border: 0;\n  max-width: 80%;\n  vertical-align: middle;\n  display: inline-block;\n  object-fit: cover;\n  max-height: 700px;\n  z-index: 1;\n  border-radius: 5%;\n",
             ]))
         ),
         sn = Qt.h2(
           Ht ||
-            (Ht = q([
+            (Ht = _([
               "\n  margin-bottom: 24px;\n  font-size: 2rem;\n  line-height: 1.1;\n  font-weight: 600;\n  color: ",
               ";\n\n  @media (max-width: 768px) {\n    text-align: center;\n  }\n  @media (max-width: 440px) {\n    font-size: 2rem;\n  }\n",
             ])),
@@ -17976,7 +17964,7 @@
         ),
         ln = Qt.p(
           Vt ||
-            (Vt = q([
+            (Vt = _([
               "\n  max-width: 440px;\n  margin-bottom: 35px;\n  line-height: 24px;\n  font-size: 1.5rem;\n  color: ",
               ";\n",
             ])),
@@ -17985,11 +17973,11 @@
           }
         ),
         cn = Qt.a(
-          Gt || (Gt = q(["\n  text-decoration: none;\n  color: grey;\n"]))
+          Gt || (Gt = _(["\n  text-decoration: none;\n  color: grey;\n"]))
         ),
         un = Qt.button(
           Yt ||
-            (Yt = q([
+            (Yt = _([
               "\n  text-decoration: none;\n  height: 4rem;\n  padding: 1rem 32px;\n  font-weight: 700;\n  font-size: 3rem;\n  line-height: 18px;\n  letter-spacing: 1.54px;\n  text-transform: uppercase;\n  cursor: pointer;\n  background: none;\n  color: ",
               ";\n  border-radius: 4px;\n  white-space: nowrap;\n  padding: ",
               ";\n  font-size: ",
@@ -18160,8 +18148,8 @@
         );
       });
       var yn,
-        bn,
         An,
+        bn,
         xn = function () {
           return (0, dn.jsx)("div", {
             class: "footer",
@@ -18314,7 +18302,7 @@
         },
         kn = Qt.nav(
           yn ||
-            (yn = q([
+            (yn = _([
               "\n  background-color: #071c2f;\n  height: 80px;\n  width: 100%;\n  position: sticky;\n  align-items: center;\n  top: 0;\n  z-index: 50;\n\n  .containerPrincipal {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .fa-angles-left {\n    margin-left: 50px;\n    font-size: 1.5rem;\n    color: #ffc0bc;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h2 {\n    margin-left: 10px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
             ]))
         );
@@ -18330,11 +18318,11 @@
         In,
         zn,
         Dn = Qt.div(
-          bn || (bn = q(["\n  display: flex;\n  align-items: center;\n"]))
+          An || (An = _(["\n  display: flex;\n  align-items: center;\n"]))
         ),
         Rn = Qt.nav(
-          An ||
-            (An = q([
+          bn ||
+            (bn = _([
               "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  text-transform: uppercase;\n\n  h1 {\n    text-align: center;\n    color: #ffc0bc;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 2.5rem;\n  }\n  img {\n    width: 10%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 120%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 2.2rem;\n    }\n  }\n  @media (max-width: 440px) {\n    display: flex;\n    flex-direction: end;\n    img {\n      width: 20%;\n    }\n    min-height: 10vh;\n    h1 {\n      display: none;\n    }\n  }\n",
             ]))
         ),
@@ -18364,36 +18352,36 @@
         },
         Fn = Qt.div(
           jn ||
-            (jn = q([
+            (jn = _([
               "\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 50%;\n  gap: 2rem;\n  white-space: nowrap;\n\n  @media (max-width: 440px) {\n  }\n",
             ]))
         ),
         Bn = Qt.div(
           En ||
-            (En = q([
+            (En = _([
               "\n  background: white;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
             ]))
         ),
         Wn = Qt.img(
           Cn ||
-            (Cn = q([
+            (Cn = _([
               "\n  width: 100%;\n  height: 100%;\n  object-fit: center;\n",
             ]))
         ),
         Un =
           (Qt.div(
             On ||
-              (On = q([
+              (On = _([
                 "\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 80%;\n  gap: 1rem;\n  white-space: nowrap;\n",
               ]))
           ),
           Qt.div(
             Pn ||
-              (Pn = q([
+              (Pn = _([
                 "\n  backface-visibility: hidden;\n  background: #e0e0e0;\n  border-radius: 10%;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
               ]))
           ),
-          Qt.img(Tn || (Tn = q(["\n  width: 100%;\n  object-fit: center;\n"]))),
+          Qt.img(Tn || (Tn = _(["\n  width: 100%;\n  object-fit: center;\n"]))),
           function (e) {
             var t = e.title,
               n = e.size,
@@ -18410,7 +18398,7 @@
           }),
         Hn = Qt.div(
           Ln ||
-            (Ln = q([
+            (Ln = _([
               "\n  display: flex;\n  width: 100%;\n  height: 7rem;\n  background: ",
               ";\n  text-align: center;\n  align-items: center;\n  line-height: 1.5rem;\n  font-size: ",
               ";\n  margin-bottom: ",
@@ -18439,8 +18427,8 @@
         Yn = n(4696),
         Qn = n(8514),
         Zn = n(8121),
-        qn = n(9133),
-        _n = n(945),
+        _n = n(9133),
+        qn = n(945),
         Jn = "_blank",
         Xn = [
           {
@@ -18486,7 +18474,7 @@
           {
             id: 6,
             name: "Plena Inclusi\xf3n Castilla La-Mancha",
-            src: _n,
+            src: qn,
             target: Jn,
             alt: "logo-plena-inclusion",
             url: "https://www.plenainclusionclm.org/",
@@ -18502,7 +18490,7 @@
           {
             id: 8,
             name: "Fundaci\xf3n Globalcaja",
-            src: qn,
+            src: _n,
             target: Jn,
             alt: "logo-agradecimiemto-a-colaboradores",
             url: "",
@@ -18532,13 +18520,13 @@
         },
         $n = Qt.div(
           Mn ||
-            (Mn = q([
+            (Mn = _([
               "\n  background-color: white;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 50px;\n  margin: 0 0 0px 0;\n  padding: 2rem;\n\n  section {\n    background-color: #071c2f;\n    height: 80px;\n    width: 100%;\n    color: #ffc0bc;\n    display: grid;\n    place-content: center;\n  }\n\n  h2 {\n    font-size: 28px;\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 0px;\n\n    section {\n      height: 60px;\n    }\n    h2 {\n      font-size: 24px;\n    }\n  }\n",
             ]))
         ),
         er = Qt.div(
           In ||
-            (In = q([
+            (In = _([
               "\n  background-color: white;\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  justify-content: center;\n  flex-direction: row-reverse;\n  align-items: center;\n  gap: 50px;\n\n  @media (max-width: 768px) {\n    grid-template-columns: repeat(3, 1fr);\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 5px;\n    padding: 30px 0;\n  }\n",
             ]))
         ),
@@ -18689,8 +18677,8 @@
         gr,
         vr,
         yr,
-        br,
         Ar,
+        br,
         xr,
         wr,
         Sr,
@@ -18722,7 +18710,7 @@
         },
         Ir = Qt.button(
           zn ||
-            (zn = q([
+            (zn = _([
               "\n  position: fixed;\n  bottom: 40px;\n  z-index: 1;\n  cursor: pointer;\n  color: grey;\n  right: 2%;\n  background: none;\n  border-radius: 50px;\n  padding: 0px;\n  border: none;\n  opacity: 0.7;\n  font-size: 4rem;\n  margin-right: 1.5rem;\n\n  @media (max-width: 440px) {\n    font-size: 3rem;\n  }\n",
             ]))
         ),
@@ -18782,51 +18770,51 @@
         },
         Rr = Qt.div(
           dr ||
-            (dr = q([
+            (dr = _([
               "\n  display: flex;\n  position: relative;\n  width: 15rem;\n  height: 20rem;\n  margin: auto;\n  justify-content: center;\n  gap: 2rem;\n  cursor: pointer;\n\n  @media (max-width: 440px) {\n    width: 9rem;\n    height: 10rem;\n  }\n",
             ]))
         ),
         Nr = Qt.div(
           fr ||
-            (fr = q([
+            (fr = _([
               "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  backface-visibility: hidden;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: 0.5s;\n",
             ]))
         ),
         Fr = Qt.img(
           pr ||
-            (pr = q([
+            (pr = _([
               "\n  position: absolute;\n  object-fit: cover;\n  width: 100%;\n  height: 100%;\n  transition: all 400ms ease-out;\n  will-change: transform;\n",
             ]))
         ),
         Br = Qt.div(
           hr ||
-            (hr = q([
+            (hr = _([
               "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #ffc0bc;\n  color: #071c2f;\n  display: flex;\n  border-radius: 10px;\n  flex-direction: column;\n  justify-content: center;\n  gap: 30%;\n  padding: 15px;\n  text-align: center;\n",
             ]))
         ),
         Wr = Qt.div(
           mr ||
-            (mr = q([
+            (mr = _([
               "\n  font-size: 1.5rem;\n  margin-top: 20px;\n  letter-spacing: 2px;\n",
             ]))
         ),
         Ur =
           (Qt.div(
             gr ||
-              (gr = q([
+              (gr = _([
                 "\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 45px;\n  line-height: 45px;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.4);\n  text-align: center;\n",
               ]))
           ),
           Qt.div(
             vr ||
-              (vr = q([
+              (vr = _([
                 "\n  border-radius: 10px;\n  letter-spacing: 1px;\n  font-size: 1rem;\n",
               ]))
           )),
         Hr =
           (Qt.img(
             yr ||
-              (yr = q([
+              (yr = _([
                 "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n",
               ]))
           ),
@@ -18836,8 +18824,8 @@
         Yr = (n(5614), n(8095), n(9821)),
         Qr = n(2358),
         Zr = (n(6358), n(9403)),
-        qr = n(2236),
-        _r = (n(1011), n(2637), n(5079)),
+        _r = n(2236),
+        qr = (n(1011), n(2637), n(5079)),
         Jr = n(8309),
         Xr = n(2186),
         Kr = n(5991),
@@ -18846,7 +18834,7 @@
           {
             id: 1,
             name: "Pilar Alarc\xf3n",
-            img: _r,
+            img: qr,
             profession: "Presidenta",
           },
           {
@@ -18912,22 +18900,22 @@
           });
         },
         ni = Qt.div(
-          br ||
-            (br = q([
+          Ar ||
+            (Ar = _([
               "\n  background: linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)),\n    url(",
               ");\n  background-size: 100%;\n  background-position: cover;\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  height: 100vh;\n  z-index: 20;\n",
             ])),
           Hr
         ),
         ri = Qt.section(
-          Ar ||
-            (Ar = q([
+          br ||
+            (br = _([
               "\n  padding: 5rem 18%;\n  background-color: #f7f7f7;\n\n  @media (max-width: 440px) {\n    padding: 2rem 5%;\n  }\n",
             ]))
         ),
         ii = Qt.div(
           xr ||
-            (xr = q([
+            (xr = _([
               "\n  display: flex;\n  gap: 5rem;\n  flex-wrap: wrap;\n\n  @media (max-width: 440px) {\n    gap: 2rem;\n  }\n",
             ]))
         ),
@@ -19007,41 +18995,41 @@
         pi = n(5717),
         hi = Qt.img(
           wr ||
-            (wr = q([
+            (wr = _([
               "\n  width: 100%;\n  height: 300px;\n  border-radius: 10px 10px 0 0;\n  object-fit: cover;\n  vertical-align: middle;\n",
             ]))
         ),
         mi = Qt.div(
           Sr ||
-            (Sr = q([
+            (Sr = _([
               "\n  background-color: white;\n  width: 90%;\n  display: flex !important;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  border-radius: 10px;\n  outline: none;\n  height: 430px;\n  border: solid 1px #071c2f;\n\n  @media (min-width: 440px) {\n    border: 1px solid #bebebe;\n  }\n",
             ]))
         ),
         gi = Qt($t)(
           kr ||
-            (kr = q([
+            (kr = _([
               "\n  & svg {\n    margin: 0 1rem;\n    cursor: pointer;\n  }\n\n  & svg:hover {\n    opacity: 0.7;\n    transition: opacity 0.2s ease-in;\n  }\n  @media (max-width: 960px) {\n    margin: 0 auto;\n  }\n",
             ]))
         ),
         vi = Qt(pi.Z)(
           jr ||
-            (jr = q([
+            (jr = _([
               "\n  width: 100%;\n\n  .slick-track {\n    display: flex;\n    padding: 30px;\n    gap: 3rem;\n  }\n  .slick-slide {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 1;\n    outline: none;\n  }\n\n  .slick-list {\n    overflow: hidden;\n  }\n",
             ]))
         ),
         yi = Qt.button(
           Er ||
-            (Er = q([
+            (Er = _([
               "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
-        bi = Qt.div(
+        Ai = Qt.div(
           Cr ||
-            (Cr = q([
+            (Cr = _([
               "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
-        Ai = function () {
+        bi = function () {
           var e = t((0, h.useState)(null), 2),
             n = e[0],
             r = e[1],
@@ -19062,7 +19050,7 @@
                 wrap: "wrap",
                 align: "center",
                 children: [
-                  (0, dn.jsx)(_t, {
+                  (0, dn.jsx)(qt, {
                     width: "auto",
                     inverse: !0,
                     margin: "2rem",
@@ -19094,7 +19082,7 @@
                     ref: r,
                     children: di.map(function (e, t) {
                       return (0,
-                      dn.jsxs)(mi, { children: [(0, dn.jsx)(hi, { src: e.image, alt: e.alt }), (0, dn.jsx)(Jt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, dn.jsx)(Jt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, dn.jsx)(bi, { children: (0, dn.jsx)(vn, { to: e.url, children: (0, dn.jsx)(yi, { onClick: o, children: "conoce m\xe1s" }) }) })] }, t);
+                      dn.jsxs)(mi, { children: [(0, dn.jsx)(hi, { src: e.image, alt: e.alt }), (0, dn.jsx)(Jt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, dn.jsx)(Jt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, dn.jsx)(Ai, { children: (0, dn.jsx)(vn, { to: e.url, children: (0, dn.jsx)(yi, { onClick: o, children: "conoce m\xe1s" }) }) })] }, t);
                     }),
                   }
                 )
@@ -19233,13 +19221,13 @@
         },
         ji = Qt.div(
           Or ||
-            (Or = q([
+            (Or = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n",
             ]))
         ),
         Ei = Qt.div(
           Pr ||
-            (Pr = q([
+            (Pr = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n\n  img {\n    height: 3rem;\n  }\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n",
             ]))
         ),
@@ -19269,7 +19257,7 @@
                   (0, dn.jsx)(tn, {
                     children: (0, dn.jsxs)(nn, {
                       children: [
-                        (0, dn.jsx)(qt, { children: f }),
+                        (0, dn.jsx)(_t, { children: f }),
                         (0, dn.jsx)(an, { children: d.text }),
                         (0, dn.jsx)(sn, { inverse: l, children: a }),
                         (0, dn.jsx)(ln, { inverse: l, children: i }),
@@ -19331,7 +19319,7 @@
         };
       Qt.div(
         Tr ||
-          (Tr = q([
+          (Tr = _([
             "\n  display: none;\n  background: #fff;\n  padding: 20px;\n  width: calc(100% - 40px);\n  max-width: 300px;\n  line-height: 150%;\n  border-radius: 10px;\n  position: fixed;\n  bottom: 20px;\n  left: 20px;\n  z-index: 100;\n  padding-top: 60px;\n  box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, 0.25);\n  text-align: center;\n\n  img {\n    max-width: 100px;\n    position: absolute;\n    top: -50px;\n    left: calc(50% - 50px);\n  }\n",
           ]))
       );
@@ -19357,7 +19345,7 @@
         },
         Ni = Qt.div(
           Lr ||
-            (Lr = q([
+            (Lr = _([
               "\n  /* nav-icon-5 */\n  .nav-icon-5 {\n    width: 30px;\n    height: 30px;\n    margin: 10px 10px;\n    position: relative;\n    cursor: pointer;\n    display: inline-block;\n  }\n  .nav-icon-5 span {\n    background-color: #ffc0bc;\n    position: absolute;\n    border-radius: 2px;\n    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);\n    width: 100%;\n    height: 3px;\n    transition-duration: 500ms;\n  }\n  .nav-icon-5 span:nth-child(1) {\n    top: 0px;\n    left: 0px;\n  }\n  .nav-icon-5 span:nth-child(2) {\n    top: 13px;\n    left: 0px;\n    opacity: 1;\n  }\n  .nav-icon-5 span:nth-child(3) {\n    bottom: 0px;\n    left: 0px;\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(1) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(2) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(3) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5.open span:nth-child(1) {\n    transform: rotate(45deg);\n    background-color: #ffc0bc;\n    top: 13px;\n  }\n  .nav-icon-5.open span:nth-child(2) {\n    opacity: 0;\n  }\n  .nav-icon-5.open span:nth-child(3) {\n    transform: rotate(-45deg);\n    top: 13px;\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
@@ -19404,29 +19392,29 @@
             }),
           });
         },
-        Hi = Qt.header(Pi || (Pi = q(["\n  margin: auto;\n"]))),
+        Hi = Qt.header(Pi || (Pi = _(["\n  margin: auto;\n"]))),
         Vi = Qt.div(
           Ti ||
-            (Ti = q([
+            (Ti = _([
               "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #ffc0bc;\n  width: 100%;\n  gap: 1.5rem;\n  margin: 1.5rem auto;\n",
             ]))
         ),
         Gi = Qt.div(
           Li ||
-            (Li = q([
+            (Li = _([
               "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size: 5rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
             ]))
         ),
         Yi = Qt.div(
           Mi ||
-            (Mi = q([
+            (Mi = _([
               "\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n  justify-content: end;\n  gap: 1rem;\n\n  h2 {\n    font-size: 2rem;\n    color: #071c2f;\n  }\n\n  i {\n    font-size: 1.5rem;\n    color: #071c2f;\n  }\n  @media (max-width: 440px) {\n    h2 {\n      font-size: 1.4rem;\n    }\n\n    i {\n      font-size: 0.8rem;\n    }\n  }\n",
             ]))
         ),
-        Qi = Qt.section(Ii || (Ii = q([""])));
+        Qi = Qt.section(Ii || (Ii = _([""])));
       var Zi,
-        qi,
         _i,
+        qi,
         Ji,
         Xi,
         Ki,
@@ -19493,22 +19481,13 @@
                         onClick: i,
                         children: "contacto",
                       }),
-                      (0, dn.jsx)(Fi.rU, {
-                        to: "contacto",
-                        spy: !0,
-                        smooth: !0,
-                        offset: -100,
-                        duration: 1e3,
-                        onClick: i,
-                        children: "hazte socio",
-                      }),
                     ],
                   }),
                   (0, dn.jsx)("div", {
                     className: "burguer",
                     children: (0, dn.jsx)(Ri, { clicked: n, handleClick: i }),
                   }),
-                  (0, dn.jsx)(ba, {
+                  (0, dn.jsx)(Aa, {
                     className: "initial ".concat(n ? " active" : ""),
                   }),
                 ],
@@ -19519,17 +19498,17 @@
         },
         ya = Qt.nav(
           zi ||
-            (zi = q([
+            (zi = _([
               "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 5%;\n    font-size: 2.2rem;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 5%;\n    font-weight: 400;\n  }\n\n  @media (max-width: 440px) {\n    h3 {\n      font-size: 1.6rem;\n    }\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #ffc0bc;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 1090px) {\n      background-color: #071c2f;\n      height: 45%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 3rem;\n        margin-top: 5%;\n        color: #ffc0bc;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
             ]))
         ),
-        ba = Qt.div(
+        Aa = Qt.div(
           Di ||
-            (Di = q([
+            (Di = _([
               "\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n  width: 30%;\n  height: 30%;\n  margin-left: 30px;\n  z-index: -1;\n  transition: all 0.8s ease;\n\n  &.active {\n    border-radius: 0 0 80% 0;\n    top: 0;\n    left: 0;\n    width: 50%;\n    height: 50%;\n  }\n",
             ]))
         ),
-        Aa = function () {
+        ba = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1];
@@ -19583,21 +19562,21 @@
           });
         },
         xa = Qt.div(
-          Zi || (Zi = q(["\n  width: 100%;\n  background: white;\n"]))
+          Zi || (Zi = _(["\n  width: 100%;\n  background: white;\n"]))
         ),
         wa = Qt.div(
-          qi ||
-            (qi = q([
+          _i ||
+            (_i = _([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 2rem;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
         Sa = Qt.div(
-          _i ||
-            (_i = q([
+          qi ||
+            (qi = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    margin-top: 7%;\n    font-size: 2rem;\n    font-style: italic;\n    color: #071c2f;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n    color: #071c2f;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n    color: #071c2f;\n  }\n",
             ]))
         ),
-        ka = Qt.div(Ji || (Ji = q(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
+        ka = Qt.div(Ji || (Ji = _(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
         ja = n(8335),
         Ea = n(8299),
         Ca = n(5025),
@@ -19608,9 +19587,7 @@
         Ma = n(3602),
         Ia = n(181),
         za = n(9302),
-        Da = n(4418),
-        Ra = n(3468),
-        Na = [
+        Da = [
           {
             id: 1,
             name: "Centro de Dia",
@@ -19628,7 +19605,7 @@
           {
             id: 3,
             name: "Viviendas con apoyo",
-            img: Da,
+            img: n(4418),
             alt: "viviendas-con-apoyo",
             url: "/viviendas-con-apoyo",
           },
@@ -19642,7 +19619,7 @@
           {
             id: 5,
             name: "Ocio y volunturariado",
-            img: Ra,
+            img: n(3468),
             alt: "ocio-y-voluntariado",
             url: "/ocio-y-voluntariado",
           },
@@ -19668,7 +19645,7 @@
             url: "/apoyo-familias",
           },
         ],
-        Fa = [
+        Ra = [
           {
             id: 1,
             name: "Instalaciones Centro",
@@ -19698,36 +19675,36 @@
             url: "/pdf-cuentas-21",
           },
         ],
-        Ba = function () {
-          var e = t((0, h.useState)(Fa), 1)[0];
+        Na = function () {
+          var e = t((0, h.useState)(Ra), 1)[0];
           return (0, dn.jsx)(dn.Fragment, {
             children: (0, dn.jsxs)("section", {
               children: [
                 (0, dn.jsx)(Un, { title: "Sobre Nosotros", marginBottom: !0 }),
-                (0, dn.jsx)(Wa, {
+                (0, dn.jsx)(Fa, {
                   children: e.map(function (e) {
                     return (0,
-                    dn.jsx)(Ua, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
+                    dn.jsx)(Ba, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               ],
             }),
           });
         },
-        Wa = Qt.div(
+        Fa = Qt.div(
           Xi ||
-            (Xi = q([
+            (Xi = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  margin-bottom: 4rem;\n",
             ]))
         ),
-        Ua = Qt.div(
+        Ba = Qt.div(
           Ki ||
-            (Ki = q([
+            (Ki = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ha = function () {
-          var e = t((0, h.useState)(Na), 1)[0];
+        Wa = function () {
+          var e = t((0, h.useState)(Da), 1)[0];
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Un, {
@@ -19737,42 +19714,42 @@
                 marginBottom: !0,
               }),
               (0, dn.jsx)("section", {
-                children: (0, dn.jsx)(Va, {
+                children: (0, dn.jsx)(Ua, {
                   children: e.map(function (e) {
                     return (0,
-                    dn.jsx)(Ga, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
+                    dn.jsx)(Ha, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               }),
             ],
           });
         },
-        Va = Qt.div(
+        Ua = Qt.div(
           $i ||
-            ($i = q([
+            ($i = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n  margin: 2rem auto;\n",
             ]))
         ),
-        Ga = Qt.div(
+        Ha = Qt.div(
           ea ||
-            (ea = q([
+            (ea = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ya = n(4830),
-        Qa = n(6219),
-        Za = n(8413),
-        qa = function () {
-          return (0, dn.jsx)(_a, {
+        Va = n(4830),
+        Ga = n(6219),
+        Ya = n(8413),
+        Qa = function () {
+          return (0, dn.jsx)(Za, {
             id: "testimonios",
-            children: (0, dn.jsxs)(Ja, {
+            children: (0, dn.jsxs)(_a, {
               children: [
                 (0, dn.jsx)(Un, { title: "Historias reales", inverse: !0 }),
-                (0, dn.jsxs)(Xa, {
+                (0, dn.jsxs)(qa, {
                   children: [
-                    (0, dn.jsxs)(Ka, {
+                    (0, dn.jsxs)(Ja, {
                       children: [
-                        (0, dn.jsx)("img", { src: Ya, alt: "rafa" }),
+                        (0, dn.jsx)("img", { src: Va, alt: "rafa" }),
                         (0, dn.jsx)("p", {
                           children:
                             "Gracias al trabajo, Rafael adquir\xf3 nuevas rutinas, cambiando sus h\xe1bitos y asumiendo nuevas responsabilidades, esto le ha permitido permitido cambiar su horizonte vital.",
@@ -19785,9 +19762,9 @@
                         }),
                       ],
                     }),
-                    (0, dn.jsxs)(Ka, {
+                    (0, dn.jsxs)(Ja, {
                       children: [
-                        (0, dn.jsx)("img", { src: Qa, alt: "quico" }),
+                        (0, dn.jsx)("img", { src: Ga, alt: "quico" }),
                         (0, dn.jsx)("p", {
                           children:
                             "Quico, quien tras varios contratos temporales, pas\xf3 a ser indefinido. Logr\xf3 la primera inserci\xf3n socio-laboral, con la estabilidad que ello supon\xeda para \xe9l, abri\xe9ndole a su vez la puerta a conseguir otros objetivos para mejorar su calidad de vida, por ejemplo independizarse.",
@@ -19798,9 +19775,9 @@
                         (0, dn.jsx)("p", { children: "Trabajador en Inkiele" }),
                       ],
                     }),
-                    (0, dn.jsxs)(Ka, {
+                    (0, dn.jsxs)(Ja, {
                       children: [
-                        (0, dn.jsx)("img", { src: Za, alt: "pedro" }),
+                        (0, dn.jsx)("img", { src: Ya, alt: "pedro" }),
                         (0, dn.jsx)("p", {
                           children:
                             "En la misma l\xednea de trabajo, el objetivo laboral de Pedro es trabajar lijando. Por ello, La empresa Arte Religioso Salmer\xf3n, le abri\xf3 sus puertas mediante unas pr\xe1cticas laborales para corroborar si sus habilidades y capacidades eran compatibles con el puesto de trabajo.",
@@ -19819,40 +19796,40 @@
             }),
           });
         },
-        _a = Qt.div(
-          ta || (ta = q(["\n  width: 100%;\n  background-color: white;\n"]))
+        Za = Qt.div(
+          ta || (ta = _(["\n  width: 100%;\n  background-color: white;\n"]))
         ),
-        Ja = Qt.div(
+        _a = Qt.div(
           na ||
-            (na = q([
+            (na = _([
               "\n  padding: 5%;\n  h2 {\n    font-size: 3rem;\n    text-align: center;\n  }\n\n  @media (max-width: 940px) {\n    width: 100%;\n  }\n",
             ]))
         ),
-        Xa = Qt.div(
+        qa = Qt.div(
           ra ||
-            (ra = q([
+            (ra = _([
               "\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 20px;\n  margin: 4rem 0;\n\n  @media (max-width: 940px) {\n    grid-template-columns: 1fr;\n  }\n",
             ]))
         ),
-        Ka = Qt.div(
+        Ja = Qt.div(
           ia ||
-            (ia = q([
+            (ia = _([
               "\n  border: 1px solid #eee;\n  border-radius: 8px;\n  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);\n  padding: 1rem;\n  line-height: 2rem;\n\n  img {\n    height: 100px;\n    border-radius: 50px;\n    margin-top: -2rem;\n    margin-left: 35%;\n  }\n\n  p {\n    font-size: 1.2rem;\n    margin: 12px;\n    font-weight: 500;\n  }\n\n  span {\n    font-size: 1rem;\n    font-weight: 900;\n    color: grey;\n  }\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    margin: 1rem;\n  }\n",
             ]))
         ),
-        $a = function () {
+        Xa = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(va, {}),
-              (0, dn.jsx)(Ha, {}),
-              (0, dn.jsx)(Ba, {}),
+              (0, dn.jsx)(Wa, {}),
+              (0, dn.jsx)(Na, {}),
               (0, dn.jsx)(Ci, G({}, si)),
-              (0, dn.jsx)(Aa, {}),
-              (0, dn.jsx)(qa, {}),
+              (0, dn.jsx)(ba, {}),
+              (0, dn.jsx)(Qa, {}),
               (0, dn.jsx)(Ci, G({}, li)),
               (0, dn.jsx)(Ci, G({}, ci)),
-              (0, dn.jsx)(Ai, {}),
+              (0, dn.jsx)(bi, {}),
               (0, dn.jsx)(ki, {}),
               (0, dn.jsx)(Kn, { size: !0, inverse: !0, marginBottom: !0 }),
               (0, dn.jsx)(Oi, {}),
@@ -19860,10 +19837,10 @@
             ],
           });
         },
-        eo = n(4534),
-        to = n(5629),
-        no = n(543),
-        ro = {
+        Ka = n(4534),
+        $a = n(5629),
+        eo = n(543),
+        to = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra entidad" },
@@ -19871,9 +19848,9 @@
             "AFYMOS fue fundada en el a\xf1o 1991 y los fines que perseguimos seg\xfan nuestros estatutos son:",
           description:
             "Los fines que la Asociaci\xf3n persigue son de car\xe1cter c\xedvico y social, de promoci\xf3n de los valores constitucionales y de los derechos humanos de las personas con discapacidad intelectual, f\xedsica o sensorial.  ",
-          img: eo,
+          img: Ka,
         },
-        io = {
+        no = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n" },
@@ -19881,9 +19858,9 @@
             "La Misi\xf3n de Afymos es contribuir, desde su compromiso \xe9tico, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de vida:",
           description:
             "En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan m\xe1s oportunidades de participar en la sociedad. ",
-          img: to,
+          img: $a,
         },
-        ao = {
+        ro = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Compromiso \xe9tico y valores" },
@@ -19891,15 +19868,15 @@
             "Para conseguir estas oportunidades, defendemos sus derechos como ciudadanos plenos, y reivindicamos una sociedad m\xe1s justa y solidaria.",
           description:
             "Todo esto no podemos hacerlo de cualquier manera, sino que tiene que estar orientado por nuestro compromiso \xe9tico, por nuestros valores y en la forma de intervenci\xf3n que est\xe1 basada en el Modelo de  Calidad de Calidad de Vida de Schalock y Verdugo.",
-          img: no,
+          img: eo,
         },
-        oo = function (e) {
-          return (0, dn.jsx)(so, {
+        io = function (e) {
+          return (0, dn.jsx)(ao, {
             id: "demo",
-            children: (0, dn.jsxs)(lo, {
+            children: (0, dn.jsxs)(oo, {
               wrapReverse: e,
               children: [
-                (0, dn.jsx)(uo, {
+                (0, dn.jsx)(lo, {
                   children: (0, dn.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -19911,7 +19888,7 @@
                     allowFullScreen: !0,
                   }),
                 }),
-                (0, dn.jsxs)(co, {
+                (0, dn.jsxs)(so, {
                   children: [
                     (0, dn.jsx)("p", { children: "Un d\xeda en Afymos" }),
                     (0, dn.jsx)("p", {
@@ -19928,40 +19905,40 @@
             }),
           });
         },
-        so = Qt.div(
+        ao = Qt.div(
           aa ||
-            (aa = q([
+            (aa = _([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        lo = Qt.div(
+        oo = Qt.div(
           oa ||
-            (oa = q([
+            (oa = _([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        co = Qt.div(
+        so = Qt.div(
           sa ||
-            (sa = q([
+            (sa = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n\n  p:nth-child(1) {\n    font-size: 1.8rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.2rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        uo = Qt.div(la || (la = q(["\n  margin: auto;\n"]))),
-        fo = function () {
+        lo = Qt.div(la || (la = _(["\n  margin: auto;\n"]))),
+        co = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Sn, { title: "Nosotros" }),
               (0, dn.jsx)(Un, { title: "Nuestra Entidad", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, to), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, no), {}, { reverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, ro), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, io), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ao), {}, { inverse: !0 })),
-              (0, dn.jsx)(oo, { wrapReverse: !0 }),
+              (0, dn.jsx)(io, { wrapReverse: !0 }),
               (0, dn.jsx)(Kn, { inverse: !0 }),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        po = {
+        uo = {
           id: "politicaPrivacidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -19971,7 +19948,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) con CIF G13159173 y domicilio social en CL. PEDRO ARIAS, 87 C.P. 13630 de SOCUELLAMOS (CIUDAD REAL), con direcci\xf3n de correo afymos@gmail.com",
           img: "",
         },
-        ho = {
+        fo = {
           id: "politicaPrivacidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -19981,7 +19958,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) garantiza en todo momento el \xedntegro y pleno cumplimiento de las obligaciones dispuestas por la normativa de protecci\xf3n de datos y de servicios de la sociedad de la informaci\xf3n, as\xed como por cualquier otra Ley o norma que complemente o sustituya a las anteriores.",
           img: "",
         },
-        mo = {
+        po = {
           id: "politicaPrivacidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -19992,33 +19969,33 @@
             "Para impulsar la asistencia social, promoci\xf3n y asesoramiento a discapacitados as\xed como a sus familiares, fomentar la igualdad de oportunidades entre personas con discapacidad y sin ella.  Para gestionar la formaci\xf3n ocupacional dirigida a su inserci\xf3n laboral, programas para garantizar la autonom\xeda personal, terapias rehabilitadoras, as\xed como llevar a cabo cualquier otra actividad formativa o l\xfadica en beneficio de los miembros de nuestra Asociaci\xf3n.Para prestar el apoyo y la atenci\xf3n que necesitan los residentes de las viviendas, como ser\xeda la formaci\xf3n orientada al desarrollo de la autonom\xeda en la vivienda, ayudar a desarrollar sus habilidades en su d\xeda a d\xeda, apoyos y cuidados de car\xe1cter m\xe9dico-sanitario, actuaciones para promover el desarrollo psico-social, as\xed como participar en los talleres y dem\xe1s actividades que lleva a cabo el centro teniendo en cuenta sus caracter\xedsticas y condiciones.Para asesorar y orientar a los socios y sus familias, as\xed como cualquier otra acci\xf3n que forme, informe o divulgue sobre cualquier aspecto que ata\xf1a a los intereses de los asociados. Como llevar a cabo la correspondiente gesti\xf3n administrativa derivada de estas actuaciones. Para impartir formaci\xf3n tanto a personas con discapacidad intelectual as\xed como a profesionales relacionados con el sector. Para responder cualquier consulta a trav\xe9s del tel\xe9fono, correo electr\xf3nico o medios de comunicaci\xf3n electr\xf3nica, de la misma manera poder resolver cualquier duda, sugerencia, queja, reclamaci\xf3n, etc. relacionada con nuestros servicios, que puedan realizar a trav\xe9s de cualquier formulario dispuesto en nuestras instalaciones. Para gestionar la relaci\xf3n con los voluntarios y llevar a cabo las acciones oportunas. Para el mantenimiento de las relaciones con clientes, como ser\xeda, por ejemplo, la compra de productos de AFYMOS y la consiguiente gesti\xf3n derivada de la misma. Para gestionar las donaciones recibidas por esta Asociaci\xf3n y la correspondiente gesti\xf3n administrativa con estos donantes.Para el tratamiento de los datos personales de empresarios individuales y personas de contacto de empresas en su mantenimiento de relaciones, independientemente de que sean comerciales/transaccionales o no. Para gestionar los curr\xedculum vitae recibidos y poder as\xed participar en los diferentes procesos de selecci\xf3n de personal que se lleven a cabo en la entidad..",
           img: "",
         },
-        go = function () {
+        ho = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "politica Privacidad" }),
               (0, dn.jsx)(Un, { title: "Cookies y Privacidad", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, uo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, fo), {}, { reverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, po), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ho), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, mo), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        vo = n(6493),
-        yo = n(5900),
-        bo = {
+        mo = n(6493),
+        go = n(5900),
+        vo = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "El Servicio de Capacitaci\xf3n Afymos" },
           headline:
-            "Es un servicio de atenci\xf3n diurna que tienen como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
+            "Es un servicio de atenci\xf3n diurna que tiene como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
           description:
             "Facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones).",
-          img: vo,
+          img: mo,
         },
-        Ao = {
+        yo = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -20028,9 +20005,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodolog\xeda detrabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          img: yo,
+          img: go,
         },
-        xo = function () {
+        Ao = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
@@ -20039,17 +20016,17 @@
                 title: "Programa habilitaci\xf3n laboral",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, bo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ao), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, vo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, yo), {}, { reverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        wo = n(3494),
-        So = n(843),
-        ko = n(6808),
-        jo = {
+        bo = n(3494),
+        xo = n(843),
+        wo = n(6808),
+        So = {
           id: "centroDiaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20058,9 +20035,9 @@
             "El Centro de D\xeda Afymos es un recurso social de atenci\xf3n diurna dirigido a prestar atenci\xf3n especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
           description:
             "Pretendemos favorecer la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente \xedndole, temporales o permanentes, de diferente intensidad y frecuencia.",
-          img: wo,
+          img: bo,
         },
-        Eo = {
+        ko = {
           id: "centroDiaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20071,9 +20048,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Fomentamos la participaci\xf3n en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social, y contribuyendo a mejorar su calidad de vida. ",
-          img: So,
+          img: xo,
         },
-        Co = {
+        jo = {
           id: "centroDiaDataThree",
           reverse: !1,
           inverse: !1,
@@ -20084,26 +20061,26 @@
             "Dise\xf1amos un plan personal de apoyos y su plan de futuro personal, donde se recogen los principales objetivos a conseguir en diferentes \xe1mbitos de su vida",
           description:
             "Potenciaremos la utilizaci\xf3n de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
-          img: ko,
+          img: wo,
         },
-        Oo = function () {
+        Eo = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Centro de D\xeda" }),
               (0, dn.jsx)(Un, { title: "Nuestro Centro de d\xeda", size: !0 }),
+              (0, dn.jsx)(fn, G(G({}, So), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ko), {}, { reverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, jo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Eo), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Co), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, { size: !0, inverse: !0, marginBottom: !0 }),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Po = n(4441),
-        To = n(3208),
-        Lo = n(4058),
-        Mo = {
+        Co = n(4441),
+        Oo = n(3208),
+        Po = n(4058),
+        To = {
           id: "centroDiversidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -20112,9 +20089,9 @@
             "Cuenta con espacio \xfatil de 803,16 m\xb2 dividido en dos plantas.",
           description:
             "Nuestro Centro es un edificio que engloba m\xfaltiples actuaciones dirigidas a mejorar la Calidad de Vida de las personas con discapacidad. El edificio donde est\xe1 ubicado el nuestros servicios y recursos se denomina 'Centro de Atenci\xf3n a la Diversidad Funcional' y cuenta con unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el a\xf1o obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun as\xed seguiremos adapt\xe1ndolo para favorecer la orientaci\xf3n y la comunicaci\xf3n para personas con especiales dificultades en estos aspectos.",
-          img: Po,
+          img: Co,
         },
-        Io = {
+        Lo = {
           id: "centroDiversidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20123,9 +20100,9 @@
             "Contamos con numerosas salas adaptadas para llevar a cabo todos los servicios terapeuticos y de formaci\xf3n de ofrecemos",
           description:
             "Afymos est\xe1 acreditado como Centro de Formaci\xf3n para impartir Formaci\xf3n Profesional para el Empleo en Castilla-La Mancha, dependiente de la Consejer\xeda de Empresas, Econom\xeda y Empleo. Tiene tambi\xe9n como finalidad la cualificaci\xf3n de los profesionales del Espacio de Atenci\xf3n a la Diversidad Funcional, personas con discapacidad intelectual, formaci\xf3n para la comunidad, ponencias y convertirnos en un espacio en el que poder compartir buenas pr\xe1cticas y experiencias en la Atenci\xf3n a la Diversidad Funcional, llegando a ser centro pionero en este \xe1mbito.",
-          img: Lo,
+          img: Po,
         },
-        zo = {
+        Mo = {
           id: "centroDiversidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -20135,14 +20112,14 @@
           headline: "Centro de Atenci\xf3n a la Diversidad Funcional",
           description:
             "Este espacio, de manera global, se define como un conjunto de recursos especializados desde donde se ofrecen servicios y programas personalizados de capacitaci\xf3n y habilitaci\xf3n  individual, de apoyo a la independencia de las personas con diversidad funcional  en todos los \xe1mbitos de la vida cotidiana, dando a cada persona  las herramientas que precise para desarrollarse en todas las dimensiones del  Modelo de Calidad de Vida de Schalock y Verdugo, de manera que tome el control de su propia vida, favoreciendo as\xed el empoderamiento de las personas con Discapacidad Intelectual/Diversidad Funcional/ Especificidad/Dependencia.",
-          img: To,
+          img: Oo,
         },
-        Do = n(737),
-        Ro = n(8919),
-        No = n(9002),
-        Fo = n(1197),
-        Bo = n(556),
-        Wo = function (e) {
+        Io = n(737),
+        zo = n(8919),
+        Do = n(9002),
+        Ro = n(1197),
+        No = n(556),
+        Fo = function (e) {
           return (0, dn.jsx)(dn.Fragment, {
             children: (0, dn.jsx)("section", {
               children: (0, dn.jsxs)("div", {
@@ -20171,15 +20148,15 @@
                     children: [
                       (0, dn.jsx)("div", {
                         class: "item-slide",
+                        children: (0, dn.jsx)("img", { src: Io, alt: e.alt }),
+                      }),
+                      (0, dn.jsx)("div", {
+                        class: "item-slide",
+                        children: (0, dn.jsx)("img", { src: zo, alt: e.alt }),
+                      }),
+                      (0, dn.jsx)("div", {
+                        class: "item-slide",
                         children: (0, dn.jsx)("img", { src: Do, alt: e.alt }),
-                      }),
-                      (0, dn.jsx)("div", {
-                        class: "item-slide",
-                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
-                      }),
-                      (0, dn.jsx)("div", {
-                        class: "item-slide",
-                        children: (0, dn.jsx)("img", { src: No, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20189,17 +20166,17 @@
                       (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "1",
-                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: zo, alt: e.alt }),
                       }),
                       (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "2",
-                        children: (0, dn.jsx)("img", { src: Fo, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
                       }),
                       (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "3",
-                        children: (0, dn.jsx)("img", { src: Bo, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: No, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20208,7 +20185,7 @@
             }),
           });
         },
-        Uo = function () {
+        Bo = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
@@ -20217,18 +20194,18 @@
                 title: "Centro de atenci\xf3n a la Diversidad Funcional",
                 size: !0,
               }),
+              (0, dn.jsx)(fn, G(G({}, To), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Lo), {}, { reverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, Mo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Io), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, zo), {}, { inverse: !0 })),
-              (0, dn.jsx)(Wo, {}),
+              (0, dn.jsx)(Fo, {}),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Ho = n(6281),
-        Vo = n(6627),
-        Go = {
+        Wo = n(6281),
+        Uo = n(6627),
+        Ho = {
           id: "creaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20237,9 +20214,9 @@
             " financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
           description:
             "Desde 2017, nuestra Asociaci\xf3n es entidad promotora del Proyecto NUEVO CREA, programa dual de formaci\xf3n y empleo para personas con discapacidad intelectual.",
-          img: Ho,
+          img: Wo,
         },
-        Yo = {
+        Vo = {
           id: "creaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20248,14 +20225,14 @@
             "Durante 6 meses, de abril a septiembre, 8 personas con discapacidad trabajan en 7 empresas locales;",
           description:
             "Colegio Concertado Virgen de Loreto, Cabezuelo Foods, Grupo Asesor OTS, Josmoral, Transportes F\xe9lix e hijos, Cooperativa Cristo de la Vega y Afymos Asociaci\xf3n, con un contrato de formaci\xf3n en alternancia con el empleo. Simult\xe1neamente, se imparte una especialidad formativa de \u201cOperaciones Auxiliares en el Departamento de Administraci\xf3n y Recepci\xf3n para Personas con Discapacidad Intelectual\u201d.",
-          img: Vo,
+          img: Uo,
         },
-        Qo = function () {
-          return (0, dn.jsx)(Zo, {
+        Go = function () {
+          return (0, dn.jsx)(Yo, {
             id: "demo",
-            children: (0, dn.jsxs)(qo, {
+            children: (0, dn.jsxs)(Qo, {
               children: [
-                (0, dn.jsxs)(_o, {
+                (0, dn.jsxs)(Zo, {
                   children: [
                     (0, dn.jsx)("p", { children: "Proyecto CREA;" }),
                     (0, dn.jsx)("p", { children: "Nuestra filosof\xeda" }),
@@ -20265,7 +20242,7 @@
                     }),
                   ],
                 }),
-                (0, dn.jsx)(Jo, {
+                (0, dn.jsx)(_o, {
                   children: (0, dn.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -20281,42 +20258,42 @@
             }),
           });
         },
-        Zo = Qt.div(
+        Yo = Qt.div(
           ca ||
-            (ca = q([
+            (ca = _([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        qo = Qt.div(
+        Qo = Qt.div(
           ua ||
-            (ua = q([
+            (ua = _([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        _o = Qt.div(
+        Zo = Qt.div(
           da ||
-            (da = q([
+            (da = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    font-size: 2rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        Jo = Qt.div(fa || (fa = q(["\n  margin: auto;\n"]))),
-        Xo = function () {
+        _o = Qt.div(fa || (fa = _(["\n  margin: auto;\n"]))),
+        qo = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Proyecto CREA 2023" }),
-              (0, dn.jsx)(fn, G(G({}, Go), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Yo), {}, { reverse: !0 })),
-              (0, dn.jsx)(Qo, {}),
+              (0, dn.jsx)(fn, G(G({}, Ho), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Vo), {}, { reverse: !0 })),
+              (0, dn.jsx)(Go, {}),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Ko = n(8039),
-        $o = n(7878),
-        es = n(3960),
-        ts = {
+        Jo = n(6450),
+        Xo = n(7878),
+        Ko = n(3960),
+        $o = {
           id: "diagnosticoDataOne",
           reverse: !1,
           inverse: !1,
@@ -20327,9 +20304,9 @@
             "Este servicio tiene como objetivo valoraci\xf3n con tests estandarizados y pruebas psicom\xe9tricas objetivas en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
           description:
             "Nuestra valoraci\xf3n se lleva a cabo con tests estandarizados y pruebas psicom\xe9tricas como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
-          img: Ko,
+          img: Jo,
         },
-        ns = {
+        es = {
           id: "diagnosticoDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20337,9 +20314,9 @@
           headline: "\xbfC\xf3mo trabajamos?",
           description:
             "Se har\xe1n valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
-          img: es,
+          img: Ko,
         },
-        rs = {
+        ts = {
           id: "diagnosticoDataThree",
           reverse: !1,
           inverse: !1,
@@ -20347,22 +20324,22 @@
           headline: "Poner nombre a las necesidades de las personas",
           description:
             "Para ello, nuestros profesionales realizar\xe1n una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
-          img: $o,
+          img: Xo,
         },
-        is = function () {
+        ns = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Valoraci\xf3n y diagnostico" }),
+              (0, dn.jsx)(fn, G(G({}, $o), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, es), {}, { reverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, ts), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ns), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, rs), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        as = {
+        rs = {
           id: "donacionDataOne",
           reverse: !1,
           inverse: !1,
@@ -20379,22 +20356,21 @@
           alt: "ir a ruralvia",
           target: "_blank",
         },
-        os = function () {
+        is = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Donaciones" }),
               (0, dn.jsx)(Un, { title: "Crecemos contigo", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, as), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, rs), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, { inverse: !0, size: !0 }),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        ss = n(5165),
-        ls = n(2451),
-        cs = n(7637),
-        us = {
+        as = n(2451),
+        os = n(7637),
+        ss = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20404,45 +20380,33 @@
             "Ofrecemos asesoramiento y apoyo a familias de personas con cualquier tipo de discapacidad",
           description:
             "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas espec\xedficas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
-          img: ss,
+          img: as,
         },
-        ds = {
+        ls = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
           headline: "Apoyos que presta este servicio:",
           description:
             "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atenci\xf3n psicol\xf3gica, adem\xe1s, proporciamos informaci\xf3n y orientaci\xf3n tras un estudio minucioso sobre las necesidades de cada caso",
-          img: cs,
+          img: os,
         },
-        fs = {
-          reverse: !1,
-          inverse: !1,
-          topLine: { text: "Consulta sin compromiso a nuestros profesionales" },
-          headline: "A qui\xe9n va dirigido:",
-          description:
-            "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
-          img: ls,
-        },
-        ps = function () {
+        cs = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Servicio de atenci\xf3n a familias" }),
               (0, dn.jsx)(Un, { title: "Apoyo a familiares", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, us), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ds), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, fs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ss), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ls), {}, { reverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        hs = n(7449),
-        ms = n(6878),
-        gs = n(5412),
-        vs = n(5866),
-        ys = {
+        us = n(9140),
+        ds = n(1654),
+        fs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20452,43 +20416,19 @@
             "Estamos homologados por La Junta de Castilla la Mancha  en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
           description:
             "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos en personas con discapacidad intelectual.",
-          img: hs,
+          img: us,
         },
-        bs = {
-          reverse: !0,
-          inverse: !1,
-          topLine: {
-            text: "Certificado de Profesionalidad de Operaciones de Grabaci\xf3n y Tratamiento de Datos y Documentos 690 horas (Nivel 1) Garant\xeda Juvenil.",
-          },
-          headline:
-            "Este certificado fue realizado por 15 j\xf3venes menores de 30 a\xf1os. Debemos destacar que 6 de estos chicos ten\xedan discapacidad intelectual, y gracias a los apoyos brindados por los profesionales, lograron terminarlo con \xe9xito.",
-          description:
-            "Finalmente reciben un incentivo econ\xf3mico obtenido de las ganancias por las ventas de los productos elaborados..",
-          img: vs,
-        },
-        As = {
-          reverse: !1,
-          inverse: !1,
-          topLine: {
-            text: " Inserci\xf3n Laboral de Personas con Discapacidad (Nivel3) 480 horas.",
-          },
-          headline:
-            "Esta formaci\xf3n tiene como objetivo el intervenir en el entorno personal y sociolaboral de las personas con discapacidad aplicando la Metodolog\xeda de Empleo con Apoyo para facilitar el acceso y mantenimiento del puesto de trabajo.",
-          description:
-            "Realizamos el entrenamiento de las habilidades sociolaborales necesarias para la inserci\xf3n, manteniendo contactos con el entorno y colaborando en el an\xe1lisis de puestos de trabajo.",
-          img: ms,
-        },
-        xs = {
+        ps = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "PROGRAMA CREA" },
           headline:
-            "Nuestro Proyecto, \u201cPromoviendo la integraci\xf3n sociolaboral de las personas con discapacidad intelectual\u201d, tiene como objetivo la inserci\xf3n plena de las personas con discapacidad en la comunidad en la que viven.",
+            "Proyecto formaci\xf3n profesional y empleo en el seno de las empresas para personas con discapacidad.",
           description:
-            "Son 9 las personas contratadas por 8 empresas de la localidad durante 9 meses y nuestra labor consiste en ofrecer empleo con apoyo y formaci\xf3n inherente al puesto de trabajo a trav\xe9s del trabajo de una T\xe9cnico de Orientaci\xf3n e Integraci\xf3n Laboral",
-          img: gs,
+            "Este proyecto consiste en el mejor ejemplo de FORMACI\xd3N DUAL, puesto que combinan formaci\xf3n profesional en el \xe1mbito laboral con trabajo efectivo en la empresa, mediante larealizaci\xf3n de contratos de formaci\xf3n en alternancia.",
+          img: ds,
         },
-        ws = function () {
+        hs = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
@@ -20500,19 +20440,17 @@
                 title: "Fomentamos la formaci\xf3n",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, ys), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, bs), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, As), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, xs), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, fs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ps), {}, { reverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Ss = n(3523),
-        ks = n(3977),
-        js = n(9501),
-        Es = {
+        ms = n(3523),
+        gs = n(3977),
+        vs = n(9501),
+        ys = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n: AYUDARTE" },
@@ -20520,9 +20458,9 @@
             "Este programa tiene la finalidad de ofrecer Servicios Terap\xe9uticos de diferentes disciplinas con el fin de mejorar la calidad de vida de las personas.",
           description:
             "Contamos con profesionales de diferentes disciplinas para intervenir seg\xfan las necesidades de los usuarios y actualmente contamos con las los siguientes servicios terap\xe9uticos.",
-          img: wo,
+          img: bo,
         },
-        Cs = {
+        As = {
           id: "logopedia",
           reverse: !1,
           inverse: !0,
@@ -20535,7 +20473,7 @@
             "Realizo una entrevista con la familia y una evaluaci\xf3n inicial de la cual se elabora unos objetivos y se dise\xf1a una programaci\xf3n individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duraci\xf3n de 30-45 minutos, dependiendo de las necesidades de cada paciente.",
           img: Yr,
         },
-        Os = {
+        bs = {
           id: "fisioterapia",
           reverse: !1,
           inverse: !1,
@@ -20548,7 +20486,7 @@
             "En mi terapia llevo a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizo distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
           img: Zr,
         },
-        Ps = {
+        xs = {
           id: "terapia-ocupacional",
           reverse: !1,
           inverse: !0,
@@ -20561,7 +20499,7 @@
             "Enfoco mi trabajo en una intervenci\xf3n significativa con objetos pautados previamente con la persona y su familia, realizando actividades con prop\xf3sito claro y definido",
           img: Gr,
         },
-        Ts = {
+        ws = {
           id: "neuropsicologia",
           reverse: !1,
           inverse: !1,
@@ -20571,9 +20509,9 @@
           headline:
             "la neuropsicolog\xeda estudia las bases neuroanat\xf3micas en relaci\xf3n alos procesos mentales como: atenci\xf3n, emoci\xf3n, memoria, lenguaje y percepci\xf3n",
           description: " ",
-          img: Ss,
+          img: ms,
         },
-        Ls = {
+        Ss = {
           id: "psicopedagogia",
           reverse: !0,
           inverse: !1,
@@ -20584,9 +20522,9 @@
             "La terapia psicopedag\xf3gica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
           description:
             "Como psicopedagogas\xa0asesoramos, evaluamos y realizamos informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planificamos y dise\xf1amos propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas en el momento de aprender.",
-          img: ks,
+          img: gs,
         },
-        Ms = {
+        ks = {
           id: "auditiva",
           reverse: !1,
           inverse: !1,
@@ -20597,9 +20535,9 @@
             "La terapia de estimulaci\xf3n auditiva SENA es un tratamiento cuyo objetivo es mejorar la percepci\xf3n auditiva de la persona que lo recibe.",
           description:
             "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopat\xeda para comprobar el estado del canal auditivo, audiometr\xeda para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
-          img: qr,
+          img: _r,
         },
-        Is = {
+        js = {
           id: "visual",
           reverse: !1,
           inverse: !1,
@@ -20610,9 +20548,9 @@
             "La terapia visual consiste en la repetici\xf3n de una serie de ejercicios que consiguen crear nuevas conexiones neurol\xf3gicas y mejorar habilidades visuales alteradas.",
           description:
             "Evaluo el desarrollo y funcionamiento de la visi\xf3n desde el nacimiento. Para ello analizo habilidades como la acomodaci\xf3n, binocularidad (visi\xf3n en 3D), movimientos oculares y la percepci\xf3n visual..",
-          img: js,
+          img: vs,
         },
-        zs = {
+        Es = {
           id: "psicologia",
           reverse: !1,
           inverse: !1,
@@ -20625,27 +20563,27 @@
             "A nivel psicoeducativo puedo ayudar a las personas a entender sus propios procesos, situaciones personales, patolog\xedas, etc, para facilitar su propia adaptaci\xf3n al medio y mitigar sus estados de ansiedad e incertidumbre.",
           img: Qr,
         },
-        Ds = n(3829),
-        Rs = n(775),
-        Ns = n(5950),
-        Fs = n(7353),
-        Bs = n(900),
-        Ws = n(8663),
-        Us = "_blank",
-        Hs = [
+        Cs = n(3829),
+        Os = n(775),
+        Ps = n(5950),
+        Ts = n(7353),
+        Ls = n(900),
+        Ms = n(8663),
+        Is = "_blank",
+        zs = [
           {
             id: "logopedia",
             name: "Logopedia",
-            src: Ns,
-            target: Us,
+            src: Ps,
+            target: Is,
             alt: "pictograma-logopedia",
             url: "logopedia",
           },
           {
             id: "fisioterapia",
             name: "Fisioterapia",
-            src: Rs,
-            target: Us,
+            src: Os,
+            target: Is,
             alt: "pictograma-fisioterapia",
             url: "fisioterapia",
           },
@@ -20653,31 +20591,31 @@
             id: "terapia-ocupacional",
             name: "Terapia Ocupacional",
             src: n(7257),
-            target: Us,
+            target: Is,
             alt: "pictograma-terapia-ocupacional",
             url: "terapia-ocupacional",
           },
           {
             id: "psicopedagogia",
             name: "Psicopedagog\xeda",
-            src: Ws,
-            target: Us,
+            src: Ms,
+            target: Is,
             alt: "pictograma-psicopedagogia",
             url: "psicopedagogia",
           },
           {
             id: "neuropsicologia",
             name: "Neuropsicologia",
-            src: Fs,
-            target: Us,
+            src: Ts,
+            target: Is,
             alt: "pictograma-psicologia",
             url: "neuropsicologia",
           },
           {
             id: "auditiva",
             name: "Auditiva",
-            src: Ds,
-            target: Us,
+            src: Cs,
+            target: Is,
             alt: "terapia-auditiva",
             url: "auditiva",
           },
@@ -20685,30 +20623,30 @@
             id: "visual",
             name: "Visual",
             src: n(1933),
-            target: Us,
+            target: Is,
             alt: "terapia-auditiva",
             url: "visual",
           },
           {
             id: "psicologia",
             name: "Psicologia",
-            src: Bs,
-            target: Us,
+            src: Ls,
+            target: Is,
             alt: "terapia-psicologia",
             url: "psicologia",
           },
         ],
-        Vs = function () {
-          var e = t((0, h.useState)(Hs), 1)[0];
+        Ds = function () {
+          var e = t((0, h.useState)(zs), 1)[0];
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Un, { title: "Nuestras Terapias", size: !0 }),
               (0, dn.jsx)("section", {
-                children: (0, dn.jsx)(Gs, {
-                  children: (0, dn.jsx)(Ys, {
+                children: (0, dn.jsx)(Rs, {
+                  children: (0, dn.jsx)(Ns, {
                     children: e.map(function (e) {
                       return (0,
-                      dn.jsxs)(Qs, { value: e.name, children: [(0, dn.jsx)("h3", { children: e.name }), (0, dn.jsx)(Fi.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, dn.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
+                      dn.jsxs)(Fs, { value: e.name, children: [(0, dn.jsx)("h3", { children: e.name }), (0, dn.jsx)(Fi.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, dn.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
                     }),
                   }),
                 }),
@@ -20716,55 +20654,55 @@
             ],
           });
         },
-        Gs = Qt.div(
+        Rs = Qt.div(
           pa ||
-            (pa = q([
+            (pa = _([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1 {\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
-        Ys = Qt.div(
+        Ns = Qt.div(
           ha ||
-            (ha = q([
+            (ha = _([
               "\n  display: grid;\n  width: 100%;\n  height: 100%;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: 1fr;\n  margin: auto;\n  grid-gap: 5% 5%;\n  margin: 5% 20%;\n  justify-content: center;\n\n  @media (max-width: 768px) {\n    width: 70%;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: 1fr 1fr;\n    margin: auto;\n    grid-gap: 30px 30px;\n    margin: 5%;\n    margin-bottom: 15%;\n    width: 90%;\n  }\n",
             ]))
         ),
-        Qs =
+        Fs =
           (Qt.div(
             ma ||
-              (ma = q([
+              (ma = _([
                 "\n  display: flex;\n  width: 50%;\n  position: relative;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0px;\n",
               ]))
           ),
           Qt.div(
             ga ||
-              (ga = q([
+              (ga = _([
                 "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n\n  :hover {\n    border: 3px solid #ffc0bc;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
-        Zs = function () {
+        Bs = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Servicio de Terapia" }),
-              (0, dn.jsx)(Vs, {}),
+              (0, dn.jsx)(Ds, {}),
+              (0, dn.jsx)(fn, G(G({}, ys), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, As), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, bs), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, xs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Ss), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ws), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ks), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, js), {}, { inverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, Es), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Cs), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Os), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ps), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ls), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ts), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ms), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Is), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, zs), {}, { reverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        qs = n(9958),
-        _s = n(8540),
-        Js = n(5688),
-        Xs = {
+        Ws = n(9958),
+        Us = n(8540),
+        Hs = n(5688),
+        Vs = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -20775,9 +20713,9 @@
             "Este servicio se encarga de apoyar a las personas con discapacidad intelectual o del desarrollo que viven o quieran llegar a vivir de forma independiente.",
           description:
             "En nuestras viviendas reside un peque\xf1o grupo de personas con discapacidad intelectual, que aun gozando de autonom\xeda para el autocuidado,necesitan la prestaci\xf3n de apoyos a nivel personalizado para realizar el resto de actividades de la vida diaria y llevar una vida integrada en la comunidad.",
-          img: qs,
+          img: Ws,
         },
-        Ks = {
+        Gs = {
           id: "",
           reverse: !0,
           inverse: !1,
@@ -20786,9 +20724,9 @@
             "Facilitar un hogar lo m\xe1s normalizado posible, en el que se garantice y posibilite un adecuado desarrollo personal, desde la igualdad y la inclusi\xf3n social en la comunidad.",
           description:
             "Fomentar la participaci\xf3n activa y la toma de decisiones en lo relativo a las tareas dom\xe9sticas como al resto de actividades. Adquirir estabilidad y seguridad, en un entorno distinto al hogar familiar, entendi\xe9ndose \xe9stas de forma global y en todos los aspectos que afectan al ser humano (necesidades b\xe1sicas, salud, ocupaci\xf3n laboral,...). ",
-          img: _s,
+          img: Us,
         },
-        $s = {
+        Ys = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -20797,73 +20735,69 @@
             "El modelo metodol\xf3gico a seguir ser\xe1 basado en la Capacitaci\xf3n dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
           description:
             "Los principios metodol\xf3gicos ser\xe1n: integraci\xf3n, individualizaci\xf3n y optimizaci\xf3n. Se ofrecer\xe1 a las personas con especificidad la oportunidad de vivir de la manera m\xe1s aut\xf3noma posible, fomentando la participaci\xf3n activa de la persona objeto de nuestro apoyo en la comunidad de Socu\xe9llamos, desde la igualdad y la plena inclusi\xf3n social..",
-          img: Js,
+          img: Hs,
         },
-        el = function () {
+        Qs = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Servicio de atenci\xf3n a Viviendas" }),
               (0, dn.jsx)(Un, { title: "Apoyo acceso viviendas", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, Xs), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ks), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, $s), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Vs), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Gs), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Ys), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        tl = n(132),
-        nl = n(7725),
-        rl = n(9916),
-        il = n(3103),
-        al = n(2727),
-        ol = n(4306),
-        sl = {
+        Zs = n(132),
+        _s = n(7725),
+        qs = n(9916),
+        Js = n(101),
+        Xs = n(2727),
+        Ks = n(4306),
+        $s = {
           id: "voluntariadoOne",
           reverse: !1,
           inverse: !1,
           topLine: { text: "Servicio de Ocio y Voluntariado" },
           headline:
-            "Contando con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
+            "Contamos con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
           description:
-            "La novedad de este servicio es que ya no es \xfanicamente la Asociaci\xf3n quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando as\xed su autonom\xeda.",
-          img: tl,
+            "En este servicio no es \xfanicamente la Asociaci\xf3n la que oferta las actividades sino que se emplean los recursos de la comunidad con la finalidad de que la persona se integre en su entorno a trav\xe9s del ocio y el tiempo libre.",
+          img: Zs,
         },
-        ll = {
+        el = {
           id: "voluntariadoTwo",
           reverse: !0,
           inverse: !1,
-          topLine: { text: "Vacaciones" },
-          headline:
-            "Se organizan vacaciones al a\xf1o subvencionados tanto por FEAPS - IMSERSO",
-          description:
-            "A lo largo del a\xf1o, se ofertan estancias de fin de semana en casas o albergues rurales, con el fin de ofrecer unos d\xedas de vacaciones al mayor n\xfamero de usuarios posible.",
-          img: ol,
+          topLine: { text: "" },
+          headline: "Viajes y excursiones",
+          description: "",
+          img: Ks,
         },
-        cl = {
+        tl = {
           id: "voluntariadoThree",
           reverse: !1,
           inverse: !1,
           topLine: { text: "Mediaci\xf3n de Ocio" },
           headline:
-            "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
-          description:
-            "La novedad de este servicio es que ya no es \xfanicamente la Asociaci\xf3n quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando as\xed su autonom\xeda.",
-          img: al,
+            "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias.",
+          description: "",
+          img: Xs,
         },
-        ul = {
+        nl = {
           id: "voluntariadoFour",
           reverse: !0,
           inverse: !1,
           topLine: { text: "Ocio Compartido" },
           headline:
-            "Se trata de fomentar grupos de amigos formados por usuarios y voluntarios, que organicen ellos mismos qu\xe9 actividades quieren hacer y cu\xe1ndo, algo que resulta m\xe1s complicado con las actividades programadas",
-          description:
-            "La novedad de esta \xe1rea es la adaptaci\xf3n y libre elecci\xf3n de las actividades.",
-          img: nl,
+            "Se fomenta la participaci\xf3n en actividades grupaes de ocio, organizadas por ellos mismos con los apoyos profesionales necesarios.",
+          description: "",
+          img: _s,
         },
-        dl = {
+        rl = {
           id: "voluntariadoFive",
           reverse: !1,
           inverse: !1,
@@ -20872,9 +20806,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "Se organizan actividades tan variadas como actividades deportivas (senderismo\u2026), culturales (visitas a museos, cine, teatro\u2026) y actividades recreativas (bolera, salidas nocturnas\u2026).",
-          img: rl,
+          img: qs,
         },
-        fl = {
+        il = {
           id: "voluntariadoSix",
           reverse: !0,
           inverse: !1,
@@ -20883,9 +20817,9 @@
             "Es un proyecto creado por Afymos y financiado en parte por la Concejal\xeda de Bienestar Social de la localidad de Socu\xe9llamos.",
           description:
             "Urban Camp es un campamento urbano para 50 j\xf3venes (con y sin discapacidad) de la localidad de Socu\xe9llamos de edades comprendidas entre los 12 y 16 a\xf1os que naci\xf3 para dar respuesta a las necesidades de ocio de los j\xf3venes durante el periodo vacacional as\xed como para  ofrecer a las familias un recurso para la conciliaci\xf3n de la vida familiar y laboral durante esta \xe9poca del a\xf1o.",
-          img: il,
+          img: Js,
         },
-        pl = function () {
+        al = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Sn, { title: "Servicio de Ocio y Voluntariado" }),
@@ -20893,22 +20827,22 @@
                 title: "Nuestro programa de voluntariado",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, sl), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ll), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, cl), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ul), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, dl), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, fl), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, $s), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, el), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, tl), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, nl), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, rl), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, il), {}, { reverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         };
-      function hl(e, t) {
+      function ol(e, t) {
         if (!(e instanceof t))
           throw new TypeError("Cannot call a class as a function");
       }
-      function ml(e, t) {
+      function sl(e, t) {
         for (var n = 0; n < t.length; n++) {
           var r = t[n];
           (r.enumerable = r.enumerable || !1),
@@ -20917,25 +20851,25 @@
             Object.defineProperty(e, r.key, r);
         }
       }
-      function gl(e, t, n) {
+      function ll(e, t, n) {
         return (
-          t && ml(e.prototype, t),
-          n && ml(e, n),
+          t && sl(e.prototype, t),
+          n && sl(e, n),
           Object.defineProperty(e, "prototype", { writable: !1 }),
           e
         );
       }
-      function vl(e, t) {
+      function cl(e, t) {
         return (
-          (vl =
+          (cl =
             Object.setPrototypeOf ||
             function (e, t) {
               return (e.__proto__ = t), e;
             }),
-          vl(e, t)
+          cl(e, t)
         );
       }
-      function yl(e, t) {
+      function ul(e, t) {
         if ("function" !== typeof t && null !== t)
           throw new TypeError(
             "Super expression must either be null or a function"
@@ -20944,21 +20878,21 @@
           constructor: { value: e, writable: !0, configurable: !0 },
         })),
           Object.defineProperty(e, "prototype", { writable: !1 }),
-          t && vl(e, t);
+          t && cl(e, t);
       }
-      function bl(e) {
+      function dl(e) {
         return (
-          (bl = Object.setPrototypeOf
+          (dl = Object.setPrototypeOf
             ? Object.getPrototypeOf
             : function (e) {
                 return e.__proto__ || Object.getPrototypeOf(e);
               }),
-          bl(e)
+          dl(e)
         );
       }
-      function Al(e) {
+      function fl(e) {
         return (
-          (Al =
+          (fl =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
@@ -20971,11 +20905,11 @@
                     ? "symbol"
                     : typeof e;
                 }),
-          Al(e)
+          fl(e)
         );
       }
-      function xl(e, t) {
-        if (t && ("object" === Al(t) || "function" === typeof t)) return t;
+      function pl(e, t) {
+        if (t && ("object" === fl(t) || "function" === typeof t)) return t;
         if (void 0 !== t)
           throw new TypeError(
             "Derived constructors may only return object or undefined"
@@ -20988,7 +20922,7 @@
           return e;
         })(e);
       }
-      function wl(e) {
+      function hl(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -21006,22 +20940,22 @@
         })();
         return function () {
           var n,
-            r = bl(e);
+            r = dl(e);
           if (t) {
-            var i = bl(this).constructor;
+            var i = dl(this).constructor;
             n = Reflect.construct(r, arguments, i);
           } else n = r.apply(this, arguments);
-          return xl(this, n);
+          return pl(this, n);
         };
       }
-      var Sl = (function (e) {
-          yl(r, e);
-          var t = wl(r);
+      var ml = (function (e) {
+          ul(r, e);
+          var t = hl(r);
           function r() {
-            return hl(this, r), t.apply(this, arguments);
+            return ol(this, r), t.apply(this, arguments);
           }
           return (
-            gl(r, [
+            ll(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21064,15 +20998,15 @@
             r
           );
         })(h.Component),
-        kl = Sl,
-        jl = (function (e) {
-          yl(r, e);
-          var t = wl(r);
+        gl = ml,
+        vl = (function (e) {
+          ul(r, e);
+          var t = hl(r);
           function r() {
-            return hl(this, r), t.apply(this, arguments);
+            return ol(this, r), t.apply(this, arguments);
           }
           return (
-            gl(r, [
+            ll(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21115,15 +21049,15 @@
             r
           );
         })(h.Component),
-        El = jl,
-        Cl = (function (e) {
-          yl(r, e);
-          var t = wl(r);
+        yl = vl,
+        Al = (function (e) {
+          ul(r, e);
+          var t = hl(r);
           function r() {
-            return hl(this, r), t.apply(this, arguments);
+            return ol(this, r), t.apply(this, arguments);
           }
           return (
-            gl(r, [
+            ll(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21168,74 +21102,74 @@
             r
           );
         })(h.Component),
-        Ol = Cl,
-        Pl = function () {
+        bl = Al,
+        xl = function () {
           return (0, dn.jsx)(dn.Fragment, {
             children: (0, dn.jsxs)(W, {
               children: [
                 (0, dn.jsx)(F, {
                   path: "/terapias",
-                  element: (0, dn.jsx)(Zs, {}),
+                  element: (0, dn.jsx)(Bs, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/nosotros",
-                  element: (0, dn.jsx)(fo, {}),
+                  element: (0, dn.jsx)(co, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/apoyo-familias",
-                  element: (0, dn.jsx)(ps, {}),
+                  element: (0, dn.jsx)(cs, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/ocio-y-voluntariado",
-                  element: (0, dn.jsx)(pl, {}),
+                  element: (0, dn.jsx)(al, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/viviendas-con-apoyo",
-                  element: (0, dn.jsx)(el, {}),
+                  element: (0, dn.jsx)(Qs, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/centro-de-dia",
-                  element: (0, dn.jsx)(Oo, {}),
+                  element: (0, dn.jsx)(Eo, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/proyecto-crea",
-                  element: (0, dn.jsx)(Xo, {}),
+                  element: (0, dn.jsx)(qo, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/valoracion-y-diagnostico",
-                  element: (0, dn.jsx)(is, {}),
+                  element: (0, dn.jsx)(ns, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/donaciones",
-                  element: (0, dn.jsx)(os, {}),
-                }),
-                (0, dn.jsx)(F, {
-                  path: "/servicio-capacitacion",
-                  element: (0, dn.jsx)(xo, {}),
-                }),
-                (0, dn.jsx)(F, {
-                  path: "/instalaciones-centro-diversidad",
-                  element: (0, dn.jsx)(Uo, {}),
-                }),
-                (0, dn.jsx)(F, {
-                  path: "/valoracion-y-diagnostico",
                   element: (0, dn.jsx)(is, {}),
                 }),
                 (0, dn.jsx)(F, {
+                  path: "/servicio-capacitacion",
+                  element: (0, dn.jsx)(Ao, {}),
+                }),
+                (0, dn.jsx)(F, {
+                  path: "/instalaciones-centro-diversidad",
+                  element: (0, dn.jsx)(Bo, {}),
+                }),
+                (0, dn.jsx)(F, {
+                  path: "/valoracion-y-diagnostico",
+                  element: (0, dn.jsx)(ns, {}),
+                }),
+                (0, dn.jsx)(F, {
                   path: "/organigrama",
-                  element: (0, dn.jsx)(Ol, {}),
+                  element: (0, dn.jsx)(bl, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/pdf-cuentas-20",
-                  element: (0, dn.jsx)(kl, {}),
+                  element: (0, dn.jsx)(gl, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/pdf-cuentas-21",
-                  element: (0, dn.jsx)(El, {}),
+                  element: (0, dn.jsx)(yl, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/formacion",
-                  element: (0, dn.jsx)(ws, {}),
+                  element: (0, dn.jsx)(hs, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/junta-directiva",
@@ -21243,21 +21177,21 @@
                 }),
                 (0, dn.jsx)(F, {
                   path: "/politica-privacidad",
-                  element: (0, dn.jsx)(go, {}),
+                  element: (0, dn.jsx)(ho, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/aviso-legal",
                   element: (0, dn.jsx)(zr, {}),
                 }),
-                (0, dn.jsx)(F, { path: "/", element: (0, dn.jsx)($a, {}) }),
+                (0, dn.jsx)(F, { path: "/", element: (0, dn.jsx)(Xa, {}) }),
               ],
             }),
           });
         };
       n(4164).render(
-        (0, dn.jsx)(gn, { children: (0, dn.jsx)(Pl, {}) }),
+        (0, dn.jsx)(gn, { children: (0, dn.jsx)(xl, {}) }),
         document.getElementById("root")
       );
     })();
 })();
-//# sourceMappingURL=main.ba0208c4.js.map
+//# sourceMappingURL=main.4f67b020.js.map

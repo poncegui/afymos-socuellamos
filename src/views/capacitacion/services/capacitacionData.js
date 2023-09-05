@@ -8,7 +8,7 @@ export const capacitacionDataOne = {
     text: "El Servicio de Capacitación Afymos",
   },
   headline:
-    "Es un servicio de atención diurna que tienen como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
+    "Es un servicio de atención diurna que tiene como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
   description:
     "Facilitar el aprendizaje de nuevas capacidades en todos los ámbitos de la vida de la persona (autonomía personal, relaciones interpersonales, utilización de los recursos comunitarios y capacidad de toma de decisiones).",
   img: capacitacion,

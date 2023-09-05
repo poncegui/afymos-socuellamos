@@ -37,7 +37,7 @@ function Navbar() {
           >
             contacto
           </Contact>
-          <Contact
+          {/* <Contact
             to="contacto"
             spy={true}
             smooth={true}
@@ -46,7 +46,7 @@ function Navbar() {
             onClick={handleClick}
           >
             hazte socio
-          </Contact>
+          </Contact> */}
         </div>
         <div className="burguer">
           <BurguerBtn clicked={clicked} handleClick={handleClick} />

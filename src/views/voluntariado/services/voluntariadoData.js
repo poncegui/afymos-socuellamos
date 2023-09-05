@@ -1,7 +1,7 @@
 import voluntariado1 from "../assets/images-voluntariado/voluntariado1.jpg";
 import voluntariado2 from "../assets/images-voluntariado/voluntariado10.png";
 import voluntariado3 from "../assets/images-voluntariado/voluntariado7.jpg";
-import voluntariado4 from "../assets/images-voluntariado/voluntariado9.jpg";
+import voluntariado4 from "../assets/images-voluntariado/voluntariado3.jpg";
 import voluntariado5 from "../assets/images-voluntariado/voluntariado5.jpg";
 import voluntariado6 from "../assets/images-voluntariado/voluntariado6.jpg";
 
@@ -13,9 +13,9 @@ export const voluntariadoOne = {
     text: "Servicio de Ocio y Voluntariado",
   },
   headline:
-    "Contando con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
+    "Contamos con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
   description:
-    "La novedad de este servicio es que ya no es únicamente la Asociación quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando así su autonomía.",
+    "En este servicio no es únicamente la Asociación la que oferta las actividades sino que se emplean los recursos de la comunidad con la finalidad de que la persona se integre en su entorno a través del ocio y el tiempo libre.",
   img: voluntariado1,
 };
 
@@ -24,12 +24,10 @@ export const voluntariadoTwo = {
   reverse: true,
   inverse: false,
   topLine: {
-    text: "Vacaciones",
+    text: "",
   },
-  headline:
-    "Se organizan vacaciones al año subvencionados tanto por FEAPS - IMSERSO",
-  description:
-    "A lo largo del año, se ofertan estancias de fin de semana en casas o albergues rurales, con el fin de ofrecer unos días de vacaciones al mayor número de usuarios posible.",
+  headline: "Viajes y excursiones",
+  description: "",
   img: voluntariado6,
 };
 
@@ -41,9 +39,8 @@ export const voluntariadoThree = {
     text: "Mediación de Ocio",
   },
   headline:
-    "Se pretende que el ocio sea lo más inclusivo posible, mediante el acompañamiento del Coordinador o personas voluntarias:",
-  description:
-    "La novedad de este servicio es que ya no es únicamente la Asociación quien oferta las actividades, sino que se emplean los recursos de la comunidad, con el fin de que el usuario no sea dependiente del Servicio, y fomentando así su autonomía.",
+    "Se pretende que el ocio sea lo más inclusivo posible, mediante el acompañamiento del Coordinador o personas voluntarias.",
+  description: "",
   img: voluntariado5,
 };
 
@@ -55,9 +52,8 @@ export const voluntariadoFour = {
     text: "Ocio Compartido",
   },
   headline:
-    "Se trata de fomentar grupos de amigos formados por usuarios y voluntarios, que organicen ellos mismos qué actividades quieren hacer y cuándo, algo que resulta más complicado con las actividades programadas",
-  description:
-    "La novedad de esta área es la adaptación y libre elección de las actividades.",
+    "Se fomenta la participación en actividades grupaes de ocio, organizadas por ellos mismos con los apoyos profesionales necesarios.",
+  description: "",
   img: voluntariado2,
 };
 

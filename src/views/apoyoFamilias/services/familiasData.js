@@ -1,6 +1,5 @@
-import apoyofamilia1 from "../assets/images-familias/apoyo-familias-1.png";
-import apoyofamilia2 from "../assets/images-familias/apoyo-familias-2.jpg";
-import apoyofamilia3 from "../assets/images-familias/apoyo-familias-3.jpg";
+import apoyofamilia1 from "../assets/images-familias/apoyo-familias-2.jpg";
+import apoyofamilia2 from "../assets/images-familias/apoyo-familias-3.jpg";
 
 export const familyDataOne = {
   reverse: false,
@@ -24,17 +23,5 @@ export const familyDataTwo = {
   headline: "Apoyos que presta este servicio:",
   description:
     "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atención psicológica, además, proporciamos información y orientación tras un estudio minucioso sobre las necesidades de cada caso",
-  img: apoyofamilia3,
-};
-
-export const familyDataThree = {
-  reverse: false,
-  inverse: false,
-  topLine: {
-    text: "Consulta sin compromiso a nuestros profesionales",
-  },
-  headline: "A quién va dirigido:",
-  description:
-    "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de Día, Servicio de Capacitación o Vivienda con Apoyo. Se prestará mayor intensidad a las familias en cuyo seno conviva una persona que además de discapacidad tenga necesidades específicas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situación de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos económicos, inmigrantes, etc.).",
   img: apoyofamilia2,
 };

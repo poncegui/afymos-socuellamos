@@ -20,8 +20,8 @@ const ProjectsFormacion = () => {
       <NavBarViews title="Centro de Formación" id="/formacion" />
       <TitleSection title="Fomentamos la formación" size />
       <ContentProjects {...formacionDataOne} inverse />
-      <ContentProjects {...formacionDataTwo} reverse />
-      <ContentProjects {...formacionDataThree} inverse />
+      {/* <ContentProjects {...formacionDataTwo} reverse />
+      <ContentProjects {...formacionDataThree} inverse /> */}
       <ContentProjects {...formacionDataFour} reverse />
       <PartnersList />
       <Footer />
