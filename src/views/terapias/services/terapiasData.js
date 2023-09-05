@@ -1,7 +1,7 @@
 import auditiva from "../../juntaDirectiva/assets/images-chart-png/chart17.png";
 import fisioterapia from "../../juntaDirectiva/assets/images-chart-png/chart16.png";
 import introduccion from "../../centroDia/assets/images-centroDia/centroDia-6.jpg";
-import logopedia from "../assets/images-terapias/combinada.png";
+import logopedia from "../../juntaDirectiva/assets/images-chart-png/chart13.png";
 import neuroPiscologia from "../assets/images-terapias/sala.png";
 import psicologia from "../../juntaDirectiva/assets/images-chart-png/chart14.png";
 import psicopedagogia from "../assets/images-terapias/combinada-2.png";
@@ -26,12 +26,12 @@ export const logopediaData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "LOGOPEDIA: conoce cómo trabajan nuestros profesionales Jorge Sánchez y Cristina Olivares",
+    text: "LOGOPEDIA: conoce cómo trabaja nuestra profesional Cristina Olivares",
   },
   headline:
     "La logopedia es la disciplina sanitaria encargada de la prevención, detección, evaluación,diagnóstico y tratamiento de los trastornos implicados en la comunicación humana",
   description:
-    "Realizamos una entrevista con la familia y una evaluación inicial de la cual se elabora unos objetivos y se diseña una programación individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duración de 30-45 minutos, dependiente de las necesidades de cada paciente.",
+    "Realizo una entrevista con la familia y una evaluación inicial de la cual se elabora unos objetivos y se diseña una programación individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duración de 30-45 minutos, dependiendo de las necesidades de cada paciente.",
   img: logopedia,
 };
 
@@ -45,7 +45,7 @@ export const fisioterapiaData = {
   headline:
     "La fisioterapia  ofrece tratamiento y rehabilitación física para diagnosticar, prevenir y tratar síntomas de múltiples patologías, tanto agudas como crónicas.",
   description:
-    "En nuestra terapia llevaremos a cabo una valoración y diagnóstico de fisioterapia, teniendo en cuenta una visión general del problema, dolencia, patología, etc. Después, utilizaremos distintas técnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
+    "En mi terapia llevo a cabo una valoración y diagnóstico de fisioterapia, teniendo en cuenta una visión general del problema, dolencia, patología, etc. Después, utilizo distintas técnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
   img: fisioterapia,
 };
 
@@ -72,8 +72,7 @@ export const neuroPsicologiaData = {
   },
   headline:
     "la neuropsicología estudia las bases neuroanatómicas en relación alos procesos mentales como: atención, emoción, memoria, lenguaje y percepción",
-  description:
-    "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de Día, Servicio de Capacitación o Vivienda con Apoyo. Se prestará mayor intensidad a las familias en cuyo seno conviva una persona que además de discapacidad tenga necesidades específicas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situación de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos económicos, inmigrantes, etc.).",
+  description: " ",
   img: neuroPiscologia,
 };
 
@@ -87,7 +86,7 @@ export const psicoPedagogíaData = {
   headline:
     "La terapia psicopedagógica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
   description:
-    "Como psicopedagoga asesoro, evalúo, realizo informes psicopedagógicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y diseño propuestas de intervención para niños, adolescentes, jóvenes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
+    "Como psicopedagogas asesoramos, evaluamos y realizamos informes psicopedagógicos (tomando pruebas y test, analizando las necesidades de cada persona), planificamos y diseñamos propuestas de intervención para niños, adolescentes, jóvenes y adultos que tengan problemas en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas en el momento de aprender.",
   img: psicopedagogia,
 };
 
@@ -116,7 +115,7 @@ export const visualPedagogíaData = {
   headline:
     "La terapia visual consiste en la repetición de una serie de ejercicios que consiguen crear nuevas conexiones neurológicas y mejorar habilidades visuales alteradas.",
   description:
-    "Evaluamos el desarrollo y funcionamiento de la visión desde el nacimiento. Para ello se analizan habilidades como la acomodación, binocularidad (visión en 3D), movimientos oculares y la percepción visual..",
+    "Evaluo el desarrollo y funcionamiento de la visión desde el nacimiento. Para ello analizo habilidades como la acomodación, binocularidad (visión en 3D), movimientos oculares y la percepción visual..",
   img: visual,
 };
 
@@ -128,8 +127,8 @@ export const psicologiaData = {
     text: "PSICOLOGÍA: conoce cómo trabaja nuestra profesional, Beatriz Henales",
   },
   headline:
-    "Nos centramos en la psicoeducación y en la reestructuración cognitiva. Buscamos favorecer los procesos de cambio y toma de decisiones para buscar una situación más adaptativa para la persona.",
+    "Me centro en la psicoeducación y en la reestructuración cognitiva. Busco favorecer los procesos de cambio y toma de decisiones para buscar una situación más adaptativa para la persona.",
   description:
-    "A nivel psicoeducativo podemos ayudar a las personas a entender sus propios procesos, situaciones personales, patologías, etc, para facilitar su propia adaptación al medio y mitigar sus estados de ansiedad e incertidumbre.",
+    "A nivel psicoeducativo puedo ayudar a las personas a entender sus propios procesos, situaciones personales, patologías, etc, para facilitar su propia adaptación al medio y mitigar sus estados de ansiedad e incertidumbre.",
   img: psicologia,
 };

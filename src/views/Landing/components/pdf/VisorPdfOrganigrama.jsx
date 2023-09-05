@@ -9,7 +9,7 @@ class Pdf extends Component {
   }
   render() {
     return (
-      <div style={{ position: "center", width: "100%", height: "100%" }}>
+      <div style={{ position: "absolute", width: "100%", height: "100%" }}>
         <object
           data={require("./docs_pdf/organigrama.pdf")}
           type="application/pdf"
@@ -17,21 +17,19 @@ class Pdf extends Component {
           height="100%"
         >
           <br />
-          <button>
-            <a
-              href={require("./docs_pdf/organigrama.pdf")}
-              rel="noreferrer"
-              target="_blank"
-              id="enlaceDescargarPdfOrganigrama"
-              download="organigrama.pdf"
-            >
-              Descargar PDF
-            </a>
-          </button>
+          <a
+            href={require("./docs_pdf/organigrama.pdf")}
+            rel="noreferrer"
+            target="_blank"
+            id="enlaceDescargarPdfOrganigrama"
+            download="organigrama.pdf"
+          >
+            Tu dispositivo no puede visualizar los PDF, da click aquí para
+            descargarlo
+          </a>
         </object>
       </div>
     );
   }
 }
-
 export default Pdf;

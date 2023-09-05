@@ -1,4 +1,4 @@
-/*! For license information please see main.b3d1210f.js.LICENSE.txt */
+/*! For license information please see main.ba0208c4.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -14561,10 +14561,6 @@
         "use strict";
         e.exports = n.p + "static/media/combinada-2.2e9cf57daf8725ef8ef1.png";
       },
-      1919: function (e, t, n) {
-        "use strict";
-        e.exports = n.p + "static/media/combinada.04c35d8d72099054dc45.png";
-      },
       3523: function (e, t, n) {
         "use strict";
         e.exports = n.p + "static/media/sala.eebb140d27a66549e94f.png";
@@ -18837,25 +18833,26 @@
           n(3912)),
         Vr = n(9545),
         Gr = n(9729),
-        Yr = (n(5614), n(8095), n(9821), n(2358)),
-        Qr = (n(6358), n(9403)),
-        Zr = n(2236),
-        qr = (n(1011), n(2637), n(5079)),
-        _r = n(8309),
-        Jr = n(2186),
-        Xr = n(5991),
-        Kr = n(1715),
-        $r = [
+        Yr = (n(5614), n(8095), n(9821)),
+        Qr = n(2358),
+        Zr = (n(6358), n(9403)),
+        qr = n(2236),
+        _r = (n(1011), n(2637), n(5079)),
+        Jr = n(8309),
+        Xr = n(2186),
+        Kr = n(5991),
+        $r = n(1715),
+        ei = [
           {
             id: 1,
             name: "Pilar Alarc\xf3n",
-            img: qr,
+            img: _r,
             profession: "Presidenta",
           },
           {
             id: 2,
             name: "Nieves Fern\xe1ndez",
-            img: Jr,
+            img: Xr,
             profession: "Vicepresidenta",
           },
           {
@@ -18873,7 +18870,7 @@
           {
             id: 5,
             name: "Ana Bel\xe9n Garc\xeda",
-            img: _r,
+            img: Jr,
             profession: "Vocal 1",
           },
           {
@@ -18885,10 +18882,10 @@
           {
             id: 7,
             name: " Francisca Izquierdo",
-            img: Xr,
+            img: Kr,
             profession: "Vocal 3",
           },
-          { id: 8, name: "Teresa Martinez", img: Kr, profession: "Vocal 4" },
+          { id: 8, name: "Teresa Martinez", img: $r, profession: "Vocal 4" },
           {
             id: 9,
             name: "Francisco Javier Rom\xe1n",
@@ -18896,14 +18893,14 @@
             profession: "Vocal 5",
           },
         ],
-        ei = function () {
-          var e = t((0, h.useState)($r), 1)[0];
+        ti = function () {
+          var e = t((0, h.useState)(ei), 1)[0];
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Sn, { title: "junta directiva", alt: "" }),
-              (0, dn.jsx)(ti, {}),
-              (0, dn.jsx)(ni, {
-                children: (0, dn.jsx)(ri, {
+              (0, dn.jsx)(ni, {}),
+              (0, dn.jsx)(ri, {
+                children: (0, dn.jsx)(ii, {
                   children: e.map(function (e) {
                     return (0,
                     dn.jsx)(Dr, { name: e.name, img: e.img, alt: e.alt, role: e.role, profession: e.profession }, e.id);
@@ -18914,7 +18911,7 @@
             ],
           });
         },
-        ti = Qt.div(
+        ni = Qt.div(
           br ||
             (br = q([
               "\n  background: linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)),\n    url(",
@@ -18922,21 +18919,21 @@
             ])),
           Hr
         ),
-        ni = Qt.section(
+        ri = Qt.section(
           Ar ||
             (Ar = q([
               "\n  padding: 5rem 18%;\n  background-color: #f7f7f7;\n\n  @media (max-width: 440px) {\n    padding: 2rem 5%;\n  }\n",
             ]))
         ),
-        ri = Qt.div(
+        ii = Qt.div(
           xr ||
             (xr = q([
               "\n  display: flex;\n  gap: 5rem;\n  flex-wrap: wrap;\n\n  @media (max-width: 440px) {\n    gap: 2rem;\n  }\n",
             ]))
         ),
-        ii = n(5562),
-        ai = n(599),
-        oi = {
+        ai = n(5562),
+        oi = n(599),
+        si = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Vida en comunidad:" },
@@ -18947,7 +18944,7 @@
           href: "#/servicio-capacitacion",
           img: n(6453),
         },
-        si = {
+        li = {
           href: "#/donaciones",
           reverse: !0,
           inverse: !0,
@@ -18957,9 +18954,9 @@
           description:
             "Nuestra organizaci\xf3n sin \xe1nimo de lucro se sustenta principalmente de las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda econ\xf3mica que nos puedan prestar.",
           buttonLabel: "Donaciones",
-          img: ai,
+          img: oi,
         },
-        li = {
+        ci = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Buscamos profesionales como t\xfa" },
@@ -18968,10 +18965,10 @@
             "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administraci\xf3n y mucho m\xe1s. Contacta con nosotros o envianos tu curriculum",
           buttonLabel: "Contacto",
           href: "contacto",
-          img: ii,
+          img: ai,
         },
-        ci = n(1795),
-        ui = [
+        ui = n(1795),
+        di = [
           {
             title: "PROYECTO NUEVO CREA 2023",
             description:
@@ -18992,12 +18989,12 @@
             title: "XIII CONGRESO DE EMPLEO CON APOYO",
             description:
               "Los d\xedas 13, 14 y 15 de junio se celebr\xf3 el XIII Congreso de Empleo en la facultad de derecho de Burgos, organizado por AESE y Down Burgos.",
-            image: ci,
+            image: ui,
             alt: "un-d\xeda-en-afymos",
             url: "/congreso-empleo-apoyo",
           },
         ],
-        di = {
+        fi = {
           arrows: !1,
           slidesToShow: 3,
           focusOnselect: !1,
@@ -19007,48 +19004,48 @@
             { breakpoint: 900, settings: { slidesToShow: 1 } },
           ],
         },
-        fi = n(5717),
-        pi = Qt.img(
+        pi = n(5717),
+        hi = Qt.img(
           wr ||
             (wr = q([
               "\n  width: 100%;\n  height: 300px;\n  border-radius: 10px 10px 0 0;\n  object-fit: cover;\n  vertical-align: middle;\n",
             ]))
         ),
-        hi = Qt.div(
+        mi = Qt.div(
           Sr ||
             (Sr = q([
               "\n  background-color: white;\n  width: 90%;\n  display: flex !important;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  border-radius: 10px;\n  outline: none;\n  height: 430px;\n  border: solid 1px #071c2f;\n\n  @media (min-width: 440px) {\n    border: 1px solid #bebebe;\n  }\n",
             ]))
         ),
-        mi = Qt($t)(
+        gi = Qt($t)(
           kr ||
             (kr = q([
               "\n  & svg {\n    margin: 0 1rem;\n    cursor: pointer;\n  }\n\n  & svg:hover {\n    opacity: 0.7;\n    transition: opacity 0.2s ease-in;\n  }\n  @media (max-width: 960px) {\n    margin: 0 auto;\n  }\n",
             ]))
         ),
-        gi = Qt(fi.Z)(
+        vi = Qt(pi.Z)(
           jr ||
             (jr = q([
               "\n  width: 100%;\n\n  .slick-track {\n    display: flex;\n    padding: 30px;\n    gap: 3rem;\n  }\n  .slick-slide {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 1;\n    outline: none;\n  }\n\n  .slick-list {\n    overflow: hidden;\n  }\n",
             ]))
         ),
-        vi = Qt.button(
+        yi = Qt.button(
           Er ||
             (Er = q([
               "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
-        yi = Qt.div(
+        bi = Qt.div(
           Cr ||
             (Cr = q([
               "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
-        bi = function () {
+        Ai = function () {
           var e = t((0, h.useState)(null), 2),
             n = e[0],
             r = e[1],
-            i = t((0, h.useState)(ui), 2),
+            i = t((0, h.useState)(di), 2),
             a = (i[0], i[1]),
             o = function (e) {
               a(e.currentTarget);
@@ -19071,7 +19068,7 @@
                     margin: "2rem",
                     children: "Noticias",
                   }),
-                  (0, dn.jsx)(mi, {
+                  (0, dn.jsx)(gi, {
                     children: (0, dn.jsxs)(nr.Provider, {
                       value: { size: "3rem", color: "#071c2f" },
                       children: [
@@ -19089,15 +19086,15 @@
                 ],
               }),
               (0, dn.jsx)(
-                gi,
+                vi,
                 G(
-                  G({}, di),
+                  G({}, fi),
                   {},
                   {
                     ref: r,
-                    children: ui.map(function (e, t) {
+                    children: di.map(function (e, t) {
                       return (0,
-                      dn.jsxs)(hi, { children: [(0, dn.jsx)(pi, { src: e.image, alt: e.alt }), (0, dn.jsx)(Jt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, dn.jsx)(Jt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, dn.jsx)(yi, { children: (0, dn.jsx)(vn, { to: e.url, children: (0, dn.jsx)(vi, { onClick: o, children: "conoce m\xe1s" }) }) })] }, t);
+                      dn.jsxs)(mi, { children: [(0, dn.jsx)(hi, { src: e.image, alt: e.alt }), (0, dn.jsx)(Jt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, dn.jsx)(Jt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, dn.jsx)(bi, { children: (0, dn.jsx)(vn, { to: e.url, children: (0, dn.jsx)(yi, { onClick: o, children: "conoce m\xe1s" }) }) })] }, t);
                     }),
                   }
                 )
@@ -19105,10 +19102,10 @@
             ],
           });
         },
-        Ai = n(9951),
-        xi = n(7646),
-        wi = n(3104),
-        Si = function () {
+        xi = n(9951),
+        wi = n(7646),
+        Si = n(3104),
+        ki = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Un, {
@@ -19121,20 +19118,20 @@
                 className: "contact",
                 id: "contacto",
                 children: [
-                  (0, dn.jsxs)(ki, {
+                  (0, dn.jsxs)(ji, {
                     children: [
-                      (0, dn.jsxs)(ji, {
+                      (0, dn.jsxs)(Ei, {
                         children: [
-                          (0, dn.jsx)("img", { src: Ai, alt: "" }),
+                          (0, dn.jsx)("img", { src: xi, alt: "" }),
                           (0, dn.jsx)("h3", {
                             children: "tel\xe9fono de contacto",
                           }),
                           (0, dn.jsx)("p", { children: "926 532 749" }),
                         ],
                       }),
-                      (0, dn.jsxs)(ji, {
+                      (0, dn.jsxs)(Ei, {
                         children: [
-                          (0, dn.jsx)("img", { src: wi, alt: "" }),
+                          (0, dn.jsx)("img", { src: Si, alt: "" }),
                           (0, dn.jsx)("h3", {
                             children: "correo electr\xf3nico",
                           }),
@@ -19149,9 +19146,9 @@
                           }),
                         ],
                       }),
-                      (0, dn.jsxs)(ji, {
+                      (0, dn.jsxs)(Ei, {
                         children: [
-                          (0, dn.jsx)("img", { src: xi, alt: "" }),
+                          (0, dn.jsx)("img", { src: wi, alt: "" }),
                           (0, dn.jsx)("h3", { children: "Direcci\xf3n" }),
                           (0, dn.jsx)("p", {
                             children:
@@ -19234,19 +19231,19 @@
             ],
           });
         },
-        ki = Qt.div(
+        ji = Qt.div(
           Or ||
             (Or = q([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n",
             ]))
         ),
-        ji = Qt.div(
+        Ei = Qt.div(
           Pr ||
             (Pr = q([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n\n  img {\n    height: 3rem;\n  }\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n",
             ]))
         ),
-        Ei = function (e) {
+        Ci = function (e) {
           var n = e.alt,
             r = e.buttonLabel,
             i = e.description,
@@ -19302,7 +19299,7 @@
             }),
           });
         },
-        Ci = function (e) {
+        Oi = function (e) {
           e.title, e.size, e.inverse, e.marginBottom, e.display;
           return (0, dn.jsxs)("div", {
             class: "aviso-cookies",
@@ -19338,15 +19335,15 @@
             "\n  display: none;\n  background: #fff;\n  padding: 20px;\n  width: calc(100% - 40px);\n  max-width: 300px;\n  line-height: 150%;\n  border-radius: 10px;\n  position: fixed;\n  bottom: 20px;\n  left: 20px;\n  z-index: 100;\n  padding-top: 60px;\n  box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, 0.25);\n  text-align: center;\n\n  img {\n    max-width: 100px;\n    position: absolute;\n    top: -50px;\n    left: calc(50% - 50px);\n  }\n",
           ]))
       );
-      var Oi,
-        Pi,
+      var Pi,
         Ti,
         Li,
         Mi,
         Ii,
         zi,
-        Di = function (e) {
-          return (0, dn.jsx)(Ri, {
+        Di,
+        Ri = function (e) {
+          return (0, dn.jsx)(Ni, {
             children: (0, dn.jsxs)("div", {
               onClick: e.handleClick,
               className: "icon nav-icon-5 ".concat(e.clicked ? "open" : ""),
@@ -19358,28 +19355,28 @@
             }),
           });
         },
-        Ri = Qt.div(
+        Ni = Qt.div(
           Lr ||
             (Lr = q([
               "\n  /* nav-icon-5 */\n  .nav-icon-5 {\n    width: 30px;\n    height: 30px;\n    margin: 10px 10px;\n    position: relative;\n    cursor: pointer;\n    display: inline-block;\n  }\n  .nav-icon-5 span {\n    background-color: #ffc0bc;\n    position: absolute;\n    border-radius: 2px;\n    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);\n    width: 100%;\n    height: 3px;\n    transition-duration: 500ms;\n  }\n  .nav-icon-5 span:nth-child(1) {\n    top: 0px;\n    left: 0px;\n  }\n  .nav-icon-5 span:nth-child(2) {\n    top: 13px;\n    left: 0px;\n    opacity: 1;\n  }\n  .nav-icon-5 span:nth-child(3) {\n    bottom: 0px;\n    left: 0px;\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(1) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(2) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(3) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5.open span:nth-child(1) {\n    transform: rotate(45deg);\n    background-color: #ffc0bc;\n    top: 13px;\n  }\n  .nav-icon-5.open span:nth-child(2) {\n    opacity: 0;\n  }\n  .nav-icon-5.open span:nth-child(3) {\n    transform: rotate(-45deg);\n    top: 13px;\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ni = n(5667),
-        Fi = n(9356),
-        Bi = n(6129),
-        Wi = function () {
+        Fi = n(5667),
+        Bi = n(9356),
+        Wi = n(6129),
+        Ui = function () {
           return (0, dn.jsx)(dn.Fragment, {
-            children: (0, dn.jsxs)(Ui, {
+            children: (0, dn.jsxs)(Hi, {
               children: [
-                (0, dn.jsxs)(Hi, {
+                (0, dn.jsxs)(Vi, {
                   children: [
-                    (0, dn.jsxs)(Vi, {
+                    (0, dn.jsxs)(Gi, {
                       children: [
-                        (0, dn.jsx)("img", { src: Bi, alt: "logo-afymos" }),
+                        (0, dn.jsx)("img", { src: Wi, alt: "logo-afymos" }),
                         (0, dn.jsx)("h1", { children: "Afymos" }),
                       ],
                     }),
-                    (0, dn.jsxs)(Gi, {
+                    (0, dn.jsxs)(Yi, {
                       children: [
                         (0, dn.jsx)("h2", {
                           children:
@@ -19392,9 +19389,9 @@
                     }),
                   ],
                 }),
-                (0, dn.jsx)(Yi, {
+                (0, dn.jsx)(Qi, {
                   style: {
-                    backgroundImage: "url(".concat(Fi, ")"),
+                    backgroundImage: "url(".concat(Bi, ")"),
                     WebkitBackgroundSize: "cover",
                     backgroundPositionY: "center",
                     backgroundPositionX: "center",
@@ -19407,28 +19404,27 @@
             }),
           });
         },
-        Ui = Qt.header(Oi || (Oi = q(["\n  margin: auto;\n"]))),
-        Hi = Qt.div(
-          Pi ||
-            (Pi = q([
-              "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #ffc0bc;\n  width: 100%;\n  gap: 1.5rem;\n  margin: 1.5rem auto;\n",
-            ]))
-        ),
+        Hi = Qt.header(Pi || (Pi = q(["\n  margin: auto;\n"]))),
         Vi = Qt.div(
           Ti ||
             (Ti = q([
-              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size: 5rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
+              "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #ffc0bc;\n  width: 100%;\n  gap: 1.5rem;\n  margin: 1.5rem auto;\n",
             ]))
         ),
         Gi = Qt.div(
           Li ||
             (Li = q([
+              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size: 5rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
+            ]))
+        ),
+        Yi = Qt.div(
+          Mi ||
+            (Mi = q([
               "\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n  justify-content: end;\n  gap: 1rem;\n\n  h2 {\n    font-size: 2rem;\n    color: #071c2f;\n  }\n\n  i {\n    font-size: 1.5rem;\n    color: #071c2f;\n  }\n  @media (max-width: 440px) {\n    h2 {\n      font-size: 1.4rem;\n    }\n\n    i {\n      font-size: 0.8rem;\n    }\n  }\n",
             ]))
         ),
-        Yi = Qt.section(Mi || (Mi = q([""])));
-      var Qi,
-        Zi,
+        Qi = Qt.section(Ii || (Ii = q([""])));
+      var Zi,
         qi,
         _i,
         Ji,
@@ -19451,7 +19447,8 @@
         pa,
         ha,
         ma,
-        ga = function () {
+        ga,
+        va = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1],
@@ -19460,7 +19457,7 @@
             };
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
-              (0, dn.jsxs)(va, {
+              (0, dn.jsxs)(ya, {
                 id: "menu-principal",
                 children: [
                   (0, dn.jsxs)("h3", {
@@ -19487,7 +19484,7 @@
                         to: "/donaciones",
                         children: "donaciones",
                       }),
-                      (0, dn.jsx)(Ni.rU, {
+                      (0, dn.jsx)(Fi.rU, {
                         to: "contacto",
                         spy: !0,
                         smooth: !0,
@@ -19496,7 +19493,7 @@
                         onClick: i,
                         children: "contacto",
                       }),
-                      (0, dn.jsx)(Ni.rU, {
+                      (0, dn.jsx)(Fi.rU, {
                         to: "contacto",
                         spy: !0,
                         smooth: !0,
@@ -19509,30 +19506,30 @@
                   }),
                   (0, dn.jsx)("div", {
                     className: "burguer",
-                    children: (0, dn.jsx)(Di, { clicked: n, handleClick: i }),
+                    children: (0, dn.jsx)(Ri, { clicked: n, handleClick: i }),
                   }),
-                  (0, dn.jsx)(ya, {
+                  (0, dn.jsx)(ba, {
                     className: "initial ".concat(n ? " active" : ""),
                   }),
                 ],
               }),
-              (0, dn.jsx)(Wi, {}),
+              (0, dn.jsx)(Ui, {}),
             ],
           });
         },
-        va = Qt.nav(
-          Ii ||
-            (Ii = q([
+        ya = Qt.nav(
+          zi ||
+            (zi = q([
               "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 5%;\n    font-size: 2.2rem;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 5%;\n    font-weight: 400;\n  }\n\n  @media (max-width: 440px) {\n    h3 {\n      font-size: 1.6rem;\n    }\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #ffc0bc;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 1090px) {\n      background-color: #071c2f;\n      height: 45%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 3rem;\n        margin-top: 5%;\n        color: #ffc0bc;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
             ]))
         ),
-        ya = Qt.div(
-          zi ||
-            (zi = q([
+        ba = Qt.div(
+          Di ||
+            (Di = q([
               "\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n  width: 30%;\n  height: 30%;\n  margin-left: 30px;\n  z-index: -1;\n  transition: all 0.8s ease;\n\n  &.active {\n    border-radius: 0 0 80% 0;\n    top: 0;\n    left: 0;\n    width: 50%;\n    height: 50%;\n  }\n",
             ]))
         ),
-        ba = function () {
+        Aa = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1];
@@ -19540,11 +19537,11 @@
             children: [
               (0, dn.jsx)(Un, { title: "Proyecto Crea", size: !0 }),
               (0, dn.jsx)("section", {
-                children: (0, dn.jsx)(Aa, {
+                children: (0, dn.jsx)(xa, {
                   id: "demo",
-                  children: (0, dn.jsxs)(xa, {
+                  children: (0, dn.jsxs)(wa, {
                     children: [
-                      (0, dn.jsx)(Sa, {
+                      (0, dn.jsx)(ka, {
                         children: (0, dn.jsx)("iframe", {
                           width: "570",
                           height: "320",
@@ -19556,7 +19553,7 @@
                           allowFullScreen: !0,
                         }),
                       }),
-                      (0, dn.jsxs)(wa, {
+                      (0, dn.jsxs)(Sa, {
                         children: [
                           (0, dn.jsx)("p", { children: "Proyecto CREA;" }),
                           (0, dn.jsx)("p", {
@@ -19585,152 +19582,152 @@
             ],
           });
         },
-        Aa = Qt.div(
-          Qi || (Qi = q(["\n  width: 100%;\n  background: white;\n"]))
-        ),
         xa = Qt.div(
-          Zi ||
-            (Zi = q([
-              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 2rem;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
-            ]))
+          Zi || (Zi = q(["\n  width: 100%;\n  background: white;\n"]))
         ),
         wa = Qt.div(
           qi ||
             (qi = q([
+              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 2rem;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
+            ]))
+        ),
+        Sa = Qt.div(
+          _i ||
+            (_i = q([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    margin-top: 7%;\n    font-size: 2rem;\n    font-style: italic;\n    color: #071c2f;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n    color: #071c2f;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n    color: #071c2f;\n  }\n",
             ]))
         ),
-        Sa = Qt.div(_i || (_i = q(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
-        ka = n(8335),
-        ja = n(8299),
-        Ea = n(5025),
-        Ca = n(1254),
-        Oa = n(587),
-        Pa = n(5178),
-        Ta = n(4993),
-        La = n(3602),
-        Ma = n(181),
-        Ia = n(9302),
-        za = n(4418),
-        Da = n(3468),
-        Ra = [
+        ka = Qt.div(Ji || (Ji = q(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
+        ja = n(8335),
+        Ea = n(8299),
+        Ca = n(5025),
+        Oa = n(1254),
+        Pa = n(587),
+        Ta = n(5178),
+        La = n(4993),
+        Ma = n(3602),
+        Ia = n(181),
+        za = n(9302),
+        Da = n(4418),
+        Ra = n(3468),
+        Na = [
           {
             id: 1,
             name: "Centro de Dia",
-            img: ja,
+            img: Ea,
             alt: "centro-de-dia",
             url: "/centro-de-dia",
           },
           {
             id: 2,
             name: "Servicio de capacitaci\xf3n",
-            img: ka,
+            img: ja,
             alt: "servicio-capacitacion",
             url: "/servicio-capacitacion",
           },
           {
             id: 3,
             name: "Viviendas con apoyo",
-            img: za,
+            img: Da,
             alt: "viviendas-con-apoyo",
             url: "/viviendas-con-apoyo",
           },
           {
             id: 4,
             name: "Centro de Formaci\xf3n",
-            img: Ta,
+            img: La,
             alt: "formacion",
             url: "/formacion",
           },
           {
             id: 5,
             name: "Ocio y volunturariado",
-            img: Da,
+            img: Ra,
             alt: "ocio-y-voluntariado",
             url: "/ocio-y-voluntariado",
           },
           {
             id: 6,
             name: " Valoraci\xf3n y Diagn\xf3stico",
-            img: Oa,
+            img: Pa,
             alt: "/valoraci\xf3n-y-diagn\xf3stico",
             url: "/valoracion-y-diagnostico",
           },
           {
             id: 7,
             name: "Terapias",
-            img: Ia,
+            img: za,
             alt: "terapias",
             url: "/terapias",
           },
           {
             id: 8,
             name: " Atenci\xf3n familias",
-            img: Pa,
+            img: Ta,
             alt: "apoyo-familias",
             url: "/apoyo-familias",
           },
         ],
-        Na = [
+        Fa = [
           {
             id: 1,
             name: "Instalaciones Centro",
-            img: Ea,
+            img: Ca,
             alt: "instalaciones-centro-diversidad",
             url: "/instalaciones-centro-diversidad",
           },
           {
             id: 2,
             name: "Organigrama",
-            img: Ma,
+            img: Ia,
             alt: "organigrama",
             url: "/organigrama",
           },
           {
             id: 3,
             name: "Junta Directiva",
-            img: La,
+            img: Ma,
             alt: "junta-directiva",
             url: "/junta-directiva",
           },
           {
             id: 4,
             name: "Cuentas anuales 2021",
-            img: Ca,
+            img: Oa,
             alt: "logo-cuentas-anuales",
             url: "/pdf-cuentas-21",
           },
         ],
-        Fa = function () {
-          var e = t((0, h.useState)(Na), 1)[0];
+        Ba = function () {
+          var e = t((0, h.useState)(Fa), 1)[0];
           return (0, dn.jsx)(dn.Fragment, {
             children: (0, dn.jsxs)("section", {
               children: [
                 (0, dn.jsx)(Un, { title: "Sobre Nosotros", marginBottom: !0 }),
-                (0, dn.jsx)(Ba, {
+                (0, dn.jsx)(Wa, {
                   children: e.map(function (e) {
                     return (0,
-                    dn.jsx)(Wa, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
+                    dn.jsx)(Ua, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               ],
             }),
           });
         },
-        Ba = Qt.div(
-          Ji ||
-            (Ji = q([
-              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  margin-bottom: 4rem;\n",
-            ]))
-        ),
         Wa = Qt.div(
           Xi ||
             (Xi = q([
+              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  margin-bottom: 4rem;\n",
+            ]))
+        ),
+        Ua = Qt.div(
+          Ki ||
+            (Ki = q([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ua = function () {
-          var e = t((0, h.useState)(Ra), 1)[0];
+        Ha = function () {
+          var e = t((0, h.useState)(Na), 1)[0];
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Un, {
@@ -19740,42 +19737,42 @@
                 marginBottom: !0,
               }),
               (0, dn.jsx)("section", {
-                children: (0, dn.jsx)(Ha, {
+                children: (0, dn.jsx)(Va, {
                   children: e.map(function (e) {
                     return (0,
-                    dn.jsx)(Va, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
+                    dn.jsx)(Ga, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               }),
             ],
           });
         },
-        Ha = Qt.div(
-          Ki ||
-            (Ki = q([
-              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n  margin: 2rem auto;\n",
-            ]))
-        ),
         Va = Qt.div(
           $i ||
             ($i = q([
+              "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n  margin: 2rem auto;\n",
+            ]))
+        ),
+        Ga = Qt.div(
+          ea ||
+            (ea = q([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ga = n(4830),
-        Ya = n(6219),
-        Qa = n(8413),
-        Za = function () {
-          return (0, dn.jsx)(qa, {
+        Ya = n(4830),
+        Qa = n(6219),
+        Za = n(8413),
+        qa = function () {
+          return (0, dn.jsx)(_a, {
             id: "testimonios",
-            children: (0, dn.jsxs)(_a, {
+            children: (0, dn.jsxs)(Ja, {
               children: [
                 (0, dn.jsx)(Un, { title: "Historias reales", inverse: !0 }),
-                (0, dn.jsxs)(Ja, {
+                (0, dn.jsxs)(Xa, {
                   children: [
-                    (0, dn.jsxs)(Xa, {
+                    (0, dn.jsxs)(Ka, {
                       children: [
-                        (0, dn.jsx)("img", { src: Ga, alt: "rafa" }),
+                        (0, dn.jsx)("img", { src: Ya, alt: "rafa" }),
                         (0, dn.jsx)("p", {
                           children:
                             "Gracias al trabajo, Rafael adquir\xf3 nuevas rutinas, cambiando sus h\xe1bitos y asumiendo nuevas responsabilidades, esto le ha permitido permitido cambiar su horizonte vital.",
@@ -19788,9 +19785,9 @@
                         }),
                       ],
                     }),
-                    (0, dn.jsxs)(Xa, {
+                    (0, dn.jsxs)(Ka, {
                       children: [
-                        (0, dn.jsx)("img", { src: Ya, alt: "quico" }),
+                        (0, dn.jsx)("img", { src: Qa, alt: "quico" }),
                         (0, dn.jsx)("p", {
                           children:
                             "Quico, quien tras varios contratos temporales, pas\xf3 a ser indefinido. Logr\xf3 la primera inserci\xf3n socio-laboral, con la estabilidad que ello supon\xeda para \xe9l, abri\xe9ndole a su vez la puerta a conseguir otros objetivos para mejorar su calidad de vida, por ejemplo independizarse.",
@@ -19801,9 +19798,9 @@
                         (0, dn.jsx)("p", { children: "Trabajador en Inkiele" }),
                       ],
                     }),
-                    (0, dn.jsxs)(Xa, {
+                    (0, dn.jsxs)(Ka, {
                       children: [
-                        (0, dn.jsx)("img", { src: Qa, alt: "pedro" }),
+                        (0, dn.jsx)("img", { src: Za, alt: "pedro" }),
                         (0, dn.jsx)("p", {
                           children:
                             "En la misma l\xednea de trabajo, el objetivo laboral de Pedro es trabajar lijando. Por ello, La empresa Arte Religioso Salmer\xf3n, le abri\xf3 sus puertas mediante unas pr\xe1cticas laborales para corroborar si sus habilidades y capacidades eran compatibles con el puesto de trabajo.",
@@ -19822,51 +19819,51 @@
             }),
           });
         },
-        qa = Qt.div(
-          ea || (ea = q(["\n  width: 100%;\n  background-color: white;\n"]))
-        ),
         _a = Qt.div(
-          ta ||
-            (ta = q([
-              "\n  padding: 5%;\n  h2 {\n    font-size: 3rem;\n    text-align: center;\n  }\n\n  @media (max-width: 940px) {\n    width: 100%;\n  }\n",
-            ]))
+          ta || (ta = q(["\n  width: 100%;\n  background-color: white;\n"]))
         ),
         Ja = Qt.div(
           na ||
             (na = q([
-              "\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 20px;\n  margin: 4rem 0;\n\n  @media (max-width: 940px) {\n    grid-template-columns: 1fr;\n  }\n",
+              "\n  padding: 5%;\n  h2 {\n    font-size: 3rem;\n    text-align: center;\n  }\n\n  @media (max-width: 940px) {\n    width: 100%;\n  }\n",
             ]))
         ),
         Xa = Qt.div(
           ra ||
             (ra = q([
+              "\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 20px;\n  margin: 4rem 0;\n\n  @media (max-width: 940px) {\n    grid-template-columns: 1fr;\n  }\n",
+            ]))
+        ),
+        Ka = Qt.div(
+          ia ||
+            (ia = q([
               "\n  border: 1px solid #eee;\n  border-radius: 8px;\n  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);\n  padding: 1rem;\n  line-height: 2rem;\n\n  img {\n    height: 100px;\n    border-radius: 50px;\n    margin-top: -2rem;\n    margin-left: 35%;\n  }\n\n  p {\n    font-size: 1.2rem;\n    margin: 12px;\n    font-weight: 500;\n  }\n\n  span {\n    font-size: 1rem;\n    font-weight: 900;\n    color: grey;\n  }\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    margin: 1rem;\n  }\n",
             ]))
         ),
-        Ka = function () {
+        $a = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
-              (0, dn.jsx)(ga, {}),
-              (0, dn.jsx)(Ua, {}),
-              (0, dn.jsx)(Fa, {}),
-              (0, dn.jsx)(Ei, G({}, oi)),
-              (0, dn.jsx)(ba, {}),
-              (0, dn.jsx)(Za, {}),
-              (0, dn.jsx)(Ei, G({}, si)),
-              (0, dn.jsx)(Ei, G({}, li)),
-              (0, dn.jsx)(bi, {}),
-              (0, dn.jsx)(Si, {}),
+              (0, dn.jsx)(va, {}),
+              (0, dn.jsx)(Ha, {}),
+              (0, dn.jsx)(Ba, {}),
+              (0, dn.jsx)(Ci, G({}, si)),
+              (0, dn.jsx)(Aa, {}),
+              (0, dn.jsx)(qa, {}),
+              (0, dn.jsx)(Ci, G({}, li)),
+              (0, dn.jsx)(Ci, G({}, ci)),
+              (0, dn.jsx)(Ai, {}),
+              (0, dn.jsx)(ki, {}),
               (0, dn.jsx)(Kn, { size: !0, inverse: !0, marginBottom: !0 }),
-              (0, dn.jsx)(Ci, {}),
+              (0, dn.jsx)(Oi, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        $a = n(4534),
-        eo = n(5629),
-        to = n(543),
-        no = {
+        eo = n(4534),
+        to = n(5629),
+        no = n(543),
+        ro = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra entidad" },
@@ -19874,19 +19871,19 @@
             "AFYMOS fue fundada en el a\xf1o 1991 y los fines que perseguimos seg\xfan nuestros estatutos son:",
           description:
             "Los fines que la Asociaci\xf3n persigue son de car\xe1cter c\xedvico y social, de promoci\xf3n de los valores constitucionales y de los derechos humanos de las personas con discapacidad intelectual, f\xedsica o sensorial.  ",
-          img: $a,
+          img: eo,
         },
-        ro = {
+        io = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n" },
           headline:
-            "La Misi\xf3n de Afymos es \u201ccontribuir, desde su compromiso \xe9tico, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de calidad de vida:",
+            "La Misi\xf3n de Afymos es contribuir, desde su compromiso \xe9tico, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de vida:",
           description:
-            " En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan m\xe1s oportunidades de participar en la sociedad. ",
-          img: eo,
+            "En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan m\xe1s oportunidades de participar en la sociedad. ",
+          img: to,
         },
-        io = {
+        ao = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Compromiso \xe9tico y valores" },
@@ -19894,15 +19891,15 @@
             "Para conseguir estas oportunidades, defendemos sus derechos como ciudadanos plenos, y reivindicamos una sociedad m\xe1s justa y solidaria.",
           description:
             "Todo esto no podemos hacerlo de cualquier manera, sino que tiene que estar orientado por nuestro compromiso \xe9tico, por nuestros valores y en la forma de intervenci\xf3n que est\xe1 basada en el Modelo de  Calidad de Calidad de Vida de Schalock y Verdugo.",
-          img: to,
+          img: no,
         },
-        ao = function (e) {
-          return (0, dn.jsx)(oo, {
+        oo = function (e) {
+          return (0, dn.jsx)(so, {
             id: "demo",
-            children: (0, dn.jsxs)(so, {
+            children: (0, dn.jsxs)(lo, {
               wrapReverse: e,
               children: [
-                (0, dn.jsx)(co, {
+                (0, dn.jsx)(uo, {
                   children: (0, dn.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -19914,7 +19911,7 @@
                     allowFullScreen: !0,
                   }),
                 }),
-                (0, dn.jsxs)(lo, {
+                (0, dn.jsxs)(co, {
                   children: [
                     (0, dn.jsx)("p", { children: "Un d\xeda en Afymos" }),
                     (0, dn.jsx)("p", {
@@ -19931,40 +19928,40 @@
             }),
           });
         },
-        oo = Qt.div(
-          ia ||
-            (ia = q([
-              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
-            ]))
-        ),
         so = Qt.div(
           aa ||
             (aa = q([
-              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
+              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
         lo = Qt.div(
           oa ||
             (oa = q([
+              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
+            ]))
+        ),
+        co = Qt.div(
+          sa ||
+            (sa = q([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n\n  p:nth-child(1) {\n    font-size: 1.8rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.2rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        co = Qt.div(sa || (sa = q(["\n  margin: auto;\n"]))),
-        uo = function () {
+        uo = Qt.div(la || (la = q(["\n  margin: auto;\n"]))),
+        fo = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Sn, { title: "Nosotros" }),
               (0, dn.jsx)(Un, { title: "Nuestra Entidad", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, no), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ro), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, io), {}, { inverse: !0 })),
-              (0, dn.jsx)(ao, { wrapReverse: !0 }),
+              (0, dn.jsx)(fn, G(G({}, ro), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, io), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ao), {}, { inverse: !0 })),
+              (0, dn.jsx)(oo, { wrapReverse: !0 }),
               (0, dn.jsx)(Kn, { inverse: !0 }),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        fo = {
+        po = {
           id: "politicaPrivacidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -19974,7 +19971,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) con CIF G13159173 y domicilio social en CL. PEDRO ARIAS, 87 C.P. 13630 de SOCUELLAMOS (CIUDAD REAL), con direcci\xf3n de correo afymos@gmail.com",
           img: "",
         },
-        po = {
+        ho = {
           id: "politicaPrivacidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -19984,7 +19981,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) garantiza en todo momento el \xedntegro y pleno cumplimiento de las obligaciones dispuestas por la normativa de protecci\xf3n de datos y de servicios de la sociedad de la informaci\xf3n, as\xed como por cualquier otra Ley o norma que complemente o sustituya a las anteriores.",
           img: "",
         },
-        ho = {
+        mo = {
           id: "politicaPrivacidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -19995,23 +19992,23 @@
             "Para impulsar la asistencia social, promoci\xf3n y asesoramiento a discapacitados as\xed como a sus familiares, fomentar la igualdad de oportunidades entre personas con discapacidad y sin ella.  Para gestionar la formaci\xf3n ocupacional dirigida a su inserci\xf3n laboral, programas para garantizar la autonom\xeda personal, terapias rehabilitadoras, as\xed como llevar a cabo cualquier otra actividad formativa o l\xfadica en beneficio de los miembros de nuestra Asociaci\xf3n.Para prestar el apoyo y la atenci\xf3n que necesitan los residentes de las viviendas, como ser\xeda la formaci\xf3n orientada al desarrollo de la autonom\xeda en la vivienda, ayudar a desarrollar sus habilidades en su d\xeda a d\xeda, apoyos y cuidados de car\xe1cter m\xe9dico-sanitario, actuaciones para promover el desarrollo psico-social, as\xed como participar en los talleres y dem\xe1s actividades que lleva a cabo el centro teniendo en cuenta sus caracter\xedsticas y condiciones.Para asesorar y orientar a los socios y sus familias, as\xed como cualquier otra acci\xf3n que forme, informe o divulgue sobre cualquier aspecto que ata\xf1a a los intereses de los asociados. Como llevar a cabo la correspondiente gesti\xf3n administrativa derivada de estas actuaciones. Para impartir formaci\xf3n tanto a personas con discapacidad intelectual as\xed como a profesionales relacionados con el sector. Para responder cualquier consulta a trav\xe9s del tel\xe9fono, correo electr\xf3nico o medios de comunicaci\xf3n electr\xf3nica, de la misma manera poder resolver cualquier duda, sugerencia, queja, reclamaci\xf3n, etc. relacionada con nuestros servicios, que puedan realizar a trav\xe9s de cualquier formulario dispuesto en nuestras instalaciones. Para gestionar la relaci\xf3n con los voluntarios y llevar a cabo las acciones oportunas. Para el mantenimiento de las relaciones con clientes, como ser\xeda, por ejemplo, la compra de productos de AFYMOS y la consiguiente gesti\xf3n derivada de la misma. Para gestionar las donaciones recibidas por esta Asociaci\xf3n y la correspondiente gesti\xf3n administrativa con estos donantes.Para el tratamiento de los datos personales de empresarios individuales y personas de contacto de empresas en su mantenimiento de relaciones, independientemente de que sean comerciales/transaccionales o no. Para gestionar los curr\xedculum vitae recibidos y poder as\xed participar en los diferentes procesos de selecci\xf3n de personal que se lleven a cabo en la entidad..",
           img: "",
         },
-        mo = function () {
+        go = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "politica Privacidad" }),
               (0, dn.jsx)(Un, { title: "Cookies y Privacidad", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, fo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, po), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ho), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, po), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ho), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, mo), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        go = n(6493),
-        vo = n(5900),
-        yo = {
+        vo = n(6493),
+        yo = n(5900),
+        bo = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "El Servicio de Capacitaci\xf3n Afymos" },
@@ -20019,9 +20016,9 @@
             "Es un servicio de atenci\xf3n diurna que tienen como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
           description:
             "Facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones).",
-          img: go,
+          img: vo,
         },
-        bo = {
+        Ao = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -20031,9 +20028,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodolog\xeda detrabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          img: vo,
+          img: yo,
         },
-        Ao = function () {
+        xo = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
@@ -20042,17 +20039,17 @@
                 title: "Programa habilitaci\xf3n laboral",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, yo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, bo), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, bo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Ao), {}, { reverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        xo = n(3494),
-        wo = n(843),
-        So = n(6808),
-        ko = {
+        wo = n(3494),
+        So = n(843),
+        ko = n(6808),
+        jo = {
           id: "centroDiaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20061,9 +20058,9 @@
             "El Centro de D\xeda Afymos es un recurso social de atenci\xf3n diurna dirigido a prestar atenci\xf3n especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
           description:
             "Pretendemos favorecer la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente \xedndole, temporales o permanentes, de diferente intensidad y frecuencia.",
-          img: xo,
+          img: wo,
         },
-        jo = {
+        Eo = {
           id: "centroDiaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20074,9 +20071,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Fomentamos la participaci\xf3n en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social, y contribuyendo a mejorar su calidad de vida. ",
-          img: wo,
+          img: So,
         },
-        Eo = {
+        Co = {
           id: "centroDiaDataThree",
           reverse: !1,
           inverse: !1,
@@ -20087,26 +20084,26 @@
             "Dise\xf1amos un plan personal de apoyos y su plan de futuro personal, donde se recogen los principales objetivos a conseguir en diferentes \xe1mbitos de su vida",
           description:
             "Potenciaremos la utilizaci\xf3n de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
-          img: So,
+          img: ko,
         },
-        Co = function () {
+        Oo = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Centro de D\xeda" }),
               (0, dn.jsx)(Un, { title: "Nuestro Centro de d\xeda", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, ko), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, jo), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Eo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, jo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Eo), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Co), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, { size: !0, inverse: !0, marginBottom: !0 }),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Oo = n(4441),
-        Po = n(3208),
-        To = n(4058),
-        Lo = {
+        Po = n(4441),
+        To = n(3208),
+        Lo = n(4058),
+        Mo = {
           id: "centroDiversidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -20115,9 +20112,9 @@
             "Cuenta con espacio \xfatil de 803,16 m\xb2 dividido en dos plantas.",
           description:
             "Nuestro Centro es un edificio que engloba m\xfaltiples actuaciones dirigidas a mejorar la Calidad de Vida de las personas con discapacidad. El edificio donde est\xe1 ubicado el nuestros servicios y recursos se denomina 'Centro de Atenci\xf3n a la Diversidad Funcional' y cuenta con unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el a\xf1o obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun as\xed seguiremos adapt\xe1ndolo para favorecer la orientaci\xf3n y la comunicaci\xf3n para personas con especiales dificultades en estos aspectos.",
-          img: Oo,
+          img: Po,
         },
-        Mo = {
+        Io = {
           id: "centroDiversidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20126,9 +20123,9 @@
             "Contamos con numerosas salas adaptadas para llevar a cabo todos los servicios terapeuticos y de formaci\xf3n de ofrecemos",
           description:
             "Afymos est\xe1 acreditado como Centro de Formaci\xf3n para impartir Formaci\xf3n Profesional para el Empleo en Castilla-La Mancha, dependiente de la Consejer\xeda de Empresas, Econom\xeda y Empleo. Tiene tambi\xe9n como finalidad la cualificaci\xf3n de los profesionales del Espacio de Atenci\xf3n a la Diversidad Funcional, personas con discapacidad intelectual, formaci\xf3n para la comunidad, ponencias y convertirnos en un espacio en el que poder compartir buenas pr\xe1cticas y experiencias en la Atenci\xf3n a la Diversidad Funcional, llegando a ser centro pionero en este \xe1mbito.",
-          img: To,
+          img: Lo,
         },
-        Io = {
+        zo = {
           id: "centroDiversidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -20138,14 +20135,14 @@
           headline: "Centro de Atenci\xf3n a la Diversidad Funcional",
           description:
             "Este espacio, de manera global, se define como un conjunto de recursos especializados desde donde se ofrecen servicios y programas personalizados de capacitaci\xf3n y habilitaci\xf3n  individual, de apoyo a la independencia de las personas con diversidad funcional  en todos los \xe1mbitos de la vida cotidiana, dando a cada persona  las herramientas que precise para desarrollarse en todas las dimensiones del  Modelo de Calidad de Vida de Schalock y Verdugo, de manera que tome el control de su propia vida, favoreciendo as\xed el empoderamiento de las personas con Discapacidad Intelectual/Diversidad Funcional/ Especificidad/Dependencia.",
-          img: Po,
+          img: To,
         },
-        zo = n(737),
-        Do = n(8919),
-        Ro = n(9002),
-        No = n(1197),
-        Fo = n(556),
-        Bo = function (e) {
+        Do = n(737),
+        Ro = n(8919),
+        No = n(9002),
+        Fo = n(1197),
+        Bo = n(556),
+        Wo = function (e) {
           return (0, dn.jsx)(dn.Fragment, {
             children: (0, dn.jsx)("section", {
               children: (0, dn.jsxs)("div", {
@@ -20174,15 +20171,15 @@
                     children: [
                       (0, dn.jsx)("div", {
                         class: "item-slide",
-                        children: (0, dn.jsx)("img", { src: zo, alt: e.alt }),
-                      }),
-                      (0, dn.jsx)("div", {
-                        class: "item-slide",
                         children: (0, dn.jsx)("img", { src: Do, alt: e.alt }),
                       }),
                       (0, dn.jsx)("div", {
                         class: "item-slide",
                         children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
+                      }),
+                      (0, dn.jsx)("div", {
+                        class: "item-slide",
+                        children: (0, dn.jsx)("img", { src: No, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20192,17 +20189,17 @@
                       (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "1",
-                        children: (0, dn.jsx)("img", { src: Do, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
                       }),
                       (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "2",
-                        children: (0, dn.jsx)("img", { src: No, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Fo, alt: e.alt }),
                       }),
                       (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "3",
-                        children: (0, dn.jsx)("img", { src: Fo, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Bo, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20211,7 +20208,7 @@
             }),
           });
         },
-        Wo = function () {
+        Uo = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
@@ -20220,18 +20217,18 @@
                 title: "Centro de atenci\xf3n a la Diversidad Funcional",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, Lo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Mo), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Io), {}, { inverse: !0 })),
-              (0, dn.jsx)(Bo, {}),
+              (0, dn.jsx)(fn, G(G({}, Mo), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Io), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, zo), {}, { inverse: !0 })),
+              (0, dn.jsx)(Wo, {}),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Uo = n(6281),
-        Ho = n(6627),
-        Vo = {
+        Ho = n(6281),
+        Vo = n(6627),
+        Go = {
           id: "creaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20240,9 +20237,9 @@
             " financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
           description:
             "Desde 2017, nuestra Asociaci\xf3n es entidad promotora del Proyecto NUEVO CREA, programa dual de formaci\xf3n y empleo para personas con discapacidad intelectual.",
-          img: Uo,
+          img: Ho,
         },
-        Go = {
+        Yo = {
           id: "creaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20251,14 +20248,14 @@
             "Durante 6 meses, de abril a septiembre, 8 personas con discapacidad trabajan en 7 empresas locales;",
           description:
             "Colegio Concertado Virgen de Loreto, Cabezuelo Foods, Grupo Asesor OTS, Josmoral, Transportes F\xe9lix e hijos, Cooperativa Cristo de la Vega y Afymos Asociaci\xf3n, con un contrato de formaci\xf3n en alternancia con el empleo. Simult\xe1neamente, se imparte una especialidad formativa de \u201cOperaciones Auxiliares en el Departamento de Administraci\xf3n y Recepci\xf3n para Personas con Discapacidad Intelectual\u201d.",
-          img: Ho,
+          img: Vo,
         },
-        Yo = function () {
-          return (0, dn.jsx)(Qo, {
+        Qo = function () {
+          return (0, dn.jsx)(Zo, {
             id: "demo",
-            children: (0, dn.jsxs)(Zo, {
+            children: (0, dn.jsxs)(qo, {
               children: [
-                (0, dn.jsxs)(qo, {
+                (0, dn.jsxs)(_o, {
                   children: [
                     (0, dn.jsx)("p", { children: "Proyecto CREA;" }),
                     (0, dn.jsx)("p", { children: "Nuestra filosof\xeda" }),
@@ -20268,7 +20265,7 @@
                     }),
                   ],
                 }),
-                (0, dn.jsx)(_o, {
+                (0, dn.jsx)(Jo, {
                   children: (0, dn.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -20284,42 +20281,42 @@
             }),
           });
         },
-        Qo = Qt.div(
-          la ||
-            (la = q([
-              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
-            ]))
-        ),
         Zo = Qt.div(
           ca ||
             (ca = q([
-              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
+              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
         qo = Qt.div(
           ua ||
             (ua = q([
+              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
+            ]))
+        ),
+        _o = Qt.div(
+          da ||
+            (da = q([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    font-size: 2rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        _o = Qt.div(da || (da = q(["\n  margin: auto;\n"]))),
-        Jo = function () {
+        Jo = Qt.div(fa || (fa = q(["\n  margin: auto;\n"]))),
+        Xo = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Proyecto CREA 2023" }),
-              (0, dn.jsx)(fn, G(G({}, Vo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Go), {}, { reverse: !0 })),
-              (0, dn.jsx)(Yo, {}),
+              (0, dn.jsx)(fn, G(G({}, Go), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, Yo), {}, { reverse: !0 })),
+              (0, dn.jsx)(Qo, {}),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        Xo = n(8039),
-        Ko = n(7878),
-        $o = n(3960),
-        es = {
+        Ko = n(8039),
+        $o = n(7878),
+        es = n(3960),
+        ts = {
           id: "diagnosticoDataOne",
           reverse: !1,
           inverse: !1,
@@ -20330,9 +20327,9 @@
             "Este servicio tiene como objetivo valoraci\xf3n con tests estandarizados y pruebas psicom\xe9tricas objetivas en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
           description:
             "Nuestra valoraci\xf3n se lleva a cabo con tests estandarizados y pruebas psicom\xe9tricas como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
-          img: Xo,
+          img: Ko,
         },
-        ts = {
+        ns = {
           id: "diagnosticoDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20340,9 +20337,9 @@
           headline: "\xbfC\xf3mo trabajamos?",
           description:
             "Se har\xe1n valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
-          img: $o,
+          img: es,
         },
-        ns = {
+        rs = {
           id: "diagnosticoDataThree",
           reverse: !1,
           inverse: !1,
@@ -20350,22 +20347,22 @@
           headline: "Poner nombre a las necesidades de las personas",
           description:
             "Para ello, nuestros profesionales realizar\xe1n una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
-          img: Ko,
+          img: $o,
         },
-        rs = function () {
+        is = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Valoraci\xf3n y diagnostico" }),
-              (0, dn.jsx)(fn, G(G({}, es), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ts), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ns), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ts), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ns), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, rs), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        is = {
+        as = {
           id: "donacionDataOne",
           reverse: !1,
           inverse: !1,
@@ -20382,22 +20379,22 @@
           alt: "ir a ruralvia",
           target: "_blank",
         },
-        as = function () {
+        os = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Donaciones" }),
               (0, dn.jsx)(Un, { title: "Crecemos contigo", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, is), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, as), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, { inverse: !0, size: !0 }),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        os = n(5165),
-        ss = n(2451),
-        ls = n(7637),
-        cs = {
+        ss = n(5165),
+        ls = n(2451),
+        cs = n(7637),
+        us = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20407,45 +20404,45 @@
             "Ofrecemos asesoramiento y apoyo a familias de personas con cualquier tipo de discapacidad",
           description:
             "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas espec\xedficas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
-          img: os,
+          img: ss,
         },
-        us = {
+        ds = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
           headline: "Apoyos que presta este servicio:",
           description:
             "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atenci\xf3n psicol\xf3gica, adem\xe1s, proporciamos informaci\xf3n y orientaci\xf3n tras un estudio minucioso sobre las necesidades de cada caso",
-          img: ls,
+          img: cs,
         },
-        ds = {
+        fs = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Consulta sin compromiso a nuestros profesionales" },
           headline: "A qui\xe9n va dirigido:",
           description:
             "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
-          img: ss,
+          img: ls,
         },
-        fs = function () {
+        ps = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Servicio de atenci\xf3n a familias" }),
               (0, dn.jsx)(Un, { title: "Apoyo a familiares", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, cs), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, us), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ds), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, us), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ds), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, fs), {}, { inverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        ps = n(7449),
-        hs = n(6878),
-        ms = n(5412),
-        gs = n(5866),
-        vs = {
+        hs = n(7449),
+        ms = n(6878),
+        gs = n(5412),
+        vs = n(5866),
+        ys = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20455,9 +20452,9 @@
             "Estamos homologados por La Junta de Castilla la Mancha  en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
           description:
             "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos en personas con discapacidad intelectual.",
-          img: ps,
+          img: hs,
         },
-        ys = {
+        bs = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -20467,9 +20464,9 @@
             "Este certificado fue realizado por 15 j\xf3venes menores de 30 a\xf1os. Debemos destacar que 6 de estos chicos ten\xedan discapacidad intelectual, y gracias a los apoyos brindados por los profesionales, lograron terminarlo con \xe9xito.",
           description:
             "Finalmente reciben un incentivo econ\xf3mico obtenido de las ganancias por las ventas de los productos elaborados..",
-          img: gs,
+          img: vs,
         },
-        bs = {
+        As = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20479,9 +20476,9 @@
             "Esta formaci\xf3n tiene como objetivo el intervenir en el entorno personal y sociolaboral de las personas con discapacidad aplicando la Metodolog\xeda de Empleo con Apoyo para facilitar el acceso y mantenimiento del puesto de trabajo.",
           description:
             "Realizamos el entrenamiento de las habilidades sociolaborales necesarias para la inserci\xf3n, manteniendo contactos con el entorno y colaborando en el an\xe1lisis de puestos de trabajo.",
-          img: hs,
+          img: ms,
         },
-        As = {
+        xs = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "PROGRAMA CREA" },
@@ -20489,9 +20486,9 @@
             "Nuestro Proyecto, \u201cPromoviendo la integraci\xf3n sociolaboral de las personas con discapacidad intelectual\u201d, tiene como objetivo la inserci\xf3n plena de las personas con discapacidad en la comunidad en la que viven.",
           description:
             "Son 9 las personas contratadas por 8 empresas de la localidad durante 9 meses y nuestra labor consiste en ofrecer empleo con apoyo y formaci\xf3n inherente al puesto de trabajo a trav\xe9s del trabajo de una T\xe9cnico de Orientaci\xf3n e Integraci\xf3n Laboral",
-          img: ms,
+          img: gs,
         },
-        xs = function () {
+        ws = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
@@ -20503,16 +20500,15 @@
                 title: "Fomentamos la formaci\xf3n",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, vs), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ys), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, bs), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, As), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, ys), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, bs), {}, { reverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, As), {}, { inverse: !0 })),
+              (0, dn.jsx)(fn, G(G({}, xs), {}, { reverse: !0 })),
               (0, dn.jsx)(Kn, {}),
               (0, dn.jsx)(xn, {}),
             ],
           });
         },
-        ws = n(1919),
         Ss = n(3523),
         ks = n(3977),
         js = n(9501),
@@ -20524,20 +20520,20 @@
             "Este programa tiene la finalidad de ofrecer Servicios Terap\xe9uticos de diferentes disciplinas con el fin de mejorar la calidad de vida de las personas.",
           description:
             "Contamos con profesionales de diferentes disciplinas para intervenir seg\xfan las necesidades de los usuarios y actualmente contamos con las los siguientes servicios terap\xe9uticos.",
-          img: xo,
+          img: wo,
         },
         Cs = {
           id: "logopedia",
           reverse: !1,
           inverse: !0,
           topLine: {
-            text: "LOGOPEDIA: conoce c\xf3mo trabajan nuestros profesionales Jorge S\xe1nchez y Cristina Olivares",
+            text: "LOGOPEDIA: conoce c\xf3mo trabaja nuestra profesional Cristina Olivares",
           },
           headline:
             "La logopedia es la disciplina sanitaria encargada de la prevenci\xf3n, detecci\xf3n, evaluaci\xf3n,diagn\xf3stico y tratamiento de los trastornos implicados en la comunicaci\xf3n humana",
           description:
-            "Realizamos una entrevista con la familia y una evaluaci\xf3n inicial de la cual se elabora unos objetivos y se dise\xf1a una programaci\xf3n individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duraci\xf3n de 30-45 minutos, dependiente de las necesidades de cada paciente.",
-          img: ws,
+            "Realizo una entrevista con la familia y una evaluaci\xf3n inicial de la cual se elabora unos objetivos y se dise\xf1a una programaci\xf3n individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duraci\xf3n de 30-45 minutos, dependiendo de las necesidades de cada paciente.",
+          img: Yr,
         },
         Os = {
           id: "fisioterapia",
@@ -20549,8 +20545,8 @@
           headline:
             "La fisioterapia  ofrece tratamiento y rehabilitaci\xf3n f\xedsica para diagnosticar, prevenir y tratar s\xedntomas de m\xfaltiples patolog\xedas, tanto agudas como cr\xf3nicas.",
           description:
-            "En nuestra terapia llevaremos a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizaremos distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
-          img: Qr,
+            "En mi terapia llevo a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizo distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
+          img: Zr,
         },
         Ps = {
           id: "terapia-ocupacional",
@@ -20574,8 +20570,7 @@
           },
           headline:
             "la neuropsicolog\xeda estudia las bases neuroanat\xf3micas en relaci\xf3n alos procesos mentales como: atenci\xf3n, emoci\xf3n, memoria, lenguaje y percepci\xf3n",
-          description:
-            "Las personas destinatarias del servicio son todas aquellas pertenecientes a las familias de una persona con alguna discapacidad que no sean usuarios del Centro de D\xeda, Servicio de Capacitaci\xf3n o Vivienda con Apoyo. Se prestar\xe1 mayor intensidad a las familias en cuyo seno conviva una persona que adem\xe1s de discapacidad tenga necesidades espec\xedficas de apoyo derivados de trastornos de salud mental, problemas graves de conducta, trastorno generalizado del desarrollo, o pluridiscapacidad, y/o familias en situaci\xf3n de riesgo (monoparentales, cuidadores mayores con problemas de salud, escasos recursos econ\xf3micos, inmigrantes, etc.).",
+          description: " ",
           img: Ss,
         },
         Ls = {
@@ -20588,7 +20583,7 @@
           headline:
             "La terapia psicopedag\xf3gica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
           description:
-            "Como psicopedagoga\xa0asesoro, eval\xfao, realizo informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planifico y dise\xf1o propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas o trastornos en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas al momento de aprender.",
+            "Como psicopedagogas\xa0asesoramos, evaluamos y realizamos informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planificamos y dise\xf1amos propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas en el momento de aprender.",
           img: ks,
         },
         Ms = {
@@ -20602,7 +20597,7 @@
             "La terapia de estimulaci\xf3n auditiva SENA es un tratamiento cuyo objetivo es mejorar la percepci\xf3n auditiva de la persona que lo recibe.",
           description:
             "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopat\xeda para comprobar el estado del canal auditivo, audiometr\xeda para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
-          img: Zr,
+          img: qr,
         },
         Is = {
           id: "visual",
@@ -20614,7 +20609,7 @@
           headline:
             "La terapia visual consiste en la repetici\xf3n de una serie de ejercicios que consiguen crear nuevas conexiones neurol\xf3gicas y mejorar habilidades visuales alteradas.",
           description:
-            "Evaluamos el desarrollo y funcionamiento de la visi\xf3n desde el nacimiento. Para ello se analizan habilidades como la acomodaci\xf3n, binocularidad (visi\xf3n en 3D), movimientos oculares y la percepci\xf3n visual..",
+            "Evaluo el desarrollo y funcionamiento de la visi\xf3n desde el nacimiento. Para ello analizo habilidades como la acomodaci\xf3n, binocularidad (visi\xf3n en 3D), movimientos oculares y la percepci\xf3n visual..",
           img: js,
         },
         zs = {
@@ -20625,10 +20620,10 @@
             text: "PSICOLOG\xcdA: conoce c\xf3mo trabaja nuestra profesional, Beatriz Henales",
           },
           headline:
-            "Nos centramos en la psicoeducaci\xf3n y en la reestructuraci\xf3n cognitiva. Buscamos favorecer los procesos de cambio y toma de decisiones para buscar una situaci\xf3n m\xe1s adaptativa para la persona.",
+            "Me centro en la psicoeducaci\xf3n y en la reestructuraci\xf3n cognitiva. Busco favorecer los procesos de cambio y toma de decisiones para buscar una situaci\xf3n m\xe1s adaptativa para la persona.",
           description:
-            "A nivel psicoeducativo podemos ayudar a las personas a entender sus propios procesos, situaciones personales, patolog\xedas, etc, para facilitar su propia adaptaci\xf3n al medio y mitigar sus estados de ansiedad e incertidumbre.",
-          img: Yr,
+            "A nivel psicoeducativo puedo ayudar a las personas a entender sus propios procesos, situaciones personales, patolog\xedas, etc, para facilitar su propia adaptaci\xf3n al medio y mitigar sus estados de ansiedad e incertidumbre.",
+          img: Qr,
         },
         Ds = n(3829),
         Rs = n(775),
@@ -20713,7 +20708,7 @@
                   children: (0, dn.jsx)(Ys, {
                     children: e.map(function (e) {
                       return (0,
-                      dn.jsxs)(Qs, { value: e.name, children: [(0, dn.jsx)("h3", { children: e.name }), (0, dn.jsx)(Ni.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, dn.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
+                      dn.jsxs)(Qs, { value: e.name, children: [(0, dn.jsx)("h3", { children: e.name }), (0, dn.jsx)(Fi.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, dn.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
                     }),
                   }),
                 }),
@@ -20722,27 +20717,27 @@
           });
         },
         Gs = Qt.div(
-          fa ||
-            (fa = q([
+          pa ||
+            (pa = q([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1 {\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
         Ys = Qt.div(
-          pa ||
-            (pa = q([
+          ha ||
+            (ha = q([
               "\n  display: grid;\n  width: 100%;\n  height: 100%;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: 1fr;\n  margin: auto;\n  grid-gap: 5% 5%;\n  margin: 5% 20%;\n  justify-content: center;\n\n  @media (max-width: 768px) {\n    width: 70%;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: 1fr 1fr;\n    margin: auto;\n    grid-gap: 30px 30px;\n    margin: 5%;\n    margin-bottom: 15%;\n    width: 90%;\n  }\n",
             ]))
         ),
         Qs =
           (Qt.div(
-            ha ||
-              (ha = q([
+            ma ||
+              (ma = q([
                 "\n  display: flex;\n  width: 50%;\n  position: relative;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0px;\n",
               ]))
           ),
           Qt.div(
-            ma ||
-              (ma = q([
+            ga ||
+              (ga = q([
                 "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n\n  :hover {\n    border: 3px solid #ffc0bc;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
@@ -21144,7 +21139,7 @@
                 value: function () {
                   return (0, dn.jsx)("div", {
                     style: {
-                      position: "center",
+                      position: "absolute",
                       width: "100%",
                       height: "100%",
                     },
@@ -21155,15 +21150,14 @@
                       height: "100%",
                       children: [
                         (0, dn.jsx)("br", {}),
-                        (0, dn.jsx)("button", {
-                          children: (0, dn.jsx)("a", {
-                            href: n(4446),
-                            rel: "noreferrer",
-                            target: "_blank",
-                            id: "enlaceDescargarPdfOrganigrama",
-                            download: "organigrama.pdf",
-                            children: "Descargar PDF",
-                          }),
+                        (0, dn.jsx)("a", {
+                          href: n(4446),
+                          rel: "noreferrer",
+                          target: "_blank",
+                          id: "enlaceDescargarPdfOrganigrama",
+                          download: "organigrama.pdf",
+                          children:
+                            "Tu dispositivo no puede visualizar los PDF, da click aqu\xed para descargarlo",
                         }),
                       ],
                     }),
@@ -21185,11 +21179,11 @@
                 }),
                 (0, dn.jsx)(F, {
                   path: "/nosotros",
-                  element: (0, dn.jsx)(uo, {}),
+                  element: (0, dn.jsx)(fo, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/apoyo-familias",
-                  element: (0, dn.jsx)(fs, {}),
+                  element: (0, dn.jsx)(ps, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/ocio-y-voluntariado",
@@ -21201,31 +21195,31 @@
                 }),
                 (0, dn.jsx)(F, {
                   path: "/centro-de-dia",
-                  element: (0, dn.jsx)(Co, {}),
+                  element: (0, dn.jsx)(Oo, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/proyecto-crea",
-                  element: (0, dn.jsx)(Jo, {}),
+                  element: (0, dn.jsx)(Xo, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/valoracion-y-diagnostico",
-                  element: (0, dn.jsx)(rs, {}),
+                  element: (0, dn.jsx)(is, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/donaciones",
-                  element: (0, dn.jsx)(as, {}),
+                  element: (0, dn.jsx)(os, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/servicio-capacitacion",
-                  element: (0, dn.jsx)(Ao, {}),
+                  element: (0, dn.jsx)(xo, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/instalaciones-centro-diversidad",
-                  element: (0, dn.jsx)(Wo, {}),
+                  element: (0, dn.jsx)(Uo, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/valoracion-y-diagnostico",
-                  element: (0, dn.jsx)(rs, {}),
+                  element: (0, dn.jsx)(is, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/organigrama",
@@ -21241,21 +21235,21 @@
                 }),
                 (0, dn.jsx)(F, {
                   path: "/formacion",
-                  element: (0, dn.jsx)(xs, {}),
+                  element: (0, dn.jsx)(ws, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/junta-directiva",
-                  element: (0, dn.jsx)(ei, {}),
+                  element: (0, dn.jsx)(ti, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/politica-privacidad",
-                  element: (0, dn.jsx)(mo, {}),
+                  element: (0, dn.jsx)(go, {}),
                 }),
                 (0, dn.jsx)(F, {
                   path: "/aviso-legal",
                   element: (0, dn.jsx)(zr, {}),
                 }),
-                (0, dn.jsx)(F, { path: "/", element: (0, dn.jsx)(Ka, {}) }),
+                (0, dn.jsx)(F, { path: "/", element: (0, dn.jsx)($a, {}) }),
               ],
             }),
           });
@@ -21266,4 +21260,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.b3d1210f.js.map
+//# sourceMappingURL=main.ba0208c4.js.map

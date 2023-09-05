@@ -22,9 +22,9 @@ export const nosotrosDataTwo = {
     text: "Nuestra misión",
   },
   headline:
-    "La Misión de Afymos es “contribuir, desde su compromiso ético, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de calidad de vida:",
+    "La Misión de Afymos es contribuir, desde su compromiso ético, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de vida:",
   description:
-    " En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan más oportunidades de participar en la sociedad. ",
+    "En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan más oportunidades de participar en la sociedad. ",
   img: nosotros2,
 };
 
