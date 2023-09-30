@@ -38,8 +38,8 @@ export const viviendasDataThree = {
     text: "METODOLOGÍA",
   },
   headline:
-    "El modelo metodológico a seguir se basa en la Capacitación dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
+    "El modelo metodológico a seguir será basado en la Capacitación dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
   description:
-    "Los principios metodológicos son: integración, individualización y optimización. Se ofrece a las personas con especificidad la oportunidad de vivir de la manera más autónoma posible, fomentando la participación activa de la persona objeto de nuestro apoyo en la comunidad de Socuéllamos, desde la igualdad y la plena inclusión social..",
+    "Los principios metodológicos serán: integración, individualización y optimización. Se ofrecerá a las personas con especificidad la oportunidad de vivir de la manera más autónoma posible, fomentando la participación activa de la persona objeto de nuestro apoyo en la comunidad de Socuéllamos, desde la igualdad y la plena inclusión social..",
   img: apoyoVivienda3,
 };

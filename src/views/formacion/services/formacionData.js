@@ -8,9 +8,9 @@ export const formacionDataOne = {
     text: "En el año 2016 obtuvimos la resolución favorable de la Consejería de Economía, Empresas y Empleo para ser Centro de Formación",
   },
   headline:
-    "Estamos homologados por La Junta de Castilla la Mancha  en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
+    "Estamos homologados por La Junta de Castilla la Mancha en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
   description:
-    "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos en personas con discapacidad intelectual.",
+    "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos a las personas con discapacidad intelectual.",
   img: formacion1,
 };
 
@@ -21,7 +21,7 @@ export const formacionDataFour = {
     text: "PROGRAMA CREA",
   },
   headline:
-    "Proyecto formación profesional y empleo en el seno de las empresas para personas con discapacidad.",
+    "Proyecto de formación profesional y empleo en el seno de las empresas para personas con discapacidad.",
   description:
     "Este proyecto consiste en el mejor ejemplo de FORMACIÓN DUAL, puesto que combinan formación profesional en el ámbito laboral con trabajo efectivo en la empresa, mediante larealización de contratos de formación en alternancia.",
   img: formacion2,

@@ -16,7 +16,7 @@ const ProjectsViviendas = () => {
   return (
     <>
       <ScrollToTop />
-      <NavBarViews title="Servicio de atención a Viviendas" />
+      <NavBarViews title="Viviendas" />
       <TitleSection title="Apoyo acceso viviendas" size />
       <ContentProjects {...viviendasDataOne} inverse />
       <ContentProjects {...viviendasDataTwo} reverse />

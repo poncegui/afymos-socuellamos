@@ -20,6 +20,7 @@ import ProjectsFormacion from "../views/formacion/ProjectsFormacion";
 import ProjectsTerapias from "../views/terapias/ProjetsTerapias";
 import ProjectsVivienda from "../views/viviendasApoyo/ProjectsVivienda";
 import ProjectsVoluntariado from "../views/voluntariado/ProjectsVoluntariado";
+import ScrollToTop from "./ScrollToTop";
 import VisorPdf20 from "../views/Landing/components/pdf/VisorPdf2020";
 import VisorPdf21 from "../views/Landing/components/pdf/VisorPdf2021";
 import VisorPdfOrganigrama from "../views/Landing/components/pdf/VisorPdfOrganigrama";
@@ -27,6 +28,7 @@ import VisorPdfOrganigrama from "../views/Landing/components/pdf/VisorPdfOrganig
 const App = () => {
   return (
     <>
+      <ScrollToTop smooth />
       <Routes>
         <Route path="/terapias" element={<ProjectsTerapias />} />
         <Route path="/nosotros" element={<Nosotros />} />
@@ -61,6 +63,7 @@ const App = () => {
         <Route path="/aviso-legal" element={<AvisoLegal />} />
         <Route path="/" element={<LandingView />} />
       </Routes>
+      <ScrollToTop smooth />
     </>
   );
 };

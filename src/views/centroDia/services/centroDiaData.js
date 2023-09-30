@@ -12,7 +12,7 @@ export const centroDiaDataOne = {
   headline:
     "El Centro de Día Afymos es un recurso social de atención diurna dirigido a prestar atención especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
   description:
-    "Pretendemos favorecer la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente índole, temporales o permanentes, de diferente intensidad y frecuencia.",
+    "Favorecemos la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente índole, temporales o permanentes, de diferente intensidad y frecuencia.",
   img: centroDia,
 };
 
@@ -26,7 +26,7 @@ export const centroDiaDataTwo = {
   headline:
     "A través de programas de habilitación encaminados a alcanzar el mayor grado de autonomía personal, de comunicación, adquisición y mantenimiento de las habilidades básicas",
   description:
-    "Fomentamos la participación en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social, y contribuyendo a mejorar su calidad de vida. ",
+    "Fomentamos la participación en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social,  contribuyendo a mejorar su calidad de vida. ",
   img: centroDia2,
 };
 
@@ -40,6 +40,6 @@ export const centroDiaDataThree = {
   headline:
     "Diseñamos un plan personal de apoyos y su plan de futuro personal, donde se recogen los principales objetivos a conseguir en diferentes ámbitos de su vida",
   description:
-    "Potenciaremos la utilización de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
+    "Potencionamos la utilización de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
   img: centroDia3,
 };

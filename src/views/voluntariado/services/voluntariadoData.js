@@ -52,8 +52,9 @@ export const voluntariadoFour = {
     text: "Ocio Compartido",
   },
   headline:
-    "Se fomenta la participación en actividades grupaes de ocio, organizadas por ellos mismos con los apoyos profesionales necesarios.",
-  description: "",
+    "Se fomenta la participación en actividades grupales de ocio, organizadas por ellos mismos con los apoyos profesionales necesarios.",
+  description:
+    "Es un proyecto de inclusión creado por Afymos y cofinanciado por la Consejería de Bienestar Social de CL, el Ayto. de Socuéllamos y nuestra entidad en el que jóvenes con discapacidad y sin discapacidad realizan actividades de ocio y deporte durante las vacaciones de verano.",
   img: voluntariado2,
 };
 

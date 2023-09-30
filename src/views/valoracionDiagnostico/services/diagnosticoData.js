@@ -7,12 +7,12 @@ export const diagnosticoDataOne = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "Valoración y diagnóstico para personas con algún tipo de discapacidad",
+    text: "Valoración y diagnóstico",
   },
   headline:
-    "Este servicio tiene como objetivo valoración con tests estandarizados y pruebas psicométricas objetivas en distintos ámbitos a nivel integral como la neuropsicología, psicología, psicopedagogía, logopedia, terapia ocupacional y fisioterapia.",
+    "Este servicio valora con tests estandarizados y pruebas psicométricas.",
   description:
-    "Nuestra valoración se lleva a cabo con tests estandarizados y pruebas psicométricas como la neuropsicología, psicología, psicopedagogía, logopedia, terapia ocupacional y fisioterapia.",
+    "Éstas pruebas objetivas se realizan en distintos ámbitos a nivel integral como la neuropsicología, psicología, psicopedagogía, logopedia, terapia ocupacional y fisioterapia",
 
   img: diagnostico,
 };
@@ -26,7 +26,7 @@ export const diagnosticoDataTwo = {
   },
   headline: "¿Cómo trabajamos?",
   description:
-    "Se harán valoraciones globales de un trastorno concreto (TEA, TDAH) así como valoraciones de áreas específicas con dificultades, adaptándolo a las necesidades concretas de cada usuario.",
+    "Se realizan valoraciones globales de un trastorno concreto (TEA, TDAH) así como valoraciones de áreas específicas con dificultades, adaptándolo a las necesidades concretas de cada usuario.",
   img: diagnostico3,
 };
 
@@ -39,6 +39,6 @@ export const diagnosticoDataThree = {
   },
   headline: "Poner nombre a las necesidades de las personas",
   description:
-    "Para ello, nuestros profesionales realizarán una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la información obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
+    "Para ello, nuestros profesionales realizan una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la información obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
   img: diagnostico2,
 };

@@ -72,7 +72,8 @@ export const neuroPsicologiaData = {
   },
   headline:
     "la neuropsicología estudia las bases neuroanatómicas en relación alos procesos mentales como: atención, emoción, memoria, lenguaje y percepción",
-  description: " ",
+  description:
+    "Dentro de mi equipo mi función es la de evaluar las capacidades cognitivas  y saber cuáles están fallando y cuales están “a tope”. Después planteo un programa de entrenamiento, o como otros compañeros llaman, rehabilitación, para trabajar en la mejora de aquellas áreas que se han quedado dañadas ono se han desarrollado a los niveles esperables para la edad. ",
   img: neuroPiscologia,
 };
 

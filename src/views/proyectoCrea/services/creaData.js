@@ -9,7 +9,7 @@ export const creaDataOne = {
     text: "Proyecto CREA 2023",
   },
   headline:
-    " financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
+    "Financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
   description:
     "Desde 2017, nuestra Asociación es entidad promotora del Proyecto NUEVO CREA, programa dual de formación y empleo para personas con discapacidad intelectual.",
   img: creaOne,
