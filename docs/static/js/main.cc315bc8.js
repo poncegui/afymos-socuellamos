@@ -1,4 +1,4 @@
-/*! For license information please see main.85907f26.js.LICENSE.txt */
+/*! For license information please see main.cc315bc8.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -836,8 +836,8 @@
           M = 60115,
           I = 60116,
           z = 60121,
-          R = 60128,
-          D = 60129,
+          D = 60128,
+          R = 60129,
           N = 60130,
           B = 60131;
         if ("function" === typeof Symbol && Symbol.for) {
@@ -856,8 +856,8 @@
             (I = F("react.lazy")),
             (z = F("react.block")),
             F("react.scope"),
-            (R = F("react.opaque.id")),
-            (D = F("react.debug_trace_mode")),
+            (D = F("react.opaque.id")),
+            (R = F("react.debug_trace_mode")),
             (N = F("react.offscreen")),
             (B = F("react.legacy_hidden"));
         }
@@ -1450,12 +1450,12 @@
         function ze(e, t, n, r, i) {
           return e(t, n, r, i);
         }
-        function Re() {}
-        var De = Ie,
+        function De() {}
+        var Re = Ie,
           Ne = !1,
           Be = !1;
         function Fe() {
-          (null === Oe && null === Pe) || (Re(), Me());
+          (null === Oe && null === Pe) || (De(), Me());
         }
         function We(e, t) {
           var n = e.stateNode;
@@ -1880,7 +1880,7 @@
             "waiting",
             "waiting",
           ];
-        function Rt(e, t) {
+        function Dt(e, t) {
           for (var n = 0; n < e.length; n += 2) {
             var r = e[n],
               i = e[n + 1];
@@ -1891,63 +1891,63 @@
           }
         }
         (0, a.unstable_now)();
-        var Dt = 8;
+        var Rt = 8;
         function Nt(e) {
-          if (0 !== (1 & e)) return (Dt = 15), 1;
-          if (0 !== (2 & e)) return (Dt = 14), 2;
-          if (0 !== (4 & e)) return (Dt = 13), 4;
+          if (0 !== (1 & e)) return (Rt = 15), 1;
+          if (0 !== (2 & e)) return (Rt = 14), 2;
+          if (0 !== (4 & e)) return (Rt = 13), 4;
           var t = 24 & e;
           return 0 !== t
-            ? ((Dt = 12), t)
+            ? ((Rt = 12), t)
             : 0 !== (32 & e)
-            ? ((Dt = 11), 32)
+            ? ((Rt = 11), 32)
             : 0 !== (t = 192 & e)
-            ? ((Dt = 10), t)
+            ? ((Rt = 10), t)
             : 0 !== (256 & e)
-            ? ((Dt = 9), 256)
+            ? ((Rt = 9), 256)
             : 0 !== (t = 3584 & e)
-            ? ((Dt = 8), t)
+            ? ((Rt = 8), t)
             : 0 !== (4096 & e)
-            ? ((Dt = 7), 4096)
+            ? ((Rt = 7), 4096)
             : 0 !== (t = 4186112 & e)
-            ? ((Dt = 6), t)
+            ? ((Rt = 6), t)
             : 0 !== (t = 62914560 & e)
-            ? ((Dt = 5), t)
+            ? ((Rt = 5), t)
             : 67108864 & e
-            ? ((Dt = 4), 67108864)
+            ? ((Rt = 4), 67108864)
             : 0 !== (134217728 & e)
-            ? ((Dt = 3), 134217728)
+            ? ((Rt = 3), 134217728)
             : 0 !== (t = 805306368 & e)
-            ? ((Dt = 2), t)
+            ? ((Rt = 2), t)
             : 0 !== (1073741824 & e)
-            ? ((Dt = 1), 1073741824)
-            : ((Dt = 8), e);
+            ? ((Rt = 1), 1073741824)
+            : ((Rt = 8), e);
         }
         function Bt(e, t) {
           var n = e.pendingLanes;
-          if (0 === n) return (Dt = 0);
+          if (0 === n) return (Rt = 0);
           var r = 0,
             i = 0,
             a = e.expiredLanes,
             o = e.suspendedLanes,
             s = e.pingedLanes;
-          if (0 !== a) (r = a), (i = Dt = 15);
+          if (0 !== a) (r = a), (i = Rt = 15);
           else if (0 !== (a = 134217727 & n)) {
             var l = a & ~o;
             0 !== l
-              ? ((r = Nt(l)), (i = Dt))
-              : 0 !== (s &= a) && ((r = Nt(s)), (i = Dt));
+              ? ((r = Nt(l)), (i = Rt))
+              : 0 !== (s &= a) && ((r = Nt(s)), (i = Rt));
           } else
             0 !== (a = n & ~o)
-              ? ((r = Nt(a)), (i = Dt))
-              : 0 !== s && ((r = Nt(s)), (i = Dt));
+              ? ((r = Nt(a)), (i = Rt))
+              : 0 !== s && ((r = Nt(s)), (i = Rt));
           if (0 === r) return 0;
           if (
             ((r = n & (((0 > (r = 31 - Gt(r)) ? 0 : 1 << r) << 1) - 1)),
             0 !== t && t !== r && 0 === (t & o))
           ) {
-            if ((Nt(t), i <= Dt)) return t;
-            Dt = i;
+            if ((Nt(t), i <= Rt)) return t;
+            Rt = i;
           }
           if (0 !== (t = e.entangledLanes))
             for (e = e.entanglements, t &= r; 0 < t; )
@@ -2008,7 +2008,7 @@
           _t = a.unstable_runWithPriority,
           qt = !0;
         function Jt(e, t, n, r) {
-          Ne || Re();
+          Ne || De();
           var i = Kt,
             a = Ne;
           Ne = !0;
@@ -2060,7 +2060,7 @@
                     return;
                   mt(e, r);
                 }
-                Rr(e, t, r, null, n);
+                Dr(e, t, r, null, n);
               }
             }
         }
@@ -2081,7 +2081,7 @@
               } else a !== i && (i = null);
             }
           }
-          return Rr(e, t, r, i, n), null;
+          return Dr(e, t, r, i, n), null;
         }
         var en = null,
           tn = null,
@@ -2385,8 +2385,8 @@
             deltaZ: 0,
             deltaMode: 0,
           }),
-          Rn = ln(zn),
-          Dn = [9, 13, 27, 32],
+          Dn = ln(zn),
+          Rn = [9, 13, 27, 32],
           Nn = d && "CompositionEvent" in window,
           Bn = null;
         d && "documentMode" in document && (Bn = document.documentMode);
@@ -2397,7 +2397,7 @@
         function Vn(e, t) {
           switch (e) {
             case "keyup":
-              return -1 !== Dn.indexOf(t.keyCode);
+              return -1 !== Rn.indexOf(t.keyCode);
             case "keydown":
               return 229 !== t.keyCode;
             case "keypress":
@@ -2622,19 +2622,19 @@
                 e.push({ event: t, listeners: r }),
                 (t.target = Ar))));
         }
-        Rt(
+        Dt(
           "cancel cancel click click close close contextmenu contextMenu copy copy cut cut auxclick auxClick dblclick doubleClick dragend dragEnd dragstart dragStart drop drop focusin focus focusout blur input input invalid invalid keydown keyDown keypress keyPress keyup keyUp mousedown mouseDown mouseup mouseUp paste paste pause pause play play pointercancel pointerCancel pointerdown pointerDown pointerup pointerUp ratechange rateChange reset reset seeked seeked submit submit touchcancel touchCancel touchend touchEnd touchstart touchStart volumechange volumeChange".split(
             " "
           ),
           0
         ),
-          Rt(
+          Dt(
             "drag drag dragenter dragEnter dragexit dragExit dragleave dragLeave dragover dragOver mousemove mouseMove mouseout mouseOut mouseover mouseOver pointermove pointerMove pointerout pointerOut pointerover pointerOver scroll scroll toggle toggle touchmove touchMove wheel wheel".split(
               " "
             ),
             1
           ),
-          Rt(zt, 2);
+          Dt(zt, 2);
         for (
           var kr =
               "change selectionchange textInput compositionstart compositionend compositionupdate".split(
@@ -2793,7 +2793,7 @@
               ? e.addEventListener(t, n, { passive: i })
               : e.addEventListener(t, n, !1);
         }
-        function Rr(e, t, n, r, i) {
+        function Dr(e, t, n, r, i) {
           var a = r;
           if (0 === (1 & t) && 0 === (2 & t) && null !== r)
             e: for (;;) {
@@ -2828,7 +2828,7 @@
             if (Be) return e(t, n);
             Be = !0;
             try {
-              De(e, t, n);
+              Re(e, t, n);
             } finally {
               (Be = !1), Fe();
             }
@@ -2898,7 +2898,7 @@
                     l = mn;
                     break;
                   case "wheel":
-                    l = Rn;
+                    l = Dn;
                     break;
                   case "copy":
                   case "cut":
@@ -2927,7 +2927,7 @@
                       ((p = m),
                       null !== f &&
                         null != (m = We(h, f)) &&
-                        u.push(Dr(h, m, p))),
+                        u.push(Rr(h, m, p))),
                     d)
                   )
                     break;
@@ -3128,7 +3128,7 @@
             Pr(o, t);
           });
         }
-        function Dr(e, t, n) {
+        function Rr(e, t, n) {
           return { instance: e, listener: t, currentTarget: n };
         }
         function Nr(e, t) {
@@ -3138,8 +3138,8 @@
             5 === i.tag &&
               null !== a &&
               ((i = a),
-              null != (a = We(e, n)) && r.unshift(Dr(e, a, i)),
-              null != (a = We(e, t)) && r.push(Dr(e, a, i))),
+              null != (a = We(e, n)) && r.unshift(Rr(e, a, i)),
+              null != (a = We(e, t)) && r.push(Rr(e, a, i))),
               (e = e.return);
           }
           return r;
@@ -3161,8 +3161,8 @@
               null !== c &&
               ((s = c),
               i
-                ? null != (l = We(n, a)) && o.unshift(Dr(n, l, s))
-                : i || (null != (l = We(n, a)) && o.push(Dr(n, l, s)))),
+                ? null != (l = We(n, a)) && o.unshift(Rr(n, l, s))
+                : i || (null != (l = We(n, a)) && o.push(Rr(n, l, s)))),
               (n = n.return);
           }
           0 !== o.length && e.push({ event: t, listeners: o });
@@ -3350,8 +3350,8 @@
           Mi = a.unstable_ImmediatePriority,
           Ii = a.unstable_UserBlockingPriority,
           zi = a.unstable_NormalPriority,
-          Ri = a.unstable_LowPriority,
-          Di = a.unstable_IdlePriority,
+          Di = a.unstable_LowPriority,
+          Ri = a.unstable_IdlePriority,
           Ni = {},
           Bi = void 0 !== Pi ? Pi : function () {},
           Fi = null,
@@ -3372,9 +3372,9 @@
               return 98;
             case zi:
               return 97;
-            case Ri:
-              return 96;
             case Di:
+              return 96;
+            case Ri:
               return 95;
             default:
               throw Error(o(332));
@@ -3389,9 +3389,9 @@
             case 97:
               return zi;
             case 96:
-              return Ri;
-            case 95:
               return Di;
+            case 95:
+              return Ri;
             default:
               throw Error(o(332));
           }
@@ -4168,13 +4168,13 @@
         function za() {
           ui(Pa), ui(Ta), ui(La);
         }
-        function Ra(e) {
+        function Da(e) {
           Ma(La.current);
           var t = Ma(Pa.current),
             n = he(t, e.type);
           t !== n && (di(Ta, e), di(Pa, n));
         }
-        function Da(e) {
+        function Ra(e) {
           Ta.current === e && (ui(Pa), ui(Ta));
         }
         var Na = ci(0);
@@ -4339,7 +4339,7 @@
               (a += 1),
                 (to = eo = null),
                 (t.updateQueue = null),
-                (Ja.current = Ro),
+                (Ja.current = Do),
                 (e = n(r, i));
             } while (ro);
           }
@@ -4805,7 +4805,7 @@
               if (Ua) {
                 var e = !1,
                   t = (function (e) {
-                    return { $$typeof: R, toString: e, valueOf: e };
+                    return { $$typeof: D, toString: e, valueOf: e };
                   })(function () {
                     throw (
                       (e || ((e = !0), n("r:" + (Jr++).toString(36))),
@@ -4875,7 +4875,7 @@
             },
             unstable_isNewReconciler: !1,
           },
-          Ro = {
+          Do = {
             readContext: oa,
             useCallback: Oo,
             useContext: oa,
@@ -4919,7 +4919,7 @@
             },
             unstable_isNewReconciler: !1,
           },
-          Do = x.ReactCurrentOwner,
+          Ro = x.ReactCurrentOwner,
           No = !1;
         function Bo(e, t, n, r) {
           t.child = null === e ? Ca(t, null, n, r) : Ea(t, e.child, n, r);
@@ -5136,7 +5136,7 @@
           Vo(e, t);
           var o = 0 !== (64 & t.flags);
           if (!r && !o) return i && wi(t, n, !1), as(e, t, a);
-          (r = t.stateNode), (Do.current = t);
+          (r = t.stateNode), (Ro.current = t);
           var s =
             o && "function" !== typeof n.getDerivedStateFromError
               ? null
@@ -5423,7 +5423,7 @@
                 null
               );
             case 5:
-              Da(t);
+              Ra(t);
               var a = Ma(La.current);
               if (((n = t.type), null !== e && null != t.stateNode))
                 qo(e, t, n, r), e.ref !== t.ref && (t.flags |= 128);
@@ -5648,7 +5648,7 @@
                           null === Is ||
                             (0 === (134217727 & Us) &&
                               0 === (134217727 & Hs)) ||
-                            yl(Is, Rs))),
+                            yl(Is, Ds))),
                     (r || n) && (t.flags |= 4),
                     null)
               );
@@ -5783,7 +5783,7 @@
                 throw Error(o(285));
               return (e.flags = (-4097 & t) | 64), e;
             case 5:
-              return Da(e), null;
+              return Ra(e), null;
             case 13:
               return (
                 ui(Na),
@@ -5912,7 +5912,7 @@
                             s || c === u || (s = []))
                           : "object" === typeof u &&
                             null !== u &&
-                            u.$$typeof === R
+                            u.$$typeof === D
                           ? u.toString()
                           : (s = s || []).push(d, u));
               }
@@ -6028,7 +6028,7 @@
                   (r = i.next),
                     0 !== (4 & (i = i.tag)) &&
                       0 !== (1 & i) &&
-                      (Nl(n, e), Dl(n, e)),
+                      (Nl(n, e), Rl(n, e)),
                     (e = r);
                 } while (e !== t);
               }
@@ -6444,8 +6444,8 @@
           Ms = 0,
           Is = null,
           zs = null,
-          Rs = 0,
           Ds = 0,
+          Rs = 0,
           Ns = ci(0),
           Bs = 0,
           Fs = null,
@@ -6521,7 +6521,7 @@
         function hl(e, t, n) {
           if (50 < al) throw ((al = 0), (ol = null), Error(o(185)));
           if (null === (e = ml(e, t))) return null;
-          Vt(e, t, n), e === Is && ((Hs |= t), 4 === Bs && yl(e, Rs));
+          Vt(e, t, n), e === Is && ((Hs |= t), 4 === Bs && yl(e, Ds));
           var r = Gi();
           1 === t
             ? 0 !== (8 & Ms) && 0 === (48 & Ms)
@@ -6559,13 +6559,13 @@
             if (-1 === u) {
               if (0 === (c & r) || 0 !== (c & i)) {
                 (u = t), Nt(c);
-                var d = Dt;
+                var d = Rt;
                 a[l] = 10 <= d ? u + 250 : 6 <= d ? u + 5e3 : -1;
               }
             } else u <= t && (e.expiredLanes |= c);
             s &= ~c;
           }
-          if (((r = Bt(e, e === Is ? Rs : 0)), (t = Dt), 0 === r))
+          if (((r = Bt(e, e === Is ? Ds : 0)), (t = Rt), 0 === r))
             null !== n &&
               (n !== Ni && Ci(n),
               (e.callbackNode = null),
@@ -6616,14 +6616,14 @@
         function vl(e) {
           if (((sl = -1), (cl = ll = 0), 0 !== (48 & Ms))) throw Error(o(327));
           var t = e.callbackNode;
-          if (Rl() && e.callbackNode !== t) return null;
-          var n = Bt(e, e === Is ? Rs : 0);
+          if (Dl() && e.callbackNode !== t) return null;
+          var n = Bt(e, e === Is ? Ds : 0);
           if (0 === n) return null;
           var r = n,
             i = Ms;
           Ms |= 16;
           var a = El();
-          for ((Is === e && Rs === r) || (Zs(), kl(e, r)); ; )
+          for ((Is === e && Ds === r) || (Zs(), kl(e, r)); ; )
             try {
               Pl();
               break;
@@ -6634,7 +6634,7 @@
             (na(),
             (Ts.current = a),
             (Ms = i),
-            null !== zs ? (r = 0) : ((Is = null), (Rs = 0), (r = Bs)),
+            null !== zs ? (r = 0) : ((Is = null), (Ds = 0), (r = Bs)),
             0 !== (Ws & Hs))
           )
             kl(e, 0);
@@ -6723,8 +6723,8 @@
         }
         function Al(e) {
           if (0 !== (48 & Ms)) throw Error(o(327));
-          if ((Rl(), e === Is && 0 !== (e.expiredLanes & Rs))) {
-            var t = Rs,
+          if ((Dl(), e === Is && 0 !== (e.expiredLanes & Ds))) {
+            var t = Ds,
               n = Cl(e, t);
             0 !== (Ws & Hs) && (n = Cl(e, (t = Bt(e, t))));
           } else n = Cl(e, (t = Bt(e, 0)));
@@ -6764,10 +6764,10 @@
           }
         }
         function wl(e, t) {
-          di(Ns, Ds), (Ds |= t), (Ws |= t);
+          di(Ns, Rs), (Rs |= t), (Ws |= t);
         }
         function Sl() {
-          (Ds = Ns.current), ui(Ns);
+          (Rs = Ns.current), ui(Ns);
         }
         function kl(e, t) {
           (e.finishedWork = null), (e.finishedLanes = 0);
@@ -6785,7 +6785,7 @@
                   za(), ui(hi), ui(pi), qa();
                   break;
                 case 5:
-                  Da(r);
+                  Ra(r);
                   break;
                 case 4:
                   za();
@@ -6805,7 +6805,7 @@
             }
           (Is = e),
             (zs = Ql(e.current, null)),
-            (Rs = Ds = Ws = t),
+            (Ds = Rs = Ws = t),
             (Bs = 0),
             (Fs = null),
             (Vs = Hs = Us = 0);
@@ -6837,7 +6837,7 @@
                   s = n,
                   l = t;
                 if (
-                  ((t = Rs),
+                  ((t = Ds),
                   (s.flags |= 2048),
                   (s.firstEffect = s.lastEffect = null),
                   null !== l &&
@@ -6960,7 +6960,7 @@
           var n = Ms;
           Ms |= 16;
           var r = El();
-          for ((Is === e && Rs === t) || kl(e, t); ; )
+          for ((Is === e && Ds === t) || kl(e, t); ; )
             try {
               Ol();
               break;
@@ -6969,7 +6969,7 @@
             }
           if ((na(), (Ms = n), (Ts.current = r), null !== zs))
             throw Error(o(261));
-          return (Is = null), (Rs = 0), Bs;
+          return (Is = null), (Ds = 0), Bs;
         }
         function Ol() {
           for (; null !== zs; ) Tl(zs);
@@ -6978,7 +6978,7 @@
           for (; null !== zs && !Oi(); ) Tl(zs);
         }
         function Tl(e) {
-          var t = _s(e.alternate, e, Ds);
+          var t = _s(e.alternate, e, Rs);
           (e.memoizedProps = e.pendingProps),
             null === t ? Ll(e) : (zs = t),
             (Ls.current = null);
@@ -6988,11 +6988,11 @@
           do {
             var n = t.alternate;
             if (((e = t.return), 0 === (2048 & t.flags))) {
-              if (null !== (n = ss(n, t, Ds))) return void (zs = n);
+              if (null !== (n = ss(n, t, Rs))) return void (zs = n);
               if (
                 (24 !== (n = t).tag && 23 !== n.tag) ||
                 null === n.memoizedState ||
-                0 !== (1073741824 & Ds) ||
+                0 !== (1073741824 & Rs) ||
                 0 === (4 & n.mode)
               ) {
                 for (var r = 0, i = n.child; null !== i; )
@@ -7027,7 +7027,7 @@
         }
         function Il(e, t) {
           do {
-            Rl();
+            Dl();
           } while (null !== el);
           if (0 !== (48 & Ms)) throw Error(o(327));
           var n = e.finishedWork;
@@ -7052,7 +7052,7 @@
           }
           if (
             (null !== il && 0 === (24 & r) && il.has(e) && il.delete(e),
-            e === Is && ((zs = Is = null), (Rs = 0)),
+            e === Is && ((zs = Is = null), (Ds = 0)),
             1 < n.flags
               ? null !== n.lastEffect
                 ? ((n.lastEffect.nextEffect = n), (r = n.firstEffect))
@@ -7288,24 +7288,24 @@
                 $s ||
                 (($s = !0),
                 Zi(97, function () {
-                  return Rl(), null;
+                  return Dl(), null;
                 })),
               (qs = qs.nextEffect);
           }
         }
-        function Rl() {
+        function Dl() {
           if (90 !== tl) {
             var e = 97 < tl ? 97 : tl;
             return (tl = 90), Qi(e, Bl);
           }
           return !1;
         }
-        function Dl(e, t) {
+        function Rl(e, t) {
           nl.push(t, e),
             $s ||
               (($s = !0),
               Zi(97, function () {
-                return Rl(), null;
+                return Dl(), null;
               }));
         }
         function Nl(e, t) {
@@ -7313,7 +7313,7 @@
             $s ||
               (($s = !0),
               Zi(97, function () {
-                return Rl(), null;
+                return Dl(), null;
               }));
         }
         function Bl() {
@@ -7395,9 +7395,9 @@
             (t = fl()),
             (e.pingedLanes |= e.suspendedLanes & n),
             Is === e &&
-              (Rs & n) === n &&
+              (Ds & n) === n &&
               (4 === Bs ||
-              (3 === Bs && (62914560 & Rs) === Rs && 500 > Vi() - Ys)
+              (3 === Bs && (62914560 & Ds) === Ds && 500 > Vi() - Ys)
                 ? kl(e, 0)
                 : (Vs |= n)),
             gl(e, t);
@@ -7486,7 +7486,7 @@
             e: switch (e) {
               case k:
                 return _l(n.children, i, a, t);
-              case D:
+              case R:
                 (s = 8), (i |= 16);
                 break;
               case j:
@@ -7768,7 +7768,7 @@
                     Zo(t), Za();
                     break;
                   case 5:
-                    Ra(t);
+                    Da(t);
                     break;
                   case 1:
                     vi(t.type) && xi(t);
@@ -7934,7 +7934,7 @@
               return t;
             case 5:
               return (
-                Ra(t),
+                Da(t),
                 null === e && Ga(t),
                 (r = t.type),
                 (i = t.pendingProps),
@@ -8138,7 +8138,7 @@
               0 === (Ms = a) && (Zs(), _i());
             }
           }),
-          (Re = function () {
+          (De = function () {
             0 === (49 & Ms) &&
               ((function () {
                 if (null !== il) {
@@ -8150,9 +8150,9 @@
                 }
                 _i();
               })(),
-              Rl());
+              Dl());
           }),
-          (De = function (e, t) {
+          (Re = function (e, t) {
             var n = Ms;
             Ms |= 2;
             try {
@@ -8161,7 +8161,7 @@
               0 === (Ms = n) && (Zs(), _i());
             }
           });
-        var lc = { Events: [ri, ii, ai, Le, Me, Rl, { current: !1 }] },
+        var lc = { Events: [ri, ii, ai, Le, Me, Dl, { current: !1 }] },
           cc = {
             findFiberByHostInstance: ni,
             bundleType: 0,
@@ -14006,15 +14006,15 @@
             t = S(C);
           }
         }
-        function R(e) {
+        function D(e) {
           if (((I = !1), z(e), !M))
-            if (null !== S(E)) (M = !0), n(D);
+            if (null !== S(E)) (M = !0), n(R);
             else {
               var t = S(C);
-              null !== t && r(R, t.startTime - e);
+              null !== t && r(D, t.startTime - e);
             }
         }
-        function D(e, n) {
+        function R(e, n) {
           (M = !1), I && ((I = !1), i()), (L = !0);
           var a = T;
           try {
@@ -14039,7 +14039,7 @@
             if (null !== P) var l = !0;
             else {
               var c = S(C);
-              null !== c && r(R, c.startTime - n), (l = !1);
+              null !== c && r(D, c.startTime - n), (l = !1);
             }
             return l;
           } finally {
@@ -14057,7 +14057,7 @@
             e.callback = null;
           }),
           (t.unstable_continueExecution = function () {
-            M || L || ((M = !0), n(D));
+            M || L || ((M = !0), n(R));
           }),
           (t.unstable_getCurrentPriorityLevel = function () {
             return T;
@@ -14141,8 +14141,8 @@
                   w(C, e),
                   null === S(E) &&
                     e === S(C) &&
-                    (I ? i() : (I = !0), r(R, o - s)))
-                : ((e.sortIndex = l), w(E, e), M || L || ((M = !0), n(D))),
+                    (I ? i() : (I = !0), r(D, o - s)))
+                : ((e.sortIndex = l), w(E, e), M || L || ((M = !0), n(R))),
               e
             );
           }),
@@ -15231,7 +15231,7 @@
         var t = (0, h.useContext)(m),
           n = t.basename,
           r = t.navigator,
-          i = D(e),
+          i = R(e),
           a = i.hash,
           o = i.pathname,
           s = i.search,
@@ -15255,7 +15255,7 @@
       function z() {
         return I() || y(!1), (0, h.useContext)(g).location;
       }
-      function R() {
+      function D() {
         I() || y(!1);
         var e = (0, h.useContext)(m),
           t = e.basename,
@@ -15285,7 +15285,7 @@
           )
         );
       }
-      function D(e) {
+      function R(e) {
         var t = (0, h.useContext)(v).matches,
           n = z().pathname,
           r = JSON.stringify(
@@ -15523,7 +15523,7 @@
                 E = 0,
                 M = 0,
                 z = (m = p = 0),
-                D = 0,
+                R = 0,
                 N = 0,
                 B = 0,
                 F = 0,
@@ -15533,12 +15533,12 @@
                 V = "",
                 G = "",
                 Y = "";
-              D < W;
+              R < W;
 
             ) {
               if (
-                ((h = l.charCodeAt(D)),
-                D === U &&
+                ((h = l.charCodeAt(R)),
+                R === U &&
                   0 !== S + j + k + w &&
                   (0 !== S && (h = 47 === S ? 10 : 47),
                   (j = k = w = 0),
@@ -15547,7 +15547,7 @@
                 0 === S + j + k + w)
               ) {
                 if (
-                  D === U &&
+                  R === U &&
                   (0 < N && (H = H.replace(d, "")), 0 < H.trim().length)
                 ) {
                   switch (h) {
@@ -15558,18 +15558,18 @@
                     case 10:
                       break;
                     default:
-                      H += l.charAt(D);
+                      H += l.charAt(R);
                   }
                   h = 59;
                 }
                 switch (h) {
                   case 123:
                     for (
-                      p = (H = H.trim()).charCodeAt(0), m = 1, F = ++D;
-                      D < W;
+                      p = (H = H.trim()).charCodeAt(0), m = 1, F = ++R;
+                      R < W;
 
                     ) {
-                      switch ((h = l.charCodeAt(D))) {
+                      switch ((h = l.charCodeAt(R))) {
                         case 123:
                           m++;
                           break;
@@ -15577,29 +15577,29 @@
                           m--;
                           break;
                         case 47:
-                          switch ((h = l.charCodeAt(D + 1))) {
+                          switch ((h = l.charCodeAt(R + 1))) {
                             case 42:
                             case 47:
                               e: {
-                                for (z = D + 1; z < U; ++z)
+                                for (z = R + 1; z < U; ++z)
                                   switch (l.charCodeAt(z)) {
                                     case 47:
                                       if (
                                         42 === h &&
                                         42 === l.charCodeAt(z - 1) &&
-                                        D + 2 !== z
+                                        R + 2 !== z
                                       ) {
-                                        D = z + 1;
+                                        R = z + 1;
                                         break e;
                                       }
                                       break;
                                     case 10:
                                       if (47 === h) {
-                                        D = z + 1;
+                                        R = z + 1;
                                         break e;
                                       }
                                   }
-                                D = z;
+                                R = z;
                               }
                           }
                           break;
@@ -15609,13 +15609,13 @@
                           h++;
                         case 34:
                         case 39:
-                          for (; D++ < U && l.charCodeAt(D) !== h; );
+                          for (; R++ < U && l.charCodeAt(R) !== h; );
                       }
                       if (0 === m) break;
-                      D++;
+                      R++;
                     }
                     if (
-                      ((m = l.substring(F, D)),
+                      ((m = l.substring(F, R)),
                       0 === p &&
                         (p = (H = H.replace(u, "").trim()).charCodeAt(0)),
                       64 === p)
@@ -15665,7 +15665,7 @@
                     (G += m),
                       (m = B = N = z = p = 0),
                       (H = ""),
-                      (h = l.charCodeAt(++D));
+                      (h = l.charCodeAt(++R));
                     break;
                   case 125:
                   case 59:
@@ -15691,14 +15691,14 @@
                           break;
                         case 64:
                           if (105 === h || 99 === h) {
-                            Y += H + l.charAt(D);
+                            Y += H + l.charAt(R);
                             break;
                           }
                         default:
                           58 !== H.charCodeAt(F - 1) &&
                             (V += i(H, p, h, H.charCodeAt(2)));
                       }
-                    (B = N = z = p = 0), (H = ""), (h = l.charCodeAt(++D));
+                    (B = N = z = p = 0), (H = ""), (h = l.charCodeAt(++R));
                 }
               }
               switch (h) {
@@ -15710,7 +15710,7 @@
                       107 !== c &&
                       0 < H.length &&
                       ((N = 1), (H += "\0")),
-                    0 < I * R && s(0, H, r, e, O, C, V.length, c, f, c),
+                    0 < I * D && s(0, H, r, e, O, C, V.length, c, f, c),
                     (C = 1),
                     O++;
                   break;
@@ -15721,7 +15721,7 @@
                     break;
                   }
                 default:
-                  switch ((C++, (g = l.charAt(D)), h)) {
+                  switch ((C++, (g = l.charAt(R)), h)) {
                     case 9:
                     case 32:
                       if (0 === j + w + S)
@@ -15750,15 +15750,15 @@
                       break;
                     case 108:
                       if (0 === j + S + w + P && 0 < z)
-                        switch (D - z) {
+                        switch (R - z) {
                           case 2:
-                            112 === E && 58 === l.charCodeAt(D - 3) && (P = E);
+                            112 === E && 58 === l.charCodeAt(R - 3) && (P = E);
                           case 8:
                             111 === M && (P = M);
                         }
                       break;
                     case 58:
-                      0 === j + S + w && (z = D);
+                      0 === j + S + w && (z = R);
                       break;
                     case 44:
                       0 === S + k + j + w && ((N = 1), (g += "\r"));
@@ -15792,27 +15792,27 @@
                       if (!(0 < j + w + k))
                         switch (S) {
                           case 0:
-                            switch (2 * h + 3 * l.charCodeAt(D + 1)) {
+                            switch (2 * h + 3 * l.charCodeAt(R + 1)) {
                               case 235:
                                 S = 47;
                                 break;
                               case 220:
-                                (F = D), (S = 42);
+                                (F = R), (S = 42);
                             }
                             break;
                           case 42:
                             47 === h &&
                               42 === E &&
-                              F + 2 !== D &&
+                              F + 2 !== R &&
                               (33 === l.charCodeAt(F + 2) &&
-                                (V += l.substring(F, D + 1)),
+                                (V += l.substring(F, R + 1)),
                               (g = ""),
                               (S = 0));
                         }
                   }
                   0 === S && (H += g);
               }
-              (M = E), (E = h), D++;
+              (M = E), (E = h), R++;
             }
             if (0 < (F = V.length)) {
               if (
@@ -16155,7 +16155,7 @@
             M = [],
             I = 0,
             z = null,
-            R = 0;
+            D = 0;
           return (
             (c.use = function e(t) {
               switch (t) {
@@ -16167,7 +16167,7 @@
                   if ("function" === typeof t) M[I++] = t;
                   else if ("object" === typeof t)
                     for (var n = 0, r = t.length; n < r; ++n) e(t[n]);
-                  else R = 0 | !!t;
+                  else D = 0 | !!t;
               }
               return e;
             }),
@@ -16597,7 +16597,7 @@
         })(),
         Ie = pe,
         ze = { isServer: !pe, useCSSOMInjection: !he },
-        Re = (function () {
+        De = (function () {
           function e(e, t, n) {
             void 0 === e && (e = le),
               void 0 === t && (t = {}),
@@ -16702,7 +16702,7 @@
             e
           );
         })(),
-        De = /(a)(d)/gi,
+        Re = /(a)(d)/gi,
         Ne = function (e) {
           return String.fromCharCode(e + (e > 25 ? 39 : 97));
         };
@@ -16710,7 +16710,7 @@
         var t,
           n = "";
         for (t = Math.abs(e); t > 52; t = (t / 52) | 0) n = Ne(t % 52) + n;
-        return (Ne(t % 52) + n).replace(De, "$1-$2");
+        return (Ne(t % 52) + n).replace(Re, "$1-$2");
       }
       var Fe = function (e, t) {
           for (var n = t.length; n; ) e = (33 * e) ^ t.charCodeAt(--n);
@@ -16735,7 +16735,7 @@
               (this.componentId = t),
               (this.baseHash = Fe(He, t)),
               (this.baseStyle = n),
-              Re.registerId(t);
+              De.registerId(t);
           }
           return (
             (e.prototype.generateAndInjectStyles = function (e, t, n) {
@@ -16879,7 +16879,7 @@
       }
       var Ze = h.createContext(),
         _e = (Ze.Consumer, h.createContext()),
-        qe = (_e.Consumer, new Re()),
+        qe = (_e.Consumer, new De()),
         Je = Qe();
       function Xe() {
         return (0, h.useContext)(Ze) || qe;
@@ -17404,7 +17404,7 @@
           (this.rules = e),
             (this.componentId = t),
             (this.isStatic = Ue(e)),
-            Re.registerId(this.componentId + 1);
+            De.registerId(this.componentId + 1);
         }
         var t = e.prototype;
         return (
@@ -17417,7 +17417,7 @@
             t.clearRules(this.componentId + e);
           }),
           (t.renderStyles = function (e, t, n, r) {
-            e > 2 && Re.registerId(this.componentId + e),
+            e > 2 && De.registerId(this.componentId + e),
               this.removeStyles(e, n),
               this.createStyles(e, t, n, r);
           }),
@@ -17467,7 +17467,7 @@
             (this.seal = function () {
               e.sealed = !0;
             }),
-            (this.instance = new Re({ isServer: !0 })),
+            (this.instance = new De({ isServer: !0 })),
             (this.sealed = !1);
         }
         var t = e.prototype;
@@ -17490,8 +17490,8 @@
         Mt,
         It,
         zt,
-        Rt,
         Dt,
+        Rt,
         Nt,
         Bt,
         Ft,
@@ -17907,14 +17907,14 @@
             }
           ),
           Qt.button(
-            Rt ||
-              (Rt = _([
+            Dt ||
+              (Dt = _([
                 '\n  border-radius: 4px;\n  background: none;\n  white-space: nowrap;\n  padding: 10px 1.25rem;\n  font-size: 16px;\n  color: #fff;\n  outline: none;\n  border: 2px solid #fff;\n  cursor: pointer;\n  overflow: hidden;\n  position: relative;\n\n  &:before {\n    background: #fff;\n    content: "";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    z-index: -1;\n    transition: all 0.6s ease;\n    width: 100%;\n    height: 0%;\n    transform: translate(-50%, -50%) rotate(45deg);\n  }\n\n  &:hover:before {\n    height: 500%;\n  }\n\n  &:hover {\n    color: black;\n  }\n',
               ]))
           ),
           Qt.div(
-            Dt ||
-              (Dt = _([
+            Rt ||
+              (Rt = _([
                 "\n  display: flex;\n  margin: 0 -15px -15px -15px;\n  flex-wrap: wrap;\n  align-items: center;\n  flex-direction: ",
                 ";\n  justify-content: space-around;\n\n  @media screen and (max-width: 768px) {\n    flex-direction: column-reverse;\n  }\n",
               ])),
@@ -18115,9 +18115,9 @@
               r = n.target,
               i = n.replace,
               a = n.state,
-              o = R(),
+              o = D(),
               s = z(),
-              l = D(e);
+              l = R(e);
             return (0, h.useCallback)(
               function (t) {
                 if (
@@ -18274,7 +18274,7 @@
                   onClick: function () {
                     window.history.back();
                   },
-                  children: (0, dn.jsxs)(Rn, {
+                  children: (0, dn.jsxs)(Dn, {
                     children: [
                       (0, dn.jsx)("i", { class: "fa-solid fa-angles-left" }),
                       (0, dn.jsxs)("h2", {
@@ -18286,7 +18286,7 @@
                     ],
                   }),
                 }),
-                (0, dn.jsxs)(Dn, {
+                (0, dn.jsxs)(Rn, {
                   children: [
                     (0, dn.jsx)("h1", { children: e.title }),
                     (0, dn.jsx)("img", {
@@ -18317,10 +18317,10 @@
         Mn,
         In,
         zn,
-        Rn = Qt.div(
+        Dn = Qt.div(
           An || (An = _(["\n  display: flex;\n  align-items: center;\n"]))
         ),
-        Dn = Qt.nav(
+        Rn = Qt.nav(
           bn ||
             (bn = _([
               "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  text-transform: uppercase;\n\n  h1 {\n    text-align: center;\n    color: #ffc0bc;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 2.5rem;\n  }\n  img {\n    width: 10%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 120%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 2.2rem;\n    }\n  }\n  @media (max-width: 440px) {\n    display: flex;\n    flex-direction: end;\n    img {\n      width: 20%;\n    }\n    min-height: 10vh;\n    h1 {\n      display: none;\n    }\n  }\n",
@@ -18728,7 +18728,7 @@
             ],
           });
         },
-        Rr = function (e) {
+        Dr = function (e) {
           var n = t((0, h.useState)(!0), 2),
             r = n[0],
             i = n[1],
@@ -18737,7 +18737,7 @@
             };
           return (0, dn.jsx)(dn.Fragment, {
             children: r
-              ? (0, dn.jsx)(Dr, {
+              ? (0, dn.jsx)(Rr, {
                   children: (0, dn.jsxs)(
                     Nr,
                     {
@@ -18753,7 +18753,7 @@
                     e.id
                   ),
                 })
-              : (0, dn.jsx)(Dr, {
+              : (0, dn.jsx)(Rr, {
                   children: (0, dn.jsxs)(
                     Fr,
                     {
@@ -18768,7 +18768,7 @@
                 }),
           });
         },
-        Dr = Qt.div(
+        Rr = Qt.div(
           dr ||
             (dr = _([
               "\n  display: flex;\n  position: relative;\n  width: 15rem;\n  height: 20rem;\n  margin: auto;\n  justify-content: center;\n  gap: 2rem;\n  cursor: pointer;\n\n  @media (max-width: 440px) {\n    width: 9rem;\n    height: 10rem;\n  }\n",
@@ -18891,7 +18891,7 @@
                 children: (0, dn.jsx)(ii, {
                   children: e.map(function (e) {
                     return (0,
-                    dn.jsx)(Rr, { name: e.name, img: e.img, alt: e.alt, role: e.role, profession: e.profession }, e.id);
+                    dn.jsx)(Dr, { name: e.name, img: e.img, alt: e.alt, role: e.role, profession: e.profession }, e.id);
                   }),
                 }),
               }),
@@ -19329,8 +19329,8 @@
         Mi,
         Ii,
         zi,
-        Ri,
-        Di = function (e) {
+        Di,
+        Ri = function (e) {
           return (0, dn.jsx)(Ni, {
             children: (0, dn.jsxs)("div", {
               onClick: e.handleClick,
@@ -19485,7 +19485,7 @@
                   }),
                   (0, dn.jsx)("div", {
                     className: "burguer",
-                    children: (0, dn.jsx)(Di, { clicked: n, handleClick: i }),
+                    children: (0, dn.jsx)(Ri, { clicked: n, handleClick: i }),
                   }),
                   (0, dn.jsx)(Aa, {
                     className: "initial ".concat(n ? " active" : ""),
@@ -19503,8 +19503,8 @@
             ]))
         ),
         Aa = Qt.div(
-          Ri ||
-            (Ri = _([
+          Di ||
+            (Di = _([
               "\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n  width: 30%;\n  height: 30%;\n  margin-left: 30px;\n  z-index: -1;\n  transition: all 0.8s ease;\n\n  &.active {\n    border-radius: 0 0 80% 0;\n    top: 0;\n    left: 0;\n    width: 50%;\n    height: 50%;\n  }\n",
             ]))
         ),
@@ -19587,7 +19587,7 @@
         Ma = n(3602),
         Ia = n(181),
         za = n(9302),
-        Ra = [
+        Da = [
           {
             id: 1,
             name: "Centro de Dia",
@@ -19645,7 +19645,7 @@
             url: "/apoyo-familias",
           },
         ],
-        Da = [
+        Ra = [
           {
             id: 1,
             name: "Instalaciones Centro",
@@ -19676,7 +19676,7 @@
           },
         ],
         Na = function () {
-          var e = t((0, h.useState)(Da), 1)[0];
+          var e = t((0, h.useState)(Ra), 1)[0];
           return (0, dn.jsx)(dn.Fragment, {
             children: (0, dn.jsxs)("section", {
               children: [
@@ -19704,7 +19704,7 @@
             ]))
         ),
         Wa = function () {
-          var e = t((0, h.useState)(Ra), 1)[0];
+          var e = t((0, h.useState)(Da), 1)[0];
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Un, {
@@ -20034,7 +20034,7 @@
           headline:
             "El Centro de D\xeda Afymos es un recurso social de atenci\xf3n diurna dirigido a prestar atenci\xf3n especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
           description:
-            "Pretendemos favorecer la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente \xedndole, temporales o permanentes, de diferente intensidad y frecuencia.",
+            "Favorecemos la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente \xedndole, temporales o permanentes, de diferente intensidad y frecuencia.",
           img: bo,
         },
         ko = {
@@ -20047,7 +20047,7 @@
           headline:
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
-            "Fomentamos la participaci\xf3n en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social, y contribuyendo a mejorar su calidad de vida. ",
+            "Fomentamos la participaci\xf3n en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social,  contribuyendo a mejorar su calidad de vida. ",
           img: xo,
         },
         jo = {
@@ -20060,7 +20060,7 @@
           headline:
             "Dise\xf1amos un plan personal de apoyos y su plan de futuro personal, donde se recogen los principales objetivos a conseguir en diferentes \xe1mbitos de su vida",
           description:
-            "Potenciaremos la utilizaci\xf3n de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
+            "Potencionamos la utilizaci\xf3n de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
           img: wo,
         },
         Eo = function () {
@@ -20113,8 +20113,8 @@
         },
         Io = n(737),
         zo = n(8919),
-        Ro = n(9002),
-        Do = n(1197),
+        Do = n(9002),
+        Ro = n(1197),
         No = n(556),
         Bo = function (e) {
           return (0, dn.jsx)(dn.Fragment, {
@@ -20153,7 +20153,7 @@
                       }),
                       (0, dn.jsx)("div", {
                         class: "item-slide",
-                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Do, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20168,7 +20168,7 @@
                       (0, dn.jsx)("label", {
                         class: "pagination-item",
                         for: "2",
-                        children: (0, dn.jsx)("img", { src: Do, alt: e.alt }),
+                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
                       }),
                       (0, dn.jsx)("label", {
                         class: "pagination-item",
@@ -20208,7 +20208,7 @@
           inverse: !1,
           topLine: { text: "Proyecto CREA 2023" },
           headline:
-            " financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
+            "Financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
           description:
             "Desde 2017, nuestra Asociaci\xf3n es entidad promotora del Proyecto NUEVO CREA, programa dual de formaci\xf3n y empleo para personas con discapacidad intelectual.",
           img: Wo,
@@ -20294,13 +20294,11 @@
           id: "diagnosticoDataOne",
           reverse: !1,
           inverse: !1,
-          topLine: {
-            text: "Valoraci\xf3n y diagn\xf3stico para personas con alg\xfan tipo de discapacidad",
-          },
+          topLine: { text: "Valoraci\xf3n y diagn\xf3stico" },
           headline:
-            "Este servicio tiene como objetivo valoraci\xf3n con tests estandarizados y pruebas psicom\xe9tricas objetivas en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
+            "Este servicio valora con tests estandarizados y pruebas psicom\xe9tricas.",
           description:
-            "Nuestra valoraci\xf3n se lleva a cabo con tests estandarizados y pruebas psicom\xe9tricas como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia.",
+            "\xc9stas pruebas objetivas se realizan en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia",
           img: Jo,
         },
         es = {
@@ -20310,7 +20308,7 @@
           topLine: { text: "" },
           headline: "\xbfC\xf3mo trabajamos?",
           description:
-            "Se har\xe1n valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
+            "Se realizan valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
           img: Ko,
         },
         ts = {
@@ -20320,7 +20318,7 @@
           topLine: { text: "Nuestra principal finalidad:" },
           headline: "Poner nombre a las necesidades de las personas",
           description:
-            "Para ello, nuestros profesionales realizar\xe1n una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
+            "Para ello, nuestros profesionales realizan una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
           img: Xo,
         },
         ns = function () {
@@ -20410,9 +20408,9 @@
             text: "En el a\xf1o 2016 obtuvimos la resoluci\xf3n favorable de la Consejer\xeda de Econom\xeda, Empresas y Empleo para ser Centro de Formaci\xf3n",
           },
           headline:
-            "Estamos homologados por La Junta de Castilla la Mancha  en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
+            "Estamos homologados por La Junta de Castilla la Mancha en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
           description:
-            "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos en personas con discapacidad intelectual.",
+            "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos a las personas con discapacidad intelectual.",
           img: us,
         },
         ps = {
@@ -20420,7 +20418,7 @@
           inverse: !1,
           topLine: { text: "PROGRAMA CREA" },
           headline:
-            "Proyecto formaci\xf3n profesional y empleo en el seno de las empresas para personas con discapacidad.",
+            "Proyecto de formaci\xf3n profesional y empleo en el seno de las empresas para personas con discapacidad.",
           description:
             "Este proyecto consiste en el mejor ejemplo de FORMACI\xd3N DUAL, puesto que combinan formaci\xf3n profesional en el \xe1mbito laboral con trabajo efectivo en la empresa, mediante larealizaci\xf3n de contratos de formaci\xf3n en alternancia.",
           img: ds,
@@ -20505,7 +20503,8 @@
           },
           headline:
             "la neuropsicolog\xeda estudia las bases neuroanat\xf3micas en relaci\xf3n alos procesos mentales como: atenci\xf3n, emoci\xf3n, memoria, lenguaje y percepci\xf3n",
-          description: " ",
+          description:
+            "Dentro de mi equipo mi funci\xf3n es la de evaluar las capacidades cognitivas  y saber cu\xe1les est\xe1n fallando y cuales est\xe1n \u201ca tope\u201d. Despu\xe9s planteo un programa de entrenamiento, o como otros compa\xf1eros llaman, rehabilitaci\xf3n, para trabajar en la mejora de aquellas \xe1reas que se han quedado da\xf1adas ono se han desarrollado a los niveles esperables para la edad. ",
           img: ms,
         },
         Ss = {
@@ -20633,13 +20632,13 @@
             url: "psicologia",
           },
         ],
-        Rs = function () {
+        Ds = function () {
           var e = t((0, h.useState)(zs), 1)[0];
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Un, { title: "Nuestras Terapias", size: !0 }),
               (0, dn.jsx)("section", {
-                children: (0, dn.jsx)(Ds, {
+                children: (0, dn.jsx)(Rs, {
                   children: (0, dn.jsx)(Ns, {
                     children: e.map(function (e) {
                       return (0,
@@ -20651,7 +20650,7 @@
             ],
           });
         },
-        Ds = Qt.div(
+        Rs = Qt.div(
           pa ||
             (pa = _([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1 {\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
@@ -20681,7 +20680,7 @@
             children: [
               (0, dn.jsx)(Mr, {}),
               (0, dn.jsx)(Sn, { title: "Servicio de Terapia" }),
-              (0, dn.jsx)(Rs, {}),
+              (0, dn.jsx)(Ds, {}),
               (0, dn.jsx)(fn, G(G({}, ys), {}, { reverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, As), {}, { inverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, bs), {}, { reverse: !0 })),
@@ -20729,16 +20728,16 @@
           inverse: !1,
           topLine: { text: "METODOLOG\xcdA" },
           headline:
-            "El modelo metodol\xf3gico a seguir ser\xe1 basado en la Capacitaci\xf3n dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
+            "El modelo metodol\xf3gico a seguir se basa en la Capacitaci\xf3n dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
           description:
-            "Los principios metodol\xf3gicos ser\xe1n: integraci\xf3n, individualizaci\xf3n y optimizaci\xf3n. Se ofrecer\xe1 a las personas con especificidad la oportunidad de vivir de la manera m\xe1s aut\xf3noma posible, fomentando la participaci\xf3n activa de la persona objeto de nuestro apoyo en la comunidad de Socu\xe9llamos, desde la igualdad y la plena inclusi\xf3n social..",
+            "Los principios metodol\xf3gicos son: integraci\xf3n, individualizaci\xf3n y optimizaci\xf3n. Se ofrece a las personas con especificidad la oportunidad de vivir de la manera m\xe1s aut\xf3noma posible, fomentando la participaci\xf3n activa de la persona objeto de nuestro apoyo en la comunidad de Socu\xe9llamos, desde la igualdad y la plena inclusi\xf3n social..",
           img: Hs,
         },
         Qs = function () {
           return (0, dn.jsxs)(dn.Fragment, {
             children: [
               (0, dn.jsx)(Mr, {}),
-              (0, dn.jsx)(Sn, { title: "Servicio de atenci\xf3n a Viviendas" }),
+              (0, dn.jsx)(Sn, { title: "Viviendas" }),
               (0, dn.jsx)(Un, { title: "Apoyo acceso viviendas", size: !0 }),
               (0, dn.jsx)(fn, G(G({}, Vs), {}, { inverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, Gs), {}, { reverse: !0 })),
@@ -20790,8 +20789,9 @@
           inverse: !1,
           topLine: { text: "Ocio Compartido" },
           headline:
-            "Se fomenta la participaci\xf3n en actividades grupaes de ocio, organizadas por ellos mismos con los apoyos profesionales necesarios.",
-          description: "",
+            "Se fomenta la participaci\xf3n en actividades grupales de ocio, organizadas por ellos mismos con los apoyos profesionales necesarios.",
+          description:
+            "Es un proyecto de inclusi\xf3n creado por Afymos y cofinanciado por la Consejer\xeda de Bienestar Social de CL, el Ayto. de Socu\xe9llamos y nuestra entidad en el que j\xf3venes con discapacidad y sin discapacidad realizan actividades de ocio y deporte durante las vacaciones de verano.",
           img: _s,
         },
         rl = {
@@ -20835,11 +20835,23 @@
             ],
           });
         };
-      function ol(e, t) {
+      function ol() {
+        var e = z().pathname;
+        return (
+          (0, h.useEffect)(
+            function () {
+              window.scrollTo(0, 0);
+            },
+            [e]
+          ),
+          null
+        );
+      }
+      function sl(e, t) {
         if (!(e instanceof t))
           throw new TypeError("Cannot call a class as a function");
       }
-      function sl(e, t) {
+      function ll(e, t) {
         for (var n = 0; n < t.length; n++) {
           var r = t[n];
           (r.enumerable = r.enumerable || !1),
@@ -20848,25 +20860,25 @@
             Object.defineProperty(e, r.key, r);
         }
       }
-      function ll(e, t, n) {
+      function cl(e, t, n) {
         return (
-          t && sl(e.prototype, t),
-          n && sl(e, n),
+          t && ll(e.prototype, t),
+          n && ll(e, n),
           Object.defineProperty(e, "prototype", { writable: !1 }),
           e
         );
       }
-      function cl(e, t) {
+      function ul(e, t) {
         return (
-          (cl =
+          (ul =
             Object.setPrototypeOf ||
             function (e, t) {
               return (e.__proto__ = t), e;
             }),
-          cl(e, t)
+          ul(e, t)
         );
       }
-      function ul(e, t) {
+      function dl(e, t) {
         if ("function" !== typeof t && null !== t)
           throw new TypeError(
             "Super expression must either be null or a function"
@@ -20875,21 +20887,21 @@
           constructor: { value: e, writable: !0, configurable: !0 },
         })),
           Object.defineProperty(e, "prototype", { writable: !1 }),
-          t && cl(e, t);
+          t && ul(e, t);
       }
-      function dl(e) {
+      function fl(e) {
         return (
-          (dl = Object.setPrototypeOf
+          (fl = Object.setPrototypeOf
             ? Object.getPrototypeOf
             : function (e) {
                 return e.__proto__ || Object.getPrototypeOf(e);
               }),
-          dl(e)
+          fl(e)
         );
       }
-      function fl(e) {
+      function pl(e) {
         return (
-          (fl =
+          (pl =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
@@ -20902,11 +20914,11 @@
                     ? "symbol"
                     : typeof e;
                 }),
-          fl(e)
+          pl(e)
         );
       }
-      function pl(e, t) {
-        if (t && ("object" === fl(t) || "function" === typeof t)) return t;
+      function hl(e, t) {
+        if (t && ("object" === pl(t) || "function" === typeof t)) return t;
         if (void 0 !== t)
           throw new TypeError(
             "Derived constructors may only return object or undefined"
@@ -20919,7 +20931,7 @@
           return e;
         })(e);
       }
-      function hl(e) {
+      function ml(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -20937,22 +20949,22 @@
         })();
         return function () {
           var n,
-            r = dl(e);
+            r = fl(e);
           if (t) {
-            var i = dl(this).constructor;
+            var i = fl(this).constructor;
             n = Reflect.construct(r, arguments, i);
           } else n = r.apply(this, arguments);
-          return pl(this, n);
+          return hl(this, n);
         };
       }
-      var ml = (function (e) {
-          ul(r, e);
-          var t = hl(r);
+      var gl = (function (e) {
+          dl(r, e);
+          var t = ml(r);
           function r() {
-            return ol(this, r), t.apply(this, arguments);
+            return sl(this, r), t.apply(this, arguments);
           }
           return (
-            ll(r, [
+            cl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -20995,15 +21007,15 @@
             r
           );
         })(h.Component),
-        gl = ml,
-        vl = (function (e) {
-          ul(r, e);
-          var t = hl(r);
+        vl = gl,
+        yl = (function (e) {
+          dl(r, e);
+          var t = ml(r);
           function r() {
-            return ol(this, r), t.apply(this, arguments);
+            return sl(this, r), t.apply(this, arguments);
           }
           return (
-            ll(r, [
+            cl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21046,15 +21058,15 @@
             r
           );
         })(h.Component),
-        yl = vl,
-        Al = (function (e) {
-          ul(r, e);
-          var t = hl(r);
+        Al = yl,
+        bl = (function (e) {
+          dl(r, e);
+          var t = ml(r);
           function r() {
-            return ol(this, r), t.apply(this, arguments);
+            return sl(this, r), t.apply(this, arguments);
           }
           return (
-            ll(r, [
+            cl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21099,96 +21111,100 @@
             r
           );
         })(h.Component),
-        bl = Al,
-        xl = function () {
-          return (0, dn.jsx)(dn.Fragment, {
-            children: (0, dn.jsxs)(W, {
-              children: [
-                (0, dn.jsx)(B, {
-                  path: "/terapias",
-                  element: (0, dn.jsx)(Fs, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/nosotros",
-                  element: (0, dn.jsx)(co, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/apoyo-familias",
-                  element: (0, dn.jsx)(cs, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/ocio-y-voluntariado",
-                  element: (0, dn.jsx)(al, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/viviendas-con-apoyo",
-                  element: (0, dn.jsx)(Qs, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/centro-de-dia",
-                  element: (0, dn.jsx)(Eo, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/proyecto-crea",
-                  element: (0, dn.jsx)(qo, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/valoracion-y-diagnostico",
-                  element: (0, dn.jsx)(ns, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/donaciones",
-                  element: (0, dn.jsx)(is, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/servicio-capacitacion",
-                  element: (0, dn.jsx)(Ao, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/instalaciones-centro-diversidad",
-                  element: (0, dn.jsx)(Fo, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/valoracion-y-diagnostico",
-                  element: (0, dn.jsx)(ns, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/organigrama",
-                  element: (0, dn.jsx)(bl, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/pdf-cuentas-20",
-                  element: (0, dn.jsx)(gl, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/pdf-cuentas-21",
-                  element: (0, dn.jsx)(yl, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/formacion",
-                  element: (0, dn.jsx)(hs, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/junta-directiva",
-                  element: (0, dn.jsx)(ti, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/politica-privacidad",
-                  element: (0, dn.jsx)(ho, {}),
-                }),
-                (0, dn.jsx)(B, {
-                  path: "/aviso-legal",
-                  element: (0, dn.jsx)(zr, {}),
-                }),
-                (0, dn.jsx)(B, { path: "/", element: (0, dn.jsx)(Xa, {}) }),
-              ],
-            }),
+        xl = bl,
+        wl = function () {
+          return (0, dn.jsxs)(dn.Fragment, {
+            children: [
+              (0, dn.jsx)(ol, { smooth: !0 }),
+              (0, dn.jsxs)(W, {
+                children: [
+                  (0, dn.jsx)(B, {
+                    path: "/terapias",
+                    element: (0, dn.jsx)(Fs, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/nosotros",
+                    element: (0, dn.jsx)(co, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/apoyo-familias",
+                    element: (0, dn.jsx)(cs, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/ocio-y-voluntariado",
+                    element: (0, dn.jsx)(al, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/viviendas-con-apoyo",
+                    element: (0, dn.jsx)(Qs, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/centro-de-dia",
+                    element: (0, dn.jsx)(Eo, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/proyecto-crea",
+                    element: (0, dn.jsx)(qo, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/valoracion-y-diagnostico",
+                    element: (0, dn.jsx)(ns, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/donaciones",
+                    element: (0, dn.jsx)(is, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/servicio-capacitacion",
+                    element: (0, dn.jsx)(Ao, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/instalaciones-centro-diversidad",
+                    element: (0, dn.jsx)(Fo, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/valoracion-y-diagnostico",
+                    element: (0, dn.jsx)(ns, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/organigrama",
+                    element: (0, dn.jsx)(xl, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/pdf-cuentas-20",
+                    element: (0, dn.jsx)(vl, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/pdf-cuentas-21",
+                    element: (0, dn.jsx)(Al, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/formacion",
+                    element: (0, dn.jsx)(hs, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/junta-directiva",
+                    element: (0, dn.jsx)(ti, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/politica-privacidad",
+                    element: (0, dn.jsx)(ho, {}),
+                  }),
+                  (0, dn.jsx)(B, {
+                    path: "/aviso-legal",
+                    element: (0, dn.jsx)(zr, {}),
+                  }),
+                  (0, dn.jsx)(B, { path: "/", element: (0, dn.jsx)(Xa, {}) }),
+                ],
+              }),
+              (0, dn.jsx)(ol, { smooth: !0 }),
+            ],
           });
         };
       n(4164).render(
-        (0, dn.jsx)(gn, { children: (0, dn.jsx)(xl, {}) }),
+        (0, dn.jsx)(gn, { children: (0, dn.jsx)(wl, {}) }),
         document.getElementById("root")
       );
     })();
 })();
-//# sourceMappingURL=main.85907f26.js.map
+//# sourceMappingURL=main.cc315bc8.js.map
