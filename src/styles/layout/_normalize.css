@@ -17,9 +17,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
 
-  a {
-    text-decoration: none;
-  }
   outline: none;
   border: none;
 }
@@ -73,7 +70,6 @@ main {
 
 h1 {
   font-size: 2em;
-  // margin: 0.67em 0;
 }
 
 /* Grouping content
