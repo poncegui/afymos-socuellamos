@@ -1,4 +1,4 @@
-import "../styles/layout/_normalize.css";
+import "../styles/layout/normalize.css";
 
 //HOOKS
 import { Route, Routes } from "react-router-dom";
