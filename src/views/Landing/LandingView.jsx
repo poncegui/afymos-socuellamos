@@ -3,7 +3,6 @@ import { heroOne, heroThree, heroTwo } from "./components/services/HeroData";
 import Carousel from "./components/carouselNoticias/Carousel";
 import ContactForm from "./components/ContactForm";
 import { Content } from "../../components/Content/Content";
-import Cookies from "../../components/Cookies";
 import Footer from "../../components/Footer/Footer";
 import NavBarLanding from "../../components/Header/NavBarLanding";
 import PartnertList from "../../components/Partners/PartnerList";
@@ -28,7 +27,6 @@ const LandingView = () => {
       <Carousel />
       <ContactForm />
       <PartnertList size inverse marginBottom />
-      <Cookies />
       <Footer />
     </>
   );
