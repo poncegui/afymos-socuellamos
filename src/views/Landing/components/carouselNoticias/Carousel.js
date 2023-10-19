@@ -19,7 +19,7 @@ const Carousel = () => {
   const [news, setNews] = useState(ApiCarousel);
 
   const handleUrl = (ev) => {
-    setNews(ev.currentTarget);
+    // setNews(ev.currentTarget);
   };
 
   return (
@@ -58,7 +58,7 @@ const Carousel = () => {
             </TextWrapper>
             <ContainerButtonLink>
               <Link to={el.url}>
-                <Button onClick={handleUrl}>conoce más</Button>
+                <Button>conoce más</Button>
               </Link>
             </ContainerButtonLink>
           </ImageWrapper>

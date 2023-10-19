@@ -84,7 +84,6 @@ export const ContainerButtonLink = styled.div`
   font-size: 1.3rem;
   padding: 5px 10px;
   color: #ffc0bc;
-  cursor: pointer;
   width: 100%;
   font-weight: 600;
   margin: auto 0 0 0;

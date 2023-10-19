@@ -1,0 +1,79 @@
+.popular .box {
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  margin: 15px 15px 15px 0;
+}
+.popular .images {
+  position: relative;
+  height: 150px;
+}
+.popular img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.popular .text h1 {
+  padding: 20px 0 0 20px;
+  margin: 0;
+}
+.popular .date {
+  margin-top: 15px;
+  padding: 0 0 0 20px;
+}
+
+.popular .comment {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 0 0 20px;
+  margin-top: 5px;
+}
+.category {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  background-color: purple;
+}
+.row {
+  width: 50%;
+}
+.images {
+  position: relative;
+}
+.category1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 5px solid #071c2f;
+  width: auto;
+  display: block;
+  background: linear-gradient(to right, #071c2f 50%, grey 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.category1 span {
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+.category1:hover {
+  background-position: left bottom;
+}
+.category1 span:hover {
+  color: #fff;
+}
+.title {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.comment i,
+.date i {
+  width: 30px;
+  color: #fb4c35;
+  font-size: 13px;
+}
