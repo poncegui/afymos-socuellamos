@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a1906633.css",
-    "main.js": "./static/js/main.303c5ccf.js",
+    "main.js": "./static/js/main.e9e5426c.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -48,6 +48,9 @@
     "static/media/cocina.png": "./static/media/cocina.dddf8cae8b29de25da13.png",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/proyecto-crea-03.jpg": "./static/media/proyecto-crea-03.0501b340293cb969e28c.jpg",
+    "static/media/loteria-navidad.png": "./static/media/loteria-navidad.3b5c27664e3826757fe5.png",
+    "static/media/relatos.png": "./static/media/relatos.ac7391a5060733203bb1.png",
+    "static/media/fotografia.png": "./static/media/fotografia.b912301f26237d55fcf4.png",
     "static/media/proyecto-crea-02.jpg": "./static/media/proyecto-crea-02.579e1a32019e4dc75eda.jpg",
     "static/media/somos-portada.jpg": "./static/media/somos-portada.1f87966a418b44247713.jpg",
     "static/media/proyecto-crea-01.jpg": "./static/media/proyecto-crea-01.d0644aac0bddc5198d84.jpg",
@@ -100,7 +103,7 @@
     "static/media/historial-medico.png": "./static/media/historial-medico.cdd204e568964ac3e119.png",
     "index.html": "./index.html",
     "main.a1906633.css.map": "./static/css/main.a1906633.css.map",
-    "main.303c5ccf.js.map": "./static/js/main.303c5ccf.js.map"
+    "main.e9e5426c.js.map": "./static/js/main.e9e5426c.js.map"
   },
-  "entrypoints": ["static/css/main.a1906633.css", "static/js/main.303c5ccf.js"]
+  "entrypoints": ["static/css/main.a1906633.css", "static/js/main.e9e5426c.js"]
 }
