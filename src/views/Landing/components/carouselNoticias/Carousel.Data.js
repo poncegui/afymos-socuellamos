@@ -24,7 +24,7 @@ export const ApiCarousel = [
   {
     title: "Concurso de Fotografía",
     description:
-      "Plazo de inscripción hasta el próximo 17 de noviembre, sólo mayores de 18 años",
+      "Plazo de inscripción hasta el próximo 17 de noviembre, sin limite de edad",
     image: fotografia,
     alt: "concurso-de-fotografia",
     url: "",
