@@ -16,7 +16,7 @@ const ProjectsCrea = () => {
       <ContentProjects {...creaDataOne} inverse />
       <ContentProjects {...creaDataTwo} reverse />
       <VideoCrea />
-      <PartnersList />
+      <PartnersList inverse />
       <Footer />
     </>
   );

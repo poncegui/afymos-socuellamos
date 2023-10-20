@@ -35,7 +35,7 @@ const Testimonials = () => {
             <p>
               <span>Quico</span>
             </p>
-            <p>Trabajador en Inkiele</p>
+            <p>Trabajador en Cabezuelo Foods</p>
           </TestimonialsCard>
           <TestimonialsCard>
             <img src={user3} alt="pedro" />

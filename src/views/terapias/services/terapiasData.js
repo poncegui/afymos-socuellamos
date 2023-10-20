@@ -59,7 +59,7 @@ export const terapiaOcupacionalData = {
   headline:
     "La terapia ocupacional consiste en intervenir o rehabilitar a través de un conjunto de actividades dirigidas a personas con problemas físicos, psíquicos, sensoriales o sociales.",
   description:
-    "Enfoco mi trabajo en una intervención significativa con objetos pautados previamente con la persona y su familia, realizando actividades con propósito claro y definido",
+    "Enfoco mi trabajo en una intervención significativa con objetivos pautados previamente con la persona y su familia, realizando actividades con propósito claro y definido",
   img: terapiaOcupacional,
 };
 
