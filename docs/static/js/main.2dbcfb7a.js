@@ -1,4 +1,4 @@
-/*! For license information please see main.4b6260cd.js.LICENSE.txt */
+/*! For license information please see main.2dbcfb7a.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -18990,7 +18990,7 @@
           {
             title: "Concurso de Fotograf\xeda",
             description:
-              "Plazo de inscripci\xf3n hasta el pr\xf3ximo 17 de noviembre, s\xf3lo mayores de 18 a\xf1os",
+              "Plazo de inscripci\xf3n hasta el pr\xf3ximo 17 de noviembre, sin limite de edad",
             image: ui,
             alt: "concurso-de-fotografia",
             url: "",
@@ -21207,4 +21207,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.4b6260cd.js.map
+//# sourceMappingURL=main.2dbcfb7a.js.map
