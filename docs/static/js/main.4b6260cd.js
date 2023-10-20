@@ -1,4 +1,4 @@
-/*! For license information please see main.e9e5426c.js.LICENSE.txt */
+/*! For license information please see main.4b6260cd.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -19771,7 +19771,9 @@
                         (0, dn.jsx)("p", {
                           children: (0, dn.jsx)("span", { children: "Quico" }),
                         }),
-                        (0, dn.jsx)("p", { children: "Trabajador en Inkiele" }),
+                        (0, dn.jsx)("p", {
+                          children: "Trabajador en Cabezuelo Foods",
+                        }),
                       ],
                     }),
                     (0, dn.jsxs)(Xa, {
@@ -20280,7 +20282,7 @@
               (0, dn.jsx)(fn, G(G({}, Vo), {}, { inverse: !0 })),
               (0, dn.jsx)(fn, G(G({}, Go), {}, { reverse: !0 })),
               (0, dn.jsx)(Yo, {}),
-              (0, dn.jsx)(Kn, {}),
+              (0, dn.jsx)(Kn, { inverse: !0 }),
               (0, dn.jsx)(xn, {}),
             ],
           });
@@ -20489,7 +20491,7 @@
           headline:
             "La terapia ocupacional consiste en intervenir o rehabilitar a trav\xe9s de un conjunto de actividades dirigidas a personas con problemas f\xedsicos, ps\xedquicos, sensoriales o sociales.",
           description:
-            "Enfoco mi trabajo en una intervenci\xf3n significativa con objetos pautados previamente con la persona y su familia, realizando actividades con prop\xf3sito claro y definido",
+            "Enfoco mi trabajo en una intervenci\xf3n significativa con objetivos pautados previamente con la persona y su familia, realizando actividades con prop\xf3sito claro y definido",
           img: Vr,
         },
         Ss = {
@@ -21205,4 +21207,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.e9e5426c.js.map
+//# sourceMappingURL=main.4b6260cd.js.map
