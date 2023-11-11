@@ -8,26 +8,20 @@ import {
   ReviewSlider,
 } from "./CarouselStyles";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
-import { Heading, Row, Section, TextWrapper } from "../../../../globalStyles";
 import React, { useState } from "react";
+import { Row, Section, TextWrapper } from "../../../../globalStyles";
 
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
+import TitleSection from "../../../../components/TitleSection";
 
 const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
-  const [news, setNews] = useState(ApiCarousel);
-
-  const handleUrl = (ev) => {
-    // setNews(ev.currentTarget);
-  };
 
   return (
     <Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse>
+      <TitleSection title="Noticias" inverse />
       <Row justify="center" margin="1rem" wrap="wrap" align="center">
-        <Heading width="auto" inverse margin="2rem">
-          Noticias
-        </Heading>
         <ButtonContainer>
           <IconContext.Provider value={{ size: "3rem", color: "#071c2f" }}>
             <FaArrowCircleLeft onClick={sliderRef?.slickPrev} />

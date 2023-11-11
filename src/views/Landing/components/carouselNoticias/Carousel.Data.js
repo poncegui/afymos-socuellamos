@@ -1,3 +1,7 @@
+import basket1 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-2.jpg";
+import basket2 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-3.jpg";
+import basket3 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-4.jpg";
+import basket4 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-5.jpg";
 import congreso from "./assets/images-noticias/congreso-con-apoyo-burgos/congreso.jpg";
 import fotografia from "./assets/images-noticias/concursos/fotografia.png";
 import loteria from "./assets/images-noticias/loteria-navidad/loteria-navidad.png";
@@ -76,3 +80,30 @@ export const sliderSettings = {
     },
   ],
 };
+
+export const basket = [
+  {
+    id: 1,
+    cover: basket1,
+    title: "",
+    alt: "foto baloncesto",
+  },
+  {
+    id: 2,
+    cover: basket2,
+    title: "",
+    alt: "foto baloncesto",
+  },
+  {
+    id: 3,
+    cover: basket3,
+    title: "",
+    alt: "foto baloncesto",
+  },
+  {
+    id: 3,
+    cover: basket4,
+    title: "",
+    alt: "foto baloncesto",
+  },
+];

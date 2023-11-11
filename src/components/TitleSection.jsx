@@ -36,7 +36,7 @@ const TitleSectionContainer = styled.div`
   }
 
   @media (max-width: 440px) {
-    font-size: ${({ size }) => (size ? "1.2rem" : "1rem")};
+    font-size: ${({ size }) => (size ? "1.2rem" : "1.5rem")};
     line-height: 2.5rem;
   }
 `;
