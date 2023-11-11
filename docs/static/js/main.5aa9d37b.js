@@ -1,4 +1,4 @@
-/*! For license information please see main.45911bf9.js.LICENSE.txt */
+/*! For license information please see main.5aa9d37b.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -19944,7 +19944,9 @@
         },
         uo = Qt.section(
           ha ||
-            (ha = _(["\n  margin: 10% auto;\n  background-color: #ffc0bc;\n"]))
+            (ha = _([
+              "\n  margin: 10% auto;\n  background-color: #ffc0bc;\n  padding: 0;\n",
+            ]))
         ),
         fo = Qt.div(
           ma || (ma = _(["\n  max-width: 90%;\n  margin: 5% auto;\n"]))
@@ -21432,4 +21434,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.45911bf9.js.map
+//# sourceMappingURL=main.5aa9d37b.js.map
