@@ -1,4 +1,4 @@
-/*! For license information please see main.2dbcfb7a.js.LICENSE.txt */
+/*! For license information please see main.45911bf9.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -231,7 +231,7 @@
                 var y = f(n, v);
                 try {
                   c(t, v, y);
-                } catch (A) {}
+                } catch (b) {}
               }
             }
           }
@@ -338,16 +338,16 @@
               a = i;
             return (r = i = void 0), (c = t), (o = e.apply(a, n));
           }
-          function A(e) {
+          function b(e) {
             return (c = e), (s = setTimeout(x, t)), u ? y(e) : o;
           }
-          function b(e) {
+          function A(e) {
             var n = e - l;
             return void 0 === l || n >= t || n < 0 || (d && e - c >= a);
           }
           function x() {
             var e = h();
-            if (b(e)) return w(e);
+            if (A(e)) return w(e);
             s = setTimeout(
               x,
               (function (e) {
@@ -361,9 +361,9 @@
           }
           function S() {
             var e = h(),
-              n = b(e);
+              n = A(e);
             if (((r = arguments), (i = this), (l = e), n)) {
-              if (void 0 === s) return A(l);
+              if (void 0 === s) return b(l);
               if (d) return (s = setTimeout(x, t)), y(l);
             }
             return void 0 === s && (s = setTimeout(x, t)), o;
@@ -414,13 +414,13 @@
             f = !1,
             g = !0;
           if ("function" != typeof e) throw new TypeError(r);
-          function A(t) {
+          function b(t) {
             var n = i,
               r = a;
             return (i = a = void 0), (u = t), (s = e.apply(r, n));
           }
-          function b(e) {
-            return (u = e), (l = setTimeout(w, t)), d ? A(e) : s;
+          function A(e) {
+            return (u = e), (l = setTimeout(w, t)), d ? b(e) : s;
           }
           function x(e) {
             var n = e - c;
@@ -438,14 +438,14 @@
             );
           }
           function S(e) {
-            return (l = void 0), g && i ? A(e) : ((i = a = void 0), s);
+            return (l = void 0), g && i ? b(e) : ((i = a = void 0), s);
           }
           function k() {
             var e = m(),
               n = x(e);
             if (((i = arguments), (a = this), (c = e), n)) {
-              if (void 0 === l) return b(c);
-              if (f) return (l = setTimeout(w, t)), A(c);
+              if (void 0 === l) return A(c);
+              if (f) return (l = setTimeout(w, t)), b(c);
             }
             return void 0 === l && (l = setTimeout(w, t)), s;
           }
@@ -713,10 +713,10 @@
             v[e] = new g(e, 5, !1, e.toLowerCase(), null, !1, !1);
           });
         var y = /[\-:]([a-z])/g;
-        function A(e) {
+        function b(e) {
           return e[1].toUpperCase();
         }
-        function b(e, t, n, r) {
+        function A(e, t, n, r) {
           var i = v.hasOwnProperty(t) ? v[t] : null;
           (null !== i
             ? 0 === i.type
@@ -786,17 +786,17 @@
         "accent-height alignment-baseline arabic-form baseline-shift cap-height clip-path clip-rule color-interpolation color-interpolation-filters color-profile color-rendering dominant-baseline enable-background fill-opacity fill-rule flood-color flood-opacity font-family font-size font-size-adjust font-stretch font-style font-variant font-weight glyph-name glyph-orientation-horizontal glyph-orientation-vertical horiz-adv-x horiz-origin-x image-rendering letter-spacing lighting-color marker-end marker-mid marker-start overline-position overline-thickness paint-order panose-1 pointer-events rendering-intent shape-rendering stop-color stop-opacity strikethrough-position strikethrough-thickness stroke-dasharray stroke-dashoffset stroke-linecap stroke-linejoin stroke-miterlimit stroke-opacity stroke-width text-anchor text-decoration text-rendering underline-position underline-thickness unicode-bidi unicode-range units-per-em v-alphabetic v-hanging v-ideographic v-mathematical vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mode xmlns:xlink x-height"
           .split(" ")
           .forEach(function (e) {
-            var t = e.replace(y, A);
+            var t = e.replace(y, b);
             v[t] = new g(t, 1, !1, e, null, !1, !1);
           }),
           "xlink:actuate xlink:arcrole xlink:role xlink:show xlink:title xlink:type"
             .split(" ")
             .forEach(function (e) {
-              var t = e.replace(y, A);
+              var t = e.replace(y, b);
               v[t] = new g(t, 1, !1, e, "http://www.w3.org/1999/xlink", !1, !1);
             }),
           ["xml:base", "xml:lang", "xml:space"].forEach(function (e) {
-            var t = e.replace(y, A);
+            var t = e.replace(y, b);
             v[t] = new g(
               t,
               1,
@@ -839,27 +839,27 @@
           R = 60128,
           D = 60129,
           N = 60130,
-          F = 60131;
+          B = 60131;
         if ("function" === typeof Symbol && Symbol.for) {
-          var B = Symbol.for;
-          (w = B("react.element")),
-            (S = B("react.portal")),
-            (k = B("react.fragment")),
-            (j = B("react.strict_mode")),
-            (E = B("react.profiler")),
-            (C = B("react.provider")),
-            (O = B("react.context")),
-            (P = B("react.forward_ref")),
-            (T = B("react.suspense")),
-            (L = B("react.suspense_list")),
-            (M = B("react.memo")),
-            (I = B("react.lazy")),
-            (z = B("react.block")),
-            B("react.scope"),
-            (R = B("react.opaque.id")),
-            (D = B("react.debug_trace_mode")),
-            (N = B("react.offscreen")),
-            (F = B("react.legacy_hidden"));
+          var F = Symbol.for;
+          (w = F("react.element")),
+            (S = F("react.portal")),
+            (k = F("react.fragment")),
+            (j = F("react.strict_mode")),
+            (E = F("react.profiler")),
+            (C = F("react.provider")),
+            (O = F("react.context")),
+            (P = F("react.forward_ref")),
+            (T = F("react.suspense")),
+            (L = F("react.suspense_list")),
+            (M = F("react.memo")),
+            (I = F("react.lazy")),
+            (z = F("react.block")),
+            F("react.scope"),
+            (R = F("react.opaque.id")),
+            (D = F("react.debug_trace_mode")),
+            (N = F("react.offscreen")),
+            (B = F("react.legacy_hidden"));
         }
         var W,
           U = "function" === typeof Symbol && Symbol.iterator;
@@ -1121,7 +1121,7 @@
             });
         }
         function te(e, t) {
-          null != (t = t.checked) && b(e, "checked", t, !1);
+          null != (t = t.checked) && A(e, "checked", t, !1);
         }
         function ne(e, t) {
           te(e, t);
@@ -1291,7 +1291,7 @@
           }
           e.textContent = t;
         }
-        var Ae = {
+        var be = {
             animationIterationCount: !0,
             borderImageOutset: !0,
             borderImageSlice: !0,
@@ -1335,14 +1335,14 @@
             strokeOpacity: !0,
             strokeWidth: !0,
           },
-          be = ["Webkit", "ms", "Moz", "O"];
+          Ae = ["Webkit", "ms", "Moz", "O"];
         function xe(e, t, n) {
           return null == t || "boolean" === typeof t || "" === t
             ? ""
             : n ||
               "number" !== typeof t ||
               0 === t ||
-              (Ae.hasOwnProperty(e) && Ae[e])
+              (be.hasOwnProperty(e) && be[e])
             ? ("" + t).trim()
             : t + "px";
         }
@@ -1355,10 +1355,10 @@
                 r ? e.setProperty(n, i) : (e[n] = i);
             }
         }
-        Object.keys(Ae).forEach(function (e) {
-          be.forEach(function (t) {
+        Object.keys(be).forEach(function (e) {
+          Ae.forEach(function (t) {
             (t = t + e.charAt(0).toUpperCase() + e.substring(1)),
-              (Ae[t] = Ae[e]);
+              (be[t] = be[e]);
           });
         });
         var Se = i(
@@ -1453,8 +1453,8 @@
         function Re() {}
         var De = Ie,
           Ne = !1,
-          Fe = !1;
-        function Be() {
+          Be = !1;
+        function Fe() {
           (null === Oe && null === Pe) || (Re(), Me());
         }
         function We(e, t) {
@@ -1726,10 +1726,10 @@
           }
           return !0;
         }
-        function At(e, t, n) {
+        function bt(e, t, n) {
           yt(e) && n.delete(t);
         }
-        function bt() {
+        function At() {
           for (at = !1; 0 < ot.length; ) {
             var e = ot[0];
             if (null !== e.blockedOn) {
@@ -1754,15 +1754,15 @@
           null !== st && yt(st) && (st = null),
             null !== lt && yt(lt) && (lt = null),
             null !== ct && yt(ct) && (ct = null),
-            ut.forEach(At),
-            dt.forEach(At);
+            ut.forEach(bt),
+            dt.forEach(bt);
         }
         function xt(e, t) {
           e.blockedOn === t &&
             ((e.blockedOn = null),
             at ||
               ((at = !0),
-              a.unstable_scheduleCallback(a.unstable_NormalPriority, bt)));
+              a.unstable_scheduleCallback(a.unstable_NormalPriority, At)));
         }
         function wt(e) {
           function t(t) {
@@ -1923,7 +1923,7 @@
             ? ((Dt = 1), 1073741824)
             : ((Dt = 8), e);
         }
-        function Ft(e, t) {
+        function Bt(e, t) {
           var n = e.pendingLanes;
           if (0 === n) return (Dt = 0);
           var r = 0,
@@ -1954,7 +1954,7 @@
               (i = 1 << (n = 31 - Gt(t))), (r |= e[n]), (t &= ~i);
           return r;
         }
-        function Bt(e) {
+        function Ft(e) {
           return 0 !== (e = -1073741825 & e.pendingLanes)
             ? e
             : 1073741824 & e
@@ -2015,7 +2015,7 @@
           try {
             ze(i, e, t, n, r);
           } finally {
-            (Ne = a) || Be();
+            (Ne = a) || Fe();
           }
         }
         function Xt(e, t, n, r) {
@@ -2218,8 +2218,8 @@
           }),
           vn = ln(gn),
           yn = ln(i({}, gn, { dataTransfer: 0 })),
-          An = ln(i({}, hn, { relatedTarget: 0 })),
-          bn = ln(
+          bn = ln(i({}, hn, { relatedTarget: 0 })),
+          An = ln(
             i({}, fn, { animationName: 0, elapsedTime: 0, pseudoElement: 0 })
           ),
           xn = i({}, fn, {
@@ -2388,10 +2388,10 @@
           Rn = ln(zn),
           Dn = [9, 13, 27, 32],
           Nn = d && "CompositionEvent" in window,
-          Fn = null;
-        d && "documentMode" in document && (Fn = document.documentMode);
-        var Bn = d && "TextEvent" in window && !Fn,
-          Wn = d && (!Nn || (Fn && 8 < Fn && 11 >= Fn)),
+          Bn = null;
+        d && "documentMode" in document && (Bn = document.documentMode);
+        var Fn = d && "TextEvent" in window && !Bn,
+          Wn = d && (!Nn || (Bn && 8 < Bn && 11 >= Bn)),
           Un = String.fromCharCode(32),
           Hn = !1;
         function Vn(e, t) {
@@ -2478,7 +2478,7 @@
               try {
                 Ie(e, t);
               } finally {
-                (Ne = !1), Be();
+                (Ne = !1), Fe();
               }
             }
           }
@@ -2590,8 +2590,8 @@
           );
         }
         var yr = d && "documentMode" in document && 11 >= document.documentMode,
-          Ar = null,
           br = null,
+          Ar = null,
           xr = null,
           wr = !1;
         function Sr(e, t, n) {
@@ -2602,9 +2602,9 @@
               ? n
               : n.ownerDocument;
           wr ||
-            null == Ar ||
-            Ar !== K(r) ||
-            ("selectionStart" in (r = Ar) && vr(r)
+            null == br ||
+            br !== K(r) ||
+            ("selectionStart" in (r = br) && vr(r)
               ? (r = { start: r.selectionStart, end: r.selectionEnd })
               : (r = {
                   anchorNode: (r = (
@@ -2617,10 +2617,10 @@
                 }),
             (xr && fr(xr, r)) ||
               ((xr = r),
-              0 < (r = Nr(br, "onSelect")).length &&
+              0 < (r = Nr(Ar, "onSelect")).length &&
                 ((t = new pn("onSelect", "select", null, t, n)),
                 e.push({ event: t, listeners: r }),
-                (t.target = Ar))));
+                (t.target = br))));
         }
         Rt(
           "cancel cancel click click close close contextmenu contextMenu copy copy cut cut auxclick auxClick dblclick doubleClick dragend dragEnd dragstart dragStart drop drop focusin focus focusout blur input input invalid invalid keydown keyDown keypress keyPress keyup keyUp mousedown mouseDown mouseup mouseUp paste paste pause pause play play pointercancel pointerCancel pointerdown pointerDown pointerup pointerUp ratechange rateChange reset reset seeked seeked submit submit touchcancel touchCancel touchend touchEnd touchstart touchStart volumechange volumeChange".split(
@@ -2825,12 +2825,12 @@
               r = r.return;
             }
           !(function (e, t, n) {
-            if (Fe) return e(t, n);
-            Fe = !0;
+            if (Be) return e(t, n);
+            Be = !0;
             try {
               De(e, t, n);
             } finally {
-              (Fe = !1), Be();
+              (Be = !1), Fe();
             }
           })(function () {
             var r = a,
@@ -2849,14 +2849,14 @@
                     l = Tn;
                     break;
                   case "focusin":
-                    (c = "focus"), (l = An);
+                    (c = "focus"), (l = bn);
                     break;
                   case "focusout":
-                    (c = "blur"), (l = An);
+                    (c = "blur"), (l = bn);
                     break;
                   case "beforeblur":
                   case "afterblur":
-                    l = An;
+                    l = bn;
                     break;
                   case "click":
                     if (2 === n.button) break e;
@@ -2889,7 +2889,7 @@
                   case Ot:
                   case Pt:
                   case Tt:
-                    l = bn;
+                    l = An;
                     break;
                   case Lt:
                     l = In;
@@ -2986,19 +2986,19 @@
                   l && c)
                 )
                   e: {
-                    for (f = c, h = 0, p = u = l; p; p = Fr(p)) h++;
-                    for (p = 0, m = f; m; m = Fr(m)) p++;
-                    for (; 0 < h - p; ) (u = Fr(u)), h--;
-                    for (; 0 < p - h; ) (f = Fr(f)), p--;
+                    for (f = c, h = 0, p = u = l; p; p = Br(p)) h++;
+                    for (p = 0, m = f; m; m = Br(m)) p++;
+                    for (; 0 < h - p; ) (u = Br(u)), h--;
+                    for (; 0 < p - h; ) (f = Br(f)), p--;
                     for (; h--; ) {
                       if (u === f || (null !== f && u === f.alternate)) break e;
-                      (u = Fr(u)), (f = Fr(f));
+                      (u = Br(u)), (f = Br(f));
                     }
                     u = null;
                   }
                 else u = null;
-                null !== l && Br(o, s, l, u, !1),
-                  null !== c && null !== d && Br(o, d, c, u, !0);
+                null !== l && Fr(o, s, l, u, !1),
+                  null !== c && null !== d && Fr(o, d, c, u, !0);
               }
               if (
                 "select" ===
@@ -3033,10 +3033,10 @@
               ) {
                 case "focusin":
                   (Zn(v) || "true" === v.contentEditable) &&
-                    ((Ar = v), (br = r), (xr = null));
+                    ((br = v), (Ar = r), (xr = null));
                   break;
                 case "focusout":
-                  xr = br = Ar = null;
+                  xr = Ar = br = null;
                   break;
                 case "mousedown":
                   wr = !0;
@@ -3057,35 +3057,35 @@
                 e: {
                   switch (e) {
                     case "compositionstart":
-                      var A = "onCompositionStart";
+                      var b = "onCompositionStart";
                       break e;
                     case "compositionend":
-                      A = "onCompositionEnd";
+                      b = "onCompositionEnd";
                       break e;
                     case "compositionupdate":
-                      A = "onCompositionUpdate";
+                      b = "onCompositionUpdate";
                       break e;
                   }
-                  A = void 0;
+                  b = void 0;
                 }
               else
                 Yn
-                  ? Vn(e, n) && (A = "onCompositionEnd")
+                  ? Vn(e, n) && (b = "onCompositionEnd")
                   : "keydown" === e &&
                     229 === n.keyCode &&
-                    (A = "onCompositionStart");
-              A &&
+                    (b = "onCompositionStart");
+              b &&
                 (Wn &&
                   "ko" !== n.locale &&
-                  (Yn || "onCompositionStart" !== A
-                    ? "onCompositionEnd" === A && Yn && (y = rn())
+                  (Yn || "onCompositionStart" !== b
+                    ? "onCompositionEnd" === b && Yn && (y = rn())
                     : ((tn = "value" in (en = i) ? en.value : en.textContent),
                       (Yn = !0))),
-                0 < (v = Nr(r, A)).length &&
-                  ((A = new Sn(A, e, null, n, i)),
-                  o.push({ event: A, listeners: v }),
-                  y ? (A.data = y) : null !== (y = Gn(n)) && (A.data = y))),
-                (y = Bn
+                0 < (v = Nr(r, b)).length &&
+                  ((b = new Sn(b, e, null, n, i)),
+                  o.push({ event: b, listeners: v }),
+                  y ? (b.data = y) : null !== (y = Gn(n)) && (b.data = y))),
+                (y = Fn
                   ? (function (e, t) {
                       switch (e) {
                         case "compositionend":
@@ -3144,14 +3144,14 @@
           }
           return r;
         }
-        function Fr(e) {
+        function Br(e) {
           if (null === e) return null;
           do {
             e = e.return;
           } while (e && 5 !== e.tag);
           return e || null;
         }
-        function Br(e, t, n, r, i) {
+        function Fr(e, t, n, r, i) {
           for (var a = t._reactName, o = []; null !== n && n !== r; ) {
             var s = n,
               l = s.alternate,
@@ -3300,11 +3300,11 @@
         function yi() {
           ui(hi), ui(pi);
         }
-        function Ai(e, t, n) {
+        function bi(e, t, n) {
           if (pi.current !== fi) throw Error(o(168));
           di(pi, t), di(hi, n);
         }
-        function bi(e, t, n) {
+        function Ai(e, t, n) {
           var r = e.stateNode;
           if (
             ((e = t.childContextTypes), "function" !== typeof r.getChildContext)
@@ -3330,7 +3330,7 @@
           var r = e.stateNode;
           if (!r) throw Error(o(169));
           n
-            ? ((e = bi(e, t, mi)),
+            ? ((e = Ai(e, t, mi)),
               (r.__reactInternalMemoizedMergedChildContext = e),
               ui(hi),
               ui(pi),
@@ -3353,8 +3353,8 @@
           Ri = a.unstable_LowPriority,
           Di = a.unstable_IdlePriority,
           Ni = {},
-          Fi = void 0 !== Pi ? Pi : function () {},
-          Bi = null,
+          Bi = void 0 !== Pi ? Pi : function () {},
+          Fi = null,
           Wi = null,
           Ui = !1,
           Hi = Ti(),
@@ -3410,11 +3410,11 @@
           qi();
         }
         function qi() {
-          if (!Ui && null !== Bi) {
+          if (!Ui && null !== Fi) {
             Ui = !0;
             var e = 0;
             try {
-              var t = Bi;
+              var t = Fi;
               Qi(99, function () {
                 for (; e < t.length; e++) {
                   var n = t[e];
@@ -3423,9 +3423,9 @@
                   } while (null !== n);
                 }
               }),
-                (Bi = null);
+                (Fi = null);
             } catch (n) {
-              throw (null !== Bi && (Bi = Bi.slice(e + 1)), Ei(Mi, _i), n);
+              throw (null !== Fi && (Fi = Fi.slice(e + 1)), Ei(Mi, _i), n);
             } finally {
               Ui = !1;
             }
@@ -3719,7 +3719,7 @@
                 !fr(n, r) ||
                 !fr(i, a);
         }
-        function Aa(e, t, n) {
+        function ba(e, t, n) {
           var r = !1,
             i = fi,
             a = t.contextType;
@@ -3743,7 +3743,7 @@
             t
           );
         }
-        function ba(e, t, n, r) {
+        function Aa(e, t, n, r) {
           (e = t.state),
             "function" === typeof t.componentWillReceiveProps &&
               t.componentWillReceiveProps(n, r),
@@ -4011,15 +4011,15 @@
               g++, y = l.next()
             ) {
               m.index > g ? ((v = m), (m = null)) : (v = m.sibling);
-              var A = p(i, m, y.value, c);
-              if (null === A) {
+              var b = p(i, m, y.value, c);
+              if (null === b) {
                 null === m && (m = v);
                 break;
               }
-              e && m && null === A.alternate && t(i, m),
-                (s = a(A, s, g)),
-                null === d ? (u = A) : (d.sibling = A),
-                (d = A),
+              e && m && null === b.alternate && t(i, m),
+                (s = a(b, s, g)),
+                null === d ? (u = b) : (d.sibling = b),
+                (d = b),
                 (m = v);
             }
             if (y.done) return n(i, m), u;
@@ -4178,7 +4178,7 @@
           Ta.current === e && (ui(Pa), ui(Ta));
         }
         var Na = ci(0);
-        function Fa(e) {
+        function Ba(e) {
           for (var t = e; null !== t; ) {
             if (13 === t.tag) {
               var n = t.memoizedState;
@@ -4204,7 +4204,7 @@
           }
           return null;
         }
-        var Ba = null,
+        var Fa = null,
           Wa = null,
           Ua = !1;
         function Ha(e, t) {
@@ -4248,12 +4248,12 @@
               if (!Va(e, t)) {
                 if (!(t = _r(n.nextSibling)) || !Va(e, t))
                   return (
-                    (e.flags = (-1025 & e.flags) | 2), (Ua = !1), void (Ba = e)
+                    (e.flags = (-1025 & e.flags) | 2), (Ua = !1), void (Fa = e)
                   );
-                Ha(Ba, n);
+                Ha(Fa, n);
               }
-              (Ba = e), (Wa = _r(t.firstChild));
-            } else (e.flags = (-1025 & e.flags) | 2), (Ua = !1), (Ba = e);
+              (Fa = e), (Wa = _r(t.firstChild));
+            } else (e.flags = (-1025 & e.flags) | 2), (Ua = !1), (Fa = e);
           }
         }
         function Ya(e) {
@@ -4263,10 +4263,10 @@
 
           )
             e = e.return;
-          Ba = e;
+          Fa = e;
         }
         function Qa(e) {
-          if (e !== Ba) return !1;
+          if (e !== Fa) return !1;
           if (!Ua) return Ya(e), (Ua = !0), !1;
           var t = e.type;
           if (
@@ -4293,11 +4293,11 @@
               }
               Wa = null;
             }
-          } else Wa = Ba ? _r(e.stateNode.nextSibling) : null;
+          } else Wa = Fa ? _r(e.stateNode.nextSibling) : null;
           return !0;
         }
         function Za() {
-          (Wa = Ba = null), (Ua = !1);
+          (Wa = Fa = null), (Ua = !1);
         }
         var _a = [];
         function qa() {
@@ -4589,10 +4589,10 @@
         function yo(e) {
           return (e = { current: e }), (so().memoizedState = e);
         }
-        function Ao() {
+        function bo() {
           return lo().memoizedState;
         }
-        function bo(e, t, n, r) {
+        function Ao(e, t, n, r) {
           var i = so();
           ($a.flags |= e),
             (i.memoizedState = vo(1 | t, n, void 0, void 0 === r ? null : r));
@@ -4609,7 +4609,7 @@
           ($a.flags |= e), (i.memoizedState = vo(1 | t, n, a, r));
         }
         function wo(e, t) {
-          return bo(516, 4, e, t);
+          return Ao(516, 4, e, t);
         }
         function So(e, t) {
           return xo(516, 4, e, t);
@@ -4731,11 +4731,11 @@
             useImperativeHandle: function (e, t, n) {
               return (
                 (n = null !== n && void 0 !== n ? n.concat([e]) : null),
-                bo(4, 2, jo.bind(null, t, e), n)
+                Ao(4, 2, jo.bind(null, t, e), n)
               );
             },
             useLayoutEffect: function (e, t) {
-              return bo(4, 2, e, t);
+              return Ao(4, 2, e, t);
             },
             useMemo: function (e, t) {
               var n = so();
@@ -4840,7 +4840,7 @@
             useLayoutEffect: ko,
             useMemo: Po,
             useReducer: uo,
-            useRef: Ao,
+            useRef: bo,
             useState: function () {
               return uo(co);
             },
@@ -4867,7 +4867,7 @@
             },
             useTransition: function () {
               var e = uo(co)[0];
-              return [Ao().current, e];
+              return [bo().current, e];
             },
             useMutableSource: mo,
             useOpaqueIdentifier: function () {
@@ -4884,7 +4884,7 @@
             useLayoutEffect: ko,
             useMemo: Po,
             useReducer: fo,
-            useRef: Ao,
+            useRef: bo,
             useState: function () {
               return fo(co);
             },
@@ -4911,7 +4911,7 @@
             },
             useTransition: function () {
               var e = fo(co)[0];
-              return [Ao().current, e];
+              return [bo().current, e];
             },
             useMutableSource: mo,
             useOpaqueIdentifier: function () {
@@ -4921,17 +4921,17 @@
           },
           Do = x.ReactCurrentOwner,
           No = !1;
-        function Fo(e, t, n, r) {
+        function Bo(e, t, n, r) {
           t.child = null === e ? Ca(t, null, n, r) : Ea(t, e.child, n, r);
         }
-        function Bo(e, t, n, r, i) {
+        function Fo(e, t, n, r, i) {
           n = n.render;
           var a = t.ref;
           return (
             aa(t, i),
             (r = oo(e, t, n, r, a, i)),
             null === e || No
-              ? ((t.flags |= 1), Fo(e, t, r, i), t.child)
+              ? ((t.flags |= 1), Bo(e, t, r, i), t.child)
               : ((t.updateQueue = e.updateQueue),
                 (t.flags &= -517),
                 (e.lanes &= ~i),
@@ -4995,7 +4995,7 @@
               ? ((r = a.baseLanes | n), (t.memoizedState = null))
               : (r = n),
               wl(t, r);
-          return Fo(e, t, i, n), t.child;
+          return Bo(e, t, i, n), t.child;
         }
         function Vo(e, t) {
           var n = t.ref;
@@ -5009,7 +5009,7 @@
             aa(t, i),
             (n = oo(e, t, n, r, a, i)),
             null === e || No
-              ? ((t.flags |= 1), Fo(e, t, n, i), t.child)
+              ? ((t.flags |= 1), Bo(e, t, n, i), t.child)
               : ((t.updateQueue = e.updateQueue),
                 (t.flags &= -517),
                 (e.lanes &= ~i),
@@ -5024,7 +5024,7 @@
           if ((aa(t, i), null === t.stateNode))
             null !== e &&
               ((e.alternate = null), (t.alternate = null), (t.flags |= 2)),
-              Aa(t, n, r),
+              ba(t, n, r),
               xa(t, n, r, i),
               (r = !0);
           else if (null === e) {
@@ -5043,7 +5043,7 @@
             d ||
               ("function" !== typeof o.UNSAFE_componentWillReceiveProps &&
                 "function" !== typeof o.componentWillReceiveProps) ||
-              ((s !== r || l !== c) && ba(t, o, r, c)),
+              ((s !== r || l !== c) && Aa(t, o, r, c)),
               (sa = !1);
             var f = t.memoizedState;
             (o.state = f),
@@ -5089,7 +5089,7 @@
               "function" === typeof o.getSnapshotBeforeUpdate) ||
               ("function" !== typeof o.UNSAFE_componentWillReceiveProps &&
                 "function" !== typeof o.componentWillReceiveProps) ||
-              ((s !== d || f !== l) && ba(t, o, r, l)),
+              ((s !== d || f !== l) && Aa(t, o, r, l)),
               (sa = !1),
               (f = t.memoizedState),
               (o.state = f),
@@ -5146,7 +5146,7 @@
             null !== e && o
               ? ((t.child = Ea(t, e.child, null, a)),
                 (t.child = Ea(t, null, s, a)))
-              : Fo(e, t, s, a),
+              : Bo(e, t, s, a),
             (t.memoizedState = r.state),
             i && wi(t, n, !0),
             t.child
@@ -5155,8 +5155,8 @@
         function Zo(e) {
           var t = e.stateNode;
           t.pendingContext
-            ? Ai(0, t.pendingContext, t.pendingContext !== t.context)
-            : t.context && Ai(0, t.context, !1),
+            ? bi(0, t.pendingContext, t.pendingContext !== t.context)
+            : t.context && bi(0, t.context, !1),
             Ia(e, t.containerInfo);
         }
         var _o,
@@ -5300,7 +5300,7 @@
           var r = t.pendingProps,
             i = r.revealOrder,
             a = r.tail;
-          if ((Fo(e, t, r.children, n), 0 !== (2 & (r = Na.current))))
+          if ((Bo(e, t, r.children, n), 0 !== (2 & (r = Na.current))))
             (r = (1 & r) | 2), (t.flags |= 64);
           else {
             if (null !== e && 0 !== (64 & e.flags))
@@ -5325,7 +5325,7 @@
             switch (i) {
               case "forwards":
                 for (n = t.child, i = null; null !== n; )
-                  null !== (e = n.alternate) && null === Fa(e) && (i = n),
+                  null !== (e = n.alternate) && null === Ba(e) && (i = n),
                     (n = n.sibling);
                 null === (n = i)
                   ? ((i = t.child), (t.child = null))
@@ -5334,7 +5334,7 @@
                 break;
               case "backwards":
                 for (n = null, i = t.child, t.child = null; null !== i; ) {
-                  if (null !== (e = i.alternate) && null === Fa(e)) {
+                  if (null !== (e = i.alternate) && null === Ba(e)) {
                     t.child = i;
                     break;
                   }
@@ -5580,7 +5580,7 @@
                           "autoFocus" !== s &&
                           (l.hasOwnProperty(s)
                             ? null != d && "onScroll" === s && Tr("scroll", e)
-                            : null != d && b(e, s, d, c));
+                            : null != d && A(e, s, d, c));
                     }
                   switch (n) {
                     case "input":
@@ -5643,8 +5643,8 @@
                       ((null === e &&
                         !0 !== t.memoizedProps.unstable_avoidThisFallback) ||
                       0 !== (1 & Na.current)
-                        ? 0 === Fs && (Fs = 3)
-                        : ((0 !== Fs && 3 !== Fs) || (Fs = 4),
+                        ? 0 === Bs && (Bs = 3)
+                        : ((0 !== Bs && 3 !== Bs) || (Bs = 4),
                           null === Is ||
                             (0 === (134217727 & Us) &&
                               0 === (134217727 & Hs)) ||
@@ -5661,9 +5661,9 @@
               if (((s = 0 !== (64 & t.flags)), null === (c = r.rendering)))
                 if (s) os(r, !1);
                 else {
-                  if (0 !== Fs || (null !== e && 0 !== (64 & e.flags)))
+                  if (0 !== Bs || (null !== e && 0 !== (64 & e.flags)))
                     for (e = t.child; null !== e; ) {
-                      if (null !== (c = Fa(e))) {
+                      if (null !== (c = Ba(e))) {
                         for (
                           t.flags |= 64,
                             os(r, !1),
@@ -5719,7 +5719,7 @@
                 }
               else {
                 if (!s)
-                  if (null !== (e = Fa(c))) {
+                  if (null !== (e = Ba(c))) {
                     if (
                       ((t.flags |= 64),
                       (s = !0),
@@ -6128,7 +6128,7 @@
             (n.sibling.return = n.return), (n = n.sibling);
           }
         }
-        function As(e, t) {
+        function bs(e, t) {
           if (ki && "function" === typeof ki.onCommitFiberUnmount)
             try {
               ki.onCommitFiberUnmount(Si, t);
@@ -6178,7 +6178,7 @@
               js(e, t);
           }
         }
-        function bs(e) {
+        function As(e) {
           (e.alternate = null),
             (e.child = null),
             (e.dependencies = null),
@@ -6288,7 +6288,7 @@
             }
             if (5 === i.tag || 6 === i.tag) {
               e: for (var s = e, l = i, c = l; ; )
-                if ((As(s, c), null !== c.child && 4 !== c.tag))
+                if ((bs(s, c), null !== c.child && 4 !== c.tag))
                   (c.child.return = c), (c = c.child);
                 else {
                   if (c === l) break e;
@@ -6313,7 +6313,7 @@
                   (i = i.child);
                 continue;
               }
-            } else if ((As(e, i), null !== i.child)) {
+            } else if ((bs(e, i), null !== i.child)) {
               (i.child.return = i), (i = i.child);
               continue;
             }
@@ -6375,7 +6375,7 @@
                       ? ve(n, l)
                       : "children" === s
                       ? ye(n, l)
-                      : b(n, s, l, t);
+                      : A(n, s, l, t);
                   }
                   switch (e) {
                     case "input":
@@ -6447,8 +6447,8 @@
           Rs = 0,
           Ds = 0,
           Ns = ci(0),
-          Fs = 0,
-          Bs = null,
+          Bs = 0,
+          Fs = null,
           Ws = 0,
           Us = 0,
           Hs = 0,
@@ -6521,11 +6521,11 @@
         function hl(e, t, n) {
           if (50 < al) throw ((al = 0), (ol = null), Error(o(185)));
           if (null === (e = ml(e, t))) return null;
-          Vt(e, t, n), e === Is && ((Hs |= t), 4 === Fs && yl(e, Rs));
+          Vt(e, t, n), e === Is && ((Hs |= t), 4 === Bs && yl(e, Rs));
           var r = Gi();
           1 === t
             ? 0 !== (8 & Ms) && 0 === (48 & Ms)
-              ? Al(e)
+              ? bl(e)
               : (gl(e, n), 0 === Ms && (Zs(), _i()))
             : (0 === (4 & Ms) ||
                 (98 !== r && 99 !== r) ||
@@ -6565,7 +6565,7 @@
             } else u <= t && (e.expiredLanes |= c);
             s &= ~c;
           }
-          if (((r = Ft(e, e === Is ? Rs : 0)), (t = Dt), 0 === r))
+          if (((r = Bt(e, e === Is ? Rs : 0)), (t = Dt), 0 === r))
             null !== n &&
               (n !== Ni && Ci(n),
               (e.callbackNode = null),
@@ -6576,11 +6576,11 @@
               n !== Ni && Ci(n);
             }
             15 === t
-              ? ((n = Al.bind(null, e)),
-                null === Bi ? ((Bi = [n]), (Wi = Ei(Mi, qi))) : Bi.push(n),
+              ? ((n = bl.bind(null, e)),
+                null === Fi ? ((Fi = [n]), (Wi = Ei(Mi, qi))) : Fi.push(n),
                 (n = Ni))
               : 14 === t
-              ? (n = Zi(99, Al.bind(null, e)))
+              ? (n = Zi(99, bl.bind(null, e)))
               : ((n = (function (e) {
                   switch (e) {
                     case 15:
@@ -6617,7 +6617,7 @@
           if (((sl = -1), (cl = ll = 0), 0 !== (48 & Ms))) throw Error(o(327));
           var t = e.callbackNode;
           if (Rl() && e.callbackNode !== t) return null;
-          var n = Ft(e, e === Is ? Rs : 0);
+          var n = Bt(e, e === Is ? Rs : 0);
           if (0 === n) return null;
           var r = n,
             i = Ms;
@@ -6634,7 +6634,7 @@
             (na(),
             (Ts.current = a),
             (Ms = i),
-            null !== zs ? (r = 0) : ((Is = null), (Rs = 0), (r = Fs)),
+            null !== zs ? (r = 0) : ((Is = null), (Rs = 0), (r = Bs)),
             0 !== (Ws & Hs))
           )
             kl(e, 0);
@@ -6643,10 +6643,10 @@
               (2 === r &&
                 ((Ms |= 64),
                 e.hydrate && ((e.hydrate = !1), Zr(e.containerInfo)),
-                0 !== (n = Bt(e)) && (r = Cl(e, n))),
+                0 !== (n = Ft(e)) && (r = Cl(e, n))),
               1 === r)
             )
-              throw ((t = Bs), kl(e, 0), yl(e, n), gl(e, Vi()), t);
+              throw ((t = Fs), kl(e, 0), yl(e, n), gl(e, Vi()), t);
             switch (
               ((e.finishedWork = e.current.alternate), (e.finishedLanes = n), r)
             ) {
@@ -6661,7 +6661,7 @@
                 if (
                   (yl(e, n), (62914560 & n) === n && 10 < (r = Ys + 500 - Vi()))
                 ) {
-                  if (0 !== Ft(e, 0)) break;
+                  if (0 !== Bt(e, 0)) break;
                   if (((i = e.suspendedLanes) & n) !== n) {
                     fl(), (e.pingedLanes |= e.suspendedLanes & i);
                     break;
@@ -6721,22 +6721,22 @@
             (e[n] = -1), (t &= ~r);
           }
         }
-        function Al(e) {
+        function bl(e) {
           if (0 !== (48 & Ms)) throw Error(o(327));
           if ((Rl(), e === Is && 0 !== (e.expiredLanes & Rs))) {
             var t = Rs,
               n = Cl(e, t);
-            0 !== (Ws & Hs) && (n = Cl(e, (t = Ft(e, t))));
-          } else n = Cl(e, (t = Ft(e, 0)));
+            0 !== (Ws & Hs) && (n = Cl(e, (t = Bt(e, t))));
+          } else n = Cl(e, (t = Bt(e, 0)));
           if (
             (0 !== e.tag &&
               2 === n &&
               ((Ms |= 64),
               e.hydrate && ((e.hydrate = !1), Zr(e.containerInfo)),
-              0 !== (t = Bt(e)) && (n = Cl(e, t))),
+              0 !== (t = Ft(e)) && (n = Cl(e, t))),
             1 === n)
           )
-            throw ((n = Bs), kl(e, 0), yl(e, t), gl(e, Vi()), n);
+            throw ((n = Fs), kl(e, 0), yl(e, t), gl(e, Vi()), n);
           return (
             (e.finishedWork = e.current.alternate),
             (e.finishedLanes = t),
@@ -6745,7 +6745,7 @@
             null
           );
         }
-        function bl(e, t) {
+        function Al(e, t) {
           var n = Ms;
           Ms |= 1;
           try {
@@ -6806,8 +6806,8 @@
           (Is = e),
             (zs = Ql(e.current, null)),
             (Rs = Ds = Ws = t),
-            (Fs = 0),
-            (Bs = null),
+            (Bs = 0),
+            (Fs = null),
             (Vs = Hs = Us = 0);
         }
         function jl(e, t) {
@@ -6828,7 +6828,7 @@
                 (Ls.current = null),
                 null === n || null === n.return)
               ) {
-                (Fs = 1), (Bs = t), (zs = null);
+                (Bs = 1), (Fs = t), (zs = null);
                 break;
               }
               e: {
@@ -6889,19 +6889,19 @@
                         break e;
                       }
                       (l = void 0), (s = t);
-                      var A = a.pingCache;
+                      var b = a.pingCache;
                       if (
-                        (null === A
-                          ? ((A = a.pingCache = new ds()),
+                        (null === b
+                          ? ((b = a.pingCache = new ds()),
                             (l = new Set()),
-                            A.set(c, l))
-                          : void 0 === (l = A.get(c)) &&
-                            ((l = new Set()), A.set(c, l)),
+                            b.set(c, l))
+                          : void 0 === (l = b.get(c)) &&
+                            ((l = new Set()), b.set(c, l)),
                         !l.has(s))
                       ) {
                         l.add(s);
-                        var b = Ul.bind(null, a, c, s);
-                        c.then(b, b);
+                        var A = Ul.bind(null, a, c, s);
+                        c.then(A, A);
                       }
                       (f.flags |= 4096), (f.lanes = t);
                       break e;
@@ -6913,7 +6913,7 @@
                       " suspended while rendering, but no fallback UI was specified.\n\nAdd a <Suspense fallback=...> component higher in the tree to provide a loading indicator or placeholder to display."
                   );
                 }
-                5 !== Fs && (Fs = 2), (l = cs(l, s)), (f = o);
+                5 !== Bs && (Bs = 2), (l = cs(l, s)), (f = o);
                 do {
                   switch (f.tag) {
                     case 3:
@@ -6969,7 +6969,7 @@
             }
           if ((na(), (Ms = n), (Ts.current = r), null !== zs))
             throw Error(o(261));
-          return (Is = null), (Rs = 0), Fs;
+          return (Is = null), (Rs = 0), Bs;
         }
         function Ol() {
           for (; null !== zs; ) Tl(zs);
@@ -7019,7 +7019,7 @@
             if (null !== (t = t.sibling)) return void (zs = t);
             zs = t = e;
           } while (null !== t);
-          0 === Fs && (Fs = 5);
+          0 === Bs && (Bs = 5);
         }
         function Ml(e) {
           var t = Gi();
@@ -7135,18 +7135,18 @@
             do {
               try {
                 for (s = e; null !== qs; ) {
-                  var A = qs.flags;
-                  if ((16 & A && ye(qs.stateNode, ""), 128 & A)) {
-                    var b = qs.alternate;
-                    if (null !== b) {
-                      var x = b.ref;
+                  var b = qs.flags;
+                  if ((16 & b && ye(qs.stateNode, ""), 128 & b)) {
+                    var A = qs.alternate;
+                    if (null !== A) {
+                      var x = A.ref;
                       null !== x &&
                         ("function" === typeof x
                           ? x(null)
                           : (x.current = null));
                     }
                   }
-                  switch (1038 & A) {
+                  switch (1038 & b) {
                     case 2:
                       ws(qs), (qs.flags &= -3);
                       break;
@@ -7165,7 +7165,7 @@
                     case 8:
                       js(s, (l = qs));
                       var w = l.alternate;
-                      bs(l), null !== w && bs(w);
+                      As(l), null !== w && As(w);
                   }
                   qs = qs.nextEffect;
                 }
@@ -7176,31 +7176,31 @@
             } while (null !== qs);
             if (
               ((x = Hr),
-              (b = gr()),
-              (A = x.focusedElem),
+              (A = gr()),
+              (b = x.focusedElem),
               (s = x.selectionRange),
-              b !== A &&
-                A &&
-                A.ownerDocument &&
-                mr(A.ownerDocument.documentElement, A))
+              A !== b &&
+                b &&
+                b.ownerDocument &&
+                mr(b.ownerDocument.documentElement, b))
             ) {
               null !== s &&
-                vr(A) &&
-                ((b = s.start),
-                void 0 === (x = s.end) && (x = b),
-                "selectionStart" in A
-                  ? ((A.selectionStart = b),
-                    (A.selectionEnd = Math.min(x, A.value.length)))
+                vr(b) &&
+                ((A = s.start),
+                void 0 === (x = s.end) && (x = A),
+                "selectionStart" in b
+                  ? ((b.selectionStart = A),
+                    (b.selectionEnd = Math.min(x, b.value.length)))
                   : (x =
-                      ((b = A.ownerDocument || document) && b.defaultView) ||
+                      ((A = b.ownerDocument || document) && A.defaultView) ||
                       window).getSelection &&
                     ((x = x.getSelection()),
-                    (l = A.textContent.length),
+                    (l = b.textContent.length),
                     (w = Math.min(s.start, l)),
                     (s = void 0 === s.end ? w : Math.min(s.end, l)),
                     !x.extend && w > s && ((l = s), (s = w), (w = l)),
-                    (l = hr(A, w)),
-                    (a = hr(A, s)),
+                    (l = hr(b, w)),
+                    (a = hr(b, s)),
                     l &&
                       a &&
                       (1 !== x.rangeCount ||
@@ -7208,36 +7208,36 @@
                         x.anchorOffset !== l.offset ||
                         x.focusNode !== a.node ||
                         x.focusOffset !== a.offset) &&
-                      ((b = b.createRange()).setStart(l.node, l.offset),
+                      ((A = A.createRange()).setStart(l.node, l.offset),
                       x.removeAllRanges(),
                       w > s
-                        ? (x.addRange(b), x.extend(a.node, a.offset))
-                        : (b.setEnd(a.node, a.offset), x.addRange(b))))),
-                (b = []);
-              for (x = A; (x = x.parentNode); )
+                        ? (x.addRange(A), x.extend(a.node, a.offset))
+                        : (A.setEnd(a.node, a.offset), x.addRange(A))))),
+                (A = []);
+              for (x = b; (x = x.parentNode); )
                 1 === x.nodeType &&
-                  b.push({ element: x, left: x.scrollLeft, top: x.scrollTop });
+                  A.push({ element: x, left: x.scrollLeft, top: x.scrollTop });
               for (
-                "function" === typeof A.focus && A.focus(), A = 0;
-                A < b.length;
-                A++
+                "function" === typeof b.focus && b.focus(), b = 0;
+                b < A.length;
+                b++
               )
-                ((x = b[A]).element.scrollLeft = x.left),
+                ((x = A[b]).element.scrollLeft = x.left),
                   (x.element.scrollTop = x.top);
             }
             (qt = !!Ur), (Hr = Ur = null), (e.current = n), (qs = r);
             do {
               try {
-                for (A = e; null !== qs; ) {
+                for (b = e; null !== qs; ) {
                   var S = qs.flags;
-                  if ((36 & S && vs(A, qs.alternate, qs), 128 & S)) {
-                    b = void 0;
+                  if ((36 & S && vs(b, qs.alternate, qs), 128 & S)) {
+                    A = void 0;
                     var k = qs.ref;
                     if (null !== k) {
                       var j = qs.stateNode;
                       qs.tag,
-                        (b = j),
-                        "function" === typeof k ? k(b) : (k.current = b);
+                        (A = j),
+                        "function" === typeof k ? k(A) : (k.current = A);
                     }
                   }
                   qs = qs.nextEffect;
@@ -7247,7 +7247,7 @@
                 Wl(qs, E), (qs = qs.nextEffect);
               }
             } while (null !== qs);
-            (qs = null), Fi(), (Ms = i);
+            (qs = null), Bi(), (Ms = i);
           } else e.current = n;
           if ($s) ($s = !1), (el = e), (tl = t);
           else
@@ -7296,7 +7296,7 @@
         function Rl() {
           if (90 !== tl) {
             var e = 97 < tl ? 97 : tl;
-            return (tl = 90), Qi(e, Fl);
+            return (tl = 90), Qi(e, Bl);
           }
           return !1;
         }
@@ -7316,7 +7316,7 @@
                 return Rl(), null;
               }));
         }
-        function Fl() {
+        function Bl() {
           if (null === el) return !1;
           var e = el;
           if (((el = null), 0 !== (48 & Ms))) throw Error(o(331));
@@ -7353,17 +7353,17 @@
               (l = e);
           return (Ms = t), _i(), !0;
         }
-        function Bl(e, t, n) {
+        function Fl(e, t, n) {
           da(e, (t = fs(0, (t = cs(n, t)), 1))),
             (t = fl()),
             null !== (e = ml(e, 1)) && (Vt(e, 1, t), gl(e, t));
         }
         function Wl(e, t) {
-          if (3 === e.tag) Bl(e, e, t);
+          if (3 === e.tag) Fl(e, e, t);
           else
             for (var n = e.return; null !== n; ) {
               if (3 === n.tag) {
-                Bl(n, e, t);
+                Fl(n, e, t);
                 break;
               }
               if (1 === n.tag) {
@@ -7396,8 +7396,8 @@
             (e.pingedLanes |= e.suspendedLanes & n),
             Is === e &&
               (Rs & n) === n &&
-              (4 === Fs ||
-              (3 === Fs && (62914560 & Rs) === Rs && 500 > Vi() - Ys)
+              (4 === Bs ||
+              (3 === Bs && (62914560 & Rs) === Rs && 500 > Vi() - Ys)
                 ? kl(e, 0)
                 : (Vs |= n)),
             gl(e, t);
@@ -7512,9 +7512,9 @@
                 );
               case N:
                 return ql(n, i, a, t);
-              case F:
+              case B:
                 return (
-                  ((e = Gl(24, n, t, i)).elementType = F), (e.lanes = a), e
+                  ((e = Gl(24, n, t, i)).elementType = B), (e.lanes = a), e
                 );
               default:
                 if ("object" === typeof e && null !== e)
@@ -7638,7 +7638,7 @@
             if (1 === n.tag) {
               var c = n.type;
               if (vi(c)) {
-                n = bi(n, c, l);
+                n = Ai(n, c, l);
                 break e;
               }
             }
@@ -7850,7 +7850,7 @@
                   (i._reactInternals = t),
                   xa(t, r, e, n),
                   (t = Qo(null, t, r, !0, a, n));
-              } else (t.tag = 0), Fo(null, t, i, n), (t = t.child);
+              } else (t.tag = 0), Bo(null, t, i, n), (t = t.child);
               return t;
             case 16:
               i = t.elementType;
@@ -7882,7 +7882,7 @@
                     t = Yo(null, t, i, e, n);
                     break e;
                   case 11:
-                    t = Bo(null, t, i, e, n);
+                    t = Fo(null, t, i, e, n);
                     break e;
                   case 14:
                     t = Wo(null, t, i, Xi(i.type, e), r, n);
@@ -7918,7 +7918,7 @@
                 if (
                   ((a = (i = t.stateNode).hydrate) &&
                     ((Wa = _r(t.stateNode.containerInfo.firstChild)),
-                    (Ba = t),
+                    (Fa = t),
                     (a = Ua = !0)),
                   a)
                 ) {
@@ -7928,7 +7928,7 @@
                         _a.push(a);
                   for (n = Ca(t, null, r, n), t.child = n; n; )
                     (n.flags = (-3 & n.flags) | 1024), (n = n.sibling);
-                } else Fo(e, t, r, n), Za();
+                } else Bo(e, t, r, n), Za();
                 t = t.child;
               }
               return t;
@@ -7944,7 +7944,7 @@
                   ? (s = null)
                   : null !== a && Gr(r, a) && (t.flags |= 16),
                 Vo(e, t),
-                Fo(e, t, s, n),
+                Bo(e, t, s, n),
                 t.child
               );
             case 6:
@@ -7955,20 +7955,20 @@
               return (
                 Ia(t, t.stateNode.containerInfo),
                 (r = t.pendingProps),
-                null === e ? (t.child = Ea(t, null, r, n)) : Fo(e, t, r, n),
+                null === e ? (t.child = Ea(t, null, r, n)) : Bo(e, t, r, n),
                 t.child
               );
             case 11:
               return (
                 (r = t.type),
                 (i = t.pendingProps),
-                Bo(e, t, r, (i = t.elementType === r ? i : Xi(r, i)), n)
+                Fo(e, t, r, (i = t.elementType === r ? i : Xi(r, i)), n)
               );
             case 7:
-              return Fo(e, t, t.pendingProps, n), t.child;
+              return Bo(e, t, t.pendingProps, n), t.child;
             case 8:
             case 12:
-              return Fo(e, t, t.pendingProps.children, n), t.child;
+              return Bo(e, t, t.pendingProps.children, n), t.child;
             case 10:
               e: {
                 (r = t.type._context),
@@ -8031,7 +8031,7 @@
                         }
                       l = s;
                     }
-                Fo(e, t, i.children, n), (t = t.child);
+                Bo(e, t, i.children, n), (t = t.child);
               }
               return t;
             case 9:
@@ -8041,7 +8041,7 @@
                 aa(t, n),
                 (r = r((i = oa(i, a.unstable_observedBits)))),
                 (t.flags |= 1),
-                Fo(e, t, r, n),
+                Bo(e, t, r, n),
                 t.child
               );
             case 14:
@@ -8061,7 +8061,7 @@
                 (t.tag = 1),
                 vi(r) ? ((e = !0), xi(t)) : (e = !1),
                 aa(t, n),
-                Aa(t, r, i),
+                ba(t, r, i),
                 xa(t, r, i, n),
                 Qo(null, t, r, !0, e, n)
               );
@@ -8128,7 +8128,7 @@
                 null != (t = n.value) && oe(e, !!n.multiple, t, !1);
             }
           }),
-          (Ie = bl),
+          (Ie = Al),
           (ze = function (e, t, n, r, i) {
             var a = Ms;
             Ms |= 4;
@@ -8245,7 +8245,7 @@
               !0)
             );
           }),
-          (t.unstable_batchedUpdates = bl),
+          (t.unstable_batchedUpdates = Al),
           (t.unstable_createPortal = function (e, t) {
             return sc(
               e,
@@ -8296,8 +8296,8 @@
           g = n ? Symbol.for("react.lazy") : 60116,
           v = n ? Symbol.for("react.block") : 60121,
           y = n ? Symbol.for("react.fundamental") : 60117,
-          A = n ? Symbol.for("react.responder") : 60118,
-          b = n ? Symbol.for("react.scope") : 60119;
+          b = n ? Symbol.for("react.responder") : 60118,
+          A = n ? Symbol.for("react.scope") : 60119;
         function x(e) {
           if ("object" === typeof e && null !== e) {
             var t = e.$$typeof;
@@ -8399,8 +8399,8 @@
                   e.$$typeof === c ||
                   e.$$typeof === f ||
                   e.$$typeof === y ||
-                  e.$$typeof === A ||
                   e.$$typeof === b ||
+                  e.$$typeof === A ||
                   e.$$typeof === v))
             );
           }),
@@ -9652,12 +9652,12 @@
                         y = i.getBoundingClientRect().top;
                       if (!s || e.props.isDynamic) {
                         if (!(s = n.get(o))) return;
-                        var A = s.getBoundingClientRect();
-                        v = (g = A.top - y + r) + A.height;
+                        var b = s.getBoundingClientRect();
+                        v = (g = b.top - y + r) + b.height;
                       }
-                      var b = r - e.props.offset;
-                      (l = b >= Math.floor(g) && b < Math.floor(v)),
-                        (u = b < Math.floor(g) || b >= Math.floor(v));
+                      var A = r - e.props.offset;
+                      (l = A >= Math.floor(g) && A < Math.floor(v)),
+                        (u = A < Math.floor(g) || A >= Math.floor(v));
                     }
                     var x = n.getActiveLink();
                     if (u) {
@@ -10129,9 +10129,9 @@
           })();
           return function () {
             var n,
-              r = A(e);
+              r = b(e);
             if (t) {
-              var i = A(this).constructor;
+              var i = b(this).constructor;
               n = Reflect.construct(r, arguments, i);
             } else n = r.apply(this, arguments);
             return y(this, n);
@@ -10151,17 +10151,17 @@
             return e;
           })(e);
         }
-        function A(e) {
+        function b(e) {
           return (
-            (A = Object.setPrototypeOf
+            (b = Object.setPrototypeOf
               ? Object.getPrototypeOf
               : function (e) {
                   return e.__proto__ || Object.getPrototypeOf(e);
                 }),
-            A(e)
+            b(e)
           );
         }
-        var b = (function (e) {
+        var A = (function (e) {
           m(n, e);
           var t = v(n);
           function n() {
@@ -10212,7 +10212,7 @@
             n
           );
         })(i.default.PureComponent);
-        t.PrevArrow = b;
+        t.PrevArrow = A;
         var x = (function (e) {
           m(n, e);
           var t = v(n);
@@ -10516,12 +10516,12 @@
                     y < m;
                     y++
                   ) {
-                    var A = (y + 1) * d - 1,
-                      b = u ? A : (0, o.clamp)(A, 0, p - 1),
-                      x = b - (d - 1),
+                    var b = (y + 1) * d - 1,
+                      A = u ? b : (0, o.clamp)(b, 0, p - 1),
+                      x = A - (d - 1),
                       w = u ? x : (0, o.clamp)(x, 0, p - 1),
                       S = (0, a.default)({
-                        "slick-active": u ? h >= w && h <= b : h === w,
+                        "slick-active": u ? h >= w && h <= A : h === w,
                       }),
                       k = {
                         message: "dots",
@@ -10727,17 +10727,17 @@
               Object.defineProperty(e, r.key, r);
           }
         }
-        function A(e, t) {
+        function b(e, t) {
           return (
-            (A =
+            (b =
               Object.setPrototypeOf ||
               function (e, t) {
                 return (e.__proto__ = t), e;
               }),
-            A(e, t)
+            b(e, t)
           );
         }
-        function b(e) {
+        function A(e) {
           var t = (function () {
             if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
             if (Reflect.construct.sham) return !1;
@@ -10811,12 +10811,12 @@
               constructor: { value: e, writable: !0, configurable: !0 },
             })),
               Object.defineProperty(e, "prototype", { writable: !1 }),
-              t && A(e, t);
+              t && b(e, t);
           })(x, e);
           var t,
             n,
             f,
-            g = b(x);
+            g = A(x);
           function x(e) {
             var t;
             !(function (e, t) {
@@ -11009,14 +11009,14 @@
                   m = (0, s.getPreClones)(h) + (0, s.getPostClones)(h) + p,
                   g = (100 / t.props.slidesToShow) * m,
                   y = 100 / m,
-                  A =
+                  b =
                     (-y * ((0, s.getPreClones)(h) + t.state.currentSlide) * g) /
                     100;
                 return (
-                  t.props.centerMode && (A += (100 - (y * g) / 100) / 2),
+                  t.props.centerMode && (b += (100 - (y * g) / 100) / 2),
                   {
                     slideWidth: y + "%",
-                    trackStyle: { width: g + "%", left: A + "%" },
+                    trackStyle: { width: g + "%", left: b + "%" },
                   }
                 );
               }),
@@ -11415,15 +11415,15 @@
                   t.props.arrows &&
                     ((n = r.default.createElement(u.PrevArrow, y)),
                     (i = r.default.createElement(u.NextArrow, y)));
-                var A = null;
-                t.props.vertical && (A = { height: t.state.listHeight });
                 var b = null;
+                t.props.vertical && (b = { height: t.state.listHeight });
+                var A = null;
                 !1 === t.props.vertical
                   ? !0 === t.props.centerMode &&
-                    (b = { padding: "0px " + t.props.centerPadding })
+                    (A = { padding: "0px " + t.props.centerPadding })
                   : !0 === t.props.centerMode &&
-                    (b = { padding: t.props.centerPadding + " 0px" });
-                var x = v(v({}, A), b),
+                    (A = { padding: t.props.centerPadding + " 0px" });
+                var x = v(v({}, b), A),
                   w = t.props.touchMove,
                   S = {
                     className: "slick-list",
@@ -11579,7 +11579,7 @@
             var n = null != arguments[t] ? arguments[t] : {};
             t % 2
               ? d(Object(n), !0).forEach(function (t) {
-                  A(e, t, n[t]);
+                  b(e, t, n[t]);
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -11663,7 +11663,7 @@
             y(e)
           );
         }
-        function A(e, t, n) {
+        function b(e, t, n) {
           return (
             t in e
               ? Object.defineProperty(e, t, {
@@ -11676,7 +11676,7 @@
             e
           );
         }
-        var b = (0, l.canUseDOM)() && n(8153),
+        var A = (0, l.canUseDOM)() && n(8153),
           x = (function (e) {
             !(function (e, t) {
               if ("function" !== typeof t && null !== t)
@@ -11700,30 +11700,30 @@
                   if (!(e instanceof t))
                     throw new TypeError("Cannot call a class as a function");
                 })(this, d),
-                A(
+                b(
                   v((t = c.call(this, e))),
                   "innerSliderRefHandler",
                   function (e) {
                     return (t.innerSlider = e);
                   }
                 ),
-                A(v(t), "slickPrev", function () {
+                b(v(t), "slickPrev", function () {
                   return t.innerSlider.slickPrev();
                 }),
-                A(v(t), "slickNext", function () {
+                b(v(t), "slickNext", function () {
                   return t.innerSlider.slickNext();
                 }),
-                A(v(t), "slickGoTo", function (e) {
+                b(v(t), "slickGoTo", function (e) {
                   var n =
                     arguments.length > 1 &&
                     void 0 !== arguments[1] &&
                     arguments[1];
                   return t.innerSlider.slickGoTo(e, n);
                 }),
-                A(v(t), "slickPause", function () {
+                b(v(t), "slickPause", function () {
                   return t.innerSlider.pause("paused");
                 }),
-                A(v(t), "slickPlay", function () {
+                b(v(t), "slickPlay", function () {
                   return t.innerSlider.autoPlay("play");
                 }),
                 (t.state = { breakpoint: null }),
@@ -11737,7 +11737,7 @@
                 {
                   key: "media",
                   value: function (e, t) {
-                    b.register(e, t),
+                    A.register(e, t),
                       this._responsiveMediaHandlers.push({
                         query: e,
                         handler: t,
@@ -11781,7 +11781,7 @@
                   key: "componentWillUnmount",
                   value: function () {
                     this._responsiveMediaHandlers.forEach(function (e) {
-                      b.unregister(e.query, e.handler);
+                      A.unregister(e.query, e.handler);
                     });
                   },
                 },
@@ -12051,7 +12051,7 @@
             e
           );
         }
-        var A = function (e) {
+        var b = function (e) {
             var t, n, r, i, a;
             return (
               (r =
@@ -12080,7 +12080,7 @@
               }
             );
           },
-          b = function (e, t) {
+          A = function (e, t) {
             return e.key || t;
           },
           x = function (e) {
@@ -12130,11 +12130,11 @@
                     );
                   })(v(v({}, e), {}, { index: f })),
                   g = p.props.className || "",
-                  y = A(v(v({}, e), {}, { index: f }));
+                  y = b(v(v({}, e), {}, { index: f }));
                 if (
                   (n.push(
                     i.default.cloneElement(p, {
-                      key: "original" + b(p, f),
+                      key: "original" + A(p, f),
                       "data-index": f,
                       className: (0, a.default)(y, g),
                       tabIndex: "-1",
@@ -12152,10 +12152,10 @@
                   x <= (0, o.getPreClones)(e) &&
                     l !== e.slidesToShow &&
                     ((t = -x) >= c && (p = d),
-                    (y = A(v(v({}, e), {}, { index: t }))),
+                    (y = b(v(v({}, e), {}, { index: t }))),
                     r.push(
                       i.default.cloneElement(p, {
-                        key: "precloned" + b(p, t),
+                        key: "precloned" + A(p, t),
                         "data-index": t,
                         tabIndex: "-1",
                         className: (0, a.default)(y, g),
@@ -12169,10 +12169,10 @@
                     )),
                     l !== e.slidesToShow &&
                       ((t = l + f) < u && (p = d),
-                      (y = A(v(v({}, e), {}, { index: t }))),
+                      (y = b(v(v({}, e), {}, { index: t }))),
                       s.push(
                         i.default.cloneElement(p, {
-                          key: "postcloned" + b(p, t),
+                          key: "postcloned" + A(p, t),
                           "data-index": t,
                           tabIndex: "-1",
                           className: (0, a.default)(y, g),
@@ -12488,8 +12488,8 @@
             g = e.lazyLoadedList;
           if (t && n) return {};
           var v,
-            A,
             b,
+            A,
             x = a,
             w = {},
             E = {},
@@ -12516,28 +12516,28 @@
                 : x >= s &&
                   ((v = x - s), i ? s % p !== 0 && (v = 0) : (v = s - h)),
               !i && x + h >= s && (v = s - h),
-              (A = j(o(o({}, e), {}, { slideIndex: x }))),
-              (b = j(o(o({}, e), {}, { slideIndex: v }))),
-              i || (A === b && (x = v), (A = b)),
+              (b = j(o(o({}, e), {}, { slideIndex: x }))),
+              (A = j(o(o({}, e), {}, { slideIndex: v }))),
+              i || (b === A && (x = v), (b = A)),
               c && (g = g.concat(u(o(o({}, e), {}, { currentSlide: x })))),
               m
                 ? ((w = {
                     animating: !0,
                     currentSlide: v,
-                    trackStyle: k(o(o({}, e), {}, { left: A })),
+                    trackStyle: k(o(o({}, e), {}, { left: b })),
                     lazyLoadedList: g,
                     targetSlide: C,
                   }),
                   (E = {
                     animating: !1,
                     currentSlide: v,
-                    trackStyle: S(o(o({}, e), {}, { left: b })),
+                    trackStyle: S(o(o({}, e), {}, { left: A })),
                     swipeLeft: null,
                     targetSlide: C,
                   }))
                 : (w = {
                     currentSlide: v,
-                    trackStyle: S(o(o({}, e), {}, { left: b })),
+                    trackStyle: S(o(o({}, e), {}, { left: A })),
                     lazyLoadedList: g,
                     targetSlide: C,
                   });
@@ -12617,8 +12617,8 @@
             h = t.swiped,
             m = t.swiping,
             g = t.slideCount,
-            A = t.slidesToScroll,
-            b = t.infinite,
+            b = t.slidesToScroll,
+            A = t.infinite,
             x = t.touchObject,
             w = t.swipeEvent,
             k = t.listHeight,
@@ -12639,11 +12639,11 @@
             s && (x.swipeLength = T);
             var L = (l ? -1 : 1) * (x.curX > x.startX ? 1 : -1);
             s && (L = x.curY > x.startY ? 1 : -1);
-            var M = Math.ceil(g / A),
+            var M = Math.ceil(g / b),
               I = v(t.touchObject, s),
               z = x.swipeLength;
             return (
-              b ||
+              A ||
                 (((0 === u && ("right" === I || "down" === I)) ||
                   (u + 1 >= M && ("left" === I || "up" === I)) ||
                   (!y(t) && ("left" === I || "up" === I))) &&
@@ -12683,7 +12683,7 @@
             g = t.infinite;
           if (!n) return r && c(e), {};
           var y = l ? u / s : a / s,
-            A = v(i, l),
+            b = v(i, l),
             w = {
               dragging: !1,
               edgeDragged: !1,
@@ -12697,16 +12697,16 @@
           if (!i.swipeLength) return w;
           if (i.swipeLength > y) {
             var S, E;
-            c(e), p && p(A);
+            c(e), p && p(b);
             var C = g ? m : h;
-            switch (A) {
+            switch (b) {
               case "left":
               case "up":
-                (E = C + x(t)), (S = d ? b(t, E) : E), (w.currentDirection = 0);
+                (E = C + x(t)), (S = d ? A(t, E) : E), (w.currentDirection = 0);
                 break;
               case "right":
               case "down":
-                (E = C - x(t)), (S = d ? b(t, E) : E), (w.currentDirection = 1);
+                (E = C - x(t)), (S = d ? A(t, E) : E), (w.currentDirection = 1);
                 break;
               default:
                 S = C;
@@ -12718,7 +12718,7 @@
           }
           return w;
         };
-        var A = function (e) {
+        var b = function (e) {
           for (
             var t = e.infinite ? 2 * e.slideCount : e.slideCount,
               n = e.infinite ? -1 * e.slidesToShow : 0,
@@ -12732,9 +12732,9 @@
               (r += Math.min(e.slidesToScroll, e.slidesToShow));
           return i;
         };
-        t.getNavigableIndexes = A;
-        var b = function (e, t) {
-          var n = A(e),
+        t.getNavigableIndexes = b;
+        var A = function (e, t) {
+          var n = b(e),
             r = 0;
           if (t > n[n.length - 1]) t = n[n.length - 1];
           else
@@ -12747,7 +12747,7 @@
             }
           return t;
         };
-        t.checkNavigable = b;
+        t.checkNavigable = A;
         var x = function (e) {
           var t = e.centerMode
             ? e.slideWidth * Math.floor(e.slidesToShow / 2)
@@ -12901,8 +12901,8 @@
               !0 === o)
             ) {
               (v = a ? r + E(e) : r), (n = y && y.children[v]), (t = 0);
-              for (var A = 0; A < v; A++)
-                t -= y && y.children[A] && y.children[A].offsetWidth;
+              for (var b = 0; b < v; b++)
+                t -= y && y.children[b] && y.children[b].offsetWidth;
               (t -= parseInt(e.centerPadding)),
                 (t += n && (d - n.offsetWidth) / 2);
             }
@@ -13083,9 +13083,9 @@
             this.updater.enqueueForceUpdate(this, e, "forceUpdate");
           }),
           (v.prototype = g.prototype);
-        var A = (y.prototype = new v());
-        (A.constructor = y), r(A, g.prototype), (A.isPureReactComponent = !0);
-        var b = { current: null },
+        var b = (y.prototype = new v());
+        (b.constructor = y), r(b, g.prototype), (b.isPureReactComponent = !0);
+        var A = { current: null },
           x = Object.prototype.hasOwnProperty,
           w = { key: !0, ref: !0, __self: !0, __source: !0 };
         function S(e, t, n) {
@@ -13112,7 +13112,7 @@
             key: o,
             ref: s,
             props: a,
-            _owner: b.current,
+            _owner: A.current,
           };
         }
         function k(e) {
@@ -13252,7 +13252,7 @@
         var M = {
           ReactCurrentDispatcher: T,
           ReactCurrentBatchConfig: { transition: 0 },
-          ReactCurrentOwner: b,
+          ReactCurrentOwner: A,
           IsSomeRendererActing: { current: !1 },
           assign: r,
         };
@@ -13299,7 +13299,7 @@
               l = e._owner;
             if (null != t) {
               if (
-                (void 0 !== t.ref && ((s = t.ref), (l = b.current)),
+                (void 0 !== t.ref && ((s = t.ref), (l = A.current)),
                 void 0 !== t.key && (o = "" + t.key),
                 e.type && e.type.defaultProps)
               )
@@ -13688,7 +13688,7 @@
         function y(e, t, n, r) {
           return { x: e, y: t, width: n, height: r };
         }
-        var A = (function () {
+        var b = (function () {
             function e(e) {
               (this.broadcastWidth = 0),
                 (this.broadcastHeight = 0),
@@ -13715,7 +13715,7 @@
               e
             );
           })(),
-          b = function (e, t) {
+          A = function (e, t) {
             var n = (function (e) {
               var t = e.x,
                 n = e.y,
@@ -13772,7 +13772,7 @@
                     );
                   var t = this.observations_;
                   t.has(e) ||
-                    (t.set(e, new A(e)),
+                    (t.set(e, new b(e)),
                     this.controller_.addObserver(this),
                     this.controller_.refresh());
                 }
@@ -13812,7 +13812,7 @@
                 if (this.hasActive()) {
                   var e = this.callbackCtx_,
                     t = this.activeObservations_.map(function (e) {
-                      return new b(e.target, e.broadcastRect());
+                      return new A(e.target, e.broadcastRect());
                     });
                   this.callback_.call(e, t, e), this.clearActive();
                 }
@@ -13909,9 +13909,9 @@
             g = null,
             v = -1,
             y = 5,
-            A = 0;
+            b = 0;
           (t.unstable_shouldYield = function () {
-            return t.unstable_now() >= A;
+            return t.unstable_now() >= b;
           }),
             (a = function () {}),
             (t.unstable_forceFrameRate = function (e) {
@@ -13921,12 +13921,12 @@
                   )
                 : (y = 0 < e ? Math.floor(1e3 / e) : 5);
             });
-          var b = new MessageChannel(),
-            x = b.port2;
-          (b.port1.onmessage = function () {
+          var A = new MessageChannel(),
+            x = A.port2;
+          (A.port1.onmessage = function () {
             if (null !== g) {
               var e = t.unstable_now();
-              A = e + y;
+              b = e + y;
               try {
                 g(!0, e) ? x.postMessage(null) : ((m = !1), (g = null));
               } catch (n) {
@@ -14350,6 +14350,31 @@
         "use strict";
         e.exports =
           n.p + "static/media/vivienda-social.2758f70a7aef3142dc2b.png";
+      },
+      578: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto-2.2396cc3018694553f873.jpg";
+      },
+      4096: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto-3.393ea1024b072caeeea8.jpg";
+      },
+      3639: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto-4.e5297213b24eb9e42481.jpg";
+      },
+      1311: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto-5.55f9447afa2d3e86184f.jpg";
+      },
+      1817: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto.f0a552e5cf4e38d96559.jpg";
       },
       9801: function (e, t, n) {
         "use strict";
@@ -14830,7 +14855,7 @@
               r = t[1];
             if (w.length) {
               if (null != n) {
-                var a = A - n;
+                var a = b - n;
                 a &&
                   ((m = {
                     action: e,
@@ -14846,12 +14871,12 @@
         }
         n.addEventListener(s, g),
           n.addEventListener("hashchange", function () {
-            f(h()[1]) !== f(b) && g();
+            f(h()[1]) !== f(A) && g();
           });
         var v = i.Pop,
           y = h(),
-          A = y[0],
-          b = y[1],
+          b = y[0],
+          A = y[1],
           x = u(),
           w = u();
         function S(e) {
@@ -14875,7 +14900,7 @@
             void 0 === t && (t = null),
             a(
               r(
-                { pathname: b.pathname, hash: "", search: "" },
+                { pathname: A.pathname, hash: "", search: "" },
                 "string" === typeof e ? p(e) : e,
                 { state: t, key: d() }
               )
@@ -14893,18 +14918,18 @@
         function C(e) {
           v = e;
           var t = h();
-          (A = t[0]), (b = t[1]), x.call({ action: v, location: b });
+          (b = t[0]), (A = t[1]), x.call({ action: v, location: A });
         }
         function O(e) {
           l.go(e);
         }
-        null == A && ((A = 0), l.replaceState(r({}, l.state, { idx: A }), ""));
+        null == b && ((b = 0), l.replaceState(r({}, l.state, { idx: b }), ""));
         var P = {
           get action() {
             return v;
           },
           get location() {
-            return b;
+            return A;
           },
           createHref: S,
           push: function e(t, r) {
@@ -14915,7 +14940,7 @@
                 e(t, r);
               })
             ) {
-              var s = j(o, A + 1),
+              var s = j(o, b + 1),
                 c = s[0],
                 u = s[1];
               try {
@@ -14934,7 +14959,7 @@
                 e(t, n);
               })
             ) {
-              var o = j(a, A),
+              var o = j(a, b),
                 s = o[0],
                 c = o[1];
               l.replaceState(s, "", c), C(r);
@@ -15022,11 +15047,11 @@
       function y(e, t) {
         if (!e) throw new Error(t);
       }
-      function A(e, t, n) {
+      function b(e, t, n) {
         void 0 === n && (n = "/");
         var r = C(("string" === typeof t ? p(t) : t).pathname || "/", n);
         if (null == r) return null;
-        var i = b(e);
+        var i = A(e);
         !(function (e) {
           e.sort(function (e, t) {
             return e.score !== t.score
@@ -15052,7 +15077,7 @@
           a = k(i[o], r);
         return a;
       }
-      function b(e, t, n, r) {
+      function A(e, t, n, r) {
         return (
           void 0 === t && (t = []),
           void 0 === n && (n = []),
@@ -15071,7 +15096,7 @@
               s = n.concat(a);
             e.children &&
               e.children.length > 0 &&
-              (!0 === e.index && y(!1), b(e.children, t, s, o)),
+              (!0 === e.index && y(!1), A(e.children, t, s, o)),
               (null != e.path || e.index) &&
                 t.push({ path: o, score: S(o, e.index), routesMeta: s });
           }),
@@ -15324,10 +15349,10 @@
               }, null)
         );
       }
-      function F(e) {
+      function B(e) {
         y(!1);
       }
-      function B(e) {
+      function F(e) {
         var t = e.basename,
           n = void 0 === t ? "/" : t,
           r = e.children,
@@ -15347,16 +15372,16 @@
             [f, c, d]
           );
         "string" === typeof o && (o = p(o));
-        var A = o,
-          b = A.pathname,
-          x = void 0 === b ? "/" : b,
-          w = A.search,
+        var b = o,
+          A = b.pathname,
+          x = void 0 === A ? "/" : A,
+          w = b.search,
           S = void 0 === w ? "" : w,
-          k = A.hash,
+          k = b.hash,
           j = void 0 === k ? "" : k,
-          E = A.state,
+          E = b.state,
           O = void 0 === E ? null : E,
-          T = A.key,
+          T = b.key,
           L = void 0 === T ? "default" : T,
           M = (0, h.useMemo)(
             function () {
@@ -15398,7 +15423,7 @@
               (n = c);
           } else n = s;
           var u = n.pathname || "/",
-            d = A(e, { pathname: "/" === o ? u : u.slice(o.length) || "/" });
+            d = b(e, { pathname: "/" === o ? u : u.slice(o.length) || "/" });
           return N(
             d &&
               d.map(function (e) {
@@ -15419,7 +15444,7 @@
           h.Children.forEach(e, function (e) {
             if ((0, h.isValidElement)(e))
               if (e.type !== h.Fragment) {
-                e.type !== F && y(!1);
+                e.type !== B && y(!1);
                 var n = {
                   caseSensitive: e.props.caseSensitive,
                   element: e.props.element,
@@ -15528,7 +15553,7 @@
                 h,
                 m,
                 g,
-                b,
+                A,
                 w = 0,
                 S = 0,
                 k = 0,
@@ -15538,8 +15563,8 @@
                 z = (m = p = 0),
                 D = 0,
                 N = 0,
-                F = 0,
                 B = 0,
+                F = 0,
                 W = l.length,
                 U = W - 1,
                 H = "",
@@ -15578,7 +15603,7 @@
                 switch (h) {
                   case 123:
                     for (
-                      p = (H = H.trim()).charCodeAt(0), m = 1, B = ++D;
+                      p = (H = H.trim()).charCodeAt(0), m = 1, F = ++D;
                       D < W;
 
                     ) {
@@ -15628,7 +15653,7 @@
                       D++;
                     }
                     if (
-                      ((m = l.substring(B, D)),
+                      ((m = l.substring(F, D)),
                       0 === p &&
                         (p = (H = H.replace(u, "").trim()).charCodeAt(0)),
                       64 === p)
@@ -15646,14 +15671,14 @@
                           N = L;
                       }
                       if (
-                        ((B = (m = t(r, N, m, h, f + 1)).length),
+                        ((F = (m = t(r, N, m, h, f + 1)).length),
                         0 < I &&
-                          ((b = s(3, m, (N = n(L, H, F)), r, O, C, B, h, f, c)),
+                          ((A = s(3, m, (N = n(L, H, B)), r, O, C, F, h, f, c)),
                           (H = N.join("")),
-                          void 0 !== b &&
-                            0 === (B = (m = b.trim()).length) &&
+                          void 0 !== A &&
+                            0 === (F = (m = A.trim()).length) &&
                             ((h = 0), (m = ""))),
-                        0 < B)
+                        0 < F)
                       )
                         switch (h) {
                           case 115:
@@ -15674,9 +15699,9 @@
                             (m = H + m), 112 === c && ((V += m), (m = ""));
                         }
                       else m = "";
-                    } else m = t(r, n(r, H, F), m, c, f + 1);
+                    } else m = t(r, n(r, H, B), m, c, f + 1);
                     (G += m),
-                      (m = F = N = z = p = 0),
+                      (m = B = N = z = p = 0),
                       (H = ""),
                       (h = l.charCodeAt(++D));
                     break;
@@ -15684,17 +15709,17 @@
                   case 59:
                     if (
                       1 <
-                      (B = (H = (0 < N ? H.replace(d, "") : H).trim()).length)
+                      (F = (H = (0 < N ? H.replace(d, "") : H).trim()).length)
                     )
                       switch (
                         (0 === z &&
                           ((p = H.charCodeAt(0)),
                           45 === p || (96 < p && 123 > p)) &&
-                          (B = (H = H.replace(" ", ":")).length),
+                          (F = (H = H.replace(" ", ":")).length),
                         0 < I &&
                           void 0 !==
-                            (b = s(1, H, r, e, O, C, V.length, c, f, c)) &&
-                          0 === (B = (H = b.trim()).length) &&
+                            (A = s(1, H, r, e, O, C, V.length, c, f, c)) &&
+                          0 === (F = (H = A.trim()).length) &&
                           (H = "\0\0"),
                         (p = H.charCodeAt(0)),
                         (h = H.charCodeAt(1)),
@@ -15708,10 +15733,10 @@
                             break;
                           }
                         default:
-                          58 !== H.charCodeAt(B - 1) &&
+                          58 !== H.charCodeAt(F - 1) &&
                             (V += i(H, p, h, H.charCodeAt(2)));
                       }
-                    (F = N = z = p = 0), (H = ""), (h = l.charCodeAt(++D));
+                    (B = N = z = p = 0), (H = ""), (h = l.charCodeAt(++D));
                 }
               }
               switch (h) {
@@ -15759,7 +15784,7 @@
                       g = "\\v";
                       break;
                     case 38:
-                      0 === j + S + w && ((N = F = 1), (g = "\f" + g));
+                      0 === j + S + w && ((N = B = 1), (g = "\f" + g));
                       break;
                     case 108:
                       if (0 === j + S + w + P && 0 < z)
@@ -15810,15 +15835,15 @@
                                 S = 47;
                                 break;
                               case 220:
-                                (B = D), (S = 42);
+                                (F = D), (S = 42);
                             }
                             break;
                           case 42:
                             47 === h &&
                               42 === E &&
-                              B + 2 !== D &&
-                              (33 === l.charCodeAt(B + 2) &&
-                                (V += l.substring(B, D + 1)),
+                              F + 2 !== D &&
+                              (33 === l.charCodeAt(F + 2) &&
+                                (V += l.substring(F, D + 1)),
                               (g = ""),
                               (S = 0));
                         }
@@ -15827,18 +15852,18 @@
               }
               (M = E), (E = h), D++;
             }
-            if (0 < (B = V.length)) {
+            if (0 < (F = V.length)) {
               if (
                 ((N = r),
                 0 < I &&
-                  void 0 !== (b = s(2, V, N, e, O, C, B, c, f, c)) &&
-                  0 === (V = b).length)
+                  void 0 !== (A = s(2, V, N, e, O, C, F, c, f, c)) &&
+                  0 === (V = A).length)
               )
                 return Y + V + G;
               if (((V = N.join(",") + "{" + V + "}"), 0 !== T * P)) {
                 switch ((2 !== T || a(V, 2) || (P = 0), P)) {
                   case 111:
-                    V = V.replace(A, ":-moz-$1") + V;
+                    V = V.replace(b, ":-moz-$1") + V;
                     break;
                   case 112:
                     V =
@@ -15979,13 +16004,13 @@
                   l.charCodeAt(0) + l.charCodeAt(t))
                 ) {
                   case 226:
-                    l = o.replace(b, "tb");
+                    l = o.replace(A, "tb");
                     break;
                   case 232:
-                    l = o.replace(b, "tb-rl");
+                    l = o.replace(A, "tb-rl");
                     break;
                   case 220:
-                    l = o.replace(b, "lr");
+                    l = o.replace(A, "lr");
                     break;
                   default:
                     return o;
@@ -16152,8 +16177,8 @@
             g = /([\t\r\n ])*\f?&/g,
             v = /@(k\w+)\s*(\S*)\s*/,
             y = /::(place)/g,
-            A = /:(read-only)/g,
-            b = /[svh]\w+-[tblr]{2}/,
+            b = /:(read-only)/g,
+            A = /[svh]\w+-[tblr]{2}/,
             x = /\(\s*(.*)\s*\)/g,
             w = /([\s\S]*?);/g,
             S = /-self|flex-/g,
@@ -16456,19 +16481,19 @@
           );
         })(),
         ye = new Map(),
-        Ae = new Map(),
-        be = 1,
+        be = new Map(),
+        Ae = 1,
         xe = function (e) {
           if (ye.has(e)) return ye.get(e);
-          for (; Ae.has(be); ) be++;
-          var t = be++;
-          return ye.set(e, t), Ae.set(t, e), t;
+          for (; be.has(Ae); ) Ae++;
+          var t = Ae++;
+          return ye.set(e, t), be.set(t, e), t;
         },
         we = function (e) {
-          return Ae.get(e);
+          return be.get(e);
         },
         Se = function (e, t) {
-          t >= be && (be = t + 1), ye.set(e, t), Ae.set(t, e);
+          t >= Ae && (Ae = t + 1), ye.set(e, t), be.set(t, e);
         },
         ke = "style[" + fe + '][data-styled-version="5.3.5"]',
         je = new RegExp(
@@ -16719,18 +16744,18 @@
         Ne = function (e) {
           return String.fromCharCode(e + (e > 25 ? 39 : 97));
         };
-      function Fe(e) {
+      function Be(e) {
         var t,
           n = "";
         for (t = Math.abs(e); t > 52; t = (t / 52) | 0) n = Ne(t % 52) + n;
         return (Ne(t % 52) + n).replace(De, "$1-$2");
       }
-      var Be = function (e, t) {
+      var Fe = function (e, t) {
           for (var n = t.length; n; ) e = (33 * e) ^ t.charCodeAt(--n);
           return e;
         },
         We = function (e) {
-          return Be(5381, e);
+          return Fe(5381, e);
         };
       function Ue(e) {
         for (var t = 0; t < e.length; t += 1) {
@@ -16746,7 +16771,7 @@
               (this.staticRulesId = ""),
               (this.isStatic = (void 0 === n || n.isStatic) && Ue(e)),
               (this.componentId = t),
-              (this.baseHash = Be(He, t)),
+              (this.baseHash = Fe(He, t)),
               (this.baseStyle = n),
               Re.registerId(t);
           }
@@ -16763,7 +16788,7 @@
                   i.push(this.staticRulesId);
                 else {
                   var a = st(this.rules, e, t, n).join(""),
-                    o = Fe(Be(this.baseHash, a) >>> 0);
+                    o = Be(Fe(this.baseHash, a) >>> 0);
                   if (!t.hasNameForId(r, o)) {
                     var s = n(a, "." + o, void 0, r);
                     t.insertRules(r, o, s);
@@ -16773,7 +16798,7 @@
               else {
                 for (
                   var l = this.rules.length,
-                    c = Be(this.baseHash, n.hash),
+                    c = Fe(this.baseHash, n.hash),
                     u = "",
                     d = 0;
                   d < l;
@@ -16784,11 +16809,11 @@
                   else if (f) {
                     var p = st(f, e, t, n),
                       h = Array.isArray(p) ? p.join("") : p;
-                    (c = Be(c, h + d)), (u += h);
+                    (c = Fe(c, h + d)), (u += h);
                   }
                 }
                 if (u) {
-                  var m = Fe(c >>> 0);
+                  var m = Be(c >>> 0);
                   if (!t.hasNameForId(r, m)) {
                     var g = n(u, "." + m, void 0, r);
                     t.insertRules(r, m, g);
@@ -16883,7 +16908,7 @@
           (h.hash = c.length
             ? c
                 .reduce(function (e, t) {
-                  return t.name || ge(15), Be(e, t.name);
+                  return t.name || ge(15), Fe(e, t.name);
                 }, 5381)
                 .toString()
             : ""),
@@ -17057,7 +17082,7 @@
         return e.replace(dt, "-").replace(ft, "");
       }
       var ht = function (e) {
-        return Fe(We(e) >>> 0);
+        return Be(We(e) >>> 0);
       };
       function mt(e) {
         return "string" == typeof e && !0;
@@ -17073,9 +17098,9 @@
         };
       function yt(e, t, n) {
         var r = e[n];
-        gt(t) && gt(r) ? At(r, t) : (e[n] = t);
+        gt(t) && gt(r) ? bt(r, t) : (e[n] = t);
       }
-      function At(e) {
+      function bt(e) {
         for (
           var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1;
           r < t;
@@ -17088,8 +17113,8 @@
         }
         return e;
       }
-      var bt = h.createContext();
-      bt.Consumer;
+      var At = h.createContext();
+      At.Consumer;
       var xt = {};
       function wt(e, t, n) {
         var r = de(e),
@@ -17163,7 +17188,7 @@
                     }),
                     [r, i]
                   );
-                })(ut(t, (0, h.useContext)(bt), o) || le, t, i),
+                })(ut(t, (0, h.useContext)(At), o) || le, t, i),
                 f = d[0],
                 p = d[1],
                 m = (function (e, t, n, r) {
@@ -17176,24 +17201,24 @@
                 g = n,
                 v = p.$as || t.$as || p.as || t.as || u,
                 y = mt(v),
-                A = p !== t ? ie({}, t, {}, p) : t,
-                b = {};
-              for (var x in A)
+                b = p !== t ? ie({}, t, {}, p) : t,
+                A = {};
+              for (var x in b)
                 "$" !== x[0] &&
                   "as" !== x &&
                   ("forwardedAs" === x
-                    ? (b.as = A[x])
-                    : (l ? l(x, te, v) : !y || te(x)) && (b[x] = A[x]));
+                    ? (A.as = b[x])
+                    : (l ? l(x, te, v) : !y || te(x)) && (A[x] = b[x]));
               return (
                 t.style &&
                   p.style !== t.style &&
-                  (b.style = ie({}, t.style, {}, p.style)),
-                (b.className = Array.prototype
+                  (A.style = ie({}, t.style, {}, p.style)),
+                (A.className = Array.prototype
                   .concat(s, c, m !== c ? m : null, t.className, p.className)
                   .filter(Boolean)
                   .join(" ")),
-                (b.ref = g),
-                (0, h.createElement)(v, b)
+                (A.ref = g),
+                (0, h.createElement)(v, A)
               );
             })(m, e, t, v);
           };
@@ -17228,7 +17253,7 @@
               return this._foldedDefaultProps;
             },
             set: function (t) {
-              this._foldedDefaultProps = r ? At({}, e.defaultProps, t) : t;
+              this._foldedDefaultProps = r ? bt({}, e.defaultProps, t) : t;
             },
           }),
           (m.toString = function () {
@@ -17506,8 +17531,8 @@
         Rt,
         Dt,
         Nt,
-        Ft,
         Bt,
+        Ft,
         Wt,
         Ut,
         Ht,
@@ -17529,7 +17554,7 @@
             function s(e) {
               var t = Xe(),
                 n = Ke(),
-                r = (0, h.useContext)(bt),
+                r = (0, h.useContext)(At),
                 i = (0, h.useRef)(t.allocateGSInstance(a)).current;
               return (
                 t.server && l(i, e, t, r, n),
@@ -17614,54 +17639,54 @@
               var t = e.width;
               return t || "100%";
             }
+          ),
+          Qt.span(
+            Tt ||
+              (Tt = _([
+                "\n  color: ",
+                ";\n  font-size: ",
+                ";\n  font-weight: ",
+                ";\n  letter-spacing: ",
+                ";\n  padding: ",
+                ";\n  margin: ",
+                ";\n  margin-bottom: ",
+                ";\n  margin-top: ",
+                ";\n",
+              ])),
+            function (e) {
+              var t = e.color;
+              return t || "";
+            },
+            function (e) {
+              var t = e.size;
+              return t || "";
+            },
+            function (e) {
+              var t = e.weight;
+              return t || "";
+            },
+            function (e) {
+              var t = e.spacing;
+              return t || "";
+            },
+            function (e) {
+              var t = e.padding;
+              return t || "";
+            },
+            function (e) {
+              var t = e.margin;
+              return t || "";
+            },
+            function (e) {
+              var t = e.mb;
+              return t || "";
+            },
+            function (e) {
+              var t = e.mt;
+              return t || "";
+            }
           )),
-        Jt = Qt.span(
-          Tt ||
-            (Tt = _([
-              "\n  color: ",
-              ";\n  font-size: ",
-              ";\n  font-weight: ",
-              ";\n  letter-spacing: ",
-              ";\n  padding: ",
-              ";\n  margin: ",
-              ";\n  margin-bottom: ",
-              ";\n  margin-top: ",
-              ";\n",
-            ])),
-          function (e) {
-            var t = e.color;
-            return t || "";
-          },
-          function (e) {
-            var t = e.size;
-            return t || "";
-          },
-          function (e) {
-            var t = e.weight;
-            return t || "";
-          },
-          function (e) {
-            var t = e.spacing;
-            return t || "";
-          },
-          function (e) {
-            var t = e.padding;
-            return t || "";
-          },
-          function (e) {
-            var t = e.margin;
-            return t || "";
-          },
-          function (e) {
-            var t = e.mb;
-            return t || "";
-          },
-          function (e) {
-            var t = e.mt;
-            return t || "";
-          }
-        ),
-        Xt = Qt.section(
+        Jt = Qt.section(
           Lt ||
             (Lt = _([
               "\n  padding: ",
@@ -17721,7 +17746,7 @@
             return t || "70px 0";
           }
         ),
-        Kt = Qt.section(
+        Xt = Qt.section(
           Mt ||
             (Mt = _([
               "\n  padding: ",
@@ -17781,7 +17806,7 @@
             return t || "50px 0";
           }
         ),
-        $t = Qt.div(
+        Kt = Qt.div(
           It ||
             (It = _([
               "\n  display: flex;\n  justify-content: ",
@@ -17852,7 +17877,7 @@
             return t || "";
           }
         ),
-        en =
+        $t =
           (Qt.div(
             zt ||
               (zt = _([
@@ -17935,37 +17960,37 @@
               return e.reverse ? "row-reverse" : "row";
             }
           )),
-        tn = Qt.div(
+        en = Qt.div(
           Nt ||
             (Nt = _([
               "\n  margin-bottom: 15px;\n  padding-right: 15px;\n  padding-left: 15px;\n  flex: 1;\n  z-index: 10;\n  display: flex;\n  flex-direction: column;\n\n  @media (max-width: 768px) {\n    max-width: 100% !important;\n    flex-basis: 100%;\n    justify-content: center;\n    align-items: center;\n  }\n",
             ]))
         ),
-        nn = Qt.div(
-          Ft ||
-            (Ft = _([
+        tn = Qt.div(
+          Bt ||
+            (Bt = _([
               "\n  max-width: 540px;\n  padding-top: 0;\n\n  @media (max-width: 768px) {\n    padding-bottom: 65px;\n    > h1,\n    p {\n      text-align: center;\n    }\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  > img {\n    width: 300px;\n    margin-left: -3px;\n  }\n",
             ]))
         ),
-        rn = Qt.div(
-          Bt ||
-            (Bt = _([
+        nn = Qt.div(
+          Ft ||
+            (Ft = _([
               '\n  display: flex;\n  justify-content: "flex-end";\n  max-height: 700px;\n  justify-content: center;\n  position: relative;\n',
             ]))
         ),
-        an = Qt.div(
+        rn = Qt.div(
           Wt ||
             (Wt = _([
               "\n  font-size: 2rem;\n  line-height: 2.5rem;\n  font-weight: 550;\n  letter-spacing: 1.4px;\n  margin-bottom: 1.3rem;\n  color: grey;\n",
             ]))
         ),
-        on = Qt.img(
+        an = Qt.img(
           Ut ||
             (Ut = _([
               "\n  padding-right: 0;\n  border: 0;\n  max-width: 80%;\n  vertical-align: middle;\n  display: inline-block;\n  object-fit: cover;\n  max-height: 700px;\n  z-index: 1;\n  border-radius: 5%;\n",
             ]))
         ),
-        sn = Qt.h2(
+        on = Qt.h2(
           Ht ||
             (Ht = _([
               "\n  margin-bottom: 24px;\n  font-size: 2rem;\n  line-height: 1.1;\n  font-weight: 600;\n  color: ",
@@ -17975,7 +18000,7 @@
             return e.inverse ? "#071c2f" : "#FFC0BC";
           }
         ),
-        ln = Qt.p(
+        sn = Qt.p(
           Vt ||
             (Vt = _([
               "\n  max-width: 440px;\n  margin-bottom: 35px;\n  line-height: 24px;\n  font-size: 1.5rem;\n  color: ",
@@ -17985,10 +18010,10 @@
             return e.inverse ? "#6a6a6a" : "#FFC0BC";
           }
         ),
-        cn = Qt.a(
+        ln = Qt.a(
           Gt || (Gt = _(["\n  text-decoration: none;\n  color: grey;\n"]))
         ),
-        un = Qt.button(
+        cn = Qt.button(
           Yt ||
             (Yt = _([
               "\n  text-decoration: none;\n  height: 4rem;\n  padding: 1rem 32px;\n  font-weight: 700;\n  font-size: 3rem;\n  line-height: 18px;\n  letter-spacing: 1.54px;\n  text-transform: uppercase;\n  cursor: pointer;\n  background: none;\n  color: ",
@@ -18018,8 +18043,8 @@
             return e.inverse ? "white" : "black";
           }
         ),
-        dn = n(184),
-        fn = function (e) {
+        un = n(184),
+        dn = function (e) {
           var t = e.topLine,
             n = e.headline,
             r = e.description,
@@ -18028,25 +18053,25 @@
             o = e.reverse,
             s = e.inverse,
             l = e.id;
-          return (0, dn.jsx)(Kt, {
+          return (0, un.jsx)(Xt, {
             id: l,
             inverse: s,
-            children: (0, dn.jsx)(Zt, {
-              children: (0, dn.jsxs)(en, {
+            children: (0, un.jsx)(Zt, {
+              children: (0, un.jsxs)($t, {
                 reverse: o,
                 children: [
-                  (0, dn.jsx)(tn, {
-                    children: (0, dn.jsxs)(nn, {
+                  (0, un.jsx)(en, {
+                    children: (0, un.jsxs)(tn, {
                       children: [
-                        (0, dn.jsx)(an, { children: t.text }),
-                        (0, dn.jsx)(sn, { inverse: s, children: n }),
-                        (0, dn.jsx)(ln, { inverse: s, children: r }),
+                        (0, un.jsx)(rn, { children: t.text }),
+                        (0, un.jsx)(on, { inverse: s, children: n }),
+                        (0, un.jsx)(sn, { inverse: s, children: r }),
                       ],
                     }),
                   }),
-                  (0, dn.jsx)(tn, {
-                    children: (0, dn.jsx)(rn, {
-                      children: (0, dn.jsx)(on, { src: i, alt: a }),
+                  (0, un.jsx)(en, {
+                    children: (0, un.jsx)(nn, {
+                      children: (0, un.jsx)(an, { src: i, alt: a }),
                     }),
                   }),
                 ],
@@ -18054,9 +18079,9 @@
             }),
           });
         };
-      function pn() {
+      function fn() {
         return (
-          (pn =
+          (fn =
             Object.assign ||
             function (e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -18066,10 +18091,10 @@
               }
               return e;
             }),
-          pn.apply(this, arguments)
+          fn.apply(this, arguments)
         );
       }
-      function hn(e, t) {
+      function pn(e, t) {
         if (null == e) return {};
         var n,
           r,
@@ -18079,7 +18104,7 @@
           (n = a[r]), t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i;
       }
-      var mn = [
+      var hn = [
         "onClick",
         "reloadDocument",
         "replace",
@@ -18087,7 +18112,7 @@
         "target",
         "to",
       ];
-      function gn(e) {
+      function mn(e) {
         var n = e.basename,
           r = e.children,
           i = e.window,
@@ -18104,7 +18129,7 @@
             },
             [o]
           ),
-          (0, h.createElement)(B, {
+          (0, h.createElement)(F, {
             basename: n,
             children: r,
             location: c.location,
@@ -18113,7 +18138,7 @@
           })
         );
       }
-      var vn = (0, h.forwardRef)(function (e, t) {
+      var gn = (0, h.forwardRef)(function (e, t) {
         var n = e.onClick,
           r = e.reloadDocument,
           i = e.replace,
@@ -18121,7 +18146,7 @@
           o = e.state,
           s = e.target,
           l = e.to,
-          c = hn(e, mn),
+          c = pn(e, hn),
           u = M(l),
           d = (function (e, t) {
             var n = void 0 === t ? {} : t,
@@ -18150,7 +18175,7 @@
           })(l, { replace: a, state: o, target: s });
         return (0, h.createElement)(
           "a",
-          pn({}, c, {
+          fn({}, c, {
             href: u,
             onClick: function (e) {
               n && n(e), e.defaultPrevented || r || d(e);
@@ -18160,25 +18185,25 @@
           })
         );
       });
-      var yn,
-        An,
+      var vn,
+        yn,
         bn,
-        xn = function () {
-          return (0, dn.jsx)("div", {
+        An = function () {
+          return (0, un.jsx)("div", {
             class: "footer",
-            children: (0, dn.jsx)("div", {
+            children: (0, un.jsx)("div", {
               class: "container",
-              children: (0, dn.jsxs)("div", {
+              children: (0, un.jsxs)("div", {
                 class: "row",
                 children: [
-                  (0, dn.jsxs)("div", {
+                  (0, un.jsxs)("div", {
                     class: "footer-col",
                     children: [
-                      (0, dn.jsx)("h4", { children: "contacto" }),
-                      (0, dn.jsxs)("ul", {
+                      (0, un.jsx)("h4", { children: "contacto" }),
+                      (0, un.jsxs)("ul", {
                         children: [
-                          (0, dn.jsx)("li", {
-                            children: (0, dn.jsx)("a", {
+                          (0, un.jsx)("li", {
+                            children: (0, un.jsx)("a", {
                               href: "mailto:afymos@gmail.com",
                               target: "_blank",
                               title: "e-mail afymos",
@@ -18186,8 +18211,8 @@
                               children: "afymos@gmail.com",
                             }),
                           }),
-                          (0, dn.jsx)("li", {
-                            children: (0, dn.jsx)("a", {
+                          (0, un.jsx)("li", {
+                            children: (0, un.jsx)("a", {
                               href: "tel:926532749",
                               target: "_blank",
                               title: "Tel\xe9fono afymos",
@@ -18199,13 +18224,13 @@
                       }),
                     ],
                   }),
-                  (0, dn.jsxs)("div", {
+                  (0, un.jsxs)("div", {
                     class: "footer-col",
                     children: [
-                      (0, dn.jsx)("h4", { children: "direcci\xf3n" }),
-                      (0, dn.jsx)("ul", {
-                        children: (0, dn.jsx)("li", {
-                          children: (0, dn.jsx)("a", {
+                      (0, un.jsx)("h4", { children: "direcci\xf3n" }),
+                      (0, un.jsx)("ul", {
+                        children: (0, un.jsx)("li", {
+                          children: (0, un.jsx)("a", {
                             href: "https://www.google.com/maps/place/C.+Pedro+Arias,+87,+13630+Socu%C3%A9llamos,+Ciudad+Real/@39.285737,-2.7934746,17z/data=!3m1!4b1!4m6!3m5!1s0xd68f559a43eaaab:0x2895536363daa787!8m2!3d39.285737!4d-2.7908997!16s%2Fg%2F11fx7fcy55?entry=ttu",
                             target: "_blank",
                             rel: "noreferrer",
@@ -18216,24 +18241,24 @@
                       }),
                     ],
                   }),
-                  (0, dn.jsxs)("div", {
+                  (0, un.jsxs)("div", {
                     class: "footer-col",
                     children: [
-                      (0, dn.jsx)("h4", {
+                      (0, un.jsx)("h4", {
                         children: "pol\xedtica de privacidad",
                       }),
-                      (0, dn.jsxs)("ul", {
+                      (0, un.jsxs)("ul", {
                         children: [
-                          (0, dn.jsx)("li", {
-                            children: (0, dn.jsx)(vn, {
+                          (0, un.jsx)("li", {
+                            children: (0, un.jsx)(gn, {
                               to: "/politica-privacidad",
                               target: "_blank",
                               rel: "noreferrer",
                               children: "cookies",
                             }),
                           }),
-                          (0, dn.jsx)("li", {
-                            children: (0, dn.jsx)(vn, {
+                          (0, un.jsx)("li", {
+                            children: (0, un.jsx)(gn, {
                               to: "/aviso-legal",
                               target: "_blank",
                               rel: "noreferrer",
@@ -18244,26 +18269,26 @@
                       }),
                     ],
                   }),
-                  (0, dn.jsxs)("div", {
+                  (0, un.jsxs)("div", {
                     class: "footer-col",
                     children: [
-                      (0, dn.jsx)("h4", { children: "s\xedguenos" }),
-                      (0, dn.jsxs)("div", {
+                      (0, un.jsx)("h4", { children: "s\xedguenos" }),
+                      (0, un.jsxs)("div", {
                         class: "social-links",
                         children: [
-                          (0, dn.jsx)("a", {
+                          (0, un.jsx)("a", {
                             href: "https://www.facebook.com/profile.php?id=100067093413028",
                             target: "_blank",
                             rel: "noreferrer",
-                            children: (0, dn.jsx)("i", {
+                            children: (0, un.jsx)("i", {
                               class: "fab fa-facebook-f",
                             }),
                           }),
-                          (0, dn.jsx)("a", {
+                          (0, un.jsx)("a", {
                             href: "https://www.instagram.com/tv/CKKQgBcIW_Z/",
                             target: "_blank",
                             rel: "noreferrer",
-                            children: (0, dn.jsx)("i", {
+                            children: (0, un.jsx)("i", {
                               class: "fab fa-instagram",
                             }),
                           }),
@@ -18276,35 +18301,35 @@
             }),
           });
         },
-        wn = n(4302),
-        Sn = function (e) {
-          return (0, dn.jsx)(dn.Fragment, {
-            children: (0, dn.jsxs)(kn, {
+        xn = n(4302),
+        wn = function (e) {
+          return (0, un.jsx)(un.Fragment, {
+            children: (0, un.jsxs)(Sn, {
               id: e.id,
               children: [
-                (0, dn.jsx)(vn, {
+                (0, un.jsx)(gn, {
                   to: "/",
                   onClick: function () {
                     window.history.back();
                   },
-                  children: (0, dn.jsxs)(Rn, {
+                  children: (0, un.jsxs)(zn, {
                     children: [
-                      (0, dn.jsx)("i", { class: "fa-solid fa-angles-left" }),
-                      (0, dn.jsxs)("h2", {
+                      (0, un.jsx)("i", { class: "fa-solid fa-angles-left" }),
+                      (0, un.jsxs)("h2", {
                         children: [
                           "volver a ",
-                          (0, dn.jsx)("span", { children: "Principal" }),
+                          (0, un.jsx)("span", { children: "Principal" }),
                         ],
                       }),
                     ],
                   }),
                 }),
-                (0, dn.jsxs)(Dn, {
+                (0, un.jsxs)(Rn, {
                   children: [
-                    (0, dn.jsx)("h1", { children: e.title }),
-                    (0, dn.jsx)("img", {
+                    (0, un.jsx)("h1", { children: e.title }),
+                    (0, un.jsx)("img", {
                       className: "header_superior__container--logo",
-                      src: wn,
+                      src: xn,
                       alt: e.alt,
                     }),
                   ],
@@ -18313,14 +18338,15 @@
             }),
           });
         },
-        kn = Qt.nav(
-          yn ||
-            (yn = _([
+        Sn = Qt.nav(
+          vn ||
+            (vn = _([
               "\n  background-color: #071c2f;\n  height: 80px;\n  width: 100%;\n  position: sticky;\n  align-items: center;\n  top: 0;\n  z-index: 50;\n\n  .containerPrincipal {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .fa-angles-left {\n    margin-left: 50px;\n    font-size: 1.5rem;\n    color: #ffc0bc;\n\n    @media (max-width: 768px) {\n      margin-left: 40px;\n    }\n  }\n\n  h2 {\n    margin-left: 10px;\n    span {\n      font-weight: bold;\n    }\n  }\n  padding: 0.4rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 1.5rem;\n  }\n",
             ]))
         );
-      kn.displayName = "NavContainer";
-      var jn,
+      Sn.displayName = "NavContainer";
+      var kn,
+        jn,
         En,
         Cn,
         On,
@@ -18329,17 +18355,16 @@
         Ln,
         Mn,
         In,
-        zn,
-        Rn = Qt.div(
-          An || (An = _(["\n  display: flex;\n  align-items: center;\n"]))
+        zn = Qt.div(
+          yn || (yn = _(["\n  display: flex;\n  align-items: center;\n"]))
         ),
-        Dn = Qt.nav(
+        Rn = Qt.nav(
           bn ||
             (bn = _([
               "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  text-transform: uppercase;\n\n  h1 {\n    text-align: center;\n    color: #ffc0bc;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 2.5rem;\n  }\n  img {\n    width: 10%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 120%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 2.2rem;\n    }\n  }\n  @media (max-width: 440px) {\n    display: flex;\n    flex-direction: end;\n    img {\n      width: 20%;\n    }\n    min-height: 10vh;\n    h1 {\n      display: none;\n    }\n  }\n",
             ]))
         ),
-        Nn = function (e) {
+        Dn = function (e) {
           var n = e.url,
             r = e.alt,
             i = e.target,
@@ -18347,71 +18372,71 @@
             o = t((0, h.useState)(!1), 2),
             s = o[0],
             l = o[1];
-          return (0, dn.jsx)(dn.Fragment, {
-            children: (0, dn.jsx)("a", {
+          return (0, un.jsx)(un.Fragment, {
+            children: (0, un.jsx)("a", {
               onClick: function () {
                 l(!s);
               },
               href: n,
               alt: r,
               target: i,
-              children: (0, dn.jsx)(Fn, {
-                children: (0, dn.jsx)(Bn, {
-                  children: (0, dn.jsx)(Wn, { src: a }),
+              children: (0, un.jsx)(Nn, {
+                children: (0, un.jsx)(Bn, {
+                  children: (0, un.jsx)(Fn, { src: a }),
                 }),
               }),
             }),
           });
         },
-        Fn = Qt.div(
-          jn ||
-            (jn = _([
+        Nn = Qt.div(
+          kn ||
+            (kn = _([
               "\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 50%;\n  gap: 2rem;\n  white-space: nowrap;\n\n  @media (max-width: 440px) {\n  }\n",
             ]))
         ),
         Bn = Qt.div(
-          En ||
-            (En = _([
+          jn ||
+            (jn = _([
               "\n  background: white;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
             ]))
         ),
-        Wn = Qt.img(
-          Cn ||
-            (Cn = _([
+        Fn = Qt.img(
+          En ||
+            (En = _([
               "\n  width: 100%;\n  height: 100%;\n  object-fit: center;\n",
             ]))
         ),
-        Un =
+        Wn =
           (Qt.div(
-            On ||
-              (On = _([
+            Cn ||
+              (Cn = _([
                 "\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  justify-content: center;\n  margin: auto;\n  position: relative;\n  width: 80%;\n  gap: 1rem;\n  white-space: nowrap;\n",
               ]))
           ),
           Qt.div(
-            Pn ||
-              (Pn = _([
+            On ||
+              (On = _([
                 "\n  backface-visibility: hidden;\n  background: #e0e0e0;\n  border-radius: 10%;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n",
               ]))
           ),
-          Qt.img(Tn || (Tn = _(["\n  width: 100%;\n  object-fit: center;\n"]))),
+          Qt.img(Pn || (Pn = _(["\n  width: 100%;\n  object-fit: center;\n"]))),
           function (e) {
             var t = e.title,
               n = e.size,
               r = e.inverse,
               i = e.marginBottom;
-            return (0, dn.jsx)(dn.Fragment, {
-              children: (0, dn.jsx)(Hn, {
+            return (0, un.jsx)(un.Fragment, {
+              children: (0, un.jsx)(Un, {
                 size: n,
                 inverse: r,
                 marginBottom: i,
-                children: (0, dn.jsx)("h2", { children: t }),
+                children: (0, un.jsx)("h2", { children: t }),
               }),
             });
           }),
-        Hn = Qt.div(
-          Ln ||
-            (Ln = _([
+        Un = Qt.div(
+          Tn ||
+            (Tn = _([
               "\n  display: flex;\n  width: 100%;\n  height: 7rem;\n  background: ",
               ";\n  text-align: center;\n  align-items: center;\n  line-height: 1.5rem;\n  font-size: ",
               ";\n  margin-bottom: ",
@@ -18432,128 +18457,128 @@
             return e.inverse ? "#FFC0BC" : "#071c2f";
           },
           function (e) {
-            return e.size ? "1.2rem" : "1rem";
+            return e.size ? "1.2rem" : "1.5rem";
           }
         ),
-        Vn = n(8718),
-        Gn = n(8971),
-        Yn = n(4696),
-        Qn = n(8514),
-        Zn = n(8121),
-        _n = n(9133),
-        qn = n(945),
-        Jn = "_blank",
-        Xn = [
+        Hn = n(8718),
+        Vn = n(8971),
+        Gn = n(4696),
+        Yn = n(8514),
+        Qn = n(8121),
+        Zn = n(9133),
+        _n = n(945),
+        qn = "_blank",
+        Jn = [
           {
             id: 1,
             name: "Fundaci\xf3n ONCE",
             src: n(5951),
-            target: Jn,
+            target: qn,
             alt: "fundaci\xf3n-once",
             url: "https://www.fundaciononce.es/es",
           },
           {
             id: 2,
             name: "Ayuntamiento de Socu\xe9llamos",
-            src: Vn,
-            target: Jn,
+            src: Hn,
+            target: qn,
             alt: "logo-ayuntamiento-de-socuellamos",
             url: "https://socuellamos.es/",
           },
           {
             id: 3,
             name: "Junta de Comunidades de Castilla-La Mancha",
-            src: Gn,
-            target: Jn,
+            src: Vn,
+            target: qn,
             alt: "logo-junta-comunidades-castilla-la-mancha",
             url: "https://www.jccm.es/",
           },
           {
             id: 4,
             name: "Diputaci\xf3n de Ciudad Real",
-            src: Yn,
-            target: Jn,
+            src: Gn,
+            target: qn,
             alt: "logo-diputacion-ciudad-real",
             url: "https://www.dipucr.es/",
           },
           {
             id: 5,
             name: "Uni\xf3n Europea",
-            src: Qn,
-            target: Jn,
+            src: Yn,
+            target: qn,
             alt: "logo-union-europea",
             url: "https://european-union.europa.eu/index_es/",
           },
           {
             id: 6,
             name: "Plena Inclusi\xf3n Castilla La-Mancha",
-            src: qn,
-            target: Jn,
+            src: _n,
+            target: qn,
             alt: "logo-plena-inclusion",
             url: "https://www.plenainclusionclm.org/",
           },
           {
             id: 7,
             name: "Fundaci\xf3n Globalcaja",
-            src: Zn,
-            target: Jn,
+            src: Qn,
+            target: qn,
             alt: "logo-globalcaja",
             url: "https://fundacionglobalcajahxxii.com/",
           },
           {
             id: 8,
             name: "Fundaci\xf3n Globalcaja",
-            src: _n,
-            target: Jn,
+            src: Zn,
+            target: qn,
             alt: "logo-agradecimiemto-a-colaboradores",
             url: "",
           },
         ],
-        Kn = function (e) {
+        Xn = function (e) {
           var n = e.size,
             r = e.inverse,
-            i = t((0, h.useState)(Xn), 1)[0];
-          return (0, dn.jsxs)(dn.Fragment, {
+            i = t((0, h.useState)(Jn), 1)[0];
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Un, {
+              (0, un.jsx)(Wn, {
                 title: "Cofinanciaciones",
                 inverse: r,
                 size: n,
               }),
-              (0, dn.jsx)($n, {
-                children: (0, dn.jsx)(er, {
+              (0, un.jsx)(Kn, {
+                children: (0, un.jsx)($n, {
                   children: i.map(function (e) {
                     return (0,
-                    dn.jsx)(Nn, { src: e.src, alt: e.alt, url: e.url, target: e.target }, e.id);
+                    un.jsx)(Dn, { src: e.src, alt: e.alt, url: e.url, target: e.target }, e.id);
                   }),
                 }),
               }),
             ],
           });
         },
-        $n = Qt.div(
-          Mn ||
-            (Mn = _([
+        Kn = Qt.div(
+          Ln ||
+            (Ln = _([
               "\n  background-color: white;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 50px;\n  margin: 0 0 0px 0;\n  padding: 2rem;\n\n  section {\n    background-color: #071c2f;\n    height: 80px;\n    width: 100%;\n    color: #ffc0bc;\n    display: grid;\n    place-content: center;\n  }\n\n  h2 {\n    font-size: 28px;\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 0px;\n\n    section {\n      height: 60px;\n    }\n    h2 {\n      font-size: 24px;\n    }\n  }\n",
             ]))
         ),
-        er = Qt.div(
-          In ||
-            (In = _([
+        $n = Qt.div(
+          Mn ||
+            (Mn = _([
               "\n  background-color: white;\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  justify-content: center;\n  flex-direction: row-reverse;\n  align-items: center;\n  gap: 50px;\n\n  @media (max-width: 768px) {\n    grid-template-columns: repeat(3, 1fr);\n  }\n\n  @media (max-width: 440px) {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 5px;\n    padding: 30px 0;\n  }\n",
             ]))
         ),
-        tr = {
+        er = {
           color: void 0,
           size: void 0,
           className: void 0,
           style: void 0,
           attr: void 0,
         },
-        nr = h.createContext && h.createContext(tr),
-        rr = function () {
+        tr = h.createContext && h.createContext(er),
+        nr = function () {
           return (
-            (rr =
+            (nr =
               Object.assign ||
               function (e) {
                 for (var t, n = 1, r = arguments.length; n < r; n++)
@@ -18561,10 +18586,10 @@
                     Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
                 return e;
               }),
-            rr.apply(this, arguments)
+            nr.apply(this, arguments)
           );
         },
-        ir = function (e, t) {
+        rr = function (e, t) {
           var n = {};
           for (var r in e)
             Object.prototype.hasOwnProperty.call(e, r) &&
@@ -18579,37 +18604,37 @@
           }
           return n;
         };
-      function ar(e) {
+      function ir(e) {
         return (
           e &&
           e.map(function (e, t) {
-            return h.createElement(e.tag, rr({ key: t }, e.attr), ar(e.child));
+            return h.createElement(e.tag, nr({ key: t }, e.attr), ir(e.child));
           })
         );
       }
-      function or(e) {
+      function ar(e) {
         return function (t) {
           return h.createElement(
-            sr,
-            rr({ attr: rr({}, e.attr) }, t),
-            ar(e.child)
+            or,
+            nr({ attr: nr({}, e.attr) }, t),
+            ir(e.child)
           );
         };
       }
-      function sr(e) {
+      function or(e) {
         var t = function (t) {
           var n,
             r = e.attr,
             i = e.size,
             a = e.title,
-            o = ir(e, ["attr", "size", "title"]),
+            o = rr(e, ["attr", "size", "title"]),
             s = i || t.size || "1em";
           return (
             t.className && (n = t.className),
             e.className && (n = (n ? n + " " : "") + e.className),
             h.createElement(
               "svg",
-              rr(
+              nr(
                 {
                   stroke: "currentColor",
                   fill: "currentColor",
@@ -18620,8 +18645,8 @@
                 o,
                 {
                   className: n,
-                  style: rr(
-                    rr({ color: e.color || t.color }, t.style),
+                  style: nr(
+                    nr({ color: e.color || t.color }, t.style),
                     e.style
                   ),
                   height: s,
@@ -18634,14 +18659,14 @@
             )
           );
         };
-        return void 0 !== nr
-          ? h.createElement(nr.Consumer, null, function (e) {
+        return void 0 !== tr
+          ? h.createElement(tr.Consumer, null, function (e) {
               return t(e);
             })
-          : t(tr);
+          : t(er);
       }
-      function lr(e) {
-        return or({
+      function sr(e) {
+        return ar({
           tag: "svg",
           attr: { viewBox: "0 0 512 512" },
           child: [
@@ -18654,8 +18679,8 @@
           ],
         })(e);
       }
-      function cr(e) {
-        return or({
+      function lr(e) {
+        return ar({
           tag: "svg",
           attr: { viewBox: "0 0 512 512" },
           child: [
@@ -18668,8 +18693,8 @@
           ],
         })(e);
       }
-      function ur(e) {
-        return or({
+      function cr(e) {
+        return ar({
           tag: "svg",
           attr: { viewBox: "0 0 512 512" },
           child: [
@@ -18682,16 +18707,43 @@
           ],
         })(e);
       }
-      var dr,
-        fr,
+      function ur(e) {
+        return ar({
+          tag: "svg",
+          attr: { viewBox: "0 0 512 512" },
+          child: [
+            {
+              tag: "path",
+              attr: {
+                d: "M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z",
+              },
+            },
+          ],
+        })(e);
+      }
+      function dr(e) {
+        return ar({
+          tag: "svg",
+          attr: { viewBox: "0 0 512 512" },
+          child: [
+            {
+              tag: "path",
+              attr: {
+                d: "M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z",
+              },
+            },
+          ],
+        })(e);
+      }
+      var fr,
         pr,
         hr,
         mr,
         gr,
         vr,
         yr,
-        Ar,
         br,
+        Ar,
         xr,
         wr,
         Sr,
@@ -18702,7 +18754,10 @@
         Or,
         Pr,
         Tr,
-        Lr = function () {
+        Lr,
+        Mr,
+        Ir,
+        zr = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1];
@@ -18711,68 +18766,68 @@
               window.scrollY > 100 ? r(!0) : r(!1);
             });
           }, []);
-          return (0, dn.jsx)(Mr, {
+          return (0, un.jsx)(Rr, {
             style: { display: n ? "block" : "none" },
             onClick: function () {
               window.scrollTo({ top: 0, behavior: "smooth" });
             },
             "aria-label": "inicio",
-            children: (0, dn.jsx)(ur, {}),
+            children: (0, un.jsx)(cr, {}),
           });
         },
-        Mr = Qt.button(
-          zn ||
-            (zn = _([
+        Rr = Qt.button(
+          In ||
+            (In = _([
               "\n  position: fixed;\n  bottom: 40px;\n  z-index: 1;\n  cursor: pointer;\n  color: grey;\n  right: 2%;\n  background: none;\n  border-radius: 50px;\n  padding: 0px;\n  border: none;\n  opacity: 0.7;\n  font-size: 4rem;\n  margin-right: 1.5rem;\n\n  @media (max-width: 440px) {\n    font-size: 3rem;\n  }\n",
             ]))
         ),
-        Ir = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Dr = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Aviso Legal" }),
-              (0, dn.jsx)(Un, { title: "Politicas de Privacidad", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, Y), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Q), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Z), {}, { inverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Aviso Legal" }),
+              (0, un.jsx)(Wn, { title: "Politicas de Privacidad", size: !0 }),
+              (0, un.jsx)(dn, G(G({}, Y), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Q), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Z), {}, { inverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        zr = function (e) {
+        Nr = function (e) {
           var n = t((0, h.useState)(!0), 2),
             r = n[0],
             i = n[1],
             a = function () {
               i(!r);
             };
-          return (0, dn.jsx)(dn.Fragment, {
+          return (0, un.jsx)(un.Fragment, {
             children: r
-              ? (0, dn.jsx)(Rr, {
-                  children: (0, dn.jsxs)(
-                    Dr,
+              ? (0, un.jsx)(Br, {
+                  children: (0, un.jsxs)(
+                    Fr,
                     {
                       children: [
-                        (0, dn.jsx)(Nr, {
+                        (0, un.jsx)(Wr, {
                           src: e.img,
                           alt: e.alt,
                           onMouseEnter: a,
                         }),
-                        (0, dn.jsx)("h3", { children: e.role }),
+                        (0, un.jsx)("h3", { children: e.role }),
                       ],
                     },
                     e.id
                   ),
                 })
-              : (0, dn.jsx)(Rr, {
-                  children: (0, dn.jsxs)(
-                    Fr,
+              : (0, un.jsx)(Br, {
+                  children: (0, un.jsxs)(
+                    Ur,
                     {
                       onMouseLeave: a,
                       children: [
-                        (0, dn.jsx)(Br, { children: e.name }),
-                        (0, dn.jsx)(Wr, { children: e.profession }),
+                        (0, un.jsx)(Hr, { children: e.name }),
+                        (0, un.jsx)(Vr, { children: e.profession }),
                       ],
                     },
                     e.id
@@ -18780,85 +18835,85 @@
                 }),
           });
         },
-        Rr = Qt.div(
-          dr ||
-            (dr = _([
+        Br = Qt.div(
+          fr ||
+            (fr = _([
               "\n  display: flex;\n  position: relative;\n  width: 15rem;\n  height: 20rem;\n  margin: auto;\n  justify-content: center;\n  gap: 2rem;\n  cursor: pointer;\n\n  @media (max-width: 440px) {\n    width: 9rem;\n    height: 10rem;\n  }\n",
             ]))
         ),
-        Dr = Qt.div(
-          fr ||
-            (fr = _([
+        Fr = Qt.div(
+          pr ||
+            (pr = _([
               "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  backface-visibility: hidden;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: 0.5s;\n",
             ]))
         ),
-        Nr = Qt.img(
-          pr ||
-            (pr = _([
+        Wr = Qt.img(
+          hr ||
+            (hr = _([
               "\n  position: absolute;\n  object-fit: cover;\n  width: 100%;\n  height: 100%;\n  transition: all 400ms ease-out;\n  will-change: transform;\n",
             ]))
         ),
-        Fr = Qt.div(
-          hr ||
-            (hr = _([
+        Ur = Qt.div(
+          mr ||
+            (mr = _([
               "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #ffc0bc;\n  color: #071c2f;\n  display: flex;\n  border-radius: 10px;\n  flex-direction: column;\n  justify-content: center;\n  gap: 30%;\n  padding: 15px;\n  text-align: center;\n",
             ]))
         ),
-        Br = Qt.div(
-          mr ||
-            (mr = _([
+        Hr = Qt.div(
+          gr ||
+            (gr = _([
               "\n  font-size: 1.5rem;\n  margin-top: 20px;\n  letter-spacing: 2px;\n",
             ]))
         ),
-        Wr =
+        Vr =
           (Qt.div(
-            gr ||
-              (gr = _([
+            vr ||
+              (vr = _([
                 "\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 45px;\n  line-height: 45px;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.4);\n  text-align: center;\n",
               ]))
           ),
           Qt.div(
-            vr ||
-              (vr = _([
+            yr ||
+              (yr = _([
                 "\n  border-radius: 10px;\n  letter-spacing: 1px;\n  font-size: 1rem;\n",
               ]))
           )),
-        Ur =
+        Gr =
           (Qt.img(
-            yr ||
-              (yr = _([
+            br ||
+              (br = _([
                 "\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n",
               ]))
           ),
           n(3912)),
-        Hr = n(9545),
-        Vr = n(9729),
-        Gr = (n(5614), n(8095), n(9821)),
-        Yr = n(2358),
-        Qr = (n(6358), n(9403)),
-        Zr = n(2236),
-        _r = (n(1011), n(2637), n(5079)),
-        qr = n(8309),
-        Jr = n(2186),
-        Xr = n(5991),
-        Kr = n(1715),
-        $r = [
+        Yr = n(9545),
+        Qr = n(9729),
+        Zr = (n(5614), n(8095), n(9821)),
+        _r = n(2358),
+        qr = (n(6358), n(9403)),
+        Jr = n(2236),
+        Xr = (n(1011), n(2637), n(5079)),
+        Kr = n(8309),
+        $r = n(2186),
+        ei = n(5991),
+        ti = n(1715),
+        ni = [
           {
             id: 1,
             name: "Pilar Alarc\xf3n",
-            img: _r,
+            img: Xr,
             profession: "Presidenta",
           },
           {
             id: 2,
             name: "Nieves Fern\xe1ndez",
-            img: Jr,
+            img: $r,
             profession: "Vicepresidenta",
           },
           {
             id: 3,
             name: "Maricruz Collado",
-            img: Hr,
+            img: Yr,
             profession: "Secretaria",
           },
           {
@@ -18870,7 +18925,7 @@
           {
             id: 5,
             name: "Ana Bel\xe9n Garc\xeda",
-            img: qr,
+            img: Kr,
             profession: "Vocal 1",
           },
           {
@@ -18882,10 +18937,10 @@
           {
             id: 7,
             name: " Francisca Izquierdo",
-            img: Xr,
+            img: ei,
             profession: "Vocal 3",
           },
-          { id: 8, name: "Teresa Martinez", img: Kr, profession: "Vocal 4" },
+          { id: 8, name: "Teresa Martinez", img: ti, profession: "Vocal 4" },
           {
             id: 9,
             name: "Francisco Javier Rom\xe1n",
@@ -18893,47 +18948,47 @@
             profession: "Vocal 5",
           },
         ],
-        ei = function () {
-          var e = t((0, h.useState)($r), 1)[0];
-          return (0, dn.jsxs)(dn.Fragment, {
+        ri = function () {
+          var e = t((0, h.useState)(ni), 1)[0];
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Sn, { title: "junta directiva", alt: "" }),
-              (0, dn.jsx)(ti, {}),
-              (0, dn.jsx)(ni, {
-                children: (0, dn.jsx)(ri, {
+              (0, un.jsx)(wn, { title: "junta directiva", alt: "" }),
+              (0, un.jsx)(ii, {}),
+              (0, un.jsx)(ai, {
+                children: (0, un.jsx)(oi, {
                   children: e.map(function (e) {
                     return (0,
-                    dn.jsx)(zr, { name: e.name, img: e.img, alt: e.alt, role: e.role, profession: e.profession }, e.id);
+                    un.jsx)(Nr, { name: e.name, img: e.img, alt: e.alt, role: e.role, profession: e.profession }, e.id);
                   }),
                 }),
               }),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        ti = Qt.div(
+        ii = Qt.div(
           Ar ||
             (Ar = _([
               "\n  background: linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)),\n    url(",
               ");\n  background-size: 100%;\n  background-position: cover;\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  height: 100vh;\n  z-index: 20;\n",
             ])),
-          Ur
+          Gr
         ),
-        ni = Qt.section(
-          br ||
-            (br = _([
+        ai = Qt.section(
+          xr ||
+            (xr = _([
               "\n  padding: 5rem 18%;\n  background-color: #f7f7f7;\n\n  @media (max-width: 440px) {\n    padding: 2rem 5%;\n  }\n",
             ]))
         ),
-        ri = Qt.div(
-          xr ||
-            (xr = _([
+        oi = Qt.div(
+          wr ||
+            (wr = _([
               "\n  display: flex;\n  gap: 5rem;\n  flex-wrap: wrap;\n\n  @media (max-width: 440px) {\n    gap: 2rem;\n  }\n",
             ]))
         ),
-        ii = n(5562),
-        ai = n(599),
-        oi = {
+        si = n(5562),
+        li = n(599),
+        ci = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Vida en comunidad:" },
@@ -18944,7 +18999,7 @@
           href: "#/servicio-capacitacion",
           img: n(6453),
         },
-        si = {
+        ui = {
           href: "#/donaciones",
           reverse: !0,
           inverse: !0,
@@ -18954,9 +19009,9 @@
           description:
             "Nuestra organizaci\xf3n sin \xe1nimo de lucro se sustenta principalmente de las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda econ\xf3mica que nos puedan prestar.",
           buttonLabel: "Donaciones",
-          img: ai,
+          img: li,
         },
-        li = {
+        di = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Buscamos profesionales como t\xfa" },
@@ -18965,17 +19020,21 @@
             "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administraci\xf3n y mucho m\xe1s. Contacta con nosotros o envianos tu curriculum",
           buttonLabel: "Contacto",
           href: "contacto",
-          img: ii,
+          img: si,
         },
-        ci = n(1795),
-        ui = n(9801),
-        di = n(7500),
-        fi = n(1965),
-        pi = [
+        fi = n(578),
+        pi = n(4096),
+        hi = n(3639),
+        mi = n(1311),
+        gi = n(1795),
+        vi = n(9801),
+        yi = n(7500),
+        bi = n(1965),
+        Ai = [
           {
             title: "Loter\xeda de Navidad",
             description: "Ya tenemos nuestra loter\xeda para navidad!",
-            image: di,
+            image: yi,
             alt: "loteria-navidad",
             url: "",
           },
@@ -18991,7 +19050,7 @@
             title: "Concurso de Fotograf\xeda",
             description:
               "Plazo de inscripci\xf3n hasta el pr\xf3ximo 17 de noviembre, sin limite de edad",
-            image: ui,
+            image: vi,
             alt: "concurso-de-fotografia",
             url: "",
           },
@@ -18999,7 +19058,7 @@
             title: "PROYECTO NUEVO CREA 2023",
             description:
               "El pasado 18 de abril de 2023, se present\xf3 la nueva convocatoria",
-            image: fi,
+            image: bi,
             alt: "proyecto-crea-2023",
             url: "",
           },
@@ -19015,12 +19074,12 @@
             title: "XIII CONGRESO DE EMPLEO CON APOYO",
             description:
               "Los d\xedas 13, 14 y 15 de junio se celebr\xf3 el XIII Congreso de Empleo en la facultad de derecho de Burgos, organizado por AESE y Down Burgos.",
-            image: ci,
+            image: gi,
             alt: "un-d\xeda-en-afymos",
             url: "",
           },
         ],
-        hi = {
+        xi = {
           arrows: !1,
           slidesToShow: 3,
           focusOnselect: !1,
@@ -19030,94 +19089,91 @@
             { breakpoint: 900, settings: { slidesToShow: 1 } },
           ],
         },
-        mi = n(5717),
-        gi = Qt.img(
-          wr ||
-            (wr = _([
+        wi = [
+          { id: 1, cover: fi, title: "", alt: "foto baloncesto" },
+          { id: 2, cover: pi, title: "", alt: "foto baloncesto" },
+          { id: 3, cover: hi, title: "", alt: "foto baloncesto" },
+          { id: 3, cover: mi, title: "", alt: "foto baloncesto" },
+        ],
+        Si = n(5717),
+        ki = Qt.img(
+          Sr ||
+            (Sr = _([
               "\n  width: 100%;\n  height: 300px;\n  border-radius: 10px 10px 0 0;\n  object-fit: cover;\n  vertical-align: middle;\n",
             ]))
         ),
-        vi = Qt.div(
-          Sr ||
-            (Sr = _([
+        ji = Qt.div(
+          kr ||
+            (kr = _([
               "\n  background-color: white;\n  width: 90%;\n  display: flex !important;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  border-radius: 10px;\n  outline: none;\n  height: 430px;\n  border: solid 1px #071c2f;\n\n  @media (min-width: 440px) {\n    border: 1px solid #bebebe;\n  }\n",
             ]))
         ),
-        yi = Qt($t)(
-          kr ||
-            (kr = _([
+        Ei = Qt(Kt)(
+          jr ||
+            (jr = _([
               "\n  & svg {\n    margin: 0 1rem;\n    cursor: pointer;\n  }\n\n  & svg:hover {\n    opacity: 0.7;\n    transition: opacity 0.2s ease-in;\n  }\n  @media (max-width: 960px) {\n    margin: 0 auto;\n  }\n",
             ]))
         ),
-        Ai = Qt(mi.Z)(
-          jr ||
-            (jr = _([
+        Ci = Qt(Si.Z)(
+          Er ||
+            (Er = _([
               "\n  width: 100%;\n\n  .slick-track {\n    display: flex;\n    padding: 30px;\n    gap: 3rem;\n  }\n  .slick-slide {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 1;\n    outline: none;\n  }\n\n  .slick-list {\n    overflow: hidden;\n  }\n",
             ]))
         ),
-        bi = Qt.button(
-          Er ||
-            (Er = _([
+        Oi = Qt.button(
+          Cr ||
+            (Cr = _([
               "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
-        xi = Qt.div(
-          Cr ||
-            (Cr = _([
+        Pi = Qt.div(
+          Or ||
+            (Or = _([
               "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
-        wi = function () {
+        Ti = function () {
           var e = t((0, h.useState)(null), 2),
             n = e[0],
-            r = e[1],
-            i = t((0, h.useState)(pi), 2);
-          i[0], i[1];
-          return (0, dn.jsxs)(Xt, {
+            r = e[1];
+          return (0, un.jsxs)(Jt, {
             margin: "auto",
             maxWidth: "1280px",
             padding: "50px 70px",
             inverse: !0,
             children: [
-              (0, dn.jsxs)($t, {
+              (0, un.jsx)(Wn, { title: "Noticias", inverse: !0 }),
+              (0, un.jsx)(Kt, {
                 justify: "center",
                 margin: "1rem",
                 wrap: "wrap",
                 align: "center",
-                children: [
-                  (0, dn.jsx)(qt, {
-                    width: "auto",
-                    inverse: !0,
-                    margin: "2rem",
-                    children: "Noticias",
+                children: (0, un.jsx)(Ei, {
+                  children: (0, un.jsxs)(tr.Provider, {
+                    value: { size: "3rem", color: "#071c2f" },
+                    children: [
+                      (0, un.jsx)(sr, {
+                        onClick:
+                          null === n || void 0 === n ? void 0 : n.slickPrev,
+                      }),
+                      (0, un.jsx)(lr, {
+                        onClick:
+                          null === n || void 0 === n ? void 0 : n.slickNext,
+                      }),
+                    ],
                   }),
-                  (0, dn.jsx)(yi, {
-                    children: (0, dn.jsxs)(nr.Provider, {
-                      value: { size: "3rem", color: "#071c2f" },
-                      children: [
-                        (0, dn.jsx)(lr, {
-                          onClick:
-                            null === n || void 0 === n ? void 0 : n.slickPrev,
-                        }),
-                        (0, dn.jsx)(cr, {
-                          onClick:
-                            null === n || void 0 === n ? void 0 : n.slickNext,
-                        }),
-                      ],
-                    }),
-                  }),
-                ],
+                }),
               }),
-              (0, dn.jsx)(
-                Ai,
+              (0, un.jsx)(
+                Ci,
                 G(
-                  G({}, hi),
+                  G({}, xi),
                   {},
                   {
                     ref: r,
-                    children: pi.map(function (e, t) {
+                    children: Ai.map(function (e, t) {
                       return (0,
-                      dn.jsxs)(vi, { children: [(0, dn.jsx)(gi, { src: e.image, alt: e.alt }), (0, dn.jsx)(Jt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, dn.jsx)(Jt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, dn.jsx)(xi, { children: (0, dn.jsx)(vn, { to: e.url, children: (0, dn.jsx)(bi, { children: "conoce m\xe1s" }) }) })] }, t);
+                      un.jsxs)(ji, { children: [(0, un.jsx)(ki, { src: e.image, alt: e.alt }), (0, un.jsx)(qt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, un.jsx)(qt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, un.jsx)(Pi, { children: (0, un.jsx)(gn, { to: e.url, children: (0, un.jsx)(Oi, { children: "conoce m\xe1s" }) }) })] }, t);
                     }),
                   }
                 )
@@ -19125,41 +19181,41 @@
             ],
           });
         },
-        Si = n(9951),
-        ki = n(7646),
-        ji = n(3104),
-        Ei = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Li = n(9951),
+        Mi = n(7646),
+        Ii = n(3104),
+        zi = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Un, {
+              (0, un.jsx)(Wn, {
                 title: "Informaci\xf3n de contacto",
                 size: !0,
                 inverse: !0,
                 marginBottom: !0,
               }),
-              (0, dn.jsxs)("section", {
+              (0, un.jsxs)("section", {
                 className: "contact",
                 id: "contacto",
                 children: [
-                  (0, dn.jsxs)(Ci, {
+                  (0, un.jsxs)(Ri, {
                     children: [
-                      (0, dn.jsxs)(Oi, {
+                      (0, un.jsxs)(Di, {
                         children: [
-                          (0, dn.jsx)("img", { src: Si, alt: "" }),
-                          (0, dn.jsx)("h3", {
+                          (0, un.jsx)("img", { src: Li, alt: "" }),
+                          (0, un.jsx)("h3", {
                             children: "tel\xe9fono de contacto",
                           }),
-                          (0, dn.jsx)("p", { children: "926 532 749" }),
+                          (0, un.jsx)("p", { children: "926 532 749" }),
                         ],
                       }),
-                      (0, dn.jsxs)(Oi, {
+                      (0, un.jsxs)(Di, {
                         children: [
-                          (0, dn.jsx)("img", { src: ji, alt: "" }),
-                          (0, dn.jsx)("h3", {
+                          (0, un.jsx)("img", { src: Ii, alt: "" }),
+                          (0, un.jsx)("h3", {
                             children: "correo electr\xf3nico",
                           }),
-                          (0, dn.jsx)("p", {
-                            children: (0, dn.jsx)("a", {
+                          (0, un.jsx)("p", {
+                            children: (0, un.jsx)("a", {
                               href: "mailto:afymos@gmail.com",
                               target: "_blank",
                               title: "e-mail afymos",
@@ -19169,11 +19225,11 @@
                           }),
                         ],
                       }),
-                      (0, dn.jsxs)(Oi, {
+                      (0, un.jsxs)(Di, {
                         children: [
-                          (0, dn.jsx)("img", { src: ki, alt: "" }),
-                          (0, dn.jsx)("h3", { children: "Direcci\xf3n" }),
-                          (0, dn.jsx)("p", {
+                          (0, un.jsx)("img", { src: Mi, alt: "" }),
+                          (0, un.jsx)("h3", { children: "Direcci\xf3n" }),
+                          (0, un.jsx)("p", {
                             children:
                               "c. Pedro Arias, 87, 13630 Socu\xe9llamos, Ciudad Real",
                           }),
@@ -19181,40 +19237,40 @@
                       }),
                     ],
                   }),
-                  (0, dn.jsxs)("div", {
+                  (0, un.jsxs)("div", {
                     className: "row",
                     children: [
-                      (0, dn.jsxs)("form", {
+                      (0, un.jsxs)("form", {
                         action:
                           "https://formsubmit.co/ba88b9758fe1eee2f75438dceeafdba3",
                         method: "POST",
                         children: [
-                          (0, dn.jsxs)("div", {
+                          (0, un.jsxs)("div", {
                             className: "inputBox",
                             children: [
-                              (0, dn.jsx)("input", {
+                              (0, un.jsx)("input", {
                                 type: "text",
                                 placeholder: "nombre",
                                 name: "name",
                                 required: !0,
                               }),
-                              (0, dn.jsx)("input", {
+                              (0, un.jsx)("input", {
                                 type: "number",
                                 placeholder: "tel\xe9fono",
                                 name: "telefono",
                               }),
                             ],
                           }),
-                          (0, dn.jsxs)("div", {
+                          (0, un.jsxs)("div", {
                             className: "inputBox",
                             children: [
-                              (0, dn.jsx)("input", {
+                              (0, un.jsx)("input", {
                                 type: "email",
                                 placeholder: "email",
                                 name: "email",
                                 required: !0,
                               }),
-                              (0, dn.jsx)("input", {
+                              (0, un.jsx)("input", {
                                 type: "text",
                                 placeholder: "asunto",
                                 name: "asunto",
@@ -19222,7 +19278,7 @@
                               }),
                             ],
                           }),
-                          (0, dn.jsx)("textarea", {
+                          (0, un.jsx)("textarea", {
                             type: "text",
                             name: "mensaje",
                             placeholder: "mensaje",
@@ -19232,7 +19288,7 @@
                             rows: "10",
                             class: "inputs",
                           }),
-                          (0, dn.jsx)("input", {
+                          (0, un.jsx)("input", {
                             type: "submit",
                             value: "enviar",
                             target: "_blank",
@@ -19240,7 +19296,7 @@
                           }),
                         ],
                       }),
-                      (0, dn.jsx)("iframe", {
+                      (0, un.jsx)("iframe", {
                         title: "map",
                         className: "map",
                         src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.115024827591!2d-2.792748684638135!3d39.28564187951258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68f525d5ea6049%3A0x180a68074859800d!2sAFYMOS!5e0!3m2!1ses!2ses!4v1687676404652!5m2!1ses!2ses",
@@ -19254,19 +19310,19 @@
             ],
           });
         },
-        Ci = Qt.div(
-          Or ||
-            (Or = _([
+        Ri = Qt.div(
+          Pr ||
+            (Pr = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n",
             ]))
         ),
-        Oi = Qt.div(
-          Pr ||
-            (Pr = _([
+        Di = Qt.div(
+          Tr ||
+            (Tr = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n\n  img {\n    height: 3rem;\n  }\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n",
             ]))
         ),
-        Pi = function (e) {
+        Ni = function (e) {
           var n = e.alt,
             r = e.buttonLabel,
             i = e.description,
@@ -19282,24 +19338,24 @@
             m = t((0, h.useState)(!1), 2),
             g = m[0],
             v = m[1];
-          return (0, dn.jsx)(Xt, {
+          return (0, un.jsx)(Jt, {
             id: p,
             inverse: l,
-            children: (0, dn.jsx)(Zt, {
-              children: (0, dn.jsxs)(en, {
+            children: (0, un.jsx)(Zt, {
+              children: (0, un.jsxs)($t, {
                 reverse: c,
                 children: [
-                  (0, dn.jsx)(tn, {
-                    children: (0, dn.jsxs)(nn, {
+                  (0, un.jsx)(en, {
+                    children: (0, un.jsxs)(tn, {
                       children: [
-                        (0, dn.jsx)(_t, { children: f }),
-                        (0, dn.jsx)(an, { children: d.text }),
-                        (0, dn.jsx)(sn, { inverse: l, children: a }),
-                        (0, dn.jsx)(ln, { inverse: l, children: i }),
-                        (0, dn.jsx)(un, {
+                        (0, un.jsx)(_t, { children: f }),
+                        (0, un.jsx)(rn, { children: d.text }),
+                        (0, un.jsx)(on, { inverse: l, children: a }),
+                        (0, un.jsx)(sn, { inverse: l, children: i }),
+                        (0, un.jsx)(cn, {
                           transition: { delay: 1, duration: 0.6 },
                           inverse: l,
-                          children: (0, dn.jsx)(cn, {
+                          children: (0, un.jsx)(ln, {
                             onClick: function () {
                               v(!g);
                             },
@@ -19312,73 +19368,109 @@
                       ],
                     }),
                   }),
-                  (0, dn.jsx)(tn, {
-                    children: (0, dn.jsx)(rn, {
-                      children: (0, dn.jsx)(on, { src: s, alt: n }),
+                  (0, un.jsx)(en, {
+                    children: (0, un.jsx)(nn, {
+                      children: (0, un.jsx)(an, { src: s, alt: n }),
                     }),
                   }),
                 ],
               }),
             }),
           });
-        };
-      var Ti,
-        Li,
-        Mi,
-        Ii,
-        zi,
-        Ri,
-        Di,
-        Ni = function (e) {
-          return (0, dn.jsx)(Fi, {
-            children: (0, dn.jsxs)("div", {
+        },
+        Bi = n(1817),
+        Fi = function () {
+          return (0, un.jsxs)(Wi, {
+            id: "noticias",
+            children: [
+              (0, un.jsx)("img", {
+                className: "video",
+                src: Bi,
+                alt: "fotografia-baloncesto-campeones",
+              }),
+              (0, un.jsxs)(Ui, {
+                children: [
+                  (0, un.jsx)("h3", {
+                    children: "20\xb0 CAMPEONATO REGIONAL BALONCESTO",
+                  }),
+                  (0, un.jsx)("p", {
+                    children:
+                      "El CBS- AFYMOS campe\xf3n de Baloncesto Regional en 1\xb0 Divisi\xf3n.",
+                  }),
+                ],
+              }),
+            ],
+          });
+        },
+        Wi = Qt.div(
+          Lr ||
+            (Lr = _([
+              "\n  height: 100vh;\n  width: 100%;\n  object-fit: contain;\n  display: flex;\n  flex-direction: column;\n  justify-content: start;\n  align-items: center;\n\n  @media (max-width: 440px) {\n    justify-content: center;\n    align-items: start;\n    background: linear-gradient(\n      90deg,\n      rgba(0, 0, 0, 0.8) 0%,\n      rgba(20, 20, 20, 0.4) 50%,\n      rgba(83, 100, 141, 0) 100%\n    );\n  }\n\n  .video {\n    object-fit: cover;\n    width: 100%;\n    height: 100vh;\n    position: absolute;\n    z-index: -1;\n    opacity: 0.6;\n  }\n",
+            ]))
+        ),
+        Ui = Qt.div(
+          Mr ||
+            (Mr = _([
+              "\n  margin-top: 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  width: 80%;\n  margin-right: 30px;\n  text-align: right;\n  background-color: 071c2f;\n\n  h3 {\n    color: #071c2f;\n    font-size: 3rem;\n    letter-spacing: 2px;\n    font-weight: 200;\n    font-weight: 700;\n  }\n  p {\n    margin-top: 1rem;\n    color: black;\n    font-size: 1.8rem;\n    letter-spacing: 2px;\n    font-weight: 700;\n  }\n\n  @media (max-width: 960px) {\n    h3 {\n      font-size: 2.5rem;\n      text-align: center;\n    }\n    p {\n      text-align: center;\n      font-size: 1.2rem;\n      width: 85%;\n    }\n  }\n  @media (max-width: 440px) {\n    margin: 2rem;\n    background-color: transparent;\n    align-items: center;\n    justify-content: end;\n    margin-right: 0px;\n    text-align: center;\n    width: 90%;\n    writing-mode: vertical-lr;\n    transform: rotate(180deg);\n    h3 {\n      color: white;\n      font-size: 2.5rem;\n      text-align: center;\n    }\n\n    p {\n      display: none;\n    }\n  }\n",
+            ]))
+        );
+      var Hi,
+        Vi,
+        Gi,
+        Yi,
+        Qi,
+        Zi,
+        _i,
+        qi = function (e) {
+          return (0, un.jsx)(Ji, {
+            children: (0, un.jsxs)("div", {
               onClick: e.handleClick,
               className: "icon nav-icon-5 ".concat(e.clicked ? "open" : ""),
               children: [
-                (0, dn.jsx)("span", {}),
-                (0, dn.jsx)("span", {}),
-                (0, dn.jsx)("span", {}),
+                (0, un.jsx)("span", {}),
+                (0, un.jsx)("span", {}),
+                (0, un.jsx)("span", {}),
               ],
             }),
           });
         },
-        Fi = Qt.div(
-          Tr ||
-            (Tr = _([
+        Ji = Qt.div(
+          Ir ||
+            (Ir = _([
               "\n  /* nav-icon-5 */\n  .nav-icon-5 {\n    width: 30px;\n    height: 30px;\n    margin: 10px 10px;\n    position: relative;\n    cursor: pointer;\n    display: inline-block;\n  }\n  .nav-icon-5 span {\n    background-color: #ffc0bc;\n    position: absolute;\n    border-radius: 2px;\n    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);\n    width: 100%;\n    height: 3px;\n    transition-duration: 500ms;\n  }\n  .nav-icon-5 span:nth-child(1) {\n    top: 0px;\n    left: 0px;\n  }\n  .nav-icon-5 span:nth-child(2) {\n    top: 13px;\n    left: 0px;\n    opacity: 1;\n  }\n  .nav-icon-5 span:nth-child(3) {\n    bottom: 0px;\n    left: 0px;\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(1) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(2) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(3) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5.open span:nth-child(1) {\n    transform: rotate(45deg);\n    background-color: #ffc0bc;\n    top: 13px;\n  }\n  .nav-icon-5.open span:nth-child(2) {\n    opacity: 0;\n  }\n  .nav-icon-5.open span:nth-child(3) {\n    transform: rotate(-45deg);\n    top: 13px;\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Bi = n(5667),
-        Wi = n(9356),
-        Ui = n(6129),
-        Hi = function () {
-          return (0, dn.jsx)(dn.Fragment, {
-            children: (0, dn.jsxs)(Vi, {
+        Xi = n(5667),
+        Ki = n(9356),
+        $i = n(6129),
+        ea = function () {
+          return (0, un.jsx)(un.Fragment, {
+            children: (0, un.jsxs)(ta, {
               children: [
-                (0, dn.jsxs)(Gi, {
+                (0, un.jsxs)(na, {
                   children: [
-                    (0, dn.jsxs)(Yi, {
+                    (0, un.jsxs)(ra, {
                       children: [
-                        (0, dn.jsx)("img", { src: Ui, alt: "logo-afymos" }),
-                        (0, dn.jsx)("h1", { children: "Afymos" }),
+                        (0, un.jsx)("img", { src: $i, alt: "logo-afymos" }),
+                        (0, un.jsx)("h1", { children: "Afymos" }),
                       ],
                     }),
-                    (0, dn.jsxs)(Qi, {
+                    (0, un.jsxs)(ia, {
                       children: [
-                        (0, dn.jsx)("h2", {
+                        (0, un.jsx)("h2", {
                           children:
                             '"Dadme un punto de apoyo y mover\xe9 el mundo" ',
                         }),
-                        (0, dn.jsx)("i", {
+                        (0, un.jsx)("i", {
                           children: "Arqu\xedmedes Siracoussa.",
                         }),
                       ],
                     }),
                   ],
                 }),
-                (0, dn.jsx)(Zi, {
+                (0, un.jsx)(aa, {
                   style: {
-                    backgroundImage: "url(".concat(Wi, ")"),
+                    backgroundImage: "url(".concat(Ki, ")"),
                     WebkitBackgroundSize: "cover",
                     backgroundPositionY: "center",
                     backgroundPositionX: "center",
@@ -19391,39 +19483,27 @@
             }),
           });
         },
-        Vi = Qt.header(Ti || (Ti = _(["\n  margin: auto;\n"]))),
-        Gi = Qt.div(
-          Li ||
-            (Li = _([
+        ta = Qt.header(Hi || (Hi = _(["\n  margin: auto;\n"]))),
+        na = Qt.div(
+          Vi ||
+            (Vi = _([
               "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #ffc0bc;\n  width: 100%;\n  gap: 1.5rem;\n  margin: 1.5rem auto;\n",
             ]))
         ),
-        Yi = Qt.div(
-          Mi ||
-            (Mi = _([
+        ra = Qt.div(
+          Gi ||
+            (Gi = _([
               "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size: 5rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
             ]))
         ),
-        Qi = Qt.div(
-          Ii ||
-            (Ii = _([
+        ia = Qt.div(
+          Yi ||
+            (Yi = _([
               "\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n  justify-content: end;\n  gap: 1rem;\n\n  h2 {\n    font-size: 2rem;\n    color: #071c2f;\n  }\n\n  i {\n    font-size: 1.5rem;\n    color: #071c2f;\n  }\n  @media (max-width: 440px) {\n    h2 {\n      font-size: 1.4rem;\n    }\n\n    i {\n      font-size: 0.8rem;\n    }\n  }\n",
             ]))
         ),
-        Zi = Qt.section(zi || (zi = _([""])));
-      var _i,
-        qi,
-        Ji,
-        Xi,
-        Ki,
-        $i,
-        ea,
-        ta,
-        na,
-        ra,
-        ia,
-        aa,
-        oa,
+        aa = Qt.section(Qi || (Qi = _([""])));
+      var oa,
         sa,
         la,
         ca,
@@ -19435,43 +19515,57 @@
         ma,
         ga,
         va,
-        ya = function () {
+        ya,
+        ba,
+        Aa,
+        xa,
+        wa,
+        Sa,
+        ka,
+        ja,
+        Ea,
+        Ca,
+        Oa,
+        Pa,
+        Ta,
+        La,
+        Ma = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1],
             i = function () {
               r(!n);
             };
-          return (0, dn.jsxs)(dn.Fragment, {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsxs)(Aa, {
+              (0, un.jsxs)(Ia, {
                 id: "menu-principal",
                 children: [
-                  (0, dn.jsxs)("h3", {
+                  (0, un.jsxs)("h3", {
                     children: [
                       "Men\xfa ",
-                      (0, dn.jsx)("span", { children: "Principal" }),
+                      (0, un.jsx)("span", { children: "Principal" }),
                     ],
                   }),
-                  (0, dn.jsxs)("div", {
+                  (0, un.jsxs)("div", {
                     className: "links ".concat(n ? "active" : ""),
                     children: [
-                      (0, dn.jsx)(vn, {
+                      (0, un.jsx)(gn, {
                         onClick: i,
                         to: "/nosotros",
                         children: "nosotros",
                       }),
-                      (0, dn.jsx)(vn, {
+                      (0, un.jsx)(gn, {
                         onClick: i,
                         to: "/terapias",
                         children: "terapias",
                       }),
-                      (0, dn.jsx)(vn, {
+                      (0, un.jsx)(gn, {
                         onClick: i,
                         to: "/donaciones",
                         children: "donaciones",
                       }),
-                      (0, dn.jsx)(Bi.rU, {
+                      (0, un.jsx)(Xi.rU, {
                         to: "contacto",
                         spy: !0,
                         smooth: !0,
@@ -19482,45 +19576,45 @@
                       }),
                     ],
                   }),
-                  (0, dn.jsx)("div", {
+                  (0, un.jsx)("div", {
                     className: "burguer",
-                    children: (0, dn.jsx)(Ni, { clicked: n, handleClick: i }),
+                    children: (0, un.jsx)(qi, { clicked: n, handleClick: i }),
                   }),
-                  (0, dn.jsx)(ba, {
+                  (0, un.jsx)(za, {
                     className: "initial ".concat(n ? " active" : ""),
                   }),
                 ],
               }),
-              (0, dn.jsx)(Hi, {}),
+              (0, un.jsx)(ea, {}),
             ],
           });
         },
-        Aa = Qt.nav(
-          Ri ||
-            (Ri = _([
+        Ia = Qt.nav(
+          Zi ||
+            (Zi = _([
               "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 5%;\n    font-size: 2.2rem;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 5%;\n    font-weight: 400;\n  }\n\n  @media (max-width: 440px) {\n    h3 {\n      font-size: 1.6rem;\n    }\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #ffc0bc;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 1090px) {\n      background-color: #071c2f;\n      height: 45%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 3rem;\n        margin-top: 5%;\n        color: #ffc0bc;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
             ]))
         ),
-        ba = Qt.div(
-          Di ||
-            (Di = _([
+        za = Qt.div(
+          _i ||
+            (_i = _([
               "\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n  width: 30%;\n  height: 30%;\n  margin-left: 30px;\n  z-index: -1;\n  transition: all 0.8s ease;\n\n  &.active {\n    border-radius: 0 0 80% 0;\n    top: 0;\n    left: 0;\n    width: 50%;\n    height: 50%;\n  }\n",
             ]))
         ),
-        xa = function () {
+        Ra = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1];
-          return (0, dn.jsxs)(dn.Fragment, {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Un, { title: "Proyecto Crea", size: !0 }),
-              (0, dn.jsx)("section", {
-                children: (0, dn.jsx)(wa, {
+              (0, un.jsx)(Wn, { title: "Proyecto Crea", size: !0 }),
+              (0, un.jsx)("section", {
+                children: (0, un.jsx)(Da, {
                   id: "demo",
-                  children: (0, dn.jsxs)(Sa, {
+                  children: (0, un.jsxs)(Na, {
                     children: [
-                      (0, dn.jsx)(ja, {
-                        children: (0, dn.jsx)("iframe", {
+                      (0, un.jsx)(Fa, {
+                        children: (0, un.jsx)("iframe", {
                           width: "570",
                           height: "320",
                           src: "https://www.youtube.com/embed/SJI4HjfxSj8",
@@ -19531,22 +19625,22 @@
                           allowFullScreen: !0,
                         }),
                       }),
-                      (0, dn.jsxs)(ka, {
+                      (0, un.jsxs)(Ba, {
                         children: [
-                          (0, dn.jsx)("p", { children: "Proyecto CREA;" }),
-                          (0, dn.jsx)("p", {
+                          (0, un.jsx)("p", { children: "Proyecto CREA;" }),
+                          (0, un.jsx)("p", {
                             children: "Nuestra filosof\xeda",
                           }),
-                          (0, dn.jsx)("p", {
+                          (0, un.jsx)("p", {
                             children:
                               "Conoce nuestro Programa de Formaci\xf3n y Empleo para personas con alg\xfan tipo de discapacidad en Socu\xe9llamos.",
                           }),
-                          (0, dn.jsx)(vn, {
+                          (0, un.jsx)(gn, {
                             onClick: function () {
                               r(!n);
                             },
                             to: "/proyecto-crea",
-                            children: (0, dn.jsx)(un, {
+                            children: (0, un.jsx)(cn, {
                               transition: { delay: 1, duration: 0.6 },
                               children: "Saber m\xe1s",
                             }),
@@ -19560,233 +19654,353 @@
             ],
           });
         },
-        wa = Qt.div(
-          _i || (_i = _(["\n  width: 100%;\n  background: white;\n"]))
+        Da = Qt.div(
+          oa || (oa = _(["\n  width: 100%;\n  background: white;\n"]))
         ),
-        Sa = Qt.div(
-          qi ||
-            (qi = _([
+        Na = Qt.div(
+          sa ||
+            (sa = _([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 2rem;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        ka = Qt.div(
-          Ji ||
-            (Ji = _([
+        Ba = Qt.div(
+          la ||
+            (la = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    margin-top: 7%;\n    font-size: 2rem;\n    font-style: italic;\n    color: #071c2f;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n    color: #071c2f;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n    color: #071c2f;\n  }\n",
             ]))
         ),
-        ja = Qt.div(Xi || (Xi = _(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
-        Ea = n(8335),
-        Ca = n(8299),
-        Oa = n(5025),
-        Pa = n(1254),
-        Ta = n(587),
-        La = n(5178),
-        Ma = n(4993),
-        Ia = n(3602),
-        za = n(181),
-        Ra = n(9302),
-        Da = [
+        Fa = Qt.div(ca || (ca = _(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
+        Wa = n(8335),
+        Ua = n(8299),
+        Ha = n(5025),
+        Va = n(1254),
+        Ga = n(587),
+        Ya = n(5178),
+        Qa = n(4993),
+        Za = n(3602),
+        _a = n(181),
+        qa = n(9302),
+        Ja = n(4418),
+        Xa = n(3468),
+        Ka = [
           {
             id: 1,
             name: "Centro de Dia",
-            img: Ca,
+            img: Ua,
             alt: "centro-de-dia",
             url: "/centro-de-dia",
           },
           {
             id: 2,
             name: "Servicio de capacitaci\xf3n",
-            img: Ea,
+            img: Wa,
             alt: "servicio-capacitacion",
             url: "/servicio-capacitacion",
           },
           {
             id: 3,
             name: "Viviendas con apoyo",
-            img: n(4418),
+            img: Ja,
             alt: "viviendas-con-apoyo",
             url: "/viviendas-con-apoyo",
           },
           {
             id: 4,
             name: "Centro de Formaci\xf3n",
-            img: Ma,
+            img: Qa,
             alt: "formacion",
             url: "/formacion",
           },
           {
             id: 5,
             name: "Ocio y volunturariado",
-            img: n(3468),
+            img: Xa,
             alt: "ocio-y-voluntariado",
             url: "/ocio-y-voluntariado",
           },
           {
             id: 6,
             name: " Valoraci\xf3n y Diagn\xf3stico",
-            img: Ta,
+            img: Ga,
             alt: "/valoraci\xf3n-y-diagn\xf3stico",
             url: "/valoracion-y-diagnostico",
           },
           {
             id: 7,
             name: "Terapias",
-            img: Ra,
+            img: qa,
             alt: "terapias",
             url: "/terapias",
           },
           {
             id: 8,
             name: " Atenci\xf3n familias",
-            img: La,
+            img: Ya,
             alt: "apoyo-familias",
             url: "/apoyo-familias",
           },
         ],
-        Na = [
+        $a = [
           {
             id: 1,
             name: "Instalaciones Centro",
-            img: Oa,
+            img: Ha,
             alt: "instalaciones-centro-diversidad",
             url: "/instalaciones-centro-diversidad",
           },
           {
             id: 2,
             name: "Organigrama",
-            img: za,
+            img: _a,
             alt: "organigrama",
             url: "/organigrama",
           },
           {
             id: 3,
             name: "Junta Directiva",
-            img: Ia,
+            img: Za,
             alt: "junta-directiva",
             url: "/junta-directiva",
           },
           {
             id: 4,
             name: "Cuentas anuales 2021",
-            img: Pa,
+            img: Va,
             alt: "logo-cuentas-anuales",
             url: "/pdf-cuentas-21",
           },
         ],
-        Fa = function () {
-          var e = t((0, h.useState)(Na), 1)[0];
-          return (0, dn.jsx)(dn.Fragment, {
-            children: (0, dn.jsxs)("section", {
+        eo = function () {
+          var e = t((0, h.useState)($a), 1)[0];
+          return (0, un.jsx)(un.Fragment, {
+            children: (0, un.jsxs)("section", {
               children: [
-                (0, dn.jsx)(Un, { title: "Sobre Nosotros", marginBottom: !0 }),
-                (0, dn.jsx)(Ba, {
+                (0, un.jsx)(Wn, { title: "Sobre Nosotros", marginBottom: !0 }),
+                (0, un.jsx)(to, {
                   children: e.map(function (e) {
                     return (0,
-                    dn.jsx)(Wa, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
+                    un.jsx)(no, { value: e.name, children: (0, un.jsxs)(gn, { to: e.url, children: [(0, un.jsx)("img", { src: e.img, alt: "" }), (0, un.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               ],
             }),
           });
         },
-        Ba = Qt.div(
-          Ki ||
-            (Ki = _([
+        to = Qt.div(
+          ua ||
+            (ua = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  margin-bottom: 4rem;\n",
             ]))
         ),
-        Wa = Qt.div(
-          $i ||
-            ($i = _([
+        no = Qt.div(
+          da ||
+            (da = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ua = function () {
-          var e = t((0, h.useState)(Da), 1)[0];
-          return (0, dn.jsxs)(dn.Fragment, {
+        ro = function () {
+          var e = t((0, h.useState)(Ka), 1)[0];
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Un, {
+              (0, un.jsx)(Wn, {
                 title: "Servicios",
                 inverse: !0,
                 size: !0,
                 marginBottom: !0,
               }),
-              (0, dn.jsx)("section", {
-                children: (0, dn.jsx)(Ha, {
+              (0, un.jsx)("section", {
+                children: (0, un.jsx)(io, {
                   children: e.map(function (e) {
                     return (0,
-                    dn.jsx)(Va, { value: e.name, children: (0, dn.jsxs)(vn, { to: e.url, children: [(0, dn.jsx)("img", { src: e.img, alt: "" }), (0, dn.jsx)("h3", { children: e.name })] }) }, e.id);
+                    un.jsx)(ao, { value: e.name, children: (0, un.jsxs)(gn, { to: e.url, children: [(0, un.jsx)("img", { src: e.img, alt: "" }), (0, un.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               }),
             ],
           });
         },
-        Ha = Qt.div(
-          ea ||
-            (ea = _([
+        io = Qt.div(
+          fa ||
+            (fa = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n  margin: 2rem auto;\n",
             ]))
         ),
-        Va = Qt.div(
-          ta ||
-            (ta = _([
+        ao = Qt.div(
+          pa ||
+            (pa = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Ga = n(4830),
-        Ya = n(6219),
-        Qa = n(8413),
-        Za = function () {
-          return (0, dn.jsx)(_a, {
-            id: "testimonios",
-            children: (0, dn.jsxs)(qa, {
+        oo = function (e) {
+          var t = e.item,
+            n = t.cover,
+            r = t.alt,
+            i = t.title;
+          return (0, un.jsx)(un.Fragment, {
+            children: (0, un.jsxs)("div", {
+              className: "MovieBox",
               children: [
-                (0, dn.jsx)(Un, { title: "Historias reales", inverse: !0 }),
-                (0, dn.jsxs)(Ja, {
+                (0, un.jsx)("div", {
+                  className: "img",
+                  children: (0, un.jsx)("img", { src: n, alt: r }),
+                }),
+                (0, un.jsx)("div", {
+                  className: "text",
+                  children: (0, un.jsx)("h3", { children: i }),
+                }),
+              ],
+            }),
+          });
+        },
+        so = function (e) {
+          var t = e.onClick;
+          return (0, un.jsx)("div", {
+            className: "control-btn",
+            onClick: t,
+            children: (0, un.jsx)("button", {
+              className: "next",
+              onClick: t,
+              children: (0, un.jsx)(dr, {
+                "aria-label": "next-picture",
+                focusable: !0,
+                size: 30,
+                color: "white",
+              }),
+            }),
+          });
+        },
+        lo = function (e) {
+          var t = e.onClick;
+          return (0, un.jsx)("div", {
+            className: "control-btn",
+            onClick: t,
+            children: (0, un.jsx)("button", {
+              className: "prev",
+              onClick: t,
+              children: (0, un.jsx)(ur, {
+                "aria-label": "previous-picture",
+                size: 30,
+                color: "white",
+              }),
+            }),
+          });
+        },
+        co = function (e) {
+          var t = e.slides,
+            n = (e.title, e.id, e.items),
+            r =
+              (e.alt,
+              e.buttons,
+              {
+                dots: !0,
+                infinite: !0,
+                slidesToShow: t,
+                slidesToScroll: 1,
+                nextArrow: (0, un.jsx)(so, {}),
+                prevArrow: (0, un.jsx)(lo, {}),
+                autoplay: !0,
+                speed: 2300,
+                autoplaySpeed: 2300,
+                cssEase: "linear",
+                responsive: [
+                  {
+                    breakpoint: 867,
+                    settings: { slidesToShow: 2, slidesToScroll: 1 },
+                  },
+                  {
+                    breakpoint: 440,
+                    settings: { slidesToShow: 1, slidesToScroll: 1 },
+                  },
+                ],
+              });
+          return (0, un.jsx)(un.Fragment, {
+            children: (0, un.jsxs)(uo, {
+              children: [
+                (0, un.jsx)(Wn, { title: "Somos Campeones", inverse: !0 }),
+                (0, un.jsxs)(fo, {
                   children: [
-                    (0, dn.jsxs)(Xa, {
+                    (0, un.jsx)("div", { className: "heading flexSB" }),
+                    (0, un.jsx)("div", {
+                      className: "content",
+                      children: (0, un.jsx)(
+                        Si.Z,
+                        G(
+                          G({}, r),
+                          {},
+                          {
+                            children: n.map(function (e) {
+                              return (0,
+                              un.jsx)(un.Fragment, { children: (0, un.jsx)(oo, { item: e, alt: e.alt }, e.id) });
+                            }),
+                          }
+                        )
+                      ),
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          });
+        },
+        uo = Qt.section(
+          ha ||
+            (ha = _(["\n  margin: 10% auto;\n  background-color: #ffc0bc;\n"]))
+        ),
+        fo = Qt.div(
+          ma || (ma = _(["\n  max-width: 90%;\n  margin: 5% auto;\n"]))
+        ),
+        po = n(4830),
+        ho = n(6219),
+        mo = n(8413),
+        go = function () {
+          return (0, un.jsx)(vo, {
+            id: "testimonios",
+            children: (0, un.jsxs)(yo, {
+              children: [
+                (0, un.jsx)(Wn, { title: "Historias reales", inverse: !0 }),
+                (0, un.jsxs)(bo, {
+                  children: [
+                    (0, un.jsxs)(Ao, {
                       children: [
-                        (0, dn.jsx)("img", { src: Ga, alt: "rafa" }),
-                        (0, dn.jsx)("p", {
+                        (0, un.jsx)("img", { src: po, alt: "rafa" }),
+                        (0, un.jsx)("p", {
                           children:
                             "Gracias al trabajo, Rafael adquir\xf3 nuevas rutinas, cambiando sus h\xe1bitos y asumiendo nuevas responsabilidades, esto le ha permitido permitido cambiar su horizonte vital.",
                         }),
-                        (0, dn.jsx)("p", {
-                          children: (0, dn.jsx)("span", { children: "Rafa" }),
+                        (0, un.jsx)("p", {
+                          children: (0, un.jsx)("span", { children: "Rafa" }),
                         }),
-                        (0, dn.jsx)("p", {
+                        (0, un.jsx)("p", {
                           children: "Trabajador en Destrupapper",
                         }),
                       ],
                     }),
-                    (0, dn.jsxs)(Xa, {
+                    (0, un.jsxs)(Ao, {
                       children: [
-                        (0, dn.jsx)("img", { src: Ya, alt: "quico" }),
-                        (0, dn.jsx)("p", {
+                        (0, un.jsx)("img", { src: ho, alt: "quico" }),
+                        (0, un.jsx)("p", {
                           children:
                             "Quico, quien tras varios contratos temporales, pas\xf3 a ser indefinido. Logr\xf3 la primera inserci\xf3n socio-laboral, con la estabilidad que ello supon\xeda para \xe9l, abri\xe9ndole a su vez la puerta a conseguir otros objetivos para mejorar su calidad de vida, por ejemplo independizarse.",
                         }),
-                        (0, dn.jsx)("p", {
-                          children: (0, dn.jsx)("span", { children: "Quico" }),
+                        (0, un.jsx)("p", {
+                          children: (0, un.jsx)("span", { children: "Quico" }),
                         }),
-                        (0, dn.jsx)("p", {
+                        (0, un.jsx)("p", {
                           children: "Trabajador en Cabezuelo Foods",
                         }),
                       ],
                     }),
-                    (0, dn.jsxs)(Xa, {
+                    (0, un.jsxs)(Ao, {
                       children: [
-                        (0, dn.jsx)("img", { src: Qa, alt: "pedro" }),
-                        (0, dn.jsx)("p", {
+                        (0, un.jsx)("img", { src: mo, alt: "pedro" }),
+                        (0, un.jsx)("p", {
                           children:
                             "En la misma l\xednea de trabajo, el objetivo laboral de Pedro es trabajar lijando. Por ello, La empresa Arte Religioso Salmer\xf3n, le abri\xf3 sus puertas mediante unas pr\xe1cticas laborales para corroborar si sus habilidades y capacidades eran compatibles con el puesto de trabajo.",
                         }),
-                        (0, dn.jsx)("p", {
-                          children: (0, dn.jsx)("span", { children: "Pedro" }),
+                        (0, un.jsx)("p", {
+                          children: (0, un.jsx)("span", { children: "Pedro" }),
                         }),
-                        (0, dn.jsx)("p", {
+                        (0, un.jsx)("p", {
                           children: "Trabajador en Arte Religioso Salmer\xf3n",
                         }),
                       ],
@@ -19797,50 +20011,61 @@
             }),
           });
         },
-        _a = Qt.div(
-          na || (na = _(["\n  width: 100%;\n  background-color: white;\n"]))
+        vo = Qt.div(
+          ga || (ga = _(["\n  width: 100%;\n  background-color: white;\n"]))
         ),
-        qa = Qt.div(
-          ra ||
-            (ra = _([
+        yo = Qt.div(
+          va ||
+            (va = _([
               "\n  padding: 5%;\n  h2 {\n    font-size: 3rem;\n    text-align: center;\n  }\n\n  @media (max-width: 940px) {\n    width: 100%;\n  }\n",
             ]))
         ),
-        Ja = Qt.div(
-          ia ||
-            (ia = _([
+        bo = Qt.div(
+          ya ||
+            (ya = _([
               "\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 20px;\n  margin: 4rem 0;\n\n  @media (max-width: 940px) {\n    grid-template-columns: 1fr;\n  }\n",
             ]))
         ),
-        Xa = Qt.div(
-          aa ||
-            (aa = _([
+        Ao = Qt.div(
+          ba ||
+            (ba = _([
               "\n  border: 1px solid #eee;\n  border-radius: 8px;\n  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);\n  padding: 1rem;\n  line-height: 2rem;\n\n  img {\n    height: 100px;\n    border-radius: 50px;\n    margin-top: -2rem;\n    margin-left: 35%;\n  }\n\n  p {\n    font-size: 1.2rem;\n    margin: 12px;\n    font-weight: 500;\n  }\n\n  span {\n    font-size: 1rem;\n    font-weight: 900;\n    color: grey;\n  }\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    margin: 1rem;\n  }\n",
             ]))
         ),
-        Ka = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        xo = function () {
+          var e = t((0, h.useState)(wi), 1)[0];
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(ya, {}),
-              (0, dn.jsx)(Ua, {}),
-              (0, dn.jsx)(Fa, {}),
-              (0, dn.jsx)(Pi, G({}, oi)),
-              (0, dn.jsx)(xa, {}),
-              (0, dn.jsx)(Za, {}),
-              (0, dn.jsx)(Pi, G({}, si)),
-              (0, dn.jsx)(Pi, G({}, li)),
-              (0, dn.jsx)(wi, {}),
-              (0, dn.jsx)(Ei, {}),
-              (0, dn.jsx)(Kn, { size: !0, inverse: !0, marginBottom: !0 }),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(Ma, {}),
+              (0, un.jsx)(ro, {}),
+              (0, un.jsx)(eo, {}),
+              (0, un.jsx)(Ni, G({}, ci)),
+              (0, un.jsx)(Ra, {}),
+              (0, un.jsx)(go, {}),
+              (0, un.jsx)(Ni, G({}, ui)),
+              (0, un.jsx)(Ni, G({}, di)),
+              (0, un.jsx)("div", {
+                className: "App",
+                children: (0, un.jsx)(Ti, {}),
+              }),
+              (0, un.jsx)(Fi, {}),
+              (0, un.jsx)(co, {
+                items: e,
+                title: "Our Drinks & Cocktails",
+                slides: 3,
+                datas: wi,
+              }),
+              (0, un.jsx)(zi, {}),
+              (0, un.jsx)(Xn, { size: !0, inverse: !0, marginBottom: !0 }),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        $a = n(4534),
-        eo = n(5629),
-        to = n(543),
-        no = {
+        wo = n(4534),
+        So = n(5629),
+        ko = n(543),
+        jo = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra entidad" },
@@ -19848,9 +20073,9 @@
             "AFYMOS fue fundada en el a\xf1o 1991 y los fines que perseguimos seg\xfan nuestros estatutos son:",
           description:
             "Los fines que la Asociaci\xf3n persigue son de car\xe1cter c\xedvico y social, de promoci\xf3n de los valores constitucionales y de los derechos humanos de las personas con discapacidad intelectual, f\xedsica o sensorial.  ",
-          img: $a,
+          img: wo,
         },
-        ro = {
+        Eo = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n" },
@@ -19858,9 +20083,9 @@
             "La Misi\xf3n de Afymos es contribuir, desde su compromiso \xe9tico, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de vida:",
           description:
             "En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan m\xe1s oportunidades de participar en la sociedad. ",
-          img: eo,
+          img: So,
         },
-        io = {
+        Co = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Compromiso \xe9tico y valores" },
@@ -19868,16 +20093,16 @@
             "Para conseguir estas oportunidades, defendemos sus derechos como ciudadanos plenos, y reivindicamos una sociedad m\xe1s justa y solidaria.",
           description:
             "Todo esto no podemos hacerlo de cualquier manera, sino que tiene que estar orientado por nuestro compromiso \xe9tico, por nuestros valores y en la forma de intervenci\xf3n que est\xe1 basada en el Modelo de  Calidad de Calidad de Vida de Schalock y Verdugo.",
-          img: to,
+          img: ko,
         },
-        ao = function (e) {
-          return (0, dn.jsx)(oo, {
+        Oo = function (e) {
+          return (0, un.jsx)(Po, {
             id: "demo",
-            children: (0, dn.jsxs)(so, {
+            children: (0, un.jsxs)(To, {
               wrapReverse: e,
               children: [
-                (0, dn.jsx)(co, {
-                  children: (0, dn.jsx)("iframe", {
+                (0, un.jsx)(Mo, {
+                  children: (0, un.jsx)("iframe", {
                     width: "570",
                     height: "320",
                     src: "https://www.youtube.com/embed/70xM5Dvf5Bk",
@@ -19888,14 +20113,14 @@
                     allowFullScreen: !0,
                   }),
                 }),
-                (0, dn.jsxs)(lo, {
+                (0, un.jsxs)(Lo, {
                   children: [
-                    (0, dn.jsx)("p", { children: "Un d\xeda en Afymos" }),
-                    (0, dn.jsx)("p", {
+                    (0, un.jsx)("p", { children: "Un d\xeda en Afymos" }),
+                    (0, un.jsx)("p", {
                       children:
                         "Queremos visibilizar el trabajo diario que realizamos ",
                     }),
-                    (0, dn.jsx)("p", {
+                    (0, un.jsx)("p", {
                       children:
                         "Con el fin de mejorar la calidad de vida de las personas con Discapacidad",
                     }),
@@ -19905,40 +20130,40 @@
             }),
           });
         },
-        oo = Qt.div(
-          oa ||
-            (oa = _([
+        Po = Qt.div(
+          Aa ||
+            (Aa = _([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        so = Qt.div(
-          sa ||
-            (sa = _([
+        To = Qt.div(
+          xa ||
+            (xa = _([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        lo = Qt.div(
-          la ||
-            (la = _([
+        Lo = Qt.div(
+          wa ||
+            (wa = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n\n  p:nth-child(1) {\n    font-size: 1.8rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.2rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        co = Qt.div(ca || (ca = _(["\n  margin: auto;\n"]))),
-        uo = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Mo = Qt.div(Sa || (Sa = _(["\n  margin: auto;\n"]))),
+        Io = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Sn, { title: "Nosotros" }),
-              (0, dn.jsx)(Un, { title: "Nuestra Entidad", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, no), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ro), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, io), {}, { inverse: !0 })),
-              (0, dn.jsx)(ao, { wrapReverse: !0 }),
-              (0, dn.jsx)(Kn, { inverse: !0 }),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(wn, { title: "Nosotros" }),
+              (0, un.jsx)(Wn, { title: "Nuestra Entidad", size: !0 }),
+              (0, un.jsx)(dn, G(G({}, jo), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Eo), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Co), {}, { inverse: !0 })),
+              (0, un.jsx)(Oo, { wrapReverse: !0 }),
+              (0, un.jsx)(Xn, { inverse: !0 }),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        fo = {
+        zo = {
           id: "politicaPrivacidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -19948,7 +20173,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) con CIF G13159173 y domicilio social en CL. PEDRO ARIAS, 87 C.P. 13630 de SOCUELLAMOS (CIUDAD REAL), con direcci\xf3n de correo afymos@gmail.com",
           img: "",
         },
-        po = {
+        Ro = {
           id: "politicaPrivacidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -19958,7 +20183,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) garantiza en todo momento el \xedntegro y pleno cumplimiento de las obligaciones dispuestas por la normativa de protecci\xf3n de datos y de servicios de la sociedad de la informaci\xf3n, as\xed como por cualquier otra Ley o norma que complemente o sustituya a las anteriores.",
           img: "",
         },
-        ho = {
+        Do = {
           id: "politicaPrivacidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -19969,23 +20194,23 @@
             "Para impulsar la asistencia social, promoci\xf3n y asesoramiento a discapacitados as\xed como a sus familiares, fomentar la igualdad de oportunidades entre personas con discapacidad y sin ella.  Para gestionar la formaci\xf3n ocupacional dirigida a su inserci\xf3n laboral, programas para garantizar la autonom\xeda personal, terapias rehabilitadoras, as\xed como llevar a cabo cualquier otra actividad formativa o l\xfadica en beneficio de los miembros de nuestra Asociaci\xf3n.Para prestar el apoyo y la atenci\xf3n que necesitan los residentes de las viviendas, como ser\xeda la formaci\xf3n orientada al desarrollo de la autonom\xeda en la vivienda, ayudar a desarrollar sus habilidades en su d\xeda a d\xeda, apoyos y cuidados de car\xe1cter m\xe9dico-sanitario, actuaciones para promover el desarrollo psico-social, as\xed como participar en los talleres y dem\xe1s actividades que lleva a cabo el centro teniendo en cuenta sus caracter\xedsticas y condiciones.Para asesorar y orientar a los socios y sus familias, as\xed como cualquier otra acci\xf3n que forme, informe o divulgue sobre cualquier aspecto que ata\xf1a a los intereses de los asociados. Como llevar a cabo la correspondiente gesti\xf3n administrativa derivada de estas actuaciones. Para impartir formaci\xf3n tanto a personas con discapacidad intelectual as\xed como a profesionales relacionados con el sector. Para responder cualquier consulta a trav\xe9s del tel\xe9fono, correo electr\xf3nico o medios de comunicaci\xf3n electr\xf3nica, de la misma manera poder resolver cualquier duda, sugerencia, queja, reclamaci\xf3n, etc. relacionada con nuestros servicios, que puedan realizar a trav\xe9s de cualquier formulario dispuesto en nuestras instalaciones. Para gestionar la relaci\xf3n con los voluntarios y llevar a cabo las acciones oportunas. Para el mantenimiento de las relaciones con clientes, como ser\xeda, por ejemplo, la compra de productos de AFYMOS y la consiguiente gesti\xf3n derivada de la misma. Para gestionar las donaciones recibidas por esta Asociaci\xf3n y la correspondiente gesti\xf3n administrativa con estos donantes.Para el tratamiento de los datos personales de empresarios individuales y personas de contacto de empresas en su mantenimiento de relaciones, independientemente de que sean comerciales/transaccionales o no. Para gestionar los curr\xedculum vitae recibidos y poder as\xed participar en los diferentes procesos de selecci\xf3n de personal que se lleven a cabo en la entidad..",
           img: "",
         },
-        mo = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        No = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "politica Privacidad" }),
-              (0, dn.jsx)(Un, { title: "Cookies y Privacidad", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, fo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, po), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ho), {}, { inverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "politica Privacidad" }),
+              (0, un.jsx)(Wn, { title: "Cookies y Privacidad", size: !0 }),
+              (0, un.jsx)(dn, G(G({}, zo), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ro), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Do), {}, { inverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        go = n(6493),
-        vo = n(5900),
-        yo = {
+        Bo = n(6493),
+        Fo = n(5900),
+        Wo = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "El Servicio de Capacitaci\xf3n Afymos" },
@@ -19993,9 +20218,9 @@
             "Es un servicio de atenci\xf3n diurna que tiene como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
           description:
             "Facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones).",
-          img: go,
+          img: Bo,
         },
-        Ao = {
+        Uo = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -20005,28 +20230,28 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodolog\xeda detrabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          img: vo,
+          img: Fo,
         },
-        bo = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Ho = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Servicio de Capacitaci\xf3n" }),
-              (0, dn.jsx)(Un, {
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Servicio de Capacitaci\xf3n" }),
+              (0, un.jsx)(Wn, {
                 title: "Programa habilitaci\xf3n laboral",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, yo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ao), {}, { reverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(dn, G(G({}, Wo), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Uo), {}, { reverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        xo = n(3494),
-        wo = n(843),
-        So = n(6808),
-        ko = {
+        Vo = n(3494),
+        Go = n(843),
+        Yo = n(6808),
+        Qo = {
           id: "centroDiaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20035,9 +20260,9 @@
             "El Centro de D\xeda Afymos es un recurso social de atenci\xf3n diurna dirigido a prestar atenci\xf3n especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
           description:
             "Favorecemos la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente \xedndole, temporales o permanentes, de diferente intensidad y frecuencia.",
-          img: xo,
+          img: Vo,
         },
-        jo = {
+        Zo = {
           id: "centroDiaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20048,9 +20273,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Fomentamos la participaci\xf3n en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social,  contribuyendo a mejorar su calidad de vida. ",
-          img: wo,
+          img: Go,
         },
-        Eo = {
+        _o = {
           id: "centroDiaDataThree",
           reverse: !1,
           inverse: !1,
@@ -20061,26 +20286,26 @@
             "Dise\xf1amos un plan personal de apoyos y su plan de futuro personal, donde se recogen los principales objetivos a conseguir en diferentes \xe1mbitos de su vida",
           description:
             "Potencionamos la utilizaci\xf3n de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
-          img: So,
+          img: Yo,
         },
-        Co = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        qo = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Centro de D\xeda" }),
-              (0, dn.jsx)(Un, { title: "Nuestro Centro de d\xeda", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, ko), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, jo), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Eo), {}, { inverse: !0 })),
-              (0, dn.jsx)(Kn, { size: !0, inverse: !0, marginBottom: !0 }),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Centro de D\xeda" }),
+              (0, un.jsx)(Wn, { title: "Nuestro Centro de d\xeda", size: !0 }),
+              (0, un.jsx)(dn, G(G({}, Qo), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Zo), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, _o), {}, { inverse: !0 })),
+              (0, un.jsx)(Xn, { size: !0, inverse: !0, marginBottom: !0 }),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        Oo = n(4441),
-        Po = n(3208),
-        To = n(4058),
-        Lo = {
+        Jo = n(4441),
+        Xo = n(3208),
+        Ko = n(4058),
+        $o = {
           id: "centroDiversidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -20089,9 +20314,9 @@
             "Cuenta con espacio \xfatil de 803,16 m\xb2 dividido en dos plantas.",
           description:
             "Dispone de unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el a\xf1o obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun as\xed seguiremos adapt\xe1ndolo para favorecer la orientaci\xf3n y la comunicaci\xf3n para personas con especiales dificultades en estos aspectos.",
-          img: Oo,
+          img: Jo,
         },
-        Mo = {
+        es = {
           id: "centroDiversidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20099,9 +20324,9 @@
           headline:
             "Contamos con numerosas salas adaptadas para llevar a cabo todos los servicios terapeuticos y de formaci\xf3n que ofrecemos",
           description: " ",
-          img: To,
+          img: Ko,
         },
-        Io = {
+        ts = {
           id: "centroDiversidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -20109,71 +20334,71 @@
           headline: "Centro de Atenci\xf3n a la Diversidad Funcional",
           description:
             "Obt\xe9n informaci\xf3n de todos los Servicios que ofertamos.",
-          img: Po,
+          img: Xo,
         },
-        zo = n(737),
-        Ro = n(8919),
-        Do = n(9002),
-        No = n(1197),
-        Fo = n(556),
-        Bo = function (e) {
-          return (0, dn.jsx)(dn.Fragment, {
-            children: (0, dn.jsx)("section", {
-              children: (0, dn.jsxs)("div", {
+        ns = n(737),
+        rs = n(8919),
+        is = n(9002),
+        as = n(1197),
+        os = n(556),
+        ss = function (e) {
+          return (0, un.jsx)(un.Fragment, {
+            children: (0, un.jsx)("section", {
+              children: (0, un.jsxs)("div", {
                 class: "container-all",
                 children: [
-                  (0, dn.jsx)("input", {
+                  (0, un.jsx)("input", {
                     type: "radio",
                     id: "1",
                     name: "image-slide",
                     hidden: !0,
                   }),
-                  (0, dn.jsx)("input", {
+                  (0, un.jsx)("input", {
                     type: "radio",
                     id: "2",
                     name: "image-slide",
                     hidden: !0,
                   }),
-                  (0, dn.jsx)("input", {
+                  (0, un.jsx)("input", {
                     type: "radio",
                     id: "3",
                     name: "image-slide",
                     hidden: !0,
                   }),
-                  (0, dn.jsxs)("div", {
+                  (0, un.jsxs)("div", {
                     class: "slide",
                     children: [
-                      (0, dn.jsx)("div", {
+                      (0, un.jsx)("div", {
                         class: "item-slide",
-                        children: (0, dn.jsx)("img", { src: zo, alt: e.alt }),
+                        children: (0, un.jsx)("img", { src: ns, alt: e.alt }),
                       }),
-                      (0, dn.jsx)("div", {
+                      (0, un.jsx)("div", {
                         class: "item-slide",
-                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
+                        children: (0, un.jsx)("img", { src: rs, alt: e.alt }),
                       }),
-                      (0, dn.jsx)("div", {
+                      (0, un.jsx)("div", {
                         class: "item-slide",
-                        children: (0, dn.jsx)("img", { src: Do, alt: e.alt }),
+                        children: (0, un.jsx)("img", { src: is, alt: e.alt }),
                       }),
                     ],
                   }),
-                  (0, dn.jsxs)("div", {
+                  (0, un.jsxs)("div", {
                     class: "pagination",
                     children: [
-                      (0, dn.jsx)("label", {
+                      (0, un.jsx)("label", {
                         class: "pagination-item",
                         for: "1",
-                        children: (0, dn.jsx)("img", { src: Ro, alt: e.alt }),
+                        children: (0, un.jsx)("img", { src: rs, alt: e.alt }),
                       }),
-                      (0, dn.jsx)("label", {
+                      (0, un.jsx)("label", {
                         class: "pagination-item",
                         for: "2",
-                        children: (0, dn.jsx)("img", { src: No, alt: e.alt }),
+                        children: (0, un.jsx)("img", { src: as, alt: e.alt }),
                       }),
-                      (0, dn.jsx)("label", {
+                      (0, un.jsx)("label", {
                         class: "pagination-item",
                         for: "3",
-                        children: (0, dn.jsx)("img", { src: Fo, alt: e.alt }),
+                        children: (0, un.jsx)("img", { src: os, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20182,27 +20407,27 @@
             }),
           });
         },
-        Wo = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        ls = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Nuestro Centro" }),
-              (0, dn.jsx)(Un, {
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Nuestro Centro" }),
+              (0, un.jsx)(Wn, {
                 title: "Centro de atenci\xf3n a la Diversidad Funcional",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, Lo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Mo), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Io), {}, { inverse: !0 })),
-              (0, dn.jsx)(Bo, {}),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(dn, G(G({}, $o), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, es), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, ts), {}, { inverse: !0 })),
+              (0, un.jsx)(ss, {}),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        Uo = n(6281),
-        Ho = n(6627),
-        Vo = {
+        cs = n(6281),
+        us = n(6627),
+        ds = {
           id: "creaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20211,9 +20436,9 @@
             "Financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
           description:
             "Desde 2017, nuestra Asociaci\xf3n es entidad promotora del Proyecto NUEVO CREA, programa dual de formaci\xf3n y empleo para personas con discapacidad intelectual.",
-          img: Uo,
+          img: cs,
         },
-        Go = {
+        fs = {
           id: "creaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20222,25 +20447,25 @@
             "Durante 6 meses, de abril a septiembre, 8 personas con discapacidad trabajan en 7 empresas locales;",
           description:
             "Colegio Concertado Virgen de Loreto, Cabezuelo Foods, Grupo Asesor OTS, Josmoral, Transportes F\xe9lix e hijos, Cooperativa Cristo de la Vega y Afymos Asociaci\xf3n, con un contrato de formaci\xf3n en alternancia con el empleo. Simult\xe1neamente, se imparte una especialidad formativa de \u201cOperaciones Auxiliares en el Departamento de Administraci\xf3n y Recepci\xf3n para Personas con Discapacidad Intelectual\u201d.",
-          img: Ho,
+          img: us,
         },
-        Yo = function () {
-          return (0, dn.jsx)(Qo, {
+        ps = function () {
+          return (0, un.jsx)(hs, {
             id: "demo",
-            children: (0, dn.jsxs)(Zo, {
+            children: (0, un.jsxs)(ms, {
               children: [
-                (0, dn.jsxs)(_o, {
+                (0, un.jsxs)(gs, {
                   children: [
-                    (0, dn.jsx)("p", { children: "Proyecto CREA;" }),
-                    (0, dn.jsx)("p", { children: "Nuestra filosof\xeda" }),
-                    (0, dn.jsx)("p", {
+                    (0, un.jsx)("p", { children: "Proyecto CREA;" }),
+                    (0, un.jsx)("p", { children: "Nuestra filosof\xeda" }),
+                    (0, un.jsx)("p", {
                       children:
                         "Conoce nuestro Programa de Formaci\xf3n y Empleo para personas con alg\xfan tipo de discapacidad en Socu\xe9llamos.",
                     }),
                   ],
                 }),
-                (0, dn.jsx)(qo, {
-                  children: (0, dn.jsx)("iframe", {
+                (0, un.jsx)(vs, {
+                  children: (0, un.jsx)("iframe", {
                     width: "570",
                     height: "320",
                     src: "https://www.youtube.com/embed/ZrI1CD7kdjQ",
@@ -20255,42 +20480,42 @@
             }),
           });
         },
-        Qo = Qt.div(
-          ua ||
-            (ua = _([
+        hs = Qt.div(
+          ka ||
+            (ka = _([
               "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
             ]))
         ),
-        Zo = Qt.div(
-          da ||
-            (da = _([
+        ms = Qt.div(
+          ja ||
+            (ja = _([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        _o = Qt.div(
-          fa ||
-            (fa = _([
+        gs = Qt.div(
+          Ea ||
+            (Ea = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    font-size: 2rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        qo = Qt.div(pa || (pa = _(["\n  margin: auto;\n"]))),
-        Jo = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        vs = Qt.div(Ca || (Ca = _(["\n  margin: auto;\n"]))),
+        ys = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Proyecto CREA 2023" }),
-              (0, dn.jsx)(fn, G(G({}, Vo), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Go), {}, { reverse: !0 })),
-              (0, dn.jsx)(Yo, {}),
-              (0, dn.jsx)(Kn, { inverse: !0 }),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Proyecto CREA 2023" }),
+              (0, un.jsx)(dn, G(G({}, ds), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, fs), {}, { reverse: !0 })),
+              (0, un.jsx)(ps, {}),
+              (0, un.jsx)(Xn, { inverse: !0 }),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        Xo = n(6450),
-        Ko = n(7878),
-        $o = n(3960),
-        es = {
+        bs = n(6450),
+        As = n(7878),
+        xs = n(3960),
+        ws = {
           id: "diagnosticoDataOne",
           reverse: !1,
           inverse: !1,
@@ -20299,9 +20524,9 @@
             "Este servicio valora con tests estandarizados y pruebas psicom\xe9tricas.",
           description:
             "\xc9stas pruebas objetivas se realizan en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia",
-          img: Xo,
+          img: bs,
         },
-        ts = {
+        Ss = {
           id: "diagnosticoDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20309,9 +20534,9 @@
           headline: "\xbfC\xf3mo trabajamos?",
           description:
             "Se realizan valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
-          img: $o,
+          img: xs,
         },
-        ns = {
+        ks = {
           id: "diagnosticoDataThree",
           reverse: !1,
           inverse: !1,
@@ -20319,22 +20544,22 @@
           headline: "Poner nombre a las necesidades de las personas",
           description:
             "Para ello, nuestros profesionales realizan una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
-          img: Ko,
+          img: As,
         },
-        rs = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        js = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Valoraci\xf3n y diagnostico" }),
-              (0, dn.jsx)(fn, G(G({}, es), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ts), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ns), {}, { inverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Valoraci\xf3n y diagnostico" }),
+              (0, un.jsx)(dn, G(G({}, ws), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ss), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, ks), {}, { inverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        is = {
+        Es = {
           id: "donacionDataOne",
           reverse: !1,
           inverse: !1,
@@ -20351,21 +20576,21 @@
           alt: "ir a ruralvia",
           target: "_blank",
         },
-        as = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Cs = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Donaciones" }),
-              (0, dn.jsx)(Un, { title: "Crecemos contigo", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, is), {}, { inverse: !0 })),
-              (0, dn.jsx)(Kn, { inverse: !0, size: !0 }),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Donaciones" }),
+              (0, un.jsx)(Wn, { title: "Crecemos contigo", size: !0 }),
+              (0, un.jsx)(dn, G(G({}, Es), {}, { inverse: !0 })),
+              (0, un.jsx)(Xn, { inverse: !0, size: !0 }),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        os = n(2451),
-        ss = n(7637),
-        ls = {
+        Os = n(2451),
+        Ps = n(7637),
+        Ts = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20375,33 +20600,33 @@
             "Ofrecemos asesoramiento y apoyo a familias de personas con cualquier tipo de discapacidad",
           description:
             "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas espec\xedficas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
-          img: os,
+          img: Os,
         },
-        cs = {
+        Ls = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
           headline: "Apoyos que presta este servicio:",
           description:
             "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atenci\xf3n psicol\xf3gica, adem\xe1s, proporciamos informaci\xf3n y orientaci\xf3n tras un estudio minucioso sobre las necesidades de cada caso",
-          img: ss,
+          img: Ps,
         },
-        us = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Ms = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Servicio de atenci\xf3n a familias" }),
-              (0, dn.jsx)(Un, { title: "Apoyo a familiares", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, ls), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, cs), {}, { reverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Servicio de atenci\xf3n a familias" }),
+              (0, un.jsx)(Wn, { title: "Apoyo a familiares", size: !0 }),
+              (0, un.jsx)(dn, G(G({}, Ts), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ls), {}, { reverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        ds = n(9140),
-        fs = n(1654),
-        ps = {
+        Is = n(9140),
+        zs = n(1654),
+        Rs = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20411,9 +20636,9 @@
             "Estamos homologados por La Junta de Castilla la Mancha en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
           description:
             "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos a las personas con discapacidad intelectual.",
-          img: ds,
+          img: Is,
         },
-        hs = {
+        Ds = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "PROGRAMA CREA" },
@@ -20421,31 +20646,31 @@
             "Proyecto de formaci\xf3n profesional y empleo en el seno de las empresas para personas con discapacidad.",
           description:
             "Este proyecto consiste en el mejor ejemplo de FORMACI\xd3N DUAL, puesto que combinan formaci\xf3n profesional en el \xe1mbito laboral con trabajo efectivo en la empresa, mediante larealizaci\xf3n de contratos de formaci\xf3n en alternancia.",
-          img: fs,
+          img: zs,
         },
-        ms = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Ns = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, {
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, {
                 title: "Centro de Formaci\xf3n",
                 id: "/formacion",
               }),
-              (0, dn.jsx)(Un, {
+              (0, un.jsx)(Wn, {
                 title: "Fomentamos la formaci\xf3n",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, ps), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, hs), {}, { reverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(dn, G(G({}, Rs), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ds), {}, { reverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        gs = n(3523),
-        vs = n(3977),
-        ys = n(9501),
-        As = {
+        Bs = n(3523),
+        Fs = n(3977),
+        Ws = n(9501),
+        Us = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n: AYUDARTE" },
@@ -20453,9 +20678,9 @@
             "Este programa tiene la finalidad de ofrecer Servicios Terap\xe9uticos de diferentes disciplinas con el fin de mejorar la calidad de vida de las personas.",
           description:
             "Contamos con profesionales de diferentes disciplinas para intervenir seg\xfan las necesidades de los usuarios y actualmente contamos con las los siguientes servicios terap\xe9uticos.",
-          img: xo,
+          img: Vo,
         },
-        bs = {
+        Hs = {
           id: "logopedia",
           reverse: !1,
           inverse: !0,
@@ -20466,9 +20691,9 @@
             "La logopedia es la disciplina sanitaria encargada de la prevenci\xf3n, detecci\xf3n, evaluaci\xf3n,diagn\xf3stico y tratamiento de los trastornos implicados en la comunicaci\xf3n humana",
           description:
             "Realizo una entrevista con la familia y una evaluaci\xf3n inicial de la cual se elabora unos objetivos y se dise\xf1a una programaci\xf3n individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duraci\xf3n de 30-45 minutos, dependiendo de las necesidades de cada paciente.",
-          img: Gr,
+          img: Zr,
         },
-        xs = {
+        Vs = {
           id: "fisioterapia",
           reverse: !1,
           inverse: !1,
@@ -20479,9 +20704,9 @@
             "La fisioterapia  ofrece tratamiento y rehabilitaci\xf3n f\xedsica para diagnosticar, prevenir y tratar s\xedntomas de m\xfaltiples patolog\xedas, tanto agudas como cr\xf3nicas.",
           description:
             "En mi terapia llevo a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizo distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
-          img: Qr,
+          img: qr,
         },
-        ws = {
+        Gs = {
           id: "terapia-ocupacional",
           reverse: !1,
           inverse: !0,
@@ -20492,9 +20717,9 @@
             "La terapia ocupacional consiste en intervenir o rehabilitar a trav\xe9s de un conjunto de actividades dirigidas a personas con problemas f\xedsicos, ps\xedquicos, sensoriales o sociales.",
           description:
             "Enfoco mi trabajo en una intervenci\xf3n significativa con objetivos pautados previamente con la persona y su familia, realizando actividades con prop\xf3sito claro y definido",
-          img: Vr,
+          img: Qr,
         },
-        Ss = {
+        Ys = {
           id: "neuropsicologia",
           reverse: !1,
           inverse: !1,
@@ -20505,9 +20730,9 @@
             "la neuropsicolog\xeda estudia las bases neuroanat\xf3micas en relaci\xf3n alos procesos mentales como: atenci\xf3n, emoci\xf3n, memoria, lenguaje y percepci\xf3n",
           description:
             "Dentro de mi equipo mi funci\xf3n es la de evaluar las capacidades cognitivas  y saber cu\xe1les est\xe1n fallando y cuales est\xe1n \u201ca tope\u201d. Despu\xe9s planteo un programa de entrenamiento, o como otros compa\xf1eros llaman, rehabilitaci\xf3n, para trabajar en la mejora de aquellas \xe1reas que se han quedado da\xf1adas ono se han desarrollado a los niveles esperables para la edad. ",
-          img: gs,
+          img: Bs,
         },
-        ks = {
+        Qs = {
           id: "psicopedagogia",
           reverse: !0,
           inverse: !1,
@@ -20518,9 +20743,9 @@
             "La terapia psicopedag\xf3gica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
           description:
             "Como psicopedagogas\xa0asesoramos, evaluamos y realizamos informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planificamos y dise\xf1amos propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas en el momento de aprender.",
-          img: vs,
+          img: Fs,
         },
-        js = {
+        Zs = {
           id: "auditiva",
           reverse: !1,
           inverse: !1,
@@ -20531,9 +20756,9 @@
             "La terapia de estimulaci\xf3n auditiva SENA es un tratamiento cuyo objetivo es mejorar la percepci\xf3n auditiva de la persona que lo recibe.",
           description:
             "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopat\xeda para comprobar el estado del canal auditivo, audiometr\xeda para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
-          img: Zr,
+          img: Jr,
         },
-        Es = {
+        _s = {
           id: "visual",
           reverse: !1,
           inverse: !1,
@@ -20544,9 +20769,9 @@
             "La terapia visual consiste en la repetici\xf3n de una serie de ejercicios que consiguen crear nuevas conexiones neurol\xf3gicas y mejorar habilidades visuales alteradas.",
           description:
             "Evaluo el desarrollo y funcionamiento de la visi\xf3n desde el nacimiento. Para ello analizo habilidades como la acomodaci\xf3n, binocularidad (visi\xf3n en 3D), movimientos oculares y la percepci\xf3n visual..",
-          img: ys,
+          img: Ws,
         },
-        Cs = {
+        qs = {
           id: "psicologia",
           reverse: !1,
           inverse: !1,
@@ -20557,29 +20782,29 @@
             "Me centro en la psicoeducaci\xf3n y en la reestructuraci\xf3n cognitiva. Busco favorecer los procesos de cambio y toma de decisiones para buscar una situaci\xf3n m\xe1s adaptativa para la persona.",
           description:
             "A nivel psicoeducativo puedo ayudar a las personas a entender sus propios procesos, situaciones personales, patolog\xedas, etc, para facilitar su propia adaptaci\xf3n al medio y mitigar sus estados de ansiedad e incertidumbre.",
-          img: Yr,
+          img: _r,
         },
-        Os = n(3829),
-        Ps = n(775),
-        Ts = n(5950),
-        Ls = n(7353),
-        Ms = n(900),
-        Is = n(8663),
-        zs = "_blank",
-        Rs = [
+        Js = n(3829),
+        Xs = n(775),
+        Ks = n(5950),
+        $s = n(7353),
+        el = n(900),
+        tl = n(8663),
+        nl = "_blank",
+        rl = [
           {
             id: "logopedia",
             name: "Logopedia",
-            src: Ts,
-            target: zs,
+            src: Ks,
+            target: nl,
             alt: "pictograma-logopedia",
             url: "logopedia",
           },
           {
             id: "fisioterapia",
             name: "Fisioterapia",
-            src: Ps,
-            target: zs,
+            src: Xs,
+            target: nl,
             alt: "pictograma-fisioterapia",
             url: "fisioterapia",
           },
@@ -20587,31 +20812,31 @@
             id: "terapia-ocupacional",
             name: "Terapia Ocupacional",
             src: n(7257),
-            target: zs,
+            target: nl,
             alt: "pictograma-terapia-ocupacional",
             url: "terapia-ocupacional",
           },
           {
             id: "psicopedagogia",
             name: "Psicopedagog\xeda",
-            src: Is,
-            target: zs,
+            src: tl,
+            target: nl,
             alt: "pictograma-psicopedagogia",
             url: "psicopedagogia",
           },
           {
             id: "neuropsicologia",
             name: "Neuropsicologia",
-            src: Ls,
-            target: zs,
+            src: $s,
+            target: nl,
             alt: "pictograma-psicologia",
             url: "neuropsicologia",
           },
           {
             id: "auditiva",
             name: "Auditiva",
-            src: Os,
-            target: zs,
+            src: Js,
+            target: nl,
             alt: "terapia-auditiva",
             url: "auditiva",
           },
@@ -20619,30 +20844,30 @@
             id: "visual",
             name: "Visual",
             src: n(1933),
-            target: zs,
+            target: nl,
             alt: "terapia-auditiva",
             url: "visual",
           },
           {
             id: "psicologia",
             name: "Psicologia",
-            src: Ms,
-            target: zs,
+            src: el,
+            target: nl,
             alt: "terapia-psicologia",
             url: "psicologia",
           },
         ],
-        Ds = function () {
-          var e = t((0, h.useState)(Rs), 1)[0];
-          return (0, dn.jsxs)(dn.Fragment, {
+        il = function () {
+          var e = t((0, h.useState)(rl), 1)[0];
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Un, { title: "Nuestras Terapias", size: !0 }),
-              (0, dn.jsx)("section", {
-                children: (0, dn.jsx)(Ns, {
-                  children: (0, dn.jsx)(Fs, {
+              (0, un.jsx)(Wn, { title: "Nuestras Terapias", size: !0 }),
+              (0, un.jsx)("section", {
+                children: (0, un.jsx)(al, {
+                  children: (0, un.jsx)(ol, {
                     children: e.map(function (e) {
                       return (0,
-                      dn.jsxs)(Bs, { value: e.name, children: [(0, dn.jsx)("h3", { children: e.name }), (0, dn.jsx)(Bi.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, dn.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
+                      un.jsxs)(sl, { value: e.name, children: [(0, un.jsx)("h3", { children: e.name }), (0, un.jsx)(Xi.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, un.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
                     }),
                   }),
                 }),
@@ -20650,55 +20875,55 @@
             ],
           });
         },
-        Ns = Qt.div(
-          ha ||
-            (ha = _([
+        al = Qt.div(
+          Oa ||
+            (Oa = _([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1 {\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
-        Fs = Qt.div(
-          ma ||
-            (ma = _([
+        ol = Qt.div(
+          Pa ||
+            (Pa = _([
               "\n  display: grid;\n  width: 100%;\n  height: 100%;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: 1fr;\n  margin: auto;\n  grid-gap: 5% 5%;\n  margin: 5% 20%;\n  justify-content: center;\n\n  @media (max-width: 768px) {\n    width: 70%;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: 1fr 1fr;\n    margin: auto;\n    grid-gap: 30px 30px;\n    margin: 5%;\n    margin-bottom: 15%;\n    width: 90%;\n  }\n",
             ]))
         ),
-        Bs =
+        sl =
           (Qt.div(
-            ga ||
-              (ga = _([
+            Ta ||
+              (Ta = _([
                 "\n  display: flex;\n  width: 50%;\n  position: relative;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0px;\n",
               ]))
           ),
           Qt.div(
-            va ||
-              (va = _([
+            La ||
+              (La = _([
                 "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n\n  :hover {\n    border: 3px solid #ffc0bc;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
-        Ws = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        ll = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Servicio de Terapia" }),
-              (0, dn.jsx)(Ds, {}),
-              (0, dn.jsx)(fn, G(G({}, As), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, bs), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, xs), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ws), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, ks), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ss), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, js), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Es), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Cs), {}, { reverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Servicio de Terapia" }),
+              (0, un.jsx)(il, {}),
+              (0, un.jsx)(dn, G(G({}, Us), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Hs), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Vs), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Gs), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Qs), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ys), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Zs), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, _s), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, qs), {}, { reverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        Us = n(9958),
-        Hs = n(8540),
-        Vs = n(5688),
-        Gs = {
+        cl = n(9958),
+        ul = n(8540),
+        dl = n(5688),
+        fl = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -20709,9 +20934,9 @@
             "Este servicio se encarga de apoyar a las personas con discapacidad intelectual o del desarrollo que viven o quieran llegar a vivir de forma independiente.",
           description:
             "En nuestras viviendas reside un peque\xf1o grupo de personas con discapacidad intelectual, que aun gozando de autonom\xeda para el autocuidado,necesitan la prestaci\xf3n de apoyos a nivel personalizado para realizar el resto de actividades de la vida diaria y llevar una vida integrada en la comunidad.",
-          img: Us,
+          img: cl,
         },
-        Ys = {
+        pl = {
           id: "",
           reverse: !0,
           inverse: !1,
@@ -20720,9 +20945,9 @@
             "Facilitar un hogar lo m\xe1s normalizado posible, en el que se garantice y posibilite un adecuado desarrollo personal, desde la igualdad y la inclusi\xf3n social en la comunidad.",
           description:
             "Fomentar la participaci\xf3n activa y la toma de decisiones en lo relativo a las tareas dom\xe9sticas como al resto de actividades. Adquirir estabilidad y seguridad, en un entorno distinto al hogar familiar, entendi\xe9ndose \xe9stas de forma global y en todos los aspectos que afectan al ser humano (necesidades b\xe1sicas, salud, ocupaci\xf3n laboral,...). ",
-          img: Hs,
+          img: ul,
         },
-        Qs = {
+        hl = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -20731,29 +20956,29 @@
             "El modelo metodol\xf3gico a seguir se basa en la Capacitaci\xf3n dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
           description:
             "Los principios metodol\xf3gicos son: integraci\xf3n, individualizaci\xf3n y optimizaci\xf3n. Se ofrece a las personas con especificidad la oportunidad de vivir de la manera m\xe1s aut\xf3noma posible, fomentando la participaci\xf3n activa de la persona objeto de nuestro apoyo en la comunidad de Socu\xe9llamos, desde la igualdad y la plena inclusi\xf3n social..",
-          img: Vs,
+          img: dl,
         },
-        Zs = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        ml = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Lr, {}),
-              (0, dn.jsx)(Sn, { title: "Viviendas" }),
-              (0, dn.jsx)(Un, { title: "Apoyo acceso viviendas", size: !0 }),
-              (0, dn.jsx)(fn, G(G({}, Gs), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Ys), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, Qs), {}, { inverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(zr, {}),
+              (0, un.jsx)(wn, { title: "Viviendas" }),
+              (0, un.jsx)(Wn, { title: "Apoyo acceso viviendas", size: !0 }),
+              (0, un.jsx)(dn, G(G({}, fl), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, pl), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, hl), {}, { inverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         },
-        _s = n(132),
-        qs = n(7725),
-        Js = n(9916),
-        Xs = n(101),
-        Ks = n(2727),
-        $s = n(4306),
-        el = {
+        gl = n(132),
+        vl = n(7725),
+        yl = n(9916),
+        bl = n(101),
+        Al = n(2727),
+        xl = n(4306),
+        wl = {
           id: "voluntariadoOne",
           reverse: !1,
           inverse: !1,
@@ -20762,18 +20987,18 @@
             "Contamos con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
           description:
             "En este servicio no es \xfanicamente la Asociaci\xf3n la que oferta las actividades sino que se emplean los recursos de la comunidad con la finalidad de que la persona se integre en su entorno a trav\xe9s del ocio y el tiempo libre.",
-          img: _s,
+          img: gl,
         },
-        tl = {
+        Sl = {
           id: "voluntariadoTwo",
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
           headline: "Viajes y excursiones",
           description: "",
-          img: $s,
+          img: xl,
         },
-        nl = {
+        kl = {
           id: "voluntariadoThree",
           reverse: !1,
           inverse: !1,
@@ -20781,9 +21006,9 @@
           headline:
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias.",
           description: "",
-          img: Ks,
+          img: Al,
         },
-        rl = {
+        jl = {
           id: "voluntariadoFour",
           reverse: !0,
           inverse: !1,
@@ -20792,9 +21017,9 @@
             "Se fomenta la participaci\xf3n en actividades grupales de ocio, organizadas por ellos mismos con los apoyos profesionales necesarios.",
           description:
             "Es un proyecto de inclusi\xf3n creado por Afymos y cofinanciado por la Consejer\xeda de Bienestar Social de CL, el Ayto. de Socu\xe9llamos y nuestra entidad en el que j\xf3venes con discapacidad y sin discapacidad realizan actividades de ocio y deporte durante las vacaciones de verano.",
-          img: qs,
+          img: vl,
         },
-        il = {
+        El = {
           id: "voluntariadoFive",
           reverse: !1,
           inverse: !1,
@@ -20803,9 +21028,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "Se organizan actividades tan variadas como actividades deportivas (senderismo\u2026), culturales (visitas a museos, cine, teatro\u2026) y actividades recreativas (bolera, salidas nocturnas\u2026).",
-          img: Js,
+          img: yl,
         },
-        al = {
+        Cl = {
           id: "voluntariadoSix",
           reverse: !0,
           inverse: !1,
@@ -20814,28 +21039,28 @@
             "Es un proyecto creado por Afymos y financiado en parte por la Concejal\xeda de Bienestar Social de la localidad de Socu\xe9llamos.",
           description:
             "Urban Camp es un campamento urbano para 50 j\xf3venes (con y sin discapacidad) de la localidad de Socu\xe9llamos de edades comprendidas entre los 12 y 16 a\xf1os que naci\xf3 para dar respuesta a las necesidades de ocio de los j\xf3venes durante el periodo vacacional as\xed como para  ofrecer a las familias un recurso para la conciliaci\xf3n de la vida familiar y laboral durante esta \xe9poca del a\xf1o.",
-          img: Xs,
+          img: bl,
         },
-        ol = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Ol = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(Sn, { title: "Servicio de Ocio y Voluntariado" }),
-              (0, dn.jsx)(Un, {
+              (0, un.jsx)(wn, { title: "Servicio de Ocio y Voluntariado" }),
+              (0, un.jsx)(Wn, {
                 title: "Nuestro programa de voluntariado",
                 size: !0,
               }),
-              (0, dn.jsx)(fn, G(G({}, el), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, tl), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, nl), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, rl), {}, { reverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, il), {}, { inverse: !0 })),
-              (0, dn.jsx)(fn, G(G({}, al), {}, { reverse: !0 })),
-              (0, dn.jsx)(Kn, {}),
-              (0, dn.jsx)(xn, {}),
+              (0, un.jsx)(dn, G(G({}, wl), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Sl), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, kl), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, jl), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, El), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Cl), {}, { reverse: !0 })),
+              (0, un.jsx)(Xn, {}),
+              (0, un.jsx)(An, {}),
             ],
           });
         };
-      function sl() {
+      function Pl() {
         var e = z().pathname;
         return (
           (0, h.useEffect)(
@@ -20847,11 +21072,11 @@
           null
         );
       }
-      function ll(e, t) {
+      function Tl(e, t) {
         if (!(e instanceof t))
           throw new TypeError("Cannot call a class as a function");
       }
-      function cl(e, t) {
+      function Ll(e, t) {
         for (var n = 0; n < t.length; n++) {
           var r = t[n];
           (r.enumerable = r.enumerable || !1),
@@ -20860,25 +21085,25 @@
             Object.defineProperty(e, r.key, r);
         }
       }
-      function ul(e, t, n) {
+      function Ml(e, t, n) {
         return (
-          t && cl(e.prototype, t),
-          n && cl(e, n),
+          t && Ll(e.prototype, t),
+          n && Ll(e, n),
           Object.defineProperty(e, "prototype", { writable: !1 }),
           e
         );
       }
-      function dl(e, t) {
+      function Il(e, t) {
         return (
-          (dl =
+          (Il =
             Object.setPrototypeOf ||
             function (e, t) {
               return (e.__proto__ = t), e;
             }),
-          dl(e, t)
+          Il(e, t)
         );
       }
-      function fl(e, t) {
+      function zl(e, t) {
         if ("function" !== typeof t && null !== t)
           throw new TypeError(
             "Super expression must either be null or a function"
@@ -20887,21 +21112,21 @@
           constructor: { value: e, writable: !0, configurable: !0 },
         })),
           Object.defineProperty(e, "prototype", { writable: !1 }),
-          t && dl(e, t);
+          t && Il(e, t);
       }
-      function pl(e) {
+      function Rl(e) {
         return (
-          (pl = Object.setPrototypeOf
+          (Rl = Object.setPrototypeOf
             ? Object.getPrototypeOf
             : function (e) {
                 return e.__proto__ || Object.getPrototypeOf(e);
               }),
-          pl(e)
+          Rl(e)
         );
       }
-      function hl(e) {
+      function Dl(e) {
         return (
-          (hl =
+          (Dl =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
@@ -20914,11 +21139,11 @@
                     ? "symbol"
                     : typeof e;
                 }),
-          hl(e)
+          Dl(e)
         );
       }
-      function ml(e, t) {
-        if (t && ("object" === hl(t) || "function" === typeof t)) return t;
+      function Nl(e, t) {
+        if (t && ("object" === Dl(t) || "function" === typeof t)) return t;
         if (void 0 !== t)
           throw new TypeError(
             "Derived constructors may only return object or undefined"
@@ -20931,7 +21156,7 @@
           return e;
         })(e);
       }
-      function gl(e) {
+      function Bl(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -20949,22 +21174,22 @@
         })();
         return function () {
           var n,
-            r = pl(e);
+            r = Rl(e);
           if (t) {
-            var i = pl(this).constructor;
+            var i = Rl(this).constructor;
             n = Reflect.construct(r, arguments, i);
           } else n = r.apply(this, arguments);
-          return ml(this, n);
+          return Nl(this, n);
         };
       }
-      var vl = (function (e) {
-          fl(r, e);
-          var t = gl(r);
+      var Fl = (function (e) {
+          zl(r, e);
+          var t = Bl(r);
           function r() {
-            return ll(this, r), t.apply(this, arguments);
+            return Tl(this, r), t.apply(this, arguments);
           }
           return (
-            ul(r, [
+            Ml(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -20976,20 +21201,20 @@
               {
                 key: "render",
                 value: function () {
-                  return (0, dn.jsx)("div", {
+                  return (0, un.jsx)("div", {
                     style: {
                       position: "absolute",
                       width: "100%",
                       height: "100%",
                     },
-                    children: (0, dn.jsxs)("object", {
+                    children: (0, un.jsxs)("object", {
                       data: n(583),
                       type: "application/pdf",
                       width: "100%",
                       height: "100%",
                       children: [
-                        (0, dn.jsx)("br", {}),
-                        (0, dn.jsx)("a", {
+                        (0, un.jsx)("br", {}),
+                        (0, un.jsx)("a", {
                           href: n(1200),
                           rel: "noreferrer",
                           target: "_blank",
@@ -21007,15 +21232,15 @@
             r
           );
         })(h.Component),
-        yl = vl,
-        Al = (function (e) {
-          fl(r, e);
-          var t = gl(r);
+        Wl = Fl,
+        Ul = (function (e) {
+          zl(r, e);
+          var t = Bl(r);
           function r() {
-            return ll(this, r), t.apply(this, arguments);
+            return Tl(this, r), t.apply(this, arguments);
           }
           return (
-            ul(r, [
+            Ml(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21027,20 +21252,20 @@
               {
                 key: "render",
                 value: function () {
-                  return (0, dn.jsx)("div", {
+                  return (0, un.jsx)("div", {
                     style: {
                       position: "absolute",
                       width: "100%",
                       height: "100%",
                     },
-                    children: (0, dn.jsxs)("object", {
+                    children: (0, un.jsxs)("object", {
                       data: n(1200),
                       type: "application/pdf",
                       width: "100%",
                       height: "100%",
                       children: [
-                        (0, dn.jsx)("br", {}),
-                        (0, dn.jsx)("a", {
+                        (0, un.jsx)("br", {}),
+                        (0, un.jsx)("a", {
                           href: n(1200),
                           rel: "noreferrer",
                           target: "_blank",
@@ -21058,15 +21283,15 @@
             r
           );
         })(h.Component),
-        bl = Al,
-        xl = (function (e) {
-          fl(r, e);
-          var t = gl(r);
+        Hl = Ul,
+        Vl = (function (e) {
+          zl(r, e);
+          var t = Bl(r);
           function r() {
-            return ll(this, r), t.apply(this, arguments);
+            return Tl(this, r), t.apply(this, arguments);
           }
           return (
-            ul(r, [
+            Ml(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21080,20 +21305,20 @@
               {
                 key: "render",
                 value: function () {
-                  return (0, dn.jsx)("div", {
+                  return (0, un.jsx)("div", {
                     style: {
                       position: "absolute",
                       width: "100%",
                       height: "100%",
                     },
-                    children: (0, dn.jsxs)("object", {
+                    children: (0, un.jsxs)("object", {
                       data: n(4446),
                       type: "application/pdf",
                       width: "100%",
                       height: "100%",
                       children: [
-                        (0, dn.jsx)("br", {}),
-                        (0, dn.jsx)("a", {
+                        (0, un.jsx)("br", {}),
+                        (0, un.jsx)("a", {
                           href: n(4446),
                           rel: "noreferrer",
                           target: "_blank",
@@ -21111,100 +21336,100 @@
             r
           );
         })(h.Component),
-        wl = xl,
-        Sl = function () {
-          return (0, dn.jsxs)(dn.Fragment, {
+        Gl = Vl,
+        Yl = function () {
+          return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, dn.jsx)(sl, { smooth: !0 }),
-              (0, dn.jsxs)(W, {
+              (0, un.jsx)(Pl, { smooth: !0 }),
+              (0, un.jsxs)(W, {
                 children: [
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/terapias",
-                    element: (0, dn.jsx)(Ws, {}),
+                    element: (0, un.jsx)(ll, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/nosotros",
-                    element: (0, dn.jsx)(uo, {}),
+                    element: (0, un.jsx)(Io, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/apoyo-familias",
-                    element: (0, dn.jsx)(us, {}),
+                    element: (0, un.jsx)(Ms, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/ocio-y-voluntariado",
-                    element: (0, dn.jsx)(ol, {}),
+                    element: (0, un.jsx)(Ol, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/viviendas-con-apoyo",
-                    element: (0, dn.jsx)(Zs, {}),
+                    element: (0, un.jsx)(ml, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/centro-de-dia",
-                    element: (0, dn.jsx)(Co, {}),
+                    element: (0, un.jsx)(qo, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/proyecto-crea",
-                    element: (0, dn.jsx)(Jo, {}),
+                    element: (0, un.jsx)(ys, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/valoracion-y-diagnostico",
-                    element: (0, dn.jsx)(rs, {}),
+                    element: (0, un.jsx)(js, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/donaciones",
-                    element: (0, dn.jsx)(as, {}),
+                    element: (0, un.jsx)(Cs, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/servicio-capacitacion",
-                    element: (0, dn.jsx)(bo, {}),
+                    element: (0, un.jsx)(Ho, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/instalaciones-centro-diversidad",
-                    element: (0, dn.jsx)(Wo, {}),
+                    element: (0, un.jsx)(ls, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/valoracion-y-diagnostico",
-                    element: (0, dn.jsx)(rs, {}),
+                    element: (0, un.jsx)(js, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/organigrama",
-                    element: (0, dn.jsx)(wl, {}),
+                    element: (0, un.jsx)(Gl, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/pdf-cuentas-20",
-                    element: (0, dn.jsx)(yl, {}),
+                    element: (0, un.jsx)(Wl, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/pdf-cuentas-21",
-                    element: (0, dn.jsx)(bl, {}),
+                    element: (0, un.jsx)(Hl, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/formacion",
-                    element: (0, dn.jsx)(ms, {}),
+                    element: (0, un.jsx)(Ns, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/junta-directiva",
-                    element: (0, dn.jsx)(ei, {}),
+                    element: (0, un.jsx)(ri, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/politica-privacidad",
-                    element: (0, dn.jsx)(mo, {}),
+                    element: (0, un.jsx)(No, {}),
                   }),
-                  (0, dn.jsx)(F, {
+                  (0, un.jsx)(B, {
                     path: "/aviso-legal",
-                    element: (0, dn.jsx)(Ir, {}),
+                    element: (0, un.jsx)(Dr, {}),
                   }),
-                  (0, dn.jsx)(F, { path: "/", element: (0, dn.jsx)(Ka, {}) }),
+                  (0, un.jsx)(B, { path: "/", element: (0, un.jsx)(xo, {}) }),
                 ],
               }),
-              (0, dn.jsx)(sl, { smooth: !0 }),
+              (0, un.jsx)(Pl, { smooth: !0 }),
             ],
           });
         };
       n(4164).render(
-        (0, dn.jsx)(gn, { children: (0, dn.jsx)(Sl, {}) }),
+        (0, un.jsx)(mn, { children: (0, un.jsx)(Yl, {}) }),
         document.getElementById("root")
       );
     })();
 })();
-//# sourceMappingURL=main.2dbcfb7a.js.map
+//# sourceMappingURL=main.45911bf9.js.map

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.a1906633.css",
-    "main.js": "./static/js/main.2dbcfb7a.js",
+    "main.css": "./static/css/main.dbe56b46.css",
+    "main.js": "./static/js/main.45911bf9.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -67,10 +67,15 @@
     "static/media/organigrama.pdf": "./static/media/organigrama.2ebed92c873541755320.pdf",
     "static/media/rafa.jpg": "./static/media/rafa.5f8a302f0f8a0bf2c8b7.jpg",
     "static/media/voluntariado5.jpg": "./static/media/voluntariado5.dec7f91296482557d404.jpg",
+    "static/media/campeones-baloncesto-2.jpg": "./static/media/campeones-baloncesto-2.2396cc3018694553f873.jpg",
     "static/media/vivienda-4.jpg": "./static/media/vivienda-4.4b2b92330e6560d4f7ce.jpg",
+    "static/media/campeones-baloncesto.jpg": "./static/media/campeones-baloncesto.f0a552e5cf4e38d96559.jpg",
     "static/media/psicopedagogia.png": "./static/media/psicopedagogia.893767e7ba711e2e3d46.png",
+    "static/media/campeones-baloncesto-3.jpg": "./static/media/campeones-baloncesto-3.393ea1024b072caeeea8.jpg",
     "static/media/apoyo-familias-4.jpg": "./static/media/apoyo-familias-4.bd9c2a63d8f26350c326.jpg",
+    "static/media/campeones-baloncesto-4.jpg": "./static/media/campeones-baloncesto-4.e5297213b24eb9e42481.jpg",
     "static/media/vivienda-2.jpg": "./static/media/vivienda-2.74948c4fb956af4f2687.jpg",
+    "static/media/campeones-baloncesto-5.jpg": "./static/media/campeones-baloncesto-5.55f9447afa2d3e86184f.jpg",
     "static/media/congreso.jpg": "./static/media/congreso.f5930c829249440ebc97.jpg",
     "static/media/fundacion-once.png": "./static/media/fundacion-once.eccc006489bd0da4b7d0.png",
     "static/media/voluntariado6.jpg": "./static/media/voluntariado6.201368e922b467442c39.jpg",
@@ -102,8 +107,12 @@
     "static/media/gracias.png": "./static/media/gracias.39137f29f9e9d32fc388.png",
     "static/media/historial-medico.png": "./static/media/historial-medico.cdd204e568964ac3e119.png",
     "index.html": "./index.html",
-    "main.a1906633.css.map": "./static/css/main.a1906633.css.map",
-    "main.2dbcfb7a.js.map": "./static/js/main.2dbcfb7a.js.map"
+    "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "main.dbe56b46.css.map": "./static/css/main.dbe56b46.css.map",
+    "main.45911bf9.js.map": "./static/js/main.45911bf9.js.map"
   },
-  "entrypoints": ["static/css/main.a1906633.css", "static/js/main.2dbcfb7a.js"]
+  "entrypoints": ["static/css/main.dbe56b46.css", "static/js/main.45911bf9.js"]
 }
