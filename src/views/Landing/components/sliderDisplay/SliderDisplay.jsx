@@ -96,6 +96,7 @@ export default SliderDisplay;
 const SliderDisplaySection = styled.section`
   margin: 10% auto;
   background-color: #ffc0bc;
+  padding: 0;
 `;
 
 const SliderDisplayContainer = styled.div`
