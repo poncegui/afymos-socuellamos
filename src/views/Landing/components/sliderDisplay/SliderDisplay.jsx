@@ -71,7 +71,10 @@ const SliderDisplay = ({ slides, title, id, items, alt, buttons }) => {
   return (
     <>
       <SliderDisplaySection>
-        <TitleSection title="Somos Campeones" inverse />
+        <TitleSection
+          title="Visita Diputación de Ciudad Real - Plena Inclusión"
+          inverse
+        />
         <SliderDisplayContainer>
           <div className="heading flexSB"></div>
           <div className="content">

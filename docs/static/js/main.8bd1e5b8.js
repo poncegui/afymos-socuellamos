@@ -1,4 +1,4 @@
-/*! For license information please see main.5aa9d37b.js.LICENSE.txt */
+/*! For license information please see main.8bd1e5b8.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -836,8 +836,8 @@
           M = 60115,
           I = 60116,
           z = 60121,
-          R = 60128,
-          D = 60129,
+          D = 60128,
+          R = 60129,
           N = 60130,
           B = 60131;
         if ("function" === typeof Symbol && Symbol.for) {
@@ -856,8 +856,8 @@
             (I = F("react.lazy")),
             (z = F("react.block")),
             F("react.scope"),
-            (R = F("react.opaque.id")),
-            (D = F("react.debug_trace_mode")),
+            (D = F("react.opaque.id")),
+            (R = F("react.debug_trace_mode")),
             (N = F("react.offscreen")),
             (B = F("react.legacy_hidden"));
         }
@@ -1450,12 +1450,12 @@
         function ze(e, t, n, r, i) {
           return e(t, n, r, i);
         }
-        function Re() {}
-        var De = Ie,
+        function De() {}
+        var Re = Ie,
           Ne = !1,
           Be = !1;
         function Fe() {
-          (null === Oe && null === Pe) || (Re(), Me());
+          (null === Oe && null === Pe) || (De(), Me());
         }
         function We(e, t) {
           var n = e.stateNode;
@@ -1880,7 +1880,7 @@
             "waiting",
             "waiting",
           ];
-        function Rt(e, t) {
+        function Dt(e, t) {
           for (var n = 0; n < e.length; n += 2) {
             var r = e[n],
               i = e[n + 1];
@@ -1891,63 +1891,63 @@
           }
         }
         (0, a.unstable_now)();
-        var Dt = 8;
+        var Rt = 8;
         function Nt(e) {
-          if (0 !== (1 & e)) return (Dt = 15), 1;
-          if (0 !== (2 & e)) return (Dt = 14), 2;
-          if (0 !== (4 & e)) return (Dt = 13), 4;
+          if (0 !== (1 & e)) return (Rt = 15), 1;
+          if (0 !== (2 & e)) return (Rt = 14), 2;
+          if (0 !== (4 & e)) return (Rt = 13), 4;
           var t = 24 & e;
           return 0 !== t
-            ? ((Dt = 12), t)
+            ? ((Rt = 12), t)
             : 0 !== (32 & e)
-            ? ((Dt = 11), 32)
+            ? ((Rt = 11), 32)
             : 0 !== (t = 192 & e)
-            ? ((Dt = 10), t)
+            ? ((Rt = 10), t)
             : 0 !== (256 & e)
-            ? ((Dt = 9), 256)
+            ? ((Rt = 9), 256)
             : 0 !== (t = 3584 & e)
-            ? ((Dt = 8), t)
+            ? ((Rt = 8), t)
             : 0 !== (4096 & e)
-            ? ((Dt = 7), 4096)
+            ? ((Rt = 7), 4096)
             : 0 !== (t = 4186112 & e)
-            ? ((Dt = 6), t)
+            ? ((Rt = 6), t)
             : 0 !== (t = 62914560 & e)
-            ? ((Dt = 5), t)
+            ? ((Rt = 5), t)
             : 67108864 & e
-            ? ((Dt = 4), 67108864)
+            ? ((Rt = 4), 67108864)
             : 0 !== (134217728 & e)
-            ? ((Dt = 3), 134217728)
+            ? ((Rt = 3), 134217728)
             : 0 !== (t = 805306368 & e)
-            ? ((Dt = 2), t)
+            ? ((Rt = 2), t)
             : 0 !== (1073741824 & e)
-            ? ((Dt = 1), 1073741824)
-            : ((Dt = 8), e);
+            ? ((Rt = 1), 1073741824)
+            : ((Rt = 8), e);
         }
         function Bt(e, t) {
           var n = e.pendingLanes;
-          if (0 === n) return (Dt = 0);
+          if (0 === n) return (Rt = 0);
           var r = 0,
             i = 0,
             a = e.expiredLanes,
             o = e.suspendedLanes,
             s = e.pingedLanes;
-          if (0 !== a) (r = a), (i = Dt = 15);
+          if (0 !== a) (r = a), (i = Rt = 15);
           else if (0 !== (a = 134217727 & n)) {
             var l = a & ~o;
             0 !== l
-              ? ((r = Nt(l)), (i = Dt))
-              : 0 !== (s &= a) && ((r = Nt(s)), (i = Dt));
+              ? ((r = Nt(l)), (i = Rt))
+              : 0 !== (s &= a) && ((r = Nt(s)), (i = Rt));
           } else
             0 !== (a = n & ~o)
-              ? ((r = Nt(a)), (i = Dt))
-              : 0 !== s && ((r = Nt(s)), (i = Dt));
+              ? ((r = Nt(a)), (i = Rt))
+              : 0 !== s && ((r = Nt(s)), (i = Rt));
           if (0 === r) return 0;
           if (
             ((r = n & (((0 > (r = 31 - Gt(r)) ? 0 : 1 << r) << 1) - 1)),
             0 !== t && t !== r && 0 === (t & o))
           ) {
-            if ((Nt(t), i <= Dt)) return t;
-            Dt = i;
+            if ((Nt(t), i <= Rt)) return t;
+            Rt = i;
           }
           if (0 !== (t = e.entangledLanes))
             for (e = e.entanglements, t &= r; 0 < t; )
@@ -2008,7 +2008,7 @@
           _t = a.unstable_runWithPriority,
           qt = !0;
         function Jt(e, t, n, r) {
-          Ne || Re();
+          Ne || De();
           var i = Kt,
             a = Ne;
           Ne = !0;
@@ -2060,7 +2060,7 @@
                     return;
                   mt(e, r);
                 }
-                Rr(e, t, r, null, n);
+                Dr(e, t, r, null, n);
               }
             }
         }
@@ -2081,7 +2081,7 @@
               } else a !== i && (i = null);
             }
           }
-          return Rr(e, t, r, i, n), null;
+          return Dr(e, t, r, i, n), null;
         }
         var en = null,
           tn = null,
@@ -2385,8 +2385,8 @@
             deltaZ: 0,
             deltaMode: 0,
           }),
-          Rn = ln(zn),
-          Dn = [9, 13, 27, 32],
+          Dn = ln(zn),
+          Rn = [9, 13, 27, 32],
           Nn = d && "CompositionEvent" in window,
           Bn = null;
         d && "documentMode" in document && (Bn = document.documentMode);
@@ -2397,7 +2397,7 @@
         function Vn(e, t) {
           switch (e) {
             case "keyup":
-              return -1 !== Dn.indexOf(t.keyCode);
+              return -1 !== Rn.indexOf(t.keyCode);
             case "keydown":
               return 229 !== t.keyCode;
             case "keypress":
@@ -2622,19 +2622,19 @@
                 e.push({ event: t, listeners: r }),
                 (t.target = br))));
         }
-        Rt(
+        Dt(
           "cancel cancel click click close close contextmenu contextMenu copy copy cut cut auxclick auxClick dblclick doubleClick dragend dragEnd dragstart dragStart drop drop focusin focus focusout blur input input invalid invalid keydown keyDown keypress keyPress keyup keyUp mousedown mouseDown mouseup mouseUp paste paste pause pause play play pointercancel pointerCancel pointerdown pointerDown pointerup pointerUp ratechange rateChange reset reset seeked seeked submit submit touchcancel touchCancel touchend touchEnd touchstart touchStart volumechange volumeChange".split(
             " "
           ),
           0
         ),
-          Rt(
+          Dt(
             "drag drag dragenter dragEnter dragexit dragExit dragleave dragLeave dragover dragOver mousemove mouseMove mouseout mouseOut mouseover mouseOver pointermove pointerMove pointerout pointerOut pointerover pointerOver scroll scroll toggle toggle touchmove touchMove wheel wheel".split(
               " "
             ),
             1
           ),
-          Rt(zt, 2);
+          Dt(zt, 2);
         for (
           var kr =
               "change selectionchange textInput compositionstart compositionend compositionupdate".split(
@@ -2793,7 +2793,7 @@
               ? e.addEventListener(t, n, { passive: i })
               : e.addEventListener(t, n, !1);
         }
-        function Rr(e, t, n, r, i) {
+        function Dr(e, t, n, r, i) {
           var a = r;
           if (0 === (1 & t) && 0 === (2 & t) && null !== r)
             e: for (;;) {
@@ -2828,7 +2828,7 @@
             if (Be) return e(t, n);
             Be = !0;
             try {
-              De(e, t, n);
+              Re(e, t, n);
             } finally {
               (Be = !1), Fe();
             }
@@ -2898,7 +2898,7 @@
                     l = mn;
                     break;
                   case "wheel":
-                    l = Rn;
+                    l = Dn;
                     break;
                   case "copy":
                   case "cut":
@@ -2927,7 +2927,7 @@
                       ((p = m),
                       null !== f &&
                         null != (m = We(h, f)) &&
-                        u.push(Dr(h, m, p))),
+                        u.push(Rr(h, m, p))),
                     d)
                   )
                     break;
@@ -3128,7 +3128,7 @@
             Pr(o, t);
           });
         }
-        function Dr(e, t, n) {
+        function Rr(e, t, n) {
           return { instance: e, listener: t, currentTarget: n };
         }
         function Nr(e, t) {
@@ -3138,8 +3138,8 @@
             5 === i.tag &&
               null !== a &&
               ((i = a),
-              null != (a = We(e, n)) && r.unshift(Dr(e, a, i)),
-              null != (a = We(e, t)) && r.push(Dr(e, a, i))),
+              null != (a = We(e, n)) && r.unshift(Rr(e, a, i)),
+              null != (a = We(e, t)) && r.push(Rr(e, a, i))),
               (e = e.return);
           }
           return r;
@@ -3161,8 +3161,8 @@
               null !== c &&
               ((s = c),
               i
-                ? null != (l = We(n, a)) && o.unshift(Dr(n, l, s))
-                : i || (null != (l = We(n, a)) && o.push(Dr(n, l, s)))),
+                ? null != (l = We(n, a)) && o.unshift(Rr(n, l, s))
+                : i || (null != (l = We(n, a)) && o.push(Rr(n, l, s)))),
               (n = n.return);
           }
           0 !== o.length && e.push({ event: t, listeners: o });
@@ -3350,8 +3350,8 @@
           Mi = a.unstable_ImmediatePriority,
           Ii = a.unstable_UserBlockingPriority,
           zi = a.unstable_NormalPriority,
-          Ri = a.unstable_LowPriority,
-          Di = a.unstable_IdlePriority,
+          Di = a.unstable_LowPriority,
+          Ri = a.unstable_IdlePriority,
           Ni = {},
           Bi = void 0 !== Pi ? Pi : function () {},
           Fi = null,
@@ -3372,9 +3372,9 @@
               return 98;
             case zi:
               return 97;
-            case Ri:
-              return 96;
             case Di:
+              return 96;
+            case Ri:
               return 95;
             default:
               throw Error(o(332));
@@ -3389,9 +3389,9 @@
             case 97:
               return zi;
             case 96:
-              return Ri;
-            case 95:
               return Di;
+            case 95:
+              return Ri;
             default:
               throw Error(o(332));
           }
@@ -4168,13 +4168,13 @@
         function za() {
           ui(Pa), ui(Ta), ui(La);
         }
-        function Ra(e) {
+        function Da(e) {
           Ma(La.current);
           var t = Ma(Pa.current),
             n = he(t, e.type);
           t !== n && (di(Ta, e), di(Pa, n));
         }
-        function Da(e) {
+        function Ra(e) {
           Ta.current === e && (ui(Pa), ui(Ta));
         }
         var Na = ci(0);
@@ -4339,7 +4339,7 @@
               (a += 1),
                 (to = eo = null),
                 (t.updateQueue = null),
-                (Ja.current = Ro),
+                (Ja.current = Do),
                 (e = n(r, i));
             } while (ro);
           }
@@ -4805,7 +4805,7 @@
               if (Ua) {
                 var e = !1,
                   t = (function (e) {
-                    return { $$typeof: R, toString: e, valueOf: e };
+                    return { $$typeof: D, toString: e, valueOf: e };
                   })(function () {
                     throw (
                       (e || ((e = !0), n("r:" + (Jr++).toString(36))),
@@ -4875,7 +4875,7 @@
             },
             unstable_isNewReconciler: !1,
           },
-          Ro = {
+          Do = {
             readContext: oa,
             useCallback: Oo,
             useContext: oa,
@@ -4919,7 +4919,7 @@
             },
             unstable_isNewReconciler: !1,
           },
-          Do = x.ReactCurrentOwner,
+          Ro = x.ReactCurrentOwner,
           No = !1;
         function Bo(e, t, n, r) {
           t.child = null === e ? Ca(t, null, n, r) : Ea(t, e.child, n, r);
@@ -5136,7 +5136,7 @@
           Vo(e, t);
           var o = 0 !== (64 & t.flags);
           if (!r && !o) return i && wi(t, n, !1), as(e, t, a);
-          (r = t.stateNode), (Do.current = t);
+          (r = t.stateNode), (Ro.current = t);
           var s =
             o && "function" !== typeof n.getDerivedStateFromError
               ? null
@@ -5423,7 +5423,7 @@
                 null
               );
             case 5:
-              Da(t);
+              Ra(t);
               var a = Ma(La.current);
               if (((n = t.type), null !== e && null != t.stateNode))
                 qo(e, t, n, r), e.ref !== t.ref && (t.flags |= 128);
@@ -5648,7 +5648,7 @@
                           null === Is ||
                             (0 === (134217727 & Us) &&
                               0 === (134217727 & Hs)) ||
-                            yl(Is, Rs))),
+                            yl(Is, Ds))),
                     (r || n) && (t.flags |= 4),
                     null)
               );
@@ -5783,7 +5783,7 @@
                 throw Error(o(285));
               return (e.flags = (-4097 & t) | 64), e;
             case 5:
-              return Da(e), null;
+              return Ra(e), null;
             case 13:
               return (
                 ui(Na),
@@ -5912,7 +5912,7 @@
                             s || c === u || (s = []))
                           : "object" === typeof u &&
                             null !== u &&
-                            u.$$typeof === R
+                            u.$$typeof === D
                           ? u.toString()
                           : (s = s || []).push(d, u));
               }
@@ -6028,7 +6028,7 @@
                   (r = i.next),
                     0 !== (4 & (i = i.tag)) &&
                       0 !== (1 & i) &&
-                      (Nl(n, e), Dl(n, e)),
+                      (Nl(n, e), Rl(n, e)),
                     (e = r);
                 } while (e !== t);
               }
@@ -6444,8 +6444,8 @@
           Ms = 0,
           Is = null,
           zs = null,
-          Rs = 0,
           Ds = 0,
+          Rs = 0,
           Ns = ci(0),
           Bs = 0,
           Fs = null,
@@ -6521,7 +6521,7 @@
         function hl(e, t, n) {
           if (50 < al) throw ((al = 0), (ol = null), Error(o(185)));
           if (null === (e = ml(e, t))) return null;
-          Vt(e, t, n), e === Is && ((Hs |= t), 4 === Bs && yl(e, Rs));
+          Vt(e, t, n), e === Is && ((Hs |= t), 4 === Bs && yl(e, Ds));
           var r = Gi();
           1 === t
             ? 0 !== (8 & Ms) && 0 === (48 & Ms)
@@ -6559,13 +6559,13 @@
             if (-1 === u) {
               if (0 === (c & r) || 0 !== (c & i)) {
                 (u = t), Nt(c);
-                var d = Dt;
+                var d = Rt;
                 a[l] = 10 <= d ? u + 250 : 6 <= d ? u + 5e3 : -1;
               }
             } else u <= t && (e.expiredLanes |= c);
             s &= ~c;
           }
-          if (((r = Bt(e, e === Is ? Rs : 0)), (t = Dt), 0 === r))
+          if (((r = Bt(e, e === Is ? Ds : 0)), (t = Rt), 0 === r))
             null !== n &&
               (n !== Ni && Ci(n),
               (e.callbackNode = null),
@@ -6616,14 +6616,14 @@
         function vl(e) {
           if (((sl = -1), (cl = ll = 0), 0 !== (48 & Ms))) throw Error(o(327));
           var t = e.callbackNode;
-          if (Rl() && e.callbackNode !== t) return null;
-          var n = Bt(e, e === Is ? Rs : 0);
+          if (Dl() && e.callbackNode !== t) return null;
+          var n = Bt(e, e === Is ? Ds : 0);
           if (0 === n) return null;
           var r = n,
             i = Ms;
           Ms |= 16;
           var a = El();
-          for ((Is === e && Rs === r) || (Zs(), kl(e, r)); ; )
+          for ((Is === e && Ds === r) || (Zs(), kl(e, r)); ; )
             try {
               Pl();
               break;
@@ -6634,7 +6634,7 @@
             (na(),
             (Ts.current = a),
             (Ms = i),
-            null !== zs ? (r = 0) : ((Is = null), (Rs = 0), (r = Bs)),
+            null !== zs ? (r = 0) : ((Is = null), (Ds = 0), (r = Bs)),
             0 !== (Ws & Hs))
           )
             kl(e, 0);
@@ -6723,8 +6723,8 @@
         }
         function bl(e) {
           if (0 !== (48 & Ms)) throw Error(o(327));
-          if ((Rl(), e === Is && 0 !== (e.expiredLanes & Rs))) {
-            var t = Rs,
+          if ((Dl(), e === Is && 0 !== (e.expiredLanes & Ds))) {
+            var t = Ds,
               n = Cl(e, t);
             0 !== (Ws & Hs) && (n = Cl(e, (t = Bt(e, t))));
           } else n = Cl(e, (t = Bt(e, 0)));
@@ -6764,10 +6764,10 @@
           }
         }
         function wl(e, t) {
-          di(Ns, Ds), (Ds |= t), (Ws |= t);
+          di(Ns, Rs), (Rs |= t), (Ws |= t);
         }
         function Sl() {
-          (Ds = Ns.current), ui(Ns);
+          (Rs = Ns.current), ui(Ns);
         }
         function kl(e, t) {
           (e.finishedWork = null), (e.finishedLanes = 0);
@@ -6785,7 +6785,7 @@
                   za(), ui(hi), ui(pi), qa();
                   break;
                 case 5:
-                  Da(r);
+                  Ra(r);
                   break;
                 case 4:
                   za();
@@ -6805,7 +6805,7 @@
             }
           (Is = e),
             (zs = Ql(e.current, null)),
-            (Rs = Ds = Ws = t),
+            (Ds = Rs = Ws = t),
             (Bs = 0),
             (Fs = null),
             (Vs = Hs = Us = 0);
@@ -6837,7 +6837,7 @@
                   s = n,
                   l = t;
                 if (
-                  ((t = Rs),
+                  ((t = Ds),
                   (s.flags |= 2048),
                   (s.firstEffect = s.lastEffect = null),
                   null !== l &&
@@ -6960,7 +6960,7 @@
           var n = Ms;
           Ms |= 16;
           var r = El();
-          for ((Is === e && Rs === t) || kl(e, t); ; )
+          for ((Is === e && Ds === t) || kl(e, t); ; )
             try {
               Ol();
               break;
@@ -6969,7 +6969,7 @@
             }
           if ((na(), (Ms = n), (Ts.current = r), null !== zs))
             throw Error(o(261));
-          return (Is = null), (Rs = 0), Bs;
+          return (Is = null), (Ds = 0), Bs;
         }
         function Ol() {
           for (; null !== zs; ) Tl(zs);
@@ -6978,7 +6978,7 @@
           for (; null !== zs && !Oi(); ) Tl(zs);
         }
         function Tl(e) {
-          var t = _s(e.alternate, e, Ds);
+          var t = _s(e.alternate, e, Rs);
           (e.memoizedProps = e.pendingProps),
             null === t ? Ll(e) : (zs = t),
             (Ls.current = null);
@@ -6988,11 +6988,11 @@
           do {
             var n = t.alternate;
             if (((e = t.return), 0 === (2048 & t.flags))) {
-              if (null !== (n = ss(n, t, Ds))) return void (zs = n);
+              if (null !== (n = ss(n, t, Rs))) return void (zs = n);
               if (
                 (24 !== (n = t).tag && 23 !== n.tag) ||
                 null === n.memoizedState ||
-                0 !== (1073741824 & Ds) ||
+                0 !== (1073741824 & Rs) ||
                 0 === (4 & n.mode)
               ) {
                 for (var r = 0, i = n.child; null !== i; )
@@ -7027,7 +7027,7 @@
         }
         function Il(e, t) {
           do {
-            Rl();
+            Dl();
           } while (null !== el);
           if (0 !== (48 & Ms)) throw Error(o(327));
           var n = e.finishedWork;
@@ -7052,7 +7052,7 @@
           }
           if (
             (null !== il && 0 === (24 & r) && il.has(e) && il.delete(e),
-            e === Is && ((zs = Is = null), (Rs = 0)),
+            e === Is && ((zs = Is = null), (Ds = 0)),
             1 < n.flags
               ? null !== n.lastEffect
                 ? ((n.lastEffect.nextEffect = n), (r = n.firstEffect))
@@ -7288,24 +7288,24 @@
                 $s ||
                 (($s = !0),
                 Zi(97, function () {
-                  return Rl(), null;
+                  return Dl(), null;
                 })),
               (qs = qs.nextEffect);
           }
         }
-        function Rl() {
+        function Dl() {
           if (90 !== tl) {
             var e = 97 < tl ? 97 : tl;
             return (tl = 90), Qi(e, Bl);
           }
           return !1;
         }
-        function Dl(e, t) {
+        function Rl(e, t) {
           nl.push(t, e),
             $s ||
               (($s = !0),
               Zi(97, function () {
-                return Rl(), null;
+                return Dl(), null;
               }));
         }
         function Nl(e, t) {
@@ -7313,7 +7313,7 @@
             $s ||
               (($s = !0),
               Zi(97, function () {
-                return Rl(), null;
+                return Dl(), null;
               }));
         }
         function Bl() {
@@ -7395,9 +7395,9 @@
             (t = fl()),
             (e.pingedLanes |= e.suspendedLanes & n),
             Is === e &&
-              (Rs & n) === n &&
+              (Ds & n) === n &&
               (4 === Bs ||
-              (3 === Bs && (62914560 & Rs) === Rs && 500 > Vi() - Ys)
+              (3 === Bs && (62914560 & Ds) === Ds && 500 > Vi() - Ys)
                 ? kl(e, 0)
                 : (Vs |= n)),
             gl(e, t);
@@ -7486,7 +7486,7 @@
             e: switch (e) {
               case k:
                 return _l(n.children, i, a, t);
-              case D:
+              case R:
                 (s = 8), (i |= 16);
                 break;
               case j:
@@ -7768,7 +7768,7 @@
                     Zo(t), Za();
                     break;
                   case 5:
-                    Ra(t);
+                    Da(t);
                     break;
                   case 1:
                     vi(t.type) && xi(t);
@@ -7934,7 +7934,7 @@
               return t;
             case 5:
               return (
-                Ra(t),
+                Da(t),
                 null === e && Ga(t),
                 (r = t.type),
                 (i = t.pendingProps),
@@ -8138,7 +8138,7 @@
               0 === (Ms = a) && (Zs(), _i());
             }
           }),
-          (Re = function () {
+          (De = function () {
             0 === (49 & Ms) &&
               ((function () {
                 if (null !== il) {
@@ -8150,9 +8150,9 @@
                 }
                 _i();
               })(),
-              Rl());
+              Dl());
           }),
-          (De = function (e, t) {
+          (Re = function (e, t) {
             var n = Ms;
             Ms |= 2;
             try {
@@ -8161,7 +8161,7 @@
               0 === (Ms = n) && (Zs(), _i());
             }
           });
-        var lc = { Events: [ri, ii, ai, Le, Me, Rl, { current: !1 }] },
+        var lc = { Events: [ri, ii, ai, Le, Me, Dl, { current: !1 }] },
           cc = {
             findFiberByHostInstance: ni,
             bundleType: 0,
@@ -14006,15 +14006,15 @@
             t = S(C);
           }
         }
-        function R(e) {
+        function D(e) {
           if (((I = !1), z(e), !M))
-            if (null !== S(E)) (M = !0), n(D);
+            if (null !== S(E)) (M = !0), n(R);
             else {
               var t = S(C);
-              null !== t && r(R, t.startTime - e);
+              null !== t && r(D, t.startTime - e);
             }
         }
-        function D(e, n) {
+        function R(e, n) {
           (M = !1), I && ((I = !1), i()), (L = !0);
           var a = T;
           try {
@@ -14039,7 +14039,7 @@
             if (null !== P) var l = !0;
             else {
               var c = S(C);
-              null !== c && r(R, c.startTime - n), (l = !1);
+              null !== c && r(D, c.startTime - n), (l = !1);
             }
             return l;
           } finally {
@@ -14057,7 +14057,7 @@
             e.callback = null;
           }),
           (t.unstable_continueExecution = function () {
-            M || L || ((M = !0), n(D));
+            M || L || ((M = !0), n(R));
           }),
           (t.unstable_getCurrentPriorityLevel = function () {
             return T;
@@ -14141,8 +14141,8 @@
                   w(C, e),
                   null === S(E) &&
                     e === S(C) &&
-                    (I ? i() : (I = !0), r(R, o - s)))
-                : ((e.sortIndex = l), w(E, e), M || L || ((M = !0), n(D))),
+                    (I ? i() : (I = !0), r(D, o - s)))
+                : ((e.sortIndex = l), w(E, e), M || L || ((M = !0), n(R))),
               e
             );
           }),
@@ -14371,10 +14371,38 @@
         e.exports =
           n.p + "static/media/campeones-baloncesto-5.55f9447afa2d3e86184f.jpg";
       },
+      1871: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto-6.16333dce39bb7b913210.jpg";
+      },
+      8392: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto-7.fcf6d88ea85a3b9c6b03.jpg";
+      },
+      637: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto-8.4ccf6cae07fbd5b129cd.jpg";
+      },
+      5723: function (e, t, n) {
+        "use strict";
+        e.exports =
+          n.p + "static/media/campeones-baloncesto-9.51d38b4f1d0cae968283.jpg";
+      },
       1817: function (e, t, n) {
         "use strict";
         e.exports =
           n.p + "static/media/campeones-baloncesto.f0a552e5cf4e38d96559.jpg";
+      },
+      1516: function (e, t, n) {
+        "use strict";
+        e.exports = n.p + "static/media/cartel.bbfa3e175459a27611ac.jpg";
+      },
+      4570: function (e, t, n) {
+        "use strict";
+        e.exports = n.p + "static/media/diptico.ef92ddf6973d652b214f.png";
       },
       9801: function (e, t, n) {
         "use strict";
@@ -15269,7 +15297,7 @@
         var t = (0, h.useContext)(m),
           n = t.basename,
           r = t.navigator,
-          i = D(e),
+          i = R(e),
           a = i.hash,
           o = i.pathname,
           s = i.search,
@@ -15293,7 +15321,7 @@
       function z() {
         return I() || y(!1), (0, h.useContext)(g).location;
       }
-      function R() {
+      function D() {
         I() || y(!1);
         var e = (0, h.useContext)(m),
           t = e.basename,
@@ -15323,7 +15351,7 @@
           )
         );
       }
-      function D(e) {
+      function R(e) {
         var t = (0, h.useContext)(v).matches,
           n = z().pathname,
           r = JSON.stringify(
@@ -15561,7 +15589,7 @@
                 E = 0,
                 M = 0,
                 z = (m = p = 0),
-                D = 0,
+                R = 0,
                 N = 0,
                 B = 0,
                 F = 0,
@@ -15571,12 +15599,12 @@
                 V = "",
                 G = "",
                 Y = "";
-              D < W;
+              R < W;
 
             ) {
               if (
-                ((h = l.charCodeAt(D)),
-                D === U &&
+                ((h = l.charCodeAt(R)),
+                R === U &&
                   0 !== S + j + k + w &&
                   (0 !== S && (h = 47 === S ? 10 : 47),
                   (j = k = w = 0),
@@ -15585,7 +15613,7 @@
                 0 === S + j + k + w)
               ) {
                 if (
-                  D === U &&
+                  R === U &&
                   (0 < N && (H = H.replace(d, "")), 0 < H.trim().length)
                 ) {
                   switch (h) {
@@ -15596,18 +15624,18 @@
                     case 10:
                       break;
                     default:
-                      H += l.charAt(D);
+                      H += l.charAt(R);
                   }
                   h = 59;
                 }
                 switch (h) {
                   case 123:
                     for (
-                      p = (H = H.trim()).charCodeAt(0), m = 1, F = ++D;
-                      D < W;
+                      p = (H = H.trim()).charCodeAt(0), m = 1, F = ++R;
+                      R < W;
 
                     ) {
-                      switch ((h = l.charCodeAt(D))) {
+                      switch ((h = l.charCodeAt(R))) {
                         case 123:
                           m++;
                           break;
@@ -15615,29 +15643,29 @@
                           m--;
                           break;
                         case 47:
-                          switch ((h = l.charCodeAt(D + 1))) {
+                          switch ((h = l.charCodeAt(R + 1))) {
                             case 42:
                             case 47:
                               e: {
-                                for (z = D + 1; z < U; ++z)
+                                for (z = R + 1; z < U; ++z)
                                   switch (l.charCodeAt(z)) {
                                     case 47:
                                       if (
                                         42 === h &&
                                         42 === l.charCodeAt(z - 1) &&
-                                        D + 2 !== z
+                                        R + 2 !== z
                                       ) {
-                                        D = z + 1;
+                                        R = z + 1;
                                         break e;
                                       }
                                       break;
                                     case 10:
                                       if (47 === h) {
-                                        D = z + 1;
+                                        R = z + 1;
                                         break e;
                                       }
                                   }
-                                D = z;
+                                R = z;
                               }
                           }
                           break;
@@ -15647,13 +15675,13 @@
                           h++;
                         case 34:
                         case 39:
-                          for (; D++ < U && l.charCodeAt(D) !== h; );
+                          for (; R++ < U && l.charCodeAt(R) !== h; );
                       }
                       if (0 === m) break;
-                      D++;
+                      R++;
                     }
                     if (
-                      ((m = l.substring(F, D)),
+                      ((m = l.substring(F, R)),
                       0 === p &&
                         (p = (H = H.replace(u, "").trim()).charCodeAt(0)),
                       64 === p)
@@ -15703,7 +15731,7 @@
                     (G += m),
                       (m = B = N = z = p = 0),
                       (H = ""),
-                      (h = l.charCodeAt(++D));
+                      (h = l.charCodeAt(++R));
                     break;
                   case 125:
                   case 59:
@@ -15729,14 +15757,14 @@
                           break;
                         case 64:
                           if (105 === h || 99 === h) {
-                            Y += H + l.charAt(D);
+                            Y += H + l.charAt(R);
                             break;
                           }
                         default:
                           58 !== H.charCodeAt(F - 1) &&
                             (V += i(H, p, h, H.charCodeAt(2)));
                       }
-                    (B = N = z = p = 0), (H = ""), (h = l.charCodeAt(++D));
+                    (B = N = z = p = 0), (H = ""), (h = l.charCodeAt(++R));
                 }
               }
               switch (h) {
@@ -15748,7 +15776,7 @@
                       107 !== c &&
                       0 < H.length &&
                       ((N = 1), (H += "\0")),
-                    0 < I * R && s(0, H, r, e, O, C, V.length, c, f, c),
+                    0 < I * D && s(0, H, r, e, O, C, V.length, c, f, c),
                     (C = 1),
                     O++;
                   break;
@@ -15759,7 +15787,7 @@
                     break;
                   }
                 default:
-                  switch ((C++, (g = l.charAt(D)), h)) {
+                  switch ((C++, (g = l.charAt(R)), h)) {
                     case 9:
                     case 32:
                       if (0 === j + w + S)
@@ -15788,15 +15816,15 @@
                       break;
                     case 108:
                       if (0 === j + S + w + P && 0 < z)
-                        switch (D - z) {
+                        switch (R - z) {
                           case 2:
-                            112 === E && 58 === l.charCodeAt(D - 3) && (P = E);
+                            112 === E && 58 === l.charCodeAt(R - 3) && (P = E);
                           case 8:
                             111 === M && (P = M);
                         }
                       break;
                     case 58:
-                      0 === j + S + w && (z = D);
+                      0 === j + S + w && (z = R);
                       break;
                     case 44:
                       0 === S + k + j + w && ((N = 1), (g += "\r"));
@@ -15830,27 +15858,27 @@
                       if (!(0 < j + w + k))
                         switch (S) {
                           case 0:
-                            switch (2 * h + 3 * l.charCodeAt(D + 1)) {
+                            switch (2 * h + 3 * l.charCodeAt(R + 1)) {
                               case 235:
                                 S = 47;
                                 break;
                               case 220:
-                                (F = D), (S = 42);
+                                (F = R), (S = 42);
                             }
                             break;
                           case 42:
                             47 === h &&
                               42 === E &&
-                              F + 2 !== D &&
+                              F + 2 !== R &&
                               (33 === l.charCodeAt(F + 2) &&
-                                (V += l.substring(F, D + 1)),
+                                (V += l.substring(F, R + 1)),
                               (g = ""),
                               (S = 0));
                         }
                   }
                   0 === S && (H += g);
               }
-              (M = E), (E = h), D++;
+              (M = E), (E = h), R++;
             }
             if (0 < (F = V.length)) {
               if (
@@ -16193,7 +16221,7 @@
             M = [],
             I = 0,
             z = null,
-            R = 0;
+            D = 0;
           return (
             (c.use = function e(t) {
               switch (t) {
@@ -16205,7 +16233,7 @@
                   if ("function" === typeof t) M[I++] = t;
                   else if ("object" === typeof t)
                     for (var n = 0, r = t.length; n < r; ++n) e(t[n]);
-                  else R = 0 | !!t;
+                  else D = 0 | !!t;
               }
               return e;
             }),
@@ -16635,7 +16663,7 @@
         })(),
         Ie = pe,
         ze = { isServer: !pe, useCSSOMInjection: !he },
-        Re = (function () {
+        De = (function () {
           function e(e, t, n) {
             void 0 === e && (e = le),
               void 0 === t && (t = {}),
@@ -16740,7 +16768,7 @@
             e
           );
         })(),
-        De = /(a)(d)/gi,
+        Re = /(a)(d)/gi,
         Ne = function (e) {
           return String.fromCharCode(e + (e > 25 ? 39 : 97));
         };
@@ -16748,7 +16776,7 @@
         var t,
           n = "";
         for (t = Math.abs(e); t > 52; t = (t / 52) | 0) n = Ne(t % 52) + n;
-        return (Ne(t % 52) + n).replace(De, "$1-$2");
+        return (Ne(t % 52) + n).replace(Re, "$1-$2");
       }
       var Fe = function (e, t) {
           for (var n = t.length; n; ) e = (33 * e) ^ t.charCodeAt(--n);
@@ -16773,7 +16801,7 @@
               (this.componentId = t),
               (this.baseHash = Fe(He, t)),
               (this.baseStyle = n),
-              Re.registerId(t);
+              De.registerId(t);
           }
           return (
             (e.prototype.generateAndInjectStyles = function (e, t, n) {
@@ -16917,7 +16945,7 @@
       }
       var Ze = h.createContext(),
         _e = (Ze.Consumer, h.createContext()),
-        qe = (_e.Consumer, new Re()),
+        qe = (_e.Consumer, new De()),
         Je = Qe();
       function Xe() {
         return (0, h.useContext)(Ze) || qe;
@@ -17442,7 +17470,7 @@
           (this.rules = e),
             (this.componentId = t),
             (this.isStatic = Ue(e)),
-            Re.registerId(this.componentId + 1);
+            De.registerId(this.componentId + 1);
         }
         var t = e.prototype;
         return (
@@ -17455,7 +17483,7 @@
             t.clearRules(this.componentId + e);
           }),
           (t.renderStyles = function (e, t, n, r) {
-            e > 2 && Re.registerId(this.componentId + e),
+            e > 2 && De.registerId(this.componentId + e),
               this.removeStyles(e, n),
               this.createStyles(e, t, n, r);
           }),
@@ -17505,7 +17533,7 @@
             (this.seal = function () {
               e.sealed = !0;
             }),
-            (this.instance = new Re({ isServer: !0 })),
+            (this.instance = new De({ isServer: !0 })),
             (this.sealed = !1);
         }
         var t = e.prototype;
@@ -17528,8 +17556,8 @@
         Mt,
         It,
         zt,
-        Rt,
         Dt,
+        Rt,
         Nt,
         Bt,
         Ft,
@@ -17945,14 +17973,14 @@
             }
           ),
           Qt.button(
-            Rt ||
-              (Rt = _([
+            Dt ||
+              (Dt = _([
                 '\n  border-radius: 4px;\n  background: none;\n  white-space: nowrap;\n  padding: 10px 1.25rem;\n  font-size: 16px;\n  color: #fff;\n  outline: none;\n  border: 2px solid #fff;\n  cursor: pointer;\n  overflow: hidden;\n  position: relative;\n\n  &:before {\n    background: #fff;\n    content: "";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    z-index: -1;\n    transition: all 0.6s ease;\n    width: 100%;\n    height: 0%;\n    transform: translate(-50%, -50%) rotate(45deg);\n  }\n\n  &:hover:before {\n    height: 500%;\n  }\n\n  &:hover {\n    color: black;\n  }\n',
               ]))
           ),
           Qt.div(
-            Dt ||
-              (Dt = _([
+            Rt ||
+              (Rt = _([
                 "\n  display: flex;\n  margin: 0 -15px -15px -15px;\n  flex-wrap: wrap;\n  align-items: center;\n  flex-direction: ",
                 ";\n  justify-content: space-around;\n\n  @media screen and (max-width: 768px) {\n    flex-direction: column-reverse;\n  }\n",
               ])),
@@ -18153,9 +18181,9 @@
               r = n.target,
               i = n.replace,
               a = n.state,
-              o = R(),
+              o = D(),
               s = z(),
-              l = D(e);
+              l = R(e);
             return (0, h.useCallback)(
               function (t) {
                 if (
@@ -18324,7 +18352,7 @@
                     ],
                   }),
                 }),
-                (0, un.jsxs)(Rn, {
+                (0, un.jsxs)(Dn, {
                   children: [
                     (0, un.jsx)("h1", { children: e.title }),
                     (0, un.jsx)("img", {
@@ -18358,13 +18386,13 @@
         zn = Qt.div(
           yn || (yn = _(["\n  display: flex;\n  align-items: center;\n"]))
         ),
-        Rn = Qt.nav(
+        Dn = Qt.nav(
           bn ||
             (bn = _([
               "\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  text-transform: uppercase;\n\n  h1 {\n    text-align: center;\n    color: #ffc0bc;\n    font-weight: bold;\n    text-transform: lowercase;\n    font-size: 2.5rem;\n  }\n  img {\n    width: 10%;\n  }\n  span {\n    color: white;\n  }\n\n  h1:first-letter {\n    font-size: 120%;\n  }\n\n  @media (max-width: 768px) {\n    min-height: 15vh;\n    h1 {\n      font-size: 2.2rem;\n    }\n  }\n  @media (max-width: 440px) {\n    display: flex;\n    flex-direction: end;\n    img {\n      width: 20%;\n    }\n    min-height: 10vh;\n    h1 {\n      display: none;\n    }\n  }\n",
             ]))
         ),
-        Dn = function (e) {
+        Rn = function (e) {
           var n = e.url,
             r = e.alt,
             i = e.target,
@@ -18549,7 +18577,7 @@
                 children: (0, un.jsx)($n, {
                   children: i.map(function (e) {
                     return (0,
-                    un.jsx)(Dn, { src: e.src, alt: e.alt, url: e.url, target: e.target }, e.id);
+                    un.jsx)(Rn, { src: e.src, alt: e.alt, url: e.url, target: e.target }, e.id);
                   }),
                 }),
               }),
@@ -18766,7 +18794,7 @@
               window.scrollY > 100 ? r(!0) : r(!1);
             });
           }, []);
-          return (0, un.jsx)(Rr, {
+          return (0, un.jsx)(Dr, {
             style: { display: n ? "block" : "none" },
             onClick: function () {
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -18775,13 +18803,13 @@
             children: (0, un.jsx)(cr, {}),
           });
         },
-        Rr = Qt.button(
+        Dr = Qt.button(
           In ||
             (In = _([
               "\n  position: fixed;\n  bottom: 40px;\n  z-index: 1;\n  cursor: pointer;\n  color: grey;\n  right: 2%;\n  background: none;\n  border-radius: 50px;\n  padding: 0px;\n  border: none;\n  opacity: 0.7;\n  font-size: 4rem;\n  margin-right: 1.5rem;\n\n  @media (max-width: 440px) {\n    font-size: 3rem;\n  }\n",
             ]))
         ),
-        Dr = function () {
+        Rr = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
@@ -18986,55 +19014,37 @@
               "\n  display: flex;\n  gap: 5rem;\n  flex-wrap: wrap;\n\n  @media (max-width: 440px) {\n    gap: 2rem;\n  }\n",
             ]))
         ),
-        si = n(5562),
-        li = n(599),
-        ci = {
-          reverse: !1,
-          inverse: !1,
-          topLine: { text: "Vida en comunidad:" },
-          headline: "Integraci\xf3n sociolaboral",
-          description:
-            "Nuestro objetivo es potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones), haciendo especial \xe9nfasis en las habilidades de car\xe1cter laboral para facilitar su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian del Centro de D\xeda por la metodolog\xeda de trabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          buttonLabel: "Saber m\xe1s",
-          href: "#/servicio-capacitacion",
-          img: n(6453),
-        },
-        ui = {
-          href: "#/donaciones",
-          reverse: !0,
-          inverse: !0,
-          topLine: { text: "Sensibilizaci\xf3n" },
-          headline:
-            "S\xedgue nuestras redes para ver todas las actividades de sensibilizaci\xf3n que llevamos a cabo.",
-          description:
-            "Nuestra organizaci\xf3n sin \xe1nimo de lucro se sustenta principalmente de las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda econ\xf3mica que nos puedan prestar.",
-          buttonLabel: "Donaciones",
-          img: li,
-        },
-        di = {
-          reverse: !1,
-          inverse: !1,
-          topLine: { text: "Buscamos profesionales como t\xfa" },
-          headline: "Trabaja con nosotros ",
-          description:
-            "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administraci\xf3n y mucho m\xe1s. Contacta con nosotros o envianos tu curriculum",
-          buttonLabel: "Contacto",
-          href: "contacto",
-          img: si,
-        },
-        fi = n(578),
-        pi = n(4096),
-        hi = n(3639),
-        mi = n(1311),
-        gi = n(1795),
-        vi = n(9801),
-        yi = n(7500),
-        bi = n(1965),
-        Ai = [
+        si = (n(578), n(4096), n(3639), n(1311), n(1516)),
+        li = n(1795),
+        ci = n(4570),
+        ui = n(5723),
+        di = n(637),
+        fi = n(8392),
+        pi = n(1871),
+        hi = n(9801),
+        mi = n(7500),
+        gi = n(1965),
+        vi = [
+          {
+            title: "Concierto",
+            description:
+              "XI Gala de Capacidad -D\xeda Internacional de Personas con alguna Discapacidad",
+            image: si,
+            alt: "concierto-navidad",
+            url: "",
+          },
+          {
+            title: "Actividades diciembre 2023",
+            description:
+              "Conoce las actividades que tendremos para despedir el a\xf1o",
+            image: ci,
+            alt: "concierto-navidad",
+            url: "",
+          },
           {
             title: "Loter\xeda de Navidad",
             description: "Ya tenemos nuestra loter\xeda para navidad!",
-            image: yi,
+            image: mi,
             alt: "loteria-navidad",
             url: "",
           },
@@ -19050,7 +19060,7 @@
             title: "Concurso de Fotograf\xeda",
             description:
               "Plazo de inscripci\xf3n hasta el pr\xf3ximo 17 de noviembre, sin limite de edad",
-            image: vi,
+            image: hi,
             alt: "concurso-de-fotografia",
             url: "",
           },
@@ -19058,7 +19068,7 @@
             title: "PROYECTO NUEVO CREA 2023",
             description:
               "El pasado 18 de abril de 2023, se present\xf3 la nueva convocatoria",
-            image: bi,
+            image: gi,
             alt: "proyecto-crea-2023",
             url: "",
           },
@@ -19074,12 +19084,12 @@
             title: "XIII CONGRESO DE EMPLEO CON APOYO",
             description:
               "Los d\xedas 13, 14 y 15 de junio se celebr\xf3 el XIII Congreso de Empleo en la facultad de derecho de Burgos, organizado por AESE y Down Burgos.",
-            image: gi,
+            image: li,
             alt: "un-d\xeda-en-afymos",
             url: "",
           },
         ],
-        xi = {
+        yi = {
           arrows: !1,
           slidesToShow: 3,
           focusOnselect: !1,
@@ -19089,50 +19099,86 @@
             { breakpoint: 900, settings: { slidesToShow: 1 } },
           ],
         },
-        wi = [
-          { id: 1, cover: fi, title: "", alt: "foto baloncesto" },
-          { id: 2, cover: pi, title: "", alt: "foto baloncesto" },
-          { id: 3, cover: hi, title: "", alt: "foto baloncesto" },
-          { id: 3, cover: mi, title: "", alt: "foto baloncesto" },
+        bi = [
+          { id: 1, cover: ui, title: "", alt: "foto diputacion" },
+          { id: 2, cover: di, title: "", alt: "foto diputacion" },
+          { id: 3, cover: fi, title: "", alt: "foto diputacion" },
+          { id: 3, cover: pi, title: "", alt: "foto diputacion" },
         ],
-        Si = n(5717),
-        ki = Qt.img(
+        Ai = n(5562),
+        xi = n(599),
+        wi = {
+          reverse: !1,
+          inverse: !1,
+          topLine: { text: "Vida en comunidad:" },
+          headline: "Integraci\xf3n sociolaboral",
+          description:
+            "Nuestro objetivo es potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones), haciendo especial \xe9nfasis en las habilidades de car\xe1cter laboral para facilitar su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian del Centro de D\xeda por la metodolog\xeda de trabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
+          buttonLabel: "Saber m\xe1s",
+          href: "#/servicio-capacitacion",
+          img: n(6453),
+        },
+        Si = {
+          href: "#/donaciones",
+          reverse: !0,
+          inverse: !0,
+          topLine: { text: "Sensibilizaci\xf3n" },
+          headline:
+            "S\xedgue nuestras redes para ver todas las actividades de sensibilizaci\xf3n que llevamos a cabo.",
+          description:
+            "Nuestra organizaci\xf3n sin \xe1nimo de lucro se sustenta principalmente de las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda econ\xf3mica que nos puedan prestar.",
+          buttonLabel: "Donaciones",
+          img: xi,
+        },
+        ki = {
+          reverse: !1,
+          inverse: !1,
+          topLine: { text: "Buscamos profesionales como t\xfa" },
+          headline: "Trabaja con nosotros ",
+          description:
+            "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administraci\xf3n y mucho m\xe1s. Contacta con nosotros o envianos tu curriculum",
+          buttonLabel: "Contacto",
+          href: "contacto",
+          img: Ai,
+        },
+        ji = n(5717),
+        Ei = Qt.img(
           Sr ||
             (Sr = _([
               "\n  width: 100%;\n  height: 300px;\n  border-radius: 10px 10px 0 0;\n  object-fit: cover;\n  vertical-align: middle;\n",
             ]))
         ),
-        ji = Qt.div(
+        Ci = Qt.div(
           kr ||
             (kr = _([
               "\n  background-color: white;\n  width: 90%;\n  display: flex !important;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  border-radius: 10px;\n  outline: none;\n  height: 430px;\n  border: solid 1px #071c2f;\n\n  @media (min-width: 440px) {\n    border: 1px solid #bebebe;\n  }\n",
             ]))
         ),
-        Ei = Qt(Kt)(
+        Oi = Qt(Kt)(
           jr ||
             (jr = _([
               "\n  & svg {\n    margin: 0 1rem;\n    cursor: pointer;\n  }\n\n  & svg:hover {\n    opacity: 0.7;\n    transition: opacity 0.2s ease-in;\n  }\n  @media (max-width: 960px) {\n    margin: 0 auto;\n  }\n",
             ]))
         ),
-        Ci = Qt(Si.Z)(
+        Pi = Qt(ji.Z)(
           Er ||
             (Er = _([
               "\n  width: 100%;\n\n  .slick-track {\n    display: flex;\n    padding: 30px;\n    gap: 3rem;\n  }\n  .slick-slide {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 1;\n    outline: none;\n  }\n\n  .slick-list {\n    overflow: hidden;\n  }\n",
             ]))
         ),
-        Oi = Qt.button(
+        Ti = Qt.button(
           Cr ||
             (Cr = _([
               "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  cursor: pointer;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
-        Pi = Qt.div(
+        Li = Qt.div(
           Or ||
             (Or = _([
               "\n  background-color: #071c2f;\n  font-size: 1.3rem;\n  padding: 5px 10px;\n  color: #ffc0bc;\n  width: 100%;\n  font-weight: 600;\n  margin: auto 0 0 0;\n  border: solid 1px #071c2f;\n  border-radius: 0 0 10px 10px;\n\n  &:hover {\n    background-color: #112f4a;\n    transition: background-color 0.2s ease-in;\n  }\n",
             ]))
         ),
-        Ti = function () {
+        Mi = function () {
           var e = t((0, h.useState)(null), 2),
             n = e[0],
             r = e[1];
@@ -19148,7 +19194,7 @@
                 margin: "1rem",
                 wrap: "wrap",
                 align: "center",
-                children: (0, un.jsx)(Ei, {
+                children: (0, un.jsx)(Oi, {
                   children: (0, un.jsxs)(tr.Provider, {
                     value: { size: "3rem", color: "#071c2f" },
                     children: [
@@ -19165,15 +19211,15 @@
                 }),
               }),
               (0, un.jsx)(
-                Ci,
+                Pi,
                 G(
-                  G({}, xi),
+                  G({}, yi),
                   {},
                   {
                     ref: r,
-                    children: Ai.map(function (e, t) {
+                    children: vi.map(function (e, t) {
                       return (0,
-                      un.jsxs)(ji, { children: [(0, un.jsx)(ki, { src: e.image, alt: e.alt }), (0, un.jsx)(qt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, un.jsx)(qt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, un.jsx)(Pi, { children: (0, un.jsx)(gn, { to: e.url, children: (0, un.jsx)(Oi, { children: "conoce m\xe1s" }) }) })] }, t);
+                      un.jsxs)(Ci, { children: [(0, un.jsx)(Ei, { src: e.image, alt: e.alt }), (0, un.jsx)(qt, { size: "1.5rem", margin: "1rem 0 0", weight: "bold", align: "center", children: e.title }), (0, un.jsx)(qt, { size: "1.2rem", margin: "1.5rem", color: "#4f4f4f", align: "center", children: e.description }), (0, un.jsx)(Li, { children: (0, un.jsx)(gn, { to: e.url, children: (0, un.jsx)(Ti, { children: "conoce m\xe1s" }) }) })] }, t);
                     }),
                   }
                 )
@@ -19181,10 +19227,10 @@
             ],
           });
         },
-        Li = n(9951),
-        Mi = n(7646),
-        Ii = n(3104),
-        zi = function () {
+        Ii = n(9951),
+        zi = n(7646),
+        Di = n(3104),
+        Ri = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(Wn, {
@@ -19197,20 +19243,20 @@
                 className: "contact",
                 id: "contacto",
                 children: [
-                  (0, un.jsxs)(Ri, {
+                  (0, un.jsxs)(Ni, {
                     children: [
-                      (0, un.jsxs)(Di, {
+                      (0, un.jsxs)(Bi, {
                         children: [
-                          (0, un.jsx)("img", { src: Li, alt: "" }),
+                          (0, un.jsx)("img", { src: Ii, alt: "" }),
                           (0, un.jsx)("h3", {
                             children: "tel\xe9fono de contacto",
                           }),
                           (0, un.jsx)("p", { children: "926 532 749" }),
                         ],
                       }),
-                      (0, un.jsxs)(Di, {
+                      (0, un.jsxs)(Bi, {
                         children: [
-                          (0, un.jsx)("img", { src: Ii, alt: "" }),
+                          (0, un.jsx)("img", { src: Di, alt: "" }),
                           (0, un.jsx)("h3", {
                             children: "correo electr\xf3nico",
                           }),
@@ -19225,9 +19271,9 @@
                           }),
                         ],
                       }),
-                      (0, un.jsxs)(Di, {
+                      (0, un.jsxs)(Bi, {
                         children: [
-                          (0, un.jsx)("img", { src: Mi, alt: "" }),
+                          (0, un.jsx)("img", { src: zi, alt: "" }),
                           (0, un.jsx)("h3", { children: "Direcci\xf3n" }),
                           (0, un.jsx)("p", {
                             children:
@@ -19310,19 +19356,19 @@
             ],
           });
         },
-        Ri = Qt.div(
+        Ni = Qt.div(
           Pr ||
             (Pr = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n",
             ]))
         ),
-        Di = Qt.div(
+        Bi = Qt.div(
           Tr ||
             (Tr = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n\n  img {\n    height: 3rem;\n  }\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n",
             ]))
         ),
-        Ni = function (e) {
+        Fi = function (e) {
           var n = e.alt,
             r = e.buttonLabel,
             i = e.description,
@@ -19378,17 +19424,17 @@
             }),
           });
         },
-        Bi = n(1817),
-        Fi = function () {
-          return (0, un.jsxs)(Wi, {
+        Wi = n(1817),
+        Ui = function () {
+          return (0, un.jsxs)(Hi, {
             id: "noticias",
             children: [
               (0, un.jsx)("img", {
                 className: "video",
-                src: Bi,
+                src: Wi,
                 alt: "fotografia-baloncesto-campeones",
               }),
-              (0, un.jsxs)(Ui, {
+              (0, un.jsxs)(Vi, {
                 children: [
                   (0, un.jsx)("h3", {
                     children: "20\xb0 CAMPEONATO REGIONAL BALONCESTO",
@@ -19402,27 +19448,27 @@
             ],
           });
         },
-        Wi = Qt.div(
+        Hi = Qt.div(
           Lr ||
             (Lr = _([
               "\n  height: 100vh;\n  width: 100%;\n  object-fit: contain;\n  display: flex;\n  flex-direction: column;\n  justify-content: start;\n  align-items: center;\n\n  @media (max-width: 440px) {\n    justify-content: center;\n    align-items: start;\n    background: linear-gradient(\n      90deg,\n      rgba(0, 0, 0, 0.8) 0%,\n      rgba(20, 20, 20, 0.4) 50%,\n      rgba(83, 100, 141, 0) 100%\n    );\n  }\n\n  .video {\n    object-fit: cover;\n    width: 100%;\n    height: 100vh;\n    position: absolute;\n    z-index: -1;\n    opacity: 0.6;\n  }\n",
             ]))
         ),
-        Ui = Qt.div(
+        Vi = Qt.div(
           Mr ||
             (Mr = _([
               "\n  margin-top: 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  width: 80%;\n  margin-right: 30px;\n  text-align: right;\n  background-color: 071c2f;\n\n  h3 {\n    color: #071c2f;\n    font-size: 3rem;\n    letter-spacing: 2px;\n    font-weight: 200;\n    font-weight: 700;\n  }\n  p {\n    margin-top: 1rem;\n    color: black;\n    font-size: 1.8rem;\n    letter-spacing: 2px;\n    font-weight: 700;\n  }\n\n  @media (max-width: 960px) {\n    h3 {\n      font-size: 2.5rem;\n      text-align: center;\n    }\n    p {\n      text-align: center;\n      font-size: 1.2rem;\n      width: 85%;\n    }\n  }\n  @media (max-width: 440px) {\n    margin: 2rem;\n    background-color: transparent;\n    align-items: center;\n    justify-content: end;\n    margin-right: 0px;\n    text-align: center;\n    width: 90%;\n    writing-mode: vertical-lr;\n    transform: rotate(180deg);\n    h3 {\n      color: white;\n      font-size: 2.5rem;\n      text-align: center;\n    }\n\n    p {\n      display: none;\n    }\n  }\n",
             ]))
         );
-      var Hi,
-        Vi,
-        Gi,
+      var Gi,
         Yi,
         Qi,
         Zi,
         _i,
-        qi = function (e) {
-          return (0, un.jsx)(Ji, {
+        qi,
+        Ji,
+        Xi = function (e) {
+          return (0, un.jsx)(Ki, {
             children: (0, un.jsxs)("div", {
               onClick: e.handleClick,
               className: "icon nav-icon-5 ".concat(e.clicked ? "open" : ""),
@@ -19434,28 +19480,28 @@
             }),
           });
         },
-        Ji = Qt.div(
+        Ki = Qt.div(
           Ir ||
             (Ir = _([
               "\n  /* nav-icon-5 */\n  .nav-icon-5 {\n    width: 30px;\n    height: 30px;\n    margin: 10px 10px;\n    position: relative;\n    cursor: pointer;\n    display: inline-block;\n  }\n  .nav-icon-5 span {\n    background-color: #ffc0bc;\n    position: absolute;\n    border-radius: 2px;\n    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);\n    width: 100%;\n    height: 3px;\n    transition-duration: 500ms;\n  }\n  .nav-icon-5 span:nth-child(1) {\n    top: 0px;\n    left: 0px;\n  }\n  .nav-icon-5 span:nth-child(2) {\n    top: 13px;\n    left: 0px;\n    opacity: 1;\n  }\n  .nav-icon-5 span:nth-child(3) {\n    bottom: 0px;\n    left: 0px;\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(1) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(2) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5:not(.open):hover span:nth-child(3) {\n    transform: rotate(0deg) scaleY(1.1);\n  }\n  .nav-icon-5.open span:nth-child(1) {\n    transform: rotate(45deg);\n    background-color: #ffc0bc;\n    top: 13px;\n  }\n  .nav-icon-5.open span:nth-child(2) {\n    opacity: 0;\n  }\n  .nav-icon-5.open span:nth-child(3) {\n    transform: rotate(-45deg);\n    top: 13px;\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        Xi = n(5667),
-        Ki = n(9356),
-        $i = n(6129),
-        ea = function () {
+        $i = n(5667),
+        ea = n(9356),
+        ta = n(6129),
+        na = function () {
           return (0, un.jsx)(un.Fragment, {
-            children: (0, un.jsxs)(ta, {
+            children: (0, un.jsxs)(ra, {
               children: [
-                (0, un.jsxs)(na, {
+                (0, un.jsxs)(ia, {
                   children: [
-                    (0, un.jsxs)(ra, {
+                    (0, un.jsxs)(aa, {
                       children: [
-                        (0, un.jsx)("img", { src: $i, alt: "logo-afymos" }),
+                        (0, un.jsx)("img", { src: ta, alt: "logo-afymos" }),
                         (0, un.jsx)("h1", { children: "Afymos" }),
                       ],
                     }),
-                    (0, un.jsxs)(ia, {
+                    (0, un.jsxs)(oa, {
                       children: [
                         (0, un.jsx)("h2", {
                           children:
@@ -19468,9 +19514,9 @@
                     }),
                   ],
                 }),
-                (0, un.jsx)(aa, {
+                (0, un.jsx)(sa, {
                   style: {
-                    backgroundImage: "url(".concat(Ki, ")"),
+                    backgroundImage: "url(".concat(ea, ")"),
                     WebkitBackgroundSize: "cover",
                     backgroundPositionY: "center",
                     backgroundPositionX: "center",
@@ -19483,29 +19529,27 @@
             }),
           });
         },
-        ta = Qt.header(Hi || (Hi = _(["\n  margin: auto;\n"]))),
-        na = Qt.div(
-          Vi ||
-            (Vi = _([
-              "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #ffc0bc;\n  width: 100%;\n  gap: 1.5rem;\n  margin: 1.5rem auto;\n",
-            ]))
-        ),
-        ra = Qt.div(
-          Gi ||
-            (Gi = _([
-              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size: 5rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
-            ]))
-        ),
+        ra = Qt.header(Gi || (Gi = _(["\n  margin: auto;\n"]))),
         ia = Qt.div(
           Yi ||
             (Yi = _([
+              "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #ffc0bc;\n  width: 100%;\n  gap: 1.5rem;\n  margin: 1.5rem auto;\n",
+            ]))
+        ),
+        aa = Qt.div(
+          Qi ||
+            (Qi = _([
+              "\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 1.5rem;\n\n  img {\n    display: block;\n    height: 8rem;\n  }\n\n  h1 {\n    font-size: 8rem;\n    text-transform: uppercase;\n    color: #071c2f;\n  }\n\n  @media (max-width: 440px) {\n    h1 {\n      font-size: 5rem;\n    }\n\n    img {\n      height: 4rem;\n    }\n  }\n",
+            ]))
+        ),
+        oa = Qt.div(
+          Zi ||
+            (Zi = _([
               "\n  display: flex;\n  flex-direction: column;\n  align-items: end;\n  justify-content: end;\n  gap: 1rem;\n\n  h2 {\n    font-size: 2rem;\n    color: #071c2f;\n  }\n\n  i {\n    font-size: 1.5rem;\n    color: #071c2f;\n  }\n  @media (max-width: 440px) {\n    h2 {\n      font-size: 1.4rem;\n    }\n\n    i {\n      font-size: 0.8rem;\n    }\n  }\n",
             ]))
         ),
-        aa = Qt.section(Qi || (Qi = _([""])));
-      var oa,
-        sa,
-        la,
+        sa = Qt.section(_i || (_i = _([""])));
+      var la,
         ca,
         ua,
         da,
@@ -19529,7 +19573,9 @@
         Pa,
         Ta,
         La,
-        Ma = function () {
+        Ma,
+        Ia,
+        za = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1],
@@ -19538,7 +19584,7 @@
             };
           return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, un.jsxs)(Ia, {
+              (0, un.jsxs)(Da, {
                 id: "menu-principal",
                 children: [
                   (0, un.jsxs)("h3", {
@@ -19565,7 +19611,7 @@
                         to: "/donaciones",
                         children: "donaciones",
                       }),
-                      (0, un.jsx)(Xi.rU, {
+                      (0, un.jsx)($i.rU, {
                         to: "contacto",
                         spy: !0,
                         smooth: !0,
@@ -19578,30 +19624,30 @@
                   }),
                   (0, un.jsx)("div", {
                     className: "burguer",
-                    children: (0, un.jsx)(qi, { clicked: n, handleClick: i }),
+                    children: (0, un.jsx)(Xi, { clicked: n, handleClick: i }),
                   }),
-                  (0, un.jsx)(za, {
+                  (0, un.jsx)(Ra, {
                     className: "initial ".concat(n ? " active" : ""),
                   }),
                 ],
               }),
-              (0, un.jsx)(ea, {}),
+              (0, un.jsx)(na, {}),
             ],
           });
         },
-        Ia = Qt.nav(
-          Zi ||
-            (Zi = _([
+        Da = Qt.nav(
+          qi ||
+            (qi = _([
               "\n  background-color: #071c2f;\n  height: 10vh;\n  width: 100%;\n  z-index: 50;\n\n  h3 {\n    color: #ffc0bc;\n    font-weight: 400;\n    margin-left: 5%;\n    font-size: 2.2rem;\n    span {\n      font-weight: bold;\n    }\n  }\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n\n  a {\n    color: #ffc0bc;\n    text-decoration: none;\n    margin-right: 5%;\n    font-weight: 400;\n  }\n\n  @media (max-width: 440px) {\n    h3 {\n      font-size: 1.6rem;\n    }\n  }\n\n  .links {\n    position: absolute;\n    width: 60%;\n    top: -700px;\n    left: -2000px;\n    right: 0;\n    text-align: center;\n    transition: all 0.5s ease;\n    a {\n      color: #ffc0bc;\n      font-size: 1.2rem;\n      display: block;\n    }\n\n    @media (min-width: 1090px) {\n      position: initial;\n      margin: 0;\n      a {\n        font-size: 18px;\n        margin-left: 30px;\n        color: white;\n        display: inline;\n\n        &:hover {\n          transition: all 0.5s ease-out;\n          text-decoration: underline;\n        }\n      }\n      display: block;\n    }\n  }\n\n  .links.active {\n    @media (max-width: 1090px) {\n      background-color: #071c2f;\n      height: 45%;\n      width: 100%;\n      display: block;\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      top: 11%;\n      left: 0;\n      right: 0;\n      text-align: center;\n\n      a {\n        font-size: 3rem;\n        margin-top: 5%;\n        color: #ffc0bc;\n        cursor: pointer;\n\n        &:hover {\n          color: gray;\n          font-weight: bold;\n          transition: all 0.5s ease-out;\n        }\n      }\n    }\n  }\n\n  .burguer {\n    width: 50px;\n    height: 50px;\n    margin: 3%;\n\n    @media (min-width: 1090px) {\n      display: none;\n    }\n  }\n",
             ]))
         ),
-        za = Qt.div(
-          _i ||
-            (_i = _([
+        Ra = Qt.div(
+          Ji ||
+            (Ji = _([
               "\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n  width: 30%;\n  height: 30%;\n  margin-left: 30px;\n  z-index: -1;\n  transition: all 0.8s ease;\n\n  &.active {\n    border-radius: 0 0 80% 0;\n    top: 0;\n    left: 0;\n    width: 50%;\n    height: 50%;\n  }\n",
             ]))
         ),
-        Ra = function () {
+        Na = function () {
           var e = t((0, h.useState)(!1), 2),
             n = e[0],
             r = e[1];
@@ -19609,11 +19655,11 @@
             children: [
               (0, un.jsx)(Wn, { title: "Proyecto Crea", size: !0 }),
               (0, un.jsx)("section", {
-                children: (0, un.jsx)(Da, {
+                children: (0, un.jsx)(Ba, {
                   id: "demo",
-                  children: (0, un.jsxs)(Na, {
+                  children: (0, un.jsxs)(Fa, {
                     children: [
-                      (0, un.jsx)(Fa, {
+                      (0, un.jsx)(Ua, {
                         children: (0, un.jsx)("iframe", {
                           width: "570",
                           height: "320",
@@ -19625,7 +19671,7 @@
                           allowFullScreen: !0,
                         }),
                       }),
-                      (0, un.jsxs)(Ba, {
+                      (0, un.jsxs)(Wa, {
                         children: [
                           (0, un.jsx)("p", { children: "Proyecto CREA;" }),
                           (0, un.jsx)("p", {
@@ -19654,152 +19700,152 @@
             ],
           });
         },
-        Da = Qt.div(
-          oa || (oa = _(["\n  width: 100%;\n  background: white;\n"]))
+        Ba = Qt.div(
+          la || (la = _(["\n  width: 100%;\n  background: white;\n"]))
         ),
-        Na = Qt.div(
-          sa ||
-            (sa = _([
+        Fa = Qt.div(
+          ca ||
+            (ca = _([
               "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 2rem;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
             ]))
         ),
-        Ba = Qt.div(
-          la ||
-            (la = _([
+        Wa = Qt.div(
+          ua ||
+            (ua = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    margin-top: 7%;\n    font-size: 2rem;\n    font-style: italic;\n    color: #071c2f;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n    color: #071c2f;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n    color: #071c2f;\n  }\n",
             ]))
         ),
-        Fa = Qt.div(ca || (ca = _(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
-        Wa = n(8335),
-        Ua = n(8299),
-        Ha = n(5025),
-        Va = n(1254),
-        Ga = n(587),
-        Ya = n(5178),
-        Qa = n(4993),
-        Za = n(3602),
-        _a = n(181),
-        qa = n(9302),
-        Ja = n(4418),
-        Xa = n(3468),
-        Ka = [
+        Ua = Qt.div(da || (da = _(["\n  margin: auto;\n  margin: 7% 0;\n"]))),
+        Ha = n(8335),
+        Va = n(8299),
+        Ga = n(5025),
+        Ya = n(1254),
+        Qa = n(587),
+        Za = n(5178),
+        _a = n(4993),
+        qa = n(3602),
+        Ja = n(181),
+        Xa = n(9302),
+        Ka = n(4418),
+        $a = n(3468),
+        eo = [
           {
             id: 1,
             name: "Centro de Dia",
-            img: Ua,
+            img: Va,
             alt: "centro-de-dia",
             url: "/centro-de-dia",
           },
           {
             id: 2,
             name: "Servicio de capacitaci\xf3n",
-            img: Wa,
+            img: Ha,
             alt: "servicio-capacitacion",
             url: "/servicio-capacitacion",
           },
           {
             id: 3,
             name: "Viviendas con apoyo",
-            img: Ja,
+            img: Ka,
             alt: "viviendas-con-apoyo",
             url: "/viviendas-con-apoyo",
           },
           {
             id: 4,
             name: "Centro de Formaci\xf3n",
-            img: Qa,
+            img: _a,
             alt: "formacion",
             url: "/formacion",
           },
           {
             id: 5,
             name: "Ocio y volunturariado",
-            img: Xa,
+            img: $a,
             alt: "ocio-y-voluntariado",
             url: "/ocio-y-voluntariado",
           },
           {
             id: 6,
             name: " Valoraci\xf3n y Diagn\xf3stico",
-            img: Ga,
+            img: Qa,
             alt: "/valoraci\xf3n-y-diagn\xf3stico",
             url: "/valoracion-y-diagnostico",
           },
           {
             id: 7,
             name: "Terapias",
-            img: qa,
+            img: Xa,
             alt: "terapias",
             url: "/terapias",
           },
           {
             id: 8,
             name: " Atenci\xf3n familias",
-            img: Ya,
+            img: Za,
             alt: "apoyo-familias",
             url: "/apoyo-familias",
           },
         ],
-        $a = [
+        to = [
           {
             id: 1,
             name: "Instalaciones Centro",
-            img: Ha,
+            img: Ga,
             alt: "instalaciones-centro-diversidad",
             url: "/instalaciones-centro-diversidad",
           },
           {
             id: 2,
             name: "Organigrama",
-            img: _a,
+            img: Ja,
             alt: "organigrama",
             url: "/organigrama",
           },
           {
             id: 3,
             name: "Junta Directiva",
-            img: Za,
+            img: qa,
             alt: "junta-directiva",
             url: "/junta-directiva",
           },
           {
             id: 4,
             name: "Cuentas anuales 2021",
-            img: Va,
+            img: Ya,
             alt: "logo-cuentas-anuales",
             url: "/pdf-cuentas-21",
           },
         ],
-        eo = function () {
-          var e = t((0, h.useState)($a), 1)[0];
+        no = function () {
+          var e = t((0, h.useState)(to), 1)[0];
           return (0, un.jsx)(un.Fragment, {
             children: (0, un.jsxs)("section", {
               children: [
                 (0, un.jsx)(Wn, { title: "Sobre Nosotros", marginBottom: !0 }),
-                (0, un.jsx)(to, {
+                (0, un.jsx)(ro, {
                   children: e.map(function (e) {
                     return (0,
-                    un.jsx)(no, { value: e.name, children: (0, un.jsxs)(gn, { to: e.url, children: [(0, un.jsx)("img", { src: e.img, alt: "" }), (0, un.jsx)("h3", { children: e.name })] }) }, e.id);
+                    un.jsx)(io, { value: e.name, children: (0, un.jsxs)(gn, { to: e.url, children: [(0, un.jsx)("img", { src: e.img, alt: "" }), (0, un.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               ],
             }),
           });
         },
-        to = Qt.div(
-          ua ||
-            (ua = _([
+        ro = Qt.div(
+          fa ||
+            (fa = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  margin-bottom: 4rem;\n",
             ]))
         ),
-        no = Qt.div(
-          da ||
-            (da = _([
+        io = Qt.div(
+          pa ||
+            (pa = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        ro = function () {
-          var e = t((0, h.useState)(Ka), 1)[0];
+        ao = function () {
+          var e = t((0, h.useState)(eo), 1)[0];
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(Wn, {
@@ -19809,29 +19855,29 @@
                 marginBottom: !0,
               }),
               (0, un.jsx)("section", {
-                children: (0, un.jsx)(io, {
+                children: (0, un.jsx)(oo, {
                   children: e.map(function (e) {
                     return (0,
-                    un.jsx)(ao, { value: e.name, children: (0, un.jsxs)(gn, { to: e.url, children: [(0, un.jsx)("img", { src: e.img, alt: "" }), (0, un.jsx)("h3", { children: e.name })] }) }, e.id);
+                    un.jsx)(so, { value: e.name, children: (0, un.jsxs)(gn, { to: e.url, children: [(0, un.jsx)("img", { src: e.img, alt: "" }), (0, un.jsx)("h3", { children: e.name })] }) }, e.id);
                   }),
                 }),
               }),
             ],
           });
         },
-        io = Qt.div(
-          fa ||
-            (fa = _([
+        oo = Qt.div(
+          ha ||
+            (ha = _([
               "\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1.5rem;\n  padding-bottom: 2rem;\n  margin: 2rem auto;\n",
             ]))
         ),
-        ao = Qt.div(
-          pa ||
-            (pa = _([
+        so = Qt.div(
+          ma ||
+            (ma = _([
               "\n  flex: 1 1 25rem;\n  padding: 2rem;\n  border: 0.1rem solid rgba(0, 0, 0, 0.2);\n  border-radius: 0.5rem;\n  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);\n  text-align: center;\n  text-decoration: none;\n  img {\n    height: 3rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 1rem 0;\n  }\n  p {\n    font-size: 1.2rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p a {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  p:hover {\n    font-size: 1.5rem;\n    color: #071c2f;\n    padding: 0.2rem 0;\n  }\n  :hover {\n    background-color: #ffc0bc;\n  }\n",
             ]))
         ),
-        oo = function (e) {
+        lo = function (e) {
           var t = e.item,
             n = t.cover,
             r = t.alt,
@@ -19852,7 +19898,7 @@
             }),
           });
         },
-        so = function (e) {
+        co = function (e) {
           var t = e.onClick;
           return (0, un.jsx)("div", {
             className: "control-btn",
@@ -19869,7 +19915,7 @@
             }),
           });
         },
-        lo = function (e) {
+        uo = function (e) {
           var t = e.onClick;
           return (0, un.jsx)("div", {
             className: "control-btn",
@@ -19885,7 +19931,7 @@
             }),
           });
         },
-        co = function (e) {
+        fo = function (e) {
           var t = e.slides,
             n = (e.title, e.id, e.items),
             r =
@@ -19896,8 +19942,8 @@
                 infinite: !0,
                 slidesToShow: t,
                 slidesToScroll: 1,
-                nextArrow: (0, un.jsx)(so, {}),
-                prevArrow: (0, un.jsx)(lo, {}),
+                nextArrow: (0, un.jsx)(co, {}),
+                prevArrow: (0, un.jsx)(uo, {}),
                 autoplay: !0,
                 speed: 2300,
                 autoplaySpeed: 2300,
@@ -19914,23 +19960,27 @@
                 ],
               });
           return (0, un.jsx)(un.Fragment, {
-            children: (0, un.jsxs)(uo, {
+            children: (0, un.jsxs)(po, {
               children: [
-                (0, un.jsx)(Wn, { title: "Somos Campeones", inverse: !0 }),
-                (0, un.jsxs)(fo, {
+                (0, un.jsx)(Wn, {
+                  title:
+                    "Visita Diputaci\xf3n de Ciudad Real - Plena Inclusi\xf3n",
+                  inverse: !0,
+                }),
+                (0, un.jsxs)(ho, {
                   children: [
                     (0, un.jsx)("div", { className: "heading flexSB" }),
                     (0, un.jsx)("div", {
                       className: "content",
                       children: (0, un.jsx)(
-                        Si.Z,
+                        ji.Z,
                         G(
                           G({}, r),
                           {},
                           {
                             children: n.map(function (e) {
                               return (0,
-                              un.jsx)(un.Fragment, { children: (0, un.jsx)(oo, { item: e, alt: e.alt }, e.id) });
+                              un.jsx)(un.Fragment, { children: (0, un.jsx)(lo, { item: e, alt: e.alt }, e.id) });
                             }),
                           }
                         )
@@ -19942,29 +19992,29 @@
             }),
           });
         },
-        uo = Qt.section(
-          ha ||
-            (ha = _([
+        po = Qt.section(
+          ga ||
+            (ga = _([
               "\n  margin: 10% auto;\n  background-color: #ffc0bc;\n  padding: 0;\n",
             ]))
         ),
-        fo = Qt.div(
-          ma || (ma = _(["\n  max-width: 90%;\n  margin: 5% auto;\n"]))
+        ho = Qt.div(
+          va || (va = _(["\n  max-width: 90%;\n  margin: 5% auto;\n"]))
         ),
-        po = n(4830),
-        ho = n(6219),
-        mo = n(8413),
-        go = function () {
-          return (0, un.jsx)(vo, {
+        mo = n(4830),
+        go = n(6219),
+        vo = n(8413),
+        yo = function () {
+          return (0, un.jsx)(bo, {
             id: "testimonios",
-            children: (0, un.jsxs)(yo, {
+            children: (0, un.jsxs)(Ao, {
               children: [
                 (0, un.jsx)(Wn, { title: "Historias reales", inverse: !0 }),
-                (0, un.jsxs)(bo, {
+                (0, un.jsxs)(xo, {
                   children: [
-                    (0, un.jsxs)(Ao, {
+                    (0, un.jsxs)(wo, {
                       children: [
-                        (0, un.jsx)("img", { src: po, alt: "rafa" }),
+                        (0, un.jsx)("img", { src: mo, alt: "rafa" }),
                         (0, un.jsx)("p", {
                           children:
                             "Gracias al trabajo, Rafael adquir\xf3 nuevas rutinas, cambiando sus h\xe1bitos y asumiendo nuevas responsabilidades, esto le ha permitido permitido cambiar su horizonte vital.",
@@ -19977,9 +20027,9 @@
                         }),
                       ],
                     }),
-                    (0, un.jsxs)(Ao, {
+                    (0, un.jsxs)(wo, {
                       children: [
-                        (0, un.jsx)("img", { src: ho, alt: "quico" }),
+                        (0, un.jsx)("img", { src: go, alt: "quico" }),
                         (0, un.jsx)("p", {
                           children:
                             "Quico, quien tras varios contratos temporales, pas\xf3 a ser indefinido. Logr\xf3 la primera inserci\xf3n socio-laboral, con la estabilidad que ello supon\xeda para \xe9l, abri\xe9ndole a su vez la puerta a conseguir otros objetivos para mejorar su calidad de vida, por ejemplo independizarse.",
@@ -19992,9 +20042,9 @@
                         }),
                       ],
                     }),
-                    (0, un.jsxs)(Ao, {
+                    (0, un.jsxs)(wo, {
                       children: [
-                        (0, un.jsx)("img", { src: mo, alt: "pedro" }),
+                        (0, un.jsx)("img", { src: vo, alt: "pedro" }),
                         (0, un.jsx)("p", {
                           children:
                             "En la misma l\xednea de trabajo, el objetivo laboral de Pedro es trabajar lijando. Por ello, La empresa Arte Religioso Salmer\xf3n, le abri\xf3 sus puertas mediante unas pr\xe1cticas laborales para corroborar si sus habilidades y capacidades eran compatibles con el puesto de trabajo.",
@@ -20013,61 +20063,61 @@
             }),
           });
         },
-        vo = Qt.div(
-          ga || (ga = _(["\n  width: 100%;\n  background-color: white;\n"]))
-        ),
-        yo = Qt.div(
-          va ||
-            (va = _([
-              "\n  padding: 5%;\n  h2 {\n    font-size: 3rem;\n    text-align: center;\n  }\n\n  @media (max-width: 940px) {\n    width: 100%;\n  }\n",
-            ]))
-        ),
         bo = Qt.div(
-          ya ||
-            (ya = _([
-              "\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 20px;\n  margin: 4rem 0;\n\n  @media (max-width: 940px) {\n    grid-template-columns: 1fr;\n  }\n",
-            ]))
+          ya || (ya = _(["\n  width: 100%;\n  background-color: white;\n"]))
         ),
         Ao = Qt.div(
           ba ||
             (ba = _([
+              "\n  padding: 5%;\n  h2 {\n    font-size: 3rem;\n    text-align: center;\n  }\n\n  @media (max-width: 940px) {\n    width: 100%;\n  }\n",
+            ]))
+        ),
+        xo = Qt.div(
+          Aa ||
+            (Aa = _([
+              "\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 20px;\n  margin: 4rem 0;\n\n  @media (max-width: 940px) {\n    grid-template-columns: 1fr;\n  }\n",
+            ]))
+        ),
+        wo = Qt.div(
+          xa ||
+            (xa = _([
               "\n  border: 1px solid #eee;\n  border-radius: 8px;\n  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);\n  padding: 1rem;\n  line-height: 2rem;\n\n  img {\n    height: 100px;\n    border-radius: 50px;\n    margin-top: -2rem;\n    margin-left: 35%;\n  }\n\n  p {\n    font-size: 1.2rem;\n    margin: 12px;\n    font-weight: 500;\n  }\n\n  span {\n    font-size: 1rem;\n    font-weight: 900;\n    color: grey;\n  }\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    margin: 1rem;\n  }\n",
             ]))
         ),
-        xo = function () {
-          var e = t((0, h.useState)(wi), 1)[0];
+        So = function () {
+          var e = t((0, h.useState)(bi), 1)[0];
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
-              (0, un.jsx)(Ma, {}),
-              (0, un.jsx)(ro, {}),
-              (0, un.jsx)(eo, {}),
-              (0, un.jsx)(Ni, G({}, ci)),
-              (0, un.jsx)(Ra, {}),
-              (0, un.jsx)(go, {}),
-              (0, un.jsx)(Ni, G({}, ui)),
-              (0, un.jsx)(Ni, G({}, di)),
+              (0, un.jsx)(za, {}),
               (0, un.jsx)("div", {
                 className: "App",
-                children: (0, un.jsx)(Ti, {}),
+                children: (0, un.jsx)(Mi, {}),
               }),
-              (0, un.jsx)(Fi, {}),
-              (0, un.jsx)(co, {
+              (0, un.jsx)(fo, {
                 items: e,
                 title: "Our Drinks & Cocktails",
                 slides: 3,
-                datas: wi,
+                datas: e,
               }),
-              (0, un.jsx)(zi, {}),
+              (0, un.jsx)(Ui, {}),
+              (0, un.jsx)(ao, {}),
+              (0, un.jsx)(no, {}),
+              (0, un.jsx)(Fi, G({}, wi)),
+              (0, un.jsx)(Na, {}),
+              (0, un.jsx)(Fi, G({}, ki)),
+              (0, un.jsx)(yo, {}),
+              (0, un.jsx)(Fi, G({}, Si)),
+              (0, un.jsx)(Ri, {}),
               (0, un.jsx)(Xn, { size: !0, inverse: !0, marginBottom: !0 }),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        wo = n(4534),
-        So = n(5629),
-        ko = n(543),
-        jo = {
+        ko = n(4534),
+        jo = n(5629),
+        Eo = n(543),
+        Co = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra entidad" },
@@ -20075,9 +20125,9 @@
             "AFYMOS fue fundada en el a\xf1o 1991 y los fines que perseguimos seg\xfan nuestros estatutos son:",
           description:
             "Los fines que la Asociaci\xf3n persigue son de car\xe1cter c\xedvico y social, de promoci\xf3n de los valores constitucionales y de los derechos humanos de las personas con discapacidad intelectual, f\xedsica o sensorial.  ",
-          img: wo,
+          img: ko,
         },
-        Eo = {
+        Oo = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n" },
@@ -20085,9 +20135,9 @@
             "La Misi\xf3n de Afymos es contribuir, desde su compromiso \xe9tico, con apoyos y oportunidades, a que cada persona con discapacidad intelectual o del desarrollo y su familia puedan desarrollar su proyecto de vida:",
           description:
             "En Afymos nos comprometemos a ayudar a estas personas y a sus familias a que consigan sus propios proyectos de vida. Para ello, tenemos que prestarles apoyos, y trabajar para que tengan m\xe1s oportunidades de participar en la sociedad. ",
-          img: So,
+          img: jo,
         },
-        Co = {
+        Po = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Compromiso \xe9tico y valores" },
@@ -20095,15 +20145,15 @@
             "Para conseguir estas oportunidades, defendemos sus derechos como ciudadanos plenos, y reivindicamos una sociedad m\xe1s justa y solidaria.",
           description:
             "Todo esto no podemos hacerlo de cualquier manera, sino que tiene que estar orientado por nuestro compromiso \xe9tico, por nuestros valores y en la forma de intervenci\xf3n que est\xe1 basada en el Modelo de  Calidad de Calidad de Vida de Schalock y Verdugo.",
-          img: ko,
+          img: Eo,
         },
-        Oo = function (e) {
-          return (0, un.jsx)(Po, {
+        To = function (e) {
+          return (0, un.jsx)(Lo, {
             id: "demo",
-            children: (0, un.jsxs)(To, {
+            children: (0, un.jsxs)(Mo, {
               wrapReverse: e,
               children: [
-                (0, un.jsx)(Mo, {
+                (0, un.jsx)(zo, {
                   children: (0, un.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -20115,7 +20165,7 @@
                     allowFullScreen: !0,
                   }),
                 }),
-                (0, un.jsxs)(Lo, {
+                (0, un.jsxs)(Io, {
                   children: [
                     (0, un.jsx)("p", { children: "Un d\xeda en Afymos" }),
                     (0, un.jsx)("p", {
@@ -20132,40 +20182,40 @@
             }),
           });
         },
-        Po = Qt.div(
-          Aa ||
-            (Aa = _([
-              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
-            ]))
-        ),
-        To = Qt.div(
-          xa ||
-            (xa = _([
-              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
-            ]))
-        ),
         Lo = Qt.div(
           wa ||
             (wa = _([
+              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
+            ]))
+        ),
+        Mo = Qt.div(
+          Sa ||
+            (Sa = _([
+              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
+            ]))
+        ),
+        Io = Qt.div(
+          ka ||
+            (ka = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n\n  p:nth-child(1) {\n    font-size: 1.8rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.2rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        Mo = Qt.div(Sa || (Sa = _(["\n  margin: auto;\n"]))),
-        Io = function () {
+        zo = Qt.div(ja || (ja = _(["\n  margin: auto;\n"]))),
+        Do = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(wn, { title: "Nosotros" }),
               (0, un.jsx)(Wn, { title: "Nuestra Entidad", size: !0 }),
-              (0, un.jsx)(dn, G(G({}, jo), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Eo), {}, { reverse: !0 })),
               (0, un.jsx)(dn, G(G({}, Co), {}, { inverse: !0 })),
-              (0, un.jsx)(Oo, { wrapReverse: !0 }),
+              (0, un.jsx)(dn, G(G({}, Oo), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Po), {}, { inverse: !0 })),
+              (0, un.jsx)(To, { wrapReverse: !0 }),
               (0, un.jsx)(Xn, { inverse: !0 }),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        zo = {
+        Ro = {
           id: "politicaPrivacidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -20175,7 +20225,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) con CIF G13159173 y domicilio social en CL. PEDRO ARIAS, 87 C.P. 13630 de SOCUELLAMOS (CIUDAD REAL), con direcci\xf3n de correo afymos@gmail.com",
           img: "",
         },
-        Ro = {
+        No = {
           id: "politicaPrivacidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20185,7 +20235,7 @@
             "ASOCIACION DE FAMILIARES Y AMIGOS DE PERSONAS CON ALGUNA DISCAPACIDAD (AFYMOS) garantiza en todo momento el \xedntegro y pleno cumplimiento de las obligaciones dispuestas por la normativa de protecci\xf3n de datos y de servicios de la sociedad de la informaci\xf3n, as\xed como por cualquier otra Ley o norma que complemente o sustituya a las anteriores.",
           img: "",
         },
-        Do = {
+        Bo = {
           id: "politicaPrivacidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -20196,23 +20246,23 @@
             "Para impulsar la asistencia social, promoci\xf3n y asesoramiento a discapacitados as\xed como a sus familiares, fomentar la igualdad de oportunidades entre personas con discapacidad y sin ella.  Para gestionar la formaci\xf3n ocupacional dirigida a su inserci\xf3n laboral, programas para garantizar la autonom\xeda personal, terapias rehabilitadoras, as\xed como llevar a cabo cualquier otra actividad formativa o l\xfadica en beneficio de los miembros de nuestra Asociaci\xf3n.Para prestar el apoyo y la atenci\xf3n que necesitan los residentes de las viviendas, como ser\xeda la formaci\xf3n orientada al desarrollo de la autonom\xeda en la vivienda, ayudar a desarrollar sus habilidades en su d\xeda a d\xeda, apoyos y cuidados de car\xe1cter m\xe9dico-sanitario, actuaciones para promover el desarrollo psico-social, as\xed como participar en los talleres y dem\xe1s actividades que lleva a cabo el centro teniendo en cuenta sus caracter\xedsticas y condiciones.Para asesorar y orientar a los socios y sus familias, as\xed como cualquier otra acci\xf3n que forme, informe o divulgue sobre cualquier aspecto que ata\xf1a a los intereses de los asociados. Como llevar a cabo la correspondiente gesti\xf3n administrativa derivada de estas actuaciones. Para impartir formaci\xf3n tanto a personas con discapacidad intelectual as\xed como a profesionales relacionados con el sector. Para responder cualquier consulta a trav\xe9s del tel\xe9fono, correo electr\xf3nico o medios de comunicaci\xf3n electr\xf3nica, de la misma manera poder resolver cualquier duda, sugerencia, queja, reclamaci\xf3n, etc. relacionada con nuestros servicios, que puedan realizar a trav\xe9s de cualquier formulario dispuesto en nuestras instalaciones. Para gestionar la relaci\xf3n con los voluntarios y llevar a cabo las acciones oportunas. Para el mantenimiento de las relaciones con clientes, como ser\xeda, por ejemplo, la compra de productos de AFYMOS y la consiguiente gesti\xf3n derivada de la misma. Para gestionar las donaciones recibidas por esta Asociaci\xf3n y la correspondiente gesti\xf3n administrativa con estos donantes.Para el tratamiento de los datos personales de empresarios individuales y personas de contacto de empresas en su mantenimiento de relaciones, independientemente de que sean comerciales/transaccionales o no. Para gestionar los curr\xedculum vitae recibidos y poder as\xed participar en los diferentes procesos de selecci\xf3n de personal que se lleven a cabo en la entidad..",
           img: "",
         },
-        No = function () {
+        Fo = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
               (0, un.jsx)(wn, { title: "politica Privacidad" }),
               (0, un.jsx)(Wn, { title: "Cookies y Privacidad", size: !0 }),
-              (0, un.jsx)(dn, G(G({}, zo), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Ro), {}, { reverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Do), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ro), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, No), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Bo), {}, { inverse: !0 })),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        Bo = n(6493),
-        Fo = n(5900),
-        Wo = {
+        Wo = n(6493),
+        Uo = n(5900),
+        Ho = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "El Servicio de Capacitaci\xf3n Afymos" },
@@ -20220,9 +20270,9 @@
             "Es un servicio de atenci\xf3n diurna que tiene como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
           description:
             "Facilitar el aprendizaje de nuevas capacidades en todos los \xe1mbitos de la vida de la persona (autonom\xeda personal, relaciones interpersonales, utilizaci\xf3n de los recursos comunitarios y capacidad de toma de decisiones).",
-          img: Bo,
+          img: Wo,
         },
-        Uo = {
+        Vo = {
           reverse: !0,
           inverse: !1,
           topLine: {
@@ -20232,9 +20282,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodolog\xeda detrabajo, por la definici\xf3n de sus objetivos y por la forma de evaluaci\xf3n de los mismos.",
-          img: Fo,
+          img: Uo,
         },
-        Ho = function () {
+        Go = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
@@ -20243,17 +20293,17 @@
                 title: "Programa habilitaci\xf3n laboral",
                 size: !0,
               }),
-              (0, un.jsx)(dn, G(G({}, Wo), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Uo), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ho), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Vo), {}, { reverse: !0 })),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        Vo = n(3494),
-        Go = n(843),
-        Yo = n(6808),
-        Qo = {
+        Yo = n(3494),
+        Qo = n(843),
+        Zo = n(6808),
+        _o = {
           id: "centroDiaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20262,9 +20312,9 @@
             "El Centro de D\xeda Afymos es un recurso social de atenci\xf3n diurna dirigido a prestar atenci\xf3n especializada a personas cuyo grado de discapacidad intelectual hace necesario un nivel de apoyos extenso",
           description:
             "Favorecemos la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente \xedndole, temporales o permanentes, de diferente intensidad y frecuencia.",
-          img: Vo,
+          img: Yo,
         },
-        Zo = {
+        qo = {
           id: "centroDiaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20275,9 +20325,9 @@
             "A trav\xe9s de programas de habilitaci\xf3n encaminados a alcanzar el mayor grado de autonom\xeda personal, de comunicaci\xf3n, adquisici\xf3n y mantenimiento de las habilidades b\xe1sicas",
           description:
             "Fomentamos la participaci\xf3n en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social,  contribuyendo a mejorar su calidad de vida. ",
-          img: Go,
+          img: Qo,
         },
-        _o = {
+        Jo = {
           id: "centroDiaDataThree",
           reverse: !1,
           inverse: !1,
@@ -20288,26 +20338,26 @@
             "Dise\xf1amos un plan personal de apoyos y su plan de futuro personal, donde se recogen los principales objetivos a conseguir en diferentes \xe1mbitos de su vida",
           description:
             "Potencionamos la utilizaci\xf3n de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
-          img: Yo,
+          img: Zo,
         },
-        qo = function () {
+        Xo = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
               (0, un.jsx)(wn, { title: "Centro de D\xeda" }),
               (0, un.jsx)(Wn, { title: "Nuestro Centro de d\xeda", size: !0 }),
-              (0, un.jsx)(dn, G(G({}, Qo), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Zo), {}, { reverse: !0 })),
               (0, un.jsx)(dn, G(G({}, _o), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, qo), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Jo), {}, { inverse: !0 })),
               (0, un.jsx)(Xn, { size: !0, inverse: !0, marginBottom: !0 }),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        Jo = n(4441),
-        Xo = n(3208),
-        Ko = n(4058),
-        $o = {
+        Ko = n(4441),
+        $o = n(3208),
+        es = n(4058),
+        ts = {
           id: "centroDiversidadDataOne",
           reverse: !1,
           inverse: !1,
@@ -20316,9 +20366,9 @@
             "Cuenta con espacio \xfatil de 803,16 m\xb2 dividido en dos plantas.",
           description:
             "Dispone de unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el a\xf1o obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun as\xed seguiremos adapt\xe1ndolo para favorecer la orientaci\xf3n y la comunicaci\xf3n para personas con especiales dificultades en estos aspectos.",
-          img: Jo,
+          img: Ko,
         },
-        es = {
+        ns = {
           id: "centroDiversidadDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20326,9 +20376,9 @@
           headline:
             "Contamos con numerosas salas adaptadas para llevar a cabo todos los servicios terapeuticos y de formaci\xf3n que ofrecemos",
           description: " ",
-          img: Ko,
+          img: es,
         },
-        ts = {
+        rs = {
           id: "centroDiversidadDataThree",
           reverse: !1,
           inverse: !1,
@@ -20336,14 +20386,14 @@
           headline: "Centro de Atenci\xf3n a la Diversidad Funcional",
           description:
             "Obt\xe9n informaci\xf3n de todos los Servicios que ofertamos.",
-          img: Xo,
+          img: $o,
         },
-        ns = n(737),
-        rs = n(8919),
-        is = n(9002),
-        as = n(1197),
-        os = n(556),
-        ss = function (e) {
+        is = n(737),
+        as = n(8919),
+        os = n(9002),
+        ss = n(1197),
+        ls = n(556),
+        cs = function (e) {
           return (0, un.jsx)(un.Fragment, {
             children: (0, un.jsx)("section", {
               children: (0, un.jsxs)("div", {
@@ -20372,15 +20422,15 @@
                     children: [
                       (0, un.jsx)("div", {
                         class: "item-slide",
-                        children: (0, un.jsx)("img", { src: ns, alt: e.alt }),
-                      }),
-                      (0, un.jsx)("div", {
-                        class: "item-slide",
-                        children: (0, un.jsx)("img", { src: rs, alt: e.alt }),
-                      }),
-                      (0, un.jsx)("div", {
-                        class: "item-slide",
                         children: (0, un.jsx)("img", { src: is, alt: e.alt }),
+                      }),
+                      (0, un.jsx)("div", {
+                        class: "item-slide",
+                        children: (0, un.jsx)("img", { src: as, alt: e.alt }),
+                      }),
+                      (0, un.jsx)("div", {
+                        class: "item-slide",
+                        children: (0, un.jsx)("img", { src: os, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20390,17 +20440,17 @@
                       (0, un.jsx)("label", {
                         class: "pagination-item",
                         for: "1",
-                        children: (0, un.jsx)("img", { src: rs, alt: e.alt }),
-                      }),
-                      (0, un.jsx)("label", {
-                        class: "pagination-item",
-                        for: "2",
                         children: (0, un.jsx)("img", { src: as, alt: e.alt }),
                       }),
                       (0, un.jsx)("label", {
                         class: "pagination-item",
+                        for: "2",
+                        children: (0, un.jsx)("img", { src: ss, alt: e.alt }),
+                      }),
+                      (0, un.jsx)("label", {
+                        class: "pagination-item",
                         for: "3",
-                        children: (0, un.jsx)("img", { src: os, alt: e.alt }),
+                        children: (0, un.jsx)("img", { src: ls, alt: e.alt }),
                       }),
                     ],
                   }),
@@ -20409,7 +20459,7 @@
             }),
           });
         },
-        ls = function () {
+        us = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
@@ -20418,18 +20468,18 @@
                 title: "Centro de atenci\xf3n a la Diversidad Funcional",
                 size: !0,
               }),
-              (0, un.jsx)(dn, G(G({}, $o), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, es), {}, { reverse: !0 })),
               (0, un.jsx)(dn, G(G({}, ts), {}, { inverse: !0 })),
-              (0, un.jsx)(ss, {}),
+              (0, un.jsx)(dn, G(G({}, ns), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, rs), {}, { inverse: !0 })),
+              (0, un.jsx)(cs, {}),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        cs = n(6281),
-        us = n(6627),
-        ds = {
+        ds = n(6281),
+        fs = n(6627),
+        ps = {
           id: "creaDataOne",
           reverse: !1,
           inverse: !1,
@@ -20438,9 +20488,9 @@
             "Financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
           description:
             "Desde 2017, nuestra Asociaci\xf3n es entidad promotora del Proyecto NUEVO CREA, programa dual de formaci\xf3n y empleo para personas con discapacidad intelectual.",
-          img: cs,
+          img: ds,
         },
-        fs = {
+        hs = {
           id: "creaDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20449,14 +20499,14 @@
             "Durante 6 meses, de abril a septiembre, 8 personas con discapacidad trabajan en 7 empresas locales;",
           description:
             "Colegio Concertado Virgen de Loreto, Cabezuelo Foods, Grupo Asesor OTS, Josmoral, Transportes F\xe9lix e hijos, Cooperativa Cristo de la Vega y Afymos Asociaci\xf3n, con un contrato de formaci\xf3n en alternancia con el empleo. Simult\xe1neamente, se imparte una especialidad formativa de \u201cOperaciones Auxiliares en el Departamento de Administraci\xf3n y Recepci\xf3n para Personas con Discapacidad Intelectual\u201d.",
-          img: us,
+          img: fs,
         },
-        ps = function () {
-          return (0, un.jsx)(hs, {
+        ms = function () {
+          return (0, un.jsx)(gs, {
             id: "demo",
-            children: (0, un.jsxs)(ms, {
+            children: (0, un.jsxs)(vs, {
               children: [
-                (0, un.jsxs)(gs, {
+                (0, un.jsxs)(ys, {
                   children: [
                     (0, un.jsx)("p", { children: "Proyecto CREA;" }),
                     (0, un.jsx)("p", { children: "Nuestra filosof\xeda" }),
@@ -20466,7 +20516,7 @@
                     }),
                   ],
                 }),
-                (0, un.jsx)(vs, {
+                (0, un.jsx)(bs, {
                   children: (0, un.jsx)("iframe", {
                     width: "570",
                     height: "320",
@@ -20482,42 +20532,42 @@
             }),
           });
         },
-        hs = Qt.div(
-          ka ||
-            (ka = _([
-              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
-            ]))
-        ),
-        ms = Qt.div(
-          ja ||
-            (ja = _([
-              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
-            ]))
-        ),
         gs = Qt.div(
           Ea ||
             (Ea = _([
+              "\n  margin: 5rem auto;\n  padding: 1rem;\n  width: 100%;\n",
+            ]))
+        ),
+        vs = Qt.div(
+          Ca ||
+            (Ca = _([
+              "\n  width: 1240px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n\n  @media (max-width: 940px) {\n    max-width: 100%;\n    grid-template-columns: 1fr;\n    grid-gap: 30px;\n\n    iframe {\n      width: 100%;\n      height: auto;\n    }\n  }\n",
+            ]))
+        ),
+        ys = Qt.div(
+          Oa ||
+            (Oa = _([
               "\n  padding: 1rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n\n  p:nth-child(1) {\n    font-size: 2rem;\n    font-style: italic;\n  }\n  p:nth-child(2) {\n    font-size: 3rem;\n    font-weight: 600;\n    margin: 0.5rem 0;\n  }\n  p:nth-child(3) {\n    font-size: 1.6rem;\n    margin-bottom: 1rem;\n  }\n",
             ]))
         ),
-        vs = Qt.div(Ca || (Ca = _(["\n  margin: auto;\n"]))),
-        ys = function () {
+        bs = Qt.div(Pa || (Pa = _(["\n  margin: auto;\n"]))),
+        As = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
               (0, un.jsx)(wn, { title: "Proyecto CREA 2023" }),
-              (0, un.jsx)(dn, G(G({}, ds), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, fs), {}, { reverse: !0 })),
-              (0, un.jsx)(ps, {}),
+              (0, un.jsx)(dn, G(G({}, ps), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, hs), {}, { reverse: !0 })),
+              (0, un.jsx)(ms, {}),
               (0, un.jsx)(Xn, { inverse: !0 }),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        bs = n(6450),
-        As = n(7878),
-        xs = n(3960),
-        ws = {
+        xs = n(6450),
+        ws = n(7878),
+        Ss = n(3960),
+        ks = {
           id: "diagnosticoDataOne",
           reverse: !1,
           inverse: !1,
@@ -20526,9 +20576,9 @@
             "Este servicio valora con tests estandarizados y pruebas psicom\xe9tricas.",
           description:
             "\xc9stas pruebas objetivas se realizan en distintos \xe1mbitos a nivel integral como la neuropsicolog\xeda, psicolog\xeda, psicopedagog\xeda, logopedia, terapia ocupacional y fisioterapia",
-          img: bs,
+          img: xs,
         },
-        Ss = {
+        js = {
           id: "diagnosticoDataTwo",
           reverse: !0,
           inverse: !1,
@@ -20536,9 +20586,9 @@
           headline: "\xbfC\xf3mo trabajamos?",
           description:
             "Se realizan valoraciones globales de un trastorno concreto (TEA, TDAH) as\xed como valoraciones de \xe1reas espec\xedficas con dificultades, adapt\xe1ndolo a las necesidades concretas de cada usuario.",
-          img: xs,
+          img: Ss,
         },
-        ks = {
+        Es = {
           id: "diagnosticoDataThree",
           reverse: !1,
           inverse: !1,
@@ -20546,22 +20596,22 @@
           headline: "Poner nombre a las necesidades de las personas",
           description:
             "Para ello, nuestros profesionales realizan una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la informaci\xf3n obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
-          img: As,
+          img: ws,
         },
-        js = function () {
+        Cs = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
               (0, un.jsx)(wn, { title: "Valoraci\xf3n y diagnostico" }),
-              (0, un.jsx)(dn, G(G({}, ws), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Ss), {}, { reverse: !0 })),
               (0, un.jsx)(dn, G(G({}, ks), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, js), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Es), {}, { inverse: !0 })),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        Es = {
+        Os = {
           id: "donacionDataOne",
           reverse: !1,
           inverse: !1,
@@ -20578,21 +20628,21 @@
           alt: "ir a ruralvia",
           target: "_blank",
         },
-        Cs = function () {
+        Ps = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
               (0, un.jsx)(wn, { title: "Donaciones" }),
               (0, un.jsx)(Wn, { title: "Crecemos contigo", size: !0 }),
-              (0, un.jsx)(dn, G(G({}, Es), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Os), {}, { inverse: !0 })),
               (0, un.jsx)(Xn, { inverse: !0, size: !0 }),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        Os = n(2451),
-        Ps = n(7637),
-        Ts = {
+        Ts = n(2451),
+        Ls = n(7637),
+        Ms = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20602,33 +20652,33 @@
             "Ofrecemos asesoramiento y apoyo a familias de personas con cualquier tipo de discapacidad",
           description:
             "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas espec\xedficas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
-          img: Os,
+          img: Ts,
         },
-        Ls = {
+        Is = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
           headline: "Apoyos que presta este servicio:",
           description:
             "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atenci\xf3n psicol\xf3gica, adem\xe1s, proporciamos informaci\xf3n y orientaci\xf3n tras un estudio minucioso sobre las necesidades de cada caso",
-          img: Ps,
+          img: Ls,
         },
-        Ms = function () {
+        zs = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
               (0, un.jsx)(wn, { title: "Servicio de atenci\xf3n a familias" }),
               (0, un.jsx)(Wn, { title: "Apoyo a familiares", size: !0 }),
-              (0, un.jsx)(dn, G(G({}, Ts), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Ls), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ms), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Is), {}, { reverse: !0 })),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        Is = n(9140),
-        zs = n(1654),
-        Rs = {
+        Ds = n(9140),
+        Rs = n(1654),
+        Ns = {
           reverse: !1,
           inverse: !1,
           topLine: {
@@ -20638,9 +20688,9 @@
             "Estamos homologados por La Junta de Castilla la Mancha en especialidades formativas que puedan dar respuesta especialmente a las personas con discapacidad intelectual y a los profesionales que trabajan en nuestro sector.",
           description:
             "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos a las personas con discapacidad intelectual.",
-          img: Is,
+          img: Ds,
         },
-        Ds = {
+        Bs = {
           reverse: !0,
           inverse: !1,
           topLine: { text: "PROGRAMA CREA" },
@@ -20648,9 +20698,9 @@
             "Proyecto de formaci\xf3n profesional y empleo en el seno de las empresas para personas con discapacidad.",
           description:
             "Este proyecto consiste en el mejor ejemplo de FORMACI\xd3N DUAL, puesto que combinan formaci\xf3n profesional en el \xe1mbito laboral con trabajo efectivo en la empresa, mediante larealizaci\xf3n de contratos de formaci\xf3n en alternancia.",
-          img: zs,
+          img: Rs,
         },
-        Ns = function () {
+        Fs = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
@@ -20662,17 +20712,17 @@
                 title: "Fomentamos la formaci\xf3n",
                 size: !0,
               }),
-              (0, un.jsx)(dn, G(G({}, Rs), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Ds), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ns), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Bs), {}, { reverse: !0 })),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        Bs = n(3523),
-        Fs = n(3977),
-        Ws = n(9501),
-        Us = {
+        Ws = n(3523),
+        Us = n(3977),
+        Hs = n(9501),
+        Vs = {
           reverse: !1,
           inverse: !1,
           topLine: { text: "Nuestra misi\xf3n: AYUDARTE" },
@@ -20680,9 +20730,9 @@
             "Este programa tiene la finalidad de ofrecer Servicios Terap\xe9uticos de diferentes disciplinas con el fin de mejorar la calidad de vida de las personas.",
           description:
             "Contamos con profesionales de diferentes disciplinas para intervenir seg\xfan las necesidades de los usuarios y actualmente contamos con las los siguientes servicios terap\xe9uticos.",
-          img: Vo,
+          img: Yo,
         },
-        Hs = {
+        Gs = {
           id: "logopedia",
           reverse: !1,
           inverse: !0,
@@ -20695,7 +20745,7 @@
             "Realizo una entrevista con la familia y una evaluaci\xf3n inicial de la cual se elabora unos objetivos y se dise\xf1a una programaci\xf3n individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duraci\xf3n de 30-45 minutos, dependiendo de las necesidades de cada paciente.",
           img: Zr,
         },
-        Vs = {
+        Ys = {
           id: "fisioterapia",
           reverse: !1,
           inverse: !1,
@@ -20708,7 +20758,7 @@
             "En mi terapia llevo a cabo una valoraci\xf3n y diagn\xf3stico de fisioterapia, teniendo en cuenta una visi\xf3n general del problema, dolencia, patolog\xeda, etc. Despu\xe9s, utilizo distintas t\xe9cnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
           img: qr,
         },
-        Gs = {
+        Qs = {
           id: "terapia-ocupacional",
           reverse: !1,
           inverse: !0,
@@ -20721,7 +20771,7 @@
             "Enfoco mi trabajo en una intervenci\xf3n significativa con objetivos pautados previamente con la persona y su familia, realizando actividades con prop\xf3sito claro y definido",
           img: Qr,
         },
-        Ys = {
+        Zs = {
           id: "neuropsicologia",
           reverse: !1,
           inverse: !1,
@@ -20732,9 +20782,9 @@
             "la neuropsicolog\xeda estudia las bases neuroanat\xf3micas en relaci\xf3n alos procesos mentales como: atenci\xf3n, emoci\xf3n, memoria, lenguaje y percepci\xf3n",
           description:
             "Dentro de mi equipo mi funci\xf3n es la de evaluar las capacidades cognitivas  y saber cu\xe1les est\xe1n fallando y cuales est\xe1n \u201ca tope\u201d. Despu\xe9s planteo un programa de entrenamiento, o como otros compa\xf1eros llaman, rehabilitaci\xf3n, para trabajar en la mejora de aquellas \xe1reas que se han quedado da\xf1adas ono se han desarrollado a los niveles esperables para la edad. ",
-          img: Bs,
+          img: Ws,
         },
-        Qs = {
+        _s = {
           id: "psicopedagogia",
           reverse: !0,
           inverse: !1,
@@ -20745,9 +20795,9 @@
             "La terapia psicopedag\xf3gica facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los  problemas de aprendizaje.",
           description:
             "Como psicopedagogas\xa0asesoramos, evaluamos y realizamos informes psicopedag\xf3gicos (tomando pruebas y test, analizando las necesidades de cada persona), planificamos y dise\xf1amos propuestas de intervenci\xf3n para ni\xf1os, adolescentes, j\xf3venes y adultos que tengan problemas en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas en el momento de aprender.",
-          img: Fs,
+          img: Us,
         },
-        Zs = {
+        qs = {
           id: "auditiva",
           reverse: !1,
           inverse: !1,
@@ -20760,7 +20810,7 @@
             "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopat\xeda para comprobar el estado del canal auditivo, audiometr\xeda para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
           img: Jr,
         },
-        _s = {
+        Js = {
           id: "visual",
           reverse: !1,
           inverse: !1,
@@ -20771,9 +20821,9 @@
             "La terapia visual consiste en la repetici\xf3n de una serie de ejercicios que consiguen crear nuevas conexiones neurol\xf3gicas y mejorar habilidades visuales alteradas.",
           description:
             "Evaluo el desarrollo y funcionamiento de la visi\xf3n desde el nacimiento. Para ello analizo habilidades como la acomodaci\xf3n, binocularidad (visi\xf3n en 3D), movimientos oculares y la percepci\xf3n visual..",
-          img: Ws,
+          img: Hs,
         },
-        qs = {
+        Xs = {
           id: "psicologia",
           reverse: !1,
           inverse: !1,
@@ -20786,27 +20836,27 @@
             "A nivel psicoeducativo puedo ayudar a las personas a entender sus propios procesos, situaciones personales, patolog\xedas, etc, para facilitar su propia adaptaci\xf3n al medio y mitigar sus estados de ansiedad e incertidumbre.",
           img: _r,
         },
-        Js = n(3829),
-        Xs = n(775),
-        Ks = n(5950),
-        $s = n(7353),
-        el = n(900),
-        tl = n(8663),
-        nl = "_blank",
-        rl = [
+        Ks = n(3829),
+        $s = n(775),
+        el = n(5950),
+        tl = n(7353),
+        nl = n(900),
+        rl = n(8663),
+        il = "_blank",
+        al = [
           {
             id: "logopedia",
             name: "Logopedia",
-            src: Ks,
-            target: nl,
+            src: el,
+            target: il,
             alt: "pictograma-logopedia",
             url: "logopedia",
           },
           {
             id: "fisioterapia",
             name: "Fisioterapia",
-            src: Xs,
-            target: nl,
+            src: $s,
+            target: il,
             alt: "pictograma-fisioterapia",
             url: "fisioterapia",
           },
@@ -20814,31 +20864,31 @@
             id: "terapia-ocupacional",
             name: "Terapia Ocupacional",
             src: n(7257),
-            target: nl,
+            target: il,
             alt: "pictograma-terapia-ocupacional",
             url: "terapia-ocupacional",
           },
           {
             id: "psicopedagogia",
             name: "Psicopedagog\xeda",
-            src: tl,
-            target: nl,
+            src: rl,
+            target: il,
             alt: "pictograma-psicopedagogia",
             url: "psicopedagogia",
           },
           {
             id: "neuropsicologia",
             name: "Neuropsicologia",
-            src: $s,
-            target: nl,
+            src: tl,
+            target: il,
             alt: "pictograma-psicologia",
             url: "neuropsicologia",
           },
           {
             id: "auditiva",
             name: "Auditiva",
-            src: Js,
-            target: nl,
+            src: Ks,
+            target: il,
             alt: "terapia-auditiva",
             url: "auditiva",
           },
@@ -20846,30 +20896,30 @@
             id: "visual",
             name: "Visual",
             src: n(1933),
-            target: nl,
+            target: il,
             alt: "terapia-auditiva",
             url: "visual",
           },
           {
             id: "psicologia",
             name: "Psicologia",
-            src: el,
-            target: nl,
+            src: nl,
+            target: il,
             alt: "terapia-psicologia",
             url: "psicologia",
           },
         ],
-        il = function () {
-          var e = t((0, h.useState)(rl), 1)[0];
+        ol = function () {
+          var e = t((0, h.useState)(al), 1)[0];
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(Wn, { title: "Nuestras Terapias", size: !0 }),
               (0, un.jsx)("section", {
-                children: (0, un.jsx)(al, {
-                  children: (0, un.jsx)(ol, {
+                children: (0, un.jsx)(sl, {
+                  children: (0, un.jsx)(ll, {
                     children: e.map(function (e) {
                       return (0,
-                      un.jsxs)(sl, { value: e.name, children: [(0, un.jsx)("h3", { children: e.name }), (0, un.jsx)(Xi.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, un.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
+                      un.jsxs)(cl, { value: e.name, children: [(0, un.jsx)("h3", { children: e.name }), (0, un.jsx)($i.rU, { to: e.url, spy: !0, smooth: !0, offset: -100, duration: 1e3, children: (0, un.jsx)("img", { src: e.src, alt: e.alt }) })] }, e.id);
                     }),
                   }),
                 }),
@@ -20877,55 +20927,55 @@
             ],
           });
         },
-        al = Qt.div(
-          Oa ||
-            (Oa = _([
+        sl = Qt.div(
+          Ta ||
+            (Ta = _([
               "\n  display: flex;\n  width: 100%;\n  position: relative;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 0px;\n  background-color: white;\n  margin: auto;\n  padding: 5% 15%;\n  h1 {\n    font-size: 2.5rem;\n  }\n\n  @media (max-width: 768px) {\n    display: flex;\n    position: relative;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0px;\n    background-color: white;\n  }\n",
             ]))
         ),
-        ol = Qt.div(
-          Pa ||
-            (Pa = _([
+        ll = Qt.div(
+          La ||
+            (La = _([
               "\n  display: grid;\n  width: 100%;\n  height: 100%;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: 1fr;\n  margin: auto;\n  grid-gap: 5% 5%;\n  margin: 5% 20%;\n  justify-content: center;\n\n  @media (max-width: 768px) {\n    width: 70%;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: 1fr 1fr;\n    margin: auto;\n    grid-gap: 30px 30px;\n    margin: 5%;\n    margin-bottom: 15%;\n    width: 90%;\n  }\n",
             ]))
         ),
-        sl =
+        cl =
           (Qt.div(
-            Ta ||
-              (Ta = _([
+            Ma ||
+              (Ma = _([
                 "\n  display: flex;\n  width: 50%;\n  position: relative;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0px;\n",
               ]))
           ),
           Qt.div(
-            La ||
-              (La = _([
+            Ia ||
+              (Ia = _([
                 "\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  text-align: center;\n  align-items: center;\n  border-radius: 10px;\n  width: 150px;\n  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n  margin: 5% 5%;\n  gap: 1rem;\n\n  :hover {\n    border: 3px solid #ffc0bc;\n  }\n\n  h3 {\n    margin-top: 0.5rem;\n    font-size: 1rem;\n    padding: 0 0.3rem;\n  }\n\n  img {\n    height: 100px;\n    width: 100px;\n    padding-bottom: 5%;\n    cursor: pointer;\n  }\n\n  @media (max-width: 368px) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 80%;\n    box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n\n  @media (min-width: 1090) {\n    margin: 5%;\n    margin-bottom: 15%;\n    gap: 0.6rem;\n    border-radius: 10px;\n    width: 70%;\n    height: 70%;\n    box-shadow: 30px 20px 40px #949494, -5px -5px 10px #ffffff;\n    border: solid 1px #071c2f;\n\n    h3 {\n      font-size: 0.5rem;\n      padding: 0 0.3rem;\n    }\n\n    img {\n      color: #071c2f;\n      height: 40px;\n      width: 40px;\n    }\n  }\n",
               ]))
           )),
-        ll = function () {
+        ul = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
               (0, un.jsx)(wn, { title: "Servicio de Terapia" }),
-              (0, un.jsx)(il, {}),
-              (0, un.jsx)(dn, G(G({}, Us), {}, { reverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Hs), {}, { inverse: !0 })),
+              (0, un.jsx)(ol, {}),
               (0, un.jsx)(dn, G(G({}, Vs), {}, { reverse: !0 })),
               (0, un.jsx)(dn, G(G({}, Gs), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Qs), {}, { reverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Ys), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Zs), {}, { reverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, _s), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ys), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Qs), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, _s), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Zs), {}, { inverse: !0 })),
               (0, un.jsx)(dn, G(G({}, qs), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Js), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Xs), {}, { reverse: !0 })),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        cl = n(9958),
-        ul = n(8540),
-        dl = n(5688),
-        fl = {
+        dl = n(9958),
+        fl = n(8540),
+        pl = n(5688),
+        hl = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -20936,9 +20986,9 @@
             "Este servicio se encarga de apoyar a las personas con discapacidad intelectual o del desarrollo que viven o quieran llegar a vivir de forma independiente.",
           description:
             "En nuestras viviendas reside un peque\xf1o grupo de personas con discapacidad intelectual, que aun gozando de autonom\xeda para el autocuidado,necesitan la prestaci\xf3n de apoyos a nivel personalizado para realizar el resto de actividades de la vida diaria y llevar una vida integrada en la comunidad.",
-          img: cl,
+          img: dl,
         },
-        pl = {
+        ml = {
           id: "",
           reverse: !0,
           inverse: !1,
@@ -20947,9 +20997,9 @@
             "Facilitar un hogar lo m\xe1s normalizado posible, en el que se garantice y posibilite un adecuado desarrollo personal, desde la igualdad y la inclusi\xf3n social en la comunidad.",
           description:
             "Fomentar la participaci\xf3n activa y la toma de decisiones en lo relativo a las tareas dom\xe9sticas como al resto de actividades. Adquirir estabilidad y seguridad, en un entorno distinto al hogar familiar, entendi\xe9ndose \xe9stas de forma global y en todos los aspectos que afectan al ser humano (necesidades b\xe1sicas, salud, ocupaci\xf3n laboral,...). ",
-          img: ul,
+          img: fl,
         },
-        hl = {
+        gl = {
           id: "",
           reverse: !1,
           inverse: !1,
@@ -20958,29 +21008,29 @@
             "El modelo metodol\xf3gico a seguir se basa en la Capacitaci\xf3n dentro del modelo Inclusivo-Social y el Modelo de Calidad de Vida.",
           description:
             "Los principios metodol\xf3gicos son: integraci\xf3n, individualizaci\xf3n y optimizaci\xf3n. Se ofrece a las personas con especificidad la oportunidad de vivir de la manera m\xe1s aut\xf3noma posible, fomentando la participaci\xf3n activa de la persona objeto de nuestro apoyo en la comunidad de Socu\xe9llamos, desde la igualdad y la plena inclusi\xf3n social..",
-          img: dl,
+          img: pl,
         },
-        ml = function () {
+        vl = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(zr, {}),
               (0, un.jsx)(wn, { title: "Viviendas" }),
               (0, un.jsx)(Wn, { title: "Apoyo acceso viviendas", size: !0 }),
-              (0, un.jsx)(dn, G(G({}, fl), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, pl), {}, { reverse: !0 })),
               (0, un.jsx)(dn, G(G({}, hl), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, ml), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, gl), {}, { inverse: !0 })),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         },
-        gl = n(132),
-        vl = n(7725),
-        yl = n(9916),
-        bl = n(101),
-        Al = n(2727),
-        xl = n(4306),
-        wl = {
+        yl = n(132),
+        bl = n(7725),
+        Al = n(9916),
+        xl = n(101),
+        wl = n(2727),
+        Sl = n(4306),
+        kl = {
           id: "voluntariadoOne",
           reverse: !1,
           inverse: !1,
@@ -20989,18 +21039,18 @@
             "Contamos con un Coordinador de Ocio y con el apoyo de un grupo de personas VOLUNTARIAS",
           description:
             "En este servicio no es \xfanicamente la Asociaci\xf3n la que oferta las actividades sino que se emplean los recursos de la comunidad con la finalidad de que la persona se integre en su entorno a trav\xe9s del ocio y el tiempo libre.",
-          img: gl,
+          img: yl,
         },
-        Sl = {
+        jl = {
           id: "voluntariadoTwo",
           reverse: !0,
           inverse: !1,
           topLine: { text: "" },
           headline: "Viajes y excursiones",
           description: "",
-          img: xl,
+          img: Sl,
         },
-        kl = {
+        El = {
           id: "voluntariadoThree",
           reverse: !1,
           inverse: !1,
@@ -21008,9 +21058,9 @@
           headline:
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias.",
           description: "",
-          img: Al,
+          img: wl,
         },
-        jl = {
+        Cl = {
           id: "voluntariadoFour",
           reverse: !0,
           inverse: !1,
@@ -21019,9 +21069,9 @@
             "Se fomenta la participaci\xf3n en actividades grupales de ocio, organizadas por ellos mismos con los apoyos profesionales necesarios.",
           description:
             "Es un proyecto de inclusi\xf3n creado por Afymos y cofinanciado por la Consejer\xeda de Bienestar Social de CL, el Ayto. de Socu\xe9llamos y nuestra entidad en el que j\xf3venes con discapacidad y sin discapacidad realizan actividades de ocio y deporte durante las vacaciones de verano.",
-          img: vl,
+          img: bl,
         },
-        El = {
+        Ol = {
           id: "voluntariadoFive",
           reverse: !1,
           inverse: !1,
@@ -21030,9 +21080,9 @@
             "Se pretende que el ocio sea lo m\xe1s inclusivo posible, mediante el acompa\xf1amiento del Coordinador o personas voluntarias:",
           description:
             "Se organizan actividades tan variadas como actividades deportivas (senderismo\u2026), culturales (visitas a museos, cine, teatro\u2026) y actividades recreativas (bolera, salidas nocturnas\u2026).",
-          img: yl,
+          img: Al,
         },
-        Cl = {
+        Pl = {
           id: "voluntariadoSix",
           reverse: !0,
           inverse: !1,
@@ -21041,9 +21091,9 @@
             "Es un proyecto creado por Afymos y financiado en parte por la Concejal\xeda de Bienestar Social de la localidad de Socu\xe9llamos.",
           description:
             "Urban Camp es un campamento urbano para 50 j\xf3venes (con y sin discapacidad) de la localidad de Socu\xe9llamos de edades comprendidas entre los 12 y 16 a\xf1os que naci\xf3 para dar respuesta a las necesidades de ocio de los j\xf3venes durante el periodo vacacional as\xed como para  ofrecer a las familias un recurso para la conciliaci\xf3n de la vida familiar y laboral durante esta \xe9poca del a\xf1o.",
-          img: bl,
+          img: xl,
         },
-        Ol = function () {
+        Tl = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
               (0, un.jsx)(wn, { title: "Servicio de Ocio y Voluntariado" }),
@@ -21051,18 +21101,18 @@
                 title: "Nuestro programa de voluntariado",
                 size: !0,
               }),
-              (0, un.jsx)(dn, G(G({}, wl), {}, { inverse: !0 })),
-              (0, un.jsx)(dn, G(G({}, Sl), {}, { reverse: !0 })),
               (0, un.jsx)(dn, G(G({}, kl), {}, { inverse: !0 })),
               (0, un.jsx)(dn, G(G({}, jl), {}, { reverse: !0 })),
               (0, un.jsx)(dn, G(G({}, El), {}, { inverse: !0 })),
               (0, un.jsx)(dn, G(G({}, Cl), {}, { reverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Ol), {}, { inverse: !0 })),
+              (0, un.jsx)(dn, G(G({}, Pl), {}, { reverse: !0 })),
               (0, un.jsx)(Xn, {}),
               (0, un.jsx)(An, {}),
             ],
           });
         };
-      function Pl() {
+      function Ll() {
         var e = z().pathname;
         return (
           (0, h.useEffect)(
@@ -21074,11 +21124,11 @@
           null
         );
       }
-      function Tl(e, t) {
+      function Ml(e, t) {
         if (!(e instanceof t))
           throw new TypeError("Cannot call a class as a function");
       }
-      function Ll(e, t) {
+      function Il(e, t) {
         for (var n = 0; n < t.length; n++) {
           var r = t[n];
           (r.enumerable = r.enumerable || !1),
@@ -21087,25 +21137,25 @@
             Object.defineProperty(e, r.key, r);
         }
       }
-      function Ml(e, t, n) {
+      function zl(e, t, n) {
         return (
-          t && Ll(e.prototype, t),
-          n && Ll(e, n),
+          t && Il(e.prototype, t),
+          n && Il(e, n),
           Object.defineProperty(e, "prototype", { writable: !1 }),
           e
         );
       }
-      function Il(e, t) {
+      function Dl(e, t) {
         return (
-          (Il =
+          (Dl =
             Object.setPrototypeOf ||
             function (e, t) {
               return (e.__proto__ = t), e;
             }),
-          Il(e, t)
+          Dl(e, t)
         );
       }
-      function zl(e, t) {
+      function Rl(e, t) {
         if ("function" !== typeof t && null !== t)
           throw new TypeError(
             "Super expression must either be null or a function"
@@ -21114,21 +21164,21 @@
           constructor: { value: e, writable: !0, configurable: !0 },
         })),
           Object.defineProperty(e, "prototype", { writable: !1 }),
-          t && Il(e, t);
+          t && Dl(e, t);
       }
-      function Rl(e) {
+      function Nl(e) {
         return (
-          (Rl = Object.setPrototypeOf
+          (Nl = Object.setPrototypeOf
             ? Object.getPrototypeOf
             : function (e) {
                 return e.__proto__ || Object.getPrototypeOf(e);
               }),
-          Rl(e)
+          Nl(e)
         );
       }
-      function Dl(e) {
+      function Bl(e) {
         return (
-          (Dl =
+          (Bl =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
@@ -21141,11 +21191,11 @@
                     ? "symbol"
                     : typeof e;
                 }),
-          Dl(e)
+          Bl(e)
         );
       }
-      function Nl(e, t) {
-        if (t && ("object" === Dl(t) || "function" === typeof t)) return t;
+      function Fl(e, t) {
+        if (t && ("object" === Bl(t) || "function" === typeof t)) return t;
         if (void 0 !== t)
           throw new TypeError(
             "Derived constructors may only return object or undefined"
@@ -21158,7 +21208,7 @@
           return e;
         })(e);
       }
-      function Bl(e) {
+      function Wl(e) {
         var t = (function () {
           if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
@@ -21176,22 +21226,22 @@
         })();
         return function () {
           var n,
-            r = Rl(e);
+            r = Nl(e);
           if (t) {
-            var i = Rl(this).constructor;
+            var i = Nl(this).constructor;
             n = Reflect.construct(r, arguments, i);
           } else n = r.apply(this, arguments);
-          return Nl(this, n);
+          return Fl(this, n);
         };
       }
-      var Fl = (function (e) {
-          zl(r, e);
-          var t = Bl(r);
+      var Ul = (function (e) {
+          Rl(r, e);
+          var t = Wl(r);
           function r() {
-            return Tl(this, r), t.apply(this, arguments);
+            return Ml(this, r), t.apply(this, arguments);
           }
           return (
-            Ml(r, [
+            zl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21234,15 +21284,15 @@
             r
           );
         })(h.Component),
-        Wl = Fl,
-        Ul = (function (e) {
-          zl(r, e);
-          var t = Bl(r);
+        Hl = Ul,
+        Vl = (function (e) {
+          Rl(r, e);
+          var t = Wl(r);
           function r() {
-            return Tl(this, r), t.apply(this, arguments);
+            return Ml(this, r), t.apply(this, arguments);
           }
           return (
-            Ml(r, [
+            zl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21285,15 +21335,15 @@
             r
           );
         })(h.Component),
-        Hl = Ul,
-        Vl = (function (e) {
-          zl(r, e);
-          var t = Bl(r);
+        Gl = Vl,
+        Yl = (function (e) {
+          Rl(r, e);
+          var t = Wl(r);
           function r() {
-            return Tl(this, r), t.apply(this, arguments);
+            return Ml(this, r), t.apply(this, arguments);
           }
           return (
-            Ml(r, [
+            zl(r, [
               {
                 key: "componentDidMount",
                 value: function () {
@@ -21338,76 +21388,76 @@
             r
           );
         })(h.Component),
-        Gl = Vl,
-        Yl = function () {
+        Ql = Yl,
+        Zl = function () {
           return (0, un.jsxs)(un.Fragment, {
             children: [
-              (0, un.jsx)(Pl, { smooth: !0 }),
+              (0, un.jsx)(Ll, { smooth: !0 }),
               (0, un.jsxs)(W, {
                 children: [
                   (0, un.jsx)(B, {
                     path: "/terapias",
-                    element: (0, un.jsx)(ll, {}),
+                    element: (0, un.jsx)(ul, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/nosotros",
-                    element: (0, un.jsx)(Io, {}),
+                    element: (0, un.jsx)(Do, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/apoyo-familias",
-                    element: (0, un.jsx)(Ms, {}),
+                    element: (0, un.jsx)(zs, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/ocio-y-voluntariado",
-                    element: (0, un.jsx)(Ol, {}),
+                    element: (0, un.jsx)(Tl, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/viviendas-con-apoyo",
-                    element: (0, un.jsx)(ml, {}),
+                    element: (0, un.jsx)(vl, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/centro-de-dia",
-                    element: (0, un.jsx)(qo, {}),
+                    element: (0, un.jsx)(Xo, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/proyecto-crea",
-                    element: (0, un.jsx)(ys, {}),
+                    element: (0, un.jsx)(As, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/valoracion-y-diagnostico",
-                    element: (0, un.jsx)(js, {}),
-                  }),
-                  (0, un.jsx)(B, {
-                    path: "/donaciones",
                     element: (0, un.jsx)(Cs, {}),
                   }),
                   (0, un.jsx)(B, {
+                    path: "/donaciones",
+                    element: (0, un.jsx)(Ps, {}),
+                  }),
+                  (0, un.jsx)(B, {
                     path: "/servicio-capacitacion",
-                    element: (0, un.jsx)(Ho, {}),
+                    element: (0, un.jsx)(Go, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/instalaciones-centro-diversidad",
-                    element: (0, un.jsx)(ls, {}),
+                    element: (0, un.jsx)(us, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/valoracion-y-diagnostico",
-                    element: (0, un.jsx)(js, {}),
+                    element: (0, un.jsx)(Cs, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/organigrama",
-                    element: (0, un.jsx)(Gl, {}),
+                    element: (0, un.jsx)(Ql, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/pdf-cuentas-20",
-                    element: (0, un.jsx)(Wl, {}),
-                  }),
-                  (0, un.jsx)(B, {
-                    path: "/pdf-cuentas-21",
                     element: (0, un.jsx)(Hl, {}),
                   }),
                   (0, un.jsx)(B, {
+                    path: "/pdf-cuentas-21",
+                    element: (0, un.jsx)(Gl, {}),
+                  }),
+                  (0, un.jsx)(B, {
                     path: "/formacion",
-                    element: (0, un.jsx)(Ns, {}),
+                    element: (0, un.jsx)(Fs, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/junta-directiva",
@@ -21415,23 +21465,23 @@
                   }),
                   (0, un.jsx)(B, {
                     path: "/politica-privacidad",
-                    element: (0, un.jsx)(No, {}),
+                    element: (0, un.jsx)(Fo, {}),
                   }),
                   (0, un.jsx)(B, {
                     path: "/aviso-legal",
-                    element: (0, un.jsx)(Dr, {}),
+                    element: (0, un.jsx)(Rr, {}),
                   }),
-                  (0, un.jsx)(B, { path: "/", element: (0, un.jsx)(xo, {}) }),
+                  (0, un.jsx)(B, { path: "/", element: (0, un.jsx)(So, {}) }),
                 ],
               }),
-              (0, un.jsx)(Pl, { smooth: !0 }),
+              (0, un.jsx)(Ll, { smooth: !0 }),
             ],
           });
         };
       n(4164).render(
-        (0, un.jsx)(mn, { children: (0, un.jsx)(Yl, {}) }),
+        (0, un.jsx)(mn, { children: (0, un.jsx)(Zl, {}) }),
         document.getElementById("root")
       );
     })();
 })();
-//# sourceMappingURL=main.5aa9d37b.js.map
+//# sourceMappingURL=main.8bd1e5b8.js.map

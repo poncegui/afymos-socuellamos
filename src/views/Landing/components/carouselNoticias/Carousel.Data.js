@@ -2,7 +2,13 @@ import basket1 from "../carouselNoticias/assets/images-noticias/campeonato-balon
 import basket2 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-3.jpg";
 import basket3 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-4.jpg";
 import basket4 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-5.jpg";
+import concierto from "./assets/images-noticias/concierto-navidad/cartel.jpg";
 import congreso from "./assets/images-noticias/congreso-con-apoyo-burgos/congreso.jpg";
+import diptico from "./assets/images-noticias/concierto-navidad/diptico.png";
+import diputacion1 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-9.jpg";
+import diputacion2 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-8.jpg";
+import diputacion3 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-7.jpg";
+import diputacion4 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-6.jpg";
 import fotografia from "./assets/images-noticias/concursos/fotografia.png";
 import loteria from "./assets/images-noticias/loteria-navidad/loteria-navidad.png";
 import proyectoCrea from "../../../proyectoCrea/assets/proyecto-crea/proyecto-crea-01.jpg";
@@ -10,6 +16,21 @@ import relatos from "./assets/images-noticias/concursos/relatos.png";
 import somosPortada from "./assets/images-noticias/somos-portada/somos-portada.jpg";
 
 export const ApiCarousel = [
+  {
+    title: "Concierto",
+    description:
+      "XI Gala de Capacidad -Día Internacional de Personas con alguna Discapacidad",
+    image: concierto,
+    alt: "concierto-navidad",
+    url: "",
+  },
+  {
+    title: "Actividades diciembre 2023",
+    description: "Conoce las actividades que tendremos para despedir el año",
+    image: diptico,
+    alt: "concierto-navidad",
+    url: "",
+  },
   {
     title: "Lotería de Navidad",
     description: "Ya tenemos nuestra lotería para navidad!",
@@ -105,5 +126,32 @@ export const basket = [
     cover: basket4,
     title: "",
     alt: "foto baloncesto",
+  },
+];
+
+export const diputacion = [
+  {
+    id: 1,
+    cover: diputacion1,
+    title: "",
+    alt: "foto diputacion",
+  },
+  {
+    id: 2,
+    cover: diputacion2,
+    title: "",
+    alt: "foto diputacion",
+  },
+  {
+    id: 3,
+    cover: diputacion3,
+    title: "",
+    alt: "foto diputacion",
+  },
+  {
+    id: 3,
+    cover: diputacion4,
+    title: "",
+    alt: "foto diputacion",
   },
 ];

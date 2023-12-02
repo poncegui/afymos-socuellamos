@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import {
+  basket,
+  diputacion,
+} from "./components/carouselNoticias/Carousel.Data";
 import { heroOne, heroThree, heroTwo } from "./components/services/HeroData";
 
 import Carousel from "./components/carouselNoticias/Carousel";
@@ -14,33 +18,34 @@ import SectionAboutUs from "./components/SectionAboutUs";
 import SectionServices from "./components/SectionServices";
 import SliderDisplay from "./components/sliderDisplay/SliderDisplay";
 import Testimonials from "./components/Testimonials";
-import { basket } from "./components/carouselNoticias/Carousel.Data";
+
+// import PlenaInclusion from "./components/PlenaInclusion";
 
 const LandingView = () => {
-  const [picBasket] = useState(basket);
+  const [diputacionData] = useState(diputacion);
   return (
     <>
       <ScrollToTop />
       <NavBarLanding />
+      {/* <PlenaInclusion /> */}
+      <div className="App">
+        <Carousel />
+      </div>
+
+      <SliderDisplay
+        items={diputacionData}
+        title="Our Drinks & Cocktails"
+        slides={3}
+        datas={diputacionData}
+      />
+      <MainNew />
       <SectionServices />
       <SectionAboutUs />
       <Content {...heroOne} />
       <ProjectCreaVideo />
+      <Content {...heroThree} />
       <Testimonials />
       <Content {...heroTwo} />
-      <Content {...heroThree} />
-
-      <div className="App">
-        <Carousel />
-      </div>
-      <MainNew />
-      <SliderDisplay
-        items={picBasket}
-        title="Our Drinks & Cocktails"
-        slides={3}
-        datas={basket}
-      />
-
       <ContactForm />
       <PartnertList size inverse marginBottom />
       <Footer />
