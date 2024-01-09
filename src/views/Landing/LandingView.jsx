@@ -37,7 +37,6 @@ const LandingView = () => {
         slides={3}
         datas={diputacionData}
       />
-      <MainNew />
       <SectionServices />
       <SectionAboutUs />
       <Content {...heroOne} />
@@ -45,6 +44,7 @@ const LandingView = () => {
       <Content {...heroThree} />
       <Testimonials />
       <Content {...heroTwo} />
+      <MainNew />
       <ContactForm />
       <PartnertList size inverse marginBottom />
       <Footer />

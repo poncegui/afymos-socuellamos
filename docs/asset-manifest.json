@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dbe56b46.css",
-    "main.js": "./static/js/main.ec604584.js",
+    "main.js": "./static/js/main.d668feb6.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -32,14 +32,12 @@
     "static/media/chart17.png": "./static/media/chart17.9da20963178447ea8317.png",
     "static/media/chart4.png": "./static/media/chart4.135461782bb7ebee7f6a.png",
     "static/media/formacion-2.png": "./static/media/formacion-2.ff1a7fa55e6d77b7bb03.png",
-    "static/media/cartel.jpg": "./static/media/cartel.bbfa3e175459a27611ac.jpg",
     "static/media/centroDia-5.jpg": "./static/media/centroDia-5.813d367cde84113f5509.jpg",
     "static/media/sala.png": "./static/media/sala.eebb140d27a66549e94f.png",
     "static/media/cuentas-anuales-2021.pdf": "./static/media/cuentas-anuales-2021.af62e07980ca0fffd333.pdf",
     "static/media/cuentas-anuales-2020.pdf": "./static/media/cuentas-anuales-2020.629b34d84f2be34967b5.pdf",
     "static/media/voluntariado10.png": "./static/media/voluntariado10.b22e4ca8ed6f14cb7af6.png",
     "static/media/sensibilizacion-1.png": "./static/media/sensibilizacion-1.efaf1e47b35721684da4.png",
-    "static/media/diptico.png": "./static/media/diptico.ef92ddf6973d652b214f.png",
     "static/media/sala-fisioterapia.png": "./static/media/sala-fisioterapia.4936dbb0451e351d6569.png",
     "static/media/diagnostico.png": "./static/media/diagnostico.990df81de23703eae354.png",
     "static/media/visual.png": "./static/media/visual.9132254bb3048823a14b.png",
@@ -51,10 +49,7 @@
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/campeones-baloncesto-9.jpg": "./static/media/campeones-baloncesto-9.51d38b4f1d0cae968283.jpg",
     "static/media/proyecto-crea-03.jpg": "./static/media/proyecto-crea-03.0501b340293cb969e28c.jpg",
-    "static/media/loteria-navidad.png": "./static/media/loteria-navidad.3b5c27664e3826757fe5.png",
     "static/media/campeones-baloncesto-7.jpg": "./static/media/campeones-baloncesto-7.fcf6d88ea85a3b9c6b03.jpg",
-    "static/media/relatos.png": "./static/media/relatos.ac7391a5060733203bb1.png",
-    "static/media/fotografia.png": "./static/media/fotografia.b912301f26237d55fcf4.png",
     "static/media/proyecto-crea-02.jpg": "./static/media/proyecto-crea-02.579e1a32019e4dc75eda.jpg",
     "static/media/somos-portada.jpg": "./static/media/somos-portada.1f87966a418b44247713.jpg",
     "static/media/proyecto-crea-01.jpg": "./static/media/proyecto-crea-01.d0644aac0bddc5198d84.jpg",
@@ -118,10 +113,10 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "main.dbe56b46.css.map": "./static/css/main.dbe56b46.css.map",
-    "main.ec604584.js.map": "./static/js/main.ec604584.js.map"
+    "main.d668feb6.js.map": "./static/js/main.d668feb6.js.map"
   },
   "entrypoints": [
     "static/css/main.dbe56b46.css",
-    "static/js/main.ec604584.js"
+    "static/js/main.d668feb6.js"
   ]
 }

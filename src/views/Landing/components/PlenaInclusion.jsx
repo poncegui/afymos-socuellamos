@@ -6,7 +6,7 @@ const DemoVideo = () => {
 
   return (
     <>
-      <TitleSection title="Semana de la discapacidadl" size />
+      <TitleSection title="Semana de la discapacidad" size />
       <section>
         <Demo id="demo">
           <DemoContainer>
@@ -22,7 +22,7 @@ const DemoVideo = () => {
               />
             </DemoRight>
             <DemoLeft>
-              <p>Actividades semana de la discapacidad</p>
+              <p>Actividades  en I.E.S Ferndo de Mena</p>
               <p></p>
               <p>
               Actividad para LA SEMANA DE LA CAPACIDAD 2023 realizada por los alumnos del  CFGM Atención a Personas en Situación de Dependencia del I.E.S Fernando de Mena y el Servicio de Capacitación Afymos.
