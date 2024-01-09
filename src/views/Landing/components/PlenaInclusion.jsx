@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-
-import { ContentButton } from "../../../components/Content/ContentStyles";
-import { Link } from "react-router-dom";
+import React from "react";
 import TitleSection from "../../../components/TitleSection";
 import styled from "styled-components";
 
 const DemoVideo = () => {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    setClicked(!clicked);
-  };
+
   return (
     <>
-      <TitleSection title="Visitamos la Diputación de Ciudad Real" size />
+      <TitleSection title="Semana de la discapacidadl" size />
       <section>
         <Demo id="demo">
           <DemoContainer>
@@ -20,7 +14,7 @@ const DemoVideo = () => {
               <iframe
                 width="570"
                 height="320"
-                src="https://www.youtube.com/embed/SJI4HjfxSj8"
+                src="https://www.youtube.com/embed/KCKDmcgh2dk"
                 title="Youtube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -28,14 +22,12 @@ const DemoVideo = () => {
               />
             </DemoRight>
             <DemoLeft>
-              <p>Visita Diputación de Ciudad Real</p>
+              <p>Actividades semana de la discapacidad</p>
               <p></p>
               <p>
-                Valverde llama a la unidad por la plena inclusión de las
-                personas con capacidades diferentes y anuncia que la Diputación
-                facilitará también su acceso a la cultura
+              Actividad para LA SEMANA DE LA CAPACIDAD 2023 realizada por los alumnos del  CFGM Atención a Personas en Situación de Dependencia del I.E.S Fernando de Mena y el Servicio de Capacitación Afymos.
               </p>
-              <Link
+              {/* <Link
                 onClick={handleClick}
                 to="https://www.dipucr.es/noticias/item/4548-valverde-llama-a-la-unidad-por-la-plena-inclusion-de-las-personas-con-capacidades-diferentes-y-anuncia-que-la-diputacion-facilitara-tambien-su-acceso-a-la-cultura"
                 target="_blank"
@@ -43,7 +35,7 @@ const DemoVideo = () => {
                 <ContentButton transition={{ delay: 1, duration: 0.6 }}>
                   Saber más
                 </ContentButton>
-              </Link>
+              </Link> */}
             </DemoLeft>
           </DemoContainer>
         </Demo>
@@ -84,7 +76,7 @@ const DemoLeft = styled.div`
   gap: 1.5rem;
 
   p:nth-child(1) {
-    margin-top: 7%;
+    margin: 10%;
     font-size: 2rem;
     font-style: italic;
     color: #071c2f;
@@ -98,6 +90,8 @@ const DemoLeft = styled.div`
   p:nth-child(3) {
     font-size: 1.6rem;
     margin-bottom: 1rem;
+    margin:15%;
+    margin-top:0;
     color: #071c2f;
   }
 `;

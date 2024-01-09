@@ -12,6 +12,7 @@ import Footer from "../../components/Footer/Footer";
 import MainNew from "../Landing/components/MainNew";
 import NavBarLanding from "../../components/Header/NavBarLanding";
 import PartnertList from "../../components/Partners/PartnerList";
+import PlenaInclusion from "./components/PlenaInclusion";
 import ProjectCreaVideo from "./components/ProjectCreaVideo";
 import ScrollToTop from "../../components/ScrollToUp";
 import SectionAboutUs from "./components/SectionAboutUs";
@@ -19,15 +20,13 @@ import SectionServices from "./components/SectionServices";
 import SliderDisplay from "./components/sliderDisplay/SliderDisplay";
 import Testimonials from "./components/Testimonials";
 
-// import PlenaInclusion from "./components/PlenaInclusion";
-
 const LandingView = () => {
   const [diputacionData] = useState(diputacion);
   return (
     <>
       <ScrollToTop />
       <NavBarLanding />
-      {/* <PlenaInclusion /> */}
+      <PlenaInclusion />
       <div className="App">
         <Carousel />
       </div>
