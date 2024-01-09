@@ -30,10 +30,9 @@ const LandingView = () => {
       <div className="App">
         <Carousel />
       </div>
-
       <SliderDisplay
         items={diputacionData}
-        title="Our Drinks & Cocktails"
+        title=""
         slides={3}
         datas={diputacionData}
       />
