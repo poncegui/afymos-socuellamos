@@ -76,7 +76,7 @@ const DemoLeft = styled.div`
   gap: 1.5rem;
 
   p:nth-child(1) {
-    margin: 10%;
+    margin: 5%;
     font-size: 2rem;
     font-style: italic;
     color: #071c2f;
