@@ -6,7 +6,7 @@ const DemoVideo = () => {
 
   return (
     <>
-      <TitleSection title="Semana de la discapacidad" size />
+      <TitleSection title="Semana de la Capacidad" size />
       <section>
         <Demo id="demo">
           <DemoContainer>
