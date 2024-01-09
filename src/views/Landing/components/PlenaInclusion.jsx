@@ -22,20 +22,11 @@ const DemoVideo = () => {
               />
             </DemoRight>
             <DemoLeft>
-              <p>Actividades en I.E.S Ferndo de Mena</p>
+              <p>Actividades en I.E.S Fernando de Mena</p>
               <p></p>
               <p>
               Actividad para LA SEMANA DE LA CAPACIDAD 2023 realizada por los alumnos del  CFGM Atención a Personas en Situación de Dependencia del I.E.S Fernando de Mena y el Servicio de Capacitación Afymos.
               </p>
-              {/* <Link
-                onClick={handleClick}
-                to="https://www.dipucr.es/noticias/item/4548-valverde-llama-a-la-unidad-por-la-plena-inclusion-de-las-personas-con-capacidades-diferentes-y-anuncia-que-la-diputacion-facilitara-tambien-su-acceso-a-la-cultura"
-                target="_blank"
-              >
-                <ContentButton transition={{ delay: 1, duration: 0.6 }}>
-                  Saber más
-                </ContentButton>
-              </Link> */}
             </DemoLeft>
           </DemoContainer>
         </Demo>
@@ -92,7 +83,9 @@ const DemoLeft = styled.div`
     margin-bottom: 1rem;
     margin:15%;
     margin-top:0;
+    margin-left:0;
     color: #071c2f;
+    text-align-last: match-parent;
   }
 `;
 
