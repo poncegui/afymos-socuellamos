@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dbe56b46.css",
-    "main.js": "./static/js/main.0e52cc81.js",
+    "main.js": "./static/js/main.397e4f6d.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -49,11 +49,11 @@
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/campeones-baloncesto-9.jpg": "./static/media/campeones-baloncesto-9.51d38b4f1d0cae968283.jpg",
     "static/media/proyecto-crea-03.jpg": "./static/media/proyecto-crea-03.0501b340293cb969e28c.jpg",
+    "static/media/crea2024-2.png": "./static/media/crea2024-2.5d8ab94b7cab97007e23.png",
     "static/media/campeones-baloncesto-7.jpg": "./static/media/campeones-baloncesto-7.fcf6d88ea85a3b9c6b03.jpg",
     "static/media/proyecto-crea-02.jpg": "./static/media/proyecto-crea-02.579e1a32019e4dc75eda.jpg",
     "static/media/somos-portada.jpg": "./static/media/somos-portada.1f87966a418b44247713.jpg",
     "static/media/curso-formacion.png": "./static/media/curso-formacion.6263a09cf7841b99d1fd.png",
-    "static/media/proyecto-crea-01.jpg": "./static/media/proyecto-crea-01.d0644aac0bddc5198d84.jpg",
     "static/media/voluntariado3.jpg": "./static/media/voluntariado3.f366bf5b1249d359686d.jpg",
     "static/media/nosotros-3.png": "./static/media/nosotros-3.85bcd11ffb4b6be95051.png",
     "static/media/background-1.jpg": "./static/media/background-1.d8380d5686e1353b4386.jpg",
@@ -67,11 +67,13 @@
     "static/media/formacion-3.png": "./static/media/formacion-3.cf82540cee0bf4f87dbd.png",
     "static/media/campeones-baloncesto-8.jpg": "./static/media/campeones-baloncesto-8.4ccf6cae07fbd5b129cd.jpg",
     "static/media/apoyo-familias-3.jpg": "./static/media/apoyo-familias-3.1c0a46cca1c1fc3d8cba.jpg",
+    "static/media/crea2024.png": "./static/media/crea2024.3ea8a0d4bb83c955b04e.png",
     "static/media/organigrama.pdf": "./static/media/organigrama.2ebed92c873541755320.pdf",
     "static/media/rafa.jpg": "./static/media/rafa.5f8a302f0f8a0bf2c8b7.jpg",
     "static/media/voluntariado5.jpg": "./static/media/voluntariado5.dec7f91296482557d404.jpg",
     "static/media/campeones-baloncesto-2.jpg": "./static/media/campeones-baloncesto-2.2396cc3018694553f873.jpg",
     "static/media/vivienda-4.jpg": "./static/media/vivienda-4.4b2b92330e6560d4f7ce.jpg",
+    "static/media/crea-2024.pdf": "./static/media/crea-2024.eb386bc8f8ce34bb6748.pdf",
     "static/media/campeones-baloncesto.jpg": "./static/media/campeones-baloncesto.f0a552e5cf4e38d96559.jpg",
     "static/media/psicopedagogia.png": "./static/media/psicopedagogia.893767e7ba711e2e3d46.png",
     "static/media/campeones-baloncesto-3.jpg": "./static/media/campeones-baloncesto-3.393ea1024b072caeeea8.jpg",
@@ -116,10 +118,10 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "main.dbe56b46.css.map": "./static/css/main.dbe56b46.css.map",
-    "main.0e52cc81.js.map": "./static/js/main.0e52cc81.js.map"
+    "main.397e4f6d.js.map": "./static/js/main.397e4f6d.js.map"
   },
   "entrypoints": [
     "static/css/main.dbe56b46.css",
-    "static/js/main.0e52cc81.js"
+    "static/js/main.397e4f6d.js"
   ]
 }
