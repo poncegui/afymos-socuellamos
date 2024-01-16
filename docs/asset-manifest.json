@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dbe56b46.css",
-    "main.js": "./static/js/main.bec7b8b8.js",
+    "main.js": "./static/js/main.0e52cc81.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -52,6 +52,7 @@
     "static/media/campeones-baloncesto-7.jpg": "./static/media/campeones-baloncesto-7.fcf6d88ea85a3b9c6b03.jpg",
     "static/media/proyecto-crea-02.jpg": "./static/media/proyecto-crea-02.579e1a32019e4dc75eda.jpg",
     "static/media/somos-portada.jpg": "./static/media/somos-portada.1f87966a418b44247713.jpg",
+    "static/media/curso-formacion.png": "./static/media/curso-formacion.6263a09cf7841b99d1fd.png",
     "static/media/proyecto-crea-01.jpg": "./static/media/proyecto-crea-01.d0644aac0bddc5198d84.jpg",
     "static/media/voluntariado3.jpg": "./static/media/voluntariado3.f366bf5b1249d359686d.jpg",
     "static/media/nosotros-3.png": "./static/media/nosotros-3.85bcd11ffb4b6be95051.png",
@@ -63,6 +64,7 @@
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
     "static/media/campeones-baloncesto-6.jpg": "./static/media/campeones-baloncesto-6.16333dce39bb7b913210.jpg",
     "static/media/vivienda-1.jpg": "./static/media/vivienda-1.ca2042692b2a1724b683.jpg",
+    "static/media/formacion-3.png": "./static/media/formacion-3.cf82540cee0bf4f87dbd.png",
     "static/media/campeones-baloncesto-8.jpg": "./static/media/campeones-baloncesto-8.4ccf6cae07fbd5b129cd.jpg",
     "static/media/apoyo-familias-3.jpg": "./static/media/apoyo-familias-3.1c0a46cca1c1fc3d8cba.jpg",
     "static/media/organigrama.pdf": "./static/media/organigrama.2ebed92c873541755320.pdf",
@@ -94,6 +96,7 @@
     "static/media/fisioterapeuta.png": "./static/media/fisioterapeuta.e41225843d7193a6d76a.png",
     "static/media/logo-afymos.png": "./static/media/logo-afymos.665bbd9817f1c58a0ddb.png",
     "static/media/globalcaja.jpg": "./static/media/globalcaja.e3f7605e3965e22b5058.jpg",
+    "static/media/documentacion-formacion.pdf": "./static/media/documentacion-formacion.7ef18a5de78030f5de50.pdf",
     "static/media/familia.png": "./static/media/familia.f35f003819ca2e1ca904.png",
     "static/media/proteger.png": "./static/media/proteger.0d9f7f7eb08b06cddc53.png",
     "static/media/vivienda-social.png": "./static/media/vivienda-social.2758f70a7aef3142dc2b.png",
@@ -113,10 +116,10 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "main.dbe56b46.css.map": "./static/css/main.dbe56b46.css.map",
-    "main.bec7b8b8.js.map": "./static/js/main.bec7b8b8.js.map"
+    "main.0e52cc81.js.map": "./static/js/main.0e52cc81.js.map"
   },
   "entrypoints": [
     "static/css/main.dbe56b46.css",
-    "static/js/main.bec7b8b8.js"
+    "static/js/main.0e52cc81.js"
   ]
 }
