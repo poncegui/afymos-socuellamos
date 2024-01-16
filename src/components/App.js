@@ -21,6 +21,7 @@ import ProjectsTerapias from "../views/terapias/ProjetsTerapias";
 import ProjectsVivienda from "../views/viviendasApoyo/ProjectsVivienda";
 import ProjectsVoluntariado from "../views/voluntariado/ProjectsVoluntariado";
 import ScrollToTop from "./ScrollToTop";
+import VisorFormacion from "../views/Landing/components/pdf/VisorFormacion";
 import VisorPdf20 from "../views/Landing/components/pdf/VisorPdf2020";
 import VisorPdf21 from "../views/Landing/components/pdf/VisorPdf2021";
 import VisorPdfOrganigrama from "../views/Landing/components/pdf/VisorPdfOrganigrama";
@@ -57,6 +58,7 @@ const App = () => {
         <Route path="/organigrama" element={<VisorPdfOrganigrama />} />
         <Route path="/pdf-cuentas-20" element={<VisorPdf20 />} />
         <Route path="/pdf-cuentas-21" element={<VisorPdf21 />} />
+        <Route path="/documentacion-formacion" element={<VisorFormacion />} />
         <Route path="/formacion" element={<ProjectsFormacion />} />
         <Route path="/junta-directiva" element={<Chart />} />
         <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />

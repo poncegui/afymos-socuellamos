@@ -1,5 +1,6 @@
 import formacion1 from "../assets/images-formacion/formacion-1.jpg";
 import formacion2 from "../assets/images-formacion/formacion-2.png";
+import formacion3 from "../assets/images-formacion/formacion-3.png";
 
 export const formacionDataOne = {
   reverse: false,
@@ -12,6 +13,21 @@ export const formacionDataOne = {
   description:
     "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos a las personas con discapacidad intelectual.",
   img: formacion1,
+};
+
+export const formacionDataThree = {
+  reverse: false,
+  inverse: false,
+  topLine: {
+    text: "El centro de formación Afymos va a impartir la especialidad formativa; Actividades básicas de atención al cliente para personas con discapacidad",
+  },
+  headline:
+    "",
+  description:
+    "Abierto plazo de inscripción",
+  img: formacion3,
+  buttonLabel: "Descarga Información",
+  href: "#/documentacion-formacion",
 };
 
 export const formacionDataFour = {

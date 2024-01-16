@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import {
-  basket,
-  diputacion,
-} from "./components/carouselNoticias/Carousel.Data";
 import { heroOne, heroThree, heroTwo } from "./components/services/HeroData";
 
 import Carousel from "./components/carouselNoticias/Carousel";
@@ -19,6 +15,9 @@ import SectionAboutUs from "./components/SectionAboutUs";
 import SectionServices from "./components/SectionServices";
 import SliderDisplay from "./components/sliderDisplay/SliderDisplay";
 import Testimonials from "./components/Testimonials";
+import {
+  diputacion,
+} from "./components/carouselNoticias/Carousel.Data";
 
 const LandingView = () => {
   const [diputacionData] = useState(diputacion);

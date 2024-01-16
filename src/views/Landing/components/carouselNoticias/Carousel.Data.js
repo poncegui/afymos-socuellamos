@@ -3,6 +3,7 @@ import basket2 from "../carouselNoticias/assets/images-noticias/campeonato-balon
 import basket3 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-4.jpg";
 import basket4 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-5.jpg";
 import congreso from "./assets/images-noticias/congreso-con-apoyo-burgos/congreso.jpg";
+import cursoFormacion from "../carouselNoticias/assets/images-noticias/curso-formacion/curso-formacion.png";
 import diputacion1 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-9.jpg";
 import diputacion2 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-8.jpg";
 import diputacion3 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-7.jpg";
@@ -11,6 +12,14 @@ import proyectoCrea from "../../../proyectoCrea/assets/proyecto-crea/proyecto-cr
 import somosPortada from "./assets/images-noticias/somos-portada/somos-portada.jpg";
 
 export const ApiCarousel = [
+  {
+    title: "Actividades básicas de Atención al cliente",
+    description:
+      "Curso de 190h + 30h de prácticas. Comienzo en febrero hasta junio 2024.",
+    image: cursoFormacion,
+    alt: "curso-formacion",
+    url: "/formacion",
+  },
   {
     title: "PROYECTO NUEVO CREA 2023",
     description:

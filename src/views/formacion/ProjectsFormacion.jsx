@@ -5,6 +5,7 @@ import {
   formacionDataTwo,
 } from "./services/formacionData";
 
+import { Content } from "../../components/Content/Content";
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
 import NavBarViews from "../../components/Header/NavBarViews";
@@ -20,9 +21,8 @@ const ProjectsFormacion = () => {
       <NavBarViews title="Centro de Formación" id="/formacion" />
       <TitleSection title="Fomentamos la formación" size />
       <ContentProjects {...formacionDataOne} inverse />
-      {/* <ContentProjects {...formacionDataTwo} reverse />
-      <ContentProjects {...formacionDataThree} inverse /> */}
-      <ContentProjects {...formacionDataFour} reverse />
+      <Content {...formacionDataThree} reverse />
+      <ContentProjects {...formacionDataFour} inverse />
       <PartnersList />
       <Footer />
     </>
