@@ -8,7 +8,7 @@ import diputacion1 from "../carouselNoticias/assets/images-noticias/campeonato-b
 import diputacion2 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-8.jpg";
 import diputacion3 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-7.jpg";
 import diputacion4 from "../carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto-6.jpg";
-import proyectoCrea from "../../../proyectoCrea/assets/proyecto-crea/proyecto-crea-01.jpg";
+import proyectoCrea from "../../../proyectoCrea/assets/proyecto-crea/crea2024.png";
 import somosPortada from "./assets/images-noticias/somos-portada/somos-portada.jpg";
 
 export const ApiCarousel = [
@@ -21,12 +21,12 @@ export const ApiCarousel = [
     url: "/formacion",
   },
   {
-    title: "PROYECTO NUEVO CREA 2023",
+    title: "PROYECTO NUEVO CREA 2024",
     description:
-      "El pasado 18 de abril de 2023, se presentó la nueva convocatoria",
+      "Afymos es entidad promotora del Proyecto de Formación y Empleo en el seno de la empresa NUEVO CREA",
     image: proyectoCrea,
-    alt: "proyecto-crea-2023",
-    url: "",
+    alt: "proyecto-crea",
+    url: "/proyecto-crea",
   },
   {
     title: "Somos Portada de Periódico",
