@@ -49,7 +49,7 @@ const NavContainer = styled.nav`
   .fa-angles-left {
     margin-left: 50px;
     font-size: 1.5rem;
-    color: #ffc0bc;
+    color: #c6b1c9;
 
     @media (max-width: 768px) {
       margin-left: 40px;
@@ -68,7 +68,7 @@ const NavContainer = styled.nav`
   justify-content: space-between;
 
   a {
-    color: #ffc0bc;
+    color: #c6b1c9;
     text-decoration: none;
     margin-right: 1.5rem;
   }
@@ -88,7 +88,7 @@ const RightMenu = styled.nav`
 
   h1 {
     text-align: center;
-    color: #ffc0bc;
+    color: #c6b1c9;
     font-weight: bold;
     text-transform: lowercase;
     font-size: 2.5rem;

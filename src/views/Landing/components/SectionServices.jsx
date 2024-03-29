@@ -68,6 +68,6 @@ const Icons = styled.div`
     padding: 0.2rem 0;
   }
   :hover {
-    background-color: #ffc0bc;
+    background-color: #c6b1c9;
   }
 `;

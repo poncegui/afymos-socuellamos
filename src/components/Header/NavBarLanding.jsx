@@ -37,16 +37,6 @@ function Navbar() {
           >
             contacto
           </Contact>
-          {/* <Contact
-            to="contacto"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={1000}
-            onClick={handleClick}
-          >
-            hazte socio
-          </Contact> */}
         </div>
         <div className="burguer">
           <BurguerBtn clicked={clicked} handleClick={handleClick} />
@@ -67,7 +57,7 @@ const NavContainer = styled.nav`
   z-index: 50;
 
   h3 {
-    color: #ffc0bc;
+    color: #c6b1c9;
     font-weight: 400;
     margin-left: 5%;
     font-size: 2.2rem;
@@ -80,7 +70,7 @@ const NavContainer = styled.nav`
   justify-content: space-between;
 
   a {
-    color: #ffc0bc;
+    color: #c6b1c9;
     text-decoration: none;
     margin-right: 5%;
     font-weight: 400;
@@ -101,7 +91,7 @@ const NavContainer = styled.nav`
     text-align: center;
     transition: all 0.5s ease;
     a {
-      color: #ffc0bc;
+      color: #c6b1c9;
       font-size: 1.2rem;
       display: block;
     }
@@ -141,7 +131,7 @@ const NavContainer = styled.nav`
       a {
         font-size: 3rem;
         margin-top: 5%;
-        color: #ffc0bc;
+        color: #c6b1c9;
         cursor: pointer;
 
         &:hover {

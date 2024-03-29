@@ -42,7 +42,7 @@ export const SectionFeatures = styled.div`
 SectionFeatures.displayName = "SectionFeatures";
 
 export const TitleContainer = styled.div`
-  background-color: #ffc0bc;
+  background-color: #c6b1c9;
   display: flex;
   width: 100%;
   height: 70px;
@@ -90,7 +90,7 @@ export const Icons = styled.div`
   gap: 1rem;
 
   :hover {
-    background-color: #ffc0bc;
+    background-color: #c6b1c9;
   }
 
   h3 {

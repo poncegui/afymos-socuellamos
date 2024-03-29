@@ -37,10 +37,10 @@ export const creaDataThree = {
   topLine: {
     text: "Conoce nuestro nuevo programa 20024",
   },
-  headline:
-    "¿QUÉ ES EL NUEVO CREA 2024?",
+  headline: "¿QUÉ ES EL NUEVO CREA 2024?",
   description:
     "Es un proyecto de FORMACIÓN DUAL, que combina formación profesional para el empleo con trabajo efectivo en la empresa, formalizado con un contrato de formación en alternancia con el empleo..",
   img: creaThree,
   buttonLabel: "Descarga Información",
-  href: "#/crea2024",}
+  href: "#/crea2024",
+};

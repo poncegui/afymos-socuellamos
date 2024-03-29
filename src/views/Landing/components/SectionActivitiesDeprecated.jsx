@@ -2,16 +2,16 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import TitleSection from "../../../components/TitleSection";
-import { aboutUsData } from "./services/FeaturesData";
+import { activitiesDeprecated } from "./services/FeaturesData";
 import styled from "styled-components";
 
-const SectionServices = () => {
-  const [data] = useState(aboutUsData);
+const SectionActivitiesDeprecated = () => {
+  const [data] = useState(activitiesDeprecated);
 
   return (
     <>
       <section>
-        <TitleSection title="Sobre Nosotros" marginBottom />
+        <TitleSection title="Todas las noticias" marginBottom />
         <IconsContainer>
           {data.map((item) => (
             <Icons key={item.id} value={item.name}>
@@ -26,7 +26,7 @@ const SectionServices = () => {
     </>
   );
 };
-export default SectionServices;
+export default SectionActivitiesDeprecated;
 
 const IconsContainer = styled.div`
   display: flex;

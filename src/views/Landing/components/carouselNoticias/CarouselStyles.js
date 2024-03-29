@@ -66,7 +66,7 @@ export const Button = styled.button`
   background-color: #071c2f;
   font-size: 1.3rem;
   padding: 5px 10px;
-  color: #ffc0bc;
+  color: #c6b1c9;
   cursor: pointer;
   width: 100%;
   font-weight: 600;
@@ -83,7 +83,7 @@ export const ContainerButtonLink = styled.div`
   background-color: #071c2f;
   font-size: 1.3rem;
   padding: 5px 10px;
-  color: #ffc0bc;
+  color: #c6b1c9;
   width: 100%;
   font-weight: 600;
   margin: auto 0 0 0;

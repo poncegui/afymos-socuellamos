@@ -1,0 +1,33 @@
+.custom-slider {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px; /* ajusta según sea necesario */
+}
+
+.slide {
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+
+.slide-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Estilos adicionales según sea necesario */

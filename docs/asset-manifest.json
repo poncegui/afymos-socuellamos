@@ -120,8 +120,5 @@
     "main.dbe56b46.css.map": "./static/css/main.dbe56b46.css.map",
     "main.397e4f6d.js.map": "./static/js/main.397e4f6d.js.map"
   },
-  "entrypoints": [
-    "static/css/main.dbe56b46.css",
-    "static/js/main.397e4f6d.js"
-  ]
+  "entrypoints": ["static/css/main.dbe56b46.css", "static/js/main.397e4f6d.js"]
 }

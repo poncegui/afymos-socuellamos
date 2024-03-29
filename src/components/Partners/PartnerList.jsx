@@ -46,7 +46,7 @@ export const SectionPartners = styled.div`
     background-color: #071c2f;
     height: 80px;
     width: 100%;
-    color: #ffc0bc;
+    color: #c6b1c9;
     display: grid;
     place-content: center;
   }

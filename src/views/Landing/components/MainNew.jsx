@@ -1,5 +1,5 @@
 import React from "react";
-import mainBackGround from "../components/carouselNoticias/assets/images-noticias/campeonato-baloncesto/campeones-baloncesto.jpg";
+import mainBackGround from "../../todasLasNoticias/assets/campeonato-baloncesto/campeones-baloncesto.jpg";
 import styled from "styled-components";
 
 const MainNew = () => {

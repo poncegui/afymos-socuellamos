@@ -74,7 +74,7 @@ export const FaceBack = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #ffc0bc;
+  background: #c6b1c9;
   color: #071c2f;
   display: flex;
   border-radius: 10px;

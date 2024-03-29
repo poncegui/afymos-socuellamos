@@ -19,7 +19,7 @@ ul {
 }
 .footer-col h4 {
   font-size: 18px;
-  color: #ffc0bc;
+  color: #c6b1c9;
   text-transform: capitalize;
   margin-bottom: 2.5rem;
   font-weight: 500;
@@ -48,7 +48,7 @@ ul {
   transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
-  color: #ffc0bc;
+  color: #c6b1c9;
   padding-left: 8px;
 }
 .footer-col .social-links a {

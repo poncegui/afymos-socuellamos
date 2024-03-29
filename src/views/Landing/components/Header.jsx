@@ -1,4 +1,4 @@
-import background from "../assets/images-background/background-1.jpg";
+import CarouselNews from "./carouselNoticias/CarouselNews";
 import logo from "./assets/logos/logo-afymos.png";
 import styled from "styled-components";
 
@@ -17,17 +17,7 @@ const Header = () => {
           </HeaderSubtitle>
         </HeaderContainer>
 
-        <HeaderImgBackground
-          style={{
-            backgroundImage: `url(${background})`,
-            WebkitBackgroundSize: "cover",
-            backgroundPositionY: "center",
-            backgroundPositionX: "center",
-            height: "100vh",
-            backgroundRepeat: "no-repeat",
-            width: "100%",
-          }}
-        />
+        <CarouselNews />
       </HeaderSection>
     </>
   );
@@ -42,7 +32,7 @@ const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffc0bc;
+  background-color: #c6b1c9;
   width: 100%;
   gap: 1.5rem;
   margin: 1.5rem auto;
@@ -102,5 +92,3 @@ const HeaderSubtitle = styled.div`
     }
   }
 `;
-
-const HeaderImgBackground = styled.section``;

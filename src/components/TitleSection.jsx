@@ -22,7 +22,7 @@ const TitleSectionContainer = styled.div`
   display: flex;
   width: 100%;
   height: 7rem;
-  background: ${({ inverse }) => (inverse ? "#071c2f" : "#FFC0BC")};
+  background: ${({ inverse }) => (inverse ? "#071c2f" : "#c6b1c9")};
   text-align: center;
   align-items: center;
   line-height: 1.5rem;
@@ -32,7 +32,7 @@ const TitleSectionContainer = styled.div`
   h2 {
     width: 100%;
     position: relative;
-    color: ${({ inverse }) => (inverse ? "#FFC0BC" : "#071c2f")};
+    color: ${({ inverse }) => (inverse ? "#c6b1c9" : "#071c2f")};
   }
 
   @media (max-width: 440px) {

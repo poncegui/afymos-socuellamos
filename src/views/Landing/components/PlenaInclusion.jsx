@@ -3,7 +3,6 @@ import TitleSection from "../../../components/TitleSection";
 import styled from "styled-components";
 
 const DemoVideo = () => {
-
   return (
     <>
       <TitleSection title="Semana de la Capacidad" size />
@@ -25,7 +24,9 @@ const DemoVideo = () => {
               <p>Actividades en I.E.S Fernando de Mena</p>
               <p></p>
               <p>
-              Actividad para LA SEMANA DE LA CAPACIDAD 2023 realizada por los alumnos del  CFGM Atención a Personas en Situación de Dependencia del I.E.S Fernando de Mena y el Servicio de Capacitación Afymos.
+                Actividad para LA SEMANA DE LA CAPACIDAD 2023 realizada por los
+                alumnos del CFGM Atención a Personas en Situación de Dependencia
+                del I.E.S Fernando de Mena y el Servicio de Capacitación Afymos.
               </p>
             </DemoLeft>
           </DemoContainer>
@@ -81,9 +82,9 @@ const DemoLeft = styled.div`
   p:nth-child(3) {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    margin:15%;
-    margin-top:0;
-    margin-left:0;
+    margin: 15%;
+    margin-top: 0;
+    margin-left: 0;
     color: #071c2f;
     text-align-last: match-parent;
   }

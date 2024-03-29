@@ -21,10 +21,8 @@ export const formacionDataThree = {
   topLine: {
     text: "El centro de formación Afymos va a impartir la especialidad formativa; Actividades básicas de atención al cliente para personas con discapacidad",
   },
-  headline:
-    "",
-  description:
-    "Abierto plazo de inscripción",
+  headline: "",
+  description: "Abierto plazo de inscripción",
   img: formacion3,
   buttonLabel: "Descarga Información",
   href: "#/documentacion-formacion",

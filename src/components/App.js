@@ -3,6 +3,7 @@ import "../styles/layout/normalize.css";
 //HOOKS
 import { Route, Routes } from "react-router-dom";
 
+import AllNews from "../views/todasLasNoticias/AllNews";
 import AvisoLegal from "./Footer/AvisoLegal";
 //COMPONENTS
 import Chart from "../views/juntaDirectiva/Chart";
@@ -23,8 +24,7 @@ import ProjectsVoluntariado from "../views/voluntariado/ProjectsVoluntariado";
 import ScrollToTop from "./ScrollToTop";
 import VisorCrea from "../views/Landing/components/pdf/VisorCrea2024";
 import VisorFormacion from "../views/Landing/components/pdf/VisorFormacion";
-import VisorPdf20 from "../views/Landing/components/pdf/VisorPdf2020";
-import VisorPdf21 from "../views/Landing/components/pdf/VisorPdf2021";
+import VisorPdf22 from "../views/Landing/components/pdf/VisorPdf2022";
 import VisorPdfOrganigrama from "../views/Landing/components/pdf/VisorPdfOrganigrama";
 
 const App = () => {
@@ -32,6 +32,7 @@ const App = () => {
     <>
       <ScrollToTop smooth />
       <Routes>
+        <Route path="/todas-las-noticias" element={<AllNews />} />
         <Route path="/terapias" element={<ProjectsTerapias />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/apoyo-familias" element={<ProjectsFamilias />} />
@@ -57,8 +58,7 @@ const App = () => {
           element={<ProjectsDiagnostico />}
         />
         <Route path="/organigrama" element={<VisorPdfOrganigrama />} />
-        <Route path="/pdf-cuentas-20" element={<VisorPdf20 />} />
-        <Route path="/pdf-cuentas-21" element={<VisorPdf21 />} />
+        <Route path="/pdf-cuentas-22" element={<VisorPdf22 />} />
         <Route path="/documentacion-formacion" element={<VisorFormacion />} />
         <Route path="/crea2024" element={<VisorCrea />} />
         <Route path="/formacion" element={<ProjectsFormacion />} />

@@ -110,7 +110,7 @@ export const Icons = styled.div`
   gap: 1rem;
 
   :hover {
-    border: 3px solid #ffc0bc;
+    border: 3px solid #c6b1c9;
   }
 
   h3 {

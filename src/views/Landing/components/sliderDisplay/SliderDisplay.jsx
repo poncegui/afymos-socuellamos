@@ -49,7 +49,7 @@ const SliderDisplay = ({ slides, title, id, items, alt, buttons }) => {
     prevArrow: <SamplePrevArrow />,
     autoplay: true,
     speed: 2300,
-    autoplaySpeed: 2300,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     responsive: [
       {
@@ -98,7 +98,7 @@ export default SliderDisplay;
 
 const SliderDisplaySection = styled.section`
   margin: 10% auto;
-  background-color: #ffc0bc;
+  background-color: #c6b1c9;
   padding: 0;
 `;
 

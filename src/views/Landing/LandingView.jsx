@@ -1,7 +1,5 @@
-import React, { useState } from "react";
 import { heroOne, heroThree, heroTwo } from "./components/services/HeroData";
 
-import Carousel from "./components/carouselNoticias/Carousel";
 import ContactForm from "./components/ContactForm";
 import { Content } from "../../components/Content/Content";
 import Footer from "../../components/Footer/Footer";
@@ -10,31 +8,21 @@ import NavBarLanding from "../../components/Header/NavBarLanding";
 import PartnertList from "../../components/Partners/PartnerList";
 import PlenaInclusion from "./components/PlenaInclusion";
 import ProjectCreaVideo from "./components/ProjectCreaVideo";
+import { React } from "react";
 import ScrollToTop from "../../components/ScrollToUp";
 import SectionAboutUs from "./components/SectionAboutUs";
+import SectionActivitiesDeprecated from "./components/SectionActivitiesDeprecated";
 import SectionServices from "./components/SectionServices";
-import SliderDisplay from "./components/sliderDisplay/SliderDisplay";
 import Testimonials from "./components/Testimonials";
-import {
-  diputacion,
-} from "./components/carouselNoticias/Carousel.Data";
 
 const LandingView = () => {
-  const [diputacionData] = useState(diputacion);
   return (
     <>
       <ScrollToTop />
       <NavBarLanding />
+      <SectionActivitiesDeprecated />
       <PlenaInclusion />
-      <div className="App">
-        <Carousel />
-      </div>
-      <SliderDisplay
-        items={diputacionData}
-        title=""
-        slides={3}
-        datas={diputacionData}
-      />
+
       <SectionServices />
       <SectionAboutUs />
       <Content {...heroOne} />
