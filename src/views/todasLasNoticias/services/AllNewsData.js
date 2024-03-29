@@ -51,5 +51,3 @@ export const diputacionData = [
     alt: "foto diputacion",
   },
 ];
-
-

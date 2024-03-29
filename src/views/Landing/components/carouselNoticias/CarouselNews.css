@@ -1,33 +1,51 @@
-.custom-slider {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px; /* ajusta según sea necesario */
+.news-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.slide {
+.news-card {
   position: relative;
-}
-
-.slide img {
   width: 100%;
-  height: auto;
+  max-width: 400px; /* Ancho máximo ajustable */
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f8f9fa;
 }
 
-.slide-content {
+.news-card-background {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(5px);
 }
 
-.slide-content h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.news-card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(5px);
 }
 
-.slide-content p {
-  font-size: 16px;
-  margin-bottom: 20px;
+.news-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+  /* align-items: center; */
 }
 
-/* Estilos adicionales según sea necesario */
+.image-news {
+  height: 200px;
+}
+
+/* Estilos restantes... */

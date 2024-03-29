@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { allNewsDataOne, allNewsDataTwo, diputacionData } from "./services/AllNewsData";
+import {
+  allNewsDataOne,
+  allNewsDataTwo,
+  diputacionData,
+} from "./services/AllNewsData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";

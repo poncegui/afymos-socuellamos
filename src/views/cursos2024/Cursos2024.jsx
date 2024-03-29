@@ -8,7 +8,7 @@ import ScrollToTop from "../../components/ScrollToUp";
 import TitleSection from "../../components/TitleSection";
 import { campeonesOne } from "./services/somosCampeonesData";
 
-const SomosCampeones = () => {
+const Cursos2024 = () => {
   return (
     <>
       <ScrollToTop />
@@ -22,4 +22,4 @@ const SomosCampeones = () => {
   );
 };
 
-export default SomosCampeones;
+export default Cursos2024;

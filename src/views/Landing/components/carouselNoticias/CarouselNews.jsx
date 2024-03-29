@@ -1,56 +1,55 @@
-import "./CarouselNews.css"; // Archivo CSS para estilos personalizados
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./CarouselNews.css";
 
-import { ApiCarousel } from "./CarouselData";
-import React from "react";
-import Slider from "react-slick";
-import TitleSection from "../../../../components/TitleSection";
+import {
+  ContentButton,
+  HomePage,
+} from "../../../../components/Content/ContentStyles";
+import React, { useState } from "react";
 
-const SlideNews = ({ image, title, description }) => (
-  <div className="slide">
-    <img src={image} alt={title} />
-    <div className="slide-content">
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </div>
-  </div>
-);
+import Marquee from "./Marquee/Marquee";
+import { newsData } from "./CarouselData";
 
-const CarouselNews = ({ slides }) => {
-  const settingsNews = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+const NewsCards = () => {
+  const [clicked, setClicked] = useState(false);
+  const handleClick = () => {
+    setClicked(!clicked);
   };
-
   return (
     <>
-      <TitleSection title="Hoy es noticia" marginBottom />
-      <div className="custom-slider">
-        <Slider {...settingsNews}>
-          {ApiCarousel.map((slide, index) => (
-            <SlideNews key={index} {...slide} />
-          ))}
-        </Slider>
+      <Marquee />
+      <div className="news-cards-container">
+        {newsData.map((newsCard) => (
+          <div key={newsCard.id} className="news-card">
+            <div
+              className="news-card-background"
+              style={{ backgroundImage: newsCard.backgroundImage }}
+            ></div>
+            <div className="news-card-content">
+              <h2>{newsCard.title}</h2>
+              <img
+                className="image-news"
+                src={newsCard.image}
+                alt={newsCard.title}
+              />
+              <ContentButton
+                transition={{ delay: 1, duration: 0.6 }}
+                inverse={true}
+              >
+                <HomePage
+                  onClick={handleClick}
+                  href={newsCard.link}
+                  alt={newsCard.alt}
+                  target="_blank"
+                >
+                  {newsCard.buttonLabel}
+                </HomePage>
+              </ContentButton>
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
 };
 
-export default CarouselNews;
+export default NewsCards;

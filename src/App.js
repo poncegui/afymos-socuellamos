@@ -2,37 +2,41 @@ import "../styles/layout/normalize.css";
 
 import { Route, Routes } from "react-router-dom";
 
-import AvisoLegal from "./Footer/AvisoLegal";
-import Chart from "../views/juntaDirectiva/Chart";
-import LandingView from "../views/Landing/LandingView";
-import Nosotros from "../views/nosotros/Nosotros";
-import PoliticaPrivacidad from "./Footer/PoliticaDePrivacidad";
-import ProjectsCapacitacion from "../views/capacitacion/ProjectsCapacitacion";
-import ProjectsCentroDia from "../views/centroDia/ProjecsCentroDia";
-import ProjectsCentroDiversidad from "../views/instalaciones/ProjectsCentroDiversidad";
-import ProjectsCrea from "../views/proyectoCrea/ProjectsCrea";
-import ProjectsDiagnostico from "../views/valoracionDiagnostico/ProjectsDiagnostico";
-import ProjectsDonaciones from "../views/Donaciones/ProjectsDonaciones";
-import ProjectsFamilias from "../views/apoyoFamilias/ProjectsFamilias";
-import ProjectsFormacion from "../views/formacion/ProjectsFormacion";
-import ProjectsTerapias from "../views/terapias/ProjetsTerapias";
-import ProjectsVivienda from "../views/viviendasApoyo/ProjectsVivienda";
-import ProjectsVoluntariado from "../views/voluntariado/ProjectsVoluntariado";
-import ScrollToTop from "./ScrollToTop";
-import SemanaCapacidad from "../views/SemanaCapacidad/SemanaCapacidad";
-import SomosCampeones from "../views/somosCampeones/SomosCampeones";
-import VisorCrea from "../views/Landing/components/pdf/VisorCrea2024";
-import VisorFormacion from "../views/Landing/components/pdf/VisorFormacion";
-import VisorPdf22 from "../views/Landing/components/pdf/VisorPdf2022";
-import VisorPdfOrganigrama from "../views/Landing/components/pdf/VisorPdfOrganigrama";
+import AvisoLegal from "./components/Footer/AvisoLegal";
+import Chart from "./views/juntaDirectiva/Chart";
+import Cursos2024 from "./views/cursos2024/Cursos2024";
+import LandingView from "./views/Landing/LandingView";
+import Nosotros from "./views/nosotros/Nosotros";
+import PoliticaPrivacidad from "./components/Footer/PoliticaDePrivacidad";
+import ProjectsCapacitacion from "./views/capacitacion/ProjectsCapacitacion";
+import ProjectsCentroDia from "./views/centroDia/ProjecsCentroDia";
+import ProjectsCentroDiversidad from "./views/instalaciones/ProjectsCentroDiversidad";
+import ProjectsCrea from "./views/proyectoCrea/ProjectsCrea";
+import ProjectsDiagnostico from "./views/valoracionDiagnostico/ProjectsDiagnostico";
+import ProjectsDonaciones from "./views/Donaciones/ProjectsDonaciones";
+import ProjectsFamilias from "./views/apoyoFamilias/ProjectsFamilias";
+import ProjectsFormacion from "./views/formacion/ProjectsFormacion";
+import ProjectsTerapias from "./views/terapias/ProjetsTerapias";
+import ProjectsVivienda from "./views/viviendasApoyo/ProjectsVivienda";
+import ProjectsVoluntariado from "./views/voluntariado/ProjectsVoluntariado";
+import ScrollToTop from "./components/ScrollToTop";
+import SemanaCapacidad from "./views/SemanaCapacidad/SemanaCapacidad";
+import SomosCampeones from "./views/somosCampeones/SomosCampeones";
+import VisitaDiputacion from "./views/visitaDiputacion2023/VisitaDiputacion";
+import VisorCrea from "./views/Landing/components/pdf/VisorCrea2024";
+import VisorFormacion from "./views/Landing/components/pdf/VisorFormacion";
+import VisorPdf22 from "./views/Landing/components/pdf/VisorPdf2022";
+import VisorPdfOrganigrama from "./views/Landing/components/pdf/VisorPdfOrganigrama";
 
 const App = () => {
   return (
     <>
       <ScrollToTop smooth />
       <Routes>
-        <Route path="/semana-capacitad" element={<SemanaCapacidad />} />
+        <Route path="/visita-diputacion" element={<VisitaDiputacion />} />
+        <Route path="/semana-capacidad" element={<SemanaCapacidad />} />
         <Route path="/terapias" element={<ProjectsTerapias />} />
+        <Route path="/cursos-24" element={<Cursos2024 />} />
         <Route path="/somos-campeones" element={<SomosCampeones />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/apoyo-familias" element={<ProjectsFamilias />} />

@@ -4,7 +4,7 @@ import PartnersList from "../../components/Partners/PartnerList";
 import { React } from "react";
 import ScrollToTop from "../../components/ScrollToUp";
 import TitleSection from "../../components/TitleSection";
-import VideoCapacidad from "./VideoCapacidad"
+import VideoCapacidad from "./VideoCapacidad";
 
 const SemanaCapacidad = () => {
   return (

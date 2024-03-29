@@ -111,8 +111,8 @@ export const activitiesDeprecated = [
     id: 1,
     name: "Visita Diputación Ciudad Real",
     img: visitas,
-    alt: "Instalaciones Centro",
-    url: "/visitas",
+    alt: "Visita Diputación Ciudad Real",
+    url: "/visita-diputacion",
   },
   {
     id: 2,
