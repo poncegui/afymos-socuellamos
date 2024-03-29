@@ -1,7 +1,3 @@
-import basket from "../assets/campeonato-baloncesto/campeones-baloncesto.jpg";
-import basket2 from "../assets/campeonato-baloncesto/campeones-baloncesto-2.jpg";
-import basket3 from "../assets/campeonato-baloncesto/campeones-baloncesto-3.jpg";
-import basket4 from "../assets/campeonato-baloncesto/campeones-baloncesto-4.jpg";
 import diputacion from "../assets/visita-diputacion/diputacion.jpg";
 import diputacion2 from "../assets/visita-diputacion/diputacion-2.jpg";
 import diputacion3 from "../assets/visita-diputacion/diputacion-3.jpg";
@@ -56,29 +52,4 @@ export const diputacionData = [
   },
 ];
 
-export const basketData = [
-  {
-    id: 1,
-    cover: basket,
-    title: "",
-    alt: "foto baloncesto",
-  },
-  {
-    id: 2,
-    cover: basket2,
-    title: "",
-    alt: "foto baloncesto",
-  },
-  {
-    id: 3,
-    cover: basket3,
-    title: "",
-    alt: "foto baloncesto",
-  },
-  {
-    id: 3,
-    cover: basket4,
-    title: "",
-    alt: "foto baloncesto",
-  },
-];
+
