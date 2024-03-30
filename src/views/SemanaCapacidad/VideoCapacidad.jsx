@@ -32,6 +32,26 @@ const DemoVideo = () => {
           </DemoContainer>
         </Demo>
       </section>
+      <section>
+        <Demo id="demo">
+          <DemoContainer>
+            <DemoLeft>
+              <iframe
+                width="570"
+                height="320"
+                src="https://www.youtube.com/embed/eQhdLRWSuZg"
+                title="Youtube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </DemoLeft>
+            <DemoRight>
+              <p>Agrupación musical Synesthesia Trio</p>
+            </DemoRight>
+          </DemoContainer>
+        </Demo>
+      </section>
     </>
   );
 };

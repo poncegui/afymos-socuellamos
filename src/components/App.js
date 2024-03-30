@@ -3,6 +3,7 @@ import "../styles/layout/normalize.css";
 import { Route, Routes } from "react-router-dom";
 
 import AvisoLegal from "./Footer/AvisoLegal";
+import Charlas from "../views/charlas/Charlas";
 import Chart from "../views/juntaDirectiva/Chart";
 import LandingView from "../views/Landing/LandingView";
 import Nosotros from "../views/nosotros/Nosotros";
@@ -31,6 +32,7 @@ const App = () => {
     <>
       <ScrollToTop smooth />
       <Routes>
+      <Route path="/charlas" element={<Charlas />} />
         <Route path="/semana-capacitad" element={<SemanaCapacidad />} />
         <Route path="/terapias" element={<ProjectsTerapias />} />
         <Route path="/somos-campeones" element={<SomosCampeones />} />

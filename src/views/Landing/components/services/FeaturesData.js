@@ -3,8 +3,8 @@ import capacitacion from "../assets/pictogramas/promocion.png";
 import capacity from "../assets/icons/hand-fist-solid.svg";
 import centroDia from "../assets/pictogramas/proteger.png";
 import centroDiversidad from "../assets/pictogramas/campus-universitario.png";
+import charlas from "../assets/icons/graduation-cap-solid.svg";
 import contabilidad from "../assets/pictogramas/contabilidad.png";
-import cursos from "../assets/icons/graduation-cap-solid.svg";
 import diagnostico from "../assets/pictogramas/historial-medico.png";
 import familias from "../assets/pictogramas/familia.png";
 import formacion from "../assets/pictogramas/educacion.png";
@@ -106,7 +106,7 @@ export const aboutUsData = [
   },
 ];
 
-export const activitiesDeprecated = [
+export const activitiesDeprecatedData = [
   {
     id: 1,
     name: "Visita Diputación Ciudad Real",
@@ -116,17 +116,17 @@ export const activitiesDeprecated = [
   },
   {
     id: 2,
-    name: "Somos campeones!",
+    name: "¡Somos campeones!",
     img: basket,
     alt: "Somos campeones!",
     url: "/somos-campeones",
   },
   {
     id: 3,
-    name: "Cursos 2024",
-    img: cursos,
-    alt: "Cursos 2024",
-    url: "/cursos-2024",
+    name: "Charlas",
+    img: charlas,
+    alt: "Charlas",
+    url: "/charlas",
   },
   {
     id: 4,

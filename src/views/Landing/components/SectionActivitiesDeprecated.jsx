@@ -1,22 +1,19 @@
-import React, { useState } from "react";
-
 import { Link } from "react-router-dom";
+import React  from "react";
 import TitleSection from "../../../components/TitleSection";
-import { activitiesDeprecated } from "./services/FeaturesData";
+import { activitiesDeprecatedData } from "./services/FeaturesData";
 import styled from "styled-components";
 
 const SectionActivitiesDeprecated = () => {
-  const [data] = useState(activitiesDeprecated);
-
   return (
     <>
       <section>
         <TitleSection title="Todas las noticias" marginBottom />
         <IconsContainer>
-          {data.map((item) => (
+          {activitiesDeprecatedData.map((item) => (
             <Icons key={item.id} value={item.name}>
               <Link to={item.url}>
-                <img src={item.img} alt="" />
+                <img src={item.img} alt={item.name} />
                 <h3>{item.name}</h3>
               </Link>
             </Icons>

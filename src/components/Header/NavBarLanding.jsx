@@ -54,7 +54,7 @@ const NavContainer = styled.nav`
   background-color: #071c2f;
   height: 10vh;
   width: 100%;
-  z-index: 50;
+  z-index: 100;
 
   h3 {
     color: #c6b1c9;
@@ -83,6 +83,7 @@ const NavContainer = styled.nav`
   }
 
   .links {
+    z-index:100;
     position: absolute;
     width: 60%;
     top: -700px;
@@ -165,6 +166,7 @@ const BgDiv = styled.div`
   transition: all 0.8s ease;
 
   &.active {
+    z-index:100;
     border-radius: 0 0 80% 0;
     top: 0;
     left: 0;
