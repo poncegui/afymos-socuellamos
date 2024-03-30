@@ -112,8 +112,5 @@
     "main.7a64aa58.css.map": "./static/css/main.7a64aa58.css.map",
     "main.f0ec1378.js.map": "./static/js/main.f0ec1378.js.map"
   },
-  "entrypoints": [
-    "static/css/main.7a64aa58.css",
-    "static/js/main.f0ec1378.js"
-  ]
+  "entrypoints": ["static/css/main.7a64aa58.css", "static/js/main.f0ec1378.js"]
 }

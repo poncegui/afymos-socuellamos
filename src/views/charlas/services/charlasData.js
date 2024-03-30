@@ -10,8 +10,7 @@ export const charlasDataOne = {
   topLine: {
     text: "Charla Policía Local",
   },
-  headline:
-    " ",
+  headline: " ",
   description:
     "Nos han explicado como podemos contar con ellos para pedirles ayuda en múltiples situaciones de las que podemos ser vulnerables. Muchas gracias por vuestra constante colaboración.",
   img: charlas,
@@ -24,10 +23,8 @@ export const charlasDataTwo = {
   topLine: {
     text: "",
   },
-  headline:
-    "",
-  description:
-    "",
+  headline: "",
+  description: "",
   img: charlas,
 };
 
@@ -38,9 +35,7 @@ export const charlasDataThree = {
   topLine: {
     text: "",
   },
-  headline:
-    "",
-  description:
-    "",
+  headline: "",
+  description: "",
   img: charlas,
 };

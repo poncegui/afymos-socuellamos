@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React  from "react";
+import React from "react";
 import TitleSection from "../../../components/TitleSection";
 import { activitiesDeprecatedData } from "./services/FeaturesData";
 import styled from "styled-components";

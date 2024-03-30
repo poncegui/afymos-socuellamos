@@ -15,7 +15,7 @@ const Charlas = () => {
       <NavBarViews title="charlas" />
       <TitleSection title="Charlas Profesionales" size />
       <ContentProjects {...charlasDataOne} inverse />
-      <ContentProjects {...charlasDataTwo}  />
+      <ContentProjects {...charlasDataTwo} />
       <PartnersList />
       <Footer />
     </>
