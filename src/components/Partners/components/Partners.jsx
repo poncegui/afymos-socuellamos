@@ -9,7 +9,7 @@ const PartnersCard = ({ url, alt, target, src }) => {
   };
   return (
     <>
-      <a onClick={handleClick} href={url} alt={alt} target={target}>
+      <a onClick={handleClick} href={url} alt={alt} target={target} aria-label="ir a web del colaborador">
         <PartnertCard>
           <PartnertFaceFront>
             <LogoPartner src={src} />

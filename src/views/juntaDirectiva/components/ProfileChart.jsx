@@ -1,34 +1,19 @@
-import React, { useState } from "react";
-
+import React from "react";
 import styled from "styled-components";
 
 const ProfileChart = (props) => {
-  const [faceCard, setFaceCard] = useState(true);
 
-  const handleClick = () => {
-    setFaceCard(!faceCard);
-  };
   return (
     <>
-      {faceCard ? (
         <Card>
           <FaceFront key={props.id}>
             <ImgFront
               src={props.img}
               alt={props.alt}
-              onMouseEnter={handleClick}
             />
             <h3>{props.role}</h3>
           </FaceFront>
         </Card>
-      ) : (
-        <Card>
-          <FaceBack key={props.id} onMouseLeave={handleClick}>
-            <TitleBackName>{props.name}</TitleBackName>
-            <FaceBackProfession>{props.profession}</FaceBackProfession>
-          </FaceBack>
-        </Card>
-      )}
     </>
   );
 };
@@ -56,7 +41,6 @@ export const FaceFront = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px;
   overflow: hidden;
   transition: 0.5s;
 `;
@@ -70,47 +54,3 @@ export const ImgFront = styled.img`
   will-change: transform;
 `;
 
-export const FaceBack = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #c6b1c9;
-  color: #071c2f;
-  display: flex;
-  border-radius: 10px;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30%;
-  padding: 15px;
-  text-align: center;
-`;
-
-export const TitleBackName = styled.div`
-  font-size: 1.5rem;
-  margin-top: 20px;
-  letter-spacing: 2px;
-`;
-
-export const FaceFrontPosition = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.4);
-  text-align: center;
-`;
-
-export const FaceBackProfession = styled.div`
-  border-radius: 10px;
-  letter-spacing: 1px;
-  font-size: 1rem;
-`;
-
-export const ImgBack = styled.img`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;

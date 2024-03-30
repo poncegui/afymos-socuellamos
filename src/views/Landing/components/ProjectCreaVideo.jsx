@@ -25,6 +25,7 @@ const DemoVideo = () => {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                aria-label="ir a video youtube"
               />
             </DemoRight>
             <DemoLeft>

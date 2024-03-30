@@ -16,7 +16,7 @@ const SectionServices = () => {
           {data.map((item) => (
             <Icons key={item.id} value={item.name}>
               <Link to={item.url}>
-                <img src={item.img} alt="" />
+                <img src={item.img} alt={item.name} />
                 <h3>{item.name}</h3>
               </Link>
             </Icons>
