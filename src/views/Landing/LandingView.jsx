@@ -3,22 +3,20 @@ import { heroOne, heroThree, heroTwo } from "./components/services/HeroData";
 import ContactForm from "./components/ContactForm";
 import { Content } from "../../components/Content/Content";
 import Footer from "../../components/Footer/Footer";
-import NavBarLanding from "../../components/Header/NavBarLanding";
 import PartnertList from "../../components/Partners/PartnerList";
 import ProjectCreaVideo from "./components/ProjectCreaVideo";
 import { React } from "react";
 import ScrollToTop from "../../components/ScrollToUp";
 import SectionAboutUs from "./components/SectionAboutUs";
-import SectionActivitiesDeprecated from "./components/SectionActivitiesDeprecated";
 import SectionServices from "./components/SectionServices";
+import TePuedeInteresar from "../Landing/components/tePuedeInteresar/TePuedeInteresar";
 import Testimonials from "./components/Testimonials";
 
 const LandingView = () => {
   return (
     <>
       <ScrollToTop />
-      <NavBarLanding />
-      <SectionActivitiesDeprecated />
+      <TePuedeInteresar />
       <SectionServices />
       <SectionAboutUs />
       <Content {...heroOne} />
