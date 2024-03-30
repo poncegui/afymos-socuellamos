@@ -23,6 +23,7 @@ const ProjectsIntro = () => {
                   smooth={true}
                   offset={-100}
                   duration={1000}
+                  aria-label="ir a la terapia selecionada"
                 >
                   <img src={picto.src} alt={picto.alt} />
                 </Link>
