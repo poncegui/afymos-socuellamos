@@ -8,7 +8,7 @@ const PortadaCampeones = () => {
       <img
         className="video"
         src={mainBackGround}
-        alt="fotografia-baloncesto-campeones"
+        alt="fotografia celebrando el campeonato en la cancha"
       />
     </MainNewContainer>
   );
@@ -28,12 +28,6 @@ const MainNewContainer = styled.div`
   @media (max-width: 440px) {
     justify-content: center;
     align-items: start;
-    /* background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(20, 20, 20, 0.4) 50%,
-      rgba(83, 100, 141, 0) 100%
-    ); */
   }
 
   .video {

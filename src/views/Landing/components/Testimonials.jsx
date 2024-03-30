@@ -5,78 +5,71 @@ import user1 from "./assets/images-testimonials/rafa.png";
 import user2 from "./assets/images-testimonials/quico.png";
 import user3 from "./assets/images-testimonials/pedro.png";
 
+const testimoniesData = [
+  {
+    id: 1,
+    name: "Rafa",
+    image: user1,
+    description:
+      "Gracias al trabajo, Rafael adquirió nuevas rutinas, cambiando sus hábitos y asumiendo nuevas responsabilidades, esto le ha permitido cambiar su horizonte vital.",
+    occupation: "Trabajador en Destrupapper",
+  },
+  {
+    id: 2,
+    name: "Quico",
+    image: user2,
+    description:
+      "Quico, quien tras varios contratos temporales, pasó a ser indefinido. Logró la primera inserción socio-laboral, con la estabilidad que ello suponía para él, abriéndole a su vez la puerta a conseguir otros objetivos para mejorar su calidad de vida, por ejemplo independizarse.",
+    occupation: "Trabajador en Cabezuelo Foods",
+  },
+  {
+    id: 3,
+    name: "Pedro",
+    image: user3,
+    description:
+      "En la misma línea de trabajo, el objetivo laboral de Pedro es trabajar lijando. Por ello, La empresa Arte Religioso Salmerón, le abrió sus puertas mediante unas prácticas laborales para corroborar si sus habilidades y capacidades eran compatibles con el puesto de trabajo.",
+    occupation: "Trabajador en Arte Religioso Salmerón",
+  },
+];
+
 const Testimonials = () => {
   return (
-    <TestimonialsSection id="testimonios">
+    <Main id="testimonios">
       <TestimonialsContainer>
         <TitleSection title="Historias reales" inverse />
-        <TestimonialsContent>
-          <TestimonialsCard>
-            <img src={user1} alt="rafa" />
-            <p>
-              Gracias al trabajo, Rafael adquiró nuevas rutinas, cambiando sus
-              hábitos y asumiendo nuevas responsabilidades, esto le ha permitido
-              permitido cambiar su horizonte vital.
-            </p>
-            <p>
-              <span>Rafa</span>
-            </p>
-            <p>Trabajador en Destrupapper</p>
-          </TestimonialsCard>
-          <TestimonialsCard>
-            <img src={user2} alt="quico" />
-            <p>
-              Quico, quien tras varios contratos temporales, pasó a ser
-              indefinido. Logró la primera inserción socio-laboral, con la
-              estabilidad que ello suponía para él, abriéndole a su vez la
-              puerta a conseguir otros objetivos para mejorar su calidad de
-              vida, por ejemplo independizarse.
-            </p>
-            <p>
-              <span>Quico</span>
-            </p>
-            <p>Trabajador en Cabezuelo Foods</p>
-          </TestimonialsCard>
-          <TestimonialsCard>
-            <img src={user3} alt="pedro" />
-            <p>
-              En la misma línea de trabajo, el objetivo laboral de Pedro es
-              trabajar lijando. Por ello, La empresa Arte Religioso Salmerón, le
-              abrió sus puertas mediante unas prácticas laborales para
-              corroborar si sus habilidades y capacidades eran compatibles con
-              el puesto de trabajo.
-            </p>
-            <p>
-              <span>Pedro</span>
-            </p>
-            <p>Trabajador en Arte Religioso Salmerón</p>
-          </TestimonialsCard>
+        <TestimonialsContent aria-label="Testimonios">
+          {testimoniesData.map((testimonial) => (
+            <TestimonialsCard key={testimonial.id}>
+              <img
+                src={testimonial.image}
+                alt={`Foto de ${testimonial.name}`}
+              />
+              <div>
+                <p>{testimonial.description}</p>
+                <span>{testimonial.name}</span>
+                <p>{testimonial.occupation}</p>
+              </div>
+            </TestimonialsCard>
+          ))}
         </TestimonialsContent>
       </TestimonialsContainer>
-    </TestimonialsSection>
+    </Main>
   );
 };
 
 export default Testimonials;
 
-const TestimonialsSection = styled.div`
+const Main = styled.main`
   width: 100%;
   background-color: white;
 `;
 
 const TestimonialsContainer = styled.div`
   padding: 5%;
-  h2 {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  @media (max-width: 940px) {
-    width: 100%;
-  }
+  text-align: center;
 `;
 
-const TestimonialsContent = styled.div`
+const TestimonialsContent = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -87,7 +80,7 @@ const TestimonialsContent = styled.div`
   }
 `;
 
-const TestimonialsCard = styled.div`
+const TestimonialsCard = styled.article`
   border: 1px solid #eee;
   border-radius: 8px;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
@@ -95,15 +88,20 @@ const TestimonialsCard = styled.div`
   line-height: 2rem;
 
   img {
+    width: 100px;
     height: 100px;
-    border-radius: 50px;
-    margin-top: -2rem;
-    margin-left: 35%;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+
+  div {
+    padding: 0 1rem;
   }
 
   p {
     font-size: 1.2rem;
-    margin: 12px;
+    margin-bottom: 12px;
     font-weight: 500;
   }
 

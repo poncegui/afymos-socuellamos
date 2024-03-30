@@ -15,7 +15,7 @@ export const introData = [
     name: "Logopedia",
     src: logopediaData,
     target: target,
-    alt: "pictograma-logopedia",
+    alt: "Icono de logopedia",
     url: "logopedia",
   },
   {
@@ -23,7 +23,7 @@ export const introData = [
     name: "Fisioterapia",
     src: fisioterapiaData,
     target: target,
-    alt: "pictograma-fisioterapia",
+    alt: "Icono de fisioterapia",
     url: "fisioterapia",
   },
   {
@@ -31,7 +31,7 @@ export const introData = [
     name: "Terapia Ocupacional",
     src: terapiaOcupacionalData,
     target: target,
-    alt: "pictograma-terapia-ocupacional",
+    alt: "Icono de terapia ocupacional",
     url: "terapia-ocupacional",
   },
   {
@@ -39,15 +39,15 @@ export const introData = [
     name: "Psicopedagogía",
     src: psicopedagogia,
     target: target,
-    alt: "pictograma-psicopedagogia",
+    alt: "Icono de psicopedagogía",
     url: "psicopedagogia",
   },
   {
     id: "neuropsicologia",
-    name: "Neuropsicologia",
+    name: "Neuropsicología",
     src: neuropsicologiaData,
     target: target,
-    alt: "pictograma-psicologia",
+    alt: "Icono de neuropsicología",
     url: "neuropsicologia",
   },
   {
@@ -55,7 +55,7 @@ export const introData = [
     name: "Auditiva",
     src: auditivaData,
     target: target,
-    alt: "terapia-auditiva",
+    alt: "Icono de terapia auditiva",
     url: "auditiva",
   },
   {
@@ -63,15 +63,15 @@ export const introData = [
     name: "Visual",
     src: visualData,
     target: target,
-    alt: "terapia-auditiva",
+    alt: "Icono de terapia visual",
     url: "visual",
   },
   {
     id: "psicologia",
-    name: "Psicologia",
+    name: "Psicología",
     src: psicologiaData,
     target: target,
-    alt: "terapia-psicologia",
+    alt: "Icono de psicología",
     url: "psicologia",
   },
 ];

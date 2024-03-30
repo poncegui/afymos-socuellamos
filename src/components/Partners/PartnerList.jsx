@@ -1,26 +1,24 @@
-import React, { useState } from "react";
-
 import PartnersCard from "./components/Partners";
+import React from "react";
 import TitleSection from "../TitleSection";
-import { parnetsData } from "./services/ApiPartners";
+import { partnersData } from "./services/partnersListData";
 import styled from "styled-components";
 
 const PartnerList = ({ size, inverse }) => {
-  const [partners] = useState(parnetsData);
-
   return (
     <>
       <TitleSection title="Cofinanciaciones" inverse={inverse} size={size} />
       <SectionPartners>
         <ContainerParnertList>
-          {partners.map((partner) => {
+          {partnersData.map((partner) => {
             return (
               <PartnersCard
                 key={partner.id}
-                src={partner.src}
+                src={partner.logoSrc}
                 alt={partner.alt}
                 url={partner.url}
                 target={partner.target}
+                rel="noopener noreferrer"
               />
             );
           })}

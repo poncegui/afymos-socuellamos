@@ -40,7 +40,7 @@ const Popular = () => {
                   <div className="box shadow">
                     <div className="images row">
                       <div className="img">
-                        <img src={val.cover} alt="" />
+                        <img src={val.cover} alt={val.name} />
                       </div>
                       <div class="category category1">
                         <span>{val.catgeory}</span>

@@ -13,12 +13,12 @@ const ContactForm = () => {
       <section className="contact" id="contacto">
         <IconsContainer>
           <Icons>
-            <img src={IconOne} alt="" />
+            <img src={IconOne} alt="icono teléfono" />
             <h3>teléfono de contacto</h3>
             <p>926 532 749</p>
           </Icons>
           <Icons>
-            <img src={IconTwo} alt="" />
+            <img src={IconTwo} alt="icono correo electrónico" />
             <h3>correo electrónico</h3>
             <p>
               <a
@@ -26,6 +26,7 @@ const ContactForm = () => {
                 target="_blank"
                 title="e-mail afymos"
                 rel="noreferrer"
+                aria-label="ir al correo electrónico de Afymos"
               >
                 afymos@gmail.com
               </a>
