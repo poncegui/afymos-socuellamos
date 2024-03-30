@@ -128,7 +128,11 @@ const Seccion = () => {
         {cardsServiceData.map((card, index) => (
           <Card key={index} color={index === 0 ? "#81b71a" : card.color}>
             <Image src={card.image} alt={card.alt} />
-            <LinkButton aria-label="ir a la ruta seleccionada" href={card.url} target="_blank" >
+            <LinkButton
+              aria-label="ir a la ruta seleccionada"
+              href={card.url}
+              target="_blank"
+            >
               <StyledFontAwesomeIcon
                 icon={faPlus}
                 style={{
