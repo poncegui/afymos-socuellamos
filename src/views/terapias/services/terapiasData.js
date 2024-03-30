@@ -19,6 +19,7 @@ export const introduccionData = {
   description:
     "Contamos con profesionales de diferentes disciplinas para intervenir según las necesidades de los usuarios y actualmente contamos con las los siguientes servicios terapéuticos.",
   img: introduccion,
+  alt: "Nuestra misión ayudarte",
 };
 
 export const logopediaData = {
@@ -33,6 +34,7 @@ export const logopediaData = {
   description:
     "Realizo una entrevista con la familia y una evaluación inicial de la cual se elabora unos objetivos y se diseña una programación individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duración de 30-45 minutos, dependiendo de las necesidades de cada paciente.",
   img: logopedia,
+  alt: "imagen logopeda",
 };
 
 export const fisioterapiaData = {
@@ -47,6 +49,7 @@ export const fisioterapiaData = {
   description:
     "En mi terapia llevo a cabo una valoración y diagnóstico de fisioterapia, teniendo en cuenta una visión general del problema, dolencia, patología, etc. Después, utilizo distintas técnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
   img: fisioterapia,
+  alt: "imagen fisioterapeuta",
 };
 
 export const terapiaOcupacionalData = {
@@ -61,6 +64,7 @@ export const terapiaOcupacionalData = {
   description:
     "Enfoco mi trabajo en una intervención significativa con objetivos pautados previamente con la persona y su familia, realizando actividades con propósito claro y definido",
   img: terapiaOcupacional,
+  alt: "imagen terapeuta ocupacional",
 };
 
 export const neuroPsicologiaData = {
@@ -75,6 +79,7 @@ export const neuroPsicologiaData = {
   description:
     "Dentro de mi equipo mi función es la de evaluar las capacidades cognitivas  y saber cuáles están fallando y cuales están “a tope”. Después planteo un programa de entrenamiento, o como otros compañeros llaman, rehabilitación, para trabajar en la mejora de aquellas áreas que se han quedado dañadas ono se han desarrollado a los niveles esperables para la edad. ",
   img: neuroPiscologia,
+  alt: "imagenneuropsicóloga",
 };
 
 export const psicoPedagogíaData = {
@@ -89,6 +94,7 @@ export const psicoPedagogíaData = {
   description:
     "Como psicopedagogas asesoramos, evaluamos y realizamos informes psicopedagógicos (tomando pruebas y test, analizando las necesidades de cada persona), planificamos y diseñamos propuestas de intervención para niños, adolescentes, jóvenes y adultos que tengan problemas en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas en el momento de aprender.",
   img: psicopedagogia,
+  alt: "imagen psicopedagoga",
 };
 
 export const auditivaPsicologiaData = {
@@ -104,6 +110,7 @@ export const auditivaPsicologiaData = {
   description:
     "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopatía para comprobar el estado del canal auditivo, audiometría para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
   img: auditiva,
+  alt: "imagen psicóloga",
 };
 
 export const visualPedagogíaData = {
@@ -118,6 +125,7 @@ export const visualPedagogíaData = {
   description:
     "Evaluo el desarrollo y funcionamiento de la visión desde el nacimiento. Para ello analizo habilidades como la acomodación, binocularidad (visión en 3D), movimientos oculares y la percepción visual..",
   img: visual,
+  alt: "imagen pedagoga visual",
 };
 
 export const psicologiaData = {
@@ -132,4 +140,5 @@ export const psicologiaData = {
   description:
     "A nivel psicoeducativo puedo ayudar a las personas a entender sus propios procesos, situaciones personales, patologías, etc, para facilitar su propia adaptación al medio y mitigar sus estados de ansiedad e incertidumbre.",
   img: psicologia,
+  alt: "imagen psicóloga",
 };

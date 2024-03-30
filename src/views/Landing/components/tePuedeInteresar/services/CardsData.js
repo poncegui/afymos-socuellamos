@@ -1,7 +1,7 @@
-import charlas from "../assets/comment-regular.svg";
-import events from "../assets/face-smile-wink-solid.svg";
-import graduation from "../assets/graduation.svg";
-import podcast from "../assets/spotify.svg";
+import charlas from "../assets/icons/graduation.svg";
+import events from "../assets/icons/face-smile-wink-solid.svg";
+import graduation from "../assets/icons/graduation.svg";
+import podcast from "../assets/icons/spotify.svg";
 
 export const cardsServiceData = [
   {

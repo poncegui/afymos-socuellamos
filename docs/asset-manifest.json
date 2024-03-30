@@ -114,8 +114,13 @@
     "main.82427509.css.map": "./static/css/main.82427509.css.map",
     "main.74c08d04.js.map": "./static/js/main.74c08d04.js.map"
   },
+<<<<<<< HEAD
   "entrypoints": [
     "static/css/main.82427509.css",
     "static/js/main.74c08d04.js"
   ]
 }
+=======
+  "entrypoints": ["static/css/main.82427509.css", "static/js/main.295e33d0.js"]
+}
+>>>>>>> 49c6bcd3f595ee4bf2e96aeaa69b21e456544031
