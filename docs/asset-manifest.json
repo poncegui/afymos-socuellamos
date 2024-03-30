@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.82427509.css",
-    "main.js": "./static/js/main.295e33d0.js",
+    "main.js": "./static/js/main.74c08d04.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -112,10 +112,10 @@
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "static/media/van-shuttle-solid.svg": "./static/media/van-shuttle-solid.617a4dfbdddb6022c9bf0cb34a13932e.svg",
     "main.82427509.css.map": "./static/css/main.82427509.css.map",
-    "main.295e33d0.js.map": "./static/js/main.295e33d0.js.map"
+    "main.74c08d04.js.map": "./static/js/main.74c08d04.js.map"
   },
   "entrypoints": [
     "static/css/main.82427509.css",
-    "static/js/main.295e33d0.js"
+    "static/js/main.74c08d04.js"
   ]
 }
