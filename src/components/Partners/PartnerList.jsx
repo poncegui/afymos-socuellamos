@@ -1,5 +1,5 @@
 import PartnersCard from "./components/Partners";
-import React  from "react";
+import React from "react";
 import TitleSection from "../TitleSection";
 import { partnersData } from "./services/partnersListData";
 import styled from "styled-components";

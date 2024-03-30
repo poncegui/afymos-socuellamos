@@ -12,13 +12,13 @@ const SeccionContainer = styled.section`
 const Titulo = styled.h2`
   margin-left: auto;
   margin-right: auto;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   position: relative;
   display: inline-block;
   font-size: 24px;
 
   @media (max-width: 900px) {
-    margin-bottom:50px;
+    margin-bottom: 50px;
   }
 
   &:after {
@@ -38,7 +38,7 @@ const ContenedorCards = styled.div`
   margin-top: 20px;
 
   @media (max-width: 900px) {
-    margin-top:3%;
+    margin-top: 3%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -70,7 +70,6 @@ const Card = styled.div`
 `;
 
 const TituloCard = styled.h3`
-
   color: ${(props) => (props.color === "#224464" ? "#c6b1c9" : "#224464")};
   font-size: 16px;
   text-align: center;

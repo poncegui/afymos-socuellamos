@@ -75,4 +75,3 @@ export const partnersData = [
     url: "",
   },
 ];
-

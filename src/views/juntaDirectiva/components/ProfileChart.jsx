@@ -2,18 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const ProfileChart = (props) => {
-
   return (
     <>
-        <Card>
-          <FaceFront key={props.id}>
-            <ImgFront
-              src={props.img}
-              alt={props.alt}
-            />
-            <h3>{props.role}</h3>
-          </FaceFront>
-        </Card>
+      <Card>
+        <FaceFront key={props.id}>
+          <ImgFront src={props.img} alt={props.alt} />
+          <h3>{props.role}</h3>
+        </FaceFront>
+      </Card>
     </>
   );
 };
@@ -53,4 +49,3 @@ export const ImgFront = styled.img`
   transition: all 400ms ease-out;
   will-change: transform;
 `;
-

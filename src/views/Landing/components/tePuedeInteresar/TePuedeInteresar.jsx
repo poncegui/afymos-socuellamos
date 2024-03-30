@@ -10,7 +10,7 @@ const IntroductionViewContainer = styled.div`
   position: relative;
   width: 100%;
   height: 400px;
-  background-color: #c6b1c9; 
+  background-color: #c6b1c9;
   background-size: cover;
   background-position: center;
   display: flex;

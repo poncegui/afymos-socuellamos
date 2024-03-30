@@ -25,7 +25,7 @@ export const personsChart = [
     role: "Terapeuta ocupacional",
     img: image10,
     profession: "Teacher",
-    alt:"fotografia Laura Simancas"
+    alt: "fotografia Laura Simancas",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ export const personsChart = [
     role: "Recepcionista",
     img: image11,
     profession: "Teacher",
-    alt:"fotografía Miguel Ángel Gómez",
+    alt: "fotografía Miguel Ángel Gómez",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ export const personsChart = [
     role: "Psicopedagoga",
     img: image12,
     profession: "Teacher",
-    alt:"fotografía Alicia Lara",
+    alt: "fotografía Alicia Lara",
   },
   {
     id: 8,
@@ -49,7 +49,7 @@ export const personsChart = [
     role: "Vocal 2",
     img: image13,
     profession: "Logopeda",
-    alt:"fotografía Cristina Olivares",
+    alt: "fotografía Cristina Olivares",
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ export const personsChart = [
     role: "Psicóloga",
     img: image14,
     profession: "Teacher",
-    alt:"fotografía Beatriz Henales",
+    alt: "fotografía Beatriz Henales",
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ export const personsChart = [
     role: "Psicopedagoga",
     img: image15,
     profession: "Teacher",
-    alt:"fotografía Mónica Alejandra Mazzella",
+    alt: "fotografía Mónica Alejandra Mazzella",
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ export const personsChart = [
     role: "Fisioterapeuta",
     img: image16,
     profession: "Teacher",
-    alt:"fotografía Amparo Guerrero",
+    alt: "fotografía Amparo Guerrero",
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ export const personsChart = [
     role: "Neuropsicologa",
     img: image17,
     profession: "Teacher",
-    alt:"fotografía Alicia López",
+    alt: "fotografía Alicia López",
   },
 
   {
@@ -90,7 +90,7 @@ export const personsChart = [
     role: "Logopeda",
     img: image18,
     profession: "Teacher",
-    alt:"fotografíaJorge Sánchez",
+    alt: "fotografíaJorge Sánchez",
   },
   {
     id: 10,
@@ -98,7 +98,7 @@ export const personsChart = [
     role: "Personal de Limpieza",
     img: image19,
     profession: "Teacher",
-    alt:"fotografía Ángeles Izquierdo",
+    alt: "fotografía Ángeles Izquierdo",
   },
 ];
 

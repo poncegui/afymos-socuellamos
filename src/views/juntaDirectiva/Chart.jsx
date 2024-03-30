@@ -84,13 +84,13 @@ const ChartItem = styled.div`
 const ChartItemTitle = styled.h3`
   margin-top: 1rem;
   @media (max-width: 440px) {
-font-size:10px;
+    font-size: 10px;
   }
 `;
 
 const ChartItemSubTitle = styled.h4`
   margin-top: 0.8rem;
   @media (max-width: 440px) {
-font-size:10px;
+    font-size: 10px;
   }
 `;

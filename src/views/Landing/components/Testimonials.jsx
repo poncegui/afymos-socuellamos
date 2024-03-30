@@ -40,7 +40,10 @@ const Testimonials = () => {
         <TestimonialsContent aria-label="Testimonios">
           {testimoniesData.map((testimonial) => (
             <TestimonialsCard key={testimonial.id}>
-              <img src={testimonial.image} alt={`Foto de ${testimonial.name}`} />
+              <img
+                src={testimonial.image}
+                alt={`Foto de ${testimonial.name}`}
+              />
               <div>
                 <p>{testimonial.description}</p>
                 <span>{testimonial.name}</span>

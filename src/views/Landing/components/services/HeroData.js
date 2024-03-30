@@ -14,7 +14,7 @@ export const heroOne = {
   buttonLabel: "Saber más",
   href: "#/servicio-capacitacion",
   img: sociolaboral,
-  alt:"persona trabajando"
+  alt: "persona trabajando",
 };
 
 export const heroTwo = {
@@ -30,7 +30,7 @@ export const heroTwo = {
     "Nuestra organización sin ánimo de lucro se sustenta principalmente de las donaciones de sus miembros y personas afines, por lo que siempre estamos abiertos a cualquier ayuda económica que nos puedan prestar.",
   buttonLabel: "Donaciones",
   img: sensibility,
-  alt:"donaciones"
+  alt: "donaciones",
 };
 
 export const heroThree = {
@@ -45,5 +45,5 @@ export const heroThree = {
   buttonLabel: "Contacto",
   href: "contacto",
   img: proyectos,
-  alt:"profesional haciendo terapia con paciente"
+  alt: "profesional haciendo terapia con paciente",
 };
