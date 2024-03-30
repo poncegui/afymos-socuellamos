@@ -18,7 +18,7 @@ const PartnersCard = ({ url, alt, target, src }) => {
       >
         <PartnertCard>
           <PartnertFaceFront>
-            <LogoPartner src={src} />
+            <LogoPartner src={src} alt={alt}/>
           </PartnertFaceFront>
         </PartnertCard>
       </a>
