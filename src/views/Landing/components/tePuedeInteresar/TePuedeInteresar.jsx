@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { Link as ButtonNav } from "react-router-dom";
 import { Link as Contact } from "react-scroll";
+import DonationInformation from "./DonationInformation";
 import Informacion from "./Informacion";
 import logo from "../../components/assets/logos/logo-afymos.png";
 import styled from "styled-components";
@@ -17,6 +18,7 @@ const IntroductionViewContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: #fff;
+  height: 70vh;
 `;
 
 const Overlay = styled.div`
@@ -100,22 +102,22 @@ const HeaderTitle = styled.div`
 
   img {
     display: block;
-    height: 8rem;
+    height: 10rem;
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 10rem;
     text-transform: uppercase;
     color: #071c2f;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 500px) {
     h1 {
       font-size: 5rem;
     }
 
     img {
-      height: 4rem;
+      height: 6rem;
     }
   }
 `;
@@ -128,18 +130,19 @@ const StyledButton = styled(ButtonNav)`
   height: 100px;
   border-radius: 50%;
   background-color: ${(props) => props.color};
-  color: #071c2f;
+  color: #224464;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 
   @media screen and (max-width: 900px) {
     font-size: 16px;
   }
 
   &:hover {
-    background-color: #071c2f;
+    background-color: #224464;
     color: #c6b1c9;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   }
@@ -175,7 +178,7 @@ const IntroductionView = () => {
               <StyledButton
                 key={data.key}
                 onClick={handleClick}
-                color={data.color}
+                color="#f5f5f5"
                 to={data.url}
                 aria-label={data.name}
               >
@@ -191,7 +194,7 @@ const IntroductionView = () => {
                 offset={-100}
                 duration={1000}
                 onClick={handleClick}
-                color="color"
+                color="#f5f5f5"
                 aria-label="contacto"
               >
                 Contacto
@@ -238,6 +241,7 @@ const IntroductionView = () => {
           </SocialIcon>
         </SocialIconsContainer>
       </IntroductionViewContainer>
+      <DonationInformation />
       <Informacion />
     </>
   );
