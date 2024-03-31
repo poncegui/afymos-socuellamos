@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Link as ButtonNav } from "react-router-dom";
 import { Link as Contact } from "react-scroll";
-import DonationInformation from "./DonationInformation";
+import CoverImages from "./CoverImages";
 import Informacion from "./Informacion";
 import logo from "../../components/assets/logos/logo-afymos.png";
 import styled from "styled-components";
@@ -18,7 +18,10 @@ const IntroductionViewContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: #fff;
-  height: 70vh;
+  height: 50vh;
+  @media screen and (max-width: 900px) {
+    height: 70vh;
+  }
 `;
 
 const Overlay = styled.div`
@@ -53,10 +56,9 @@ const ButtonContainer = styled.div`
 `;
 
 const SocialIconsContainer = styled.div`
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  transform: translateY(-50%);
+  position: relative;
+  bottom: -80px;
+  right: -20%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -106,7 +108,7 @@ const HeaderTitle = styled.div`
   }
 
   h1 {
-    font-size: 10rem;
+    font-size: 12rem;
     text-transform: uppercase;
     color: #071c2f;
   }
@@ -241,7 +243,7 @@ const IntroductionView = () => {
           </SocialIcon>
         </SocialIconsContainer>
       </IntroductionViewContainer>
-      <DonationInformation />
+      <CoverImages />
       <Informacion />
     </>
   );

@@ -1,9 +1,6 @@
-import basket from "../assets/icons/basketball-solid.svg";
 import capacitacion from "../assets/pictogramas/promocion.png";
-import capacity from "../assets/icons/hand-fist-solid.svg";
 import centroDia from "../assets/pictogramas/proteger.png";
 import centroDiversidad from "../assets/pictogramas/campus-universitario.png";
-import charlas from "../assets/icons/graduation-cap-solid.svg";
 import contabilidad from "../assets/pictogramas/contabilidad.png";
 import diagnostico from "../assets/pictogramas/historial-medico.png";
 import familias from "../assets/pictogramas/familia.png";
@@ -11,7 +8,6 @@ import formacion from "../assets/pictogramas/educacion.png";
 import junta from "../assets/pictogramas/junta.png";
 import organigrama from "../assets/pictogramas/organigrama.png";
 import servicios from "../../../terapias/components/assets/pictogramas/terapia-fisica.png";
-import visitas from "../assets/icons/van-shuttle-solid.svg";
 import viviendaSocial from "../assets/pictogramas/vivienda-social.png";
 import voluntariado from "../assets/pictogramas/apoyo.png";
 
@@ -103,36 +99,5 @@ export const aboutUsData = [
     img: contabilidad,
     alt: "Cuentas anuales 2022",
     url: "/pdf-cuentas-22",
-  },
-];
-
-export const activitiesDeprecatedData = [
-  {
-    id: 1,
-    name: "Visita Diputación Ciudad Real",
-    img: visitas,
-    alt: "Visita Diputación Ciudad Real",
-    url: "/visita-diputacion",
-  },
-  {
-    id: 2,
-    name: "¡Somos campeones!",
-    img: basket,
-    alt: "Somos campeones!",
-    url: "/somos-campeones",
-  },
-  {
-    id: 3,
-    name: "Charlas",
-    img: charlas,
-    alt: "Charlas",
-    url: "/charlas",
-  },
-  {
-    id: 4,
-    name: "Semana Capacidad",
-    img: capacity,
-    alt: "Semana Capacidad",
-    url: "/semana-capacidad",
   },
 ];
