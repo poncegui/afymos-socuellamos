@@ -16,7 +16,7 @@ const ImageContainer = styled.div`
   align-items: center;
   width: 60%;
   background-color: #224464;
-  @media screen and (max-width: 900px) {
+  @media  (max-width: 900px) {
     display: flex;
     flex-direction: row;
   }
@@ -26,7 +26,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  @media screen and (max-width: 900px) {
+  @media  (max-width: 900px) {
     width: 50%;
     height: 50%;
     ${({ id }) => id === "1" && "display: none;"}
@@ -45,7 +45,7 @@ const ContentContainer = styled.div`
 const Title = styled.h2`
   font-size: 24px;
   margin-bottom: 10px;
-  @media screen and (max-width: 900px) {
+  @media  (max-width: 900px) {
     font-size: 18px;
   }
 `;
@@ -54,7 +54,7 @@ const Text = styled.p`
   font-size: 18px;
   font-style: italic;
   line-height: 1.5;
-  @media screen and (max-width: 900px) {
+  @media  (max-width: 900px) {
     font-size: 12px;
   }
 `;
@@ -63,7 +63,7 @@ const Margin = styled.div`
   width: 100%;
   height: 70px;
   background-color: white;
-  @media screen and (max-width: 900px) {
+  @media  (max-width: 900px) {
     height: 30px;
   }
 `;
@@ -83,7 +83,7 @@ const DonateButton = styled.a`
   line-height: 60px;
   text-decoration: none;
 
-  @media screen and (max-width: 900px) {
+  @media  (max-width: 900px) {
     display: none;
   }
   &:hover {

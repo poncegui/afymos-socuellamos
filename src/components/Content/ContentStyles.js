@@ -8,7 +8,7 @@ export const ContentRow = styled.div`
   flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   justify-content: space-around;
 
-  @media screen and (max-width: 768px) {
+  @media  (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;

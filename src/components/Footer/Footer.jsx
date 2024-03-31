@@ -1,5 +1,7 @@
 import "./styles/Footer.css";
 
+import { footerData, socialLinks } from "./services/footerData";
+
 import { Link } from "react-router-dom";
 import React from "react";
 
@@ -8,81 +10,43 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="footer-col">
-            <h4>contacto</h4>
-            <ul>
-              <li>
-                <a
-                  href="mailto:afymos@gmail.com"
-                  target="_blank"
-                  title="e-mail afymos"
-                  rel="noreferrer"
-                >
-                  afymos@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:926532749"
-                  target="_blank"
-                  title="Teléfono afymos"
-                  rel="noreferrer"
-                >
-                  (+34) 926 532 749
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>dirección</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://www.google.com/maps/place/C.+Pedro+Arias,+87,+13630+Socu%C3%A9llamos,+Ciudad+Real/@39.285737,-2.7934746,17z/data=!3m1!4b1!4m6!3m5!1s0xd68f559a43eaaab:0x2895536363daa787!8m2!3d39.285737!4d-2.7908997!16s%2Fg%2F11fx7fcy55?entry=ttu"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  c. Pedro Arias 87, 13630 Socuéllamos (Ciudad Real)
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>política de privacidad</h4>
-            <ul>
-              <li>
-                <Link
-                  to="/politica-privacidad"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  cookies
-                </Link>
-              </li>
-              <li>
-                <Link to="/aviso-legal" target="_blank" rel="noreferrer">
-                  aviso legal
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {footerData.map((column, index) => (
+            <div key={index} className="footer-col">
+              <h4>{column.title}</h4>
+              <ul>
+                {column.items.map((item, idx) => (
+                  <li key={idx}>
+                    {item.to ? (
+                      <Link to={item.to}>{item.text}</Link>
+                    ) : (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        title={item.text}
+                      >
+                        {item.text}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
           <div className="footer-col">
             <h4>síguenos</h4>
             <div className="social-links">
-              <a
-                href="https://www.facebook.com/profile.php?id=100067093413028"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/tv/CKKQgBcIW_Z/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={link.name}
+                >
+                  {link.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -90,4 +54,5 @@ const Footer = () => {
     </div>
   );
 };
+
 export default Footer;
