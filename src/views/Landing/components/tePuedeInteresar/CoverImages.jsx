@@ -8,7 +8,7 @@ const CoverContainer = styled.header`
   width: 100%;
   height: 50vh;
   overflow: hidden;
-  @media  (max-width: 900px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;

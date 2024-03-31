@@ -17,8 +17,8 @@ const Chart = () => {
       <Main>
         <ListChartSection>
           <ContainerListChart>
-            {junta.map((person) => (
-              <ChartItem key={person.id}>
+            {junta.map((person, index) => (
+              <ChartItem key={person.id} index={index}>
                 <ProfileChart
                   name={person.name}
                   img={person.img}

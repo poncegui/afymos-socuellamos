@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import TitleSection from "../../../components/TitleSection";
-import { aboutUsData } from "./services/FeaturesData";
+import { aboutUsData } from "./services/pictoButtonsData";
 import styled from "styled-components";
 
 const SectionServices = () => {

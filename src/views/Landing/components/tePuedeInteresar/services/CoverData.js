@@ -7,9 +7,9 @@ import crea from "../assets/images-cover/proyecto-crea.jpg";
 export const coverData = [
   {
     id: 1,
-    name: "Familia Afymos",
-    src: afymos,
-    alt: "Familia Afymos",
+    name: "Semana Capacidad",
+    src: capacity,
+    alt: "Semana Capacidad",
   },
   {
     id: 2,
@@ -35,5 +35,11 @@ export const coverData = [
     name: "Proyecto Nuevo Crea",
     src: crea,
     alt: "Proyecto Nuevo Crea",
+  },
+  {
+    id: 6,
+    name: "Familia Afymos",
+    src: afymos,
+    alt: "Familia Afymos",
   },
 ];

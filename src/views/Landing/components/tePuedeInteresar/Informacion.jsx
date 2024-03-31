@@ -16,26 +16,24 @@ const Titulo = styled.h2`
   position: relative;
   display: inline-block;
   font-size: 24px;
+  text-decoration: none;
+`;
 
-  @media (max-width: 900px) {
-    margin-bottom: 50px;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-  }
+const CircleIcon = styled.div`
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #224464;
 `;
 
 const ContenedorCards = styled.div`
   display: flex;
-  justify-content: center;
   margin-top: 20px;
+  align-items: start;
 
   @media (max-width: 900px) {
     margin-top: 3%;
@@ -114,17 +112,20 @@ const LinkButton = styled.a`
 `;
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  font-size: 40px;
+  font-size: 30px;
 
   @media (max-width: 768px) {
-    font-size: 30px;
+    font-size: 26px;
   }
 `;
 
-const Seccion = () => {
+const CardsInterestInformation = () => {
   return (
     <SeccionContainer>
-      <Titulo>Te puede interesar...</Titulo>
+      <Titulo>
+        <CircleIcon />
+        Te puede interesar...
+      </Titulo>
       <ContenedorCards>
         {cardsServiceData.map((card, index) => (
           <Card key={index} color={index === 0 ? "#81b71a" : card.color}>
@@ -149,4 +150,4 @@ const Seccion = () => {
   );
 };
 
-export default Seccion;
+export default CardsInterestInformation;

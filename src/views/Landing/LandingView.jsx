@@ -1,5 +1,10 @@
-import { heroOne, heroThree, heroTwo } from "./components/services/HeroData";
+import {
+  heroOne,
+  heroThree,
+  heroTwo,
+} from "./components/services/landingBlocksData";
 
+import CardsAboutUs from "./components/CardsAboutUs";
 import ContactForm from "./components/ContactForm";
 import { Content } from "../../components/Content/Content";
 import DonationInformation from "./components/DonationInformation";
@@ -8,7 +13,6 @@ import PartnertList from "../../components/Partners/PartnerList";
 import ProjectCreaVideo from "./components/ProjectCreaVideo";
 import React from "react";
 import ScrollToTop from "../../components/ScrollToUp";
-import SectionAboutUs from "./components/SectionAboutUs";
 import SectionServices from "./components/SectionServices";
 import TePuedeInteresar from "../Landing/components/tePuedeInteresar/TePuedeInteresar";
 import Testimonials from "./components/Testimonials";
@@ -20,7 +24,7 @@ const LandingView = () => {
       <TePuedeInteresar />
       <DonationInformation />
       <SectionServices />
-      <SectionAboutUs />
+      <CardsAboutUs />
       <Content {...heroOne} />
       <ProjectCreaVideo />
       <Content {...heroThree} />

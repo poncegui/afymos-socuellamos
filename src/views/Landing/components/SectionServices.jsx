@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import SectionServiceFilter from "./SectionServiceFilter";
-import TitleSection from "../../../components/TitleSection";
-import { servicesData } from "./services/FeaturesData";
+import { servicesData } from "./services/pictoButtonsData";
 import styled from "styled-components";
 
 const SectionServices = () => {
@@ -23,8 +22,11 @@ const SectionServices = () => {
 
   return (
     <>
-      <TitleSection title="Servicios" inverse size marginBottom />
       <section>
+        <Titulo>
+          <CircleIcon />
+          Nuestros servicios...
+        </Titulo>
         {windowWidth >= 500 ? (
           <IconsContainer>
             {servicesData.map((item) => (
@@ -88,4 +90,25 @@ const Icons = styled.div`
   :hover {
     background-color: #c6b1c9;
   }
+`;
+
+const Titulo = styled.h2`
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+`;
+
+const CircleIcon = styled.div`
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #224464;
 `;

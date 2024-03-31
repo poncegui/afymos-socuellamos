@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { servicesData } from "./services/FeaturesData";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { servicesData } from "./services/pictoButtonsData";
 import styled from "styled-components";
 
 const SearchContainer = styled.div`
@@ -64,6 +66,11 @@ const ArrowIcon = styled.span`
   color: #224464;
 `;
 
+const CircleIcon = styled(FontAwesomeIcon)`
+  color: #224464;
+  margin-right: 10px;
+`;
+
 const SectionServiceFilter = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [isVisible, setIsVisible] = useState(false);
@@ -108,7 +115,9 @@ const SectionServiceFilter = () => {
 
   return (
     <div>
-      <h2>Buscador</h2>
+      <h2 style={{ fontSize: "18px" }}>
+        <CircleIcon icon={faCircle} size="xs" /> Buscador
+      </h2>
       <SearchContainer>
         <LabelContainer ref={wrapperRef}>
           <ArrowIcon onClick={toggleListVisibility}>
