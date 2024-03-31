@@ -19,7 +19,7 @@ import ProjectsFormacion from "../views/formacion/ProjectsFormacion";
 import ProjectsTerapias from "../views/terapias/ProjetsTerapias";
 import ProjectsVivienda from "../views/viviendasApoyo/ProjectsVivienda";
 import ProjectsVoluntariado from "../views/voluntariado/ProjectsVoluntariado";
-import React  from 'react';
+import React from "react";
 import ScrollToTop from "./ScrollToTop";
 import SemanaCapacidad from "../views/SemanaCapacidad/SemanaCapacidad";
 import SomosCampeones from "../views/somosCampeones/SomosCampeones";
@@ -29,7 +29,6 @@ import VisorPdf22 from "../views/Landing/components/pdf/VisorPdf2022";
 import VisorPdfOrganigrama from "../views/Landing/components/pdf/VisorPdfOrganigrama";
 
 const App = () => {
-
   return (
     <>
       <ScrollToTop smooth />

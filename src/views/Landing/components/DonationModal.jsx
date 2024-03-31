@@ -1,11 +1,11 @@
-import { Link, useLocation } from 'react-router-dom';
-import React, { useEffect, } from 'react';
+import { Link, useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ModalWrapper = styled.div`
   z-index: 500;
-  display: ${props => (props.open ? 'flex' : 'none')};
+  display: ${(props) => (props.open ? "flex" : "none")};
   position: fixed;
   left: 0;
   top: 0;
@@ -72,10 +72,14 @@ const Modal = ({ open, onClose }) => {
   return (
     <ModalWrapper open={open}>
       <ModalContent role="dialog" aria-modal="true">
-        <CloseButton aria-label="Cerrar mensaje" onClick={onClose}>&times;</CloseButton>
+        <CloseButton aria-label="Cerrar mensaje" onClick={onClose}>
+          &times;
+        </CloseButton>
         <h2>¡Apóyanos!</h2>
         <p>Tu contribución ayuda a mantener nuestro proyecto en marcha.</p>
-        <DonateButton to="/donaciones" aria-label="ir a página de donaciones">Donar ahora</DonateButton>
+        <DonateButton to="/donaciones" aria-label="ir a página de donaciones">
+          Donar ahora
+        </DonateButton>
       </ModalContent>
     </ModalWrapper>
   );

@@ -1,4 +1,4 @@
-import React,{useState}  from 'react';
+import React, { useState } from "react";
 import { heroOne, heroThree, heroTwo } from "./components/services/HeroData";
 
 import ContactForm from "./components/ContactForm";
