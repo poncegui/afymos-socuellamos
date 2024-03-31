@@ -35,7 +35,7 @@ const TitleSectionContainer = styled.div`
     color: ${({ inverse }) => (inverse ? "#c6b1c9" : "#071c2f")};
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 500px) {
     font-size: ${({ size }) => (size ? "1.2rem" : "1.5rem")};
     line-height: 2.5rem;
   }

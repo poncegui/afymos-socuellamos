@@ -1,31 +1,49 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
+import SectionServiceFilter from "./SectionServiceFilter";
 import TitleSection from "../../../components/TitleSection";
 import { servicesData } from "./services/FeaturesData";
 import styled from "styled-components";
 
 const SectionServices = () => {
-  const [data] = useState(servicesData);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
       <TitleSection title="Servicios" inverse size marginBottom />
       <section>
-        <IconsContainer>
-          {data.map((item) => (
-            <Icons key={item.id} value={item.name}>
-              <Link to={item.url} aria-label="ir a la ruta selecionada">
-                <img src={item.img} alt={item.name} />
-                <h3>{item.name}</h3>
-              </Link>
-            </Icons>
-          ))}
-        </IconsContainer>
+        {windowWidth >= 500 ? (
+          <IconsContainer>
+            {servicesData.map((item) => (
+              <Icons key={item.id} value={item.name}>
+                <Link to={item.url} aria-label="ir a la ruta seleccionada">
+                  <img src={item.img} alt={item.name} />
+                  <h3>{item.name}</h3>
+                </Link>
+              </Icons>
+            ))}
+          </IconsContainer>
+        ) : (
+          <SectionServiceFilter />
+        )}
       </section>
     </>
   );
 };
+
 export default SectionServices;
 
 const IconsContainer = styled.div`
