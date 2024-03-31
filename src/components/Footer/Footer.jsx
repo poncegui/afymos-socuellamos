@@ -5,10 +5,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
+    <div className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="footer-col">
             <h4>contacto</h4>
             <ul>
               <li>
@@ -33,7 +33,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>dirección</h4>
             <ul>
               <li>
@@ -47,7 +47,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>política de privacidad</h4>
             <ul>
               <li>
@@ -66,22 +66,22 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>síguenos</h4>
-            <div class="social-links">
+            <div className="social-links">
               <a
                 href="https://www.facebook.com/profile.php?id=100067093413028"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
               <a
                 href="https://www.instagram.com/tv/CKKQgBcIW_Z/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
             </div>
           </div>

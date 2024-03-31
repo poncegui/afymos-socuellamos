@@ -60,7 +60,7 @@ const ContactForm = () => {
               id="message"
               cols="30"
               rows="10"
-              class="inputs"
+              className="inputs"
             ></textarea>
             <input
               type="submit"
@@ -73,7 +73,7 @@ const ContactForm = () => {
             title="map"
             className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.115024827591!2d-2.792748684638135!3d39.28564187951258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68f525d5ea6049%3A0x180a68074859800d!2sAFYMOS!5e0!3m2!1ses!2ses!4v1687676404652!5m2!1ses!2ses"
-            allowfullscreen=""
+            allowFullScreen =""
             loading="lazy"
           ></iframe>
         </div>

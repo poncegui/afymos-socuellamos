@@ -177,7 +177,7 @@ const IntroductionView = () => {
                 onClick={handleClick}
                 color={data.color}
                 to={data.url}
-                ariaLabel={data.name}
+                aria-label={data.name}
               >
                 {data.name}
               </StyledButton>
@@ -191,8 +191,8 @@ const IntroductionView = () => {
                 offset={-100}
                 duration={1000}
                 onClick={handleClick}
-                color
-                ariaLabel="contacto"
+                color="color"
+                aria-label="contacto"
               >
                 Contacto
               </StyledButton>

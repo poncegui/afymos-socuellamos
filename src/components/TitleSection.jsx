@@ -7,7 +7,7 @@ const TitleSection = ({ title, size, inverse, marginBottom }) => {
   return (
     <>
       <TitleSectionContainer
-        size={size}
+        size="size"
         inverse={inverse}
         marginBottom={marginBottom}
       >
