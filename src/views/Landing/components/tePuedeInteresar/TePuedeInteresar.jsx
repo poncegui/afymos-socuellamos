@@ -67,6 +67,11 @@ const SocialIconsContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 20px;
+
+  @media (max-width: 900px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 `;
 
 const SocialIcon = styled.a`
@@ -78,7 +83,7 @@ const SocialIcon = styled.a`
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease;
-  cursor: pointer; /* Agrega el cursor pointer */
+  cursor: pointer;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);

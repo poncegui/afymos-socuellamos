@@ -28,6 +28,11 @@ const CircleIcon = styled.div`
   height: 20px;
   border-radius: 50%;
   background-color: #224464;
+
+  @media (max-width: 900px) {
+    width: 16px;
+    height: 16px;
+  }
 `;
 
 const ContenedorCards = styled.div`

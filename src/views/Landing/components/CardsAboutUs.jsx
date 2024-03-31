@@ -1,4 +1,4 @@
-import { faCircle, faPlus, faSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faSquare } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
@@ -128,7 +128,6 @@ const CardsAboutUs = () => {
     <>
       <SectionContainer>
         <Title>
-          <CircleIcon icon={faCircle} size={20} color="#224464" />
           <CircleIcon icon={faSquare} size={15} color="#c6b1c9" />
           Sobre nosotros...
         </Title>

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faSquare } from "@fortawesome/free-solid-svg-icons";
 import { servicesData } from "./services/pictoButtonsData";
 import styled from "styled-components";
 
@@ -67,7 +67,7 @@ const ArrowIcon = styled.span`
 `;
 
 const CircleIcon = styled(FontAwesomeIcon)`
-  color: #224464;
+  color: "#c6b1c9";
   margin-right: 10px;
 `;
 
@@ -115,8 +115,9 @@ const SectionServiceFilter = () => {
 
   return (
     <div>
-      <h2 style={{ fontSize: "18px" }}>
-        <CircleIcon icon={faCircle} size="xs" /> Buscador
+      <h2 style={{ fontSize: "16px" }}>
+        <CircleIcon icon={faSquare} color='#c6b1c9"' />
+        Buscador
       </h2>
       <SearchContainer>
         <LabelContainer ref={wrapperRef}>
