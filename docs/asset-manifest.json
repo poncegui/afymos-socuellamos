@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.5c8c09d7.js",
+    "main.js": "./static/js/main.fb134f6f.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -57,11 +57,11 @@
     "static/media/apoyo-familias-3.jpg": "./static/media/apoyo-familias-3.1c0a46cca1c1fc3d8cba.jpg",
     "static/media/organigrama.pdf": "./static/media/organigrama.2ebed92c873541755320.pdf",
     "static/media/rafa.jpg": "./static/media/rafa.5f8a302f0f8a0bf2c8b7.jpg",
+    "static/media/80-removebg-preview.png": "./static/media/80-removebg-preview.db92e7fae5df0ce916bb.png",
     "static/media/voluntariado5.jpg": "./static/media/voluntariado5.dec7f91296482557d404.jpg",
     "static/media/campeones-baloncesto-2.jpg": "./static/media/campeones-baloncesto-2.2396cc3018694553f873.jpg",
     "static/media/vivienda-4.jpg": "./static/media/vivienda-4.4b2b92330e6560d4f7ce.jpg",
     "static/media/crea-2024.pdf": "./static/media/crea-2024.eb386bc8f8ce34bb6748.pdf",
-    "static/media/80-removebg-preview.png": "./static/media/80-removebg-preview.02e1ed0ab9d12f78bbe0.png",
     "static/media/dinero-removebg-preview.png": "./static/media/dinero-removebg-preview.823dd2fccafb1a0a693f.png",
     "static/media/campeones-baloncesto.jpg": "./static/media/campeones-baloncesto.f0a552e5cf4e38d96559.jpg",
     "static/media/psicopedagogia.png": "./static/media/psicopedagogia.893767e7ba711e2e3d46.png",
@@ -105,14 +105,15 @@
     "static/media/spotify.svg": "./static/media/spotify.7a2c296ecaa6a4511c9bd7b511cdf555.svg",
     "static/media/graduation-cap-solid.svg": "./static/media/graduation-cap-solid.132acd5637d6df09fe644d62ed02bc66.svg",
     "static/media/graduation.svg": "./static/media/graduation.132acd5637d6df09fe644d62ed02bc66.svg",
+    "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/hand-fist-solid.svg": "./static/media/hand-fist-solid.42e3794aee6a249425af86465b7ba31d.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "static/media/van-shuttle-solid.svg": "./static/media/van-shuttle-solid.617a4dfbdddb6022c9bf0cb34a13932e.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.5c8c09d7.js.map": "./static/js/main.5c8c09d7.js.map"
+    "main.fb134f6f.js.map": "./static/js/main.fb134f6f.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.5c8c09d7.js"
+    "static/js/main.fb134f6f.js"
   ]
 }

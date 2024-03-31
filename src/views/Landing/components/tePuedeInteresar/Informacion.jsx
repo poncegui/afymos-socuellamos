@@ -66,6 +66,7 @@ const Card = styled.div`
     flex: 0 1 calc(50% - 16px);
     margin-right: 8px;
     margin-bottom: 8px;
+    height: 350px;
   }
 `;
 
