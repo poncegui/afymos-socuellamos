@@ -6,7 +6,7 @@ const ProfileChart = (props) => {
     <>
       <Card>
         <FaceFront key={props.id}>
-          <ImgFront src={props.img} alt={props.alt} />
+          <ImgFront src={props.img} alt={props.alt} title={props.title}/>
           <h3>{props.role}</h3>
         </FaceFront>
       </Card>

@@ -18,6 +18,7 @@ const PartnerList = ({ size, inverse }) => {
                 alt={partner.alt}
                 url={partner.url}
                 target={partner.target}
+                title={partner.titleImg}
                 rel="noopener noreferrer"
               />
             );

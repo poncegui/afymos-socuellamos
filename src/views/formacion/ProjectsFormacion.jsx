@@ -1,5 +1,4 @@
 import {
-  formacionDataFour,
   formacionDataOne,
   formacionDataThree,
   formacionDataTwo,
@@ -21,8 +20,8 @@ const ProjectsFormacion = () => {
       <NavBarViews title="Centro de Formación" id="/formacion" />
       <TitleSection title="Fomentamos la formación" size />
       <ContentProjects {...formacionDataOne} inverse />
-      <Content {...formacionDataThree} reverse />
-      <ContentProjects {...formacionDataFour} inverse />
+      <Content {...formacionDataTwo} reverse />
+      <ContentProjects {...formacionDataThree} inverse />
       <PartnersList />
       <Footer />
     </>

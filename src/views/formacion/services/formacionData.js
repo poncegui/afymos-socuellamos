@@ -15,7 +15,7 @@ export const formacionDataOne = {
   img: formacion1,
 };
 
-export const formacionDataThree = {
+export const formacionDataTwo= {
   reverse: false,
   inverse: false,
   topLine: {
@@ -28,7 +28,7 @@ export const formacionDataThree = {
   href: "#/documentacion-formacion",
 };
 
-export const formacionDataFour = {
+export const formacionDataThree = {
   reverse: true,
   inverse: false,
   topLine: {

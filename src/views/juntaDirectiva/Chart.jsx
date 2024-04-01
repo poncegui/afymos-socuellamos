@@ -25,6 +25,7 @@ const Chart = () => {
                   alt={person.alt}
                   role={person.role}
                   profession={person.profession}
+                  title={person.titleImg}
                 />
                 <ChartItemTitle>{person.name}</ChartItemTitle>
                 <ChartItemSubTitle>{person.profession}</ChartItemSubTitle>

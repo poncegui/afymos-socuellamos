@@ -20,9 +20,6 @@
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.9",
     "react-scroll-to-top": "^3.0.0",
-    "react-slick": "^0.29.0",
-    "react-slick-carousel": "^0.14.9",
-    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },

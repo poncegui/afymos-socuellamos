@@ -26,6 +26,7 @@ export const personsChart = [
     img: image10,
     profession: "Teacher",
     alt: "fotografia Laura Simancas",
+    titleImg: "Laura Simancas - Terapeuta ocupacional",
   },
   {
     id: 2,
@@ -34,14 +35,16 @@ export const personsChart = [
     img: image11,
     profession: "Teacher",
     alt: "fotografía Miguel Ángel Gómez",
+    titleImg: "Miguel Ángel Gómez - Recepcionista",
   },
   {
     id: 3,
-    name: "Alicia Lara ",
+    name: "Alicia Lara",
     role: "Psicopedagoga",
     img: image12,
     profession: "Teacher",
     alt: "fotografía Alicia Lara",
+    titleImg: "Alicia Lara - Psicopedagoga",
   },
   {
     id: 8,
@@ -50,6 +53,7 @@ export const personsChart = [
     img: image13,
     profession: "Logopeda",
     alt: "fotografía Cristina Olivares",
+    titleImg: "Cristina Olivares - Vocal 2",
   },
   {
     id: 4,
@@ -58,14 +62,16 @@ export const personsChart = [
     img: image14,
     profession: "Teacher",
     alt: "fotografía Beatriz Henales",
+    titleImg: "Beatriz Henales - Psicóloga",
   },
   {
     id: 5,
-    name: " Mónica Alejandra Mazzella",
+    name: "Mónica Alejandra Mazzella",
     role: "Psicopedagoga",
     img: image15,
     profession: "Teacher",
     alt: "fotografía Mónica Alejandra Mazzella",
+    titleImg: "Mónica Alejandra Mazzella - Psicopedagoga",
   },
   {
     id: 6,
@@ -74,6 +80,7 @@ export const personsChart = [
     img: image16,
     profession: "Teacher",
     alt: "fotografía Amparo Guerrero",
+    titleImg: "Amparo Guerrero - Fisioterapeuta",
   },
   {
     id: 7,
@@ -82,15 +89,16 @@ export const personsChart = [
     img: image17,
     profession: "Teacher",
     alt: "fotografía Alicia López",
+    titleImg: "Alicia López - Neuropsicologa",
   },
-
   {
     id: 9,
     name: "Jorge Sánchez",
     role: "Logopeda",
     img: image18,
     profession: "Teacher",
-    alt: "fotografíaJorge Sánchez",
+    alt: "fotografía Jorge Sánchez",
+    titleImg: "Jorge Sánchez - Logopeda",
   },
   {
     id: 10,
@@ -99,6 +107,7 @@ export const personsChart = [
     img: image19,
     profession: "Teacher",
     alt: "fotografía Ángeles Izquierdo",
+    titleImg: "Ángeles Izquierdo - Personal de Limpieza",
   },
 ];
 
@@ -109,14 +118,15 @@ export const juntaChart = [
     img: image2,
     profession: "Presidenta",
     alt: "Pilar Alarcón",
+    titleImg: "Pilar Alarcón - Presidenta",
   },
-
   {
     id: 2,
     name: "Nieves Fernández",
     img: image4,
     profession: "Vicepresidenta",
     alt: "Nieves Fernández",
+    titleImg: "Nieves Fernández - Vicepresidenta",
   },
   {
     id: 3,
@@ -124,6 +134,7 @@ export const juntaChart = [
     img: image1,
     profession: "Secretaria",
     alt: "Maricruz Collado",
+    titleImg: "Maricruz Collado - Secretaria",
   },
   {
     id: 4,
@@ -131,6 +142,7 @@ export const juntaChart = [
     img: image7,
     profession: "Tesorera",
     alt: "Visitación Sáez",
+    titleImg: "Visitación Sáez - Tesorera",
   },
   {
     id: 5,
@@ -138,20 +150,23 @@ export const juntaChart = [
     img: image3,
     profession: "Vocal 1",
     alt: "Ana Belén García",
+    titleImg: "Ana Belén García - Vocal 1",
   },
   {
     id: 6,
-    name: " Victoria Moreno",
+    name: "Victoria Moreno",
     img: image8,
     profession: "Vocal 2",
-    alt: " Victoria Moreno",
+    alt: "Victoria Moreno",
+    titleImg: "Victoria Moreno - Vocal 2",
   },
   {
     id: 7,
-    name: " Francisca Izquierdo",
+    name: "Francisca Izquierdo",
     img: image5,
     profession: "Vocal 3",
-    alt: " Francisca Izquierdo",
+    alt: "Francisca Izquierdo",
+    titleImg: "Francisca Izquierdo - Vocal 3",
   },
   {
     id: 8,
@@ -159,6 +174,7 @@ export const juntaChart = [
     img: image6,
     profession: "Vocal 4",
     alt: "Teresa Martinez",
+    titleImg: "Teresa Martinez - Vocal 4",
   },
   {
     id: 9,
@@ -166,5 +182,7 @@ export const juntaChart = [
     img: image9,
     profession: "Vocal 5",
     alt: "Francisco Javier Román",
+    titleImg: "Francisco Javier Román - Vocal 5",
   },
 ];
+

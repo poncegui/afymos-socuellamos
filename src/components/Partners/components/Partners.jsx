@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import styled from "styled-components";
 
-const PartnersCard = ({ url, alt, target, src }) => {
+const PartnersCard = ({ url, alt, target, src,title }) => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!clicked);
@@ -18,7 +18,7 @@ const PartnersCard = ({ url, alt, target, src }) => {
       >
         <PartnertCard>
           <PartnertFaceFront>
-            <LogoPartner src={src} alt={alt} />
+            <LogoPartner src={src} alt={alt} title={title}/>
           </PartnertFaceFront>
         </PartnertCard>
       </a>
