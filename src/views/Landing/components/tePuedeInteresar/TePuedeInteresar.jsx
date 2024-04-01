@@ -22,8 +22,8 @@ const IntroductionViewContainer = styled.div`
   color: #fff;
   height: 50vh;
 
-  @media (max-width: 900px) {
-    height: 50vh;
+  @media (max-width: 768px) {
+    height: 100vh;
     grid-template-columns: 1fr;
     justify-content: center;
   }
@@ -115,11 +115,13 @@ const HeaderTitle = styled.div`
   }
 
   @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 50px;
     h1 {
-      font-size: 5rem;
+      font-size: 6rem;
     }
     img {
-      height: 6rem;
+      height: 8rem;
     }
   }
 `;

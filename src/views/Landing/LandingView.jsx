@@ -5,7 +5,7 @@ import {
 } from "./components/services/landingBlocksData";
 
 import CardsAboutUs from "./components/CardsAboutUs";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./components/contactForm/ContactForm";
 import { Content } from "../../components/Content/Content";
 import DonationInformation from "./components/DonationInformation";
 import Footer from "../../components/Footer/Footer";

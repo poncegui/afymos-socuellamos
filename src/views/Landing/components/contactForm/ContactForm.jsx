@@ -1,9 +1,9 @@
 import "./styles/ContactForm.css";
 
-import IconOne from "./assets/icons/icon-1.png";
-import IconThree from "./assets/icons/icon-3.png";
-import IconTwo from "./assets/icons/icon-2.png";
-import TitleSection from "../../../components/TitleSection";
+import IconOne from "./assets/icon-1.png";
+import IconThree from "./assets/icon-3.png";
+import IconTwo from "./assets/icon-2.png";
+import TitleSection from "../../../../components/TitleSection";
 import styled from "styled-components";
 
 const ContactForm = () => {

@@ -1,6 +1,5 @@
 import { Container, Section, Title } from "../../globalStyles";
 import {
-  ContentButton,
   ContentColumn,
   ContentRow,
   Heading,
@@ -12,6 +11,9 @@ import {
   TopLine,
 } from "./ContentStyles.js";
 import React, { useState } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export const Content = ({
   alt,
@@ -27,9 +29,9 @@ export const Content = ({
   title,
   id,
 }) => {
-  const [clicked, setClicked] = useState(false);
+  const [hovered, setHovered] = useState(false);
   const handleClick = () => {
-    setClicked(!clicked);
+    // Aquí puedes agregar el manejo de clics si es necesario
   };
 
   return (
@@ -42,19 +44,30 @@ export const Content = ({
               <TopLine>{topLine.text}</TopLine>
               <Heading inverse={inverse}>{headline}</Heading>
               <Subtitle inverse={inverse}>{description}</Subtitle>
-              <ContentButton
-                transition={{ delay: 1, duration: 0.6 }}
-                inverse={inverse}
+
+              <HomePage
+                onClick={handleClick}
+                href={href}
+                alt={alt}
+                target={target}
               >
-                <HomePage
-                  onClick={handleClick}
-                  href={href}
-                  alt={alt}
-                  target={target}
-                >
-                  {buttonLabel}
-                </HomePage>
-              </ContentButton>
+                <FontAwesomeIcon
+                  icon={faPlus}
+                  style={{
+                    color: inverse ? "#000" : "#fff", // Cambia el color del icono según el fondo del contenedor
+                    transform: hovered ? "rotate(90deg)" : "rotate(0)", // Gira el icono 180 grados cuando se pasa el mouse
+                    fontSize: "40px", // Establece el tamaño del icono
+                    transition: "transform 0.5s ease-in-out", // Agrega una transición suave
+                  }}
+                  aria-label={buttonLabel} // Añade una etiqueta para la accesibilidad
+                  role="button" // Indica que el icono es interactivo
+                  onMouseEnter={() => setHovered(true)} // Maneja el mouseover
+                  onMouseLeave={() => setHovered(false)} // Maneja el mouseout
+                  onClick={(e) => e.preventDefault()} // Evita el comportamiento predeterminado del clic
+                  onTouchStart={() => setHovered(true)} // Maneja el inicio del toque
+                  onTouchEnd={() => setHovered(false)} // Maneja el final del toque
+                />
+              </HomePage>
             </TextWrapper>
           </ContentColumn>
           <ContentColumn>

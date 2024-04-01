@@ -67,7 +67,8 @@ const ArrowIcon = styled.span`
 `;
 
 const CircleIcon = styled(FontAwesomeIcon)`
-  color: "#c6b1c9";
+  font-size: ${(props) => props.size}px;
+  color: ${(props) => props.color};
   margin-right: 10px;
 `;
 
@@ -115,8 +116,8 @@ const SectionServiceFilter = () => {
 
   return (
     <div>
-      <h2 style={{ fontSize: "16px" }}>
-        <CircleIcon icon={faSquare} color='#c6b1c9"' />
+      <h2 style={{ fontSize: "18px", marginTop: "20px" }}>
+        <CircleIcon icon={faSquare} size={15} color="#c6b1c9" />
         Buscador
       </h2>
       <SearchContainer>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import { ContentButton } from "../../../components/Content/ContentStyles";
 import { Link } from "react-router-dom";
-import TitleSection from "../../../components/TitleSection";
 import styled from "styled-components";
 
 const DemoVideo = () => {
@@ -12,8 +11,11 @@ const DemoVideo = () => {
   };
   return (
     <>
-      <TitleSection title="Proyecto Crea" size />
       <section>
+        <Titulo>
+          <CircleIcon />
+          Proyecto Nuevo Crea...
+        </Titulo>
         <Demo id="demo">
           <DemoContainer>
             <DemoRight>
@@ -71,6 +73,27 @@ const DemoContainer = styled.div`
       height: auto;
     }
   }
+`;
+
+const Titulo = styled.h2`
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+`;
+
+const CircleIcon = styled.div`
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #224464;
 `;
 
 const DemoLeft = styled.div`

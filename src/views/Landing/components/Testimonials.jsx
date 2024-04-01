@@ -1,5 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import TitleSection from "../../../components/TitleSection";
+import { faSquare } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import user1 from "./assets/images-testimonials/rafa.png";
 import user2 from "./assets/images-testimonials/quico.png";
@@ -34,30 +35,63 @@ const testimoniesData = [
 
 const Testimonials = () => {
   return (
-    <Main id="testimonios">
-      <TestimonialsContainer>
-        <TitleSection title="Historias reales" inverse />
-        <TestimonialsContent aria-label="Testimonios">
-          {testimoniesData.map((testimonial) => (
-            <TestimonialsCard key={testimonial.id}>
-              <img
-                src={testimonial.image}
-                alt={`Foto de ${testimonial.name}`}
-              />
-              <div>
-                <p>{testimonial.description}</p>
-                <span>{testimonial.name}</span>
-                <p>{testimonial.occupation}</p>
-              </div>
-            </TestimonialsCard>
-          ))}
-        </TestimonialsContent>
-      </TestimonialsContainer>
-    </Main>
+    <>
+      <Margin />
+      <Main id="testimonios">
+        <TestimonialsContainer>
+          <Title>
+            <CircleIcon icon={faSquare} size={15} color="#c6b1c9" />
+            Testimonios reales...
+          </Title>
+          <TestimonialsContent aria-label="Testimonios">
+            {testimoniesData.map((testimonial) => (
+              <TestimonialsCard key={testimonial.id}>
+                <img
+                  src={testimonial.image}
+                  alt={`Foto de ${testimonial.name}`}
+                />
+                <div>
+                  <p>{testimonial.description}</p>
+                  <span>{testimonial.name}</span>
+                  <p>{testimonial.occupation}</p>
+                </div>
+              </TestimonialsCard>
+            ))}
+          </TestimonialsContent>
+        </TestimonialsContainer>
+      </Main>
+    </>
   );
 };
 
 export default Testimonials;
+const Margin = styled.div`
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  @media (max-width: 900px) {
+    height: 30px;
+  }
+`;
+
+const Title = styled.h2`
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+`;
+const CircleIcon = styled(FontAwesomeIcon)`
+  font-size: ${(props) => props.size}px;
+  color: ${(props) => props.color};
+  margin-right: 10px;
+`;
 
 const Main = styled.main`
   width: 100%;
