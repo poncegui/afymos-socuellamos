@@ -40,7 +40,7 @@ const Overlay = styled.div`
 
 const ContentContainer = styled.div`
   text-align: center;
-  z-index: 1;
+  /* z-index: 1; */
 `;
 
 const ButtonContainer = styled.div`
@@ -84,6 +84,7 @@ const SocialIcon = styled.a`
   align-items: center;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  z-index: 9999;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
@@ -92,6 +93,15 @@ const SocialIcon = styled.a`
   & > svg {
     width: 24px;
     height: 24px;
+    fill: #fff;
+  }
+  @media (max-width: 500px) {
+    width: 50px;
+    height: 50px;
+  }
+  & > svg {
+    width: 28px;
+    height: 28px;
     fill: #fff;
   }
 `;
@@ -140,6 +150,7 @@ const StyledButton = styled(ButtonNav)`
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  z-index: 9999;
 
   @media (max-width: 900px) {
     font-size: 16px;

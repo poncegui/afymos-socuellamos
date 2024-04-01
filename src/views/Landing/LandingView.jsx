@@ -15,13 +15,15 @@ import React from "react";
 import ScrollToTop from "../../components/ScrollToUp";
 import SectionServices from "./components/SectionServices";
 import TePuedeInteresar from "../Landing/components/tePuedeInteresar/TePuedeInteresar";
-import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/testimonials/Testimonials";
+import VideoLanding from "./components/VideoLanding";
 
 const LandingView = () => {
   return (
     <>
       <ScrollToTop />
       <TePuedeInteresar />
+      <VideoLanding />
       <DonationInformation />
       <SectionServices />
       <CardsAboutUs />

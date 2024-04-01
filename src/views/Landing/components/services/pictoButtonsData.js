@@ -43,9 +43,9 @@ export const servicesData = [
   },
   {
     id: 5,
-    name: "Ocio y volunturariado",
+    name: "Ocio y voluntariado",
     img: voluntariado,
-    alt: "Ocio y volunturariado",
+    alt: "Ocio y voluntariado",
     url: "/ocio-y-voluntariado",
   },
   {
