@@ -26,7 +26,7 @@ export const cardsServiceData = [
   },
   {
     key: 3,
-    title: "CHARLAS PROFESIONALES",
+    title: "CHARLAS EDUCATIVAS",
     description:
       "LA EDUCACIÓN INCLUSIVA con la colaboración de los docentes de IES Fernando de Mena  y Centro Concertado Virgen de Loreto.",
     image: charlas,

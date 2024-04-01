@@ -109,7 +109,7 @@ const DonationInformation = () => {
         </ImageContainer>
         <ContentContainer>
           <Title>¿Sabías que hasta los primeros 250€ te deduces el 80%?</Title>
-          <Text>Si donas 250€ te devuelven 200€</Text>
+          <Text>Si donas 250€ te desgravas 200€</Text>
         </ContentContainer>
         <DonateButton href="/donaciones">Dona</DonateButton>
       </Container>

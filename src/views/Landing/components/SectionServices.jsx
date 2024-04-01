@@ -100,6 +100,11 @@ const Titulo = styled.h2`
   display: inline-block;
   font-size: 24px;
   text-decoration: none;
+  @media (max-width: 900px) {
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 `;
 
 const CircleIcon = styled.div`

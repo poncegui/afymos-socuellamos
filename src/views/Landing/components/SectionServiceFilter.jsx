@@ -42,8 +42,10 @@ const ServiceListContainer = styled.div`
 const ServiceItem = styled.div`
   padding: 10px;
   cursor: pointer;
+  color: #224464;
+  font-weight: bold;
   &:hover {
-    background-color: #f0f0f0;
+    background-color: #494242;
   }
   background-color: ${({ isSelected }) => (isSelected ? "#f5f5f5" : "inherit")};
 `;

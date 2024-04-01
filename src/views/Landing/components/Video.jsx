@@ -88,6 +88,9 @@ const Title = styled.h2`
   display: inline-block;
   font-size: 24px;
   text-decoration: none;
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
 `;
 
 const Margin = styled.div`
