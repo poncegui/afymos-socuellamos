@@ -1,6 +1,7 @@
 import charlas from "../assets/icons/comment-regular.svg";
 import events from "../assets/icons/face-smile-wink-solid.svg";
 import graduation from "../assets/icons/graduation.svg";
+import pdf from '../urban-camp-2024.pdf';
 import podcast from "../assets/icons/spotify.svg";
 
 export const cardsServiceData = [
@@ -36,12 +37,16 @@ export const cardsServiceData = [
   },
   {
     key: 4,
-    title: "ACTIVIDADES AFYMOS",
+    title: "URBAN CAMP 2024",
     description:
       "LA EDUCACIÓN INCLUSIVA con la colaboración de los docentes de IES Fernando de Mena  y Centro Concertado Virgen de Loreto.",
     image: events,
     alt: "Actividades Afymos",
     url: "https://acortar.link/RGYfzQ",
     color: "#f5f5f5",
+    donwload: pdf,
   },
 ];
+
+
+

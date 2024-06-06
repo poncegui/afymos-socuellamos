@@ -145,6 +145,7 @@ const CardsInterestInformation = () => {
               aria-label="ir a la ruta seleccionada"
               href={card.url}
               target="_blank"
+              download={card.download}
             >
               <StyledFontAwesomeIcon
                 icon={faPlus}
