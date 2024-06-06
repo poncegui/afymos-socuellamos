@@ -42,9 +42,9 @@ export const cardsServiceData = [
       "LA EDUCACIÓN INCLUSIVA con la colaboración de los docentes de IES Fernando de Mena  y Centro Concertado Virgen de Loreto.",
     image: events,
     alt: "Actividades Afymos",
-    url: "https://acortar.link/RGYfzQ",
+    url: pdf,
     color: "#f5f5f5",
-    donwload: pdf,
+    donwload: "documento pdf",
   },
 ];
 
