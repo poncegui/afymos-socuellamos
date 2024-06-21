@@ -95,9 +95,9 @@ export const aboutUsData = [
   },
   {
     id: 4,
-    name: "Cuentas anuales 2022",
+    name: "Cuentas anuales 2023",
     img: contabilidad,
-    alt: "Cuentas anuales 2022",
-    url: "/pdf-cuentas-22",
+    alt: "Cuentas anuales 2023",
+    url: "/pdf-cuentas-23",
   },
 ];

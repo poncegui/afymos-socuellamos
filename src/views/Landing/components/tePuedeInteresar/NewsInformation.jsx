@@ -15,8 +15,8 @@ const Overlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;  // Añadir padding para asegurar espacio en dispositivos pequeños
-  z-index: 10000;  // Añadir z-index alto para asegurar que la modal esté por encima de otros elementos
+  padding: 10px;
+  z-index: 10000;
 `;
 
 const ModalWrapper = styled.div`
@@ -28,8 +28,8 @@ const ModalWrapper = styled.div`
   max-width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  overflow: hidden;  // Asegurar que el contenido no se desborde
-  z-index: 1001;  // Asegurar que el contenido del modal esté por encima del overlay
+  overflow: hidden;
+  z-index: 1001;
 `;
 
 const CloseButton = styled.button`
@@ -38,18 +38,18 @@ const CloseButton = styled.button`
   right: 10px;
   background: none;
   border: none;
-  font-size: 30px;  // Aumentar el tamaño del botón de cerrar
+  font-size: 30px;
   cursor: pointer;
   margin-bottom:1rem;
 `;
 
 const Title = styled.h2`
   margin-top: 0;
-  font-size: 3rem;  // Tamaño de fuente relativo
+  font-size: 3rem;
 `;
 
 const Image = styled.img`
-  width: 100%;  // Ajustar la imagen al ancho del modal
+  width: 100%;
   max-width: 300px;
   height: auto;
   display: block;
@@ -58,13 +58,13 @@ const Image = styled.img`
 
 const DownloadButton = styled.a`
   display: block;
-  margin-top: 2rem;  // Añadir margen superior
+  margin-top: 2rem;
   background: #007bff;
   color: white;
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 2rem;  // Tamaño de fuente relativo
+  font-size: 2rem;
   cursor: pointer;
 
   &:hover {
@@ -98,3 +98,4 @@ const Modal = () => {
 };
 
 export default Modal;
+
