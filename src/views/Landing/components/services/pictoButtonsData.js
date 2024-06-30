@@ -1,12 +1,8 @@
 import capacitacion from "../assets/pictogramas/promocion.png";
 import centroDia from "../assets/pictogramas/proteger.png";
-import centroDiversidad from "../assets/pictogramas/campus-universitario.png";
-import contabilidad from "../assets/pictogramas/contabilidad.png";
 import diagnostico from "../assets/pictogramas/historial-medico.png";
 import familias from "../assets/pictogramas/familia.png";
 import formacion from "../assets/pictogramas/educacion.png";
-import junta from "../assets/pictogramas/junta.png";
-import organigrama from "../assets/pictogramas/organigrama.png";
 import servicios from "../../../terapias/components/assets/pictogramas/terapia-fisica.png";
 import viviendaSocial from "../assets/pictogramas/vivienda-social.png";
 import voluntariado from "../assets/pictogramas/apoyo.png";
@@ -71,33 +67,3 @@ export const servicesData = [
   },
 ];
 
-export const aboutUsData = [
-  {
-    id: 1,
-    name: "Instalaciones Centro",
-    img: centroDiversidad,
-    alt: "Instalaciones Centro",
-    url: "/instalaciones-centro-diversidad",
-  },
-  {
-    id: 2,
-    name: "Organigrama",
-    img: organigrama,
-    alt: "organigrama",
-    url: "/organigrama",
-  },
-  {
-    id: 3,
-    name: "Junta Directiva",
-    img: junta,
-    alt: "Junta Directiva",
-    url: "/junta-directiva",
-  },
-  {
-    id: 4,
-    name: "Cuentas anuales 2023",
-    img: contabilidad,
-    alt: "Cuentas anuales 2023",
-    url: "/pdf-cuentas-23",
-  },
-];

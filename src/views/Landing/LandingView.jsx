@@ -24,7 +24,7 @@ const LandingView = () => {
     <>
       <ScrollToTop />
       <TePuedeInteresar />
-      <Modal />
+      {/* <Modal /> */}
       <VideoLanding />
       <DonationInformation />
       <SectionServices />

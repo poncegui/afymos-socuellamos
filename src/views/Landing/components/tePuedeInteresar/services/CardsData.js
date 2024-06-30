@@ -37,14 +37,14 @@ export const cardsServiceData = [
   },
   {
     key: 4,
-    title: "URBAN CAMP 2024",
+    title: "ACUERDO ADEVI y FEDA",
     description:
-      "LA EDUCACIÓN INCLUSIVA con la colaboración de los docentes de IES Fernando de Mena  y Centro Concertado Virgen de Loreto.",
+      "FEDA y ADEVI firman un acuerdo por el que facilitarán contratos de formación a los participantes de Asprona",
     image: events,
-    alt: "Actividades Afymos",
-    url: pdf,
+    alt: "acuerdo con Feda y Adevi",
+    url:"https://villarrobledonoticias.com/noticias/2024-06-feda-y-adevi-firman-un-acuerdo-por-el-que-facilitaran-contratos-de-formacion-a-los-participantes-de-asprona-en-la-formacion-para-personas-con-discapacidad-de-la-asociacion-afymos/",
     color: "#f5f5f5",
-    donwload: "documento pdf",
+
   },
 ];
 

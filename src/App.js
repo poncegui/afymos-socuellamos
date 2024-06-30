@@ -22,7 +22,6 @@ import React from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import VisorCrea from "./views/Landing/components/pdf/VisorCrea2024";
 import VisorFormacion from "./views/Landing/components/pdf/VisorFormacion";
-import VisorPdf23 from "./views/Landing/components/pdf/VisorPdf2023";
 import VisorPdfOrganigrama from "./views/Landing/components/pdf/VisorPdfOrganigrama";
 
 const App = () => {
@@ -55,7 +54,6 @@ const App = () => {
           element={<ProjectsDiagnostico />}
         />
         <Route path="/organigrama" element={<VisorPdfOrganigrama />} />
-        <Route path="/pdf-cuentas-23" element={<VisorPdf23 />} />
         <Route path="/documentacion-formacion" element={<VisorFormacion />} />
         <Route path="/crea2024" element={<VisorCrea />} />
         <Route path="/formacion" element={<ProjectsFormacion />} />

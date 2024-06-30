@@ -3,10 +3,7 @@ import React from "react";
 
 const IntroductionView = () => {
   return (
-    <>
-
       <Informacion />
-    </>
   );
 };
 
