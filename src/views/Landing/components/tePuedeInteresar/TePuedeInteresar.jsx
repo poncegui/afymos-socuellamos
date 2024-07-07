@@ -163,6 +163,34 @@ const StyledButton = styled(ButtonNav)`
   }
 `;
 
+const StyledButtonTransparencia = styled(ButtonNav)`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  border-radius: 5%;
+  color: ${(props) => props.color};
+  background-color: #224464;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  z-index: 9999;
+
+  @media (max-width: 900px) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: #224464;
+    background-color: #c6b1c9;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+`;
+
 const ContactButtonContainer = styled.div`
   width: 100px;
   height: 100px;
@@ -171,6 +199,11 @@ const ContactButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 900px) {
+    margin: 0 15px;
+  }
+
 `;
 
 const IntroductionView = () => {
@@ -194,6 +227,7 @@ const IntroductionView = () => {
                 {data.name}
               </StyledButton>
             ))}
+
             <ContactButtonContainer>
               <StyledButton
                 as={Contact}
@@ -207,6 +241,15 @@ const IntroductionView = () => {
               >
                 Contacto
               </StyledButton>
+            </ContactButtonContainer>
+            <ContactButtonContainer>
+              <StyledButtonTransparencia
+                to="transparencia"
+                aria-label="transparencia"
+                color="#f5f5f5"
+              >
+                Transparencia
+              </StyledButtonTransparencia>
             </ContactButtonContainer>
           </ButtonContainer>
         </ContentContainer>

@@ -16,6 +16,7 @@ import ProjectsDonaciones from "./views/Donaciones/ProjectsDonaciones";
 import ProjectsFamilias from "./views/apoyoFamilias/ProjectsFamilias";
 import ProjectsFormacion from "./views/formacion/ProjectsFormacion";
 import ProjectsTerapias from "./views/terapias/ProjetsTerapias";
+import ProjectsTransparencia from "./views/transparencia/ProjetsTransparencia";
 import ProjectsVivienda from "./views/viviendasApoyo/ProjectsVivienda";
 import ProjectsVoluntariado from "./views/voluntariado/ProjectsVoluntariado";
 import React from "react";
@@ -29,6 +30,7 @@ const App = () => {
     <>
       <ScrollToTop smooth />
       <Routes>
+        <Route path="/transparencia" element={<ProjectsTransparencia />} />
         <Route path="/terapias" element={<ProjectsTerapias />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/apoyo-familias" element={<ProjectsFamilias />} />

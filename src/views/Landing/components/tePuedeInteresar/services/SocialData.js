@@ -15,7 +15,15 @@ export const linksData = [
     key: 3,
     name: "Dona",
     url: "donaciones",
-  },
+  }
+];
+
+export const transparencia = [
+  {
+    key: 1,
+    name: "Transparencia",
+    url: "transparencia",
+  }
 ];
 
 export const socialIcons = [
