@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.4e3ba4b1.js",
+    "main.js": "./static/js/main.d8b58614.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/CARTEL URBAN CAMP 2024.png": "./static/media/CARTEL URBAN CAMP 2024.bb9a654d1fb4aad243ec.png",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
@@ -56,14 +56,13 @@
     "static/media/informe-auditoria-viviendas-apoyo-2023.pdf": "./static/media/informe-auditoria-viviendas-apoyo-2023.5f96dc8d75070c9c5bee.pdf",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/informe-auditoria-centro-dia-2024.pdf": "./static/media/informe-auditoria-centro-dia-2024.a36cc05e8e98609bc710.pdf",
-    "static/media/proyecto-crea-03.jpg": "./static/media/proyecto-crea-03.0501b340293cb969e28c.jpg",
     "static/media/crea2024-2.png": "./static/media/crea2024-2.5d8ab94b7cab97007e23.png",
-    "static/media/proyecto-crea-02.jpg": "./static/media/proyecto-crea-02.579e1a32019e4dc75eda.jpg",
     "static/media/voluntariado3.jpg": "./static/media/voluntariado3.f366bf5b1249d359686d.jpg",
     "static/media/nosotros-3.png": "./static/media/nosotros-3.85bcd11ffb4b6be95051.png",
     "static/media/pedro.png": "./static/media/pedro.41ec318a23a73390c035.png",
     "static/media/voluntariado1.jpg": "./static/media/voluntariado1.d29574c7c31a5df7e9dd.jpg",
     "static/media/apoyo-familias-2.jpg": "./static/media/apoyo-familias-2.aca377e4954f1b8ad83c.jpg",
+    "static/media/nuevo-crea-actualizado.jpg": "./static/media/nuevo-crea-actualizado.a764cb7e32793c8d7737.jpg",
     "static/media/rafa.png": "./static/media/rafa.60a633a3bdc4b6dbc3e2.png",
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
     "static/media/vivienda-1.jpg": "./static/media/vivienda-1.ca2042692b2a1724b683.jpg",
@@ -74,6 +73,7 @@
     "static/media/80-removebg-preview.png": "./static/media/80-removebg-preview.db92e7fae5df0ce916bb.png",
     "static/media/voluntariado5.jpg": "./static/media/voluntariado5.dec7f91296482557d404.jpg",
     "static/media/adevi.jpg": "./static/media/adevi.3833fc21d33f39bbcdb7.jpg",
+    "static/media/logos.jpg": "./static/media/logos.9eb1e4635c04c23dd7b9.jpg",
     "static/media/vivienda-4.jpg": "./static/media/vivienda-4.4b2b92330e6560d4f7ce.jpg",
     "static/media/crea-2024.pdf": "./static/media/crea-2024.eb386bc8f8ce34bb6748.pdf",
     "static/media/dinero-removebg-preview.png": "./static/media/dinero-removebg-preview.823dd2fccafb1a0a693f.png",
@@ -101,6 +101,7 @@
     "static/media/globalcaja.jpg": "./static/media/globalcaja.e3f7605e3965e22b5058.jpg",
     "static/media/urban-camp-2024.pdf": "./static/media/urban-camp-2024.6c3be5d24d3de048a312.pdf",
     "static/media/documentacion-formacion.pdf": "./static/media/documentacion-formacion.7ef18a5de78030f5de50.pdf",
+    "static/media/nuevo-crea-noticia.pdf": "./static/media/nuevo-crea-noticia.ef9c28ed281d8b0615e6.pdf",
     "static/media/familia.png": "./static/media/familia.f35f003819ca2e1ca904.png",
     "static/media/proteger.png": "./static/media/proteger.0d9f7f7eb08b06cddc53.png",
     "static/media/vivienda-social.png": "./static/media/vivienda-social.2758f70a7aef3142dc2b.png",
@@ -120,10 +121,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.4e3ba4b1.js.map": "./static/js/main.4e3ba4b1.js.map"
+    "main.d8b58614.js.map": "./static/js/main.d8b58614.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.4e3ba4b1.js"
+    "static/js/main.d8b58614.js"
   ]
 }

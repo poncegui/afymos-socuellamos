@@ -1,7 +1,7 @@
 import charlas from "../assets/icons/comment-regular.svg";
 import events from "../assets/icons/face-smile-wink-solid.svg";
 import graduation from "../assets/icons/graduation.svg";
-import pdf from '../urban-camp-2024.pdf';
+import pdf from '../assets/images-noticias/crea-2024/nuevo-crea-noticia.pdf';
 import podcast from "../assets/icons/spotify.svg";
 
 export const cardsServiceData = [
@@ -22,7 +22,7 @@ export const cardsServiceData = [
       "Afymos es entidad promotora del Proyecto de Formación y Empleo en el seno de la empresa NUEVO CREA",
     image: graduation,
     alt: "proyecto-crea",
-    url: "https://www.facebook.com/100067093413028/videos/1125606128462083",
+    url: pdf,
     color: "#224464",
   },
   {

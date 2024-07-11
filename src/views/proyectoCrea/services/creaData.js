@@ -1,6 +1,6 @@
-import creaOne from "../assets/proyecto-crea/proyecto-crea-02.jpg";
+import creaOne from "../assets/proyecto-crea/nuevo-crea-actualizado.jpg";
 import creaThree from "../assets/proyecto-crea/crea2024-2.png";
-import creaTwo from "../assets/proyecto-crea/proyecto-crea-03.jpg";
+import creaTwo from "../assets/proyecto-crea/logos.jpg";
 
 export const creaDataOne = {
   id: "creaDataOne",
@@ -12,7 +12,7 @@ export const creaDataOne = {
   headline:
     "Financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
   description:
-    "Desde 2017, nuestra Asociación es entidad promotora del Proyecto NUEVO CREA, programa dual de formación y empleo para personas con discapacidad intelectual.",
+    "En este proyecto, el objetivo principal es crear oportunidades de empleo para personas con discapacidad intelectual que tienen muchas dificultades de inserción sociolaboral. Este objetivo, también viene reflejado en el eje 3 de la Estrategia Española de Activación para el Empleo -Oportunidades de Empleo- ",
   img: creaOne,
 };
 
