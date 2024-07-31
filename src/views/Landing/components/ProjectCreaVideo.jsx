@@ -6,7 +6,7 @@ const VideoNuevoCrea = () => {
     <Video
       sectionTitle=" Proyecto Nuevo Crea..."
       urlMoreInformation="/proyecto-crea"
-      videoSrc="https://www.youtube.com/embed/SJI4HjfxSj8"
+      videoSrc="https://www.youtube.com/embed/HZ-Xvy2ZSsk"
       title="Proyecto CREA;"
       subtile="Nuestra filosofía:"
       text="       Conoce nuestro Programa de Formación y Empleo para personas con

@@ -2,22 +2,23 @@ import charlas from "../assets/icons/comment-regular.svg";
 import events from "../assets/icons/face-smile-wink-solid.svg";
 import graduation from "../assets/icons/graduation.svg";
 import pdf from '../assets/images-noticias/crea-2024/nuevo-crea-noticia.pdf';
-import podcast from "../assets/icons/spotify.svg";
+// import podcast from "../assets/icons/spotify.svg";
+import podcast2 from "../assets/images-cover/afymos-show.jpg";
 
 export const cardsServiceData = [
   {
     key: 1,
-    title: "ESTRENAMOS PODCAST",
+    title: "THE AFYMOS SHOW PODCAST",
     description:
-      "LA EDUCACIÓN INCLUSIVA con la colaboración de los docentes de IES Fernando de Mena  y Centro Concertado Virgen de Loreto.",
-    image: podcast,
+      "Alumnos y trabajadores nos cuentan su experiencia en el NUEVO CREA 2024.",
+    image: podcast2,
     alt: "!Afymos estrena podcast!",
     url: "https://acortar.link/RGYfzQ",
     color: "#f5f5f5",
   },
   {
     key: 2,
-    title: "PROYECTO NUEVO CREA",
+    title: "PROYECTO NUEVO CREA 2024",
     description:
       "Afymos es entidad promotora del Proyecto de Formación y Empleo en el seno de la empresa NUEVO CREA",
     image: graduation,

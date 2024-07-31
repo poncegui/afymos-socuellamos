@@ -9,15 +9,19 @@ const DemoVideo = () => {
           <p>Proyecto CREA;</p>
           <p>Nuestra filosofía</p>
           <p>
-            Conoce nuestro Programa de Formación y Empleo para personas con
-            algún tipo de discapacidad en Socuéllamos.
+          Tras 5 meses y medio de formación y trabajo, los alumnos-trabajadores han
+demostrado que pueden realizar su trabajo perfectamente en empresas normalizadas.
+Desde el inicio de la formación, algunos de los participantes han necesitado
+adaptaciones y apoyo para desarrollar los contenidos de clase, por ejemplo: lectura
+fácil del temario, acompañamiento puntual de logopedia, refuerzo con sesiones de
+psicopedagogía y adaptaciones a audio los exámenes de repaso.
           </p>
         </DemoLeft>
         <DemoRight>
           <iframe
             width="570"
             height="320"
-            src="https://www.youtube.com/embed/ZrI1CD7kdjQ"
+            src="https://www.youtube.com/embed/HZ-Xvy2ZSsk"
             title="Youtube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
