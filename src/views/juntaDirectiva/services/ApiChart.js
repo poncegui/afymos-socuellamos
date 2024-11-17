@@ -10,6 +10,7 @@ import image17 from "../assets/images-chart-png/chart17.png";
 import image18 from "../assets/images-chart-png/chart18.png";
 import image19 from "../assets/images-chart-png/chart19.png";
 import image2 from "../assets/images-chart-png/chart2.png";
+import image20 from "../assets/images-chart-png/chart20.jpg";
 import image3 from "../assets/images-chart-png/chart3.png";
 import image4 from "../assets/images-chart-png/chart4.png";
 import image5 from "../assets/images-chart-png/chart5.png";
@@ -183,6 +184,14 @@ export const juntaChart = [
     profession: "Vocal 5",
     alt: "Francisco Javier Román",
     titleImg: "Francisco Javier Román - Vocal 5",
+  },
+  {
+    id: 10,
+    name: "Tomás Aguilar",
+    img: image20,
+    profession: "Vocal 6",
+    alt: "Tomás Aguilar",
+    titleImg: "Tomás Aguilar - Vocal 6",
   },
 ];
 
