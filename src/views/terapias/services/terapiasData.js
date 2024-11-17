@@ -1,7 +1,7 @@
 import auditiva from "../../juntaDirectiva/assets/images-chart-png/aliciaCollado.jpg";
 import fisioterapia from "../../juntaDirectiva/assets/images-chart-png/chart16.png";
 import introduccion from "../../centroDia/assets/images-centroDia/centroDia-6.jpg";
-import logopedia from "../../juntaDirectiva/assets/images-chart-png/chart13.png";
+import logopedia from "../../juntaDirectiva/assets/images-chart-png/logopedas.jpg";
 import neuroPiscologia from "../assets/images-terapias/sala.png";
 import psicologia from "../../juntaDirectiva/assets/images-chart-png/beaPsicologa.jpg";
 import psicopedagogia from "../assets/images-terapias/combinada-2.png";
@@ -27,7 +27,7 @@ export const logopediaData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "LOGOPEDIA: conoce cómo trabaja nuestra profesional Cristina Olivares",
+    text: "LOGOPEDIA: conoce cómo trabaja nuestras profesionales Cristina Olivares y Paula Ramírez",
   },
   headline:
     "La logopedia es la disciplina sanitaria encargada de la prevención, detección, evaluación,diagnóstico y tratamiento de los trastornos implicados en la comunicación humana",
