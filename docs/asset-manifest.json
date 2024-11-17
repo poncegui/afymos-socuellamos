@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.95c7735d.js",
+    "main.js": "./static/js/main.6878ab9b.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/CARTEL URBAN CAMP 2024.png": "./static/media/CARTEL URBAN CAMP 2024.bb9a654d1fb4aad243ec.png",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
@@ -63,10 +63,10 @@
     "static/media/voluntariado1.jpg": "./static/media/voluntariado1.d29574c7c31a5df7e9dd.jpg",
     "static/media/apoyo-familias-2.jpg": "./static/media/apoyo-familias-2.aca377e4954f1b8ad83c.jpg",
     "static/media/nuevo-crea-actualizado.jpg": "./static/media/nuevo-crea-actualizado.a764cb7e32793c8d7737.jpg",
+    "static/media/logopedas.jpg": "./static/media/logopedas.99f464f009acef6d6c8d.jpg",
     "static/media/clubDeportivo.jpg": "./static/media/clubDeportivo.508a30dc92ecdf6ca77f.jpg",
     "static/media/rafa.png": "./static/media/rafa.60a633a3bdc4b6dbc3e2.png",
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
-    "static/media/logopedas.jpg": "./static/media/logopedas.a1c15b01b1257ac381b9.jpg",
     "static/media/vivienda-1.jpg": "./static/media/vivienda-1.ca2042692b2a1724b683.jpg",
     "static/media/formacion-3.png": "./static/media/formacion-3.cf82540cee0bf4f87dbd.png",
     "static/media/chart20.jpg": "./static/media/chart20.f593ceebdd26b0970b0d.jpg",
@@ -126,10 +126,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.95c7735d.js.map": "./static/js/main.95c7735d.js.map"
+    "main.6878ab9b.js.map": "./static/js/main.6878ab9b.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.95c7735d.js"
+    "static/js/main.6878ab9b.js"
   ]
 }
