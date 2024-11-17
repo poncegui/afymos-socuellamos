@@ -1,4 +1,4 @@
-import auditiva from "../../juntaDirectiva/assets/images-chart-png/chart17.png";
+import auditiva from "../../juntaDirectiva/assets/images-chart-png/aliciaCollado.jpg";
 import fisioterapia from "../../juntaDirectiva/assets/images-chart-png/chart16.png";
 import introduccion from "../../centroDia/assets/images-centroDia/centroDia-6.jpg";
 import logopedia from "../../juntaDirectiva/assets/images-chart-png/chart13.png";
@@ -75,9 +75,8 @@ export const neuroPsicologiaData = {
     text: "NEUROPSICOLOGÍA: conoce cómo trabaja nuestra profesional, Alicia Collado",
   },
   headline:
-    "la neuropsicología estudia las bases neuroanatómicas en relación alos procesos mentales como: atención, emoción, memoria, lenguaje y percepción",
-  description:
-    "Dentro de mi equipo mi función es la de evaluar las capacidades cognitivas  y saber cuáles están fallando y cuales están “a tope”. Después planteo un programa de entrenamiento, o como otros compañeros llaman, rehabilitación, para trabajar en la mejora de aquellas áreas que se han quedado dañadas ono se han desarrollado a los niveles esperables para la edad. ",
+    "La Neuropsicología estudia las bases neuroanatómicas en relación a los procesos mentales como: atención, orientación, gnoxias, praxias, memoria,funciones ejecutivas y habilidades visoespaciales.",
+  description: "Dentro de mi equipo mi función es la de evaluar las capacidades cognitivas y saber cuáles están fallando y cuales están “a tope”. Después planteo un programa de entrenamiento, o como otros compañeros llaman, rehabilitación, para trabajar en la mejora de aquellas áreas que se han quedado dañadas o no se han desarrollado a los niveles esperables para la edad. Con los más pequeños (0-3 años) el trabajo se realiza desde la gaminifación, porque se aprende jugando. Con mayor edad, se trabaja con el Software Neuronup, una plataforma de neurorehabilitación ",
   img: neuroPiscologia,
   alt: "imagenneuropsicóloga",
 };
@@ -108,7 +107,7 @@ export const auditivaPsicologiaData = {
     "La terapia de estimulación auditiva SENA es un tratamiento cuyo objetivo es mejorar la percepción auditiva de la persona que lo recibe.",
 
   description:
-    "El procedimiento de esta terapia consiste en realizar una serie de pruebas; Ostoscopatía para comprobar el estado del canal auditivo, audiometría para evaluar el umbral auditivo y pruebas complementarias.La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios",
+    "El procedimiento de esta terapia consiste en realizar una serie de pruebas.  Otoscopia: para comprobar el estado del canal auditivo,  ⁠Audiometría tonal liminar: para evaluar el umbral auditivo  ⁠Pruebas complementarias. La terapia no es invasiva y consta de 10 sesiones continuadas de 45 minutos diarios. Está dirigido personas con:  Dificultades en el aprendizaje de aprendizaje. Personas con TEA o TDAH que presenten problemas en el procesamiento auditivo central.",
   img: auditiva,
   alt: "imagen psicóloga",
 };

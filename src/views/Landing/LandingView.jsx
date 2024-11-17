@@ -11,6 +11,7 @@ import DonationInformation from "./components/DonationInformation";
 import Footer from "../../components/Footer/Footer";
 import Modal from "../Landing/components/tePuedeInteresar/NewsInformation";
 import PartnertList from "../../components/Partners/PartnerList";
+import ProjectClubDeportivoAfymos from "./components/ProjectClubDeportivo";
 import ProjectCreaVideo from "./components/ProjectCreaVideo";
 import React from "react";
 import ScrollToTop from "../../components/ScrollToUp";
@@ -24,11 +25,12 @@ const LandingView = () => {
     <>
       <ScrollToTop />
       <TePuedeInteresar />
-      {/* <Modal /> */}
       <VideoLanding />
       <DonationInformation />
       <SectionServices />
+      {/* <Modal /> */}
       <CardsAboutUs />
+      <ProjectClubDeportivoAfymos />
       <Content {...heroOne} />
       <ProjectCreaVideo />
       <Content {...heroThree} />

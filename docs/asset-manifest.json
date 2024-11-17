@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.a8c111a5.js",
+    "main.js": "./static/js/main.fd807068.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/CARTEL URBAN CAMP 2024.png": "./static/media/CARTEL URBAN CAMP 2024.bb9a654d1fb4aad243ec.png",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
@@ -63,6 +63,7 @@
     "static/media/voluntariado1.jpg": "./static/media/voluntariado1.d29574c7c31a5df7e9dd.jpg",
     "static/media/apoyo-familias-2.jpg": "./static/media/apoyo-familias-2.aca377e4954f1b8ad83c.jpg",
     "static/media/nuevo-crea-actualizado.jpg": "./static/media/nuevo-crea-actualizado.a764cb7e32793c8d7737.jpg",
+    "static/media/clubDeportivo.jpg": "./static/media/clubDeportivo.508a30dc92ecdf6ca77f.jpg",
     "static/media/rafa.png": "./static/media/rafa.60a633a3bdc4b6dbc3e2.png",
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
     "static/media/vivienda-1.jpg": "./static/media/vivienda-1.ca2042692b2a1724b683.jpg",
@@ -78,6 +79,7 @@
     "static/media/vivienda-4.jpg": "./static/media/vivienda-4.4b2b92330e6560d4f7ce.jpg",
     "static/media/crea-2024.pdf": "./static/media/crea-2024.eb386bc8f8ce34bb6748.pdf",
     "static/media/dinero-removebg-preview.png": "./static/media/dinero-removebg-preview.823dd2fccafb1a0a693f.png",
+    "static/media/aliciaCollado.jpg": "./static/media/aliciaCollado.e1ba34f8761550339e03.jpg",
     "static/media/psicopedagogia.png": "./static/media/psicopedagogia.893767e7ba711e2e3d46.png",
     "static/media/grafico-2-removebg-preview.png": "./static/media/grafico-2-removebg-preview.d6e3f40ecc5fb3446d28.png",
     "static/media/apoyo-familias-4.jpg": "./static/media/apoyo-familias-4.bd9c2a63d8f26350c326.jpg",
@@ -122,10 +124,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.a8c111a5.js.map": "./static/js/main.a8c111a5.js.map"
+    "main.fd807068.js.map": "./static/js/main.fd807068.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.a8c111a5.js"
+    "static/js/main.fd807068.js"
   ]
 }

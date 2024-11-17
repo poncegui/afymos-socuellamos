@@ -9,7 +9,7 @@ const VideoNuevoCrea = () => {
       videoSrc="https://www.youtube.com/embed/HZ-Xvy2ZSsk"
       title="Proyecto CREA;"
       subtile="Nuestra filosofía:"
-      text="       Conoce nuestro Programa de Formación y Empleo para personas con
+      text="Conoce nuestro Programa de Formación y Empleo para personas con
       algún tipo de discapacidad en Socuéllamos."
     />
   );

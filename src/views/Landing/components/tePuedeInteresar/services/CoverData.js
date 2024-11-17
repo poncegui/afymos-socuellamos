@@ -3,9 +3,16 @@ import asevi from "../assets/images-noticias/adevi.jpg"
 import basket from "../assets/images-cover/somos-campeones.png";
 import capacity from "../assets/images-cover/semana-capacidad.png";
 import charlas from "../assets/images-cover/charlas-policia.png";
+import clubDeportivo from "../assets/images-noticias/clubDeportivo.jpg"
 import crea from "../assets/images-cover/proyecto-crea.jpg";
 
 export const coverData = [
+  {
+    id: 7,
+    name: "Nuevo Club Deportivo Afymos",
+    src: clubDeportivo,
+    alt: "club deportivo afymos",
+  },
   {
     id: 0,
     name: "Firmado acuerdo de colaboración con ADEVI y FEDA",
