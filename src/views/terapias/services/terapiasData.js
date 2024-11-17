@@ -3,7 +3,7 @@ import fisioterapia from "../../juntaDirectiva/assets/images-chart-png/chart16.p
 import introduccion from "../../centroDia/assets/images-centroDia/centroDia-6.jpg";
 import logopedia from "../../juntaDirectiva/assets/images-chart-png/chart13.png";
 import neuroPiscologia from "../assets/images-terapias/sala.png";
-import psicologia from "../../juntaDirectiva/assets/images-chart-png/chart14.png";
+import psicologia from "../../juntaDirectiva/assets/images-chart-png/beaPsicologa.jpg";
 import psicopedagogia from "../assets/images-terapias/combinada-2.png";
 import terapiaOcupacional from "../../juntaDirectiva/assets/images-chart-png/chart10.png";
 import visual from "../assets/images-terapias/visual.png";
@@ -135,9 +135,9 @@ export const psicologiaData = {
     text: "PSICOLOGÍA: conoce cómo trabaja nuestra profesional, Beatriz Henales",
   },
   headline:
-    "Me centro en la psicoeducación y en la reestructuración cognitiva. Busco favorecer los procesos de cambio y toma de decisiones para buscar una situación más adaptativa para la persona.",
+    "Me encanta trabajar con las personas y ayudarles en su proceso de cambio. Empatizo con cada persona y con sus necesidades, desde una perspectiva integradora, analizando el global de la persona y su entorno. Busco que las personas entiendan sus propios procesos y busquen su propia adaptación al medio, mitigando sus niveles de malestar.",
   description:
-    "A nivel psicoeducativo puedo ayudar a las personas a entender sus propios procesos, situaciones personales, patologías, etc, para facilitar su propia adaptación al medio y mitigar sus estados de ansiedad e incertidumbre.",
+    "Trabajo desde un modelo biopsicosocial, desde la psicoterapia integradora en trauma y apego con EMDR así como herramientas de la psicología cognitivo conductual a través de reestructuración cognitiva para trabajar con la persona su pasado, presente y futuro.",
   img: psicologia,
   alt: "imagen psicóloga",
 };
