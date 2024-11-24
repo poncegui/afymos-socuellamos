@@ -99,7 +99,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: ${({ inverse }) => (inverse ? "#6a6a6a" : "#c6b1c9")};
 `;
 

@@ -1,5 +1,5 @@
 import auditiva from "../../juntaDirectiva/assets/images-chart-png/aliciaCollado.jpg";
-import fisioterapia from "../../juntaDirectiva/assets/images-chart-png/chart16.png";
+import fisioterapia from "../../juntaDirectiva/assets/images-chart-png/amparoFisio.jpg";
 import introduccion from "../../centroDia/assets/images-centroDia/centroDia-6.jpg";
 import logopedia from "../../juntaDirectiva/assets/images-chart-png/logopedas.jpg";
 import neuroPiscologia from "../assets/images-terapias/sala.png";
@@ -27,12 +27,12 @@ export const logopediaData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "LOGOPEDIA: conoce cómo trabaja nuestras profesionales Cristina Olivares y Paula Ramírez",
+    text: "LOGOPEDIA: conoce cómo trabajan nuestras profesionales Cristina Olivares y Paula Ramírez",
   },
   headline:
-    "La logopedia es la disciplina sanitaria encargada de la prevención, detección, evaluación,diagnóstico y tratamiento de los trastornos implicados en la comunicación humana",
+  "La Logopedia es una disciplina que se ocupa del estudio, el diagnóstico, la rehabilitación y la prevención de los trastornos de la comunicación humana y funciones asociadas como son la deglución, la audición, etc. El campo de actuación es muy amplio abarcando desde la Atención Temprana en niños hasta la Tercera Edad, pasando por la adolescencia o la edad adulta. Por lo tanto se interviene en todas las etapas de la vida en las que se presenten alteraciones de la comunicación y el lenguaje desde los ámbitos sanitarios, socio – asistencial y educativo.",
   description:
-    "Realizo una entrevista con la familia y una evaluación inicial de la cual se elabora unos objetivos y se diseña una programación individual adaptada a cada paciente. Las sesiones son semanales e individualizadas con una duración de 30-45 minutos, dependiendo de las necesidades de cada paciente.",
+    "Para la Evaluación Logopédica se utilizan las siguientes herramientas: 1. Recolección de Información. 2. Anamnesis. 3. Observación. 4. Evaluación Inicial. 5. Aplicación de pruebas o test. 6. Programación y objetivos individuales y adaptados a las necesidades de cada paciente y de sus familiares y/o personas de referencia.",
   img: logopedia,
   alt: "imagen logopeda",
 };
@@ -45,9 +45,9 @@ export const fisioterapiaData = {
     text: "FISIOTERAPIA: conoce cómo trabaja nuestra profesional, Amparo Guerrero",
   },
   headline:
-    "La fisioterapia  ofrece tratamiento y rehabilitación física para diagnosticar, prevenir y tratar síntomas de múltiples patologías, tanto agudas como crónicas.",
+    "Nuestro principal objetivo es tu bienestar y tu recuperación. Nos importas tú y cómo te sientes frente al problema que ha aparecido. Recibirás atención individualizada, nos centraremos no solo en el dolor, sino también en las limitaciones que te produce, y cómo afecta esto a tu vida diaria..",
   description:
-    "En mi terapia llevo a cabo una valoración y diagnóstico de fisioterapia, teniendo en cuenta una visión general del problema, dolencia, patología, etc. Después, utilizo distintas técnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
+    "Durante nuestra terapia llevaremos a cabo una valoración y diagnóstico de fisioterapia, teniendo en cuenta una visión general del problema, dolencia, o patología. Y utilizaremos distintas técnicas de fisioterapia, para conseguir el mejor resultado en el menor tiempo posible.",
   img: fisioterapia,
   alt: "imagen fisioterapeuta",
 };

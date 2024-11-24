@@ -67,7 +67,7 @@ export const ListChartSection = styled.section`
 
 export const ContainerListChart = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
 
   @media (max-width: 440px) {
