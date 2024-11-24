@@ -1,10 +1,12 @@
 import ayuntamiento from "../assets/logo-ayuntamiento.png";
-import castillaLaMancha from "../assets/logo-castillaLaMancha.png";
+import castillaLaMancha from "../assets/sanidad.jpg";
 import diputacion from "../assets/logo-diputacion.png";
 import europa from "../assets/logo-europa.png";
+import fondosEuropeos from "../assets/fondosEuropeos.png";
 import globalcaja from "../assets/globalcaja.jpg";
 import gracias from "../assets/gracias.png";
 import inclusion from "../assets/logo-inclusion.png";
+import ministerioTrabajo from "../assets/ministerioTrabajo.jpg";
 import once from "../assets/fundacion-once.png";
 
 const target = "_blank";
@@ -75,6 +77,24 @@ export const partnersData = [
     url: "https://fundacionglobalcajahxxii.com/",
   },
   {
+    id:9,
+    name: "Agradecimiento a colaboradores",
+    logoSrc: ministerioTrabajo,
+    titleImg: "Ministerio de trabajo y sanidad!",
+    target: target,
+    alt: "Agradecimiento a colaboradores",
+    url: "https://www.mites.gob.es/",
+  },
+  {
+    id: 10,
+    name: "Fondos Europeos",
+    logoSrc: fondosEuropeos,
+    titleImg: "Fondos Europeos",
+    target: target,
+    alt: "Logo Fondos Europeos",
+    url: "https://european-union.europa.eu/live-work-study/funding-grants-subsidies_es",
+  },
+    {
     id: 8,
     name: "Agradecimiento a colaboradores",
     logoSrc: gracias,

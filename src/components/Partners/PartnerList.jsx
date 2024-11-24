@@ -70,7 +70,7 @@ export const SectionPartners = styled.div`
 export const ContainerParnertList = styled.div`
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   flex-direction: row-reverse;
   align-items: center;
