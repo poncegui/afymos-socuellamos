@@ -1,3 +1,4 @@
+import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
 import {
   heroOne,
   heroThree,
@@ -9,7 +10,7 @@ import ContactForm from "./components/contactForm/ContactForm";
 import { Content } from "../../components/Content/Content";
 import DonationInformation from "./components/DonationInformation";
 import Footer from "../../components/Footer/Footer";
-import Modal from "../Landing/components/tePuedeInteresar/NewsInformation";
+// import Modal from "../Landing/components/tePuedeInteresar/NewsInformation";
 import PartnertList from "../../components/Partners/PartnerList";
 import ProjectClubDeportivoAfymos from "./components/ProjectClubDeportivo";
 import ProjectCreaVideo from "./components/ProjectCreaVideo";
@@ -37,7 +38,9 @@ const LandingView = () => {
       <Testimonials />
       <Content {...heroTwo} />
       <ContactForm />
-      <PartnertList size inverse marginBottom />
+      <PartnertList size inverse marginBottom data={colaboradoresData} title='Socios Colaboradores' />
+      <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
+
       <Footer />
     </>
   );

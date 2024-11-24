@@ -1,16 +1,15 @@
 import PartnersCard from "./components/Partners";
 import React from "react";
 import TitleSection from "../TitleSection";
-import { partnersData } from "./services/partnersListData";
 import styled from "styled-components";
 
-const PartnerList = ({ size, inverse }) => {
+const PartnerList = ({ size, inverse, data, title }) => {
   return (
     <>
-      <TitleSection title="Cofinanciaciones" inverse={inverse} size={size} />
+      <TitleSection title={title} inverse={inverse} size={size} />
       <SectionPartners>
         <ContainerParnertList>
-          {partnersData.map((partner) => {
+          {data.map((partner) => {
             return (
               <PartnersCard
                 key={partner.id}
