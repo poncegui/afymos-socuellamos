@@ -2,13 +2,17 @@ import alexma from "../assets/Colaboradores/alexma.jpg";
 import alvatrans from "../assets/Colaboradores/alvatran.png";
 import ayuntamiento from "../assets/logo-ayuntamiento.png";
 import cabezuelo from "../assets/Colaboradores/cabezuelo.jpg";
+import caixa from "../assets/Colaboradores/caixa.png";
 import castillaLaMancha from "../assets/sanidad.jpg";
 import colegioLoreto from "../assets/Colaboradores/colegioLoreto.jpg";
 import cristoVega from "../assets/Colaboradores/cristoVega.jpg";
+import cruce from "../assets/Colaboradores/gasoleos.jpg";
 import cuevas from "../assets/Colaboradores/hnosCuevas.png";
 import dentista from "../assets/Colaboradores/clinicaDental.png";
 import diputacion from "../assets/logo-diputacion.png";
 import europa from "../assets/logo-europa.png";
+import explaga from "../assets/Colaboradores/explaga.jpg";
+import farmacia from "../assets/Colaboradores/farmacia.jpg";
 import fondosEuropeos from "../assets/fondosEuropeos.png";
 import globalcaja from "../assets/globalcaja.jpg";
 import gracias from "../assets/gracias.png";
@@ -16,8 +20,17 @@ import idearte from "../assets/Colaboradores/idearte.jpg";
 import inclusion from "../assets/logo-inclusion.png";
 import josmoral from "../assets/Colaboradores/Josmoral.jpg";
 import kiele from "../assets/Colaboradores/kiele.jpg";
+import kreategia from "../assets/Colaboradores/kreategia.png";
+import lucama from "../assets/Colaboradores/lucarma.jpg";
+import mapfre from "../assets/Colaboradores/mapfre.png";
+import metCris from "../assets/Colaboradores/metcris.jpg";
 import ministerioTrabajo from "../assets/ministerioTrabajo.jpg";
+import multiopticas from "../assets/Colaboradores/multiopticas.jpg";
 import once from "../assets/fundacion-once.png";
+import ots from '../assets/Colaboradores/ots.jpg'
+import pexpunte from "../assets/Colaboradores/pexpunte.jpg";
+import samu from "../assets/Colaboradores/samu.jpg";
+import siramar from "../assets/Colaboradores/satie.png";
 import telar from "../assets/Colaboradores/telar.jpg";
 import yolandaAlcolea from "../assets/Colaboradores/yolandaAlcolea.jpg";
 
@@ -25,13 +38,14 @@ const target = "_blank";
 
 export const colaboradoresData = [
   {
-    id: 1,
-    name: "Alexma",
-    logoSrc: alexma,
-    titleImg: "Alexma",
+
+    id:9,
+    name: "Idearte",
+    logoSrc: idearte,
+    titleImg: "Idearte",
     target: target,
-    alt: "Logo de Alexma",
-    url: "https://alexma.es/",
+    alt: "Idearte",
+    url: "https://www.idearteweb.com/",
   },
   {
     id: 2,
@@ -88,13 +102,13 @@ export const colaboradoresData = [
     url: "https://www.cuevasaragon.es/",
   },
   {
-    id:9,
-    name: "Idearte",
-    logoSrc: idearte,
-    titleImg: "Idearte",
+    id: 1,
+    name: "Alexma",
+    logoSrc: alexma,
+    titleImg: "Alexma",
     target: target,
-    alt: "Idearte",
-    url: "https://www.idearteweb.com/",
+    alt: "Logo de Alexma",
+    url: "https://alexma.es/",
   },
   {
     id: 10,
@@ -113,6 +127,152 @@ export const colaboradoresData = [
     target: target,
     alt: "Kiele",
     url: "https://www.kiele.es/es/",
+  },
+  {
+    id: 11,
+    name: "Kreategia",
+    logoSrc: kreategia,
+    titleImg: "Kreategia - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Kreategia",
+    url: "https://kreategia.com/",
+  },
+  {
+    id: 12,
+    name: "Lucarma",
+    logoSrc: lucama,
+    titleImg: "Lucarma - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Lucarma",
+    url: "https://www.lucarma.es/",
+  },
+  {
+    id: 13,
+    name: "Mapfre",
+    logoSrc: mapfre,
+    titleImg: "Mapfre - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Mapfre",
+    url: "https://www.mapfre.es/oficina/es_ES/socuellamos/L5097/",
+  },
+  {
+    id: 14,
+    name: "Metcris",
+    logoSrc: metCris,
+    titleImg: "Metcris - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Metcris",
+    url: "https://www.metcris.es/",
+  },
+  {
+    id: 15,
+    name: "Siramar Satie",
+    logoSrc: siramar,
+    titleImg: "Siramar Satie - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Siramar Satie",
+    url: "https://www.satie.es/",
+  },
+  {
+    id: 16,
+    name: "Multiopticas",
+    logoSrc: multiopticas,
+    titleImg: "Multiopticas - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Multiopticas",
+    url: "https://www.multiopticas.com/es/home/",
+  },
+  {
+    id: 17,
+    name: "Pex-Punte",
+    logoSrc: pexpunte,
+    titleImg: "Pex-Punte - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Pex-Punte",
+    url: "https://pex-punte.com/",
+  }
+  ,
+  {
+    id: 18,
+    name: "ExPlaga",
+    logoSrc: explaga,
+    titleImg: "ExPlaga - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de ExPlaga",
+    url: "https://www.explaga.es/",
+  },
+  {
+    id: 19,
+    name: "Samu y Leo",
+    logoSrc: samu,
+    titleImg: "Samu y Leo - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Samu y Leo",
+    url: "",
+  },
+
+  {
+    id: 20,
+    name: "Estacion de servicio el Cruce",
+    logoSrc: cruce,
+    titleImg: "Estacion de servicio el Cruce - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Estacion de servicio el Cruce",
+    url: "",
+  },
+  {
+    id: 21,
+    name: "Yolanda Alcolea - Carnes y embutidos",
+    logoSrc: yolandaAlcolea,
+    titleImg: "Yolanda Alcolea - Carnes y embutidos - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Yolanda Alcolea - Carnes y embutidos",
+    url: "",
+  },
+  {
+    id: 22,
+    name: "Farmacia Ramón Alarcón",
+    logoSrc: farmacia,
+    titleImg: "Farmacia Ramón Alarcón - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Farmacia Ramón Alarcón",
+    url: "",
+  },
+  {
+    id: 23,
+    name: "El telar de las Hadas",
+    logoSrc: telar,
+    titleImg: "El telar de las Hadas - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de El telar de las Hadas",
+    url: "",
+  },
+  {
+    id: 24,
+    name: "Globalcaja",
+    logoSrc: globalcaja,
+    titleImg: "Globalcaja - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Globalcaja",
+    url: "",
+  },
+  {
+    id: 25,
+    name: "La Caixa",
+    logoSrc: caixa,
+    titleImg: "La Caixa - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de La Caixa",
+    url: "",
+  },
+  {
+    id: 26,
+    name: "OTS",
+    logoSrc: ots,
+    titleImg: "OTS - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de OTS",
+    url: "",
   },
 ];
 

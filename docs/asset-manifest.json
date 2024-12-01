@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.a8153a4c.js",
+    "main.js": "./static/js/main.c7a64c91.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -22,6 +22,7 @@
     "static/media/chart6.png": "./static/media/chart6.ccc4dd8786995f0b2494.png",
     "static/media/chart10.png": "./static/media/chart10.fad3ceacf720f84c400c.png",
     "static/media/chart7.png": "./static/media/chart7.232decf49b1a519a4541.png",
+    "static/media/ots.jpg": "./static/media/ots.a3381216ff8fba8e85f3.jpg",
     "static/media/chart19.png": "./static/media/chart19.beb1c1ddea3eb2331372.png",
     "static/media/gimnasio.jpg": "./static/media/gimnasio.4e04c626d6463bab502e.jpg",
     "static/media/chart2.png": "./static/media/chart2.ac50fe831b9a4bb56af7.png",
@@ -52,6 +53,7 @@
     "static/media/visual.png": "./static/media/visual.9132254bb3048823a14b.png",
     "static/media/plan-voluntariado-2022-2024.pdf": "./static/media/plan-voluntariado-2022-2024.3bfa01a37d2018fd31fc.pdf",
     "static/media/centroDia-2.jpg": "./static/media/centroDia-2.262a1ab97aee6eb9e254.jpg",
+    "static/media/satie.png": "./static/media/satie.c982bd3cfc9b78d38c63.png",
     "static/media/informe-auditoria-viviendas-apoyo-2023.pdf": "./static/media/informe-auditoria-viviendas-apoyo-2023.5f96dc8d75070c9c5bee.pdf",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/informe-auditoria-centro-dia-2024.pdf": "./static/media/informe-auditoria-centro-dia-2024.a36cc05e8e98609bc710.pdf",
@@ -68,12 +70,15 @@
     "static/media/rafa.png": "./static/media/rafa.60a633a3bdc4b6dbc3e2.png",
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
     "static/media/vocal7.jpg": "./static/media/vocal7.8023c3057937f3884897.jpg",
+    "static/media/multiopticas.jpg": "./static/media/multiopticas.f15e6687bb022158ca0b.jpg",
     "static/media/vivienda-1.jpg": "./static/media/vivienda-1.ca2042692b2a1724b683.jpg",
+    "static/media/gasoleos.jpg": "./static/media/gasoleos.8e41106f6f6c28b79f29.jpg",
     "static/media/formacion-3.png": "./static/media/formacion-3.cf82540cee0bf4f87dbd.png",
     "static/media/chart20.jpg": "./static/media/chart20.f593ceebdd26b0970b0d.jpg",
     "static/media/amparoFisio.jpg": "./static/media/amparoFisio.bd371bc854e5f68f8927.jpg",
     "static/media/apoyo-familias-3.jpg": "./static/media/apoyo-familias-3.1c0a46cca1c1fc3d8cba.jpg",
     "static/media/cristoVega.jpg": "./static/media/cristoVega.a8bde6daf828fbcf3786.jpg",
+    "static/media/kreategia.png": "./static/media/kreategia.48c4ff846946cf166cb6.png",
     "static/media/beaPsicologa.jpg": "./static/media/beaPsicologa.c17cfee35b7e66718c93.jpg",
     "static/media/organigrama.pdf": "./static/media/organigrama.2ebed92c873541755320.pdf",
     "static/media/rafa.jpg": "./static/media/rafa.5f8a302f0f8a0bf2c8b7.jpg",
@@ -105,10 +110,12 @@
     "static/media/psicologa.png": "./static/media/psicologa.2ac80fd8ae5aadef28b1.png",
     "static/media/sociolaboral.jpg": "./static/media/sociolaboral.96c8118f618f1b3a93ae.jpg",
     "static/media/terapia-visual.png": "./static/media/terapia-visual.d99b998548ffff566dbd.png",
+    "static/media/pexpunte.jpg": "./static/media/pexpunte.44139f9fe88634fb3ec6.jpg",
     "static/media/terapia-auditiva.png": "./static/media/terapia-auditiva.ab4961b8f235b0a2ab6c.png",
     "static/media/quico.png": "./static/media/quico.19a957b9002f9787fea7.png",
     "static/media/terapeuta-ocupacional.png": "./static/media/terapeuta-ocupacional.8f11e89651b9edb867df.png",
     "static/media/logo-inclusion.png": "./static/media/logo-inclusion.72fd29222dc5dd544bbb.png",
+    "static/media/metcris.jpg": "./static/media/metcris.79f3c3c362b3a58607dd.jpg",
     "static/media/fisioterapeuta.png": "./static/media/fisioterapeuta.e41225843d7193a6d76a.png",
     "static/media/logo-afymos.png": "./static/media/logo-afymos.665bbd9817f1c58a0ddb.png",
     "static/media/globalcaja.jpg": "./static/media/globalcaja.e3f7605e3965e22b5058.jpg",
@@ -118,6 +125,7 @@
     "static/media/nuevo-crea-noticia.pdf": "./static/media/nuevo-crea-noticia.ef9c28ed281d8b0615e6.pdf",
     "static/media/familia.png": "./static/media/familia.f35f003819ca2e1ca904.png",
     "static/media/telar.jpg": "./static/media/telar.5d7818a720ae564062e3.jpg",
+    "static/media/samu.jpg": "./static/media/samu.997cb1f9a8dd295e6e2c.jpg",
     "static/media/proteger.png": "./static/media/proteger.0d9f7f7eb08b06cddc53.png",
     "static/media/vivienda-social.png": "./static/media/vivienda-social.2758f70a7aef3142dc2b.png",
     "static/media/organigrama.png": "./static/media/organigrama.b0d2edcb13a394f7db9d.png",
@@ -137,10 +145,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.a8153a4c.js.map": "./static/js/main.a8153a4c.js.map"
+    "main.c7a64c91.js.map": "./static/js/main.c7a64c91.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.a8153a4c.js"
+    "static/js/main.c7a64c91.js"
   ]
 }
