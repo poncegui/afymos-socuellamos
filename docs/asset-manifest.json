@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.c7a64c91.js",
+    "main.js": "./static/js/main.bba4b28c.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -22,6 +22,7 @@
     "static/media/chart6.png": "./static/media/chart6.ccc4dd8786995f0b2494.png",
     "static/media/chart10.png": "./static/media/chart10.fad3ceacf720f84c400c.png",
     "static/media/chart7.png": "./static/media/chart7.232decf49b1a519a4541.png",
+    "static/media/doctor_bait.jpg": "./static/media/doctor_bait.c0c1ee2df177c688746f.jpg",
     "static/media/ots.jpg": "./static/media/ots.a3381216ff8fba8e85f3.jpg",
     "static/media/chart19.png": "./static/media/chart19.beb1c1ddea3eb2331372.png",
     "static/media/gimnasio.jpg": "./static/media/gimnasio.4e04c626d6463bab502e.jpg",
@@ -124,6 +125,7 @@
     "static/media/fondosEuropeos.png": "./static/media/fondosEuropeos.96ac4b633a1c17415061.png",
     "static/media/nuevo-crea-noticia.pdf": "./static/media/nuevo-crea-noticia.ef9c28ed281d8b0615e6.pdf",
     "static/media/familia.png": "./static/media/familia.f35f003819ca2e1ca904.png",
+    "static/media/luis_navarro_e_hijos.png": "./static/media/luis_navarro_e_hijos.7d56e46f476cb38c09ef.png",
     "static/media/telar.jpg": "./static/media/telar.5d7818a720ae564062e3.jpg",
     "static/media/samu.jpg": "./static/media/samu.997cb1f9a8dd295e6e2c.jpg",
     "static/media/proteger.png": "./static/media/proteger.0d9f7f7eb08b06cddc53.png",
@@ -135,6 +137,7 @@
     "static/media/promocion.png": "./static/media/promocion.e0f013d28e2219455b1f.png",
     "static/media/apoyo.png": "./static/media/apoyo.ecc494d21d9b57160f10.png",
     "static/media/contabilidad.png": "./static/media/contabilidad.9fd6d39a7ec44cc6b43f.png",
+    "static/media/euroviane.jpg": "./static/media/euroviane.2d1334bd79c2861395a9.jpg",
     "static/media/afymos-show.jpg": "./static/media/afymos-show.8a888d7e5ae573755c85.jpg",
     "static/media/logo-diputacion.png": "./static/media/logo-diputacion.0a4371a2c02713e61274.png",
     "static/media/gracias.png": "./static/media/gracias.39137f29f9e9d32fc388.png",
@@ -145,10 +148,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.c7a64c91.js.map": "./static/js/main.c7a64c91.js.map"
+    "main.bba4b28c.js.map": "./static/js/main.bba4b28c.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.c7a64c91.js"
+    "static/js/main.bba4b28c.js"
   ]
 }

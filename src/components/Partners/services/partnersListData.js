@@ -1,6 +1,7 @@
 import alexma from "../assets/Colaboradores/alexma.jpg";
 import alvatrans from "../assets/Colaboradores/alvatran.png";
 import ayuntamiento from "../assets/logo-ayuntamiento.png";
+import bait from "../assets/Colaboradores/doctor_bait.jpg";
 import cabezuelo from "../assets/Colaboradores/cabezuelo.jpg";
 import caixa from "../assets/Colaboradores/caixa.png";
 import castillaLaMancha from "../assets/sanidad.jpg";
@@ -11,10 +12,12 @@ import cuevas from "../assets/Colaboradores/hnosCuevas.png";
 import dentista from "../assets/Colaboradores/clinicaDental.png";
 import diputacion from "../assets/logo-diputacion.png";
 import europa from "../assets/logo-europa.png";
+import euroviane from "../assets/Colaboradores/euroviane.jpg";
 import explaga from "../assets/Colaboradores/explaga.jpg";
 import farmacia from "../assets/Colaboradores/farmacia.jpg";
 import fondosEuropeos from "../assets/fondosEuropeos.png";
 import globalcaja from "../assets/globalcaja.jpg";
+import globalcajaVerde from "../assets/Colaboradores/globalcaja_verde.jpg"
 import gracias from "../assets/gracias.png";
 import idearte from "../assets/Colaboradores/idearte.jpg";
 import inclusion from "../assets/logo-inclusion.png";
@@ -26,6 +29,7 @@ import mapfre from "../assets/Colaboradores/mapfre.png";
 import metCris from "../assets/Colaboradores/metcris.jpg";
 import ministerioTrabajo from "../assets/ministerioTrabajo.jpg";
 import multiopticas from "../assets/Colaboradores/multiopticas.jpg";
+import navarro from "../assets/Colaboradores/luis_navarro_e_hijos.png";
 import once from "../assets/fundacion-once.png";
 import ots from '../assets/Colaboradores/ots.jpg'
 import pexpunte from "../assets/Colaboradores/pexpunte.jpg";
@@ -250,7 +254,7 @@ export const colaboradoresData = [
   {
     id: 24,
     name: "Globalcaja",
-    logoSrc: globalcaja,
+    logoSrc: globalcajaVerde,
     titleImg: "Globalcaja - Ayudando a la comunidad",
     target: target,
     alt: "Logo de Globalcaja",
@@ -273,6 +277,34 @@ export const colaboradoresData = [
     target: target,
     alt: "Logo de OTS",
     url: "",
+  },
+  {
+    id: 27,
+    name: "Luis Navarro e Hijos",
+    logoSrc: navarro,
+    titleImg: "Luis Navarro e Hijos - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Luis Navarro e Hijos",
+    url: "https://luisnavarroehijos.com/",
+  },
+  {
+    id: 28,
+    name: "Doctor Bait",
+    logoSrc: bait,
+    titleImg: "Doctor Bait - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Doctor Bait",
+    url: "https://www.doctorbait.es/",
+  }
+  ,
+  {
+    id: 29,
+    name: "Euroviane",
+    logoSrc: euroviane,
+    titleImg: "Euroviane - Ayudando a la comunidad",
+    target: target,
+    alt: "Logo de Euroviane",
+    url: "https://www.euroviane.es/",
   },
 ];
 
