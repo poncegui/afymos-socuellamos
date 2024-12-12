@@ -1,3 +1,4 @@
+import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
 import {
   nosotrosDataOne,
   nosotrosDataThree,
@@ -7,7 +8,7 @@ import {
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
 import NavBarViews from "../../components/Header/NavBarViews";
-import PartnersList from "../../components/Partners/PartnerList";
+import PartnertList from "../../components/Partners/PartnerList";
 import { React } from "react";
 import TitleSection from "../../components/TitleSection";
 import UnDiaEnAfymos from "./components/UndiaEnAfymosVideo";
@@ -21,7 +22,8 @@ const Nosotros = () => {
       <ContentProjects {...nosotrosDataTwo} reverse />
       <ContentProjects {...nosotrosDataThree} inverse />
       <UnDiaEnAfymos wrapReverse />
-      <PartnersList inverse />
+      <PartnertList size inverse  marginBottom data={colaboradoresData} title='Socios Colaboradores' />
+      <PartnertList size  marginBottom data={partnersData} title='Cofinanciaciones'/>
       <Footer />
     </>
   );

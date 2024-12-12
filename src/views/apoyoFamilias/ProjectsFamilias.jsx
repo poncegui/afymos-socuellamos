@@ -1,3 +1,4 @@
+import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
 import { familyDataOne, familyDataTwo } from "./services/familiasData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
@@ -16,7 +17,8 @@ const ProjectsFamilias = () => {
       <TitleSection title="Apoyo a familiares" size />
       <ContentProjects {...familyDataOne} inverse />
       <ContentProjects {...familyDataTwo} reverse />
-      <PartnersList />
+      <PartnersList size  marginBottom data={colaboradoresData} title='Socios Colaboradores' />
+      <PartnersList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
       <Footer />
     </>
   );

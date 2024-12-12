@@ -9,11 +9,12 @@ import {
   terapiaOcupacionalData,
   visualPedagogíaData,
 } from "./services/terapiasData";
+import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
 import NavBarViews from "../../components/Header/NavBarViews";
-import PartnersList from "../../components/Partners/PartnerList";
+import PartnertList from "../../components/Partners/PartnerList";
 import ProjectsIntro from "./components/ProjectsIntro";
 import { React } from "react";
 import ScrollToTop from "../../components/ScrollToUp";
@@ -33,7 +34,8 @@ const ProjectsTerapias = () => {
       <ContentProjects {...auditivaPsicologiaData} reverse />
       <ContentProjects {...visualPedagogíaData} inverse />
       <ContentProjects {...psicologiaData} reverse />
-      <PartnersList />
+      <PartnertList size  marginBottom data={colaboradoresData} title='Socios Colaboradores' />
+      <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
       <Footer />
     </>
   );

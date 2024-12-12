@@ -1,3 +1,4 @@
+import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
 import {
   formacionDataOne,
   formacionDataThree,
@@ -8,7 +9,7 @@ import { Content } from "../../components/Content/Content";
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
 import NavBarViews from "../../components/Header/NavBarViews";
-import PartnersList from "../../components/Partners/PartnerList";
+import PartnertList from "../../components/Partners/PartnerList";
 import { React } from "react";
 import ScrollToTop from "../../components/ScrollToUp";
 import TitleSection from "../../components/TitleSection";
@@ -22,7 +23,8 @@ const ProjectsFormacion = () => {
       <ContentProjects {...formacionDataOne} inverse />
       <Content {...formacionDataTwo} reverse />
       <ContentProjects {...formacionDataThree} inverse />
-      <PartnersList />
+      <PartnertList size  marginBottom data={colaboradoresData} title='Socios Colaboradores' />
+      <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
       <Footer />
     </>
   );

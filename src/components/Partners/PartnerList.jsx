@@ -9,7 +9,7 @@ const PartnerList = ({ size, inverse, data, title }) => {
       <TitleSection title={title} inverse={inverse} size={size} />
       <SectionPartners>
         <ContainerParnertList>
-          {data.map((partner) => {
+          {data?.map(partner=> {
             return (
               <PartnersCard
                 key={partner.id}
