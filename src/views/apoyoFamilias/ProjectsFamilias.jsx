@@ -23,5 +23,4 @@ const ProjectsFamilias = () => {
     </>
   );
 };
-
 export default ProjectsFamilias;

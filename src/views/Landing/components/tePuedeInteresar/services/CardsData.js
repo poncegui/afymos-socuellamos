@@ -3,7 +3,7 @@ import events from "../assets/icons/face-smile-wink-solid.svg";
 import graduation from "../assets/icons/graduation.svg";
 import pdf from '../assets/images-noticias/crea-2024/nuevo-crea-noticia.pdf';
 // import podcast from "../assets/icons/spotify.svg";
-import podcast2 from "../assets/images-cover/afymos-show.jpg";
+import podcast2 from "../../../assets/images-cover/afymos-show.jpg";
 
 export const cardsServiceData = [
   {

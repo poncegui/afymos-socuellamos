@@ -266,7 +266,7 @@ const IntroductionView = () => {
           ))}
         </SocialIconsContainer>
       </IntroductionViewContainer>
-      <CoverImages />
+      {/* <CoverImages /> */}
       <Informacion />
     </>
   );

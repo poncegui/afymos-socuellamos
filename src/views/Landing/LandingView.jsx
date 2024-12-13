@@ -6,6 +6,7 @@ import {
 } from "./components/services/landingBlocksData";
 
 import CardsAboutUs from "./components/CardsAboutUs";
+import Carousel from "../../components/Carousel/Carousel";
 import ContactForm from "./components/contactForm/ContactForm";
 import { Content } from "../../components/Content/Content";
 import DonationInformation from "./components/DonationInformation";
@@ -17,15 +18,17 @@ import ProjectCreaVideo from "./components/ProjectCreaVideo";
 import React from "react";
 import ScrollToTop from "../../components/ScrollToUp";
 import SectionServices from "./components/SectionServices";
-import TePuedeInteresar from "../Landing/components/tePuedeInteresar/TePuedeInteresar";
+// import TePuedeInteresar from "../Landing/components/tePuedeInteresar/TePuedeInteresar";
 import Testimonials from "./components/testimonials/Testimonials";
 import VideoLanding from "./components/VideoLanding";
+import { items } from "./services/CaruselData";
 
 const LandingView = () => {
   return (
     <>
       <ScrollToTop />
-      <TePuedeInteresar />
+      {/* <TePuedeInteresar /> */}
+      <Carousel items={items} />
       <VideoLanding />
       <DonationInformation />
       <SectionServices />
@@ -40,7 +43,6 @@ const LandingView = () => {
       <ContactForm />
       <PartnertList size inverse marginBottom data={colaboradoresData} title='Socios Colaboradores' />
       <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
-
       <Footer />
     </>
   );
