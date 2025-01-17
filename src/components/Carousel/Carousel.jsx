@@ -131,7 +131,7 @@ const Carousel = ({ items }) => {
 
   return (
     <CarouselContainer>
-      <Title>Las mejores experiencias del mundo</Title>
+      <Title>Noticias</Title>
       <CarouselWrapper>
         <ButtonsWrapper>
           <Button onClick={handlePrev} disabled={currentIndex === 0}>

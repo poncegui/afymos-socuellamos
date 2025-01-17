@@ -1,7 +1,7 @@
 import charlas from "../assets/icons/comment-regular.svg";
 import events from "../assets/icons/face-smile-wink-solid.svg";
 import graduation from "../assets/icons/graduation.svg";
-import pdf from '../assets/images-noticias/crea-2024/crea_2025_bis.pdf';
+import pdf from './crea_2025.pdf'
 // import podcast from "../assets/icons/spotify.svg";
 import podcast2 from "../../../assets/images-cover/afymos-show.jpg";
 
