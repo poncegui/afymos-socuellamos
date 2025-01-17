@@ -1,5 +1,5 @@
 import creaOne from "../assets/proyecto-crea/nuevo-crea-actualizado.jpg";
-import creaThree from "../assets/proyecto-crea/crea2024-2.png";
+import creaThree from "../assets/proyecto-crea/nuevo_crea_2025.jpg";
 import creaTwo from "../assets/proyecto-crea/logos.jpg";
 
 export const creaDataOne = {
@@ -7,7 +7,7 @@ export const creaDataOne = {
   reverse: true,
   inverse: false,
   topLine: {
-    text: "Proyecto CREA 2024",
+    text: "Proyecto CREA 2025",
   },
   headline:
     "Financiado por la Junta de Comunidades de Castilla La Mancha y el SEPE",
@@ -24,9 +24,9 @@ export const creaDataTwo = {
     text: "Empresas que hacen posible este programa",
   },
   headline:
-    "Durante 6 meses, de abril a septiembre, 8 personas con discapacidad trabajan en 7 empresas locales;",
+    "Durante 14 semanas,, de abril a noviembre, Formación, se impartirá el certificado de profesionalidad “Operaciones auxiliares de servicios administrativos y generales",
   description:
-    "Colegio Concertado Virgen de Loreto, Cabezuelo Foods, Grupo Asesor OTS, Josmoral, Transportes Félix e hijos, Cooperativa Cristo de la Vega y Afymos Asociación, con un contrato de formación en alternancia con el empleo. Simultáneamente, se imparte una especialidad formativa de “Operaciones Auxiliares en el Departamento de Administración y Recepción para Personas con Discapacidad Intelectual”.",
+    "La persona contratada contará con el apoyo de un preparador laboral que guiará las tareas que deberá realizar en su puesto de trabajo, así como las adaptaciones necesarias..",
   img: creaTwo,
 };
 
@@ -35,12 +35,12 @@ export const creaDataThree = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "Conoce nuestro nuevo programa 20024",
+    text: "Conoce nuestro nuevo programa 2025",
   },
-  headline: "¿QUÉ ES EL NUEVO CREA 2024?",
+  headline: "¿QUÉ ES EL NUEVO CREA 2025?",
   description:
     "Es un proyecto de FORMACIÓN DUAL, que combina formación profesional para el empleo con trabajo efectivo en la empresa, formalizado con un contrato de formación en alternancia con el empleo..",
   img: creaThree,
   buttonLabel: "Descarga Información",
-  href: "#/crea2024",
+  href: "#/crea2025",
 };

@@ -203,8 +203,8 @@ const ContactButtonContainer = styled.div`
   @media (min-width: 900px) {
     margin: 0 15px;
   }
-
 `;
+
 
 const IntroductionView = () => {
   return (

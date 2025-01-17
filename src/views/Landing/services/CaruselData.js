@@ -7,7 +7,6 @@ import crea from "../assets/images-cover/crea-2024.jpg";
 import infanta from "../assets/images-cover/infanta.jpg";
 
 // import asevi from "../assets/images-noticias/adevi.jpg"
- 
 
 
 export const items = [

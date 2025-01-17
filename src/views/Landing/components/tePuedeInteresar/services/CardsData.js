@@ -1,7 +1,7 @@
 import charlas from "../assets/icons/comment-regular.svg";
 import events from "../assets/icons/face-smile-wink-solid.svg";
 import graduation from "../assets/icons/graduation.svg";
-import pdf from '../assets/images-noticias/crea-2024/nuevo-crea-noticia.pdf';
+import pdf from '../assets/images-noticias/crea-2024/crea_2025_bis.pdf';
 // import podcast from "../assets/icons/spotify.svg";
 import podcast2 from "../../../assets/images-cover/afymos-show.jpg";
 
@@ -10,7 +10,7 @@ export const cardsServiceData = [
     key: 1,
     title: "THE AFYMOS SHOW PODCAST",
     description:
-      "Alumnos y trabajadores nos cuentan su experiencia en el NUEVO CREA 2024.",
+      "Alumnos y trabajadores nos cuentan su experiencia en el NUEVO CREA 2025.",
     image: podcast2,
     alt: "!Afymos estrena podcast!",
     url: "https://acortar.link/RGYfzQ",
@@ -18,7 +18,7 @@ export const cardsServiceData = [
   },
   {
     key: 2,
-    title: "PROYECTO NUEVO CREA 2024",
+    title: "NUEVO CREA 2025",
     description:
       "Afymos es entidad promotora del Proyecto de Formación y Empleo en el seno de la empresa NUEVO CREA",
     image: graduation,

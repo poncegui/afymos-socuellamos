@@ -18,7 +18,7 @@ import ProjectCreaVideo from "./components/ProjectCreaVideo";
 import React from "react";
 import ScrollToTop from "../../components/ScrollToUp";
 import SectionServices from "./components/SectionServices";
-// import TePuedeInteresar from "../Landing/components/tePuedeInteresar/TePuedeInteresar";
+import TePuedeInteresar from "../Landing/components/tePuedeInteresar/TePuedeInteresar";
 import Testimonials from "./components/testimonials/Testimonials";
 import VideoLanding from "./components/VideoLanding";
 import { items } from "./services/CaruselData";
@@ -27,7 +27,7 @@ const LandingView = () => {
   return (
     <>
       <ScrollToTop />
-      {/* <TePuedeInteresar /> */}
+      <TePuedeInteresar />
       <Carousel items={items} />
       <VideoLanding />
       <DonationInformation />

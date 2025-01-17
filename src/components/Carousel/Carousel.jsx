@@ -2,53 +2,6 @@ import React, { useState } from "react";
 
 import styled from "styled-components";
 
-const Carousel = ({ items }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const handlePrev = () => {
-      setCurrentIndex((prev) => Math.max(prev - 1, 0));
-    };
-    const handleNext = () => {
-      setCurrentIndex((prev) => Math.min(prev + 1, items.length - 1));
-    };
-    const translate = -(currentIndex * 100);
-    return (
-      <CarouselContainer>
-        <Title>Nuestro panel de Noticias</Title>
-        <CarouselWrapper>
-          <ButtonsWrapper>
-            <Button onClick={handlePrev} disabled={currentIndex === 0}>
-              &#8249;
-            </Button>
-            <Button onClick={handleNext} disabled={currentIndex === items.length - 1}>
-              &#8250;
-            </Button>
-          </ButtonsWrapper>
-          <CarouselContent translate={translate}>
-            {items.map((item, index) => (
-              <CarouselItem key={index}>
-                <img src={item.image} alt={item.title} />
-                <div className="icon">▶</div>
-                <div className="overlay">{item.title}</div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </CarouselWrapper>
-        <Pagination>
-          {items.map((_, index) => (
-            <div
-              key={index}
-              className={`dot ${currentIndex === index ? "active" : ""}`}
-              onClick={() => setCurrentIndex(index)}
-            ></div>
-          ))}
-        </Pagination>
-      </CarouselContainer>
-    );
-  };
-
-  export default Carousel;
-
 const CarouselContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -72,6 +25,7 @@ const CarouselWrapper = styled.div`
   overflow: hidden;
   width: 100%;
   position: relative;
+  height: 500px; 
 `;
 
 const CarouselContent = styled.div`
@@ -80,6 +34,7 @@ const CarouselContent = styled.div`
   transform: translateX(${(props) => props.translate}%);
   width: fit-content;
 `;
+
 
 const CarouselItem = styled.div`
   position: relative;
@@ -106,37 +61,9 @@ const CarouselItem = styled.div`
 
   img {
     width: 100%;
-    height: 100%; /* Ajuste importante */
-    object-fit: cover; /* Escalado para evitar deformación */
+    height: 100%;
+    object-fit: cover; 
     display: block;
-  }
-
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-    padding: 1rem;
-    color: white;
-    text-align: left;
-    font-size: 1.2rem;
-  }
-
-  .icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    cursor: pointer;
   }
 `;
 
@@ -179,12 +106,64 @@ const Pagination = styled.div`
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    background-color: #ccc;
+    background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
 
     &.active {
-      background-color: #007bff;
+      background-color: #071c2f;
     }
   }
 `;
+
+const Carousel = ({ items }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => Math.max(prev - 1, 0));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => Math.min(prev + 1, items.length - 1));
+  };
+
+  const translate = -(currentIndex * 100);
+
+  return (
+    <CarouselContainer>
+      <Title>Las mejores experiencias del mundo</Title>
+      <CarouselWrapper>
+        <ButtonsWrapper>
+          <Button onClick={handlePrev} disabled={currentIndex === 0}>
+            &#8249;
+          </Button>
+          <Button onClick={handleNext} disabled={currentIndex === items.length - 1}>
+            &#8250;
+          </Button>
+        </ButtonsWrapper>
+        <CarouselContent translate={translate}>
+          {items.map((item, index) => (
+            <CarouselItem key={index}>
+              <div className="image-wrapper">
+                <img src={item.image} alt={item.title} />
+              </div>
+              <div className="icon">▶</div>
+              <div className="overlay">{item.title}</div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </CarouselWrapper>
+      <Pagination>
+        {items.map((_, index) => (
+          <div
+            key={index}
+            className={`dot ${currentIndex === index ? "active" : ""}`}
+            onClick={() => setCurrentIndex(index)}
+          ></div>
+        ))}
+      </Pagination>
+    </CarouselContainer>
+  );
+};
+
+export default Carousel;

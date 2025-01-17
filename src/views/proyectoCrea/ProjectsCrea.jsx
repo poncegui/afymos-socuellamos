@@ -14,7 +14,7 @@ const ProjectsCrea = () => {
   return (
     <>
       <ScrollToTop />
-      <NavBarViews title="Proyecto CREA 2024" />
+      <NavBarViews title="Proyecto CREA 2025" />
       <ContentProjects {...creaDataOne} inverse />
       <Content {...creaDataThree} inverse />
       <ContentProjects {...creaDataTwo} reverse />
