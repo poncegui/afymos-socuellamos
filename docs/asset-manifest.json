@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.ebba0cba.js",
+    "main.js": "./static/js/main.8c7b2ac6.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -52,6 +52,7 @@
     "static/media/visual.png": "./static/media/visual.9132254bb3048823a14b.png",
     "static/media/plan-voluntariado-2022-2024.pdf": "./static/media/plan-voluntariado-2022-2024.3bfa01a37d2018fd31fc.pdf",
     "static/media/centroDia-2.jpg": "./static/media/centroDia-2.262a1ab97aee6eb9e254.jpg",
+    "static/media/planIgualdad.pdf": "./static/media/planIgualdad.e2e33b41d19d23b777cd.pdf",
     "static/media/satie.png": "./static/media/satie.c982bd3cfc9b78d38c63.png",
     "static/media/familia-afymos.png": "./static/media/familia-afymos.94c7dbadc04bb054e09b.png",
     "static/media/informe-auditoria-viviendas-apoyo-2023.pdf": "./static/media/informe-auditoria-viviendas-apoyo-2023.5f96dc8d75070c9c5bee.pdf",
@@ -148,10 +149,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.ebba0cba.js.map": "./static/js/main.ebba0cba.js.map"
+    "main.8c7b2ac6.js.map": "./static/js/main.8c7b2ac6.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.ebba0cba.js"
+    "static/js/main.8c7b2ac6.js"
   ]
 }
