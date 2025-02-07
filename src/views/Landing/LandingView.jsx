@@ -13,6 +13,7 @@ import DonationInformation from "./components/DonationInformation";
 import Footer from "../../components/Footer/Footer";
 // import Modal from "../Landing/components/tePuedeInteresar/NewsInformation";
 import PartnertList from "../../components/Partners/PartnerList";
+import PlanDeIgualdad from "../Landing/components/tePuedeInteresar/PlanDeIgualdad";
 import ProjectClubDeportivoAfymos from "./components/ProjectClubDeportivo";
 import ProjectCreaVideo from "./components/ProjectCreaVideo";
 import React from "react";
@@ -35,6 +36,7 @@ const LandingView = () => {
       {/* <Modal /> */}
       <CardsAboutUs />
       <ProjectClubDeportivoAfymos />
+      <PlanDeIgualdad />
       <Content {...heroOne} />
       <ProjectCreaVideo />
       <Content {...heroThree} />

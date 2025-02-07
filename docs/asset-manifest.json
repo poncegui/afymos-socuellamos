@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.8c7b2ac6.js",
+    "main.js": "./static/js/main.66b44c65.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -11,6 +11,7 @@
     "static/media/chartTeam1.jpg": "./static/media/chartTeam1.0b6f4e3740dda26671ae.jpg",
     "static/media/centroDia-4.jpg": "./static/media/centroDia-4.5cbe31dc0faf914e5ace.jpg",
     "static/media/plan-estrategico-2023-2024.pdf": "./static/media/plan-estrategico-2023-2024.4407cb2af2b727ce3bc2.pdf",
+    "static/media/diverses.pdf": "./static/media/diverses.ef3a2983cb154e26c404.pdf",
     "static/media/donaciones.png": "./static/media/donaciones.fb7b5136f5af17a31bb8.png",
     "static/media/chart3.png": "./static/media/chart3.28db4cfc8b4396d652c4.png",
     "static/media/chart11.png": "./static/media/chart11.8703d6b1a5f35108e519.png",
@@ -55,6 +56,7 @@
     "static/media/planIgualdad.pdf": "./static/media/planIgualdad.e2e33b41d19d23b777cd.pdf",
     "static/media/satie.png": "./static/media/satie.c982bd3cfc9b78d38c63.png",
     "static/media/familia-afymos.png": "./static/media/familia-afymos.94c7dbadc04bb054e09b.png",
+    "static/media/compromiso.pdf": "./static/media/compromiso.e591acfec001d7e31e57.pdf",
     "static/media/informe-auditoria-viviendas-apoyo-2023.pdf": "./static/media/informe-auditoria-viviendas-apoyo-2023.5f96dc8d75070c9c5bee.pdf",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/charlas.png": "./static/media/charlas.9632c0261383e958972a.png",
@@ -62,6 +64,7 @@
     "static/media/nuevo_crea_2025.jpg": "./static/media/nuevo_crea_2025.3bc163359d71266fdac5.jpg",
     "static/media/club-deportivo.jpg": "./static/media/club-deportivo.9dc81fe9f3419cebdcda.jpg",
     "static/media/infanta.jpg": "./static/media/infanta.f4aaf5f749ba4df8f339.jpg",
+    "static/media/protocoloPrevencion.pdf": "./static/media/protocoloPrevencion.e971d9b345b8b793c809.pdf",
     "static/media/alexma.jpg": "./static/media/alexma.3b9e893758fa1c96008c.jpg",
     "static/media/voluntariado3.jpg": "./static/media/voluntariado3.f366bf5b1249d359686d.jpg",
     "static/media/crea_2025.pdf": "./static/media/crea_2025.f71b0434ed698c86a0e0.pdf",
@@ -97,6 +100,7 @@
     "static/media/cabezuelo.jpg": "./static/media/cabezuelo.033d17f3ea02cdf61712.jpg",
     "static/media/psicopedagogia.png": "./static/media/psicopedagogia.893767e7ba711e2e3d46.png",
     "static/media/grafico-2-removebg-preview.png": "./static/media/grafico-2-removebg-preview.d6e3f40ecc5fb3446d28.png",
+    "static/media/institutoDeLaMujer.png": "./static/media/institutoDeLaMujer.a398e019f57361d7e4ca.png",
     "static/media/yolandaAlcolea.jpg": "./static/media/yolandaAlcolea.6b4b71f58341956dcac2.jpg",
     "static/media/apoyo-familias-4.jpg": "./static/media/apoyo-familias-4.bd9c2a63d8f26350c326.jpg",
     "static/media/vivienda-2.jpg": "./static/media/vivienda-2.74948c4fb956af4f2687.jpg",
@@ -114,6 +118,7 @@
     "static/media/sociolaboral.jpg": "./static/media/sociolaboral.96c8118f618f1b3a93ae.jpg",
     "static/media/terapia-visual.png": "./static/media/terapia-visual.d99b998548ffff566dbd.png",
     "static/media/pexpunte.jpg": "./static/media/pexpunte.44139f9fe88634fb3ec6.jpg",
+    "static/media/acuerdo.pdf": "./static/media/acuerdo.8350207d103c3db10db3.pdf",
     "static/media/terapia-auditiva.png": "./static/media/terapia-auditiva.ab4961b8f235b0a2ab6c.png",
     "static/media/quico.png": "./static/media/quico.19a957b9002f9787fea7.png",
     "static/media/terapeuta-ocupacional.png": "./static/media/terapeuta-ocupacional.8f11e89651b9edb867df.png",
@@ -139,6 +144,7 @@
     "static/media/apoyo.png": "./static/media/apoyo.ecc494d21d9b57160f10.png",
     "static/media/contabilidad.png": "./static/media/contabilidad.9fd6d39a7ec44cc6b43f.png",
     "static/media/euroviane.jpg": "./static/media/euroviane.2d1334bd79c2861395a9.jpg",
+    "static/media/compromiso.jpg": "./static/media/compromiso.119a127831a1dfc04fb2.jpg",
     "static/media/afymos-show.jpg": "./static/media/afymos-show.8a888d7e5ae573755c85.jpg",
     "static/media/logo-diputacion.png": "./static/media/logo-diputacion.0a4371a2c02713e61274.png",
     "static/media/gracias.png": "./static/media/gracias.39137f29f9e9d32fc388.png",
@@ -149,10 +155,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.8c7b2ac6.js.map": "./static/js/main.8c7b2ac6.js.map"
+    "main.66b44c65.js.map": "./static/js/main.66b44c65.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.8c7b2ac6.js"
+    "static/js/main.66b44c65.js"
   ]
 }

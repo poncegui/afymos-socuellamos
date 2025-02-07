@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { cardsServiceData } from "./services/CardsData";
+import { cardsIgualdadData } from "./services/CardsData";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
@@ -135,10 +135,10 @@ const CardsInterestInformation = () => {
     <SeccionContainer>
       <Titulo>
         <CircleIcon />
-        Te puede interesar...
+        Conoce Nuestro Plan de Igualdad...
       </Titulo>
       <ContenedorCards>
-        {cardsServiceData.map((card, index) => (
+        {cardsIgualdadData.map((card, index) => (
           <Card key={index} color={index === 0 ? "#81b71a" : card.color}>
             <Image src={card.image} alt={card.alt} />
             <LinkButton

@@ -131,8 +131,6 @@ export const Icons = styled.div`
   text-decoration:none;
   background-color: "#c6b1c9";
 
-  
-
 
   :hover {
     border: 3px solid #c6b1c9;
