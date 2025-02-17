@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.66b44c65.js",
+    "main.js": "./static/js/main.2c92fc8f.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
     "static/media/combinada-2.png": "./static/media/combinada-2.2e9cf57daf8725ef8ef1.png",
@@ -74,8 +74,8 @@
     "static/media/apoyo-familias-2.jpg": "./static/media/apoyo-familias-2.aca377e4954f1b8ad83c.jpg",
     "static/media/crea-2024.jpg": "./static/media/crea-2024.dd5d7f8e86f2fe4924f2.jpg",
     "static/media/nuevo-crea-actualizado.jpg": "./static/media/nuevo-crea-actualizado.a764cb7e32793c8d7737.jpg",
-    "static/media/logopedas.jpg": "./static/media/logopedas.99f464f009acef6d6c8d.jpg",
     "static/media/rafa.png": "./static/media/rafa.60a633a3bdc4b6dbc3e2.png",
+    "static/media/logopedas.jpg": "./static/media/logopedas.2aaf8cc232e0b4cb937f.jpg",
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
     "static/media/vocal7.jpg": "./static/media/vocal7.8023c3057937f3884897.jpg",
     "static/media/multiopticas.jpg": "./static/media/multiopticas.f15e6687bb022158ca0b.jpg",
@@ -155,10 +155,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.66b44c65.js.map": "./static/js/main.66b44c65.js.map"
+    "main.2c92fc8f.js.map": "./static/js/main.2c92fc8f.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.66b44c65.js"
+    "static/js/main.2c92fc8f.js"
   ]
 }
