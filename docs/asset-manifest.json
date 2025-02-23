@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.e55de933.js",
+    "main.js": "./static/js/main.160ae777.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/memoriaActividadesSociolaboral.pdf": "./static/media/memoriaActividadesSociolaboral.b39b47ab72c77dfec139.pdf",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
@@ -76,8 +76,8 @@
     "static/media/gasoleos.jpg": "./static/media/gasoleos.8e41106f6f6c28b79f29.jpg",
     "static/media/formacion-3.png": "./static/media/formacion-3.cf82540cee0bf4f87dbd.png",
     "static/media/chart20.jpg": "./static/media/chart20.f593ceebdd26b0970b0d.jpg",
-    "static/media/amparoFisio.jpg": "./static/media/amparoFisio.bd371bc854e5f68f8927.jpg",
     "static/media/apoyo-familias-3.jpg": "./static/media/apoyo-familias-3.1c0a46cca1c1fc3d8cba.jpg",
+    "static/media/amparoFisio.jpg": "./static/media/amparoFisio.190c0db91b91a5f83e86.jpg",
     "static/media/cristoVega.jpg": "./static/media/cristoVega.a8bde6daf828fbcf3786.jpg",
     "static/media/kreategia.png": "./static/media/kreategia.48c4ff846946cf166cb6.png",
     "static/media/beaPsicologa.jpg": "./static/media/beaPsicologa.c17cfee35b7e66718c93.jpg",
@@ -149,10 +149,10 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.e55de933.js.map": "./static/js/main.e55de933.js.map"
+    "main.160ae777.js.map": "./static/js/main.160ae777.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.e55de933.js"
+    "static/js/main.160ae777.js"
   ]
 }
