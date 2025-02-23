@@ -1,33 +1,21 @@
 import  React from "react";
 import TitleSection from "../../../components/TitleSection";
-import doc1 from "./assets/docs_transparencia/memoria-diputacion-2023.pdf";
-import doc10 from "./assets/docs_transparencia/informe-auditoria-viviendas-apoyo-2023.pdf";
-import doc11 from "./assets/docs_transparencia/memoria-afymos-joven-2023.pdf";
+import doc1 from "./assets/docs_transparencia/memoriaActividadesSociolaboral.pdf";
 import doc12 from "./assets/docs_transparencia/cuentas-anuales-2023.pdf";
-import doc2 from "./assets/docs_transparencia/informe-auditoria-centro-dia-2024.pdf";
-import doc3 from "./assets/docs_transparencia/memoria-centro-dia-2023.pdf";
 import doc4 from "./assets/docs_transparencia/plan-estrategico-2023-2024.pdf";
-import doc5 from "./assets/docs_transparencia/memoria-terapias-rehabilitacion.pdf";
-import doc6 from "./assets/docs_transparencia/plan-voluntariado-2022-2024.pdf";
-import doc7 from "./assets/docs_transparencia/memoria-vivienda-2023-i.pdf";
-import doc8 from "./assets/docs_transparencia/memoria-vivienda-2023-II.pdf";
-import doc9 from "./assets/docs_transparencia/memoria-serv-capacitacion-2023.pdf";
+import doc6 from "./assets/docs_transparencia/plan-voluntariado-2025-2027.pdf";
+import doc8 from "./assets/docs_transparencia/informes-auditoria-2024.pdf";
+import doc9 from "./assets/docs_transparencia/codigoEtico.pdf";
 import styled from "styled-components";
 
 const DescargaTransparencia = () => {
 
   const links = [
-    { id: 1, url: doc1, name: 'Memoria ayuda equipamiento: Diputación Ciudad Real' },
-    { id: 2, url: doc2, name: 'Informe auditoría de cuentas: Vivienda con apoyo' },
-    { id: 3, url: doc3, name: 'Memoria: Programa fomento autonomía personal' },
+    { id: 1, url: doc1, name: 'Memoria Programa de Integración Sociolaboral' },
     { id: 4, url: doc4, name: 'Plan Estratégico: "En ruta"' },
-    { id: 5, url: doc5, name: 'Memoria evaluativa: Centro Día' },
-    { id: 6, url: doc6, name: 'Plan de Voluntariado: 2022-2024' },
-    { id: 7, url: doc7, name: 'Memoria: Programa de atención resindencial I' },
-    { id: 8, url: doc8, name: 'Memoria: Programa de atención resindencial II' },
-    { id: 9, url: doc9, name: 'Memoria: Programa de atención sociolaboral' },
-    { id: 10, url: doc10, name: 'Informe: Cuentas justificativa subvenciones' },
-    { id: 11, url: doc11, name: 'Memoria: Afymos Joven 2023' },
+    { id: 6, url: doc6, name: 'Plan de Voluntariado: 2025-2027' },
+    { id: 8, url: doc8, name: 'Informes Auditoria 2024' },
+    { id: 9, url: doc9, name: 'Código Ético' },
     { id: 12, url: doc12, name: 'Cuentas Anuales 2023' },
   ];
 

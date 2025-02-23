@@ -4,7 +4,7 @@ import image11 from "../assets/images-chart-png/chart11.png";
 import image12 from "../assets/images-chart-png/chart12.png";
 import image13 from "../assets/images-chart-png/chart13.png";
 import image14 from "../assets/images-chart-png/chart14.png";
-import image15 from "../assets/images-chart-png/chart15.png";
+import image15 from "../assets/images-chart-png/monica.jpg";
 import image16 from "../assets/images-chart-png/chart16.png";
 import image17 from "../assets/images-chart-png/chart17.png";
 import image18 from "../assets/images-chart-png/chart18.png";

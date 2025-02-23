@@ -4,7 +4,7 @@ import introduccion from "../../centroDia/assets/images-centroDia/centroDia-6.jp
 import logopedia from "../../juntaDirectiva/assets/images-chart-png/logopedas.jpg";
 import neuroPiscologia from "../assets/images-terapias/sala.png";
 import psicologia from "../../juntaDirectiva/assets/images-chart-png/beaPsicologa.jpg";
-import psicopedagogia from "../assets/images-terapias/combinada-2.png";
+import psicopedagogia from "../../juntaDirectiva/assets/images-chart-png/monicaY.jpg";
 import terapiaOcupacional from "../../juntaDirectiva/assets/images-chart-png/chart10.png";
 import visual from "../assets/images-terapias/visual.png";
 
@@ -60,9 +60,9 @@ export const terapiaOcupacionalData = {
     text: "TERAPIA OCUPACIONAL: conoce cómo trabaja nuestra profesional, Laura Simancas",
   },
   headline:
-    "La terapia ocupacional consiste en intervenir o rehabilitar a través de un conjunto de actividades dirigidas a personas con problemas físicos, psíquicos, sensoriales o sociales.",
+  "Estudié Terapia Ocupacional en la Universidad Complutense de Madrid, desde el 2020 curso el Grado de Psicología por la UNED. Especialista en Autismo, detección e intervención precoz.  Formada en Atención temprana, y abordaje e intervención en trastornos del neurodesarrollo. Formación específica en apoyo conductual positivo, salud mental infantil, deporte terapéutico, terapia asistida con animales, sueño infantil, control de esfínteres, sexualidad en la infancia, diversidad funcional y autismo. Especialista en alimentación infantil, dificultades de alimentación en la infancia, trastornos de la alimentación pediátrica y TCA.",
   description:
-    "Enfoco mi trabajo en una intervención significativa con objetivos pautados previamente con la persona y su familia, realizando actividades con propósito claro y definido",
+    "Con más de 10 años de experiencia en intervención en entornos naturales, planificaciones centradas en la persona y en la familia, intervención en población infanto juvenil y adultos con discapacidad intelectual. La Terapia Ocupacional es mi forma de vida, me entusiasma trabajar con las familias, empatizar con ellas y ser capaz de ver con sus ojos; para mi, la alianza terapéutica es clave, y sin ella creo que cualquier intervención carece de sentido; por eso apuesto por combinar la intervención clínica con la intervención en entornos naturales, primar los intereses de las personas por encima de cualquier objetivo, y darle un propósito a todas las actividades que se realicen bajo el manto de mi intervención.",
   img: terapiaOcupacional,
   alt: "imagen terapeuta ocupacional",
 };
