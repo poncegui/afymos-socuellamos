@@ -1,8 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-import { cardsIgualdadData } from "./services/CardsData";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import styled from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import Video from '../Video';
+import { cardsIgualdadData } from './services/CardsData';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
 
 const SeccionContainer = styled.section`
   width: 100%;
@@ -67,7 +68,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${(props) => props.color};
+  background-color: ${props => props.color};
   margin-right: 16px;
   position: relative;
 
@@ -80,7 +81,7 @@ const Card = styled.div`
 `;
 
 const TituloCard = styled.h3`
-  color: ${(props) => (props.color === "#224464" ? "#c6b1c9" : "#224464")};
+  color: ${props => (props.color === '#224464' ? '#c6b1c9' : '#224464')};
   font-size: 16px;
   text-align: center;
   position: absolute;
@@ -132,33 +133,45 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 
 const CardsInterestInformation = () => {
   return (
-    <SeccionContainer>
-      <Titulo>
-        <CircleIcon />
-        Conoce Nuestro Plan de Igualdad...
-      </Titulo>
-      <ContenedorCards>
-        {cardsIgualdadData.map((card, index) => (
-          <Card key={index} color={index === 0 ? "#81b71a" : card.color}>
-            <Image src={card.image} alt={card.alt} />
-            <LinkButton
-              aria-label="ir a la ruta seleccionada"
-              href={card.url}
-              target="_blank"
-              download={card.download}
-            >
-              <StyledFontAwesomeIcon
-                icon={faPlus}
-                style={{
-                  color: card.color === "#224464" ? "#c6b1c9" : "#071c2f",
-                }}
-              />
-            </LinkButton>
-            <TituloCard color={card.color}>{card.title}</TituloCard>
-          </Card>
-        ))}
-      </ContenedorCards>
-    </SeccionContainer>
+    <>
+      <SeccionContainer>
+        <Titulo>
+          <CircleIcon />
+          Conoce Nuestro Plan de Igualdad...
+        </Titulo>
+        <ContenedorCards>
+          {cardsIgualdadData.map((card, index) => (
+            <Card key={index} color={index === 0 ? '#81b71a' : card.color}>
+              <Image src={card.image} alt={card.alt} />
+              <LinkButton
+                aria-label="ir a la ruta seleccionada"
+                href={card.url}
+                target="_blank"
+                download={card.download}
+              >
+                <StyledFontAwesomeIcon
+                  icon={faPlus}
+                  style={{
+                    color: card.color === '#224464' ? '#c6b1c9' : '#071c2f',
+                  }}
+                />
+              </LinkButton>
+              <TituloCard color={card.color}>{card.title}</TituloCard>
+            </Card>
+          ))}
+        </ContenedorCards>
+      </SeccionContainer>
+      <Video 
+        changeIntoSquare
+        hideButton
+        sectionTitle=" Compromiso con la Igualdad"
+        urlMoreInformation=""
+        videoSrc="https://www.youtube.com/embed/oPgPJpAv8yM"
+        title="Promovemos la Igualdad"
+        subtile="El derecho a la igualdad de trato y de oportunidades es un derecho fundamental que queda recogido en el artículo 14 de la Constitución Española."
+        text="“Objetivo: hacer efectivo el derecho de igualdad de trato y de oportunidades entre mujeres y hombres, en particular mediante la eliminación de la discriminación de la mujer, sea cual fuere su circunstancia o condición, en cualesquiera de los ámbitos de la vida y, singularmente, en las esferas política, civil, laboral, económica, social y cultural para alcanzar una sociedad más democrática, más justa y más solidaria.”"
+      />
+    </>
   );
 };
 

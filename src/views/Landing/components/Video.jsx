@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { faPlus, faSquare } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
 const Video = ({
@@ -13,6 +13,8 @@ const Video = ({
   text,
   urlMoreInformation,
   sectionTitle,
+  hideButton = false,
+  changeIntoSquare
 }) => {
   const [clicked, setClicked] = useState(false);
 
@@ -24,8 +26,12 @@ const Video = ({
     <>
       <Margin />
       <section>
-        <Title>
-          <CircleIcon />
+      <Title>
+          {changeIntoSquare ? (
+            <FontAwesomeIcon icon={faSquare} size="sm" color="#c6b1c9" style={{ marginRight: '0.5rem' }} />
+          ) : (
+            <CircleIcon />
+          )}
           {sectionTitle}
         </Title>
         <DemoContainer>
@@ -45,13 +51,15 @@ const Video = ({
             <p>{title}</p>
             <p>{subtile}</p>
             <p>{text}</p>
-            <Link
-              onClick={handleClick}
-              to={urlMoreInformation}
-              aria-label={`go to more information  ${Maintitle}`}
-            >
-              <PlusIcon icon={faPlus} alt="more information icon" />
-            </Link>
+            {!hideButton && (
+              <Link
+                onClick={handleClick}
+                to={urlMoreInformation}
+                aria-label={`go to more information ${Maintitle}`}
+              >
+                <PlusIcon icon={faPlus} alt="more information icon" />
+              </Link>
+            )}
           </DemoLeft>
         </DemoContainer>
       </section>
@@ -59,8 +67,8 @@ const Video = ({
     </>
   );
 };
-
 export default Video;
+
 
 const DemoContainer = styled.div`
   width: 1240px;
