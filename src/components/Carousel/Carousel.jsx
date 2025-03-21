@@ -3,97 +3,104 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const CarouselContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  padding: 2rem 1rem;
 `;
 
 const Title = styled.h2`
   font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
   text-align: center;
+  margin-bottom: 1.5rem;
+  color: #071c2f;
 `;
 
 const CarouselWrapper = styled.div`
-  display: flex;
   overflow: hidden;
   width: 100%;
   position: relative;
-  height: 500px; 
 `;
 
 const CarouselContent = styled.div`
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
   transform: translateX(${(props) => props.translate}%);
-  width: fit-content;
 `;
 
-
 const CarouselItem = styled.div`
-  position: relative;
-  min-width: 80%;
-  flex-shrink: 0;
+  min-width: 100%;
+  padding: 0 0.5rem;
   box-sizing: border-box;
-  margin: 0 0.5rem;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05);
-  }
+  flex-shrink: 0;
 
   @media (min-width: 768px) {
-    min-width: 60%;
+    min-width: 50%;
   }
 
   @media (min-width: 1024px) {
-    min-width: 40%;
+    min-width: 33.33%;
   }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
+  .card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    position: relative;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+      color: white;
+      padding: 1rem;
+      width: 100%;
+      font-size: 1.1rem;
+    }
   }
 `;
 
-const ButtonsWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 1rem;
+const NavButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
-`;
-
-const Button = styled.button`
-  background-color: rgba(0, 0, 0, 0.5);
+  background: #071c2f;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 1rem;
+  z-index: 2;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background: #0c2a4e;
   }
 
   &:disabled {
-    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.3;
     cursor: not-allowed;
+  }
+
+  &.left {
+    left: 10px;
+  }
+
+  &.right {
+    right: 10px;
   }
 `;
 
@@ -106,7 +113,7 @@ const Pagination = styled.div`
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    background-color: #fff;
+    background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;
 
@@ -119,42 +126,38 @@ const Pagination = styled.div`
 const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => Math.max(prev - 1, 0));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => Math.min(prev + 1, items.length - 1));
-  };
+  const totalItems = items.length;
+  const itemsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+  const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
 
   const translate = -(currentIndex * 100);
+
+  const handlePrev = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
+  const handleNext = () => setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
 
   return (
     <CarouselContainer>
       <Title>Noticias</Title>
       <CarouselWrapper>
-        <ButtonsWrapper>
-          <Button onClick={handlePrev} disabled={currentIndex === 0}>
-            &#8249;
-          </Button>
-          <Button onClick={handleNext} disabled={currentIndex === items.length - 1}>
-            &#8250;
-          </Button>
-        </ButtonsWrapper>
+        <NavButton className="left" onClick={handlePrev} disabled={currentIndex === 0}>
+          &#8249;
+        </NavButton>
         <CarouselContent translate={translate}>
           {items.map((item, index) => (
             <CarouselItem key={index}>
-              <div className="image-wrapper">
+              <div className="card">
                 <img src={item.image} alt={item.title} />
+                <div className="overlay">{item.title}</div>
               </div>
-              <div className="icon">▶</div>
-              <div className="overlay">{item.title}</div>
             </CarouselItem>
           ))}
         </CarouselContent>
+        <NavButton className="right" onClick={handleNext} disabled={currentIndex === maxIndex}>
+          &#8250;
+        </NavButton>
       </CarouselWrapper>
       <Pagination>
-        {items.map((_, index) => (
+        {Array.from({ length: maxIndex + 1 }).map((_, index) => (
           <div
             key={index}
             className={`dot ${currentIndex === index ? "active" : ""}`}
