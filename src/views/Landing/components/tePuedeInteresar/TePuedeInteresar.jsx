@@ -2,16 +2,15 @@ import { linksData, socialIcons } from "./services/SocialData";
 
 import { Link as ButtonNav } from "react-router-dom";
 import { Link as Contact } from "react-scroll";
-import CoverImages from "./CoverImages";
 import Informacion from "./Informacion";
 import React from "react";
 import logo from "../../components/assets/logos/logo-afymos.png";
 import styled from "styled-components";
 
-const IntroductionViewContainer = styled.div`
+const IntroductionViewContainer = styled.header`
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 50vh;
   background-color: #c6b1c9;
   background-size: cover;
   background-position: center;
@@ -20,7 +19,6 @@ const IntroductionViewContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  height: 50vh;
 
   @media (max-width: 768px) {
     height: 100vh;
@@ -40,7 +38,7 @@ const Overlay = styled.div`
 
 const ContentContainer = styled.div`
   text-align: center;
-  /* z-index: 1; */
+  z-index: 1;
 `;
 
 const ButtonContainer = styled.div`
@@ -60,6 +58,51 @@ const ButtonContainer = styled.div`
   }
 `;
 
+const StyledButton = styled(ButtonNav)`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  color: #224464;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #224464;
+    color: #c6b1c9;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+`;
+
+const StyledButtonTransparencia = styled(ButtonNav)`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #071c2f;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background-color: #224464;
+    color: #ffd3e8;
+    transform: scale(1.05);
+  }
+`;
+
 const SocialIconsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -67,6 +110,7 @@ const SocialIconsContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 20px;
+  z-index: 1;
 
   @media (max-width: 900px) {
     flex-direction: row;
@@ -84,7 +128,6 @@ const SocialIcon = styled.a`
   align-items: center;
   transition: background-color 0.3s ease;
   cursor: pointer;
-  z-index: 9999;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
@@ -93,15 +136,6 @@ const SocialIcon = styled.a`
   & > svg {
     width: 24px;
     height: 24px;
-    fill: #fff;
-  }
-  @media (max-width: 500px) {
-    width: 50px;
-    height: 50px;
-  }
-  & > svg {
-    width: 28px;
-    height: 28px;
     fill: #fff;
   }
 `;
@@ -136,123 +170,49 @@ const HeaderTitle = styled.div`
   }
 `;
 
-const StyledButton = styled(ButtonNav)`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: ${(props) => props.color};
-  color: #224464;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  z-index: 9999;
-
-  @media (max-width: 900px) {
-    font-size: 16px;
-  }
-
-  &:hover {
-    background-color: #224464;
-    color: #c6b1c9;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
-
-const StyledButtonTransparencia = styled(ButtonNav)`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 50px;
-  border-radius: 5%;
-  color: ${(props) => props.color};
-  background-color: #224464;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0 10px;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  z-index: 9999;
-
-  @media (max-width: 900px) {
-    font-size: 16px;
-  }
-
-  &:hover {
-    color: #224464;
-    background-color: #c6b1c9;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
-
-const ContactButtonContainer = styled.div`
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #ffd3e8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: 900px) {
-    margin: 0 15px;
-  }
-`;
-
-
 const IntroductionView = () => {
   return (
     <>
-      <IntroductionViewContainer aria-label="Introduction View" role="banner">
+      <IntroductionViewContainer role="banner" aria-label="Sección principal de bienvenida">
         <Overlay />
         <ContentContainer>
           <HeaderTitle>
-            <img src={logo} alt="logo-afymos" />
+            <img src={logo} alt="Logotipo de Afymos" />
             <h1>Afymos</h1>
           </HeaderTitle>
+
           <ButtonContainer>
             {linksData.map((data) => (
               <StyledButton
                 key={data.key}
-                color="#f5f5f5"
                 to={data.url}
-                aria-label={data.name}
+                aria-label={`Ir a la sección ${data.name}`}
               >
                 {data.name}
               </StyledButton>
             ))}
 
-            <ContactButtonContainer>
-              <StyledButton
-                as={Contact}
-                to="contacto"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                color="#f5f5f5"
-                aria-label="contacto"
-              >
-                Contacto
-              </StyledButton>
-            </ContactButtonContainer>
-            <ContactButtonContainer>
-              <StyledButtonTransparencia
-                to="transparencia"
-                aria-label="transparencia"
-                color="#f5f5f5"
-              >
-                Transparencia
-              </StyledButtonTransparencia>
-            </ContactButtonContainer>
+            <StyledButton
+              as={Contact}
+              to="contacto"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1000}
+              aria-label="Ir a la sección de contacto"
+            >
+              Contacto
+            </StyledButton>
+
+            <StyledButtonTransparencia
+              to="transparencia"
+              aria-label="Ir a la sección de transparencia"
+            >
+              Transparencia
+            </StyledButtonTransparencia>
           </ButtonContainer>
         </ContentContainer>
+
         <SocialIconsContainer>
           {socialIcons.map((socialIcon, index) => (
             <SocialIcon
@@ -260,13 +220,13 @@ const IntroductionView = () => {
               href={socialIcon.url}
               target="_blank"
               aria-label={socialIcon.label}
+              rel="noopener noreferrer"
             >
               {socialIcon.icon}
             </SocialIcon>
           ))}
         </SocialIconsContainer>
       </IntroductionViewContainer>
-      {/* <CoverImages /> */}
       <Informacion />
     </>
   );

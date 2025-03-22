@@ -33,24 +33,16 @@ const CarouselWrapper = styled.div`
 
 const CarouselContent = styled.div`
   display: flex;
-  transition: transform 1.2s ease-in-out;
+  transition: transform 1s ease-in-out;
   transform: translateX(${(props) => props.translate}%);
   touch-action: pan-y;
 `;
 
 const CarouselItem = styled.div`
   min-width: 100%;
+  padding: 1rem;
   box-sizing: border-box;
   flex-shrink: 0;
-  padding: 1rem;
-
-  @media (min-width: 768px) {
-    min-width: 50%;
-  }
-
-  @media (min-width: 1024px) {
-    min-width: 33.33%;
-  }
 
   .card {
     display: flex;
@@ -68,7 +60,7 @@ const CarouselItem = styled.div`
 
     img {
       width: 100%;
-      height: 280px;
+      max-height: 250px;
       object-fit: cover;
     }
 
@@ -165,10 +157,22 @@ const Pagination = styled.div`
 
 const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerView, setItemsPerView] = useState(1);
   const totalItems = items.length;
-  const itemsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+
+  useEffect(() => {
+    const updateItemsPerView = () => {
+      if (window.innerWidth >= 1024) setItemsPerView(3);
+      else if (window.innerWidth >= 768) setItemsPerView(2);
+      else setItemsPerView(1);
+    };
+    updateItemsPerView();
+    window.addEventListener("resize", updateItemsPerView);
+    return () => window.removeEventListener("resize", updateItemsPerView);
+  }, []);
+
   const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
-  const translate = -(currentIndex * 100);
+  const translate = -(currentIndex * (100 / itemsPerView));
 
   const startX = useRef(null);
   const endX = useRef(null);
@@ -215,7 +219,7 @@ const Carousel = ({ items }) => {
             onTouchEnd={handleTouchEnd}
           >
             {items.map((item, index) => (
-              <CarouselItem key={index}>
+              <CarouselItem key={index} style={{ minWidth: `${100 / itemsPerView}%` }}>
                 <div className="card">
                   <img src={item.image} alt={item.alt || item.title} />
                   <div className="card-content">
@@ -247,7 +251,7 @@ const Carousel = ({ items }) => {
               role="button"
               aria-label={`Ir a la página ${index + 1}`}
               tabIndex={0}
-              onKeyDown={(e) => e.key === 'Enter' && setCurrentIndex(index)}
+              onKeyDown={(e) => e.key === "Enter" && setCurrentIndex(index)}
             ></div>
           ))}
         </Pagination>

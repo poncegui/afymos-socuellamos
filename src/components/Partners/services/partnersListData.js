@@ -258,7 +258,7 @@ export const colaboradoresData = [
     titleImg: "Globalcaja - Ayudando a la comunidad",
     target: target,
     alt: "Logo de Globalcaja",
-    url: "https://www.globalcaja.e",
+    url: "https://www.globalcaja.es",
   },
   {
     id: 25,
