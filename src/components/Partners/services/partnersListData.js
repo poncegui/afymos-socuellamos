@@ -212,7 +212,7 @@ export const colaboradoresData = [
     titleImg: "Samu y Leo - Ayudando a la comunidad",
     target: target,
     alt: "Logo de Samu y Leo",
-    url: "",
+    url: "https://www.facebook.com/p/SAMU-Y-LEO-100063478510772/",
   },
 
   {
@@ -222,7 +222,7 @@ export const colaboradoresData = [
     titleImg: "Estacion de servicio el Cruce - Ayudando a la comunidad",
     target: target,
     alt: "Logo de Estacion de servicio el Cruce",
-    url: "",
+    url: "https://www.facebook.com/GasoleosElCruce/?locale=es_ES",
   },
   {
     id: 21,
@@ -231,7 +231,7 @@ export const colaboradoresData = [
     titleImg: "Yolanda Alcolea - Carnes y embutidos - Ayudando a la comunidad",
     target: target,
     alt: "Logo de Yolanda Alcolea - Carnes y embutidos",
-    url: "",
+    url: "https://g.co/kgs/dbF5ECW",
   },
   {
     id: 22,
@@ -240,7 +240,7 @@ export const colaboradoresData = [
     titleImg: "Farmacia Ramón Alarcón - Ayudando a la comunidad",
     target: target,
     alt: "Logo de Farmacia Ramón Alarcón",
-    url: "",
+    url: "https://farmaciaramonalarcon.es/",
   },
   {
     id: 23,
@@ -249,7 +249,7 @@ export const colaboradoresData = [
     titleImg: "El telar de las Hadas - Ayudando a la comunidad",
     target: target,
     alt: "Logo de El telar de las Hadas",
-    url: "",
+    url: "https://www.eltelardelashadas.com/",
   },
   {
     id: 24,
@@ -258,7 +258,7 @@ export const colaboradoresData = [
     titleImg: "Globalcaja - Ayudando a la comunidad",
     target: target,
     alt: "Logo de Globalcaja",
-    url: "",
+    url: "https://www.globalcaja.e",
   },
   {
     id: 25,
@@ -267,7 +267,7 @@ export const colaboradoresData = [
     titleImg: "La Caixa - Ayudando a la comunidad",
     target: target,
     alt: "Logo de La Caixa",
-    url: "",
+    url: "https://fundacionlacaixa.org/es/",
   },
   {
     id: 26,
@@ -276,7 +276,7 @@ export const colaboradoresData = [
     titleImg: "OTS - Ayudando a la comunidad",
     target: target,
     alt: "Logo de OTS",
-    url: "",
+    url: "https://grupoasesorots.es/",
   },
   {
     id: 27,
