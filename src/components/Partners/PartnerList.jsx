@@ -42,27 +42,29 @@ const SectionPartners = styled.section`
     padding: 1.5rem 1rem;
   }
 `;
-
 const PartnersGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2.5rem;
   justify-items: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   @media (max-width: 480px) {
-    gap: 1rem;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 `;
 
 const PartnerWrapper = styled.div`
-  position: relative;
+  width: 100%;
+  max-width: 220px;
+  padding: 0.5rem;
 
   &:hover::after {
     content: attr(title);

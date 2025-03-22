@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.3baa4df7.js",
-    "static/js/349.914628e3.chunk.js": "./static/js/349.914628e3.chunk.js",
+    "main.js": "./static/js/main.028eedc8.js",
+    "static/js/349.7b467e44.chunk.js": "./static/js/349.7b467e44.chunk.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/memoriaActividadesSociolaboral.pdf": "./static/media/memoriaActividadesSociolaboral.b39b47ab72c77dfec139.pdf",
     "static/media/formacion-1.jpg": "./static/media/formacion-1.6efb50312b365fe9d351.jpg",
@@ -50,6 +50,7 @@
     "static/media/planIgualdad.pdf": "./static/media/planIgualdad.e2e33b41d19d23b777cd.pdf",
     "static/media/satie.png": "./static/media/satie.c982bd3cfc9b78d38c63.png",
     "static/media/familia-afymos.png": "./static/media/familia-afymos.94c7dbadc04bb054e09b.png",
+    "static/media/clubDeportivo-2.jpg": "./static/media/clubDeportivo-2.4497d77fdf97c20c4111.jpg",
     "static/media/compromiso.pdf": "./static/media/compromiso.e591acfec001d7e31e57.pdf",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/charlas.png": "./static/media/charlas.9632c0261383e958972a.png",
@@ -57,6 +58,7 @@
     "static/media/nuevo_crea_2025.jpg": "./static/media/nuevo_crea_2025.3bc163359d71266fdac5.jpg",
     "static/media/club-deportivo.jpg": "./static/media/club-deportivo.9dc81fe9f3419cebdcda.jpg",
     "static/media/infanta.jpg": "./static/media/infanta.f4aaf5f749ba4df8f339.jpg",
+    "static/media/clubDeportivo-1.jpg": "./static/media/clubDeportivo-1.e528ec5810d45ed42d75.jpg",
     "static/media/protocoloPrevencion.pdf": "./static/media/protocoloPrevencion.e971d9b345b8b793c809.pdf",
     "static/media/alexma.jpg": "./static/media/alexma.3b9e893758fa1c96008c.jpg",
     "static/media/voluntariado3.jpg": "./static/media/voluntariado3.f366bf5b1249d359686d.jpg",
@@ -67,7 +69,10 @@
     "static/media/apoyo-familias-2.jpg": "./static/media/apoyo-familias-2.aca377e4954f1b8ad83c.jpg",
     "static/media/crea-2024.jpg": "./static/media/crea-2024.dd5d7f8e86f2fe4924f2.jpg",
     "static/media/nuevo-crea-actualizado.jpg": "./static/media/nuevo-crea-actualizado.a764cb7e32793c8d7737.jpg",
+    "static/media/compromiso.png": "./static/media/compromiso.adefdf7f8f2aafb137c4.png",
+    "static/media/clubDeportivo-3.jpg": "./static/media/clubDeportivo-3.bd46de761bd2b557bc72.jpg",
     "static/media/rafa.png": "./static/media/rafa.60a633a3bdc4b6dbc3e2.png",
+    "static/media/clubDeportivo-4.jpg": "./static/media/clubDeportivo-4.0c1bc6dde256b6827579.jpg",
     "static/media/monicaY.jpg": "./static/media/monicaY.1ec260ab59eb996d087d.jpg",
     "static/media/logopedas.jpg": "./static/media/logopedas.2aaf8cc232e0b4cb937f.jpg",
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
@@ -143,7 +148,6 @@
     "static/media/apoyo.png": "./static/media/apoyo.ecc494d21d9b57160f10.png",
     "static/media/contabilidad.png": "./static/media/contabilidad.9fd6d39a7ec44cc6b43f.png",
     "static/media/euroviane.jpg": "./static/media/euroviane.2d1334bd79c2861395a9.jpg",
-    "static/media/compromiso.jpg": "./static/media/compromiso.119a127831a1dfc04fb2.jpg",
     "static/media/afymos-show.jpg": "./static/media/afymos-show.8a888d7e5ae573755c85.jpg",
     "static/media/logo-diputacion.png": "./static/media/logo-diputacion.0a4371a2c02713e61274.png",
     "static/media/gracias.png": "./static/media/gracias.39137f29f9e9d32fc388.png",
@@ -154,11 +158,11 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.3baa4df7.js.map": "./static/js/main.3baa4df7.js.map",
-    "349.914628e3.chunk.js.map": "./static/js/349.914628e3.chunk.js.map"
+    "main.028eedc8.js.map": "./static/js/main.028eedc8.js.map",
+    "349.7b467e44.chunk.js.map": "./static/js/349.7b467e44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.3baa4df7.js"
+    "static/js/main.028eedc8.js"
   ]
 }

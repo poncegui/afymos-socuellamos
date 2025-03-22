@@ -47,7 +47,6 @@ const LandingView = () => {
       <ContactForm />
       <PartnertList size inverse marginBottom data={colaboradoresData} title='Socios Colaboradores' />
       <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
-
       <Footer />
     </>
   );

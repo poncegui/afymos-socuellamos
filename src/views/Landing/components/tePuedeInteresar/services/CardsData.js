@@ -2,7 +2,7 @@ import acuerdo from "../assets/pdf/acuerdo.pdf";
 import amaltea from "../assets/icons/amaltea.jpg";
 import castilla from "../assets/icons/logo-castillaLaMancha.png";
 import charlas from "../assets/icons/comment-regular.svg";
-import compromiso from "../assets/icons/compromiso.jpg";
+import compromiso from "../assets/icons/compromiso.png";
 import diverses from "../assets/icons/diverses.jpg";
 import diversesDoc from '../assets/pdf/diverses.pdf';
 import docCompromiso from '../assets/pdf/compromiso.pdf';
@@ -69,7 +69,7 @@ export const cardsIgualdadData = [
     image: compromiso,
     alt: "Compromiso con la igualdad",
     url: docCompromiso,
-    color: "#f5f5f5",
+    color: "#f7f5f3",
   },
   {
     key: 2,
@@ -99,7 +99,7 @@ export const cardsIgualdadData = [
     image: mujer,
     alt: "Protocolo para Prevención y Actuación",
     url:protocolo,
-    color: "#f7f5f7",
+    color: "#f5f5f3",
   },
   {
     key: 4,
@@ -109,6 +109,6 @@ export const cardsIgualdadData = [
     image: diverses,
     alt: "Diverses",
     url:diversesDoc,
-  color:'',
+    color: "#f7f6f7",
   }
 ];

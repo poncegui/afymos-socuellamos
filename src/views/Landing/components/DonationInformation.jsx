@@ -70,6 +70,10 @@ const DonateButton = styled(Link)`
   &:focus-visible {
     outline: 3px solid #ffbf47;
   }
+
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
+    }
 `;
 
 const DonationInformation = () => {

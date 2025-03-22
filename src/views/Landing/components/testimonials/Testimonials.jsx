@@ -47,15 +47,16 @@ const Margin = styled.div`
 `;
 
 const Title = styled.h2`
-  margin-left: 20px; /* Alinear el título a la izquierda */
+  margin-left: 20px;
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: 28px;
+  color: #071c2f;
 
   @media (max-width: 900px) {
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: 22px;
   }
 `;
 
@@ -90,10 +91,12 @@ const TestimonialsContent = styled.section`
 const TestimonialsCard = styled.article`
   border: 1px solid #eee;
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
-  padding: 1rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1.5rem;
   line-height: 2rem;
   text-align: left;
+  background-color: #fff;
+  color: #071c2f;
 
   img {
     width: 100px;
@@ -108,22 +111,24 @@ const TestimonialsCard = styled.article`
   }
 
   h2 {
-    margin: 20px;
+    font-size: 1.2rem;
+    margin: 20px 0;
   }
 
   p {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 500;
   }
 
   span {
-    font-size: 14px;
-    font-weight: 900;
-    color: #443c3c;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #224464;
   }
 
   @media (max-width: 940px) {
     max-width: 100%;
     margin: 1rem;
+    padding: 1rem;
   }
 `;

@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 import AvisoLegal from "./components/Footer/AvisoLegal";
 import Chart from "./views/juntaDirectiva/Chart";
+import ClubDeportivo from "./views/ClubDeportivo/ClubDeportivo";
 import LandingView from "./views/Landing/LandingView";
 import Nosotros from "./views/nosotros/Nosotros";
 import PoliticaPrivacidad from "./components/Footer/PoliticaDePrivacidad";
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/viviendas-con-apoyo" element={<ProjectsVivienda />} />
         <Route path="/centro-de-dia" element={<ProjectsCentroDia />} />
         <Route path="/proyecto-crea" element={<ProjectsCrea />} />
+        <Route path= "/club-deportivo-afymos" element={<ClubDeportivo/>} />
         <Route
           path="/valoracion-y-diagnostico"
           element={<ProjectsDiagnostico />}

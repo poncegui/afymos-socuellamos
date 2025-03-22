@@ -44,7 +44,6 @@ const Video = ({
 
 export default Video;
 
-// STYLES
 const SectionWrapper = styled.section`
   padding: 4rem 1rem;
   background-color: ${(props) => (props.backgroundWhite ? "white" : "#e8e0ec")};
@@ -106,6 +105,11 @@ const TextWrapper = styled.div`
     line-height: 1.6;
     margin-bottom: 1.5rem;
   }
+
+  @media (max-width: 600px) {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
 `;
 
 const StyledLink = styled(Link)`
@@ -122,4 +126,8 @@ const StyledLink = styled(Link)`
   &:hover {
     border-bottom: 2px solid #224464;
   }
+
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
+    }
 `;

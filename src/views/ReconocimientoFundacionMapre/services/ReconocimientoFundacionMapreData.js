@@ -3,7 +3,7 @@ import reconocimiento2 from "../assets/images-reconocimiento-fundacion/reconocim
 import reconocimiento3 from "../assets/images-reconocimiento-fundacion/reconocimientoFundacion-3.jpg";
 import reconocimiento4 from "../assets/images-reconocimiento-fundacion/reconocimientoFundacion-4.jpg";
 
-export const reconocimientDataOne = {
+export const reconocimientoDataOne = {
   id: "reconocimientoMapfre",
   reverse: false,
   inverse: false,
@@ -21,7 +21,7 @@ export const reconocimientDataOne = {
   target: "_blank",
 };
 
-export const reconocimientDataTwo = {
+export const reconocimientoDataTwo = {
   id: "empresaCabezuelo",
   reverse: true,
   inverse: true,
@@ -39,7 +39,7 @@ export const reconocimientDataTwo = {
   target: "_blank",
 };
 
-export const reconocimientDataThree = {
+export const reconocimientoDataThree = {
   id: "tejidoEmpresarial",
   reverse: false,
   inverse: false,
@@ -57,7 +57,7 @@ export const reconocimientDataThree = {
   target: "_self",
 };
 
-export const reconocimientDataFour = {
+export const reconocimientoDataFour = {
   id: "dedicatoriaEmpresas",
   reverse: true,
   inverse: true,
