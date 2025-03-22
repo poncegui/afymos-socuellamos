@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.19e6130a.js",
+    "main.js": "./static/js/main.3baa4df7.js",
     "static/js/349.914628e3.chunk.js": "./static/js/349.914628e3.chunk.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/memoriaActividadesSociolaboral.pdf": "./static/media/memoriaActividadesSociolaboral.b39b47ab72c77dfec139.pdf",
@@ -73,6 +73,7 @@
     "static/media/nosotros.jpg": "./static/media/nosotros.56f37ee488983abb7dd5.jpg",
     "static/media/vocal7.jpg": "./static/media/vocal7.8023c3057937f3884897.jpg",
     "static/media/multiopticas.jpg": "./static/media/multiopticas.f15e6687bb022158ca0b.jpg",
+    "static/media/reconocimientoFundacion-2.jpg": "./static/media/reconocimientoFundacion-2.41e860580e681ff47703.jpg",
     "static/media/vivienda-1.jpg": "./static/media/vivienda-1.ca2042692b2a1724b683.jpg",
     "static/media/gasoleos.jpg": "./static/media/gasoleos.8e41106f6f6c28b79f29.jpg",
     "static/media/formacion-3.png": "./static/media/formacion-3.cf82540cee0bf4f87dbd.png",
@@ -80,9 +81,12 @@
     "static/media/apoyo-familias-3.jpg": "./static/media/apoyo-familias-3.1c0a46cca1c1fc3d8cba.jpg",
     "static/media/amparoFisio.jpg": "./static/media/amparoFisio.190c0db91b91a5f83e86.jpg",
     "static/media/cristoVega.jpg": "./static/media/cristoVega.a8bde6daf828fbcf3786.jpg",
+    "static/media/reconocimientoFundacion-1.jpg": "./static/media/reconocimientoFundacion-1.930ad13abd77a0f7fab9.jpg",
+    "static/media/reconocimientoFundacion-3.jpg": "./static/media/reconocimientoFundacion-3.e2b01a5aafd3af0901f4.jpg",
     "static/media/kreategia.png": "./static/media/kreategia.48c4ff846946cf166cb6.png",
     "static/media/beaPsicologa.jpg": "./static/media/beaPsicologa.c17cfee35b7e66718c93.jpg",
     "static/media/organigrama.pdf": "./static/media/organigrama.2ebed92c873541755320.pdf",
+    "static/media/reconocimientoFundacion-4.jpg": "./static/media/reconocimientoFundacion-4.96ed001d6a214fb17bce.jpg",
     "static/media/rafa.jpg": "./static/media/rafa.5f8a302f0f8a0bf2c8b7.jpg",
     "static/media/80-removebg-preview.png": "./static/media/80-removebg-preview.db92e7fae5df0ce916bb.png",
     "static/media/voluntariado5.jpg": "./static/media/voluntariado5.dec7f91296482557d404.jpg",
@@ -150,11 +154,11 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.19e6130a.js.map": "./static/js/main.19e6130a.js.map",
+    "main.3baa4df7.js.map": "./static/js/main.3baa4df7.js.map",
     "349.914628e3.chunk.js.map": "./static/js/349.914628e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.19e6130a.js"
+    "static/js/main.3baa4df7.js"
   ]
 }

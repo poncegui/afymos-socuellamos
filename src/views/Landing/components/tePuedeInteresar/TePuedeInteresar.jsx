@@ -171,6 +171,8 @@ const HeaderTitle = styled.div`
 `;
 
 const IntroductionView = () => {
+
+
   return (
     <>
       <IntroductionViewContainer role="banner" aria-label="Sección principal de bienvenida">
@@ -226,7 +228,10 @@ const IntroductionView = () => {
             </SocialIcon>
           ))}
         </SocialIconsContainer>
+
+
       </IntroductionViewContainer>
+     
       <Informacion />
     </>
   );

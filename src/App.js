@@ -15,6 +15,7 @@ import ProjectsDiagnostico from "./views/valoracionDiagnostico/ProjectsDiagnosti
 import ProjectsDonaciones from "./views/Donaciones/ProjectsDonaciones";
 import ProjectsFamilias from "./views/apoyoFamilias/ProjectsFamilias";
 import ProjectsFormacion from "./views/formacion/ProjectsFormacion";
+import ProjectsReconocimientoFundacion from "./views/ReconocimientoFundacionMapre/ReconocimientoFundacionMapre";
 import ProjectsTerapias from "./views/terapias/ProjetsTerapias";
 import ProjectsTransparencia from "./views/transparencia/ProjetsTransparencia";
 import ProjectsVivienda from "./views/viviendasApoyo/ProjectsVivienda";
@@ -30,6 +31,7 @@ const App = () => {
     <>
       <ScrollToTop smooth />
       <Routes>
+      <Route path= "/reconocimiento-fundacion-mapfre" element={<ProjectsReconocimientoFundacion/>} />
         <Route path="/transparencia" element={<ProjectsTransparencia />} />
         <Route path="/terapias" element={<ProjectsTerapias />} />
         <Route path="/nosotros" element={<Nosotros />} />

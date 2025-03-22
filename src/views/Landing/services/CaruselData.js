@@ -16,7 +16,7 @@ export const items = [
     alt: 'reconocimiento programa social de empleo',
     title: 'Premios Fundación Mapfre',
     description: 'Reconocimiento al programa social de empleo por parte de la Fundación Mapfre.',
-    link: '',
+    link: '/reconocimiento-fundacion-mapfre',
   },
   {
     id: 5,

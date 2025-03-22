@@ -22,12 +22,14 @@ import SectionServices from "./components/SectionServices";
 import TePuedeInteresar from "../Landing/components/tePuedeInteresar/TePuedeInteresar";
 import Testimonials from "./components/testimonials/Testimonials";
 import VideoLanding from "./components/VideoLanding";
+import VisitCounter from "./components/VisitCounter";
 import { items } from "./services/CaruselData";
 
 const LandingView = () => {
   return (
     <>
       <ScrollToTop />
+      <VisitCounter />
       <TePuedeInteresar />
       <CarouselSwitcher items={items} />
       <VideoLanding />
@@ -45,6 +47,7 @@ const LandingView = () => {
       <ContactForm />
       <PartnertList size inverse marginBottom data={colaboradoresData} title='Socios Colaboradores' />
       <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
+
       <Footer />
     </>
   );
