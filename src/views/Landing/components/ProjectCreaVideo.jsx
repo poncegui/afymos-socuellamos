@@ -3,15 +3,15 @@ import Video from "./Video";
 
 const VideoNuevoCrea = () => {
   return (
-    <Video
-      sectionTitle=" Proyecto Nuevo Crea..."
-      urlMoreInformation="/proyecto-crea"
-      videoSrc="https://www.youtube.com/embed/HZ-Xvy2ZSsk"
-      title="Proyecto CREA;"
-      subtile="Nuestra filosofía:"
-      text="Conoce nuestro Programa de Formación y Empleo para personas con
-      algún tipo de discapacidad en Socuéllamos."
-    />
+<Video
+  sectionTitle="Proyecto Nuevo CREA 2025"
+  videoSrc="https://www.youtube.com/embed/HZ-Xvy2ZSsk"
+  urlMoreInformation="/proyecto-crea"
+  title="Proyecto CREA"
+  subtitle="Formación, inclusión y oportunidades reales"
+  description="Descubre nuestro programa de formación y empleo dirigido a personas con discapacidad en Socuéllamos. Un espacio donde se fomenta la autonomía, el desarrollo personal y la integración laboral."
+/>
+
   );
 };
 

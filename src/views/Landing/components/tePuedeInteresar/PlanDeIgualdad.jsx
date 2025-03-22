@@ -162,15 +162,14 @@ const CardsInterestInformation = () => {
         </ContenedorCards>
       </SeccionContainer>
       <Video 
-        changeIntoSquare
-        hideButton
-        sectionTitle=" Compromiso con la Igualdad"
-        urlMoreInformation=""
-        videoSrc="https://www.youtube.com/embed/oPgPJpAv8yM"
-        title="Promovemos la Igualdad"
-        subtile="El derecho a la igualdad de trato y de oportunidades es un derecho fundamental que queda recogido en el artículo 14 de la Constitución Española."
-        text="“Objetivo: hacer efectivo el derecho de igualdad de trato y de oportunidades entre mujeres y hombres, en particular mediante la eliminación de la discriminación de la mujer, sea cual fuere su circunstancia o condición, en cualesquiera de los ámbitos de la vida y, singularmente, en las esferas política, civil, laboral, económica, social y cultural para alcanzar una sociedad más democrática, más justa y más solidaria.”"
-      />
+  changeIntoSquare
+  sectionTitle="Compromiso con la Igualdad"
+  videoSrc="https://www.youtube.com/embed/oPgPJpAv8yM"
+  title="Promovemos la Igualdad"
+  subtitle="La igualdad de trato y oportunidades es un derecho fundamental recogido en la Constitución Española."
+  description="Trabajamos para eliminar cualquier forma de discriminación hacia las mujeres, garantizando su participación plena en todos los ámbitos de la vida: social, política, cultural y laboral. Nuestro objetivo es una sociedad más justa, democrática y solidaria."
+/>
+
     </>
   );
 };

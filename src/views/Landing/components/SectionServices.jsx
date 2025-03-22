@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
-import SectionServiceFilter from "./SectionServiceFilter";
 import { servicesData } from "./services/pictoButtonsData";
 import styled from "styled-components";
+
+const SectionServiceFilter = lazy(() => import("./SectionServiceFilter"));
+
 
 const SectionServices = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -28,14 +30,18 @@ const SectionServices = () => {
           {servicesData.map((item) => (
             <IconCard key={item.id}>
               <StyledLink to={item.url} aria-label={`Ir a la sección de ${item.name}`}>
-                <img src={item.img} alt={`Icono de ${item.name}`} />
-                <h3>{item.name}</h3>
+                <IconWrapper>
+                  <img loading="lazy"src={item.img} alt={`Icono de ${item.name}`} />
+                </IconWrapper>
+                <CardText>{item.name}</CardText>
               </StyledLink>
             </IconCard>
           ))}
         </IconsGrid>
       ) : (
+        <Suspense fallback={<div>Cargando servicios...</div>}>
         <SectionServiceFilter />
+      </Suspense>
       )}
     </Section>
   );
@@ -91,23 +97,17 @@ const IconCard = styled.div`
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 2rem;
-  min-height: 180px;
+  min-height: 200px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
   text-align: center;
   transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: #e0d3e6;
-  }
-
-  img {
-    height: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-    color: #071c2f;
   }
 `;
 
@@ -118,6 +118,7 @@ const StyledLink = styled(Link)`
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
   color: inherit;
   outline: none;
 
@@ -125,4 +126,30 @@ const StyledLink = styled(Link)`
     outline: 3px solid #ffbf47;
     border-radius: 8px;
   }
+`;
+
+const IconWrapper = styled.div`
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+const CardText = styled.h3`
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #071c2f;
+  margin: 0;
 `;

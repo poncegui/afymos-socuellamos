@@ -6,7 +6,7 @@ import {
 } from "./components/services/landingBlocksData";
 
 import CardsAboutUs from "./components/CardsAboutUs";
-import Carousel from "../../components/Carousel/Carousel";
+import CarouselSwitcher from "../../components/Carousel/CarouselSwitcher";
 import ContactForm from "./components/contactForm/ContactForm";
 import { Content } from "../../components/Content/Content";
 import DonationInformation from "./components/DonationInformation";
@@ -29,7 +29,7 @@ const LandingView = () => {
     <>
       <ScrollToTop />
       <TePuedeInteresar />
-      <Carousel items={items} />
+      <CarouselSwitcher items={items} />
       <VideoLanding />
       <DonationInformation />
       <SectionServices />

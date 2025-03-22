@@ -16,7 +16,7 @@ const SectionServices = () => {
           {data.map((item) => (
             <Icons key={item.id} value={item.name}>
               <Link to={item.url} aria-label="ir a la ruta selecionada">
-                <img src={item.img} alt={item.name} />
+                <img loading="lazy"src={item.img} alt={item.name} />
                 <h3>{item.name}</h3>
               </Link>
             </Icons>

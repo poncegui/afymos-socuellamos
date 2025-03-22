@@ -8,7 +8,7 @@ const Header = () => {
       <HeaderSection>
         <HeaderContainer>
           <HeaderTitle>
-            <img src={logo} alt="logo-afymos" />
+            <img loading="lazy"src={logo} alt="logo-afymos" />
             <h1>Afymos</h1>
           </HeaderTitle>
           <HeaderSubtitle>

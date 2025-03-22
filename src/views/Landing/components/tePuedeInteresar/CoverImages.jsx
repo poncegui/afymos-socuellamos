@@ -55,7 +55,7 @@ const CoverImages = () => {
     <CoverContainer>
       {coverData.map((image, idx) => (
         <BackgroundImage key={idx} isActive={idx === index}>
-          <img src={image.src} alt={image.alt} />
+          <img loading="lazy"src={image.src} alt={image.alt} />
         </BackgroundImage>
       ))}
       <TitleContainer>{coverData[index].name}</TitleContainer>

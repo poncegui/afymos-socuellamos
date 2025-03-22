@@ -177,7 +177,7 @@ const IntroductionView = () => {
         <Overlay />
         <ContentContainer>
           <HeaderTitle>
-            <img src={logo} alt="Logotipo de Afymos" />
+            <img loading="lazy"src={logo} alt="Logotipo de Afymos" />
             <h1>Afymos</h1>
           </HeaderTitle>
 

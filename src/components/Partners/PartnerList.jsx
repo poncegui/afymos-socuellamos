@@ -7,22 +7,21 @@ const PartnerList = ({ size, inverse, data, title }) => {
   return (
     <>
       <TitleSection title={title} inverse={inverse} size={size} />
-      <SectionPartners>
-        <ContainerParnertList>
-          {data?.map(partner=> {
-            return (
+      <SectionPartners aria-label="Listado de entidades colaboradoras">
+        <PartnersGrid>
+          {data?.map((partner) => (
+            <PartnerWrapper key={partner.id} title={partner.titleImg}>
               <PartnersCard
-                key={partner.id}
                 src={partner.logoSrc}
                 alt={partner.alt}
                 url={partner.url}
                 target={partner.target}
-                title={partner.titleImg}
                 rel="noopener noreferrer"
+                loading="lazy"
               />
-            );
-          })}
-        </ContainerParnertList>
+            </PartnerWrapper>
+          ))}
+        </PartnersGrid>
       </SectionPartners>
     </>
   );
@@ -30,58 +29,53 @@ const PartnerList = ({ size, inverse, data, title }) => {
 
 export default PartnerList;
 
-export const SectionPartners = styled.div`
+const SectionPartners = styled.section`
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin: 0 0 0px 0;
-  padding: 2rem;
+  padding: 3rem 2rem;
+  text-align: center;
 
-  section {
-    background-color: #071c2f;
-    height: 80px;
-    width: 100%;
-    color: #c6b1c9;
-    display: grid;
-    place-content: center;
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
   }
 
-  h2 {
-    font-size: 28px;
-  }
-
-  @media (max-width: 440px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
-
-    section {
-      height: 60px;
-    }
-    h2 {
-      font-size: 24px;
-    }
+  @media (max-width: 480px) {
+    padding: 1.5rem 1rem;
   }
 `;
 
-export const ContainerParnertList = styled.div`
-  background-color: white;
+const PartnersGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-content: center;
-  flex-direction: row-reverse;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
   align-items: center;
-  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
 
-  @media (max-width: 440px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    padding: 30px 0;
+  @media (max-width: 480px) {
+    gap: 1rem;
+  }
+`;
+
+const PartnerWrapper = styled.div`
+  position: relative;
+
+  &:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #071c2f;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    z-index: 1;
   }
 `;

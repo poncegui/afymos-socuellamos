@@ -13,12 +13,12 @@ const ContactForm = () => {
       <section className="contact" id="contacto">
         <IconsContainer>
           <Icons>
-            <img src={IconOne} alt="icono teléfono" />
+            <img loading="lazy"src={IconOne} alt="icono teléfono" />
             <h3>teléfono de contacto</h3>
             <p>926 532 749</p>
           </Icons>
           <Icons>
-            <img src={IconTwo} alt="icono correo electrónico" />
+            <img loading="lazy"src={IconTwo} alt="icono correo electrónico" />
             <h3>correo electrónico</h3>
             <p>
               <a
@@ -33,7 +33,7 @@ const ContactForm = () => {
             </p>
           </Icons>
           <Icons>
-            <img src={IconThree} alt="" />
+            <img loading="lazy"src={IconThree} alt="" />
             <h3>Dirección</h3>
             <p>c. Pedro Arias, 87, 13630 Socuéllamos, Ciudad Real</p>
           </Icons>
