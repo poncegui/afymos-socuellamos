@@ -10,14 +10,61 @@ import infanta from "../assets/images-cover/infanta.jpg";
 
 
 export const items = [
-  {id:0, image: infanta, alt:'reconocimiento programa social de empleo', title: 'Premios Fundación Mapfre' },
-  {id:7, image: clubDeportivo, alt:'club deportivo afymos', title: 'Nuevo Club Deportivo Afymos' },
-  {id:1, image: charlasPolicia, alt:'acuerdo de colaboración', title: 'Firmado acuerdo de colaboración con ADEVI y FEDA' },
-  {id:2, image: capacity, alt:'semana de la capacidad', title: 'Semana Capacidad' },
-  {id:3, image: charlasPolicia, alt:'Charlas Educativas', title: 'Charlas Educativas' },
-  {id:4, image: basket, alt:'somos campeones', title: '¡Somos campeones!' },
-  {id:5, image: crea, alt:'Proyecto Nuevo Crea', title: 'Proyecto Nuevo Crea' },
-  {id:6, image: afymos, alt:'Familia Afymos!', title: 'Familia Afymos!' },
+  {
+    id: 0,
+    image: infanta,
+    alt: 'reconocimiento programa social de empleo',
+    title: 'Premios Fundación Mapfre',
+    description: 'Reconocimiento al programa social de empleo por parte de la Fundación Mapfre.',
+    link: '',
+  },
+  {
+    id: 5,
+    image: crea,
+    alt: 'Proyecto Nuevo Crea 2025',
+    title: 'Proyecto Nuevo Crea 2025',
+    description: 'Lanzamos Crea, una iniciativa innovadora de formación y empleo.',
+    link: '/proyecto-crea',
+  },
+  {
+    id: 7,
+    image: clubDeportivo,
+    alt: 'club deportivo afymos',
+    title: 'Nuevo Club Deportivo Afymos',
+    description: 'Lanzamos nuestro nuevo club deportivo. ¡Únete y participa!',
+    link: '/club-deportivo-afymos',
+  },
+  {
+    id: 1,
+    image: charlasPolicia,
+    alt: 'acuerdo de colaboración',
+    title: 'Acuerdo con ADEVI y FEDA',
+    description: 'Un nuevo acuerdo para fomentar la inclusión y la colaboración.',
+    link: '',
+  },
+  {
+    id: 2,
+    image: capacity,
+    alt: 'semana de la capacidad',
+    title: 'Semana Capacidad',
+    description: 'Actividades y eventos para celebrar la Semana de la Capacidad.',
+    link: '',
+  },
+  {
+    id: 4,
+    image: basket,
+    alt: 'somos campeones',
+    title: '¡Somos campeones!',
+    description: 'Nuestro equipo de baloncesto gana el campeonato regional.',
+    link: '',
+  },
+ 
+  {
+    id: 6,
+    image: afymos,
+    alt: 'Familia Afymos!',
+    title: 'Familia Afymos!',
+    description: 'Celebramos el valor de la comunidad y la familia Afymos.',
+    link: '',
+  },
 ];
-
-

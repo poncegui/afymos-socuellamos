@@ -28,8 +28,8 @@ const LandingView = () => {
   return (
     <>
       <ScrollToTop />
-      <Carousel items={items} />
       <TePuedeInteresar />
+      <Carousel items={items} />
       <VideoLanding />
       <DonationInformation />
       <SectionServices />

@@ -1,20 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const CarouselContainer = styled.div`
+const SectionHeader = styled.div`
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  padding: 2rem 1rem;
+  background-color: #071c2f;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 `;
 
-const Title = styled.h2`
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #071c2f;
+const CarouselContainer = styled.section`
+  width: 100%;
+  padding: 3rem 0;
+  position: relative;
+  background: linear-gradient(135deg, #c6b1c9 0%, #ffffff 100%);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-repeat: repeat;
 `;
 
 const CarouselWrapper = styled.div`
@@ -25,15 +33,16 @@ const CarouselWrapper = styled.div`
 
 const CarouselContent = styled.div`
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1.2s ease-in-out;
   transform: translateX(${(props) => props.translate}%);
+  touch-action: pan-y;
 `;
 
 const CarouselItem = styled.div`
   min-width: 100%;
-  padding: 0 0.5rem;
   box-sizing: border-box;
   flex-shrink: 0;
+  padding: 1rem;
 
   @media (min-width: 768px) {
     min-width: 50%;
@@ -44,32 +53,59 @@ const CarouselItem = styled.div`
   }
 
   .card {
-    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     background-color: white;
-    position: relative;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 
     &:hover {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
 
     img {
       width: 100%;
-      height: 250px;
+      height: 280px;
       object-fit: cover;
-      display: block;
     }
 
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-      color: white;
-      padding: 1rem;
-      width: 100%;
-      font-size: 1.1rem;
+    .card-content {
+      flex: 1;
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        color: #071c2f;
+      }
+
+      p {
+        font-size: 1.05rem;
+        color: #444;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: #071c2f;
+        padding: 0.75rem 1.25rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+
+        &:hover {
+          background-color: #0c2a4e;
+        }
+
+        &:focus-visible {
+          outline: 3px solid #ffbf47;
+        }
+      }
     }
   }
 `;
@@ -78,16 +114,19 @@ const NavButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #071c2f;
-  color: white;
+  background: white;
+  color: #071c2f;
   border: none;
-  padding: 0.75rem;
+  padding: 1.2rem;
   border-radius: 50%;
   cursor: pointer;
   z-index: 2;
+  font-size: 2rem;
+  line-height: 1;
+  transition: background 0.3s ease;
 
   &:hover {
-    background: #0c2a4e;
+    background: #f0f0f0;
   }
 
   &:disabled {
@@ -107,15 +146,16 @@ const NavButton = styled.button`
 const Pagination = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 
   .dot {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
     background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 
     &.active {
       background-color: #071c2f;
@@ -125,47 +165,94 @@ const Pagination = styled.div`
 
 const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const totalItems = items.length;
   const itemsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
   const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
-
   const translate = -(currentIndex * 100);
+
+  const startX = useRef(null);
+  const endX = useRef(null);
 
   const handlePrev = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
   const handleNext = () => setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
 
+  const handleTouchStart = (e) => {
+    startX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    endX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (startX.current !== null && endX.current !== null) {
+      const distance = startX.current - endX.current;
+      if (distance > 50) handleNext();
+      else if (distance < -50) handlePrev();
+    }
+    startX.current = null;
+    endX.current = null;
+  };
+
   return (
-    <CarouselContainer>
-      <Title>Noticias</Title>
-      <CarouselWrapper>
-        <NavButton className="left" onClick={handlePrev} disabled={currentIndex === 0}>
-          &#8249;
-        </NavButton>
-        <CarouselContent translate={translate}>
-          {items.map((item, index) => (
-            <CarouselItem key={index}>
-              <div className="card">
-                <img src={item.image} alt={item.title} />
-                <div className="overlay">{item.title}</div>
-              </div>
-            </CarouselItem>
+    <>
+      <SectionHeader>Noticias</SectionHeader>
+      <CarouselContainer role="region" aria-label="Carrusel de noticias destacadas">
+        <CarouselWrapper>
+          <NavButton
+            className="left"
+            onClick={handlePrev}
+            disabled={currentIndex === 0}
+            aria-label="Anterior"
+          >
+            &#8249;
+          </NavButton>
+
+          <CarouselContent
+            translate={translate}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
+            {items.map((item, index) => (
+              <CarouselItem key={index}>
+                <div className="card">
+                  <img src={item.image} alt={item.alt || item.title} />
+                  <div className="card-content">
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                    {item.link && <Link to={item.link}>Leer más</Link>}
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <NavButton
+            className="right"
+            onClick={handleNext}
+            disabled={currentIndex === maxIndex}
+            aria-label="Siguiente"
+          >
+            &#8250;
+          </NavButton>
+        </CarouselWrapper>
+
+        <Pagination>
+          {Array.from({ length: maxIndex + 1 }).map((_, index) => (
+            <div
+              key={index}
+              className={`dot ${currentIndex === index ? "active" : ""}`}
+              onClick={() => setCurrentIndex(index)}
+              role="button"
+              aria-label={`Ir a la página ${index + 1}`}
+              tabIndex={0}
+              onKeyDown={(e) => e.key === 'Enter' && setCurrentIndex(index)}
+            ></div>
           ))}
-        </CarouselContent>
-        <NavButton className="right" onClick={handleNext} disabled={currentIndex === maxIndex}>
-          &#8250;
-        </NavButton>
-      </CarouselWrapper>
-      <Pagination>
-        {Array.from({ length: maxIndex + 1 }).map((_, index) => (
-          <div
-            key={index}
-            className={`dot ${currentIndex === index ? "active" : ""}`}
-            onClick={() => setCurrentIndex(index)}
-          ></div>
-        ))}
-      </Pagination>
-    </CarouselContainer>
+        </Pagination>
+      </CarouselContainer>
+    </>
   );
 };
 
