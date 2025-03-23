@@ -74,7 +74,10 @@ const CarouselDesktop = ({ items, withoutHeader }) => {
             {items.map((item, index) => (
               <CarouselItem key={index} style={{ minWidth: `${100 / itemsPerView}%` }}>
                 <div className="card">
+                <picture>
+                <source srcSet={item.imageWebp} type="image/webp" />
                   <img loading="lazy" src={item.image} alt={item.alt || item.title} />
+                  </picture>
                   <div className="card-content">
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>

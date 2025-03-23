@@ -26,6 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+     "convert:webp": "node convert-webp.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -57,7 +58,8 @@
     "lint-staged": "^13.2.0",
     "postcss-cli": "^10.1.0",
     "prettier": "2.8.4",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "webp-converter": "^2.3.3"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

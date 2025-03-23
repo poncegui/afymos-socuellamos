@@ -13,14 +13,23 @@ const CarouselMobile = ({ items, withoutHeader }) => {
       )}
       <ScrollArea>
         {items.map((item, index) => (
-          <Card key={index}>
-            <img src={item.image} alt={item.alt || item.title} loading="lazy" />
-            <CardContent>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              {item.link && <StyledLink to={item.link}>Leer más</StyledLink>}
-            </CardContent>
-          </Card>
+      <Card key={index}>
+      <picture>
+        <source srcSet={item.imageWebp} type="image/webp" />
+        <img
+          src={item.image}
+          alt={item.alt || item.title}
+          loading="lazy"
+          width="100%"
+          height="200"
+        />
+      </picture>
+      <CardContent>
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+        {item.link && <StyledLink to={item.link}>Leer más</StyledLink>}
+      </CardContent>
+    </Card>
         ))}
       </ScrollArea>
     </MobileCarouselContainer>
