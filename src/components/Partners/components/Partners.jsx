@@ -2,31 +2,40 @@ import React, { useState } from "react";
 
 import styled from "styled-components";
 
-const PartnersCard = ({ url, alt, target, src,title }) => {
+const PartnersCard = ({ url, alt, target, src, title }) => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!clicked);
   };
+
+  // Asumimos que la ruta WebP está en /images/partners/nombre-del-archivo.webp
+  // Puedes ajustar esta lógica si las rutas están definidas de otro modo
+  const fileName = src.split("/").pop().split(".")[0];
+  const webpPath = `/images/partners/${fileName}.webp`;
+
   return (
-    <>
-      <a
-        onClick={handleClick}
-        href={url}
-        alt={alt}
-        target={target}
-        aria-label="ir a web del colaborador"
-      >
-        <PartnertCard>
-          <PartnertFaceFront>
-            <LogoPartner src={src} alt={alt} title={title}/>
-          </PartnertFaceFront>
-        </PartnertCard>
-      </a>
-    </>
+    <a
+      onClick={handleClick}
+      href={url}
+      target={target}
+      rel="noopener noreferrer"
+      aria-label={`Ir a la web del colaborador: ${title}`}
+    >
+      <PartnertCard>
+        <PartnertFaceFront>
+          <picture>
+            <source srcSet={webpPath} type="image/partners/webp" />
+            <LogoPartner src={src} alt={alt} title={title} loading="lazy" />
+          </picture>
+        </PartnertFaceFront>
+      </PartnertCard>
+    </a>
   );
 };
 
 export default PartnersCard;
+
+// Estilos
 
 export const PartnertCard = styled.div`
   align-items: center;
@@ -37,9 +46,6 @@ export const PartnertCard = styled.div`
   width: 50%;
   gap: 2rem;
   white-space: nowrap;
-
-  @media (max-width: 440px) {
-  }
 `;
 
 export const PartnertFaceFront = styled.div`
@@ -52,7 +58,7 @@ export const PartnertFaceFront = styled.div`
 export const LogoPartner = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: center;
+  object-fit: contain;
 `;
 
 export const Card = styled.div`
@@ -79,5 +85,5 @@ export const FaceFront = styled.div`
 
 export const ImgFront = styled.img`
   width: 100%;
-  object-fit: center;
+  object-fit: contain;
 `;
