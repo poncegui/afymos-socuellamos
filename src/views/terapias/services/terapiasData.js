@@ -1,11 +1,11 @@
-import auditiva from "../../juntaDirectiva/assets/images-chart-png/aliciaCollado.jpg";
-import fisioterapia from "../../juntaDirectiva/assets/images-chart-png/amparoFisio.jpg";
+import auditiva from "../assets/images-terapias/aliciaCollado.jpg";
+import fisioterapia from "../assets/images-terapias/amparoFisio.jpg";
 import introduccion from "../../centroDia/assets/images-centroDia/centroDia-6.jpg";
-import logopedia from "../../juntaDirectiva/assets/images-chart-png/logopedas.jpg";
+import logopedia from "../assets/images-terapias/logopedas.jpg";
 import neuroPiscologia from "../assets/images-terapias/sala.png";
-import psicologia from "../../juntaDirectiva/assets/images-chart-png/beaPsicologa.jpg";
-import psicopedagogia from "../../juntaDirectiva/assets/images-chart-png/monicaY.jpg";
-import terapiaOcupacional from "../../juntaDirectiva/assets/images-chart-png/chart10.png";
+import psicologia from "../assets/images-terapias/beaPsicologa.jpg";
+import psicopedagogia from "../assets/images-terapias/monicaY.jpg";
+import terapiaOcupacional from "../assets/images-terapias/chart10.png";
 import visual from "../assets/images-terapias/visual.png";
 
 export const introduccionData = {
