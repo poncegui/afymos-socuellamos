@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.13b4dd05.js",
+    "main.js": "./static/js/main.6e36c743.js",
     "static/js/349.7b467e44.chunk.js": "./static/js/349.7b467e44.chunk.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/memoriaActividadesSociolaboral.pdf": "./static/media/memoriaActividadesSociolaboral.b39b47ab72c77dfec139.pdf",
@@ -17,7 +17,6 @@
     "static/media/diverses.pdf": "./static/media/diverses.ef3a2983cb154e26c404.pdf",
     "static/media/donaciones.png": "./static/media/donaciones.fb7b5136f5af17a31bb8.png",
     "static/media/chart3.png": "./static/media/chart3.28db4cfc8b4396d652c4.png",
-    "static/media/chart11.png": "./static/media/chart11.8703d6b1a5f35108e519.png",
     "static/media/chart1.png": "./static/media/chart1.f20e0fc248deeb00ed45.png",
     "static/media/chart6.png": "./static/media/chart6.ccc4dd8786995f0b2494.png",
     "static/media/chart10.png": "./static/media/chart10.fad3ceacf720f84c400c.png",
@@ -25,18 +24,11 @@
     "static/media/doctor_bait.jpg": "./static/media/doctor_bait.c0c1ee2df177c688746f.jpg",
     "static/media/ots.jpg": "./static/media/ots.a3381216ff8fba8e85f3.jpg",
     "static/media/semana-capacidad.png": "./static/media/semana-capacidad.db73c38d6cfa6bf3fb05.png",
-    "static/media/chart19.png": "./static/media/chart19.beb1c1ddea3eb2331372.png",
     "static/media/gimnasio.jpg": "./static/media/gimnasio.4e04c626d6463bab502e.jpg",
     "static/media/chart2.png": "./static/media/chart2.ac50fe831b9a4bb56af7.png",
     "static/media/chart5.png": "./static/media/chart5.f1624336e30b1d8c60a8.png",
-    "static/media/chart18.png": "./static/media/chart18.f0c9756344c71afefa4a.png",
-    "static/media/chart12.png": "./static/media/chart12.217a1365d8ff60e862b7.png",
     "static/media/chart8.png": "./static/media/chart8.c6d738d35c4bac985323.png",
     "static/media/chart9.png": "./static/media/chart9.fcd0b8909473a35c1dc4.png",
-    "static/media/chart14.png": "./static/media/chart14.783c366cb781566c24e7.png",
-    "static/media/chart16.png": "./static/media/chart16.87febe9c3dfd0d23d0f6.png",
-    "static/media/chart13.png": "./static/media/chart13.b128dd46744456c463a0.png",
-    "static/media/chart17.png": "./static/media/chart17.9da20963178447ea8317.png",
     "static/media/chart4.png": "./static/media/chart4.135461782bb7ebee7f6a.png",
     "static/media/formacion-2.png": "./static/media/formacion-2.ff1a7fa55e6d77b7bb03.png",
     "static/media/centroDia-5.jpg": "./static/media/centroDia-5.813d367cde84113f5509.jpg",
@@ -109,7 +101,6 @@
     "static/media/vivienda-2.jpg": "./static/media/vivienda-2.74948c4fb956af4f2687.jpg",
     "static/media/aliciaCollado.jpg": "./static/media/aliciaCollado.8eb5560fae6936f29ddc.jpg",
     "static/media/cuentas-anuales-2023.pdf": "./static/media/cuentas-anuales-2023.ac146daf432c5e9f05b7.pdf",
-    "static/media/monica.jpg": "./static/media/monica.de54c05879f1e2897859.jpg",
     "static/media/fundacion-once.png": "./static/media/fundacion-once.eccc006489bd0da4b7d0.png",
     "static/media/hnosCuevas.png": "./static/media/hnosCuevas.cfecf25993c9be4d9034.png",
     "static/media/colegioLoreto.jpg": "./static/media/colegioLoreto.e26574bd40037661b512.jpg",
@@ -158,11 +149,11 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.13b4dd05.js.map": "./static/js/main.13b4dd05.js.map",
+    "main.6e36c743.js.map": "./static/js/main.6e36c743.js.map",
     "349.7b467e44.chunk.js.map": "./static/js/349.7b467e44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.13b4dd05.js"
+    "static/js/main.6e36c743.js"
   ]
 }
