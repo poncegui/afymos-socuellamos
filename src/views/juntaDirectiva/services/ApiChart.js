@@ -1,14 +1,4 @@
 import image1 from "../assets/images-chart-png/chart1.png";
-import image10 from "../assets/images-chart-png/chart10.png";
-import image11 from "../assets/images-chart-png/chart11.png";
-import image12 from "../assets/images-chart-png/chart12.png";
-import image13 from "../assets/images-chart-png/chart13.png";
-import image14 from "../assets/images-chart-png/chart14.png";
-import image15 from "../assets/images-chart-png/monica.jpg";
-import image16 from "../assets/images-chart-png/chart16.png";
-import image17 from "../assets/images-chart-png/chart17.png";
-import image18 from "../assets/images-chart-png/chart18.png";
-import image19 from "../assets/images-chart-png/chart19.png";
 import image2 from "../assets/images-chart-png/chart2.png";
 import image20 from "../assets/images-chart-png/chart20.jpg";
 import image21 from "../assets/images-chart-png/vocal7.jpg";
@@ -19,99 +9,6 @@ import image6 from "../assets/images-chart-png/chart6.png";
 import image7 from "../assets/images-chart-png/chart7.png";
 import image8 from "../assets/images-chart-png/chart8.png";
 import image9 from "../assets/images-chart-png/chart9.png";
-
-export const personsChart = [
-  {
-    id: 1,
-    name: "Laura Simancas",
-    role: "Terapeuta ocupacional",
-    img: image10,
-    profession: "Teacher",
-    alt: "fotografia Laura Simancas",
-    titleImg: "Laura Simancas - Terapeuta ocupacional",
-  },
-  {
-    id: 2,
-    name: "Miguel Ángel Gómez",
-    role: "Recepcionista",
-    img: image11,
-    profession: "Teacher",
-    alt: "fotografía Miguel Ángel Gómez",
-    titleImg: "Miguel Ángel Gómez - Recepcionista",
-  },
-  {
-    id: 3,
-    name: "Alicia Lara",
-    role: "Psicopedagoga",
-    img: image12,
-    profession: "Teacher",
-    alt: "fotografía Alicia Lara",
-    titleImg: "Alicia Lara - Psicopedagoga",
-  },
-  {
-    id: 8,
-    name: "Cristina Olivares",
-    role: "Vocal 2",
-    img: image13,
-    profession: "Logopeda",
-    alt: "fotografía Cristina Olivares",
-    titleImg: "Cristina Olivares - Vocal 2",
-  },
-  {
-    id: 4,
-    name: "Beatriz Henales",
-    role: "Psicóloga",
-    img: image14,
-    profession: "Teacher",
-    alt: "fotografía Beatriz Henales",
-    titleImg: "Beatriz Henales - Psicóloga",
-  },
-  {
-    id: 5,
-    name: "Mónica Alejandra Mazzella",
-    role: "Psicopedagoga",
-    img: image15,
-    profession: "Teacher",
-    alt: "fotografía Mónica Alejandra Mazzella",
-    titleImg: "Mónica Alejandra Mazzella - Psicopedagoga",
-  },
-  {
-    id: 6,
-    name: "Amparo Guerrero",
-    role: "Fisioterapeuta",
-    img: image16,
-    profession: "Teacher",
-    alt: "fotografía Amparo Guerrero",
-    titleImg: "Amparo Guerrero - Fisioterapeuta",
-  },
-  {
-    id: 7,
-    name: "Alicia López",
-    role: "Neuropsicologa",
-    img: image17,
-    profession: "Teacher",
-    alt: "fotografía Alicia López",
-    titleImg: "Alicia López - Neuropsicologa",
-  },
-  {
-    id: 9,
-    name: "Jorge Sánchez",
-    role: "Logopeda",
-    img: image18,
-    profession: "Teacher",
-    alt: "fotografía Jorge Sánchez",
-    titleImg: "Jorge Sánchez - Logopeda",
-  },
-  {
-    id: 10,
-    name: "Ángeles Izquierdo",
-    role: "Personal de Limpieza",
-    img: image19,
-    profession: "Teacher",
-    alt: "fotografía Ángeles Izquierdo",
-    titleImg: "Ángeles Izquierdo - Personal de Limpieza",
-  },
-];
 
 export const juntaChart = [
   {
