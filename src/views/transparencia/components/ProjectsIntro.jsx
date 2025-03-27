@@ -4,7 +4,7 @@ import doc1 from "./assets/docs_transparencia/memoriaActividadesSociolaboral.pdf
 import doc12 from "./assets/docs_transparencia/cuentas-anuales-2023.pdf";
 import doc4 from "./assets/docs_transparencia/plan-estrategico-2023-2024.pdf";
 import doc6 from "./assets/docs_transparencia/plan-voluntariado-2025-2027.pdf";
-import doc8 from "./assets/docs_transparencia/informes-auditoria-2024.pdf";
+import doc8 from "./assets/docs_transparencia/auditoria-afymos.pdf";
 import doc9 from "./assets/docs_transparencia/codigoEtico.pdf";
 import styled from "styled-components";
 

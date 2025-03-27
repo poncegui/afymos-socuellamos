@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.6e36c743.js",
+    "main.js": "./static/js/main.3f8b2655.js",
     "static/js/349.7b467e44.chunk.js": "./static/js/349.7b467e44.chunk.js",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/memoriaActividadesSociolaboral.pdf": "./static/media/memoriaActividadesSociolaboral.b39b47ab72c77dfec139.pdf",
@@ -12,7 +12,6 @@
     "static/media/chartTeam1.jpg": "./static/media/chartTeam1.0b6f4e3740dda26671ae.jpg",
     "static/media/centroDia-4.jpg": "./static/media/centroDia-4.5cbe31dc0faf914e5ace.jpg",
     "static/media/codigoEtico.pdf": "./static/media/codigoEtico.66024bab3fa29f323c14.pdf",
-    "static/media/informes-auditoria-2024.pdf": "./static/media/informes-auditoria-2024.8d61e7c30653e2e35ca6.pdf",
     "static/media/plan-estrategico-2023-2024.pdf": "./static/media/plan-estrategico-2023-2024.4407cb2af2b727ce3bc2.pdf",
     "static/media/diverses.pdf": "./static/media/diverses.ef3a2983cb154e26c404.pdf",
     "static/media/donaciones.png": "./static/media/donaciones.fb7b5136f5af17a31bb8.png",
@@ -47,6 +46,7 @@
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/charlas.png": "./static/media/charlas.9632c0261383e958972a.png",
     "static/media/plan-voluntariado-2025-2027.pdf": "./static/media/plan-voluntariado-2025-2027.44e8cb48c58eecb22f19.pdf",
+    "static/media/auditoria-afymos.pdf": "./static/media/auditoria-afymos.6ae170a04fb9f90f8607.pdf",
     "static/media/nuevo_crea_2025.jpg": "./static/media/nuevo_crea_2025.3bc163359d71266fdac5.jpg",
     "static/media/club-deportivo.jpg": "./static/media/club-deportivo.9dc81fe9f3419cebdcda.jpg",
     "static/media/infanta.jpg": "./static/media/infanta.f4aaf5f749ba4df8f339.jpg",
@@ -149,11 +149,11 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.6e36c743.js.map": "./static/js/main.6e36c743.js.map",
+    "main.3f8b2655.js.map": "./static/js/main.3f8b2655.js.map",
     "349.7b467e44.chunk.js.map": "./static/js/349.7b467e44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.6e36c743.js"
+    "static/js/main.3f8b2655.js"
   ]
 }
