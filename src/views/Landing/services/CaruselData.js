@@ -5,8 +5,18 @@ import charlasPolicia from "../assets/images-cover/charlas.png";
 import clubDeportivo from "../assets/images-cover/club-deportivo.jpg";
 import crea from "../assets/images-cover/crea-2024.jpg";
 import infanta from "../assets/images-cover/infanta.jpg";
+import reforma from "../assets/images-noticias/reforma.jpg"
 
 export const items = [
+  {
+    id: 5,
+    image: reforma,
+    imageWebp: "/images/carusel/reforma.webp",
+    alt: "reconocimiento programa social de empleo",
+    title: "Reforma interior Centro de Día",
+    description: "División de salas para la ampliación de los servicios.",
+    link: "/reforma-centro-dia",
+  },
   {
     id: 0,
     image: infanta,
