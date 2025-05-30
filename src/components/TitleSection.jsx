@@ -19,6 +19,7 @@ const TitleSection = ({ title, size, inverse, marginBottom }) => {
 export default TitleSection;
 
 const TitleSectionContainer = styled.div`
+ width: 100%;
   display: flex;
   width: 100%;
   height: 7rem;
