@@ -9,7 +9,7 @@ export const reconocimientoDataOne = {
   topLine: {
     text: "Ampliamos nuestros servicios",
   },
-  headline: "Afymos recibe una ayuda del Grupo de Desarrollo Rural Mancha Nortel",
+  headline: "Afymos recibe una ayuda del Grupo de Desarrollo Rural Mancha Norte",
   description:
     "AFYMOS amplía su Centro de Día gracias a una ayuda LEADER para mejorar la atención terapéutica y rehabilitadora. Con esta inversión, AFYMOS no solo refuerza su compromiso con la inclusión y la atención especializada a personas con discapacidad, sino que también impulsa el desarrollo social, económico y comunitario de Socuéllamos, contribuyendo a fijar población, generar empleo cualificado y posicionar a la localidad como referente regional en atención sociosanitaria accesible e innovadora.",
   img: reconocimiento1,
