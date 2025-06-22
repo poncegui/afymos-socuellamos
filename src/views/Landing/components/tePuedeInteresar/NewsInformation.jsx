@@ -1,9 +1,9 @@
 // Modal.js
 import React, { useEffect, useState } from 'react';
 
-import pdf from './urban-camp-2024.pdf';
+import pdf from './urban-camp-2025.pdf';
 import styled from 'styled-components';
-import urbanCamp from './CARTEL URBAN CAMP 2024.png';
+import urbanCamp from './CARTEL URBAN CAMP 2025.png';
 
 const Overlay = styled.div`
   position: fixed;
@@ -87,7 +87,7 @@ const Modal = () => {
     <Overlay>
       <ModalWrapper>
         <CloseButton onClick={handleClose}>&times;</CloseButton>
-        <Title>Urban Camp 2024</Title>
+        <Title>Urban Camp 2025</Title>
         <Image src={urbanCamp} alt="Descripción de la imagen" />
         <DownloadButton href={pdf} download="documento.pdf">
           Descargar información campamento

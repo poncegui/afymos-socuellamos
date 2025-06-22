@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.2b8d6f34.js",
+    "main.js": "./static/js/main.9142d2e8.js",
     "static/js/349.7b467e44.chunk.js": "./static/js/349.7b467e44.chunk.js",
+    "static/js/943.80a02a4f.chunk.js": "./static/js/943.80a02a4f.chunk.js",
+    "static/media/cuenca.mp4": "./static/media/cuenca.65f6eaa503268209514b.mp4",
     "static/media/center1.jpg": "./static/media/center1.f4929772c0d2350b4bca.jpg",
     "static/media/center2.jpg": "./static/media/center2.05f33dcff2b70a098f6d.jpg",
     "static/media/memoriaActividadesSociolaboral.pdf": "./static/media/memoriaActividadesSociolaboral.b39b47ab72c77dfec139.pdf",
@@ -19,10 +21,12 @@
     "static/media/chart3.png": "./static/media/chart3.28db4cfc8b4396d652c4.png",
     "static/media/chart1.png": "./static/media/chart1.f20e0fc248deeb00ed45.png",
     "static/media/chart6.png": "./static/media/chart6.ccc4dd8786995f0b2494.png",
+    "static/media/portada-cuenca.png": "./static/media/portada-cuenca.40f338b8dfc404a02f93.png",
     "static/media/chart10.png": "./static/media/chart10.fad3ceacf720f84c400c.png",
     "static/media/chart7.png": "./static/media/chart7.232decf49b1a519a4541.png",
     "static/media/doctor_bait.jpg": "./static/media/doctor_bait.c0c1ee2df177c688746f.jpg",
     "static/media/ots.jpg": "./static/media/ots.a3381216ff8fba8e85f3.jpg",
+    "static/media/CARTEL URBAN CAMP 2025.png": "./static/media/CARTEL URBAN CAMP 2025.87a6029be31040ce20e0.png",
     "static/media/semana-capacidad.png": "./static/media/semana-capacidad.db73c38d6cfa6bf3fb05.png",
     "static/media/gimnasio.jpg": "./static/media/gimnasio.4e04c626d6463bab502e.jpg",
     "static/media/chart2.png": "./static/media/chart2.ac50fe831b9a4bb56af7.png",
@@ -97,6 +101,7 @@
     "static/media/cabezuelo.jpg": "./static/media/cabezuelo.033d17f3ea02cdf61712.jpg",
     "static/media/psicopedagogia.png": "./static/media/psicopedagogia.893767e7ba711e2e3d46.png",
     "static/media/grafico-2-removebg-preview.png": "./static/media/grafico-2-removebg-preview.d6e3f40ecc5fb3446d28.png",
+    "static/media/urban-camp-2025.pdf": "./static/media/urban-camp-2025.574fb59e2111c9f205b3.pdf",
     "static/media/institutoDeLaMujer.png": "./static/media/institutoDeLaMujer.a398e019f57361d7e4ca.png",
     "static/media/yolandaAlcolea.jpg": "./static/media/yolandaAlcolea.6b4b71f58341956dcac2.jpg",
     "static/media/apoyo-familias-4.jpg": "./static/media/apoyo-familias-4.bd9c2a63d8f26350c326.jpg",
@@ -151,11 +156,11 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.2b8d6f34.js.map": "./static/js/main.2b8d6f34.js.map",
+    "main.9142d2e8.js.map": "./static/js/main.9142d2e8.js.map",
     "349.7b467e44.chunk.js.map": "./static/js/349.7b467e44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.2b8d6f34.js"
+    "static/js/main.9142d2e8.js"
   ]
 }

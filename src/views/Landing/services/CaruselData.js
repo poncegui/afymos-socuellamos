@@ -7,7 +7,18 @@ import crea from "../assets/images-cover/crea-2024.jpg";
 import infanta from "../assets/images-cover/infanta.jpg";
 import reforma from "../assets/images-noticias/reforma.jpg"
 
+// import urbanCamp from "../assets/images-noticias/camp.png"
+
 export const items = [
+  // {
+  //   id: 6,
+  //   image: urbanCamp,
+  //   imageWebp: "/images/carusel/camp.webp",
+  //   alt: "urban camp 2025",
+  //   title: "Urban Camp 2025",
+  //   description: "Abierto el plazo de inscripción para Urban Camp",
+  //   link: "#",
+  // },
   {
     id: 5,
     image: reforma,
