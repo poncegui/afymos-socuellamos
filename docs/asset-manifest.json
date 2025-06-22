@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.69c5b127.css",
-    "main.js": "./static/js/main.9142d2e8.js",
+    "main.js": "./static/js/main.a0b7c872.js",
     "static/js/349.7b467e44.chunk.js": "./static/js/349.7b467e44.chunk.js",
     "static/js/943.80a02a4f.chunk.js": "./static/js/943.80a02a4f.chunk.js",
     "static/media/cuenca.mp4": "./static/media/cuenca.65f6eaa503268209514b.mp4",
@@ -48,12 +48,15 @@
     "static/media/familia-afymos.png": "./static/media/familia-afymos.94c7dbadc04bb054e09b.png",
     "static/media/clubDeportivo-2.jpg": "./static/media/clubDeportivo-2.4497d77fdf97c20c4111.jpg",
     "static/media/compromiso.pdf": "./static/media/compromiso.e591acfec001d7e31e57.pdf",
+    "static/media/portada-un-dia-afymos.png": "./static/media/portada-un-dia-afymos.7af74db6385de24ad524.png",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
     "static/media/charlas.png": "./static/media/charlas.9632c0261383e958972a.png",
     "static/media/plan-voluntariado-2025-2027.pdf": "./static/media/plan-voluntariado-2025-2027.44e8cb48c58eecb22f19.pdf",
+    "static/media/portada-crea.png": "./static/media/portada-crea.d258d62ef056526d4ef4.png",
     "static/media/auditoria-afymos.pdf": "./static/media/auditoria-afymos.6ae170a04fb9f90f8607.pdf",
     "static/media/nuevo_crea_2025.jpg": "./static/media/nuevo_crea_2025.3bc163359d71266fdac5.jpg",
     "static/media/club-deportivo.jpg": "./static/media/club-deportivo.9dc81fe9f3419cebdcda.jpg",
+    "static/media/portada-club.png": "./static/media/portada-club.6b6518c105b8093b021a.png",
     "static/media/infanta.jpg": "./static/media/infanta.f4aaf5f749ba4df8f339.jpg",
     "static/media/reforma.jpg": "./static/media/reforma.bed1fcca38508c556718.jpg",
     "static/media/clubDeportivo-1.jpg": "./static/media/clubDeportivo-1.e528ec5810d45ed42d75.jpg",
@@ -69,6 +72,7 @@
     "static/media/nuevo-crea-actualizado.jpg": "./static/media/nuevo-crea-actualizado.a764cb7e32793c8d7737.jpg",
     "static/media/compromiso.png": "./static/media/compromiso.adefdf7f8f2aafb137c4.png",
     "static/media/clubDeportivo-3.jpg": "./static/media/clubDeportivo-3.bd46de761bd2b557bc72.jpg",
+    "static/media/portada-igualdad.png": "./static/media/portada-igualdad.2d39043fb16b8104be33.png",
     "static/media/rafa.png": "./static/media/rafa.60a633a3bdc4b6dbc3e2.png",
     "static/media/clubDeportivo-4.jpg": "./static/media/clubDeportivo-4.0c1bc6dde256b6827579.jpg",
     "static/media/monicaY.jpg": "./static/media/monicaY.1ec260ab59eb996d087d.jpg",
@@ -156,11 +160,11 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.69c5b127.css.map": "./static/css/main.69c5b127.css.map",
-    "main.9142d2e8.js.map": "./static/js/main.9142d2e8.js.map",
+    "main.a0b7c872.js.map": "./static/js/main.a0b7c872.js.map",
     "349.7b467e44.chunk.js.map": "./static/js/349.7b467e44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69c5b127.css",
-    "static/js/main.9142d2e8.js"
+    "static/js/main.a0b7c872.js"
   ]
 }

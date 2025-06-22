@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import styled from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
 
-const getYouTubeThumbnail = (url) => {
-  const id = url.split("embed/")[1];
+const getYouTubeThumbnail = url => {
+  const id = url.split('embed/')[1];
   return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 };
 
@@ -16,6 +16,7 @@ const Video = ({
   title,
   subtitle,
   description,
+  coverImage,
   backgroundWhite = false,
 }) => {
   const [play, setPlay] = useState(false);
@@ -30,14 +31,28 @@ const Video = ({
               aria-label={`Reproducir video: ${title}`}
               onClick={() => setPlay(true)}
             >
-              <picture>
-                <source srcSet={getYouTubeThumbnail(videoSrc).replace(".jpg", ".webp")} type="image/webp" />
+              {coverImage ? (
                 <img
-                  src={getYouTubeThumbnail(videoSrc)}
-                  alt={`Miniatura del vídeo ${title}`}
+                  src={coverImage}
+                  alt={`Portada del vídeo ${title}`}
                   loading="lazy"
                 />
-              </picture>
+              ) : (
+                <picture>
+                  <source
+                    srcSet={getYouTubeThumbnail(videoSrc).replace(
+                      '.jpg',
+                      '.webp'
+                    )}
+                    type="image/webp"
+                  />
+                  <img
+                    src={getYouTubeThumbnail(videoSrc)}
+                    alt={`Miniatura del vídeo ${title}`}
+                    loading="lazy"
+                  />
+                </picture>
+              )}
               <PlayOverlay>▶</PlayOverlay>
             </Thumbnail>
           ) : (
@@ -57,7 +72,10 @@ const Video = ({
           <h3>{subtitle}</h3>
           <p>{description}</p>
           {urlMoreInformation && (
-            <StyledLink to={urlMoreInformation} aria-label={`Leer más sobre ${title}`}>
+            <StyledLink
+              to={urlMoreInformation}
+              aria-label={`Leer más sobre ${title}`}
+            >
               Leer más <FontAwesomeIcon icon={faPlus} />
             </StyledLink>
           )}
@@ -73,10 +91,9 @@ export default Video;
 
 const SectionWrapper = styled.section`
   padding: 4rem 1rem;
-  background-color: ${(props) => (props.backgroundWhite ? "white" : "#e8e0ec")};
-  ${(props) =>
-    props.backgroundWhite &&
-    `box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);`}
+  background-color: ${props => (props.backgroundWhite ? 'white' : '#e8e0ec')};
+  ${props =>
+    props.backgroundWhite && `box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);`}
 `;
 
 const ContentWrapper = styled.div`

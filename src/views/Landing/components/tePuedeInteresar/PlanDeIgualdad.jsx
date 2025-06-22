@@ -3,6 +3,7 @@ import React from 'react';
 import Video from '../Video';
 import { cardsIgualdadData } from './services/CardsData';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import portada from '../../assets/portada-igualdad.png';
 import styled from 'styled-components';
 
 const SeccionContainer = styled.section`
@@ -161,15 +162,15 @@ const CardsInterestInformation = () => {
           ))}
         </ContenedorCards>
       </SeccionContainer>
-      <Video 
-  changeIntoSquare
-  sectionTitle="Compromiso con la Igualdad"
-  videoSrc="https://www.youtube.com/embed/oPgPJpAv8yM"
-  title="Promovemos la Igualdad"
-  subtitle="La igualdad de trato y oportunidades es un derecho fundamental recogido en la Constitución Española."
-  description="Trabajamos para eliminar cualquier forma de discriminación hacia las mujeres, garantizando su participación plena en todos los ámbitos de la vida: social, política, cultural y laboral. Nuestro objetivo es una sociedad más justa, democrática y solidaria."
-/>
-
+      <Video
+        changeIntoSquare
+        coverImage={portada}
+        sectionTitle="Compromiso con la Igualdad"
+        videoSrc="https://www.youtube.com/embed/oPgPJpAv8yM"
+        title="Promovemos la Igualdad"
+        subtitle="La igualdad de trato y oportunidades es un derecho fundamental recogido en la Constitución Española."
+        description="Trabajamos para eliminar cualquier forma de discriminación hacia las mujeres, garantizando su participación plena en todos los ámbitos de la vida: social, política, cultural y laboral. Nuestro objetivo es una sociedad más justa, democrática y solidaria."
+      />
     </>
   );
 };
