@@ -41,7 +41,7 @@ const LandingView = () => {
       <VideoLanding />
       <DonationInformation />
       <SectionServices />
-      <Modal />
+      {/* <Modal /> */}
       <CardsAboutUs />
       <ProjectClubDeportivoAfymos />
       <PlanDeIgualdad />
