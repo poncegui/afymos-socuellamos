@@ -30,10 +30,10 @@ export const aboutUsData = [
   },
   {
     id: 4,
-    title: "Cuentas anuales 2023",
+    title: "Cuentas anuales 2024",
     image: contabilidad,
-    alt: "Cuentas anuales 2023",
-    url: "/pdf-cuentas-23",
+    alt: "Cuentas anuales 2024",
+    url: "/pdf-cuentas-24",
     color: "#f5f5f5",
   },
 ];
