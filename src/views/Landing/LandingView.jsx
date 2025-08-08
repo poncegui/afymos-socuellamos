@@ -14,7 +14,6 @@ import ContactForm from './components/contactForm/ContactForm';
 import { Content } from '../../components/Content/Content';
 import DonationInformation from './components/DonationInformation';
 import Footer from '../../components/Footer/Footer';
-import Modal from '../Landing/components/tePuedeInteresar/NewsInformation';
 // import Modal from "../Landing/components/tePuedeInteresar/NewsInformation";
 import PartnertList from '../../components/Partners/PartnerList';
 import PlanDeIgualdad from '../Landing/components/tePuedeInteresar/PlanDeIgualdad';

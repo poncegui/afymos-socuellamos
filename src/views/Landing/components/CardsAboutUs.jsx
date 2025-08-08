@@ -1,10 +1,10 @@
-import { faPlus, faSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faSquare } from '@fortawesome/free-solid-svg-icons';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
-import React from "react";
-import { aboutUsData } from "./services/cardsAboutUsData";
-import styled from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import React from 'react';
+import { aboutUsData } from './services/cardsAboutUsData';
+import styled from 'styled-components';
 
 const SectionContainer = styled.section`
   width: 100%;
@@ -48,7 +48,7 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.color};
+  background-color: ${props => props.color};
   position: relative;
 
   @media (max-width: 900px) {
@@ -57,7 +57,7 @@ const Card = styled.div`
 `;
 
 const TitleCard = styled.h3`
-  color: ${(props) => (props.color === "#224464" ? "#c6b1c9" : "#224464")};
+  color: ${props => (props.color === '#224464' ? '#c6b1c9' : '#224464')};
   font-size: 16px;
   text-align: center;
   margin-top: 10px;
@@ -118,8 +118,8 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 `;
 
 const CircleIcon = styled(FontAwesomeIcon)`
-  font-size: ${(props) => props.size}px;
-  color: ${(props) => props.color};
+  font-size: ${props => props.size}px;
+  color: ${props => props.color};
   margin-right: 10px;
 `;
 
@@ -133,21 +133,34 @@ const CardsAboutUs = () => {
         </Title>
         <CardsContainer>
           {aboutUsData.map((card, index) => (
-            <Card key={index} color={index === 0 ? "#81b71a" : card.color}>
+            <Card key={index} color={index === 0 ? '#81b71a' : card.color}>
               <TitleCard color={card.color}>{card.title}</TitleCard>
               <Image src={card.image} alt={card.alt} />
-              <LinkButton
-                aria-label="ir a la ruta seleccionada"
-                to={card.url}
+              <a
+                href={card.url}
                 target="_blank"
+                rel="noopener noreferrer"
+                download={card.download ? '' : undefined}
+                aria-label={card.ariaLabel}
+                style={{
+                  backgroundColor: 'transparent',
+                  border: 'none',
+                  cursor: 'pointer',
+                  position: 'absolute',
+                  bottom: '10px',
+                  right: '10px',
+                  fontSize: '20px',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                }}
               >
                 <StyledFontAwesomeIcon
                   icon={faPlus}
                   style={{
-                    color: card.color === "#224464" ? "#c6b1c9" : "#071c2f",
+                    color: card.color === '#224464' ? '#c6b1c9' : '#071c2f',
                   }}
                 />
-              </LinkButton>
+              </a>
             </Card>
           ))}
         </CardsContainer>
