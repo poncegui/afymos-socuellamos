@@ -2,6 +2,7 @@ import centroDiversidad from "../assets/pictogramas/campus-universitario.png";
 import contabilidad from "../assets/pictogramas/contabilidad.png";
 import junta from "../assets/pictogramas/junta.png";
 import organigrama from "../assets/pictogramas/organigrama.png";
+import organigramaPDF from "../pdf/docs_pdf/organigrama.pdf";
 import pdfCuentas from "../../../transparencia/components/assets/docs_transparencia/cuentas-anuales-2024.pdf"
 
 export const aboutUsData = [
@@ -19,7 +20,7 @@ export const aboutUsData = [
     title: "Organigrama",
     image: organigrama,
     alt: "organigrama",
-    url: "/organigrama",
+    url: organigramaPDF,
     color: "#224464",
     ariaLabel: "ir a organigrama"
   },
