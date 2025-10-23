@@ -10,6 +10,7 @@ import Nosotros from './views/nosotros/Nosotros';
 import NoticiaReforma from './views/reforma/NoticiaReforma';
 import PoliticaPrivacidad from './components/Footer/PoliticaDePrivacidad';
 import ProjectsCapacitacion from './views/capacitacion/ProjectsCapacitacion';
+import ProjectsCataVinos from './views/Landing/components/ProjectsCataVino/ProjectsCataVinos';
 import ProjectsCentroDia from './views/centroDia/ProjecsCentroDia';
 import ProjectsCentroDiversidad from './views/instalaciones/ProjectsCentroDiversidad';
 import ProjectsCrea from './views/proyectoCrea/ProjectsCrea';
@@ -33,10 +34,7 @@ const App = () => {
     <>
       <ScrollToTop smooth />
       <Routes>
-        <Route
-          path="/reforma-centro-dia"
-          element={<NoticiaReforma />}
-        />
+        <Route path="/reforma-centro-dia" element={<NoticiaReforma />} />
         <Route
           path="/reconocimiento-fundacion-mapfre"
           element={<ProjectsReconocimientoFundacion />}
@@ -74,6 +72,7 @@ const App = () => {
         <Route path="/junta-directiva" element={<Chart />} />
         <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
         <Route path="/aviso-legal" element={<AvisoLegal />} />
+        <Route path="/cata-vinos" element={<ProjectsCataVinos />} />
         <Route path="/" element={<LandingView />} />
       </Routes>
       <ScrollToTop smooth />

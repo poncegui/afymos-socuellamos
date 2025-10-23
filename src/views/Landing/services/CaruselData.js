@@ -1,26 +1,25 @@
 import afymos from "../assets/images-cover/familia-afymos.png";
 import basket from "../assets/images-cover/somos-campeones.png";
 import capacity from "../assets/images-cover/semana-capacidad.png";
+import cata from '../assets/images-noticias/cata-vino/cata-vinos.jpg'
 import charlasPolicia from "../assets/images-cover/charlas.png";
 import clubDeportivo from "../assets/images-cover/club-deportivo.jpg";
 import crea from "../assets/images-cover/crea-2024.jpg";
 import infanta from "../assets/images-cover/infanta.jpg";
 import reforma from "../assets/images-noticias/reforma.jpg"
 
-// import urbanCamp from "../assets/images-noticias/camp.png"
-
 export const items = [
-  // {
-  //   id: 6,
-  //   image: urbanCamp,
-  //   imageWebp: "/images/carusel/camp.webp",
-  //   alt: "urban camp 2025",
-  //   title: "Urban Camp 2025",
-  //   description: "Abierto el plazo de inscripción para Urban Camp",
-  //   link: "#",
-  // },
   {
-    id: 5,
+    id: 9,
+    image: cata,
+    // imageWebp: "/images/carusel/cata-vinos.webp",
+    alt: "reconocimiento programa social de empleo",
+    title: "Cata III Maridada",
+    description: "Exito de la Cata en Beneficio de AFYMOS a través del programa 'Juntos Somos Capaces' de la Agrupación MAPFRE",
+    link: "/cata-vinos",
+  },
+  {
+    id: 8,
     image: reforma,
     imageWebp: "/images/carusel/reforma.webp",
     alt: "reconocimiento programa social de empleo",
