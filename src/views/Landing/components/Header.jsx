@@ -1,6 +1,6 @@
-import CarouselNews from "./carouselNoticias/CarouselNews";
-import logo from "./assets/logos/logo-afymos.png";
-import styled from "styled-components";
+import CarouselNews from './carouselNoticias/CarouselNews';
+import logo from './assets/logos/logo-afymos.png';
+import styled from 'styled-components';
 
 const Header = () => {
   return (
@@ -8,8 +8,8 @@ const Header = () => {
       <HeaderSection>
         <HeaderContainer>
           <HeaderTitle>
-            <img loading="lazy"src={logo} alt="logo-afymos" />
-            <h1>Afymos</h1>
+            <img loading="lazy" src={logo} alt="logo-afymos" />
+            <h1 className="brand-title">Afymos</h1>
           </HeaderTitle>
           <HeaderSubtitle>
             <h2>"Dadme un punto de apoyo y moveré el mundo" </h2>

@@ -20,6 +20,7 @@ import ScrollToTop from '../../../../components/ScrollToUp';
 import TitleSection from '../../../../components/TitleSection';
 import heroImg from '../../../CataVinos/cata-vinos-6.png';
 import styled from 'styled-components';
+import LazyResponsiveImage from '../../../../components/Image/LazyResponsiveImage';
 
 const ProjectsCataVinos = () => {
   return (
@@ -31,7 +32,14 @@ const ProjectsCataVinos = () => {
         size
       />
       <Hero>
-        <HeroImage aria-hidden="true" />
+        <HeroImageWrap>
+          <LazyResponsiveImage
+            src={heroImg}
+            webp={heroImg.replace(/\.png$/, '.webp')}
+            alt="Cata de Vinos - imagen del evento"
+            priority
+          />
+        </HeroImageWrap>
         <HeroContent>
           <SmallTop>Evento solidario · Cata III Maridada</SmallTop>
           <HeroTitle>Cata de Vinos: cultura, sabor y solidaridad</HeroTitle>
@@ -92,17 +100,11 @@ const Hero = styled.section`
   }
 `;
 
-const HeroImage = styled.div`
-  background-image: url(${heroImg});
-  background-size: cover;
-  background-position: center;
-  height: 320px;
+const HeroImageWrap = styled.div`
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-
-  @media (max-width: 420px) {
-    height: 200px;
-  }
+  max-height: 360px;
 `;
 
 const HeroContent = styled.div`

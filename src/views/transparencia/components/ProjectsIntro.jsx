@@ -7,6 +7,7 @@ import doc6 from './assets/docs_transparencia/plan-voluntariado-2025-2027.pdf';
 import doc8 from './assets/docs_transparencia/auditoria-afymos.pdf';
 import doc9 from './assets/docs_transparencia/codigoEtico.pdf';
 import styled from 'styled-components';
+import ExternalLink from '../../../components/ExternalLink';
 
 const DescargaTransparencia = () => {
   const links = [
@@ -25,11 +26,16 @@ const DescargaTransparencia = () => {
         <SectionFeaturesMobile>
           <ButtonContainer>
             {links.map(link => (
-              <a href={link.url} download key={link.id}>
+              <ExternalLink
+                key={link.id}
+                href={link.url}
+                ariaLabel={`Abrir ${link.name}`}
+                title={link.name}
+              >
                 <Icons>
                   <h3>{link.name}</h3>
                 </Icons>
-              </a>
+              </ExternalLink>
             ))}
           </ButtonContainer>
         </SectionFeaturesMobile>

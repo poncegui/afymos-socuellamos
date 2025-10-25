@@ -1,22 +1,22 @@
-import { Link } from "react-router-dom";
-import logo from "./logos/logo-afymos.png";
-import styled from "styled-components";
+import logo from './logos/logo-afymos.png';
+import styled from 'styled-components';
 
-const Navbar = (props) => {
+const Navbar = props => {
   const handleBack = () => {
     window.history.back();
   };
   return (
     <>
       <NavContainer id={props.id}>
-        <Link to="/" onClick={handleBack}>
+        {/* Back button — use history.back without overriding Link behaviour */}
+        <BackButton type="button" onClick={handleBack} aria-label="Volver">
           <NavContainerPrincipal>
-            <i class="fa-solid fa-angles-left"></i>
+            <i className="fa-solid fa-angles-left" aria-hidden="true"></i>
             <h2>
               volver a <span>Principal</span>
             </h2>
           </NavContainerPrincipal>
-        </Link>
+        </BackButton>
         <RightMenu>
           <h1>{props.title}</h1>
           <img
@@ -29,6 +29,28 @@ const Navbar = (props) => {
     </>
   );
 };
+
+const BackButton = styled.button`
+  background: transparent;
+  border: none;
+  color: #c6b1c9;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.4rem;
+
+  h2 {
+    margin: 0;
+    color: #c6b1c9;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+`;
 
 export default Navbar;
 
@@ -73,7 +95,7 @@ const NavContainer = styled.nav`
     margin-right: 1.5rem;
   }
 `;
-NavContainer.displayName = "NavContainer";
+NavContainer.displayName = 'NavContainer';
 
 const NavContainerPrincipal = styled.div`
   display: flex;

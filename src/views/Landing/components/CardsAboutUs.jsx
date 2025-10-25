@@ -100,6 +100,27 @@ const LinkButton = styled(Link)`
     transform: rotate(90deg);
   }
 `;
+const ExternalButton = styled.a`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  color: inherit;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  &:hover {
+    color: #071c2f;
+    transform: rotate(90deg);
+  }
+`;
 const Margin = styled.div`
   width: 100%;
   height: 70px;
@@ -135,32 +156,58 @@ const CardsAboutUs = () => {
           {aboutUsData.map((card, index) => (
             <Card key={index} color={index === 0 ? '#81b71a' : card.color}>
               <TitleCard color={card.color}>{card.title}</TitleCard>
-              <Image src={card.image} alt={card.alt} />
-              <a
-                href={card.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                download={card.download ? '' : undefined}
-                aria-label={card.ariaLabel}
-                style={{
-                  backgroundColor: 'transparent',
-                  border: 'none',
-                  cursor: 'pointer',
-                  position: 'absolute',
-                  bottom: '10px',
-                  right: '10px',
-                  fontSize: '20px',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                }}
-              >
-                <StyledFontAwesomeIcon
-                  icon={faPlus}
-                  style={{
-                    color: card.color === '#224464' ? '#c6b1c9' : '#071c2f',
-                  }}
-                />
-              </a>
+              <Image
+                src={card.image}
+                alt={card.alt}
+                loading="lazy"
+                width="60"
+                height="60"
+              />
+              {(() => {
+                // Determine if this should be treated as an internal route or an external/file link.
+                const isString = typeof card.url === 'string';
+                // Consider common document/image extensions and CRA's /static/ path as external assets.
+                const isAssetOrFile =
+                  isString &&
+                  (/\.(pdf|docx?|xlsx?|zip|png|jpe?g|webp|svg)$/i.test(
+                    card.url
+                  ) ||
+                    card.url.includes('/static/'));
+                const isInternalRoute =
+                  isString && card.url.startsWith('/') && !isAssetOrFile;
+
+                if (isInternalRoute) {
+                  return (
+                    <LinkButton to={card.url} aria-label={card.ariaLabel}>
+                      <StyledFontAwesomeIcon
+                        icon={faPlus}
+                        style={{
+                          color:
+                            card.color === '#224464' ? '#c6b1c9' : '#071c2f',
+                        }}
+                      />
+                    </LinkButton>
+                  );
+                }
+
+                // External link or asset file → open in new tab
+                return (
+                  <ExternalButton
+                    href={card.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={card.ariaLabel}
+                    title={card.title}
+                  >
+                    <StyledFontAwesomeIcon
+                      icon={faPlus}
+                      style={{
+                        color: card.color === '#224464' ? '#c6b1c9' : '#071c2f',
+                      }}
+                    />
+                  </ExternalButton>
+                );
+              })()}
             </Card>
           ))}
         </CardsContainer>

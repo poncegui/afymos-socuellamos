@@ -28,6 +28,7 @@ import ScrollToTop from './components/ScrollToTop';
 import VisorCrea from './views/Landing/components/pdf/VisorCrea2024';
 import VisorFormacion from './views/Landing/components/pdf/VisorFormacion';
 import VisorPdfOrganigrama from './views/Landing/components/pdf/VisorPdfOrganigrama';
+import VisorPdfCuentas from './views/Landing/components/pdf/VisorPdfCuentas';
 
 const App = () => {
   return (
@@ -66,6 +67,7 @@ const App = () => {
           element={<ProjectsDiagnostico />}
         />
         <Route path="/organigrama" element={<VisorPdfOrganigrama />} />
+        <Route path="/cuentas-anuales" element={<VisorPdfCuentas />} />
         <Route path="/documentacion-formacion" element={<VisorFormacion />} />
         <Route path="/crea2024" element={<VisorCrea />} />
         <Route path="/formacion" element={<ProjectsFormacion />} />

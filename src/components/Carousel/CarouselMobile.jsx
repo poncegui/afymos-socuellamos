@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
-import React from "react";
-import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import React from 'react';
+import styled from 'styled-components';
+import LazyResponsiveImage from '../Image/LazyResponsiveImage';
 
 const CarouselMobile = ({ items, withoutHeader }) => {
   return (
-    <MobileCarouselContainer role="region" aria-label="Carrusel móvil de noticias">
+    <MobileCarouselContainer
+      role="region"
+      aria-label="Carrusel móvil de noticias"
+    >
       {!withoutHeader && (
         <Header>
           <CircleIcon />
@@ -13,23 +17,24 @@ const CarouselMobile = ({ items, withoutHeader }) => {
       )}
       <ScrollArea>
         {items.map((item, index) => (
-      <Card key={index}>
-      <picture>
-        <source srcSet={item.imageWebp} type="image/webp" />
-        <img
-          src={item.image}
-          alt={item.alt || item.title}
-          loading="lazy"
-          width="100%"
-          height="200"
-        />
-      </picture>
-      <CardContent>
-        <h3>{item.title}</h3>
-        <p>{item.description}</p>
-        {item.link && <StyledLink to={item.link}>Leer más</StyledLink>}
-      </CardContent>
-    </Card>
+          <Card
+            key={index}
+            role="group"
+            aria-roledescription="slide"
+            aria-label={`Slide ${index + 1} de ${items.length}`}
+          >
+            <LazyResponsiveImage
+              src={item.image}
+              webp={item.imageWebp}
+              alt={item.alt || item.title}
+              style={{ height: 200 }}
+            />
+            <CardContent>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              {item.link && <StyledLink to={item.link}>Leer más</StyledLink>}
+            </CardContent>
+          </Card>
         ))}
       </ScrollArea>
     </MobileCarouselContainer>
@@ -118,4 +123,3 @@ const StyledLink = styled(Link)`
     background-color: #0c2a4e;
   }
 `;
-
