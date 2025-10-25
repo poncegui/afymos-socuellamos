@@ -6,6 +6,7 @@ import AvisoLegal from './components/Footer/AvisoLegal';
 import Chart from './views/juntaDirectiva/Chart';
 import ClubDeportivo from './views/ClubDeportivo/ClubDeportivo';
 import LandingView from './views/Landing/LandingView';
+import NewsDetail from './views/News/NewsDetail';
 import Nosotros from './views/nosotros/Nosotros';
 import NoticiaReforma from './views/reforma/NoticiaReforma';
 import PoliticaPrivacidad from './components/Footer/PoliticaDePrivacidad';
@@ -27,8 +28,8 @@ import React from 'react';
 import ScrollToTop from './components/ScrollToTop';
 import VisorCrea from './views/Landing/components/pdf/VisorCrea2024';
 import VisorFormacion from './views/Landing/components/pdf/VisorFormacion';
-import VisorPdfOrganigrama from './views/Landing/components/pdf/VisorPdfOrganigrama';
 import VisorPdfCuentas from './views/Landing/components/pdf/VisorPdfCuentas';
+import VisorPdfOrganigrama from './views/Landing/components/pdf/VisorPdfOrganigrama';
 
 const App = () => {
   return (
@@ -75,6 +76,7 @@ const App = () => {
         <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
         <Route path="/aviso-legal" element={<AvisoLegal />} />
         <Route path="/cata-vinos" element={<ProjectsCataVinos />} />
+  <Route path="/noticias/:slug" element={<NewsDetail />} />
         <Route path="/" element={<LandingView />} />
       </Routes>
       <ScrollToTop smooth />

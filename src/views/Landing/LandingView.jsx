@@ -13,8 +13,8 @@ import CarouselSwitcher from '../../components/Carousel/CarouselSwitcher';
 import ContactForm from './components/contactForm/ContactForm';
 import { Content } from '../../components/Content/Content';
 import DonationInformation from './components/DonationInformation';
+import FeaturedNews from '../../components/News/FeaturedNews';
 import Footer from '../../components/Footer/Footer';
-// import Modal from "../Landing/components/tePuedeInteresar/NewsInformation";
 import PartnertList from '../../components/Partners/PartnerList';
 import PlanDeIgualdad from '../Landing/components/tePuedeInteresar/PlanDeIgualdad';
 import ProjectClubDeportivoAfymos from './components/ProjectClubDeportivo';
@@ -28,6 +28,9 @@ import VideoLanding from './components/VideoLanding';
 import VideoVisitaCuenca from './components/VideoVisitaCuenca';
 import VisitCounter from './components/VisitCounter';
 import { items } from './services/CaruselData';
+import { sampleNews } from '../../components/News/newsData';
+
+// import Modal from "../Landing/components/tePuedeInteresar/NewsInformation";
 
 const LandingView = () => {
   return (
@@ -36,6 +39,7 @@ const LandingView = () => {
       <VisitCounter />
       <TePuedeInteresar />
       <CarouselSwitcher items={items} />
+      <FeaturedNews item={sampleNews[0]} />
       <VideoVisitaCuenca />
       <VideoLanding />
       <DonationInformation />

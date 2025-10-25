@@ -12,15 +12,15 @@ import {
 import { ContentProjects } from '../../../../components/Content/ContentProjects';
 import FacebookReel from '../../../../components/Video/FacebookReel';
 import Footer from '../../../../components/Footer/Footer';
+import LazyResponsiveImage from '../../../../components/Image/LazyResponsiveImage';
 import { Link } from 'react-router-dom';
 import NavBarViews from '../../../../components/Header/NavBarViews';
 import PartnerList from '../../../../components/Partners/PartnerList';
 import React from 'react';
 import ScrollToTop from '../../../../components/ScrollToUp';
 import TitleSection from '../../../../components/TitleSection';
-import heroImg from '../../../CataVinos/cata-vinos-6.png';
+import heroImg from './assets/cata-vinos-6.png';
 import styled from 'styled-components';
-import LazyResponsiveImage from '../../../../components/Image/LazyResponsiveImage';
 
 const ProjectsCataVinos = () => {
   return (
@@ -35,9 +35,10 @@ const ProjectsCataVinos = () => {
         <HeroImageWrap>
           <LazyResponsiveImage
             src={heroImg}
-            webp={heroImg.replace(/\.png$/, '.webp')}
             alt="Cata de Vinos - imagen del evento"
             priority
+            width="1200"
+            height="360"
           />
         </HeroImageWrap>
         <HeroContent>
@@ -50,7 +51,6 @@ const ProjectsCataVinos = () => {
             gastronomía y la inclusión fueron protagonistas.
           </HeroLead>
           <Actions>
-            <CTA to="/cata-vinos">Ver galería</CTA>
             <Secondary
               onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}
             >
@@ -85,7 +85,6 @@ const ProjectsCataVinos = () => {
 
 export default ProjectsCataVinos;
 
-/* Styled hero intro */
 const Hero = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
