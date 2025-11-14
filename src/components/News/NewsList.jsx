@@ -3,17 +3,6 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
 
-/**
- * NewsList
- * Props:
- * - items: Array of { id, title, excerpt, image, alt, date, href, tags }
- * - ariaLabel: string for the list region
- *
- * Accessibility:
- * - Uses semantic <article> for each news item
- * - Card is keyboard accessible (Enter/Space) and contains a visible focus style
- * - Images include alt text
- */
 const NewsList = ({ items = [], ariaLabel = 'Noticias recientes' }) => {
   if (!items || items.length === 0) return null;
 
@@ -107,12 +96,12 @@ const Section = styled.section`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  gap: 1.5rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 560px) {
+  @media (max-width: 640px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -120,16 +109,17 @@ const Grid = styled.div`
 const Article = styled.article`
   background: white;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--elevation-1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   outline: none;
 
+  transition: transform 180ms ease, box-shadow 180ms ease;
   &:hover {
     transform: translateY(-4px);
-    transition: transform 180ms ease;
+    box-shadow: var(--elevation-2);
   }
 
   &:focus-visible {
@@ -171,16 +161,19 @@ const Content = styled.div`
 
 const Title = styled.h3`
   margin: 0;
-  font-size: 1.05rem;
-  color: #071c2f;
+  /* match FeaturedNews smaller, professional title size; responsive and scalable */
+  font-size: calc(clamp(1.05rem, 2vw, 1.4rem) * var(--fs, 1));
+  color: var(--color-primary);
+  line-height: 1.12;
+  font-weight: 700;
 `;
 
 const Meta = styled.div`
   display: flex;
   gap: 0.75rem;
   align-items: center;
-  color: #6b4b6e;
-  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-size: calc(var(--type-small) * var(--fs, 1));
 `;
 
 const Tags = styled.div`
@@ -189,22 +182,27 @@ const Tags = styled.div`
 `;
 
 const Tag = styled.span`
-  background: #eef6fb;
-  color: #0b708a;
-  padding: 0.15rem 0.45rem;
+  background: color-mix(in srgb, var(--color-accent) 8%, white 92%);
+  color: var(--color-accent);
+  padding: 0.2rem 0.5rem;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: calc(var(--type-small) * var(--fs, 1));
+  font-weight: 700;
 `;
 
 const Excerpt = styled.p`
   margin: 0;
-  color: #222;
-  line-height: 1.4;
-  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: calc(var(--type-base) * 1.05 * var(--fs, 1));
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+
+  @media (max-width: 640px) {
+    font-size: calc(var(--type-base) * var(--fs, 1));
+  }
 `;
 
 const Footer = styled.div`
@@ -214,13 +212,14 @@ const Footer = styled.div`
 
 const ReadMore = styled(Link)`
   text-decoration: none;
-  color: #071c2f;
-  font-weight: 700;
+  color: var(--color-primary);
+  font-weight: 800;
   padding: 0.5rem 0.75rem;
   border-radius: 8px;
+  font-size: calc(var(--type-base) * var(--fs, 1));
 
   &:focus-visible {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid var(--color-cta);
     outline-offset: 2px;
   }
 `;

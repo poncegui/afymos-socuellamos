@@ -118,7 +118,7 @@ export default NewsDetail;
 
 const Page = styled.main`
   max-width: 1100px;
-  margin: 2rem auto;
+  margin: 2.25rem auto;
   padding: 1rem;
 `;
 
@@ -129,26 +129,38 @@ const Header = styled.header`
 `;
 
 const Back = styled(Link)`
-  color: #071c2f;
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 700;
+  background: transparent;
+  padding: 0.25rem 0.35rem;
+  border-radius: 6px;
+  transition: background 160ms ease;
+  &:hover {
+    background: rgba(7, 28, 47, 0.04);
+  }
 `;
 
 const Title = styled.h1`
-  margin: 0.25rem 0;
-  font-size: 2rem;
-  color: #071c2f;
+  margin: 0.25rem 0 0.5rem 0;
+  /* use the same, modest title sizing as other news components for visual consistency */
+  font-size: calc(clamp(1.05rem, 2vw, 1.4rem) * var(--fs, 1));
+  color: var(--color-primary);
+  line-height: 1.08;
+  font-weight: 700;
 `;
 
 const Meta = styled.div`
-  color: #6b4b6e;
+  color: var(--color-muted);
+  font-size: calc(var(--type-small) * var(--fs, 1));
 `;
 
 const Hero = styled.div`
   margin-top: 1rem;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(7, 28, 47, 0.08);
+  border: 1px solid rgba(7, 28, 47, 0.04);
 `;
 
 const Container = styled.div`
@@ -161,10 +173,15 @@ const Container = styled.div`
 const Content = styled.article``;
 
 const ArticleText = styled.div`
-  color: #222;
-  line-height: 1.6;
+  color: var(--color-text);
+  line-height: 1.75;
+  font-size: calc(var(--type-base) * 1.05 * var(--fs, 1));
   p {
     margin: 0 0 1rem 0;
+  }
+
+  @media (max-width: 640px) {
+    font-size: calc(var(--type-base) * var(--fs, 1));
   }
 `;
 

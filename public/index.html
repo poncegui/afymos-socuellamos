@@ -7,25 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Playfair+Display&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
+  <!-- Combine families and load non-blocking: preload as style then swap to stylesheet onload -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Montserrat+Alternates:wght@300&family=Open+Sans:wght@400;600&family=Playfair+Display&display=swap"
+    as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Montserrat+Alternates:wght@300&family=Open+Sans:wght@400;600&family=Playfair+Display&display=swap"
+      rel="stylesheet">
+  </noscript>
+  <!-- Fontawesome (keep one) loaded async via kit to avoid render-blocking -->
+  <script src="https://kit.fontawesome.com/02efc5c023.js" crossorigin="anonymous" defer></script>
 
-  <script type="text/html" src="./assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-  <script src="https://kit.fontawesome.com/02efc5c023.js" crossorigin="anonymous"></script>
+  <!-- Local script corrected type and deferred to avoid blocking FCP -->
+  <script type="text/javascript" src="./assets/js/main.js" defer></script>
+
+  <!-- Carousel library deferred (non-critical) -->
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js" defer></script>
 
   <meta name="description"
     content="Afymos ofrece terapias y servicios de apoyo a personas con discapacidad, así como vivienda y apoyo laboral, centro de dia y apoyo a familias." />
@@ -40,8 +38,8 @@
 </head>
 
 <body>
-  <script type="text/javascript" charset="UTF-8"
-    src="//cdn.cookie-script.com/s/67be4dc99fb6302f3472c6ac8f19f9b7.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/67be4dc99fb6302f3472c6ac8f19f9b7.js"
+    async></script>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>

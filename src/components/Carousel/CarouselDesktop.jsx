@@ -53,7 +53,7 @@ const CarouselDesktop = ({ items, withoutHeader }) => {
       {!withoutHeader && (
         <StyledHeader>
           <CircleIcon />
-          Noticias
+          Tablón de Noticias
         </StyledHeader>
       )}
       <CarouselContainer
