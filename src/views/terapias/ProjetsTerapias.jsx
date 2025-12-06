@@ -9,7 +9,10 @@ import {
   terapiaOcupacionalData,
   visualPedagogíaData,
 } from "./services/terapiasData";
-import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
+import {
+  colaboradoresData,
+  partnersData,
+} from "../../components/Partners/services/partnersListData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
@@ -34,8 +37,19 @@ const ProjectsTerapias = () => {
       <ContentProjects {...auditivaPsicologiaData} reverse />
       <ContentProjects {...visualPedagogíaData} inverse />
       <ContentProjects {...psicologiaData} reverse />
-      <PartnertList size  marginBottom data={colaboradoresData} title='Socios Colaboradores' />
-      <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
+      <PartnertList
+        size
+        marginBottom
+        data={colaboradoresData}
+        title="Socios Colaboradores"
+      />
+      <PartnertList
+        size
+        inverse
+        marginBottom
+        data={partnersData}
+        title="Cofinanciaciones"
+      />
       <Footer />
     </>
   );

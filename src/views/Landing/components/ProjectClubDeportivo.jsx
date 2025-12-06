@@ -1,6 +1,6 @@
-import React from 'react';
-import Video from './Video';
-import portada from '../assets/portada-club.png';
+import React from "react";
+import Video from "./Video";
+import portada from "../assets/portada-club.png";
 
 const ProjectClubDeportivoAfymos = () => {
   return (

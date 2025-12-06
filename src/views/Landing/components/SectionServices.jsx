@@ -6,7 +6,6 @@ import styled from "styled-components";
 
 const SectionServiceFilter = lazy(() => import("./SectionServiceFilter"));
 
-
 const SectionServices = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -29,9 +28,16 @@ const SectionServices = () => {
         <IconsGrid>
           {servicesData.map((item) => (
             <IconCard key={item.id}>
-              <StyledLink to={item.url} aria-label={`Ir a la sección de ${item.name}`}>
+              <StyledLink
+                to={item.url}
+                aria-label={`Ir a la sección de ${item.name}`}
+              >
                 <IconWrapper>
-                  <img loading="lazy"src={item.img} alt={`Icono de ${item.name}`} />
+                  <img
+                    loading="lazy"
+                    src={item.img}
+                    alt={`Icono de ${item.name}`}
+                  />
                 </IconWrapper>
                 <CardText>{item.name}</CardText>
               </StyledLink>
@@ -40,8 +46,8 @@ const SectionServices = () => {
         </IconsGrid>
       ) : (
         <Suspense fallback={<div>Cargando servicios...</div>}>
-        <SectionServiceFilter />
-      </Suspense>
+          <SectionServiceFilter />
+        </Suspense>
       )}
     </Section>
   );

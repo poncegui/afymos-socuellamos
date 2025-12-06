@@ -17,7 +17,7 @@ import explaga from "../assets/Colaboradores/explaga.jpg";
 import farmacia from "../assets/Colaboradores/farmacia.jpg";
 import fondosEuropeos from "../assets/fondosEuropeos.png";
 import globalcaja from "../assets/globalcaja.jpg";
-import globalcajaVerde from "../assets/Colaboradores/globalcaja_verde.jpg"
+import globalcajaVerde from "../assets/Colaboradores/globalcaja_verde.jpg";
 import gracias from "../assets/gracias.png";
 import idearte from "../assets/Colaboradores/idearte.jpg";
 import inclusion from "../assets/logo-inclusion.png";
@@ -31,7 +31,7 @@ import ministerioTrabajo from "../assets/ministerioTrabajo.jpg";
 import multiopticas from "../assets/Colaboradores/multiopticas.jpg";
 import navarro from "../assets/Colaboradores/luis_navarro_e_hijos.png";
 import once from "../assets/fundacion-once.png";
-import ots from '../assets/Colaboradores/ots.jpg'
+import ots from "../assets/Colaboradores/ots.jpg";
 import pexpunte from "../assets/Colaboradores/pexpunte.jpg";
 import samu from "../assets/Colaboradores/samu.jpg";
 import siramar from "../assets/Colaboradores/satie.png";
@@ -42,8 +42,7 @@ const target = "_blank";
 
 export const colaboradoresData = [
   {
-
-    id:9,
+    id: 9,
     name: "Idearte",
     logoSrc: idearte,
     titleImg: "Idearte",
@@ -123,7 +122,7 @@ export const colaboradoresData = [
     alt: "Logo Josmoral",
     url: "https://josmoral.es/",
   },
-    {
+  {
     id: 8,
     name: "Kiele",
     logoSrc: kiele,
@@ -194,8 +193,7 @@ export const colaboradoresData = [
     target: target,
     alt: "Logo de Pex-Punte",
     url: "https://pex-punte.com/",
-  }
-  ,
+  },
   {
     id: 18,
     name: "ExPlaga",
@@ -295,8 +293,7 @@ export const colaboradoresData = [
     target: target,
     alt: "Logo de Doctor Bait",
     url: "https://www.doctorbait.es/",
-  }
-  ,
+  },
   {
     id: 29,
     name: "Euroviane",
@@ -307,8 +304,6 @@ export const colaboradoresData = [
     url: "https://www.euroviane.es/",
   },
 ];
-
-
 
 export const partnersData = [
   {
@@ -375,7 +370,7 @@ export const partnersData = [
     url: "https://fundacionglobalcajahxxii.com/",
   },
   {
-    id:9,
+    id: 9,
     name: "Agradecimiento a colaboradores",
     logoSrc: ministerioTrabajo,
     titleImg: "Ministerio de trabajo y sanidad!",
@@ -392,7 +387,7 @@ export const partnersData = [
     alt: "Logo Fondos Europeos",
     url: "https://european-union.europa.eu/live-work-study/funding-grants-subsidies_es",
   },
-    {
+  {
     id: 8,
     name: "Agradecimiento a colaboradores",
     logoSrc: gracias,

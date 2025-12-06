@@ -73,7 +73,7 @@ const DonateButton = styled(Link)`
 
   @media (max-width: 600px) {
     font-size: 1.4rem;
-    }
+  }
 `;
 
 const DonationInformation = () => {
@@ -82,12 +82,20 @@ const DonationInformation = () => {
       <ImageGroup>
         <StyledImage src={graph} alt="Gráfico circular mostrando el 80%" />
         <StyledImage src={money} alt="Pila de monedas doradas" />
-        <StyledImage src={percentage} alt="Número 80 en grande indicando porcentaje" />
+        <StyledImage
+          src={percentage}
+          alt="Número 80 en grande indicando porcentaje"
+        />
       </ImageGroup>
       <Content>
-        <Title id="donation-title">¿Sabías que hasta los primeros 250€ te deduces el 80%?</Title>
+        <Title id="donation-title">
+          ¿Sabías que hasta los primeros 250€ te deduces el 80%?
+        </Title>
         <Text>Si donas 250€ te desgravas 200€</Text>
-        <DonateButton to="/donaciones" aria-label="Ir a la página de donaciones">
+        <DonateButton
+          to="/donaciones"
+          aria-label="Ir a la página de donaciones"
+        >
           Dona ahora
         </DonateButton>
       </Content>

@@ -17,7 +17,9 @@ const Chart = () => {
         <BackgroundChart
           role="img"
           aria-label="Fondo de personas de Afymos"
-          style={{ backgroundImage: `linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)), url(${backgroundChartJpg})` }}
+          style={{
+            backgroundImage: `linear-gradient(rgba(87, 89, 95, 0.8), rgba(75, 77, 81, 0.8)), url(${backgroundChartJpg})`,
+          }}
         />
       </picture>
       <Main>
@@ -27,10 +29,7 @@ const Chart = () => {
               <ChartItem key={person.id} index={index} role="listitem">
                 <figure>
                   <picture>
-                    <source
-                      srcSet={person.imgWebp}
-                      type="image/webp"
-                    />
+                    <source srcSet={person.imgWebp} type="image/webp" />
                     <img
                       src={person.img}
                       alt={person.alt || `Foto de ${person.name}`}

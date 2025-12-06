@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const FacebookReel = ({
   url,
   showText = false,
-  title = 'Vídeo de Facebook',
+  title = "Vídeo de Facebook",
   aspectRatio = 56.25,
   maxWidth = 980,
 }) => {
   if (!url) return null;
   const href = encodeURIComponent(url);
   const src = `https://www.facebook.com/plugins/video.php?href=${href}&show_text=${
-    showText ? '1' : '0'
+    showText ? "1" : "0"
   }&width=560`;
 
   return (

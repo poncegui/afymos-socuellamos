@@ -9,12 +9,14 @@ const DemoVideo = () => {
           <p>Proyecto CREA;</p>
           <p>Nuestra filosofía</p>
           <p>
-          Tras 5 meses y medio de formación y trabajo, los alumnos-trabajadores han
-demostrado que pueden realizar su trabajo perfectamente en empresas normalizadas.
-Desde el inicio de la formación, algunos de los participantes han necesitado
-adaptaciones y apoyo para desarrollar los contenidos de clase, por ejemplo: lectura
-fácil del temario, acompañamiento puntual de logopedia, refuerzo con sesiones de
-psicopedagogía y adaptaciones a audio los exámenes de repaso.
+            Tras 5 meses y medio de formación y trabajo, los
+            alumnos-trabajadores han demostrado que pueden realizar su trabajo
+            perfectamente en empresas normalizadas. Desde el inicio de la
+            formación, algunos de los participantes han necesitado adaptaciones
+            y apoyo para desarrollar los contenidos de clase, por ejemplo:
+            lectura fácil del temario, acompañamiento puntual de logopedia,
+            refuerzo con sesiones de psicopedagogía y adaptaciones a audio los
+            exámenes de repaso.
           </p>
         </DemoLeft>
         <DemoRight>

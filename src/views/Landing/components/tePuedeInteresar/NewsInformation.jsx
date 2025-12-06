@@ -1,9 +1,9 @@
 // Modal.js
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import pdf from './urban-camp-2025.pdf';
-import styled from 'styled-components';
-import urbanCamp from './CARTEL URBAN CAMP 2025.png';
+import pdf from "./urban-camp-2025.pdf";
+import styled from "styled-components";
+import urbanCamp from "./CARTEL URBAN CAMP 2025.png";
 
 const Overlay = styled.div`
   position: fixed;
@@ -40,7 +40,7 @@ const CloseButton = styled.button`
   border: none;
   font-size: 30px;
   cursor: pointer;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 `;
 
 const Title = styled.h2`
@@ -98,4 +98,3 @@ const Modal = () => {
 };
 
 export default Modal;
-

@@ -97,7 +97,7 @@ export const Title = styled.h1`
 export const MainHeading = styled.h1`
   font-size: clamp(2rem, 5.5vw, 3.6rem);
   margin-bottom: 1.5rem;
-  color: ${({ inverse }) => (inverse ? '#071c2f' : '#c6b1c9')};
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "#c6b1c9")};
   width: 100%;
   letter-spacing: 2px;
   text-align: center;
@@ -105,24 +105,24 @@ export const MainHeading = styled.h1`
 
 export const Heading = styled.h3`
   font-size: clamp(1.125rem, 2.4vw, 1.6rem);
-  margin: ${({ margin }) => (margin ? margin : '')};
-  margin-bottom: ${({ mb }) => (mb ? mb : '')};
-  margin-top: ${({ mt }) => (mt ? mt : '')};
-  color: ${({ inverse }) => (inverse ? '#071c2f' : '#c6b1c9')};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  margin-bottom: ${({ mb }) => (mb ? mb : "")};
+  margin-top: ${({ mt }) => (mt ? mt : "")};
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "#c6b1c9")};
   letter-spacing: 0.4px;
   line-height: 1.25;
   text-align: center;
-  width: ${({ width }) => (width ? width : '100%')};
+  width: ${({ width }) => (width ? width : "100%")};
 `;
 export const TextWrapper = styled.span`
-  color: ${({ color }) => (color ? color : 'inherit')};
-  font-size: ${({ size }) => (size ? size : '1rem')};
-  font-weight: ${({ weight }) => (weight ? weight : '400')};
-  letter-spacing: ${({ spacing }) => (spacing ? spacing : '0')};
-  padding: ${({ padding }) => (padding ? padding : '')};
-  margin: ${({ margin }) => (margin ? margin : '')};
-  margin-bottom: ${({ mb }) => (mb ? mb : '')};
-  margin-top: ${({ mt }) => (mt ? mt : '')};
+  color: ${({ color }) => (color ? color : "inherit")};
+  font-size: ${({ size }) => (size ? size : "1rem")};
+  font-weight: ${({ weight }) => (weight ? weight : "400")};
+  letter-spacing: ${({ spacing }) => (spacing ? spacing : "0")};
+  padding: ${({ padding }) => (padding ? padding : "")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  margin-bottom: ${({ mb }) => (mb ? mb : "")};
+  margin-top: ${({ mt }) => (mt ? mt : "")};
 `;
 export const Section = styled.section`
   padding: ${({ padding }) => (padding ? padding : "60px 0")};
@@ -208,11 +208,11 @@ export const Button = styled.button`
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(7,28,47,0.12);
+    box-shadow: 0 10px 25px rgba(7, 28, 47, 0.12);
   }
 
   &:focus-visible {
-    outline: 3px solid rgba(255,191,71,0.18);
+    outline: 3px solid rgba(255, 191, 71, 0.18);
     outline-offset: 3px;
   }
 `;

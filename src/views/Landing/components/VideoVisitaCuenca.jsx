@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import portadaVideo from '../assets/portada-cuenca.png';
-import styled from 'styled-components';
+import portadaVideo from "../assets/portada-cuenca.png";
+import styled from "styled-components";
 
 const VideoVisitaCuenca = () => {
   const [play, setPlay] = useState(false);
   const [videoSrc, setVideoSrc] = useState(null);
 
   const handlePlay = async () => {
-    const video = await import('../assets/cuenca.mp4');
+    const video = await import("../assets/cuenca.mp4");
     setVideoSrc(video.default);
     setPlay(true);
   };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
+      (entries) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            entry.target.classList.add("visible");
             observer.unobserve(entry.target);
           }
         });
@@ -26,8 +26,8 @@ const VideoVisitaCuenca = () => {
       { threshold: 0.2 }
     );
 
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach(el => observer.observe(el));
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
   }, []);
@@ -38,7 +38,7 @@ const VideoVisitaCuenca = () => {
         <TextBlock>
           <Title>Descubriendo Cuenca con Afymos</Title>
           <Subtitle>
-            Gracias a la subvención{' '}
+            Gracias a la subvención{" "}
             <StyledLinkExt
               href="https://www.jccm.es/sede/tramite/KW8"
               target="_blank"
@@ -49,7 +49,7 @@ const VideoVisitaCuenca = () => {
           </Subtitle>
           <Paragraph>
             El pasado <strong>sábado 7 de junio</strong> pudimos descubrir los
-            estupendos rincones de la ciudad de Cuenca. Visitamos el{' '}
+            estupendos rincones de la ciudad de Cuenca. Visitamos el{" "}
             <strong>Museo de Ciencias</strong>, exploramos el universo en el
             planetario, paseamos por el centro histórico y por la tarde
             disfrutamos de la <strong>“Tierra de los dinosaurios”</strong> en el
@@ -91,7 +91,7 @@ const VideoVisitaCuenca = () => {
 
         <TextBlock>
           <Paragraph>
-            Fue un día cargado de <strong>aprendizajes</strong>,{' '}
+            Fue un día cargado de <strong>aprendizajes</strong>,{" "}
             <strong>descubrimientos castellano manchegos</strong> y convivencia
             de toda nuestra familia Afymera.
           </Paragraph>
@@ -105,7 +105,7 @@ const VideoVisitaCuenca = () => {
               rel="noopener noreferrer"
             >
               conocecastillalamancha
-            </StyledLinkExt>{' '}
+            </StyledLinkExt>{" "}
             · <Hashtags>#Enunlugardetuvida</Hashtags>
           </Sponsors>
         </TextBlock>

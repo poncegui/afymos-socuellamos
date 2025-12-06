@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import LazyResponsiveImage from '../Image/LazyResponsiveImage';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import LazyResponsiveImage from "../Image/LazyResponsiveImage";
 
-const STORAGE_KEY = 'afymos_fontScale';
+const STORAGE_KEY = "afymos_fontScale";
 
 const FeaturedNews = ({ item, priorityImage = false }) => {
   const [scale, setScale] = useState(() => {
@@ -18,29 +18,29 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, String(scale));
-      document.documentElement.style.setProperty('--fs', String(scale));
+      document.documentElement.style.setProperty("--fs", String(scale));
     } catch (e) {}
   }, [scale]);
 
   useEffect(() => {
     try {
       const v = Number(localStorage.getItem(STORAGE_KEY) || 1);
-      document.documentElement.style.setProperty('--fs', String(v));
+      document.documentElement.style.setProperty("--fs", String(v));
       setScale(v);
     } catch (e) {}
 
-    const onStorage = ev => {
+    const onStorage = (ev) => {
       if (ev.key === STORAGE_KEY) {
         try {
           const val = Number(ev.newValue || 1);
-          document.documentElement.style.setProperty('--fs', String(val));
+          document.documentElement.style.setProperty("--fs", String(val));
           setScale(val);
         } catch (e) {}
       }
     };
 
-    window.addEventListener('storage', onStorage);
-    return () => window.removeEventListener('storage', onStorage);
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
   }, []);
 
   if (!item) return null;
@@ -66,7 +66,7 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
 
         <Excerpt>
           {item.excerpt
-            .split('\n')
+            .split("\n")
             .slice(0, 6)
             .map((p, i) => (
               <p key={i}>{p}</p>
@@ -76,7 +76,7 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
         <Footer>
           <TagList>
             {item.tags &&
-              item.tags.slice(0, 3).map(t => <Tag key={t}>{t}</Tag>)}
+              item.tags.slice(0, 3).map((t) => <Tag key={t}>{t}</Tag>)}
           </TagList>
 
           <Meta>
@@ -98,7 +98,7 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
                 const next = Math.max(0.8, Number((cur - 0.1).toFixed(2)));
                 localStorage.setItem(STORAGE_KEY, String(next));
                 document.documentElement.style.setProperty(
-                  '--fs',
+                  "--fs",
                   String(next)
                 );
                 setScale(next);
@@ -110,8 +110,8 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
           <ControlButton
             onClick={() => {
               try {
-                localStorage.setItem(STORAGE_KEY, '1');
-                document.documentElement.style.setProperty('--fs', '1');
+                localStorage.setItem(STORAGE_KEY, "1");
+                document.documentElement.style.setProperty("--fs", "1");
                 setScale(1);
               } catch (e) {}
             }}
@@ -125,7 +125,7 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
                 const next = Math.min(2, Number((cur + 0.1).toFixed(2)));
                 localStorage.setItem(STORAGE_KEY, String(next));
                 document.documentElement.style.setProperty(
-                  '--fs',
+                  "--fs",
                   String(next)
                 );
                 setScale(next);

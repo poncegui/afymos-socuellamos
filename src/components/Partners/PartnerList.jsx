@@ -1,7 +1,7 @@
-import PartnersCard from './components/Partners';
-import React from 'react';
-import TitleSection from '../TitleSection';
-import styled from 'styled-components';
+import PartnersCard from "./components/Partners";
+import React from "react";
+import TitleSection from "../TitleSection";
+import styled from "styled-components";
 
 const PartnerList = ({ size, inverse, data, title }) => {
   return (
@@ -10,7 +10,7 @@ const PartnerList = ({ size, inverse, data, title }) => {
       <SectionPartners aria-label="Listado de entidades colaboradoras">
         <Inner>
           <PartnersGrid>
-            {data?.map(partner => (
+            {data?.map((partner) => (
               <PartnerWrapper key={partner.id}>
                 <PartnersCard
                   src={partner.logoSrc}

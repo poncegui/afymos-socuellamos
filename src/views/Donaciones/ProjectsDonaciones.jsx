@@ -1,4 +1,7 @@
-import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
+import {
+  colaboradoresData,
+  partnersData,
+} from "../../components/Partners/services/partnersListData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
@@ -16,8 +19,19 @@ const ProjectsDonaciones = () => {
       <NavBarViews title="Donaciones" />
       <TitleSection title="Crecemos contigo" size />
       <ContentProjects {...donacionDataOne} inverse />
-      <PartnertList size  marginBottom data={colaboradoresData} title='Socios Colaboradores' />
-      <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
+      <PartnertList
+        size
+        marginBottom
+        data={colaboradoresData}
+        title="Socios Colaboradores"
+      />
+      <PartnertList
+        size
+        inverse
+        marginBottom
+        data={partnersData}
+        title="Cofinanciaciones"
+      />
       <Footer />
     </>
   );

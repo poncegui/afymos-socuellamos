@@ -30,7 +30,7 @@ export const logopediaData = {
     text: "LOGOPEDIA: conoce cómo trabajan nuestras profesionales Cristina Olivares y Paula Ramírez",
   },
   headline:
-  "La Logopedia es una disciplina que se ocupa del estudio, el diagnóstico, la rehabilitación y la prevención de los trastornos de la comunicación humana y funciones asociadas como son la deglución, la audición, etc. El campo de actuación es muy amplio abarcando desde la Atención Temprana en niños hasta la Tercera Edad, pasando por la adolescencia o la edad adulta. Por lo tanto se interviene en todas las etapas de la vida en las que se presenten alteraciones de la comunicación y el lenguaje desde los ámbitos sanitarios, socio – asistencial y educativo.",
+    "La Logopedia es una disciplina que se ocupa del estudio, el diagnóstico, la rehabilitación y la prevención de los trastornos de la comunicación humana y funciones asociadas como son la deglución, la audición, etc. El campo de actuación es muy amplio abarcando desde la Atención Temprana en niños hasta la Tercera Edad, pasando por la adolescencia o la edad adulta. Por lo tanto se interviene en todas las etapas de la vida en las que se presenten alteraciones de la comunicación y el lenguaje desde los ámbitos sanitarios, socio – asistencial y educativo.",
   description:
     "Para la Evaluación Logopédica se utilizan las siguientes herramientas: 1. Recolección de Información. 2. Anamnesis. 3. Observación. 4. Evaluación Inicial. 5. Aplicación de pruebas o test. 6. Programación y objetivos individuales y adaptados a las necesidades de cada paciente y de sus familiares y/o personas de referencia.",
   img: logopedia,
@@ -60,7 +60,7 @@ export const terapiaOcupacionalData = {
     text: "TERAPIA OCUPACIONAL: conoce cómo trabaja nuestra profesional, Laura Simancas",
   },
   headline:
-  "Estudié Terapia Ocupacional en la Universidad Complutense de Madrid, desde el 2020 curso el Grado de Psicología por la UNED. Especialista en Autismo, detección e intervención precoz.  Formada en Atención temprana, y abordaje e intervención en trastornos del neurodesarrollo. Formación específica en apoyo conductual positivo, salud mental infantil, deporte terapéutico, terapia asistida con animales, sueño infantil, control de esfínteres, sexualidad en la infancia, diversidad funcional y autismo. Especialista en alimentación infantil, dificultades de alimentación en la infancia, trastornos de la alimentación pediátrica y TCA.",
+    "Estudié Terapia Ocupacional en la Universidad Complutense de Madrid, desde el 2020 curso el Grado de Psicología por la UNED. Especialista en Autismo, detección e intervención precoz.  Formada en Atención temprana, y abordaje e intervención en trastornos del neurodesarrollo. Formación específica en apoyo conductual positivo, salud mental infantil, deporte terapéutico, terapia asistida con animales, sueño infantil, control de esfínteres, sexualidad en la infancia, diversidad funcional y autismo. Especialista en alimentación infantil, dificultades de alimentación en la infancia, trastornos de la alimentación pediátrica y TCA.",
   description:
     "Con más de 10 años de experiencia en intervención en entornos naturales, planificaciones centradas en la persona y en la familia, intervención en población infanto juvenil y adultos con discapacidad intelectual. La Terapia Ocupacional es mi forma de vida, me entusiasma trabajar con las familias, empatizar con ellas y ser capaz de ver con sus ojos; para mi, la alianza terapéutica es clave, y sin ella creo que cualquier intervención carece de sentido; por eso apuesto por combinar la intervención clínica con la intervención en entornos naturales, primar los intereses de las personas por encima de cualquier objetivo, y darle un propósito a todas las actividades que se realicen bajo el manto de mi intervención.",
   img: terapiaOcupacional,
@@ -76,7 +76,8 @@ export const neuroPsicologiaData = {
   },
   headline:
     "La Neuropsicología estudia las bases neuroanatómicas en relación a los procesos mentales como: atención, orientación, gnoxias, praxias, memoria,funciones ejecutivas y habilidades visoespaciales.",
-  description: "Dentro de mi equipo mi función es la de evaluar las capacidades cognitivas y saber cuáles están fallando y cuales están “a tope”. Después planteo un programa de entrenamiento, o como otros compañeros llaman, rehabilitación, para trabajar en la mejora de aquellas áreas que se han quedado dañadas o no se han desarrollado a los niveles esperables para la edad. Con los más pequeños (0-3 años) el trabajo se realiza desde la gaminifación, porque se aprende jugando. Con mayor edad, se trabaja con el Software Neuronup, una plataforma de neurorehabilitación ",
+  description:
+    "Dentro de mi equipo mi función es la de evaluar las capacidades cognitivas y saber cuáles están fallando y cuales están “a tope”. Después planteo un programa de entrenamiento, o como otros compañeros llaman, rehabilitación, para trabajar en la mejora de aquellas áreas que se han quedado dañadas o no se han desarrollado a los niveles esperables para la edad. Con los más pequeños (0-3 años) el trabajo se realiza desde la gaminifación, porque se aprende jugando. Con mayor edad, se trabaja con el Software Neuronup, una plataforma de neurorehabilitación ",
   img: neuroPiscologia,
   alt: "imagenneuropsicóloga",
 };

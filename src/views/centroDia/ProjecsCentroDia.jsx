@@ -3,7 +3,10 @@ import {
   centroDiaDataThree,
   centroDiaDataTwo,
 } from "./services/centroDiaData";
-import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
+import {
+  colaboradoresData,
+  partnersData,
+} from "../../components/Partners/services/partnersListData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
@@ -22,8 +25,19 @@ const ProjectsCentroDia = () => {
       <ContentProjects {...centroDiaDataOne} inverse />
       <ContentProjects {...centroDiaDataTwo} reverse />
       <ContentProjects {...centroDiaDataThree} inverse />
-      <PartnertList size  marginBottom data={colaboradoresData} title='Socios Colaboradores' />
-      <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
+      <PartnertList
+        size
+        marginBottom
+        data={colaboradoresData}
+        title="Socios Colaboradores"
+      />
+      <PartnertList
+        size
+        inverse
+        marginBottom
+        data={partnersData}
+        title="Cofinanciaciones"
+      />
       <Footer />
     </>
   );

@@ -1,10 +1,10 @@
-import { faPlus, faSquare } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faSquare } from "@fortawesome/free-solid-svg-icons";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
-import React from 'react';
-import { aboutUsData } from './services/cardsAboutUsData';
-import styled from 'styled-components';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import React from "react";
+import { aboutUsData } from "./services/cardsAboutUsData";
+import styled from "styled-components";
 
 const SectionContainer = styled.section`
   width: 100%;
@@ -48,7 +48,7 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.color};
+  background-color: ${(props) => props.color};
   position: relative;
 
   @media (max-width: 900px) {
@@ -57,7 +57,7 @@ const Card = styled.div`
 `;
 
 const TitleCard = styled.h3`
-  color: ${props => (props.color === '#224464' ? '#c6b1c9' : '#224464')};
+  color: ${(props) => (props.color === "#224464" ? "#c6b1c9" : "#224464")};
   font-size: 16px;
   text-align: center;
   margin-top: 10px;
@@ -139,8 +139,8 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 `;
 
 const CircleIcon = styled(FontAwesomeIcon)`
-  font-size: ${props => props.size}px;
-  color: ${props => props.color};
+  font-size: ${(props) => props.size}px;
+  color: ${(props) => props.color};
   margin-right: 10px;
 `;
 
@@ -154,7 +154,7 @@ const CardsAboutUs = () => {
         </Title>
         <CardsContainer>
           {aboutUsData.map((card, index) => (
-            <Card key={index} color={index === 0 ? '#81b71a' : card.color}>
+            <Card key={index} color={index === 0 ? "#81b71a" : card.color}>
               <TitleCard color={card.color}>{card.title}</TitleCard>
               <Image
                 src={card.image}
@@ -165,16 +165,16 @@ const CardsAboutUs = () => {
               />
               {(() => {
                 // Determine if this should be treated as an internal route or an external/file link.
-                const isString = typeof card.url === 'string';
+                const isString = typeof card.url === "string";
                 // Consider common document/image extensions and CRA's /static/ path as external assets.
                 const isAssetOrFile =
                   isString &&
                   (/\.(pdf|docx?|xlsx?|zip|png|jpe?g|webp|svg)$/i.test(
                     card.url
                   ) ||
-                    card.url.includes('/static/'));
+                    card.url.includes("/static/"));
                 const isInternalRoute =
-                  isString && card.url.startsWith('/') && !isAssetOrFile;
+                  isString && card.url.startsWith("/") && !isAssetOrFile;
 
                 if (isInternalRoute) {
                   return (
@@ -183,7 +183,7 @@ const CardsAboutUs = () => {
                         icon={faPlus}
                         style={{
                           color:
-                            card.color === '#224464' ? '#c6b1c9' : '#071c2f',
+                            card.color === "#224464" ? "#c6b1c9" : "#071c2f",
                         }}
                       />
                     </LinkButton>
@@ -202,7 +202,7 @@ const CardsAboutUs = () => {
                     <StyledFontAwesomeIcon
                       icon={faPlus}
                       style={{
-                        color: card.color === '#224464' ? '#c6b1c9' : '#071c2f',
+                        color: card.color === "#224464" ? "#c6b1c9" : "#071c2f",
                       }}
                     />
                   </ExternalButton>

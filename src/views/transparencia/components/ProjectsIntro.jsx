@@ -1,22 +1,22 @@
-import React from 'react';
-import TitleSection from '../../../components/TitleSection';
-import doc1 from './assets/docs_transparencia/memoriaActividadesSociolaboral.pdf';
-import doc12 from './assets/docs_transparencia/cuentas-anuales-2024.pdf';
-import doc4 from './assets/docs_transparencia/plan-estrategico-2023-2024.pdf';
-import doc6 from './assets/docs_transparencia/plan-voluntariado-2025-2027.pdf';
-import doc8 from './assets/docs_transparencia/auditoria-afymos.pdf';
-import doc9 from './assets/docs_transparencia/codigoEtico.pdf';
-import styled from 'styled-components';
-import ExternalLink from '../../../components/ExternalLink';
+import React from "react";
+import TitleSection from "../../../components/TitleSection";
+import doc1 from "./assets/docs_transparencia/memoriaActividadesSociolaboral.pdf";
+import doc12 from "./assets/docs_transparencia/cuentas-anuales-2024.pdf";
+import doc4 from "./assets/docs_transparencia/plan-estrategico-2023-2024.pdf";
+import doc6 from "./assets/docs_transparencia/plan-voluntariado-2025-2027.pdf";
+import doc8 from "./assets/docs_transparencia/auditoria-afymos.pdf";
+import doc9 from "./assets/docs_transparencia/codigoEtico.pdf";
+import styled from "styled-components";
+import ExternalLink from "../../../components/ExternalLink";
 
 const DescargaTransparencia = () => {
   const links = [
-    { id: 1, url: doc1, name: 'Memoria Programa de Integración Sociolaboral' },
+    { id: 1, url: doc1, name: "Memoria Programa de Integración Sociolaboral" },
     { id: 4, url: doc4, name: 'Plan Estratégico: "En ruta"' },
-    { id: 6, url: doc6, name: 'Plan de Voluntariado: 2025-2027' },
-    { id: 8, url: doc8, name: 'Informes Auditoria 2024' },
-    { id: 9, url: doc9, name: 'Código Ético' },
-    { id: 12, url: doc12, name: 'Cuentas Anuales 2024' },
+    { id: 6, url: doc6, name: "Plan de Voluntariado: 2025-2027" },
+    { id: 8, url: doc8, name: "Informes Auditoria 2024" },
+    { id: 9, url: doc9, name: "Código Ético" },
+    { id: 12, url: doc12, name: "Cuentas Anuales 2024" },
   ];
 
   return (
@@ -25,7 +25,7 @@ const DescargaTransparencia = () => {
       <section>
         <SectionFeaturesMobile>
           <ButtonContainer>
-            {links.map(link => (
+            {links.map((link) => (
               <ExternalLink
                 key={link.id}
                 href={link.url}
@@ -122,7 +122,7 @@ export const Icons = styled.div`
   height: 150px;
   box-shadow: 5px 5px 10px #c6c5c5, -5px -5px 10px #ffffff;
   text-decoration: none;
-  background-color: '#c6b1c9';
+  background-color: "#c6b1c9";
 
   :hover {
     border: 3px solid #c6b1c9;

@@ -4,15 +4,15 @@ import castilla from "../assets/icons/logo-castillaLaMancha.png";
 import charlas from "../assets/icons/comment-regular.svg";
 import compromiso from "../assets/icons/compromiso.png";
 import diverses from "../assets/icons/diverses.jpg";
-import diversesDoc from '../assets/pdf/diverses.pdf';
-import docCompromiso from '../assets/pdf/compromiso.pdf';
+import diversesDoc from "../assets/pdf/diverses.pdf";
+import docCompromiso from "../assets/pdf/compromiso.pdf";
 import events from "../assets/icons/face-smile-wink-solid.svg";
 import graduation from "../assets/icons/graduation.svg";
 import mujer from "../assets/icons/institutoDeLaMujer.png";
-import pdf from './crea_2025.pdf'
-import planIgualdad from '../assets/pdf/planIgualdad.pdf';
+import pdf from "./crea_2025.pdf";
+import planIgualdad from "../assets/pdf/planIgualdad.pdf";
 import podcast2 from "../../../assets/images-cover/afymos-show.jpg";
-import protocolo from '../assets/pdf/protocoloPrevencion.pdf';
+import protocolo from "../assets/pdf/protocoloPrevencion.pdf";
 
 export const cardsServiceData = [
   {
@@ -52,13 +52,10 @@ export const cardsServiceData = [
       "FEDA y ADEVI firman un acuerdo por el que facilitarán contratos de formación a los participantes de Asprona",
     image: events,
     alt: "acuerdo con Feda y Adevi",
-    url:"https://villarrobledonoticias.com/noticias/2024-06-feda-y-adevi-firman-un-acuerdo-por-el-que-facilitaran-contratos-de-formacion-a-los-participantes-de-asprona-en-la-formacion-para-personas-con-discapacidad-de-la-asociacion-afymos/",
+    url: "https://villarrobledonoticias.com/noticias/2024-06-feda-y-adevi-firman-un-acuerdo-por-el-que-facilitaran-contratos-de-formacion-a-los-participantes-de-asprona-en-la-formacion-para-personas-con-discapacidad-de-la-asociacion-afymos/",
     color: "#f5f5f5",
-
   },
 ];
-
-
 
 export const cardsIgualdadData = [
   {
@@ -98,7 +95,7 @@ export const cardsIgualdadData = [
       "FEDA y ADEVI firman un acuerdo por el que facilitarán contratos de formación a los participantes de Asprona",
     image: mujer,
     alt: "Protocolo para Prevención y Actuación",
-    url:protocolo,
+    url: protocolo,
     color: "#f5f5f3",
   },
   {
@@ -108,7 +105,7 @@ export const cardsIgualdadData = [
       "FEDA y ADEVI firman un acuerdo por el que facilitarán contratos de formación a los participantes de Asprona",
     image: diverses,
     alt: "Diverses",
-    url:diversesDoc,
+    url: diversesDoc,
     color: "#f7f6f7",
-  }
+  },
 ];

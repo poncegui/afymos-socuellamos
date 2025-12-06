@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import cuentasPdf from '../../../transparencia/components/assets/docs_transparencia/cuentas-anuales-2024.pdf';
-import ExternalLink from '../../../../components/ExternalLink';
-import { Icons } from '../../../transparencia/components/ProjectsIntro';
+import React, { useEffect } from "react";
+import cuentasPdf from "../../../transparencia/components/assets/docs_transparencia/cuentas-anuales-2024.pdf";
+import ExternalLink from "../../../../components/ExternalLink";
+import { Icons } from "../../../transparencia/components/ProjectsIntro";
 
 const VisorPdfCuentas = () => {
   useEffect(() => {
@@ -9,30 +9,30 @@ const VisorPdfCuentas = () => {
       navigator.userAgent
     );
     if (isMobile) {
-      window.open(cuentasPdf, '_blank', 'noopener,noreferrer');
+      window.open(cuentasPdf, "_blank", "noopener,noreferrer");
     }
   }, []);
 
   return (
     <div
       style={{
-        position: 'relative',
-        width: '100%',
-        minHeight: '100vh',
-        paddingTop: '80px',
+        position: "relative",
+        width: "100%",
+        minHeight: "100vh",
+        paddingTop: "80px",
       }}
     >
       <div
         style={{
-          display: 'flex',
-          gap: '1rem',
-          padding: '12px',
-          alignItems: 'center',
-          justifyContent: 'center',
-          background: '#f5f5f5',
-          borderBottom: '1px solid #e0e0e0',
-          paddingLeft: '1rem',
-          paddingRight: '1rem',
+          display: "flex",
+          gap: "1rem",
+          padding: "12px",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#f5f5f5",
+          borderBottom: "1px solid #e0e0e0",
+          paddingLeft: "1rem",
+          paddingRight: "1rem",
         }}
       >
         <ExternalLink
@@ -47,12 +47,12 @@ const VisorPdfCuentas = () => {
 
         <button
           style={{
-            padding: '8px 12px',
+            padding: "8px 12px",
             borderRadius: 6,
-            border: '1px solid #071c2f',
-            background: '#fff',
-            color: '#071c2f',
-            cursor: 'pointer',
+            border: "1px solid #071c2f",
+            background: "#fff",
+            color: "#071c2f",
+            cursor: "pointer",
           }}
           onClick={() => window.history.back()}
           aria-label="Volver"
@@ -65,14 +65,14 @@ const VisorPdfCuentas = () => {
         src={cuentasPdf}
         title="Cuentas Anuales 2024"
         style={{
-          width: '100%',
-          height: 'calc(100vh - 80px - 64px)',
-          border: 'none',
+          width: "100%",
+          height: "calc(100vh - 80px - 64px)",
+          border: "none",
         }}
       />
 
       <noscript>
-        <div style={{ padding: '1rem' }}>
+        <div style={{ padding: "1rem" }}>
           <p>Si tu navegador no muestra el PDF, puedes descargarlo aquí:</p>
           <a
             href={cuentasPdf}

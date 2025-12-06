@@ -1,12 +1,12 @@
 import afymos from "../assets/images-cover/familia-afymos.png";
 import basket from "../assets/images-cover/somos-campeones.png";
 import capacity from "../assets/images-cover/semana-capacidad.png";
-import cata from '../assets/images-noticias/cata-vino/cata-vinos.jpg'
+import cata from "../assets/images-noticias/cata-vino/cata-vinos.jpg";
 import charlasPolicia from "../assets/images-cover/charlas.png";
 import clubDeportivo from "../assets/images-cover/club-deportivo.jpg";
 import crea from "../assets/images-cover/crea-2024.jpg";
 import infanta from "../assets/images-cover/infanta.jpg";
-import reforma from "../assets/images-noticias/reforma.jpg"
+import reforma from "../assets/images-noticias/reforma.jpg";
 
 export const items = [
   {
@@ -15,7 +15,8 @@ export const items = [
     // imageWebp: "/images/carusel/cata-vinos.webp",
     alt: "reconocimiento programa social de empleo",
     title: "Cata III Maridada",
-    description: "Exito de la Cata en Beneficio de AFYMOS a través del programa 'Juntos Somos Capaces' de la Agrupación MAPFRE",
+    description:
+      "Exito de la Cata en Beneficio de AFYMOS a través del programa 'Juntos Somos Capaces' de la Agrupación MAPFRE",
     link: "/cata-vinos",
   },
   {
@@ -33,7 +34,8 @@ export const items = [
     imageWebp: "/images/carusel/infanta.webp",
     alt: "reconocimiento programa social de empleo",
     title: "Premios Fundación Mapfre",
-    description: "Reconocimiento al programa social de empleo por parte de la Fundación Mapfre.",
+    description:
+      "Reconocimiento al programa social de empleo por parte de la Fundación Mapfre.",
     link: "/reconocimiento-fundacion-mapfre",
   },
   {
@@ -42,7 +44,8 @@ export const items = [
     imageWebp: "/images/carusel/crea-2024.webp",
     alt: "Proyecto Nuevo Crea 2025",
     title: "Proyecto Nuevo Crea 2025",
-    description: "Lanzamos Crea, una iniciativa innovadora de formación y empleo.",
+    description:
+      "Lanzamos Crea, una iniciativa innovadora de formación y empleo.",
     link: "/proyecto-crea",
   },
   {
@@ -60,7 +63,8 @@ export const items = [
     imageWebp: "/images/carusel/charlas.webp",
     alt: "acuerdo de colaboración",
     title: "Acuerdo con ADEVI y FEDA",
-    description: "Un nuevo acuerdo para fomentar la inclusión y la colaboración.",
+    description:
+      "Un nuevo acuerdo para fomentar la inclusión y la colaboración.",
     link: "",
   },
   {
@@ -69,7 +73,8 @@ export const items = [
     imageWebp: "/images/carusel/semana-capacidad.webp",
     alt: "semana de la capacidad",
     title: "Semana Capacidad",
-    description: "Actividades y eventos para celebrar la Semana de la Capacidad.",
+    description:
+      "Actividades y eventos para celebrar la Semana de la Capacidad.",
     link: "",
   },
   {

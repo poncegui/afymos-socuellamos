@@ -15,7 +15,7 @@ export const formacionDataOne = {
   img: formacion1,
 };
 
-export const formacionDataTwo= {
+export const formacionDataTwo = {
   reverse: false,
   inverse: false,
   topLine: {

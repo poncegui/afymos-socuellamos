@@ -1,4 +1,7 @@
-import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
+import {
+  colaboradoresData,
+  partnersData,
+} from "../../components/Partners/services/partnersListData";
 import {
   reconocimientoDataFour,
   reconocimientoDataOne,
@@ -24,8 +27,19 @@ const ProjectsReconocimientoFundacion = () => {
       <ContentProjects {...reconocimientoDataTwo} />
       <ContentProjects {...reconocimientoDataThree} />
       <ContentProjects {...reconocimientoDataFour} />
-      <PartnerList size marginBottom data={colaboradoresData} title="Socios Colaboradores" />
-      <PartnerList size inverse marginBottom data={partnersData} title="Cofinanciaciones" />
+      <PartnerList
+        size
+        marginBottom
+        data={colaboradoresData}
+        title="Socios Colaboradores"
+      />
+      <PartnerList
+        size
+        inverse
+        marginBottom
+        data={partnersData}
+        title="Cofinanciaciones"
+      />
       <Footer />
     </>
   );

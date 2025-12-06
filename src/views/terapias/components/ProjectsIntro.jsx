@@ -25,7 +25,7 @@ const ProjectsIntro = () => {
                   duration={1000}
                   aria-label="ir a la terapia selecionada"
                 >
-                  <img loading="lazy"src={picto.src} alt={picto.alt} />
+                  <img loading="lazy" src={picto.src} alt={picto.alt} />
                 </Link>
               </Icons>
             ))}

@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   width: 100%;
@@ -15,7 +15,6 @@ const Container = styled.div`
     grid-template-rows: repeat(auto-fill, minmax(250px, 2fr));
   }
 `;
-
 
 const CircularButton = styled.button`
   width: 100px;
@@ -42,13 +41,10 @@ const ButtonGrid = () => {
   return (
     <Container>
       {[...Array(4)].map((_, index) => (
-        <CircularButton key={index}>
-          {`Button ${index + 1}`}
-        </CircularButton>
+        <CircularButton key={index}>{`Button ${index + 1}`}</CircularButton>
       ))}
     </Container>
   );
 };
 
 export default ButtonGrid;
-

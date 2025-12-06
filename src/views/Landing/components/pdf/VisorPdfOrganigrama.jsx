@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import organigramaPdf from './docs_pdf/organigrama.pdf';
-import ExternalLink from '../../../../components/ExternalLink';
+import React, { useEffect } from "react";
+import organigramaPdf from "./docs_pdf/organigrama.pdf";
+import ExternalLink from "../../../../components/ExternalLink";
 
 const VisorPdfOrganigrama = () => {
   useEffect(() => {
@@ -8,30 +8,30 @@ const VisorPdfOrganigrama = () => {
       navigator.userAgent
     );
     if (isMobile) {
-      window.open(organigramaPdf, '_blank', 'noopener,noreferrer');
+      window.open(organigramaPdf, "_blank", "noopener,noreferrer");
     }
   }, []);
 
   return (
     <div
       style={{
-        position: 'relative',
-        width: '100%',
-        minHeight: '100vh',
-        paddingTop: '80px',
+        position: "relative",
+        width: "100%",
+        minHeight: "100vh",
+        paddingTop: "80px",
       }}
     >
       <div
         style={{
-          display: 'flex',
-          gap: '8px',
-          padding: '12px',
-          alignItems: 'center',
-          justifyContent: 'flex-start',
-          background: '#f5f5f5',
-          borderBottom: '1px solid #e0e0e0',
-          height: '64px',
-          paddingLeft: '1rem',
+          display: "flex",
+          gap: "8px",
+          padding: "12px",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          background: "#f5f5f5",
+          borderBottom: "1px solid #e0e0e0",
+          height: "64px",
+          paddingLeft: "1rem",
         }}
       >
         <ExternalLink
@@ -41,13 +41,13 @@ const VisorPdfOrganigrama = () => {
         >
           <span
             style={{
-              display: 'inline-block',
-              padding: '8px 12px',
+              display: "inline-block",
+              padding: "8px 12px",
               borderRadius: 6,
-              border: 'none',
-              background: '#071c2f',
-              color: '#fff',
-              cursor: 'pointer',
+              border: "none",
+              background: "#071c2f",
+              color: "#fff",
+              cursor: "pointer",
             }}
           >
             Abrir en nueva pestaña
@@ -56,12 +56,12 @@ const VisorPdfOrganigrama = () => {
 
         <button
           style={{
-            padding: '8px 12px',
+            padding: "8px 12px",
             borderRadius: 6,
-            border: '1px solid #071c2f',
-            background: '#fff',
-            color: '#071c2f',
-            cursor: 'pointer',
+            border: "1px solid #071c2f",
+            background: "#fff",
+            color: "#071c2f",
+            cursor: "pointer",
           }}
           onClick={() => window.history.back()}
           aria-label="Volver"
@@ -74,14 +74,14 @@ const VisorPdfOrganigrama = () => {
         src={organigramaPdf}
         title="Organigrama Afymos"
         style={{
-          width: '100%',
-          height: 'calc(100vh - 80px - 64px)',
-          border: 'none',
+          width: "100%",
+          height: "calc(100vh - 80px - 64px)",
+          border: "none",
         }}
       />
 
       <noscript>
-        <div style={{ padding: '1rem' }}>
+        <div style={{ padding: "1rem" }}>
           <p>Si tu navegador no muestra el PDF, puedes descargarlo aquí:</p>
           <a
             href={organigramaPdf}

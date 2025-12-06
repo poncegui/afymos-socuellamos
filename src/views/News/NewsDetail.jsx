@@ -1,14 +1,14 @@
-import { Link, useParams } from 'react-router-dom';
-import React, { useState } from 'react';
+import { Link, useParams } from "react-router-dom";
+import React, { useState } from "react";
 
-import LazyResponsiveImage from '../../components/Image/LazyResponsiveImage';
-import { sampleNews } from '../../components/News/newsData';
-import styled from 'styled-components';
+import LazyResponsiveImage from "../../components/Image/LazyResponsiveImage";
+import { sampleNews } from "../../components/News/newsData";
+import styled from "styled-components";
 
 const NewsDetail = () => {
   // We'll look up item by slug-ish id in the route param 'slug'
   const { slug } = useParams();
-  const item = sampleNews.find(n => n.id === slug) || sampleNews[0];
+  const item = sampleNews.find((n) => n.id === slug) || sampleNews[0];
 
   const [modalIndex, setModalIndex] = useState(null);
 
@@ -38,7 +38,7 @@ const NewsDetail = () => {
       <Container>
         <Content>
           <ArticleText>
-            {item.excerpt.split('\n').map((line, i) => (
+            {item.excerpt.split("\n").map((line, i) => (
               <p key={i}>{line}</p>
             ))}
           </ArticleText>
@@ -52,7 +52,9 @@ const NewsDetail = () => {
                   role="button"
                   tabIndex={0}
                   aria-label={`Abrir imagen ${i + 1}`}
-                  onKeyDown={e => (e.key === 'Enter' ? setModalIndex(i) : null)}
+                  onKeyDown={(e) =>
+                    e.key === "Enter" ? setModalIndex(i) : null
+                  }
                 >
                   <LazyResponsiveImage
                     src={img}
@@ -74,7 +76,7 @@ const NewsDetail = () => {
           aria-label="Galería de imágenes"
           onClick={() => setModalIndex(null)}
         >
-          <ModalInner onClick={e => e.stopPropagation()}>
+          <ModalInner onClick={(e) => e.stopPropagation()}>
             <ModalClose
               onClick={() => setModalIndex(null)}
               aria-label="Cerrar galería"
@@ -92,7 +94,7 @@ const NewsDetail = () => {
             <ModalNav>
               <NavButton
                 disabled={modalIndex === 0}
-                onClick={() => setModalIndex(i => Math.max(0, i - 1))}
+                onClick={() => setModalIndex((i) => Math.max(0, i - 1))}
                 aria-label="Anterior"
               >
                 ◀
@@ -100,7 +102,7 @@ const NewsDetail = () => {
               <NavButton
                 disabled={modalIndex === item.images.length - 1}
                 onClick={() =>
-                  setModalIndex(i => Math.min(item.images.length - 1, i + 1))
+                  setModalIndex((i) => Math.min(item.images.length - 1, i + 1))
                 }
                 aria-label="Siguiente"
               >

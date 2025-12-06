@@ -2,7 +2,10 @@ import {
   capacitacionDataOne,
   capacitacionDataTwo,
 } from "./services/capacitacionData";
-import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
+import {
+  colaboradoresData,
+  partnersData,
+} from "../../components/Partners/services/partnersListData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
@@ -20,8 +23,19 @@ const ProjectsCapacitacion = () => {
       <TitleSection title="Programa habilitación laboral" size />
       <ContentProjects {...capacitacionDataOne} inverse />
       <ContentProjects {...capacitacionDataTwo} reverse />
-      <PartnertList size  marginBottom data={colaboradoresData} title='Socios Colaboradores' />
-      <PartnertList size inverse marginBottom data={partnersData} title='Cofinanciaciones'/>
+      <PartnertList
+        size
+        marginBottom
+        data={colaboradoresData}
+        title="Socios Colaboradores"
+      />
+      <PartnertList
+        size
+        inverse
+        marginBottom
+        data={partnersData}
+        title="Cofinanciaciones"
+      />
       <Footer />
     </>
   );

@@ -1,26 +1,26 @@
 import {
   colaboradoresData,
   partnersData,
-} from '../../../../components/Partners/services/partnersListData';
+} from "../../../../components/Partners/services/partnersListData";
 import {
   reconocimientoDataFour,
   reconocimientoDataOne,
   reconocimientoDataThree,
   reconocimientoDataTwo,
-} from './services/ProjectsCataVinos';
+} from "./services/ProjectsCataVinos";
 
-import { ContentProjects } from '../../../../components/Content/ContentProjects';
-import FacebookReel from '../../../../components/Video/FacebookReel';
-import Footer from '../../../../components/Footer/Footer';
-import LazyResponsiveImage from '../../../../components/Image/LazyResponsiveImage';
-import { Link } from 'react-router-dom';
-import NavBarViews from '../../../../components/Header/NavBarViews';
-import PartnerList from '../../../../components/Partners/PartnerList';
-import React from 'react';
-import ScrollToTop from '../../../../components/ScrollToUp';
-import TitleSection from '../../../../components/TitleSection';
-import heroImg from './assets/cata-vinos-6.png';
-import styled from 'styled-components';
+import { ContentProjects } from "../../../../components/Content/ContentProjects";
+import FacebookReel from "../../../../components/Video/FacebookReel";
+import Footer from "../../../../components/Footer/Footer";
+import LazyResponsiveImage from "../../../../components/Image/LazyResponsiveImage";
+import { Link } from "react-router-dom";
+import NavBarViews from "../../../../components/Header/NavBarViews";
+import PartnerList from "../../../../components/Partners/PartnerList";
+import React from "react";
+import ScrollToTop from "../../../../components/ScrollToUp";
+import TitleSection from "../../../../components/TitleSection";
+import heroImg from "./assets/cata-vinos-6.png";
+import styled from "styled-components";
 
 const ProjectsCataVinos = () => {
   return (
@@ -52,7 +52,7 @@ const ProjectsCataVinos = () => {
           </HeroLead>
           <Actions>
             <Secondary
-              onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}
+              onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}
             >
               Conoce el programa
             </Secondary>

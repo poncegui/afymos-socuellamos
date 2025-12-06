@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import React from 'react';
-import styled from 'styled-components';
-import LazyResponsiveImage from '../Image/LazyResponsiveImage';
+import { Link } from "react-router-dom";
+import React from "react";
+import styled from "styled-components";
+import LazyResponsiveImage from "../Image/LazyResponsiveImage";
 
 const CarouselMobile = ({ items, withoutHeader }) => {
   return (

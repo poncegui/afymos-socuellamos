@@ -1,6 +1,6 @@
-import CarouselNews from './carouselNoticias/CarouselNews';
-import logo from './assets/logos/logo-afymos.png';
-import styled from 'styled-components';
+import CarouselNews from "./carouselNoticias/CarouselNews";
+import logo from "./assets/logos/logo-afymos.png";
+import styled from "styled-components";
 
 const Header = () => {
   return (

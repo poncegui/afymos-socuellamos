@@ -13,7 +13,12 @@ export const ContentProjects = ({
   id,
 }) => {
   return (
-    <StyledSection id={id} $inverse={inverse} role="region" aria-labelledby={`${id}-heading`}>
+    <StyledSection
+      id={id}
+      $inverse={inverse}
+      role="region"
+      aria-labelledby={`${id}-heading`}
+    >
       <Container>
         <ContentRow $reverse={reverse}>
           <ContentColumn>

@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import LazyResponsiveImage from '../Image/LazyResponsiveImage';
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import LazyResponsiveImage from "../Image/LazyResponsiveImage";
 
 const CarouselDesktop = ({ items, withoutHeader }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,8 +16,8 @@ const CarouselDesktop = ({ items, withoutHeader }) => {
       else setItemsPerView(1);
     };
     updateItemsPerView();
-    window.addEventListener('resize', updateItemsPerView);
-    return () => window.removeEventListener('resize', updateItemsPerView);
+    window.addEventListener("resize", updateItemsPerView);
+    return () => window.removeEventListener("resize", updateItemsPerView);
   }, []);
 
   const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
@@ -26,15 +26,15 @@ const CarouselDesktop = ({ items, withoutHeader }) => {
   const startX = useRef(null);
   const endX = useRef(null);
 
-  const handlePrev = () => setCurrentIndex(prev => Math.max(prev - 1, 0));
+  const handlePrev = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
   const handleNext = () =>
-    setCurrentIndex(prev => Math.min(prev + 1, maxIndex));
+    setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
 
-  const handleTouchStart = e => {
+  const handleTouchStart = (e) => {
     startX.current = e.touches[0].clientX;
   };
 
-  const handleTouchMove = e => {
+  const handleTouchMove = (e) => {
     endX.current = e.touches[0].clientX;
   };
 
@@ -111,12 +111,12 @@ const CarouselDesktop = ({ items, withoutHeader }) => {
           {Array.from({ length: maxIndex + 1 }).map((_, index) => (
             <div
               key={index}
-              className={`dot ${currentIndex === index ? 'active' : ''}`}
+              className={`dot ${currentIndex === index ? "active" : ""}`}
               onClick={() => setCurrentIndex(index)}
               role="button"
               aria-label={`Ir a la página ${index + 1}`}
               tabIndex={0}
-              onKeyDown={e => e.key === 'Enter' && setCurrentIndex(index)}
+              onKeyDown={(e) => e.key === "Enter" && setCurrentIndex(index)}
             ></div>
           ))}
         </Pagination>
@@ -157,7 +157,7 @@ const CarouselContainer = styled.section`
   padding: 3rem 0;
   position: relative;
   background: linear-gradient(135deg, #c6b1c9 0%, #ffffff 100%);
-  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   background-repeat: repeat;
 `;
 
@@ -170,7 +170,7 @@ const CarouselWrapper = styled.div`
 const CarouselContent = styled.div`
   display: flex;
   transition: transform 1s ease-in-out;
-  transform: translateX(${props => props.translate}%);
+  transform: translateX(${(props) => props.translate}%);
   touch-action: pan-y;
 `;
 

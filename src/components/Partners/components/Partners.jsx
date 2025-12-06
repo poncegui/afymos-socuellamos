@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
 
 const PartnersCard = ({ url, alt, target, src, title }) => {
   const [clicked, setClicked] = useState(false);
@@ -10,7 +10,7 @@ const PartnersCard = ({ url, alt, target, src, title }) => {
   };
 
   // Best-effort WebP path next to original filename
-  const fileName = src.split('/').pop().split('.')[0];
+  const fileName = src.split("/").pop().split(".")[0];
   const webpPath = `/images/partners/${fileName}.webp`;
 
   return (

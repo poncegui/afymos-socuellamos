@@ -100,4 +100,3 @@ export const juntaChart = [
     titleImg: "Miguel Mateo - Vocal 7",
   },
 ];
-

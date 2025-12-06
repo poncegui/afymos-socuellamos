@@ -4,7 +4,10 @@ import {
   clubDeportivoDataThree,
   clubDeportivoDataTwo,
 } from "./services/ClubDeportivoData";
-import { colaboradoresData, partnersData } from "../../components/Partners/services/partnersListData";
+import {
+  colaboradoresData,
+  partnersData,
+} from "../../components/Partners/services/partnersListData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
 import Footer from "../../components/Footer/Footer";
@@ -24,8 +27,19 @@ const ClubDeportivo = () => {
       <ContentProjects {...clubDeportivoDataTwo} />
       <ContentProjects {...clubDeportivoDataThree} />
       <ContentProjects {...clubDeportivoDataFour} />
-      <PartnerList size marginBottom data={colaboradoresData} title="Socios Colaboradores" />
-      <PartnerList size inverse marginBottom data={partnersData} title="Cofinanciaciones" />
+      <PartnerList
+        size
+        marginBottom
+        data={colaboradoresData}
+        title="Socios Colaboradores"
+      />
+      <PartnerList
+        size
+        inverse
+        marginBottom
+        data={partnersData}
+        title="Cofinanciaciones"
+      />
       <Footer />
     </>
   );

@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const StyledCounter = styled.div`
-display: flex;
-flex-direction: row;
-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  left: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: #c6b1c9;
@@ -17,7 +17,6 @@ left: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: fit-content;
-
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -40,7 +39,6 @@ const VisitCounter = () => {
       👁️ Visitas: {visitas}
     </StyledCounter>
   ) : null;
-  
 };
 
 export default VisitCounter;

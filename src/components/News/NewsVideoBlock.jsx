@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
-const STORAGE_KEY = 'afymos_fontScale';
+const STORAGE_KEY = "afymos_fontScale";
 
-const DEFAULT_VIDEO_ID = '2Jlyz_ExeyQ';
+const DEFAULT_VIDEO_ID = "2Jlyz_ExeyQ";
 
 const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
   const src = `https://www.youtube-nocookie.com/embed/${videoId}?rel=0&amp;modestbranding=1`;
@@ -21,25 +21,25 @@ const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
   useEffect(() => {
     // ensure document root has the current scale
     try {
-      document.documentElement.style.setProperty('--fs', String(scale));
+      document.documentElement.style.setProperty("--fs", String(scale));
     } catch (e) {}
 
     // listen for changes from other controls/tabs
-    const onStorage = e => {
+    const onStorage = (e) => {
       if (e.key === STORAGE_KEY) {
         try {
           const v = e.newValue ? Number(e.newValue) : 1;
           setScale(v);
-          document.documentElement.style.setProperty('--fs', String(v));
+          document.documentElement.style.setProperty("--fs", String(v));
         } catch (err) {}
       }
     };
-    window.addEventListener('storage', onStorage);
-    return () => window.removeEventListener('storage', onStorage);
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
   }, [scale]);
 
   return (
-    <Wrapper role="region" aria-label={heading || 'Video noticia'}>
+    <Wrapper role="region" aria-label={heading || "Video noticia"}>
       <Inner>
         <Controls>
           <ControlButton
@@ -50,7 +50,7 @@ const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
                 const next = Math.max(0.8, Number((cur - 0.1).toFixed(2)));
                 localStorage.setItem(STORAGE_KEY, String(next));
                 document.documentElement.style.setProperty(
-                  '--fs',
+                  "--fs",
                   String(next)
                 );
                 setScale(next);
@@ -64,8 +64,8 @@ const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
             aria-label="Tamaño por defecto"
             onClick={() => {
               try {
-                localStorage.setItem(STORAGE_KEY, '1');
-                document.documentElement.style.setProperty('--fs', '1');
+                localStorage.setItem(STORAGE_KEY, "1");
+                document.documentElement.style.setProperty("--fs", "1");
                 setScale(1);
               } catch (e) {}
             }}
@@ -81,7 +81,7 @@ const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
                 const next = Math.min(2, Number((cur + 0.1).toFixed(2)));
                 localStorage.setItem(STORAGE_KEY, String(next));
                 document.documentElement.style.setProperty(
-                  '--fs',
+                  "--fs",
                   String(next)
                 );
                 setScale(next);
@@ -93,11 +93,11 @@ const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
           </ControlButton>
         </Controls>
 
-        <Heading>{heading || 'Vídeo destacado'}</Heading>
+        <Heading>{heading || "Vídeo destacado"}</Heading>
 
         <Media>
           <iframe
-            title={heading || 'Vídeo de noticias'}
+            title={heading || "Vídeo de noticias"}
             src={src}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

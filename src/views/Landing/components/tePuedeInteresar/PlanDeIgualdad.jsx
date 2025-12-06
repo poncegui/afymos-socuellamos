@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import Video from '../Video';
-import { cardsIgualdadData } from './services/CardsData';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import portada from '../../assets/portada-igualdad.png';
-import styled from 'styled-components';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import Video from "../Video";
+import { cardsIgualdadData } from "./services/CardsData";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import portada from "../../assets/portada-igualdad.png";
+import styled from "styled-components";
 
 const SeccionContainer = styled.section`
   width: 100%;
@@ -69,7 +69,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${props => props.color};
+  background-color: ${(props) => props.color};
   margin-right: 16px;
   position: relative;
 
@@ -82,7 +82,7 @@ const Card = styled.div`
 `;
 
 const TituloCard = styled.h3`
-  color: ${props => (props.color === '#224464' ? '#c6b1c9' : '#224464')};
+  color: ${(props) => (props.color === "#224464" ? "#c6b1c9" : "#224464")};
   font-size: 16px;
   text-align: center;
   position: absolute;
@@ -142,7 +142,7 @@ const CardsInterestInformation = () => {
         </Titulo>
         <ContenedorCards>
           {cardsIgualdadData.map((card, index) => (
-            <Card key={index} color={index === 0 ? '#81b71a' : card.color}>
+            <Card key={index} color={index === 0 ? "#81b71a" : card.color}>
               <Image src={card.image} alt={card.alt} />
               <LinkButton
                 aria-label="ir a la ruta seleccionada"
@@ -153,7 +153,7 @@ const CardsInterestInformation = () => {
                 <StyledFontAwesomeIcon
                   icon={faPlus}
                   style={{
-                    color: card.color === '#224464' ? '#c6b1c9' : '#071c2f',
+                    color: card.color === "#224464" ? "#c6b1c9" : "#071c2f",
                   }}
                 />
               </LinkButton>

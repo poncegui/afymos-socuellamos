@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const STORAGE_KEY = 'afymos_fontScale';
+const STORAGE_KEY = "afymos_fontScale";
 
 const FontSizeControls = ({ min = 0.8, max = 2 }) => {
   const [scale, setScale] = useState(() => {
@@ -21,16 +21,16 @@ const FontSizeControls = ({ min = 0.8, max = 2 }) => {
       // ignore
     }
     try {
-      document.documentElement.style.setProperty('--fs', String(scale));
+      document.documentElement.style.setProperty("--fs", String(scale));
     } catch (e) {
       // ignore
     }
   }, [scale]);
 
   const increase = () =>
-    setScale(s => Math.min(max, Number((s + 0.1).toFixed(2))));
+    setScale((s) => Math.min(max, Number((s + 0.1).toFixed(2))));
   const decrease = () =>
-    setScale(s => Math.max(min, Number((s - 0.1).toFixed(2))));
+    setScale((s) => Math.max(min, Number((s - 0.1).toFixed(2))));
   const reset = () => setScale(1);
 
   return (

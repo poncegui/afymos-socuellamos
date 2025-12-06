@@ -1,16 +1,16 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy } from "react";
 
-import portadaImg from '../assets/portada-un-dia-afymos.png';
+import portadaImg from "../assets/portada-un-dia-afymos.png";
 
-const Video = lazy(() => import('./Video'));
+const Video = lazy(() => import("./Video"));
 
-const urlVideo = 'https://www.youtube.com/embed/70xM5Dvf5Bk';
+const urlVideo = "https://www.youtube.com/embed/70xM5Dvf5Bk";
 
 const VideoUnDiaEnAfymos = () => {
   return (
     <Suspense
       fallback={
-        <div style={{ textAlign: 'center', padding: '2rem' }}>
+        <div style={{ textAlign: "center", padding: "2rem" }}>
           Cargando video...
         </div>
       }

@@ -1,9 +1,9 @@
-import { Container, Section, Title } from '../../globalStyles';
-import React, { useState } from 'react';
+import { Container, Section, Title } from "../../globalStyles";
+import React, { useState } from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
 
 export const Content = ({
   alt,
@@ -46,15 +46,15 @@ export const Content = ({
                   href={href}
                   aria-label={buttonLabel}
                   target={target}
-                  rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+                  rel={target === "_blank" ? "noopener noreferrer" : undefined}
                 >
                   <FontAwesomeIcon
                     icon={faPlus}
                     style={{
-                      color: inverse ? '#000' : '#fff',
-                      transform: hovered ? 'rotate(90deg)' : 'rotate(0deg)',
-                      fontSize: '40px',
-                      transition: 'transform 0.5s ease-in-out',
+                      color: inverse ? "#000" : "#fff",
+                      transform: hovered ? "rotate(90deg)" : "rotate(0deg)",
+                      fontSize: "40px",
+                      transition: "transform 0.5s ease-in-out",
                     }}
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
@@ -75,11 +75,11 @@ export const Content = ({
                 alt={alt}
                 loading="lazy"
                 style={{
-                  width: '100%',
-                  height: 'auto',
-                  maxHeight: '500px',
-                  objectFit: 'cover',
-                  borderRadius: '12px',
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "500px",
+                  objectFit: "cover",
+                  borderRadius: "12px",
                 }}
               />
             </ImgWrapper>
@@ -96,7 +96,7 @@ const ContentRow = styled.div`
   margin: 0 -15px;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   justify-content: space-around;
 
   @media (max-width: 768px) {
@@ -143,7 +143,7 @@ const Heading = styled.h2`
   font-size: 2rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ inverse }) => (inverse ? '#071c2f' : '#c6b1c9')};
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "#c6b1c9")};
 `;
 
 const Subtitle = styled.p`
@@ -151,7 +151,7 @@ const Subtitle = styled.p`
   margin-bottom: 35px;
   line-height: 24px;
   font-size: 1.6rem;
-  color: ${({ inverse }) => (inverse ? '#6a6a6a' : '#c6b1c9')};
+  color: ${({ inverse }) => (inverse ? "#6a6a6a" : "#c6b1c9")};
 `;
 
 const HomePage = styled.a`

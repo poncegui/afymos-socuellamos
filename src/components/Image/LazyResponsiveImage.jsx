@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 /**
  * LazyResponsiveImage
@@ -15,7 +15,7 @@ import styled from 'styled-components';
 const LazyResponsiveImage = ({
   src,
   webp,
-  alt = '',
+  alt = "",
   width,
   height,
   priority = false,
@@ -26,8 +26,8 @@ const LazyResponsiveImage = ({
 }) => {
   if (!src) return null;
 
-  const loading = priority ? 'eager' : 'lazy';
-  const fetchpriority = priority ? 'high' : undefined;
+  const loading = priority ? "eager" : "lazy";
+  const fetchpriority = priority ? "high" : undefined;
 
   return (
     <PictureWrap className={className} style={style}>

@@ -118,7 +118,7 @@ const SectionServiceFilter = () => {
 
   return (
     <div>
-      <h2 style={{ fontSize: "18px", marginTop: "20px", marginLeft:"3.2rem" }}>
+      <h2 style={{ fontSize: "18px", marginTop: "20px", marginLeft: "3.2rem" }}>
         <CircleIcon icon={faSquare} size={15} color="#c6b1c9" />
         Buscador
       </h2>

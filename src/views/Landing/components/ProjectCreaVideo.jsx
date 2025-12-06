@@ -1,6 +1,6 @@
-import React from 'react';
-import Video from './Video';
-import portadaCrea from '../assets/portada-crea.png';
+import React from "react";
+import Video from "./Video";
+import portadaCrea from "../assets/portada-crea.png";
 
 const VideoNuevoCrea = () => {
   return (

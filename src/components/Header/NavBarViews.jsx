@@ -1,7 +1,7 @@
-import logo from './logos/logo-afymos.png';
-import styled from 'styled-components';
+import logo from "./logos/logo-afymos.png";
+import styled from "styled-components";
 
-const Navbar = props => {
+const Navbar = (props) => {
   const handleBack = () => {
     window.history.back();
   };
@@ -95,7 +95,7 @@ const NavContainer = styled.nav`
     margin-right: 1.5rem;
   }
 `;
-NavContainer.displayName = 'NavContainer';
+NavContainer.displayName = "NavContainer";
 
 const NavContainerPrincipal = styled.div`
   display: flex;

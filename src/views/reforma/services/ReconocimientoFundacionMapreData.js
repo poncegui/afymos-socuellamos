@@ -9,7 +9,8 @@ export const reconocimientoDataOne = {
   topLine: {
     text: "Ampliamos nuestros servicios",
   },
-  headline: "Afymos recibe una ayuda del Grupo de Desarrollo Rural Mancha Norte",
+  headline:
+    "Afymos recibe una ayuda del Grupo de Desarrollo Rural Mancha Norte",
   description:
     "AFYMOS amplía su Centro de Día gracias a una ayuda LEADER para mejorar la atención terapéutica y rehabilitadora. Con esta inversión, AFYMOS no solo refuerza su compromiso con la inclusión y la atención especializada a personas con discapacidad, sino que también impulsa el desarrollo social, económico y comunitario de Socuéllamos, contribuyendo a fijar población, generar empleo cualificado y posicionar a la localidad como referente regional en atención sociosanitaria accesible e innovadora.",
   img: reconocimiento1,
@@ -18,14 +19,16 @@ export const reconocimientoDataOne = {
 };
 
 export const reconocimientoDataTwo = {
-  id:1,
+  id: 1,
   reverse: true,
   inverse: true,
-  title: "División y adecuación de espacios para incrementar el número de consultas y salas",
+  title:
+    "División y adecuación de espacios para incrementar el número de consultas y salas",
   topLine: {
     text: "Compromiso con la inclusión",
   },
-  headline: "Cofinanciada por el Fondo Europeo Agrícola de Desarrollo Rural (FEADER), la Administración General del Estado y la Junta de Comunidades de Castilla-La Mancha",
+  headline:
+    "Cofinanciada por el Fondo Europeo Agrícola de Desarrollo Rural (FEADER), la Administración General del Estado y la Junta de Comunidades de Castilla-La Mancha",
   description:
     "Afymos ha recibido una ayuda de 55.119,37 euros del Grupo de Desarrollo Rural Mancha Norte: Desarrollo e Innovación, en el marco de la línea 704 para proyectos promovidos por entidades de intereses sociales locales, correspondiente a la convocatoria 5-2024 del programa LEADER 2023-2027.",
   img: reconocimiento2,
