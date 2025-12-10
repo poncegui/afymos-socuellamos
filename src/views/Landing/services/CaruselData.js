@@ -1,6 +1,7 @@
 import afymos from "../assets/images-cover/familia-afymos.png";
 import basket from "../assets/images-cover/somos-campeones.png";
 import capacity from "../assets/images-cover/semana-capacidad.png";
+import carlos from "../assets/images-noticias/carlos-4.jpg";
 import cata from "../assets/images-noticias/cata-vino/cata-vinos.jpg";
 import charlasPolicia from "../assets/images-cover/charlas.png";
 import clubDeportivo from "../assets/images-cover/club-deportivo.jpg";
@@ -9,6 +10,17 @@ import infanta from "../assets/images-cover/infanta.jpg";
 import reforma from "../assets/images-noticias/reforma.jpg";
 
 export const items = [
+  {
+    id: 10,
+    // temporary image: replace with the real hero for the Día de la Discapacidad when available
+    image: carlos,
+    imageWebp: "/images/carusel/dia-discapacidad.webp",
+    alt: "Día Internacional de las personas con discapacidad - Pleno Diputación",
+    title: "Día Internacional de las personas con discapacidad",
+    description:
+      "Nuestro compañero Carlos protagonizó el pleno en la Diputación de Ciudad Real. Pulsa para ver la noticia.",
+    link: "/noticias/dia-discapacidad-diputacion-cr-2025",
+  },
   {
     id: 9,
     image: cata,

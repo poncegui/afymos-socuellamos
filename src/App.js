@@ -7,6 +7,7 @@ import Chart from "./views/juntaDirectiva/Chart";
 import ClubDeportivo from "./views/ClubDeportivo/ClubDeportivo";
 import LandingView from "./views/Landing/LandingView";
 import NewsDetail from "./views/News/NewsDetail";
+import NewsDiaDiscapacidadPage from "./views/News/NewsDiaDiscapacidadPage";
 import Nosotros from "./views/nosotros/Nosotros";
 import NoticiaReforma from "./views/reforma/NoticiaReforma";
 import PoliticaPrivacidad from "./components/Footer/PoliticaDePrivacidad";
@@ -75,8 +76,9 @@ const App = () => {
         <Route path="/junta-directiva" element={<Chart />} />
         <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
         <Route path="/aviso-legal" element={<AvisoLegal />} />
-        <Route path="/cata-vinos" element={<ProjectsCataVinos />} />
-        <Route path="/noticias/:slug" element={<NewsDetail />} />
+  <Route path="/cata-vinos" element={<ProjectsCataVinos />} />
+  <Route path="/noticias/dia-discapacidad-diputacion-cr-2025" element={<NewsDiaDiscapacidadPage />} />
+  <Route path="/noticias/:slug" element={<NewsDetail />} />
         <Route path="/" element={<LandingView />} />
       </Routes>
       <ScrollToTop smooth />

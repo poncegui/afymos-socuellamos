@@ -1,20 +1,21 @@
-import LazyResponsiveImage from "../Image/LazyResponsiveImage";
-import { Link } from "react-router-dom";
-import React from "react";
-import styled from "styled-components";
+import LazyResponsiveImage from '../Image/LazyResponsiveImage';
+import placeholderImg from '../../views/Landing/assets/images-noticias/news.png';
+import { Link } from 'react-router-dom';
+import React from 'react';
+import styled from 'styled-components';
 
-const NewsList = ({ items = [], ariaLabel = "Noticias recientes" }) => {
+const NewsList = ({ items = [], ariaLabel = 'Noticias recientes' }) => {
   if (!items || items.length === 0) return null;
 
   return (
     <Section aria-label={ariaLabel}>
       <Grid>
-        {items.map((item) => (
+        {items.map(item => (
           <Article
             key={item.id}
             tabIndex={0}
             aria-labelledby={`news-title-${item.id}`}
-            onKeyDown={(e) => handleKeyDown(e, item.href)}
+            onKeyDown={e => handleKeyDown(e, item.href)}
           >
             <Media>
               {item.image ? (
@@ -25,7 +26,12 @@ const NewsList = ({ items = [], ariaLabel = "Noticias recientes" }) => {
                   height="450"
                 />
               ) : (
-                <Placeholder aria-hidden="true">No image</Placeholder>
+                <LazyResponsiveImage
+                  src={placeholderImg}
+                  alt="placeholder"
+                  width="800"
+                  height="450"
+                />
               )}
             </Media>
 
@@ -64,7 +70,7 @@ const NewsList = ({ items = [], ariaLabel = "Noticias recientes" }) => {
 
 function handleKeyDown(e, href) {
   if (!href) return;
-  if (e.key === "Enter" || e.key === " ") {
+  if (e.key === 'Enter' || e.key === ' ') {
     // emulate link activation
     e.preventDefault();
     window.location.href = href;
@@ -72,13 +78,13 @@ function handleKeyDown(e, href) {
 }
 
 function formatDate(dateStr) {
-  if (!dateStr) return "";
+  if (!dateStr) return '';
   try {
     const d = new Date(dateStr);
     return d.toLocaleDateString(undefined, {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
     });
   } catch (err) {
     return dateStr;
@@ -143,13 +149,7 @@ const Media = styled.div`
   }
 `;
 
-const Placeholder = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f3f3f3;
-  color: #777;
-`;
+// Placeholder component replaced by image fallback (placeholderImg)
 
 const Content = styled.div`
   padding: 1rem;
