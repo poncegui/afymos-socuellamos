@@ -1,14 +1,14 @@
-import { Link, useParams } from 'react-router-dom';
-import React from 'react';
+import { Link, useParams } from "react-router-dom";
+import React from "react";
 
-import { sampleNews } from '../../components/News/newsData';
-import styled from 'styled-components';
-import NewsArticle from '../../components/News/NewsArticle';
+import { sampleNews } from "../../components/News/newsData";
+import styled from "styled-components";
+import NewsArticle from "../../components/News/NewsArticle";
 
 const NewsDetail = () => {
   // We'll look up item by slug-ish id in the route param 'slug'
   const { slug } = useParams();
-  const item = sampleNews.find(n => n.id === slug) || sampleNews[0];
+  const item = sampleNews.find((n) => n.id === slug) || sampleNews[0];
 
   if (!item) return <p>Noticia no encontrada</p>;
 

@@ -12,9 +12,8 @@ import reforma from "../assets/images-noticias/reforma.jpg";
 export const items = [
   {
     id: 10,
-    // temporary image: replace with the real hero for the Día de la Discapacidad when available
     image: carlos,
-    imageWebp: "/images/carusel/dia-discapacidad.webp",
+    imageWebp: "/images/carusel/carlos-4.webp",
     alt: "Día Internacional de las personas con discapacidad - Pleno Diputación",
     title: "Día Internacional de las personas con discapacidad",
     description:
@@ -24,7 +23,7 @@ export const items = [
   {
     id: 9,
     image: cata,
-    // imageWebp: "/images/carusel/cata-vinos.webp",
+    imageWebp: "/images/carusel/cata-vinos.webp",
     alt: "reconocimiento programa social de empleo",
     title: "Cata III Maridada",
     description:

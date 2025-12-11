@@ -1,12 +1,8 @@
-// Example data for NewsList — single news item requested by the user
-
 import heroImg from "../../views/Landing/assets/images-noticias/news.png";
 import carlos1 from "../../views/Landing/assets/images-noticias/carlos-1.jpg";
 import carlos2 from "../../views/Landing/assets/images-noticias/carlos-2.jpg";
 import carlos3 from "../../views/Landing/assets/images-noticias/carlos-3.jpg";
 import carlos4 from "../../views/Landing/assets/images-noticias/carlos-4.jpg";
-// carlos5 was removed from the gallery; keep import commented for future use
-// import carlos5 from "../../views/Landing/assets/images-noticias/carlos-5.jpg";
 import carlosMp4 from "../../views/Landing/assets/images-noticias/carlos.mp4";
 
 export const sampleNews = [
@@ -65,8 +61,7 @@ Gracias a la Diputación por abrir sus puertas, y gracias Carlos por representar
 
 Hemos aprovechado para visitar el precioso Palacio de la Diputación de Ciudad Real junto con Natalia, Javier y Denisa.`,
     image: carlos4,
-  images: [carlos1, carlos2, carlos3],
-  subtitle: "Discurso de Carlos",
+    images: [carlos1, carlos2, carlos3],
     videoLocal: carlosMp4,
     alt: "Pleno Diputación de Ciudad Real - Carlos representando",
     date: "2025-12-03",

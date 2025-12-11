@@ -76,9 +76,12 @@ const App = () => {
         <Route path="/junta-directiva" element={<Chart />} />
         <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
         <Route path="/aviso-legal" element={<AvisoLegal />} />
-  <Route path="/cata-vinos" element={<ProjectsCataVinos />} />
-  <Route path="/noticias/dia-discapacidad-diputacion-cr-2025" element={<NewsDiaDiscapacidadPage />} />
-  <Route path="/noticias/:slug" element={<NewsDetail />} />
+        <Route path="/cata-vinos" element={<ProjectsCataVinos />} />
+        <Route
+          path="/noticias/dia-discapacidad-diputacion-cr-2025"
+          element={<NewsDiaDiscapacidadPage />}
+        />
+        <Route path="/noticias/:slug" element={<NewsDetail />} />
         <Route path="/" element={<LandingView />} />
       </Routes>
       <ScrollToTop smooth />

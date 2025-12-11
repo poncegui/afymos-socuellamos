@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import LazyResponsiveImage from '../Image/LazyResponsiveImage';
-import NewsVideoBlock from './NewsVideoBlock';
-import placeholderImg from '../../views/Landing/assets/images-noticias/news.png';
+import React, { useState } from "react";
+import styled from "styled-components";
+import LazyResponsiveImage from "../Image/LazyResponsiveImage";
+import NewsVideoBlock from "./NewsVideoBlock";
+import placeholderImg from "../../views/Landing/assets/images-noticias/news.png";
 
 const NewsArticle = ({ item }) => {
   const [modalIndex, setModalIndex] = useState(null);
@@ -12,7 +12,6 @@ const NewsArticle = ({ item }) => {
   return (
     <ArticlePage>
       <HeroArea>
-        {/* show hero or a generic placeholder so layout is consistent */}
         <HeroImage>
           <LazyResponsiveImage
             src={item.image || placeholderImg}
@@ -22,16 +21,20 @@ const NewsArticle = ({ item }) => {
           />
         </HeroImage>
 
-        {/* separator band between hero and media — full-bleed */}
         <Band aria-hidden={false}>
           <BandInner>
-            <BandTitle>{item.subtitle || 'Discurso de Carlos'}</BandTitle>
+            <BandTitle>{item.subtitle || "Discurso de Carlos"}</BandTitle>
           </BandInner>
         </Band>
 
         {item.videoLocal ? (
           <VideoWrapper>
-            <NativeVideo controls preload="metadata">
+            <NativeVideo
+              controls
+              preload="metadata"
+              poster={item.image || placeholderImg}
+              aria-label={`Vídeo: ${item.title}`}
+            >
               <source src={item.videoLocal} type="video/mp4" />
               Tu navegador no soporta reproducción de vídeo.
             </NativeVideo>
@@ -53,9 +56,11 @@ const NewsArticle = ({ item }) => {
         </Header>
 
         <Body>
-          {item.excerpt.split('\n').map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+          <div className="body-inner">
+            {item.excerpt.split("\n").map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
         </Body>
 
         {item.images && item.images.length > 0 && (
@@ -66,7 +71,7 @@ const NewsArticle = ({ item }) => {
                 onClick={() => setModalIndex(i)}
                 role="button"
                 tabIndex={0}
-                onKeyDown={e => (e.key === 'Enter' ? setModalIndex(i) : null)}
+                onKeyDown={(e) => (e.key === "Enter" ? setModalIndex(i) : null)}
                 aria-label={`Abrir imagen ${i + 1}`}
               >
                 <LazyResponsiveImage
@@ -86,7 +91,7 @@ const NewsArticle = ({ item }) => {
             role="dialog"
             aria-modal="true"
           >
-            <ModalInner onClick={e => e.stopPropagation()}>
+            <ModalInner onClick={(e) => e.stopPropagation()}>
               <ModalClose
                 onClick={() => setModalIndex(null)}
                 aria-label="Cerrar galería"
@@ -104,7 +109,7 @@ const NewsArticle = ({ item }) => {
               <ModalNav>
                 <NavButton
                   disabled={modalIndex === 0}
-                  onClick={() => setModalIndex(i => Math.max(0, i - 1))}
+                  onClick={() => setModalIndex((i) => Math.max(0, i - 1))}
                   aria-label="Anterior"
                 >
                   ◀
@@ -112,7 +117,9 @@ const NewsArticle = ({ item }) => {
                 <NavButton
                   disabled={modalIndex === item.images.length - 1}
                   onClick={() =>
-                    setModalIndex(i => Math.min(item.images.length - 1, i + 1))
+                    setModalIndex((i) =>
+                      Math.min(item.images.length - 1, i + 1)
+                    )
                   }
                   aria-label="Siguiente"
                 >
@@ -200,17 +207,26 @@ const Meta = styled.div`
 
 const Body = styled.article`
   color: var(--color-text);
-  /* slightly larger body text and tighter leading for better proportions */
-  line-height: 1.5;
-  font-size: calc(var(--type-base) * 1.12 * var(--fs, 1));
-  p {
-    margin: 0 0 0.9rem 0;
-  }
+  /* enforce larger, clear body text for accessibility */
+  font-size: calc(14px * var(--fs, 1));
+  line-height: 1.6;
   text-align: justify;
 
+  .body-inner {
+    max-width: 900px; /* match main content width for comfortable measure */
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0 0 1rem 0;
+  }
+
   @media (max-width: 640px) {
-    font-size: calc(var(--type-base) * 1.05 * var(--fs, 1));
-    line-height: 1.45;
+    font-size: calc(15px * var(--fs, 1));
+    line-height: 1.5;
+    .body-inner {
+      padding: 0 0.5rem;
+    }
   }
 `;
 
