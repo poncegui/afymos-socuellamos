@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const VideoCreaInfo = () => {
   return (
@@ -11,19 +11,18 @@ const VideoCreaInfo = () => {
         <Paragraph>
           El proyecto NUEVO CREA (formación y empleo) se ha llevado a cabo en
           AFYMOS con el objetivo de impulsar la INCLUSIÓN LABORAL. Financiado
-          por el Servicio Público de Empleo Estatal, el Gobierno de
-          Castilla-La Mancha, el Ministerio de Trabajo y Economía Social y el
-          Ministerio de Educación, Formación Profesional y Deporte; aprobado
-          en la convocatoria de 2024 y desarrollado de abril a noviembre de
-          2025.
+          por el Servicio Público de Empleo Estatal, el Gobierno de Castilla-La
+          Mancha, el Ministerio de Trabajo y Economía Social y el Ministerio de
+          Educación, Formación Profesional y Deporte; aprobado en la
+          convocatoria de 2024 y desarrollado de abril a noviembre de 2025.
         </Paragraph>
 
         <Paragraph>
           El objetivo principal ha sido mejorar las oportunidades de inserción
           sociolaboral y promover empleos de calidad para personas con
           discapacidad, utilizando la metodología de empleo con apoyo y
-          ofreciendo formación personalizada y adaptada a sus
-          características y necesidades.
+          ofreciendo formación personalizada y adaptada a sus características y
+          necesidades.
         </Paragraph>
 
         <CompaniesTitle>Empresas adheridas</CompaniesTitle>
@@ -59,7 +58,7 @@ const InfoWrapper = styled.section`
   display: flex;
   justify-content: center;
   padding: 3rem 1rem 6rem;
-  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.02) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.02) 100%);
 `;
 
 const InfoContainer = styled.div`

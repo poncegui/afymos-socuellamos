@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import VideoCreaInfo from "./VideoCreaInfo";
+import React from 'react';
+import styled from 'styled-components';
+import VideoCreaInfo from './VideoCreaInfo';
 
 const DemoVideo = () => {
   return (
@@ -10,9 +10,8 @@ const DemoVideo = () => {
           <p>Proyecto NUEVO CREA — Formación y Empleo</p>
           <p>Impulsando la inclusión laboral en AFYMOS</p>
         </DemoLeft>
-        
       </DemoContainer>
-       <VideoCreaInfo />
+      <VideoCreaInfo />
     </Demo>
   );
 };
