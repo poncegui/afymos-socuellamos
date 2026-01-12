@@ -5,13 +5,13 @@ import portadaCrea from "../assets/portada-crea.png";
 const VideoNuevoCrea = () => {
   return (
     <Video
-      sectionTitle="Proyecto Nuevo CREA 2025"
-      videoSrc="https://www.youtube.com/embed/HZ-Xvy2ZSsk"
+      sectionTitle="Proyecto NUEVO CREA (Formación y empleo)"
+      videoSrc="https://www.youtube.com/embed/oUmMhYVsFZE"
       coverImage={portadaCrea}
       urlMoreInformation="/proyecto-crea"
-      title="Proyecto CREA"
+      title="Proyecto NUEVO CREA"
       subtitle="Formación, inclusión y oportunidades reales"
-      description="Descubre nuestro programa de formación y empleo dirigido a personas con discapacidad en Socuéllamos. Un espacio donde se fomenta la autonomía, el desarrollo personal y la integración laboral."
+      description="El proyecto NUEVO CREA se ha llevado a cabo en AFYMOS para impulsar la inclusión laboral. Financiado por SEPE, el Gobierno de Castilla-La Mancha, y los Ministerios competentes, aprobado en 2024 y desarrollado de abril a noviembre de 2025."
     />
   );
 };

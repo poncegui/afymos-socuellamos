@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     --color-bg: #ffffff;
     --max-width: 1300px;
     --gap: 1rem;
-    --fs-base: 16px;
+    --fs-base: 14px;
   }
 
   *,*::before,*::after{
@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html{
-    font-size: 100%; /* 16px */
+    font-size: 87.5%; /* 14px */
     -webkit-text-size-adjust: 100%;
   }
 
@@ -36,7 +36,8 @@ const GlobalStyle = createGlobalStyle`
   h1{ font-size: clamp(1.8rem, 3.8vw, 3.6rem); line-height: 1.08; margin: 0 0 0.5rem 0; }
   h2{ font-size: clamp(1.6rem, 3.2vw, 2.4rem); line-height: 1.15; margin: 0 0 0.5rem 0; }
   h3{ font-size: clamp(1.25rem, 2.6vw, 1.6rem); line-height: 1.25; margin: 0 0 0.5rem 0; }
-  h4{ font-size: 1rem; line-height: 1.3; }
+  /* Subtítulos: fijados a 16px para mejor legibilidad */
+  h4{ font-size: 16px; line-height: 1.3; }
   h5,h6{ font-size: 0.95rem; line-height: 1.3; }
 
   p,ul,ol,dl,blockquote{ font-size: 1rem; color: var(--color-text); margin: 0 0 1rem 0; }
