@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_starter_kit=self.webpackChunkreact_starter_kit||[]).push([[547],{3547(e,t,a){e.exports=a.p+"static/media/cuenca.65f6eaa503268209514b.mp4"}}]);

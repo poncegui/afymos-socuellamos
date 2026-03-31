@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main pages -->
+  <url>
+    <loc>https://afymos.org/</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/nosotros</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Services -->
+  <url>
+    <loc>https://afymos.org/terapias</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/centro-de-dia</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/apoyo-familias</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/viviendas-con-apoyo</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/proyecto-crea</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/club-deportivo-afymos</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/ocio-y-voluntariado</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/servicio-capacitacion</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Information pages -->
+  <url>
+    <loc>https://afymos.org/valorizacion-y-diagnostico</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/instalaciones-centro-diversidad</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/transparencia</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/donaciones</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Legal pages -->
+  <url>
+    <loc>https://afymos.org/politica-privacidad</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/aviso-legal</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
