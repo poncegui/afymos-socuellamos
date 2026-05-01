@@ -48,10 +48,10 @@ const LandingView = () => {
       <Suspense fallback={null}>
         <CarouselSwitcher items={items} />
       </Suspense>
+      <FeaturedNews item={sampleNews[0]} priorityImage={true} />
       <NewsVideoBlock heading={`Aventura en la naturaleza con "Un Paseo Real"`}>
         {`Gracias al programa "Un Paseo Real" de la Diputación de Ciudad Real, hemos vivido una jornada inolvidable en plena naturaleza, recorriendo la impresionante ruta de la Quebrada del Toro, con la experta guía del equipo de @RuideraActiva. Fue una actividad exigente a nivel físico, pero el esfuerzo valió la pena. Al finalizar, pudimos relajarnos y disfrutar de las espectaculares vistas de las Lagunas de Ruidera, que en esta época del año lucen especialmente hermosas. Pero estos viajes son mucho más que rutas de senderismo. Son espacios de convivencia, de aprendizaje y de cuidado mutuo. Nos permiten conocer mejor a las familias, compartir experiencias con las personas con discapacidad y fortalecer los lazos con los monitores que nos acompañan cada día.\n\nSeguimos apostando por este tipo de iniciativas que combinan naturaleza, inclusión y bienestar.`}
       </NewsVideoBlock>
-      <FeaturedNews item={sampleNews[0]} priorityImage={true} />
       <Suspense fallback={null}>
         <VideoVisitaCuenca />
         <VideoLanding />

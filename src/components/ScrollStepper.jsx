@@ -4,24 +4,36 @@ import styled from 'styled-components';
 const ScrollStepper = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState('up');
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
+      const currentScrollY = window.scrollY;
       const windowHeight =
         document.documentElement.scrollHeight - window.innerHeight;
-      const scrolled = (window.scrollY / windowHeight) * 100;
+      const scrolled = (currentScrollY / windowHeight) * 100;
       setScrollProgress(scrolled);
 
-      if (window.scrollY > 300) {
+      if (currentScrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
+
+      // Detectar dirección del scroll
+      if (currentScrollY > lastScrollY) {
+        setScrollDirection('down');
+      } else if (currentScrollY < lastScrollY) {
+        setScrollDirection('up');
+      }
+
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -51,7 +63,9 @@ const ScrollStepper = () => {
         title="Volver al inicio"
       >
         <ProgressText>{Math.round(scrollProgress)}%</ProgressText>
-        <ArrowIcon>↑</ArrowIcon>
+        <ArrowIcon direction={scrollDirection}>
+          {scrollDirection === 'down' ? '↓' : '↑'}
+        </ArrowIcon>
       </ProgressCircle>
     </StepperContainer>
   );

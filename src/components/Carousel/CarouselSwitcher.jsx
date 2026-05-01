@@ -57,7 +57,7 @@ const CarouselSwitcher = ({ items }) => {
           <Count aria-live="polite" aria-atomic="true">
             {items.length} noticias
           </Count>
-          <AccessibilityControls />
+          <AccessibilityControls inverse={true} />
         </HeaderRight>
       </Header>
 
@@ -107,9 +107,13 @@ const AccentBar = styled.span`
 
 const Count = styled.span`
   margin-left: auto;
-  font-size: 0.8rem;
-  color: #6b6f76;
-  font-weight: 500;
+  font-size: 1rem;
+  color: #224464;
+  font-weight: 700;
+  background: rgba(198, 177, 201, 0.15);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(198, 177, 201, 0.3);
 `;
 
 const HeaderRight = styled.div`

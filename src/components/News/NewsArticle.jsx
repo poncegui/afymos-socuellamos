@@ -55,7 +55,7 @@ const NewsArticle = ({ item }) => {
 
         <Band aria-hidden={false}>
           <BandInner>
-            <BandTitle>{item.subtitle || 'Discurso de Carlos'}</BandTitle>
+            <BandTitle>{item.subtitle || 'Oportunidades que cambian vidas'}</BandTitle>
           </BandInner>
         </Band>
 
@@ -96,7 +96,7 @@ const NewsArticle = ({ item }) => {
                 aria-label="Restablecer tamaño de texto"
                 title="Tamaño normal"
               >
-                {fontSize.toFixed(2)}x
+                Escala actual: {(fontSize * 100).toFixed(0)}%
               </A11yButton>
               <A11yButton
                 onClick={increaseFontSize}
@@ -319,26 +319,27 @@ const ButtonGroup = styled.div`
 
 const A11yButton = styled.button`
   padding: 0.6rem 1rem;
-  background: ${props => (props.active ? '#c6b1c9' : 'white')};
-  border: 1px solid #ddd;
+  background: ${props => (props.active ? '#224464' : 'white')};
+  border: 1.5px solid ${props => (props.active ? '#224464' : props.disabled ? '#ccc' : '#c6b1c9')};
   border-radius: 6px;
-  color: ${props => (props.active ? 'white' : '#071c2f')};
+  color: ${props => (props.active ? 'white' : props.disabled ? '#999' : '#071c2f')};
   font-weight: 600;
   cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
   transition: all 0.2s ease;
-  opacity: ${props => (props.disabled ? 0.5 : 1)};
+  opacity: ${props => (props.disabled ? 0.6 : 1)};
   display: flex;
   gap: 0.5rem;
   align-items: center;
 
   &:hover:not(:disabled) {
-    background: #c6b1c9;
+    background: #224464;
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(34, 68, 100, 0.2);
   }
 
   &:focus-visible {
-    outline: 2px solid #c6b1c9;
+    outline: 2px solid #224464;
     outline-offset: 2px;
   }
 `;

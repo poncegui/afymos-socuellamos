@@ -168,8 +168,10 @@ const RightMenu = styled.nav`
   }
 
   img {
-    width: clamp(50px, 10vw, 80px);
-    height: auto;
+    width: auto;
+    max-width: clamp(50px, 10vw, 80px);
+    height: 100%;
+    max-height: clamp(50px, 6vh, 70px);
     object-fit: contain;
     flex-shrink: 0;
   }
@@ -190,7 +192,8 @@ const RightMenu = styled.nav`
     }
 
     img {
-      width: clamp(50px, 10vw, 100px);
+      max-width: clamp(50px, 10vw, 100px);
+      max-height: clamp(45px, 5vh, 65px);
     }
   }
 
@@ -200,7 +203,8 @@ const RightMenu = styled.nav`
     align-items: flex-end;
 
     img {
-      width: clamp(40px, 8vw, 80px);
+      max-width: clamp(40px, 8vw, 80px);
+      max-height: clamp(40px, 5vh, 60px);
     }
 
     h1 {

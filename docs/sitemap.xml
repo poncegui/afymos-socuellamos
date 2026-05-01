@@ -90,6 +90,26 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- News pages -->
+  <url>
+    <loc>https://afymos.org/noticias/inclusion-laboral-comarca-2026</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/noticias/dia-discapacidad-diputacion-cr-2025</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://afymos.org/noticias/juntos-somos-capaces-practicas-2025</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Legal pages -->
   <url>
     <loc>https://afymos.org/politica-privacidad</loc>
