@@ -62,6 +62,7 @@ const IntroductionView = () => {
               href={socialIcon.url}
               target="_blank"
               aria-label={socialIcon.label}
+              title={socialIcon.title}
               rel="noopener noreferrer"
             >
               {socialIcon.icon}

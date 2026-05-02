@@ -12,13 +12,15 @@ export const heroOne = {
   description:
     "Nuestro objetivo es potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los ámbitos de la vida de la persona (autonomía personal, relaciones interpersonales, utilización de los recursos comunitarios y capacidad de toma de decisiones), haciendo especial énfasis en las habilidades de carácter laboral para facilitar su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian del Centro de Día por la metodología de trabajo, por la definición de sus objetivos y por la forma de evaluación de los mismos.",
   buttonLabel: "Saber más",
-  href: "#/servicio-capacitacion",
+  href: "/servicio-capacitacion",
+  browserTitle: "Ir a Servicio de Capacitación",
   img: sociolaboral,
   alt: "persona trabajando",
 };
 
 export const heroTwo = {
-  href: "#/donaciones",
+  href: "/donaciones",
+  browserTitle: "Ir a Donaciones",
   reverse: true,
   inverse: false,
   topLine: {
@@ -43,7 +45,8 @@ export const heroThree = {
   description:
     "Buscamos personal cualificado para formar parte de la familia Afymos: Especialistas Sanitarios, administración y mucho más. Contacta con nosotros o envianos tu curriculum",
   buttonLabel: "Contacto",
-  href: "contacto",
+  href: "#contacto",
+  browserTitle: "Ir a contacto",
   img: proyectos,
   alt: "profesional haciendo terapia con paciente",
 };

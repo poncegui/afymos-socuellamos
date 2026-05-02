@@ -81,6 +81,7 @@ const VideoVisitaCuenca = () => {
               href="https://www.jccm.es/sede/tramite/KW8"
               target="_blank"
               rel="noopener noreferrer"
+              title="Programa Conoce Castilla-La Mancha"
             >
               Conoce Castilla-La Mancha
             </BrandLink>
@@ -149,6 +150,7 @@ const VideoVisitaCuenca = () => {
               href="https://www.jccm.es/sede/tramite/KW8"
               target="_blank"
               rel="noopener noreferrer"
+              title="Programa #conocecastillalamancha"
             >
               #conocecastillalamancha
             </BrandLink>{' '}

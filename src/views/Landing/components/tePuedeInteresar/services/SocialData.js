@@ -31,20 +31,24 @@ export const socialIcons = [
     url: "https://www.instagram.com/tv/CKKQgBcIW_Z/",
     icon: <FaInstagram />,
     label: "ir a Instagram",
+    title: "Síguenos en Instagram",
   },
   {
     url: "https://www.facebook.com/profile.php?id=100067093413028",
     icon: <FaFacebookF />,
     label: "ir a Facebook",
+    title: "Síguenos en Facebook",
   },
   {
     url: "https://www.youtube.com/@afymosasociacion2328",
     icon: <FaYoutube />,
     label: "ir a YouTube",
+    title: "Síguenos en YouTube",
   },
   {
     url: "https://acortar.link/RGYfzQ",
     icon: <FaSpotify />,
     label: "ir a Spotify",
+    title: "Escúchanos en Spotify",
   },
 ];

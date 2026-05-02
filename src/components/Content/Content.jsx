@@ -8,6 +8,7 @@ const STORAGE_KEY = 'afymos_fontScale';
 export const Content = ({
   alt,
   buttonLabel,
+  browserTitle,
   description,
   headline,
   href,
@@ -53,7 +54,7 @@ export const Content = ({
   /* Determina si href es ruta interna o URL externa */
   const isExternal =
     typeof href === 'string' &&
-    (href.startsWith('http') || href.startsWith('#/'));
+    (href.startsWith('http'));
 
   return (
     <Wrapper $inverse={inverse}>
@@ -78,12 +79,13 @@ export const Content = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={buttonLabel}
+                title={browserTitle || buttonLabel}
                 $inverse={inverse}
               >
                 {buttonLabel}
               </CtaLink>
             ) : (
-              <CtaRouter to={href} aria-label={buttonLabel} $inverse={inverse}>
+              <CtaRouter to={href} aria-label={buttonLabel} title={browserTitle || buttonLabel} $inverse={inverse}>
                 {buttonLabel}
               </CtaRouter>
             ))}

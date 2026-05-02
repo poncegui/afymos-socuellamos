@@ -20,6 +20,7 @@ const PartnersCard = ({ url, alt, target, src, title }) => {
       target={target}
       rel="noopener noreferrer"
       aria-label={`Ir a la web del colaborador: ${title}`}
+      title={title}
     >
       <PartnertCard>
         <PartnertFaceFront>
