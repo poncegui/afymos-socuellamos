@@ -36,8 +36,8 @@ const VisorPdfOrganigrama = () => {
       >
         <ExternalLink
           href={organigramaPdf}
-          ariaLabel="Abrir organigrama en nueva pestaña"
-          title="Abrir organigrama en nueva pestaña"
+          ariaLabel="Abrir organigrama de Afymos en nueva pestaña"
+          title="Organigrama Afymos - PDF"
         >
           <span
             style={{

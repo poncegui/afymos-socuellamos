@@ -24,16 +24,16 @@ const ContactForm = () => {
               <a
                 href="mailto:afymos@gmail.com"
                 target="_blank"
-                title="e-mail afymos"
+                title="Email - Afymos"
                 rel="noreferrer"
-                aria-label="ir al correo electrónico de Afymos"
+                aria-label="Enviar correo electrónico a Afymos"
               >
                 afymos@gmail.com
               </a>
             </p>
           </Icons>
           <Icons>
-            <img loading="lazy" src={IconThree} alt="" />
+            <img loading="lazy" src={IconThree} alt="icono de ubicación" />
             <h3>Dirección</h3>
             <p>c. Pedro Arias, 87, 13630 Socuéllamos, Ciudad Real</p>
           </Icons>

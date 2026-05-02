@@ -30,7 +30,8 @@ const SectionServices = () => {
             <IconCard key={item.id}>
               <StyledLink
                 to={item.url}
-                aria-label={`Ir a la sección de ${item.name}`}
+                aria-label={item.browserTitle}
+                title={item.seoTitle}
               >
                 <IconWrapper>
                   <img

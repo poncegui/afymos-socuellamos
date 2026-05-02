@@ -12,8 +12,8 @@ export const aboutUsData = [
     alt: "Instalaciones Centro",
     url: "/instalaciones-centro-diversidad",
     color: "#f5f5f5",
-    ariaLabel: "ir a instalaciones centro diversidad",
-    browserTitle: "Ir a Instalaciones Centro",
+    ariaLabel: "Ir a instalaciones del centro de diversidad de Afymos",
+    browserTitle: "Instalaciones Centro - Afymos",
   },
   {
     id: 2,
@@ -23,8 +23,8 @@ export const aboutUsData = [
     // Use internal route so the app will render the VisorPdfOrganigrama component
     url: "/organigrama",
     color: "#224464",
-    ariaLabel: "ir a organigrama",
-    browserTitle: "Ver organigrama",
+    ariaLabel: "Ver organigrama de Afymos",
+    browserTitle: "Organigrama - Afymos",
   },
   {
     id: 3,
@@ -33,8 +33,8 @@ export const aboutUsData = [
     alt: "Junta Directiva",
     url: "/junta-directiva",
     color: "#c6b1c9",
-    ariaLabel: "ir a junta directiva",
-    browserTitle: "Ir a Junta Directiva",
+    ariaLabel: "Ir a la junta directiva de Afymos",
+    browserTitle: "Junta Directiva - Afymos",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const aboutUsData = [
     alt: "Cuentas anuales 2024",
     url: pdfCuentas,
     color: "#f5f5f5",
-    ariaLabel: "Descargar archivo cuentas anuales en PDF",
-    browserTitle: "Descargar Cuentas Anuales 2024 (PDF)",
+    ariaLabel: "Descargar cuentas anuales 2024 de Afymos (archivo PDF)",
+    browserTitle: "Cuentas Anuales 2024 - Afymos",
   },
 ];

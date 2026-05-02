@@ -25,8 +25,8 @@ const DonationInformation = () => {
           </Body>
           <DonateButton
             to="/donaciones"
-            aria-label="Ir a la página de donaciones"
-            title="Ir a la página de donaciones"
+            aria-label="Ir a la página de donaciones de Afymos"
+            title="Donaciones - Afymos"
           >
             Dona ahora →
           </DonateButton>

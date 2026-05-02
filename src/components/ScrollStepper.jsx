@@ -60,7 +60,7 @@ const ScrollStepper = () => {
           }
         }}
         aria-label="Volver al inicio de la página"
-        title="Volver al inicio"
+        title="Volver arriba"
       >
         <ProgressText>{Math.round(scrollProgress)}%</ProgressText>
         <ArrowIcon direction={scrollDirection}>

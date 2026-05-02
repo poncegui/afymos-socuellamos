@@ -23,7 +23,8 @@ const ProjectsIntro = () => {
                   smooth={true}
                   offset={-100}
                   duration={1000}
-                  aria-label="ir a la terapia selecionada"
+                  aria-label={`Ir a la sección de ${picto.name} de Afymos`}
+                  title={`${picto.name} - Afymos`}
                 >
                   <img loading="lazy" src={picto.src} alt={picto.alt} />
                 </Link>

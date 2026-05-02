@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import VisitCounter from '../Analytics/VisitCounter';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -37,7 +38,7 @@ const Footer = () => {
                 {column.items.map((item, idx) => (
                   <li key={idx}>
                     {item.to ? (
-                      <Link to={item.to} title={item.browserTitle}>
+                      <Link to={item.to} title={item.text}>
                         {item.text}
                       </Link>
                     ) : (
@@ -46,7 +47,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${item.text} (abre en nueva pestaña)`}
-                        title={item.browserTitle}
+                        title={item.text}
                       >
                         {item.text}
                       </a>
@@ -71,8 +72,8 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Síguenos en ${link.name} (abre en nueva pestaña)`}
+                  title={`${link.name} - Afymos`}
                   role="listitem"
-                  title={link.browserTitle || `Visita nuestra página en ${link.name}`}
                   className="social-link-item"
                 >
                   {link.icon}
@@ -92,6 +93,7 @@ const Footer = () => {
             <p className="footer-tagline">
               Una fundación comprometida con la inclusión y la dignidad
             </p>
+            <VisitCounter />
           </div>
         </div>
       </div>

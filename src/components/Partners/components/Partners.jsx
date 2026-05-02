@@ -19,14 +19,14 @@ const PartnersCard = ({ url, alt, target, src, title }) => {
       onClick={handleClick}
       target={target}
       rel="noopener noreferrer"
-      aria-label={`Ir a la web del colaborador: ${title}`}
-      title={title}
+      aria-label={`Visitar sitio web de ${title}, colaborador de Afymos`}
+      title={`${title} - Colaborador`}
     >
       <PartnertCard>
         <PartnertFaceFront>
           <picture>
             <source srcSet={webpPath} type="image/partners/webp" />
-            <LogoPartner src={src} alt={alt} title={title} loading="lazy" />
+            <LogoPartner src={src} alt={`Logo de ${alt}`} loading="lazy" />
           </picture>
         </PartnertFaceFront>
       </PartnertCard>

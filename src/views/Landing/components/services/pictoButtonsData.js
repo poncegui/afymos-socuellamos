@@ -14,7 +14,8 @@ export const servicesData = [
     img: centroDia,
     alt: "Centro de Dia",
     url: "/centro-de-dia",
-    browserTitle: "Ir a Centro de Día",
+    browserTitle: "Ir a Centro de Día de Afymos",
+    seoTitle: "Centro de Día - Afymos",
   },
   {
     id: 2,
@@ -22,7 +23,8 @@ export const servicesData = [
     img: capacitacion,
     alt: "Servicio de capacitación",
     url: "/servicio-capacitacion",
-    browserTitle: "Ir a Servicio de Capacitación",
+    browserTitle: "Ir a Servicio de Capacitación de Afymos",
+    seoTitle: "Capacitación - Afymos",
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ export const servicesData = [
     img: viviendaSocial,
     alt: "Viviendas con apoyo",
     url: "/viviendas-con-apoyo",
-    browserTitle: "Ir a Viviendas con Apoyo",
+    browserTitle: "Ir a Viviendas con Apoyo de Afymos",
+    seoTitle: "Viviendas con Apoyo - Afymos",
   },
 
   {
@@ -39,7 +42,8 @@ export const servicesData = [
     img: formacion,
     alt: "formacion",
     url: "/formacion",
-    browserTitle: "Ir a Centro de Formación",
+    browserTitle: "Ir a Centro de Formación de Afymos",
+    seoTitle: "Formación - Afymos",
   },
   {
     id: 5,
@@ -47,7 +51,8 @@ export const servicesData = [
     img: voluntariado,
     alt: "Ocio y voluntariado",
     url: "/ocio-y-voluntariado",
-    browserTitle: "Ir a Ocio y Voluntariado",
+    browserTitle: "Ir a Ocio y Voluntariado de Afymos",
+    seoTitle: "Ocio y Voluntariado - Afymos",
   },
   {
     id: 6,
@@ -55,7 +60,8 @@ export const servicesData = [
     img: diagnostico,
     alt: "Valoración y Diagnóstico",
     url: "/valoracion-y-diagnostico",
-    browserTitle: "Ir a Valoración y Diagnóstico",
+    browserTitle: "Ir a Valoración y Diagnóstico de Afymos",
+    seoTitle: "Valoración y Diagnóstico - Afymos",
   },
   {
     id: 7,
@@ -63,7 +69,8 @@ export const servicesData = [
     img: servicios,
     alt: "terapias",
     url: "/terapias",
-    browserTitle: "Ir a Terapias",
+    browserTitle: "Ir a Terapias de Afymos",
+    seoTitle: "Terapias - Afymos",
   },
   {
     id: 8,
@@ -71,6 +78,7 @@ export const servicesData = [
     img: familias,
     alt: "Atención familias",
     url: "/apoyo-familias",
-    browserTitle: "Ir a Atención a Familias",
+    browserTitle: "Ir a Atención a Familias de Afymos",
+    seoTitle: "Atención a Familias - Afymos",
   },
 ];

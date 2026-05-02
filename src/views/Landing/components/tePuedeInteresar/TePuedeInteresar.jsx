@@ -26,8 +26,8 @@ const IntroductionView = () => {
               <StyledButton
                 key={data.key}
                 to={data.url}
-                aria-label={`Ir a la sección ${data.name}`}
-                title={data.title}
+                aria-label={`Ir a la sección ${data.name} de Afymos`}
+                title={`${data.name} - Afymos`}
               >
                 {data.name}
               </StyledButton>
@@ -40,18 +40,18 @@ const IntroductionView = () => {
               smooth={true}
               offset={-100}
               duration={1000}
-              aria-label="Ir a la sección de contacto"
+              aria-label="Ir a la sección de contacto de Afymos"
+              title="Contacto - Afymos"
               role="button"
               tabIndex={0}
-              title="Ir a contacto"
             >
               Contacto
             </StyledButton>
 
             <StyledButtonTransparencia
               to="/transparencia"
-              aria-label="Ir a la sección de transparencia"
-              title="Ir a Transparencia"
+              aria-label="Ir a la sección de transparencia de Afymos"
+              title="Transparencia - Afymos"
             >
               Transparencia
             </StyledButtonTransparencia>
@@ -64,7 +64,7 @@ const IntroductionView = () => {
               key={index}
               href={socialIcon.url}
               target="_blank"
-              aria-label={socialIcon.label}
+              aria-label={`${socialIcon.label} (abre en nueva pestaña)`}
               title={socialIcon.title}
               rel="noopener noreferrer"
             >

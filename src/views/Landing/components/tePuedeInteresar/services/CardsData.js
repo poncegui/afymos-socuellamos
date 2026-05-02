@@ -24,6 +24,7 @@ export const cardsServiceData = [
     alt: "!Afymos estrena podcast!",
     url: "https://acortar.link/RGYfzQ",
     color: "#f5f5f5",
+    browserTitle: "The Afymos Show Podcast - Escuchar en Spotify",
   },
   {
     key: 2,
@@ -34,6 +35,7 @@ export const cardsServiceData = [
     alt: "proyecto-crea",
     url: "#/proyecto-crea",
     color: "#224464",
+    browserTitle: "Proyecto CREA - Afymos",
   },
   {
     key: 3,
@@ -44,6 +46,7 @@ export const cardsServiceData = [
     alt: "Charlas profesionales",
     url: "https://fb.watch/r896b1s2MT/",
     color: "#c6b1c9",
+    browserTitle: "Charlas Educativas - Afymos",
   },
   {
     key: 4,
@@ -54,6 +57,7 @@ export const cardsServiceData = [
     alt: "acuerdo con Feda y Adevi",
     url: "https://villarrobledonoticias.com/noticias/2024-06-feda-y-adevi-firman-un-acuerdo-por-el-que-facilitaran-contratos-de-formacion-a-los-participantes-de-asprona-en-la-formacion-para-personas-con-discapacidad-de-la-asociacion-afymos/",
     color: "#f5f5f5",
+    browserTitle: "Acuerdo ADEVI y FEDA - Afymos",
   },
 ];
 
@@ -67,6 +71,7 @@ export const cardsIgualdadData = [
     alt: "Compromiso con la igualdad",
     url: docCompromiso,
     color: "#f7f5f3",
+    browserTitle: "Compromiso con la Igualdad - Afymos",
   },
   {
     key: 2,
@@ -77,6 +82,7 @@ export const cardsIgualdadData = [
     alt: "Plan de Igualdad",
     url: planIgualdad,
     color: "#224464",
+    browserTitle: "Plan de Igualdad - Afymos",
   },
   {
     key: 3,
@@ -87,6 +93,7 @@ export const cardsIgualdadData = [
     alt: "Acuerdo Igualdad",
     url: acuerdo,
     color: "#c6b1c9",
+    browserTitle: "Acuerdo Igualdad - Afymos",
   },
   {
     key: 4,
@@ -97,9 +104,10 @@ export const cardsIgualdadData = [
     alt: "Protocolo para Prevención y Actuación",
     url: protocolo,
     color: "#f5f5f3",
+    browserTitle: "Protocolo Prevención - Afymos",
   },
   {
-    key: 4,
+    key: 5,
     title: "Diverses",
     description:
       "FEDA y ADEVI firman un acuerdo por el que facilitarán contratos de formación a los participantes de Asprona",
@@ -107,5 +115,6 @@ export const cardsIgualdadData = [
     alt: "Diverses",
     url: diversesDoc,
     color: "#f7f6f7",
+    browserTitle: "Diverses - Afymos",
   },
 ];

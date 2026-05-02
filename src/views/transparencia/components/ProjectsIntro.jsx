@@ -30,7 +30,7 @@ const DescargaTransparencia = () => {
                 key={link.id}
                 href={link.url}
                 ariaLabel={`Abrir ${link.name} (Documento PDF, se abre en nueva pestaña)`}
-                title={link.name}
+                title={`${link.name} - PDF`}
               >
                 <Icons>
                   <h3>{link.name}</h3>

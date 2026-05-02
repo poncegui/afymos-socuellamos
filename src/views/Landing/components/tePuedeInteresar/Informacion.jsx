@@ -172,7 +172,8 @@ const CardsInterestInformation = () => {
             <Card key={index} color={bgColor}>
               <Image src={card.image} alt={card.alt} />
               <LinkButton
-                aria-label="ir a la ruta seleccionada"
+                aria-label={`Ver ${card.title} (se abre en nueva pestaña)`}
+                title={card.browserTitle}
                 href={card.url}
                 target="_blank"
                 download={card.download}

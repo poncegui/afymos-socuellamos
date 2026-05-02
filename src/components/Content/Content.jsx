@@ -8,7 +8,6 @@ const STORAGE_KEY = 'afymos_fontScale';
 export const Content = ({
   alt,
   buttonLabel,
-  browserTitle,
   description,
   headline,
   href,
@@ -79,13 +78,12 @@ export const Content = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={buttonLabel}
-                title={browserTitle || buttonLabel}
                 $inverse={inverse}
               >
                 {buttonLabel}
               </CtaLink>
             ) : (
-              <CtaRouter to={href} aria-label={buttonLabel} title={browserTitle || buttonLabel} $inverse={inverse}>
+              <CtaRouter to={href} aria-label={buttonLabel} $inverse={inverse}>
                 {buttonLabel}
               </CtaRouter>
             ))}
@@ -157,7 +155,8 @@ const Label = styled.span`
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: ${({ $inverse }) => ($inverse ? '#224464' : '#c6b1c9')};
+  /* Mejorado contraste para WCAG AA */
+  color: ${({ $inverse }) => ($inverse ? '#1a3349' : '#c6b1c9')};
   border-left: 3px solid ${({ $inverse }) => ($inverse ? '#c6b1c9' : '#c6b1c9')};
   padding-left: 0.6rem;
 `;
@@ -173,7 +172,8 @@ const Headline = styled.h2`
 const Body = styled.p`
   font-size: calc(0.975rem * var(--fs, 1));
   line-height: 1.8;
-  color: ${({ $inverse }) => ($inverse ? '#444' : 'rgba(255,255,255,0.95)')};
+  /* Mejorado de #444 a #333 para cumplir WCAG AA (contraste 4.5:1) */
+  color: ${({ $inverse }) => ($inverse ? '#333' : 'rgba(255,255,255,0.95)')};
   margin: 0;
 `;
 

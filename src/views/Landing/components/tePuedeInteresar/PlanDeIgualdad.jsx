@@ -178,7 +178,8 @@ const CardsInterestInformation = () => {
               <Card key={index} color={bgColor}>
                 <Image src={card.image} alt={card.alt} />
                 <LinkButton
-                  aria-label={`Ver ${card.title} (Documento PDF, se abre en nueva pestaña)`}
+                  aria-label={`Ver ${card.title} de Afymos (Documento PDF, se abre en nueva pestaña)`}
+                  title={card.browserTitle}
                   href={card.url}
                   target="_blank"
                   download={card.download}

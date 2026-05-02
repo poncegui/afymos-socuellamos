@@ -144,7 +144,11 @@ const SectionServiceFilter = () => {
                 onClick={() => handleServiceItemClick(service)}
                 isSelected={selectedService === service}
               >
-                <Link to={service.url}>
+                <Link
+                  to={service.url}
+                  aria-label={service.browserTitle}
+                  title={service.seoTitle}
+                >
                   <ServiceName>{service.name}</ServiceName>
                 </Link>
               </ServiceItem>

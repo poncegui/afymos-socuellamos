@@ -37,8 +37,8 @@ const VisorPdfCuentas = () => {
       >
         <ExternalLink
           href={cuentasPdf}
-          ariaLabel="Abrir cuentas anuales en nueva pestaña"
-          title="Abrir cuentas anuales en nueva pestaña"
+          ariaLabel="Abrir cuentas anuales de Afymos en nueva pestaña"
+          title="Cuentas Anuales 2024 - PDF"
         >
           <Icons>
             <h3>Cuentas Anuales 2024</h3>

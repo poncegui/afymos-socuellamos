@@ -126,7 +126,8 @@ const Label = styled.span`
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: ${({ $inverse }) => ($inverse ? "#224464" : "#c6b1c9")};
+  /* Mejorado contraste: #224464 tiene mejor ratio sobre fondo claro */
+  color: ${({ $inverse }) => ($inverse ? "#1a3349" : "#c6b1c9")};
   border-left: 3px solid ${({ $inverse }) => ($inverse ? "#c6b1c9" : "rgba(198,177,201,0.5)")};
   padding-left: 0.6rem;
   line-height: 1.5;
@@ -141,14 +142,16 @@ const Heading = styled.h2`
 
   strong {
     font-weight: 800;
-    color: ${({ $inverse }) => ($inverse ? "#c6b1c9" : "#c6b1c9")};
+    /* Contraste WCAG AA: #5a3a5f (oscuro) sobre fondo claro, #c6b1c9 sobre oscuro */
+    color: ${({ $inverse }) => ($inverse ? "#5a3a5f" : "#c6b1c9")};
   }
 `;
 
 const Body = styled.p`
   font-size: calc(clamp(0.88rem, 1.5vw, 0.97rem) * var(--fs, 1));
   line-height: 1.8;
-  color: ${({ $inverse }) => ($inverse ? "#555" : "rgba(255,255,255,0.95)")};
+  /* Cambio de #555 a #333 para mejorar contraste WCAG AA (4.5:1 mínimo) */
+  color: ${({ $inverse }) => ($inverse ? "#333" : "rgba(255,255,255,0.95)")};
   margin: 0;
 
   strong {

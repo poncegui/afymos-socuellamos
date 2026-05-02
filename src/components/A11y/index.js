@@ -14,5 +14,6 @@ export { default as AccessibleText } from './AccessibleText';
 export { default as AccessibleSection } from './AccessibleSection';
 export { default as AccessibleBadge } from './AccessibleBadge';
 export { default as AccessibleButton } from './AccessibleButton';
+export { default as AccessibleLink } from './AccessibleLink';
 export { default as AccessiblePDFLink } from './AccessiblePDFLink';
 export { default as AccessibleYouTubeVideo } from './AccessibleYouTubeVideo';
