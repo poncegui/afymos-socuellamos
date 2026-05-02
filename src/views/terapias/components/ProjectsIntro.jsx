@@ -137,7 +137,7 @@ export const Icons = styled.div`
     border: solid 1px #071c2f;
 
     h3 {
-      font-size: calc(0.5rem * var(--fs, 1));
+      font-size: calc(0.875rem * var(--fs, 1)); /* 14px mínimo WCAG */
       padding: 0 0.3rem;
     }
 
@@ -159,7 +159,7 @@ export const Icons = styled.div`
     border: solid 1px #071c2f;
 
     h3 {
-      font-size: calc(0.5rem * var(--fs, 1));
+      font-size: calc(0.875rem * var(--fs, 1)); /* 14px mínimo WCAG */
       padding: 0 0.3rem;
     }
 

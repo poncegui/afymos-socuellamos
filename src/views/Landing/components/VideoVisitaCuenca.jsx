@@ -73,7 +73,7 @@ const VideoVisitaCuenca = () => {
       <Inner>
         {/* ── Texto izquierdo ── */}
         <LeftCol>
-          <SectionLabel>Viaje cultural</SectionLabel>
+          <SectionLabel inverse>Viaje cultural</SectionLabel>
           <Heading id="cuenca-heading">Descubriendo Cuenca con Afymos</Heading>
           <Subtitle>
             Gracias a la subvención{' '}
@@ -221,7 +221,7 @@ const Subtitle = styled.p`
 const Body = styled.p`
   font-size: calc(0.94rem * var(--fs, 1));
   line-height: 1.8;
-  color: #555;
+  color: #4a4a4a;
   margin: 0;
 
   strong {
@@ -243,10 +243,10 @@ const Hashtag = styled.strong`
 `;
 
 const BrandLink = styled.a`
-  color: #224464;
+  color: #0b4a6f;
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 2px solid #c6b1c9;
+  border-bottom: 2px solid #6b4275;
   padding-bottom: 1px;
   transition: color 0.2s, border-color 0.2s;
 

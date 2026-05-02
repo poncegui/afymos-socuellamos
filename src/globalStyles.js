@@ -175,7 +175,7 @@ export const Title = styled.h1`
 export const MainHeading = styled.h1`
   font-size: clamp(2rem, 5.5vw, 3.6rem);
   margin-bottom: 1.5rem;
-  color: ${({ inverse }) => (inverse ? "#071c2f" : "#c6b1c9")};
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "#6b4275")};
   width: 100%;
   letter-spacing: 2px;
   text-align: center;
@@ -186,7 +186,7 @@ export const Heading = styled.h3`
   margin: ${({ margin }) => (margin ? margin : "")};
   margin-bottom: ${({ mb }) => (mb ? mb : "")};
   margin-top: ${({ mt }) => (mt ? mt : "")};
-  color: ${({ inverse }) => (inverse ? "#071c2f" : "#c6b1c9")};
+  color: ${({ inverse }) => (inverse ? "#071c2f" : "#6b4275")};
   letter-spacing: 0.4px;
   line-height: 1.25;
   text-align: center;
@@ -205,7 +205,7 @@ export const TextWrapper = styled.span`
 export const Section = styled.section`
   padding: ${({ padding }) => (padding ? padding : "60px 0")};
   margin: ${({ margin }) => (margin ? margin : "")};
-  background: ${({ inverse }) => (inverse ? "#c6b1c9" : "#071c2f")};
+  background: ${({ inverse }) => (inverse ? "#d4b8d9" : "#071c2f")};
   position: ${({ position }) => (position ? position : "")};
   width: ${({ width }) => (width ? width : "auto")};
   min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};

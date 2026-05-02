@@ -12,6 +12,7 @@ export const familyDataOne = {
   description:
     "Partiendo de sus propios recursos y fortalezas, atendemos a sus necesidades y demandas, facilitando los apoyos necesarios para mejorar su calidad de vida y el bienestar de cada uno de sus miembros. Las necesidades y demandas específicas a las que se pretende dar respuesta son las derivadas de tener un familiar con discapacidad.",
   img: apoyofamilia1,
+  alt: "Familia recibiendo asesoramiento y apoyo en Afymos",
 };
 
 export const familyDataTwo = {
@@ -24,4 +25,5 @@ export const familyDataTwo = {
   description:
     "Elaboramos y creamos planes y grupos de apoyo orientados a familiares, prestamos atención psicológica, además, proporciamos información y orientación tras un estudio minucioso sobre las necesidades de cada caso",
   img: apoyofamilia2,
+  alt: "Servicios de apoyo psicológico y planes de apoyo para familias",
 };

@@ -13,6 +13,7 @@ export const formacionDataOne = {
   description:
     "Hemos impartido Certificados de Profesionalidad ligados directamente al mundo de los apoyos a las personas con discapacidad intelectual.",
   img: formacion1,
+  alt: "Centro de Formación Afymos homologado para especialidades formativas",
 };
 
 export const formacionDataTwo = {
@@ -24,6 +25,7 @@ export const formacionDataTwo = {
   headline: "",
   description: "Abierto plazo de inscripción",
   img: formacion3,
+  alt: "Cartel informativo de actividades básicas de atención al cliente para personas con discapacidad",
   buttonLabel: "Descarga Información",
   href: "#/documentacion-formacion",
 };
@@ -39,4 +41,5 @@ export const formacionDataThree = {
   description:
     "Este proyecto consiste en el mejor ejemplo de FORMACIÓN DUAL, puesto que combinan formación profesional en el ámbito laboral con trabajo efectivo en la empresa, mediante larealización de contratos de formación en alternancia.",
   img: formacion2,
+  alt: "Programa CREA de formación dual y empleo para personas con discapacidad",
 };

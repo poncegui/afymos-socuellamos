@@ -17,6 +17,7 @@ export const voluntariadoOne = {
   description:
     "En este servicio no es únicamente la Asociación la que oferta las actividades sino que se emplean los recursos de la comunidad con la finalidad de que la persona se integre en su entorno a través del ocio y el tiempo libre.",
   img: voluntariado1,
+  alt: "Actividades de ocio y voluntariado en Afymos",
 };
 
 export const voluntariadoTwo = {
@@ -29,6 +30,7 @@ export const voluntariadoTwo = {
   headline: "Viajes y excursiones",
   description: "",
   img: voluntariado6,
+  alt: "Viajes y excursiones organizadas por Afymos",
 };
 
 export const voluntariadoThree = {
@@ -42,6 +44,7 @@ export const voluntariadoThree = {
     "Se pretende que el ocio sea lo más inclusivo posible, mediante el acompañamiento del Coordinador o personas voluntarias.",
   description: "",
   img: voluntariado5,
+  alt: "Mediación de ocio inclusivo con acompañamiento de voluntarios",
 };
 
 export const voluntariadoFour = {
@@ -56,6 +59,7 @@ export const voluntariadoFour = {
   description:
     "Es un proyecto de inclusión creado por Afymos y cofinanciado por la Consejería de Bienestar Social de CL, el Ayto. de Socuéllamos y nuestra entidad en el que jóvenes con discapacidad y sin discapacidad realizan actividades de ocio y deporte durante las vacaciones de verano.",
   img: voluntariado2,
+  alt: "Jóvenes participando en actividades de ocio compartido",
 };
 
 export const voluntariadoFive = {
@@ -70,6 +74,7 @@ export const voluntariadoFive = {
   description:
     "Se organizan actividades tan variadas como actividades deportivas (senderismo…), culturales (visitas a museos, cine, teatro…) y actividades recreativas (bolera, salidas nocturnas…).",
   img: voluntariado3,
+  alt: "Actividades deportivas, culturales y recreativas programadas",
 };
 
 export const voluntariadoSix = {
@@ -84,4 +89,5 @@ export const voluntariadoSix = {
   description:
     "Urban Camp es un campamento urbano para 50 jóvenes (con y sin discapacidad) de la localidad de Socuéllamos de edades comprendidas entre los 12 y 16 años que nació para dar respuesta a las necesidades de ocio de los jóvenes durante el periodo vacacional así como para  ofrecer a las familias un recurso para la conciliación de la vida familiar y laboral durante esta época del año.",
   img: voluntariado4,
+  alt: "Campamento urbano Urban Camp para jóvenes con y sin discapacidad",
 };

@@ -2,6 +2,7 @@ import '../components/Footer/styles/Footer.css';
 
 import React from 'react';
 import styled from 'styled-components';
+import { a11yColors } from '../styles/a11yColors';
 
 const TitleSection = ({ title, size, inverse, marginBottom }) => {
   return (
@@ -23,7 +24,11 @@ const TitleSectionContainer = styled.div`
   display: flex;
   width: 100%;
   height: clamp(5rem, 10vh, 7rem);
-  background: ${({ inverse }) => (inverse ? '#071c2f' : '#c6b1c9')};
+  background: ${({ inverse }) =>
+    inverse
+      ? a11yColors.primary.dark
+      : a11yColors.purple.bgWithLightText
+  };
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -33,7 +38,11 @@ const TitleSectionContainer = styled.div`
   h2 {
     width: 100%;
     position: relative;
-    color: ${({ inverse }) => (inverse ? '#c6b1c9' : '#071c2f')};
+    color: ${({ inverse }) =>
+      inverse
+        ? a11yColors.purple.lightOnDark
+        : a11yColors.background.white
+    };
     font-size: calc(clamp(
       1.2rem,
       4vw,

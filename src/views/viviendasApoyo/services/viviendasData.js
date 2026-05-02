@@ -14,6 +14,7 @@ export const viviendasDataOne = {
   description:
     "En nuestras viviendas reside un pequeño grupo de personas con discapacidad intelectual, que aun gozando de autonomía para el autocuidado,necesitan la prestación de apoyos a nivel personalizado para realizar el resto de actividades de la vida diaria y llevar una vida integrada en la comunidad.",
   img: apoyoVivienda,
+  alt: "Vivienda de apoyo para personas con discapacidad intelectual en Afymos",
 };
 
 export const viviendasDataTwo = {
@@ -28,6 +29,7 @@ export const viviendasDataTwo = {
   description:
     "Fomentar la participación activa y la toma de decisiones en lo relativo a las tareas domésticas como al resto de actividades. Adquirir estabilidad y seguridad, en un entorno distinto al hogar familiar, entendiéndose éstas de forma global y en todos los aspectos que afectan al ser humano (necesidades básicas, salud, ocupación laboral,...). ",
   img: apoyoVivienda2,
+  alt: "Objetivos de las viviendas de apoyo: participación activa y toma de decisiones",
 };
 
 export const viviendasDataThree = {
@@ -42,4 +44,5 @@ export const viviendasDataThree = {
   description:
     "Los principios metodológicos son: integración, individualización y optimización. Se ofrece a las personas con especificidad la oportunidad de vivir de la manera más autónoma posible, fomentando la participación activa de la persona objeto de nuestro apoyo en la comunidad de Socuéllamos, desde la igualdad y la plena inclusión social..",
   img: apoyoVivienda3,
+  alt: "Metodología de las viviendas de apoyo basada en modelo inclusivo-social",
 };

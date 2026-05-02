@@ -9,6 +9,8 @@ import styled from 'styled-components';
 const SeccionContainer = styled.section`
   width: 100%;
   padding-top: 5%;
+  background: #ffffff;
+  padding-bottom: 3rem;
 `;
 
 const Titulo = styled.h2`
@@ -19,6 +21,7 @@ const Titulo = styled.h2`
   display: inline-block;
   font-size: calc(24px * var(--fs, 1));
   text-decoration: none;
+  color: #071c2f;
 
   @media (max-width: 900px) {
     margin-top: 50px;
@@ -175,7 +178,7 @@ const CardsInterestInformation = () => {
               <Card key={index} color={bgColor}>
                 <Image src={card.image} alt={card.alt} />
                 <LinkButton
-                  aria-label="ir a la ruta seleccionada"
+                  aria-label={`Ver ${card.title} (Documento PDF, se abre en nueva pestaña)`}
                   href={card.url}
                   target="_blank"
                   download={card.download}

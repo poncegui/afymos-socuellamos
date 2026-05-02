@@ -14,6 +14,7 @@ export const centroDiaDataOne = {
   description:
     "Favorecemos la permanencia en el entorno familiar y social de las personas que por motivo de su discapacidad intelectual tienen necesidades de apoyos de diferente índole, temporales o permanentes, de diferente intensidad y frecuencia.",
   img: centroDia,
+  alt: "Actividades en el Centro de Día Afymos con personas con discapacidad intelectual",
 };
 
 export const centroDiaDataTwo = {
@@ -28,6 +29,7 @@ export const centroDiaDataTwo = {
   description:
     "Fomentamos la participación en la vida cultural y social de la comunidad de las personas con discapacidad intelectual, potenciando su competencia personal y social,  contribuyendo a mejorar su calidad de vida. ",
   img: centroDia2,
+  alt: "Programas de habilitación y desarrollo de autonomía personal en el Centro de Día",
 };
 
 export const centroDiaDataThree = {
@@ -42,4 +44,5 @@ export const centroDiaDataThree = {
   description:
     "Potencionamos la utilización de los recursos formativos, sanitarios, sociales, de ocioy tiempo libre ordinarios de la comunidad, evitando crear recursos segregados con cualquiera de estas finalidades.",
   img: centroDia3,
+  alt: "Atención personalizada y plan de apoyos individualizado en el Centro de Día Afymos",
 };

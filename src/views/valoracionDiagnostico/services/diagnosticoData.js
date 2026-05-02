@@ -13,8 +13,8 @@ export const diagnosticoDataOne = {
     "Este servicio valora con tests estandarizados y pruebas psicométricas.",
   description:
     "Éstas pruebas objetivas se realizan en distintos ámbitos a nivel integral como la neuropsicología, psicología, psicopedagogía, logopedia, terapia ocupacional y fisioterapia",
-
   img: diagnostico,
+  alt: "Servicio de valoración y diagnóstico en Afymos",
 };
 
 export const diagnosticoDataTwo = {
@@ -28,6 +28,7 @@ export const diagnosticoDataTwo = {
   description:
     "Se realizan valoraciones globales de un trastorno concreto (TEA, TDAH) así como valoraciones de áreas específicas con dificultades, adaptándolo a las necesidades concretas de cada usuario.",
   img: diagnostico3,
+  alt: "Proceso de trabajo en valoración y diagnóstico",
 };
 
 export const diagnosticoDataThree = {
@@ -41,4 +42,5 @@ export const diagnosticoDataThree = {
   description:
     "Para ello, nuestros profesionales realizan una o varias entrevistas con la persona a evaluar y sus familiares. Posteriormente se pasan los test y pruebas estandarizadas correspondientes y finalmente se elabora un informe con la información obtenida y se le transmite de manera verbal y escrita a la persona y la familia.",
   img: diagnostico2,
+  alt: "Profesional realizando evaluación diagnóstica con usuario y familia",
 };

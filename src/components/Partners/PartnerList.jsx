@@ -19,7 +19,7 @@ const PartnerList = ({ size, inverse, data, title }) => {
                   target={partner.target}
                   rel="noopener noreferrer"
                   loading="lazy"
-                  title={partner.name || partner.titleImg || partner.alt}
+                  title={partner.titleImg || partner.name}
                 />
               </PartnerWrapper>
             ))}

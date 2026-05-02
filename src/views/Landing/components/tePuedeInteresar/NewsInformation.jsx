@@ -1,9 +1,9 @@
 // Modal.js
-import React, { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
 import pdf from "./urban-camp-2025.pdf";
 import styled from "styled-components";
 import urbanCamp from "./CARTEL URBAN CAMP 2025.png";
+import { AccessiblePDFLink } from "../../../../components/A11y";
 
 const Overlay = styled.div`
   position: fixed;
@@ -56,22 +56,6 @@ const Image = styled.img`
   margin: 20px auto;
 `;
 
-const DownloadButton = styled.a`
-  display: block;
-  margin-top: 2rem;
-  background: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: calc(2rem * var(--fs, 1));
-  cursor: pointer;
-
-  &:hover {
-    background: #0056b3;
-  }
-`;
-
 const Modal = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -88,10 +72,10 @@ const Modal = () => {
       <ModalWrapper>
         <CloseButton onClick={handleClose}>&times;</CloseButton>
         <Title>Urban Camp 2025</Title>
-        <Image src={urbanCamp} alt="Descripción de la imagen" />
-        <DownloadButton href={pdf} download="documento.pdf">
-          Descargar información campamento
-        </DownloadButton>
+        <Image src={urbanCamp} alt="Cartel informativo del campamento urbano 2025" />
+        <AccessiblePDFLink href={pdf} download fileSize="1.2 MB">
+          Información del Campamento Urbano 2025
+        </AccessiblePDFLink>
       </ModalWrapper>
     </Overlay>
   ) : null;

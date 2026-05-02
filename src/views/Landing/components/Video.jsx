@@ -261,14 +261,14 @@ const Subtitle = styled.p`
   font-weight: 600;
   font-style: italic;
   line-height: 1.6;
-  color: ${({ $inverse }) => ($inverse ? '#444' : 'rgba(198,177,201,0.9)')};
+  color: ${({ $inverse }) => ($inverse ? '#4a4a4a' : 'rgba(232, 212, 235, 0.95)')};
   margin: 0;
 `;
 
 const Body = styled.p`
   font-size: calc(0.94rem * var(--fs, 1));
   line-height: 1.8;
-  color: ${({ $inverse }) => ($inverse ? '#555' : 'rgba(255,255,255,0.95)')};
+  color: ${({ $inverse }) => ($inverse ? '#4a4a4a' : 'rgba(255,255,255,0.95)')};
   margin: 0;
 `;
 
@@ -281,12 +281,12 @@ const Cta = styled(Link)`
   font-size: calc(0.9rem * var(--fs, 1));
   font-weight: 700;
   text-decoration: none;
-  background: ${({ $inverse }) => ($inverse ? '#224464' : '#c6b1c9')};
+  background: ${({ $inverse }) => ($inverse ? '#0b4a6f' : '#d4b8d9')};
   color: ${({ $inverse }) => ($inverse ? '#fff' : '#071c2f')};
   transition: background 0.2s ease, transform 0.15s ease;
 
   &:hover {
-    background: ${({ $inverse }) => ($inverse ? '#071c2f' : '#d9c8dc')};
+    background: ${({ $inverse }) => ($inverse ? '#071c2f' : '#c6b1c9')};
     transform: translateY(-2px);
   }
 

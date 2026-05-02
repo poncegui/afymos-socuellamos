@@ -13,6 +13,7 @@ export const centroDiversidadDataOne = {
   description:
     "Dispone de unas instalaciones totalmente accesibles para personas con discapacidad intelectual y movilidad reducida, de hecho en el año obtuvo el certificado de Edificio Plenamente Accesible expedido por la Junta de Comunidades de Castilla La Mancha. Aun así seguiremos adaptándolo para favorecer la orientación y la comunicación para personas con especiales dificultades en estos aspectos.",
   img: fachada,
+  alt: "Fachada del Centro de Atención a la Diversidad Funcional de Afymos",
 };
 
 export const centroDiversidadDataTwo = {
@@ -26,6 +27,7 @@ export const centroDiversidadDataTwo = {
     "Contamos con numerosas salas adaptadas para llevar a cabo todos los servicios terapeuticos y de formación que ofrecemos",
   description: " ",
   img: multisensorial,
+  alt: "Sala multisensorial adaptada para terapias en el centro Afymos",
 };
 
 export const centroDiversidadDataThree = {
@@ -38,4 +40,5 @@ export const centroDiversidadDataThree = {
   headline: "Centro de Atención a la Diversidad Funcional",
   description: "Obtén información de todos los Servicios que ofertamos.",
   img: gimnasio,
+  alt: "Gimnasio adaptado del Centro de Atención a la Diversidad Funcional",
 };

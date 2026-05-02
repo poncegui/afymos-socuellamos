@@ -7,8 +7,8 @@ const DemoVideo = () => {
     <Demo id="demo">
       <DemoContainer>
         <DemoLeft>
-          <p>Proyecto NUEVO CREA — Formación y Empleo</p>
-          <p>Impulsando la inclusión laboral en AFYMOS</p>
+          <MainTitle>Proyecto NUEVO CREA — Formación y Empleo</MainTitle>
+          <Subtitle>Impulsando la inclusión laboral en AFYMOS</Subtitle>
         </DemoLeft>
       </DemoContainer>
       <VideoCreaInfo />
@@ -43,19 +43,21 @@ const DemoLeft = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+`;
 
-  p:nth-child(1) {
-    font-size: calc(1.75rem * var(--fs, 1));
-    font-style: italic;
-    margin: 0;
-    color: #0b3961;
-    line-height: 1.25;
-  }
-  p:nth-child(2) {
-    font-size: calc(1.25rem * var(--fs, 1));
-    font-weight: 700;
-    margin: 0;
-    color: #0f3a57;
-    line-height: 1.35;
-  }
+const MainTitle = styled.h1`
+  font-size: calc(1.75rem * var(--fs, 1));
+  font-style: italic;
+  margin: 0;
+  color: #0b3961;
+  line-height: 1.25;
+  font-weight: 700;
+`;
+
+const Subtitle = styled.h2`
+  font-size: calc(1.25rem * var(--fs, 1));
+  font-weight: 700;
+  margin: 0;
+  color: #0f3a57;
+  line-height: 1.35;
 `;

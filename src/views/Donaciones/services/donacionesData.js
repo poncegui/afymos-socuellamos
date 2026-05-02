@@ -14,6 +14,6 @@ export const donacionDataOne = {
   img: donacion,
   buttonLabel: "ir a Ruralvia",
   href: "https://www.grupocajarural.es/es",
-  alt: "ir a ruralvia",
+  alt: "Información sobre donaciones y número de cuenta bancaria",
   target: "_blank",
 };

@@ -9,9 +9,9 @@ const DonationInformation = () => {
     <Wrapper aria-labelledby="donation-title">
       <Inner>
         <ImageGroup aria-hidden="true">
-          <img src={percentage} alt="" />
-          <img src={graph} alt="" />
-          <img src={money} alt="" />
+          <img src={percentage} alt="Icono de porcentaje 80%" />
+          <img src={graph} alt="Icono de gráfico estadístico" />
+          <img src={money} alt="Icono de dinero" />
         </ImageGroup>
 
         <TextCol>
@@ -65,7 +65,6 @@ const ImageGroup = styled.div`
     height: 90px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1) opacity(0.92);
   }
 
   @media (max-width: 600px) {

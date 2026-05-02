@@ -12,6 +12,7 @@ export const capacitacionDataOne = {
   description:
     "Facilitar el aprendizaje de nuevas capacidades en todos los ámbitos de la vida de la persona (autonomía personal, relaciones interpersonales, utilización de los recursos comunitarios y capacidad de toma de decisiones).",
   img: capacitacion,
+  alt: "Persona con discapacidad trabajando en programa de integración sociolaboral",
 };
 
 export const capacitacionDataTwo = {
@@ -25,4 +26,5 @@ export const capacitacionDataTwo = {
   description:
     "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodología detrabajo, por la definición de sus objetivos y por la forma de evaluación de los mismos.",
   img: capacitacion2,
+  alt: "Participante del programa de habilitación laboral desarrollando habilidades básicas",
 };

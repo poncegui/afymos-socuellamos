@@ -16,6 +16,7 @@ export const creaDataOne = {
   description:
     "¿QUÉ ES EL NUEVO CREA? Es un proyecto de FORMACIÓN DUAL que combina formación profesional para el empleo con trabajo efectivo en la empresa, formalizado con un contrato de formación en alternancia con el empleo. DIRIGIDO A PERSONAS CON DISCAPACIDAD.",
   img: nuevoCrea26,
+  alt: "Cartel informativo del Proyecto NUEVO CREA de formación y empleo para personas con discapacidad",
 };
 
 export const creaDataTwo = {
@@ -30,6 +31,7 @@ export const creaDataTwo = {
   description:
     "Las empresas adheridas en esta convocatoria han sido: Cabezuelo Foods, EFA Molino de Viento, Centro Concertado Virgen de Loreto, Asociación de Alzheimer de Tomelloso, Asociación Alzheimer Villarrobledo, Victor Mateo, Félix Food Logistics y Afymos Asociación. Su compromiso de Responsabilidad Social Empresarial ha sido clave para el desarrollo del NUEVO CREA.",
   img: creaTwo,
+  alt: "Logos de empresas adheridas al Proyecto NUEVO CREA",
 };
 
 export const creaDataThree = {
@@ -53,6 +55,7 @@ INSCRIPCIÓN: https://e-empleo.jccm.es/formacion/jsp/solicitudes/busquedaGrupos.
 
 APOYO LABORAL: La persona contratada contará con el apoyo de un preparador laboral que guiará las tareas y las adaptaciones necesarias.`,
   img: creaOne,
+  alt: "Información detallada del Proyecto NUEVO CREA con requisitos y formación dual",
   buttonLabel: "Inscripción",
   href: "https://e-empleo.jccm.es/formacion/jsp/solicitudes/busquedaGrupos.jsp",
   downloadLabel: "Descargar díptico informativo",

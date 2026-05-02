@@ -29,7 +29,7 @@ const DescargaTransparencia = () => {
               <ExternalLink
                 key={link.id}
                 href={link.url}
-                ariaLabel={`Abrir ${link.name}`}
+                ariaLabel={`Abrir ${link.name} (Documento PDF, se abre en nueva pestaña)`}
                 title={link.name}
               >
                 <Icons>
@@ -163,7 +163,7 @@ export const Icons = styled.div`
     border: solid 1px #071c2f;
 
     h3 {
-      font-size: calc(0.5rem * var(--fs, 1));
+      font-size: calc(0.875rem * var(--fs, 1)); /* 14px mínimo WCAG */
       padding: 0 0.3rem;
       color: #071c2f;
     }
