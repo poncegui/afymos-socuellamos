@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import AccessibilityControls from '../Accessibility/AccessibilityControls';
+import SectionLabel from '../SectionLabel';
 
 const STORAGE_KEY = 'afymos_fontScale';
 const DEFAULT_VIDEO_ID = '2Jlyz_ExeyQ';
@@ -48,7 +49,7 @@ const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
       <Inner>
         {/* Columna texto */}
         <TextCol>
-          <Label aria-hidden="true">Noticia destacada</Label>
+          <SectionLabel>Noticia destacada</SectionLabel>
           <Heading>{heading || 'Vídeo destacado'}</Heading>
           <Body>{children}</Body>
           <AccessibilityControls text={children} />
@@ -111,17 +112,6 @@ const VideoCol = styled.div`
   }
 `;
 
-const Label = styled.span`
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #c6b1c9;
-  border-left: 3px solid #c6b1c9;
-  padding-left: 0.6rem;
-`;
-
 const Heading = styled.h3`
   font-size: calc(clamp(1.3rem, 2.8vw, 1.8rem) * var(--fs, 1));
   line-height: 1.2;
@@ -133,7 +123,7 @@ const Heading = styled.h3`
 const Body = styled.div`
   font-size: calc(0.975rem * var(--fs, 1));
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.95);
   white-space: pre-wrap;
   display: -webkit-box;
   -webkit-line-clamp: 8;

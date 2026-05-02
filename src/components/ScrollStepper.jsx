@@ -130,20 +130,20 @@ const ProgressCircle = styled.button`
 
 const ProgressText = styled.span`
   position: absolute;
-  font-size: 14px;
+  font-size: calc(14px * var(--fs, 1));
   font-weight: 600;
   color: #224464;
   text-align: center;
   line-height: 1;
 
   @media (max-width: 640px) {
-    font-size: 12px;
+    font-size: calc(12px * var(--fs, 1));
   }
 `;
 
 const ArrowIcon = styled.span`
   position: absolute;
-  font-size: 20px;
+  font-size: calc(20px * var(--fs, 1));
   color: #224464;
   bottom: 8px;
   animation: bounce 1.5s infinite;
@@ -159,7 +159,7 @@ const ArrowIcon = styled.span`
   }
 
   @media (max-width: 640px) {
-    font-size: 16px;
+    font-size: calc(16px * var(--fs, 1));
     bottom: 6px;
   }
 `;

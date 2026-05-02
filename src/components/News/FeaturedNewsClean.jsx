@@ -4,6 +4,7 @@ import LazyResponsiveImage from "../Image/LazyResponsiveImage";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
+import SectionLabel from "../SectionLabel";
 
 const STORAGE_KEY = "afymos_fontScale";
 
@@ -112,20 +113,18 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
 
           <AccessibilityBar>
             <AccessibilityGroup>
-              <label htmlFor="font-control">Tamaño de fuente:</label>
+              <span>Tamaño de fuente:</span>
               <ButtonGroup>
                 <A11yButton
                   onClick={decreaseFontSize}
                   disabled={scale <= 0.75}
                   aria-label="Reducir tamaño de texto"
-                  title="Reducir tamaño"
                 >
                   <FontAwesomeIcon icon={faMinus} /> A
                 </A11yButton>
                 <A11yButton
                   onClick={resetFontSize}
                   aria-label="Restablecer tamaño de texto"
-                  title="Tamaño normal"
                 >
                   Escala actual: {(scale * 100).toFixed(0)}%
                 </A11yButton>
@@ -133,7 +132,6 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
                   onClick={increaseFontSize}
                   disabled={scale >= 2}
                   aria-label="Aumentar tamaño de texto"
-                  title="Aumentar tamaño"
                 >
                   <FontAwesomeIcon icon={faPlus} /> A
                 </A11yButton>
@@ -144,7 +142,6 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
               onClick={handleSpeak}
               active={speakActive}
               aria-label={speakActive ? "Detener lectura" : "Leer en voz alta"}
-              title={speakActive ? "Detener lectura" : "Leer en voz alta"}
             >
               <FontAwesomeIcon icon={faVolumeUp} />
               {speakActive ? " Pausar" : " Leer"}
@@ -252,19 +249,19 @@ const ImageCaption = styled.div`
   background: linear-gradient(to top, rgba(34, 68, 100, 0.95), rgba(34, 68, 100, 0.75));
   color: #fff;
   padding: 1.5rem 2rem;
-  font-size: 1.5rem;
+  font-size: calc(1.5rem * var(--fs, 1));
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.02em;
   backdrop-filter: blur(4px);
 
   @media (max-width: 860px) {
-    font-size: 1.2rem;
+    font-size: calc(1.2rem * var(--fs, 1));
     padding: 1rem 1.5rem;
   }
 
   @media (max-width: 480px) {
-    font-size: 1rem;
+    font-size: calc(1rem * var(--fs, 1));
     padding: 0.75rem 1rem;
   }
 `;
@@ -288,7 +285,7 @@ const TopRow = styled.div`
 `;
 
 const Label = styled.span`
-  font-size: 0.75rem;
+  font-size: calc(0.75rem * var(--fs, 1));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -308,7 +305,7 @@ const Tag = styled.span`
   color: #224464;
   padding: 0.2rem 0.65rem;
   border-radius: 999px;
-  font-size: 0.72rem;
+  font-size: calc(0.72rem * var(--fs, 1));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -347,14 +344,14 @@ const Footer = styled.div`
 `;
 
 const PublishDate = styled.time`
-  font-size: 0.82rem;
+  font-size: calc(0.82rem * var(--fs, 1));
   color: #6b6f76;
 `;
 
 const ReadMore = styled(Link)`
   display: inline-flex;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--fs, 1));
   font-weight: 700;
   color: #fff;
   background: #224464;
@@ -393,7 +390,7 @@ const AccessibilityBar = styled.div`
   label {
     font-weight: 600;
     color: #071c2f;
-    font-size: 0.85rem;
+    font-size: calc(0.85rem * var(--fs, 1));
   }
 
   @media (max-width: 640px) {
@@ -427,7 +424,7 @@ const A11yButton = styled.button`
     ${(props) =>
       props.active ? "#224464" : props.disabled ? "#ccc" : "#c6b1c9"};
   border-radius: 8px;
-  font-size: 0.8rem;
+  font-size: calc(0.8rem * var(--fs, 1));
   font-weight: 600;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   transition: all 0.2s;
@@ -445,6 +442,6 @@ const A11yButton = styled.button`
   }
 
   svg {
-    font-size: 0.75rem;
+    font-size: calc(0.75rem * var(--fs, 1));
   }
 `;

@@ -53,7 +53,7 @@ const HeaderTitle = styled.div`
   }
 
   h1 {
-    font-size: clamp(3rem, 12vw, 8rem);
+    font-size: calc(clamp(3rem, 12vw, 8rem) * var(--fs, 1));
     text-transform: uppercase;
     color: #071c2f;
     font-weight: 700;
@@ -65,7 +65,7 @@ const HeaderTitle = styled.div`
     gap: clamp(0.75rem, 2vw, 1rem);
 
     h1 {
-      font-size: clamp(2.5rem, 10vw, 6rem);
+      font-size: calc(clamp(2.5rem, 10vw, 6rem) * var(--fs, 1));
     }
 
     img {
@@ -78,7 +78,7 @@ const HeaderTitle = styled.div`
     gap: clamp(0.5rem, 1.5vw, 0.75rem);
 
     h1 {
-      font-size: clamp(2rem, 8vw, 5rem);
+      font-size: calc(clamp(2rem, 8vw, 5rem) * var(--fs, 1));
     }
 
     img {
@@ -97,7 +97,7 @@ const HeaderSubtitle = styled.div`
   max-width: 800px;
 
   h2 {
-    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-size: calc(clamp(1.2rem, 4vw, 2rem) * var(--fs, 1));
     color: #071c2f;
     font-weight: 600;
     margin: 0;
@@ -106,7 +106,7 @@ const HeaderSubtitle = styled.div`
   }
 
   i {
-    font-size: clamp(0.9rem, 3vw, 1.5rem);
+    font-size: calc(clamp(0.9rem, 3vw, 1.5rem) * var(--fs, 1));
     color: #071c2f;
     font-weight: 400;
     opacity: 0.8;
@@ -116,11 +116,11 @@ const HeaderSubtitle = styled.div`
     gap: clamp(0.4rem, 1vw, 0.75rem);
 
     h2 {
-      font-size: clamp(1.1rem, 3.5vw, 1.8rem);
+      font-size: calc(clamp(1.1rem, 3.5vw, 1.8rem) * var(--fs, 1));
     }
 
     i {
-      font-size: clamp(0.85rem, 2.5vw, 1.3rem);
+      font-size: calc(clamp(0.85rem, 2.5vw, 1.3rem) * var(--fs, 1));
     }
   }
 
@@ -128,11 +128,11 @@ const HeaderSubtitle = styled.div`
     gap: clamp(0.3rem, 0.8vw, 0.5rem);
 
     h2 {
-      font-size: clamp(1rem, 3vw, 1.4rem);
+      font-size: calc(clamp(1rem, 3vw, 1.4rem) * var(--fs, 1));
     }
 
     i {
-      font-size: clamp(0.8rem, 2vw, 0.8rem);
+      font-size: calc(clamp(0.8rem, 2vw, 0.8rem) * var(--fs, 1));
     }
   }
 `;

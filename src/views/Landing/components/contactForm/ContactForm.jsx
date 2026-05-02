@@ -45,19 +45,24 @@ const ContactForm = () => {
             method="POST"
           >
             <div className="inputBox">
-              <input type="text" placeholder="nombre" name="name" required />
-              <input type="number" placeholder="teléfono" name="telefono" />
+              <label htmlFor="contact-name" className="sr-only">Nombre</label>
+              <input type="text" placeholder="nombre" name="name" id="contact-name" required />
+              <label htmlFor="contact-phone" className="sr-only">Teléfono</label>
+              <input type="number" placeholder="teléfono" name="telefono" id="contact-phone" />
             </div>
             <div className="inputBox">
-              <input type="email" placeholder="email" name="email" required />
-              <input type="text" placeholder="asunto" name="asunto" required />
+              <label htmlFor="contact-email" className="sr-only">Email</label>
+              <input type="email" placeholder="email" name="email" id="contact-email" required />
+              <label htmlFor="contact-subject" className="sr-only">Asunto</label>
+              <input type="text" placeholder="asunto" name="asunto" id="contact-subject" required />
             </div>
+            <label htmlFor="contact-message" className="sr-only">Mensaje</label>
             <textarea
               type="text"
               name="mensaje"
               placeholder="mensaje"
               required
-              id="message"
+              id="contact-message"
               cols="30"
               rows="10"
               className="inputs"
@@ -102,22 +107,22 @@ const Icons = styled.div`
     height: 3rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--fs, 1));
     color: #071c2f;
     padding: 1rem 0;
   }
   p {
-    font-size: 1.2rem;
+    font-size: calc(1.2rem * var(--fs, 1));
     color: #071c2f;
     padding: 0.2rem 0;
   }
   p a {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--fs, 1));
     color: #071c2f;
     padding: 0.2rem 0;
   }
   p:hover {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--fs, 1));
     color: #071c2f;
     padding: 0.2rem 0;
   }

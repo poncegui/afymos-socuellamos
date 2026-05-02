@@ -149,30 +149,30 @@ const Text = styled.div`
 `;
 
 const TopLine = styled.div`
-  font-size: 2rem;
+  font-size: calc(2rem * var(--fs, 1));
   color: #5b6b76;
   font-weight: 800;
   margin-bottom: 1rem;
   letter-spacing: 0.6px;
 
   @media (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: calc(1.4rem * var(--fs, 1));
   }
 `;
 
 const Heading = styled.h2`
-  font-size: 2.6rem;
+  font-size: calc(2.6rem * var(--fs, 1));
   color: #071c2f;
   margin: 0 0 1.25rem 0;
   line-height: 1.12;
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: calc(2rem * var(--fs, 1));
   }
 `;
 
 const Description = styled.p`
-  font-size: 1.28rem;
+  font-size: calc(1.28rem * var(--fs, 1));
   line-height: 1.95;
   color: #374151;
   white-space: pre-wrap;
@@ -181,7 +181,7 @@ const Description = styled.p`
   font-weight: 600;
 
   @media (max-width: 768px) {
-    font-size: 1.05rem;
+    font-size: calc(1.05rem * var(--fs, 1));
     line-height: 1.6;
   }
 `;
@@ -200,7 +200,7 @@ const Primary = styled.a`
   background: #0b5d79;
   color: #fff;
   padding: 0.9rem 1.2rem;
-  font-size: 1.05rem;
+  font-size: calc(1.05rem * var(--fs, 1));
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
@@ -219,7 +219,7 @@ const Secondary = styled.a`
   background: transparent;
   color: #0b5d79;
   padding: 0.7rem 1rem;
-  font-size: 1rem;
+  font-size: calc(1rem * var(--fs, 1));
   border-radius: 10px;
   border: 2px solid #0b5d79;
   text-decoration: none;

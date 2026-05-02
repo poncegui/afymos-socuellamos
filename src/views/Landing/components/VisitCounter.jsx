@@ -13,13 +13,13 @@ const StyledCounter = styled.div`
   border-radius: 12px;
   color: #071c2f;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: calc(1.2rem * var(--fs, 1));
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: fit-content;
 
   @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: calc(1rem * var(--fs, 1));
     padding: 0.6rem 1rem;
   }
 `;

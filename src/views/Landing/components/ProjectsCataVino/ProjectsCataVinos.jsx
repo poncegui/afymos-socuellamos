@@ -116,18 +116,18 @@ const SmallTop = styled.span`
   color: #6b4b6e;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: calc(0.85rem * var(--fs, 1));
   letter-spacing: 0.06em;
 `;
 
 const HeroTitle = styled.h2`
-  font-size: 2rem;
+  font-size: calc(2rem * var(--fs, 1));
   margin: 0;
   color: #071c2f;
 `;
 
 const HeroLead = styled.p`
-  font-size: 1.15rem;
+  font-size: calc(1.15rem * var(--fs, 1));
   line-height: 1.6;
   color: #222;
   margin: 0;

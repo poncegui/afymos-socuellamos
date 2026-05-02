@@ -81,20 +81,18 @@ const NewsArticle = ({ item }) => {
       <Container>
         <AccessibilityBar>
           <AccessibilityGroup>
-            <label htmlFor="font-control">Tamaño de fuente:</label>
+            <span>Tamaño de fuente:</span>
             <ButtonGroup>
               <A11yButton
                 onClick={decreaseFontSize}
                 disabled={fontSize <= 0.75}
                 aria-label="Reducir tamaño de texto"
-                title="Reducir tamaño"
               >
                 <FontAwesomeIcon icon={faMinus} /> A
               </A11yButton>
               <A11yButton
                 onClick={resetFontSize}
                 aria-label="Restablecer tamaño de texto"
-                title="Tamaño normal"
               >
                 Escala actual: {(fontSize * 100).toFixed(0)}%
               </A11yButton>
@@ -102,7 +100,6 @@ const NewsArticle = ({ item }) => {
                 onClick={increaseFontSize}
                 disabled={fontSize >= 2}
                 aria-label="Aumentar tamaño de texto"
-                title="Aumentar tamaño"
               >
                 <FontAwesomeIcon icon={faPlus} /> A
               </A11yButton>
@@ -113,7 +110,6 @@ const NewsArticle = ({ item }) => {
             onClick={handleSpeak}
             active={speakActive}
             aria-label={speakActive ? 'Detener lectura' : 'Leer en voz alta'}
-            title={speakActive ? 'Detener lectura' : 'Leer en voz alta'}
           >
             <FontAwesomeIcon icon={faVolumeUp} />
             {speakActive ? ' Pausar' : ' Leer'}
@@ -293,7 +289,7 @@ const AccessibilityBar = styled.div`
   label {
     font-weight: 600;
     color: #071c2f;
-    font-size: 0.95rem;
+    font-size: calc(0.95rem * var(--fs, 1));
   }
 
   @media (max-width: 640px) {
@@ -498,7 +494,7 @@ const ImageOverlay = styled.div`
 const ViewText = styled.span`
   color: white;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: calc(1rem * var(--fs, 1));
   text-align: center;
 `;
 
@@ -547,7 +543,7 @@ const ModalClose = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: calc(1.5rem * var(--fs, 1));
   color: #071c2f;
   transition: all 0.2s ease;
   z-index: 10;
@@ -587,7 +583,7 @@ const ModalCounter = styled.div`
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--fs, 1));
   font-weight: 600;
 `;
 
@@ -610,7 +606,7 @@ const NavButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: calc(1.2rem * var(--fs, 1));
   transition: all 0.2s ease;
   opacity: ${props => (props.disabled ? 0.4 : 1)};
 

@@ -40,10 +40,10 @@ const ScrollButton = styled.button`
   padding: 0px;
   border: none;
   opacity: 0.7;
-  font-size: 4rem;
+  font-size: calc(4rem * var(--fs, 1));
   margin-right: 1.5rem;
 
   @media (max-width: 440px) {
-    font-size: 3rem;
+    font-size: calc(3rem * var(--fs, 1));
   }
 `;

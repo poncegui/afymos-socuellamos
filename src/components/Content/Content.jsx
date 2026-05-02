@@ -151,7 +151,7 @@ const TextCol = styled.div`
 
 const Label = styled.span`
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: calc(0.75rem * var(--fs, 1));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -171,7 +171,7 @@ const Headline = styled.h2`
 const Body = styled.p`
   font-size: calc(0.975rem * var(--fs, 1));
   line-height: 1.8;
-  color: ${({ $inverse }) => ($inverse ? '#444' : 'rgba(255,255,255,0.75)')};
+  color: ${({ $inverse }) => ($inverse ? '#444' : 'rgba(255,255,255,0.95)')};
   margin: 0;
 `;
 
@@ -181,7 +181,7 @@ const ctaBase = `
   align-self: flex-start;
   padding: 0.65rem 1.5rem;
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--fs, 1));
   font-weight: 700;
   text-decoration: none;
   transition: background 0.2s ease, transform 0.15s ease;

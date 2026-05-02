@@ -38,14 +38,14 @@ const CloseButton = styled.button`
   right: 10px;
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: calc(30px * var(--fs, 1));
   cursor: pointer;
   margin-bottom: 1rem;
 `;
 
 const Title = styled.h2`
   margin-top: 0;
-  font-size: 3rem;
+  font-size: calc(3rem * var(--fs, 1));
 `;
 
 const Image = styled.img`
@@ -64,7 +64,7 @@ const DownloadButton = styled.a`
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: calc(2rem * var(--fs, 1));
   cursor: pointer;
 
   &:hover {

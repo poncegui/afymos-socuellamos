@@ -62,7 +62,7 @@ const Section = styled.section`
 const Titulo = styled.h2`
   margin: 0 auto 2rem;
   position: relative;
-  font-size: 26px;
+  font-size: calc(26px * var(--fs, 1));
   text-align: center;
   color: #071c2f;
 `;
@@ -153,7 +153,7 @@ const IconWrapper = styled.div`
 `;
 
 const CardText = styled.h3`
-  font-size: 16px;
+  font-size: calc(16px * var(--fs, 1));
   font-weight: 500;
   text-align: center;
   color: #071c2f;

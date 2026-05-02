@@ -105,21 +105,21 @@ const ChartItem = styled.div`
 
 const ChartItemTitle = styled.h3`
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: calc(1rem * var(--fs, 1));
   text-align: center;
 
   @media (max-width: 440px) {
-    font-size: 0.8rem;
+    font-size: calc(0.8rem * var(--fs, 1));
   }
 `;
 
 const ChartItemSubTitle = styled.h4`
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--fs, 1));
   color: #555;
   text-align: center;
 
   @media (max-width: 440px) {
-    font-size: 0.75rem;
+    font-size: calc(0.75rem * var(--fs, 1));
   }
 `;

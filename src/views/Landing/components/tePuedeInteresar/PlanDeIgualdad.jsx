@@ -17,12 +17,12 @@ const Titulo = styled.h2`
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: calc(24px * var(--fs, 1));
   text-decoration: none;
 
   @media (max-width: 900px) {
     margin-top: 50px;
-    font-size: 20px;
+    font-size: calc(20px * var(--fs, 1));
     margin-bottom: 40px;
   }
 `;
@@ -102,17 +102,25 @@ const Card = styled.div`
 `;
 
 const TituloCard = styled.h3`
-  color: ${props => (props.color === '#224464' ? '#c6b1c9' : '#224464')};
-  font-size: 16px;
+  color: ${props => {
+    // Use appropriate text color based on background for WCAG AA compliance
+    const bgColor = props.$bgColor || props.color;
+    if (bgColor === '#224464') return '#fff'; // Dark blue background → white text
+    // Green and light backgrounds need dark text for proper contrast
+    return '#000'; // Black text for best contrast on green/light backgrounds
+  }};
+  font-size: calc(16px * var(--fs, 1));
   text-align: center;
   position: absolute;
   left: 50%;
   bottom: 50px;
   transform: translateX(-50%);
   width: 100%;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.3);
 
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: calc(14px * var(--fs, 1));
   }
 `;
 
@@ -129,13 +137,13 @@ const LinkButton = styled.a`
   position: absolute;
   bottom: 10px;
   left: 10px;
-  font-size: 20px;
+  font-size: calc(20px * var(--fs, 1));
   transition: color 0.3s, transform 0.3s;
   text-decoration: none;
   color: inherit;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: calc(24px * var(--fs, 1));
   }
 
   &:hover {
@@ -145,10 +153,10 @@ const LinkButton = styled.a`
 `;
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  font-size: 30px;
+  font-size: calc(30px * var(--fs, 1));
 
   @media (max-width: 768px) {
-    font-size: 26px;
+    font-size: calc(26px * var(--fs, 1));
   }
 `;
 
@@ -161,25 +169,30 @@ const CardsInterestInformation = () => {
           Conoce Nuestro Plan de Igualdad...
         </Titulo>
         <ContenedorCards>
-          {cardsIgualdadData.map((card, index) => (
-            <Card key={index} color={index === 0 ? '#81b71a' : card.color}>
-              <Image src={card.image} alt={card.alt} />
-              <LinkButton
-                aria-label="ir a la ruta seleccionada"
-                href={card.url}
-                target="_blank"
-                download={card.download}
-              >
-                <StyledFontAwesomeIcon
-                  icon={faPlus}
-                  style={{
-                    color: card.color === '#224464' ? '#c6b1c9' : '#071c2f',
-                  }}
-                />
-              </LinkButton>
-              <TituloCard color={card.color}>{card.title}</TituloCard>
-            </Card>
-          ))}
+          {cardsIgualdadData.map((card, index) => {
+            const bgColor = index === 0 ? '#81b71a' : card.color;
+            return (
+              <Card key={index} color={bgColor}>
+                <Image src={card.image} alt={card.alt} />
+                <LinkButton
+                  aria-label="ir a la ruta seleccionada"
+                  href={card.url}
+                  target="_blank"
+                  download={card.download}
+                >
+                  <StyledFontAwesomeIcon
+                    icon={faPlus}
+                    style={{
+                      color: card.color === '#224464' ? '#c6b1c9' : '#071c2f',
+                    }}
+                  />
+                </LinkButton>
+                <TituloCard $bgColor={bgColor} color={card.color}>
+                  {card.title}
+                </TituloCard>
+              </Card>
+            );
+          })}
         </ContenedorCards>
       </SeccionContainer>
       <Video

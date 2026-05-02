@@ -108,7 +108,7 @@ const CloseButton = styled.button`
   padding: 0.5rem;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: calc(1.1rem * var(--fs, 1));
 `;
 
 const NavButton = styled.button`
@@ -122,7 +122,7 @@ const NavButton = styled.button`
   padding: 0.6rem;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: calc(1.1rem * var(--fs, 1));
 `;
 
 const Counter = styled.div`

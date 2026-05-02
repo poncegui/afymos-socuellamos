@@ -16,7 +16,6 @@ const Navbar = props => {
         type="button"
         onClick={handleBack}
         aria-label="Volver a la página anterior"
-        title="Volver atrás"
       >
         <NavContainerPrincipal>
           <i className="fa-solid fa-angles-left" aria-hidden="true"></i>
@@ -31,7 +30,6 @@ const Navbar = props => {
           className="header_superior__container--logo"
           src={logo}
           alt={props.alt || 'Logo de Afymos'}
-          title="Logo de la organización Afymos"
         />
       </RightMenu>
     </NavContainer>
@@ -63,7 +61,7 @@ const BackButton = styled.button`
   h2 {
     margin: 0;
     color: #c6b1c9;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: calc(clamp(0.9rem, 2.5vw, 1.1rem) * var(--fs, 1));
     font-weight: 500;
     text-transform: lowercase;
 
@@ -76,7 +74,7 @@ const BackButton = styled.button`
     padding: 0.4rem;
 
     h2 {
-      font-size: 0.9rem;
+      font-size: calc(0.9rem * var(--fs, 1));
     }
   }
 
@@ -84,7 +82,7 @@ const BackButton = styled.button`
     padding: 0.3rem;
 
     h2 {
-      font-size: 0.85rem;
+      font-size: calc(0.85rem * var(--fs, 1));
     }
   }
 `;
@@ -107,14 +105,14 @@ const NavContainer = styled.nav`
 
   .fa-angles-left {
     margin-left: clamp(0.75rem, 2vw, 1.5rem);
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: calc(clamp(1rem, 2vw, 1.2rem) * var(--fs, 1));
     color: #c6b1c9;
     flex-shrink: 0;
   }
 
   h2 {
     margin-left: 0.5rem;
-    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-size: calc(clamp(0.85rem, 2vw, 1rem) * var(--fs, 1));
     font-weight: 500;
 
     span {
@@ -161,7 +159,7 @@ const RightMenu = styled.nav`
     color: #c6b1c9;
     font-weight: 700;
     text-transform: lowercase;
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: calc(clamp(1.5rem, 4vw, 2rem) * var(--fs, 1));
     margin: 0;
     line-height: 1.2;
     flex-shrink: 0;
@@ -181,14 +179,14 @@ const RightMenu = styled.nav`
   }
 
   h1:first-letter {
-    font-size: 120%;
+    font-size: calc(120% * var(--fs, 1));
   }
 
   @media (max-width: 768px) {
     gap: 0.75rem;
 
     h1 {
-      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-size: calc(clamp(1.5rem, 4vw, 2.2rem) * var(--fs, 1));
     }
 
     img {

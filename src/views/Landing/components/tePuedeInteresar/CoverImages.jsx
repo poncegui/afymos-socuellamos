@@ -32,7 +32,7 @@ const TitleContainer = styled.div`
   bottom: 0%;
   right: 0%;
   color: white;
-  font-size: 2rem;
+  font-size: calc(2rem * var(--fs, 1));
   text-align: center;
   width: 80%;
   max-width: 600px;

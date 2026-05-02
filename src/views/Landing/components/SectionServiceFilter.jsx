@@ -22,7 +22,7 @@ const SearchInput = styled.input`
   width: 300px;
   height: 40px;
   padding: 10px;
-  font-size: 16px;
+  font-size: calc(16px * var(--fs, 1));
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
@@ -51,7 +51,7 @@ const ServiceItem = styled.div`
 `;
 
 const ServiceName = styled.span`
-  font-size: 18px;
+  font-size: calc(18px * var(--fs, 1));
   text-decoration: none;
   &:visited {
     color: #224464;
@@ -69,7 +69,7 @@ const ArrowIcon = styled.span`
 `;
 
 const CircleIcon = styled(FontAwesomeIcon)`
-  font-size: ${(props) => props.size}px;
+  font-size: calc(${(props) => props.size}px * var(--fs, 1));
   color: ${(props) => props.color};
   margin-right: 10px;
 `;

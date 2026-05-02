@@ -61,16 +61,16 @@ const DemoLeft = styled.div`
   flex-direction: column;
 
   p:nth-child(1) {
-    font-size: 1.8rem;
+    font-size: calc(1.8rem * var(--fs, 1));
     font-style: italic;
   }
   p:nth-child(2) {
-    font-size: 3rem;
+    font-size: calc(3rem * var(--fs, 1));
     font-weight: 600;
     margin: 0.5rem 0;
   }
   p:nth-child(3) {
-    font-size: 1.2rem;
+    font-size: calc(1.2rem * var(--fs, 1));
     margin-bottom: 1rem;
   }
 `;

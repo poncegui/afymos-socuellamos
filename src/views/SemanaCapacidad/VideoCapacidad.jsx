@@ -89,18 +89,18 @@ const DemoLeft = styled.div`
 
   p:nth-child(1) {
     margin: 5%;
-    font-size: 2rem;
+    font-size: calc(2rem * var(--fs, 1));
     font-style: italic;
     color: #071c2f;
   }
   p:nth-child(2) {
-    font-size: 3rem;
+    font-size: calc(3rem * var(--fs, 1));
     font-weight: 600;
     margin: 0.5rem 0;
     color: #071c2f;
   }
   p:nth-child(3) {
-    font-size: 1.6rem;
+    font-size: calc(1.6rem * var(--fs, 1));
     margin-bottom: 1rem;
     margin: 15%;
     margin-top: 0;

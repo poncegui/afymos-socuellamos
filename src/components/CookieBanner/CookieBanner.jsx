@@ -157,7 +157,7 @@ const Banner = styled.div`
 `;
 
 const IconWrap = styled.span`
-  font-size: 2rem;
+  font-size: calc(2rem * var(--fs, 1));
   line-height: 1;
   flex-shrink: 0;
   margin-top: 0.1rem;
@@ -173,7 +173,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 1rem;
+  font-size: calc(1rem * var(--fs, 1));
   font-weight: 700;
   color: #071c2f;
   margin: 0 0 0.375rem 0;
@@ -181,7 +181,7 @@ const Title = styled.h2`
 `;
 
 const Desc = styled.p`
-  font-size: 0.875rem;
+  font-size: calc(0.875rem * var(--fs, 1));
   color: #4a5568;
   margin: 0 0 0.5rem 0;
   line-height: 1.55;
@@ -191,7 +191,7 @@ const DetailsToggle = styled.button`
   background: none;
   border: none;
   color: #0b4a6f;
-  font-size: 0.875rem;
+  font-size: calc(0.875rem * var(--fs, 1));
   font-weight: 600;
   cursor: pointer;
   padding: 0;
@@ -221,7 +221,7 @@ const DetailItem = styled.li`
   display: flex;
   gap: 0.625rem;
   align-items: flex-start;
-  font-size: 0.8125rem;
+  font-size: calc(0.8125rem * var(--fs, 1));
   color: #4a5568;
   line-height: 1.5;
 
@@ -234,19 +234,19 @@ const DetailItem = styled.li`
 
   p {
     margin: 0;
-    font-size: 0.8125rem;
+    font-size: calc(0.8125rem * var(--fs, 1));
   }
 `;
 
 const DetailIcon = styled.span`
-  font-size: 1rem;
+  font-size: calc(1rem * var(--fs, 1));
   flex-shrink: 0;
   margin-top: 0.125rem;
 `;
 
 const PolicyLink = styled.div`
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: calc(0.8rem * var(--fs, 1));
 
   a {
     color: #6b6f76;
@@ -278,7 +278,7 @@ const Actions = styled.div`
 
 const BtnBase = styled.button`
   border-radius: 2rem;
-  font-size: 0.875rem;
+  font-size: calc(0.875rem * var(--fs, 1));
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;

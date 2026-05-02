@@ -87,7 +87,7 @@ const Header = styled.div`
   flex-wrap: wrap;
 
   h2 {
-    font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+    font-size: calc(clamp(1.1rem, 2.2vw, 1.4rem) * var(--fs, 1));
     font-weight: 700;
     color: #071c2f;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ const AccentBar = styled.span`
 
 const Count = styled.span`
   margin-left: auto;
-  font-size: 1rem;
+  font-size: calc(1rem * var(--fs, 1));
   color: #224464;
   font-weight: 700;
   background: rgba(198, 177, 201, 0.15);

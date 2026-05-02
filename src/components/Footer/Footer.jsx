@@ -37,7 +37,7 @@ const Footer = () => {
                 {column.items.map((item, idx) => (
                   <li key={idx}>
                     {item.to ? (
-                      <Link to={item.to} title={item.text}>
+                      <Link to={item.to}>
                         {item.text}
                       </Link>
                     ) : (
@@ -45,7 +45,6 @@ const Footer = () => {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        title={item.text}
                         aria-label={`${item.text} (abre en nueva pestaña)`}
                       >
                         {item.text}

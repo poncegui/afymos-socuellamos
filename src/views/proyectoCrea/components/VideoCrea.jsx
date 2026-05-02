@@ -45,14 +45,14 @@ const DemoLeft = styled.div`
   gap: 0.85rem;
 
   p:nth-child(1) {
-    font-size: 1.75rem;
+    font-size: calc(1.75rem * var(--fs, 1));
     font-style: italic;
     margin: 0;
     color: #0b3961;
     line-height: 1.25;
   }
   p:nth-child(2) {
-    font-size: 1.25rem;
+    font-size: calc(1.25rem * var(--fs, 1));
     font-weight: 700;
     margin: 0;
     color: #0f3a57;

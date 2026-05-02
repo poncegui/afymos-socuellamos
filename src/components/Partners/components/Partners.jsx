@@ -119,7 +119,7 @@ const Meta = styled.div`
 `;
 
 const PartnerCaption = styled.span`
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--fs, 1));
   color: #071c2f;
   max-width: 160px;
   overflow: hidden;
@@ -129,7 +129,7 @@ const PartnerCaption = styled.span`
 
 const Icon = styled.span`
   color: #6b6f76;
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--fs, 1));
 `;
 
 export const Card = styled.div`

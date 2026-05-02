@@ -133,7 +133,7 @@ const StyledButton = styled(ButtonNav)`
   backdrop-filter: blur(4px);
   border: 1.5px solid rgba(255, 255, 255, 0.5);
   color: #fff;
-  font-size: 1rem;
+  font-size: calc(1rem * var(--fs, 1));
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
@@ -154,7 +154,7 @@ const StyledButton = styled(ButtonNav)`
   }
 
   @media (max-width: 600px) {
-    font-size: 0.9rem;
+    font-size: calc(0.9rem * var(--fs, 1));
     padding: 0.55rem 1.4rem;
   }
 `;
@@ -168,7 +168,7 @@ const StyledButtonTransparencia = styled(ButtonNav)`
   background-color: #071c2f;
   border: 1.5px solid #071c2f;
   color: #fff;
-  font-size: 1rem;
+  font-size: calc(1rem * var(--fs, 1));
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
@@ -189,7 +189,7 @@ const StyledButtonTransparencia = styled(ButtonNav)`
   }
 
   @media (max-width: 600px) {
-    font-size: 0.9rem;
+    font-size: calc(0.9rem * var(--fs, 1));
     padding: 0.55rem 1.4rem;
   }
 `;
@@ -212,7 +212,7 @@ const SocialIconsContainer = styled.div`
 const SocialIcon = styled.a`
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -221,7 +221,7 @@ const SocialIcon = styled.a`
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
   }
 
   &:focus-visible {
@@ -232,7 +232,7 @@ const SocialIcon = styled.a`
   & > svg {
     width: 24px;
     height: 24px;
-    fill: #fff;
+    fill: #071c2f;
   }
 `;
 
@@ -249,7 +249,7 @@ const HeaderTitle = styled.div`
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: calc(8rem * var(--fs, 1));
     text-transform: uppercase;
     color: #071c2f;
   }
@@ -258,7 +258,7 @@ const HeaderTitle = styled.div`
     flex-direction: column;
     gap: 50px;
     h1 {
-      font-size: 5rem;
+      font-size: calc(5rem * var(--fs, 1));
     }
     img {
       height: 4rem;

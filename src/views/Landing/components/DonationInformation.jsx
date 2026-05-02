@@ -85,26 +85,26 @@ const TextCol = styled.div`
 
 const Tag = styled.span`
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: calc(0.72rem * var(--fs, 1));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.75);
-  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  color: #2d1a35;
+  border-left: 3px solid #2d1a35;
   padding-left: 0.6rem;
 `;
 
 const Title = styled.h2`
-  font-size: clamp(1.25rem, 2.8vw, 1.7rem);
+  font-size: calc(clamp(1.25rem, 2.8vw, 1.7rem) * var(--fs, 1));
   font-weight: 700;
-  color: #fff;
+  color: #071c2f;
   line-height: 1.25;
   margin: 0;
 `;
 
 const Body = styled.p`
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.85);
+  font-size: calc(1rem * var(--fs, 1));
+  color: #2d1a35;
   margin: 0;
 `;
 
@@ -116,7 +116,7 @@ const DonateButton = styled(Link)`
   border-radius: 999px;
   background: #fff;
   color: #6b4a7a;
-  font-size: 0.95rem;
+  font-size: calc(0.95rem * var(--fs, 1));
   font-weight: 700;
   text-decoration: none;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;

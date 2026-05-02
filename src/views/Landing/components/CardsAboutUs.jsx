@@ -17,11 +17,11 @@ const Title = styled.h2`
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: calc(24px * var(--fs, 1));
 
   @media (max-width: 900px) {
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: calc(18px * var(--fs, 1));
   }
 `;
 
@@ -57,8 +57,14 @@ const Card = styled.div`
 `;
 
 const TitleCard = styled.h3`
-  color: ${(props) => (props.color === "#224464" ? "#c6b1c9" : "#224464")};
-  font-size: 16px;
+  color: ${(props) => {
+    // Use appropriate text color based on background for WCAG AA compliance
+    const bgColor = props.$bgColor || props.color;
+    if (bgColor === "#224464") return "#fff"; // Dark blue background → white text
+    // Green and light backgrounds need dark text for proper contrast
+    return "#000"; // Black text for best contrast on green/light backgrounds
+  }};
+  font-size: calc(16px * var(--fs, 1));
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -66,9 +72,11 @@ const TitleCard = styled.h3`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.3);
 
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: calc(14px * var(--fs, 1));
     margin-bottom: 10px;
   }
 `;
@@ -86,13 +94,13 @@ const LinkButton = styled(Link)`
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: calc(20px * var(--fs, 1));
   transition: color 0.3s, transform 0.3s;
   text-decoration: none;
   color: inherit;
 
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: calc(18px * var(--fs, 1));
   }
 
   &:hover {
@@ -107,13 +115,13 @@ const ExternalButton = styled.a`
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: calc(20px * var(--fs, 1));
   transition: color 0.3s, transform 0.3s;
   text-decoration: none;
   color: inherit;
 
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: calc(18px * var(--fs, 1));
   }
 
   &:hover {
@@ -131,15 +139,15 @@ const Margin = styled.div`
 `;
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  font-size: 30px;
+  font-size: calc(30px * var(--fs, 1));
 
   @media (max-width: 768px) {
-    font-size: 26px;
+    font-size: calc(26px * var(--fs, 1));
   }
 `;
 
 const CircleIcon = styled(FontAwesomeIcon)`
-  font-size: ${(props) => props.size}px;
+  font-size: calc(${(props) => props.size}px * var(--fs, 1));
   color: ${(props) => props.color};
   margin-right: 10px;
 `;
@@ -153,9 +161,13 @@ const CardsAboutUs = () => {
           Sobre nosotros...
         </Title>
         <CardsContainer>
-          {aboutUsData.map((card, index) => (
-            <Card key={index} color={index === 0 ? "#81b71a" : card.color}>
-              <TitleCard color={card.color}>{card.title}</TitleCard>
+          {aboutUsData.map((card, index) => {
+            const bgColor = index === 0 ? "#81b71a" : card.color;
+            return (
+              <Card key={index} color={bgColor}>
+                <TitleCard $bgColor={bgColor} color={card.color}>
+                  {card.title}
+                </TitleCard>
               <Image
                 src={card.image}
                 alt={card.alt}
@@ -209,7 +221,8 @@ const CardsAboutUs = () => {
                 );
               })()}
             </Card>
-          ))}
+            );
+          })}
         </CardsContainer>
       </SectionContainer>
       <Margin />

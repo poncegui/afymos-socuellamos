@@ -47,22 +47,22 @@ const Icons = styled.div`
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--fs, 1));
     color: #071c2f;
     padding: 1rem 0;
   }
   p {
-    font-size: 1.2rem;
+    font-size: calc(1.2rem * var(--fs, 1));
     color: #071c2f;
     padding: 0.2rem 0;
   }
   p a {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--fs, 1));
     color: #071c2f;
     padding: 0.2rem 0;
   }
   p:hover {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--fs, 1));
     color: #071c2f;
     padding: 0.2rem 0;
   }

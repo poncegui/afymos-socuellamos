@@ -77,28 +77,28 @@ const InfoContainer = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 32px;
+  font-size: calc(32px * var(--fs, 1));
   margin: 0;
   color: #0b3961;
   font-weight: 700;
 `;
 
 const Lead = styled.h4`
-  font-size: 20px;
+  font-size: calc(20px * var(--fs, 1));
   margin: 0.25rem 0 0.75rem 0;
   color: #1f4b6b;
   font-weight: 600;
 `;
 
 const Paragraph = styled.p`
-  font-size: 16px;
+  font-size: calc(16px * var(--fs, 1));
   line-height: 1.6;
   margin: 0;
   color: #111;
 `;
 
 const CompaniesTitle = styled.h5`
-  font-size: 18px;
+  font-size: calc(18px * var(--fs, 1));
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   color: #0b3961;
@@ -115,7 +115,7 @@ const CompanyList = styled.ul`
   color: #333;
 
   li {
-    font-size: 16px;
+    font-size: calc(16px * var(--fs, 1));
     line-height: 1.6;
   }
 
@@ -128,7 +128,7 @@ const Callout = styled.p`
   margin-top: 1rem;
   font-weight: 700;
   color: #0b3961;
-  font-size: 16px;
+  font-size: calc(16px * var(--fs, 1));
 `;
 
 const VideoWrapper = styled.div`

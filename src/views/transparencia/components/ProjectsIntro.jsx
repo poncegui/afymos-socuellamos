@@ -58,7 +58,7 @@ export const SectionFeaturesMobile = styled.div`
   margin: auto;
   padding: 5% 15%;
   h1 {
-    font-size: 2.5rem;
+    font-size: calc(2.5rem * var(--fs, 1));
   }
 
   @media (max-width: 768px) {
@@ -130,7 +130,7 @@ export const Icons = styled.div`
 
   h3 {
     margin-top: 0.5rem;
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--fs, 1));
     padding: 0 0.3rem;
     color: #071c2f;
   }
@@ -146,7 +146,7 @@ export const Icons = styled.div`
     height: 150px;
 
     h3 {
-      font-size: 1.5rem;
+      font-size: calc(1.5rem * var(--fs, 1));
       padding: 0 0.3rem;
       color: #071c2f;
     }
@@ -163,7 +163,7 @@ export const Icons = styled.div`
     border: solid 1px #071c2f;
 
     h3 {
-      font-size: 0.5rem;
+      font-size: calc(0.5rem * var(--fs, 1));
       padding: 0 0.3rem;
       color: #071c2f;
     }

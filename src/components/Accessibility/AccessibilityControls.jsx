@@ -82,11 +82,10 @@ const AccessibilityControls = ({
   return (
     <Container role="region" aria-label="Controles de accesibilidad">
       <ControlsGroup>
-        <Label $inverse={inverse} htmlFor="font-scale-controls" id="font-label">
+        <Label $inverse={inverse} id="font-label">
           Tamaño de fuente:
         </Label>
         <ButtonGroup
-          id="font-scale-controls"
           role="group"
           aria-labelledby="font-label"
         >
@@ -95,7 +94,6 @@ const AccessibilityControls = ({
             disabled={scale <= min}
             aria-label="Reducir tamaño de letra"
             aria-describedby="font-scale-help"
-            title="Reducir tamaño (A-)"
             $inverse={inverse}
           >
             <FontAwesomeIcon icon={faMinus} aria-hidden="true" /> A
@@ -103,7 +101,6 @@ const AccessibilityControls = ({
           <ControlBtn
             onClick={reset}
             aria-label="Tamaño de letra por defecto"
-            title="Restablecer tamaño (A)"
             $inverse={inverse}
           >
             A
@@ -113,7 +110,6 @@ const AccessibilityControls = ({
             disabled={scale >= max}
             aria-label="Aumentar tamaño de letra"
             aria-describedby="font-scale-help"
-            title="Aumentar tamaño (A+)"
             $inverse={inverse}
           >
             <FontAwesomeIcon icon={faPlus} aria-hidden="true" /> A
@@ -133,7 +129,6 @@ const AccessibilityControls = ({
             : 'Leer contenido en voz alta'
         }
         aria-pressed={speakActive}
-        title={speakActive ? 'Detener lectura' : 'Leer en voz alta'}
         $inverse={inverse}
       >
         <FontAwesomeIcon icon={faVolumeUp} aria-hidden="true" />
@@ -178,7 +173,7 @@ const ControlsGroup = styled.div`
   }
 `;
 
-const Label = styled.label`
+const Label = styled.span`
   font-size: calc(0.9rem * var(--fs, 1));
   font-weight: 600;
   color: ${props => (props.$inverse ? '#071c2f' : 'rgba(255, 255, 255, 0.9)')};

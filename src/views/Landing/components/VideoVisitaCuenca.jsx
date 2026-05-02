@@ -2,6 +2,7 @@ import { memo, useEffect, useRef, useState } from 'react';
 import portadaVideo from '../assets/portada-cuenca.png';
 import styled from 'styled-components';
 import AccessibilityControls from '../../../components/Accessibility/AccessibilityControls';
+import SectionLabel from '../../../components/SectionLabel';
 
 const STORAGE_KEY = 'afymos_fontScale';
 
@@ -72,7 +73,7 @@ const VideoVisitaCuenca = () => {
       <Inner>
         {/* ── Texto izquierdo ── */}
         <LeftCol>
-          <Label aria-hidden="true">Viaje cultural</Label>
+          <SectionLabel>Viaje cultural</SectionLabel>
           <Heading id="cuenca-heading">Descubriendo Cuenca con Afymos</Heading>
           <Subtitle>
             Gracias a la subvención{' '}
@@ -198,17 +199,6 @@ const RightCol = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`;
-
-const Label = styled.span`
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #224464;
-  border-left: 3px solid #c6b1c9;
-  padding-left: 0.6rem;
 `;
 
 const Heading = styled.h2`

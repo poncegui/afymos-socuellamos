@@ -60,7 +60,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  font-size: 2rem;
+  font-size: calc(2rem * var(--fs, 1));
   line-height: 2.5rem;
   font-weight: 550;
   letter-spacing: 1.4px;
@@ -82,7 +82,7 @@ export const Img = styled.img`
 
 export const Heading = styled.h2`
   margin-bottom: 24px;
-  font-size: 2rem;
+  font-size: calc(2rem * var(--fs, 1));
   line-height: 1.1;
   font-weight: 600;
   color: ${({ inverse }) => (inverse ? "#071c2f" : "#c6b1c9")};
@@ -91,7 +91,7 @@ export const Heading = styled.h2`
     text-align: center;
   }
   @media (max-width: 440px) {
-    font-size: 2rem;
+    font-size: calc(2rem * var(--fs, 1));
   }
 `;
 
@@ -99,7 +99,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;
-  font-size: 1.8rem;
+  font-size: calc(1.8rem * var(--fs, 1));
   color: ${({ inverse }) => (inverse ? "#6a6a6a" : "#c6b1c9")};
 `;
 
@@ -113,7 +113,7 @@ export const ContentButton = styled.button`
   height: 4rem;
   padding: 1rem 32px;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: calc(3rem * var(--fs, 1));
   line-height: 18px;
   letter-spacing: 1.54px;
   text-transform: uppercase;
@@ -123,7 +123,7 @@ export const ContentButton = styled.button`
   border-radius: 4px;
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "0.6255rem 1.25rem")};
-  font-size: ${({ fontBig }) => (fontBig ? "1.8rem" : "1.5rem")};
+  font-size: ${({ fontBig }) => (fontBig ? "calc(1.8rem * var(--fs, 1))" : "calc(1.5rem * var(--fs, 1))")};
   outline: none;
   border: 2px solid ${({ inverse }) => (inverse ? "#071c2f" : "#c6b1c9")};
   cursor: pointer;

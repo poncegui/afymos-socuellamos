@@ -118,36 +118,36 @@ const TitleWrapper = styled.div`
 `;
 
 const QuoteIcon = styled(FontAwesomeIcon)`
-  font-size: 3rem;
+  font-size: calc(3rem * var(--fs, 1));
   color: #c6b1c9;
   opacity: 0.3;
 `;
 
 const Title = styled.h2`
-  font-size: 2.8rem;
+  font-size: calc(2.8rem * var(--fs, 1));
   color: #071c2f;
   margin: 0;
   font-weight: 700;
   letter-spacing: -0.5px;
 
   @media (max-width: 900px) {
-    font-size: 2rem;
+    font-size: calc(2rem * var(--fs, 1));
   }
 
   @media (max-width: 600px) {
-    font-size: 1.6rem;
+    font-size: calc(1.6rem * var(--fs, 1));
   }
 `;
 
 const Subtitle = styled.p`
-  font-size: 1.1rem;
+  font-size: calc(1.1rem * var(--fs, 1));
   color: #666;
   margin: 0;
   font-weight: 300;
   letter-spacing: 0.3px;
 
   @media (max-width: 900px) {
-    font-size: 1rem;
+    font-size: calc(1rem * var(--fs, 1));
   }
 `;
 
@@ -233,14 +233,14 @@ const AvatarBorder = styled.div`
 `;
 
 const QuoteMarkTop = styled(FontAwesomeIcon)`
-  font-size: 2.5rem;
+  font-size: calc(2.5rem * var(--fs, 1));
   color: #c6b1c9;
   opacity: 0.15;
   margin-left: -0.5rem;
 `;
 
 const Description = styled.p`
-  font-size: 1.05rem;
+  font-size: calc(1.05rem * var(--fs, 1));
   line-height: 1.7;
   color: #444;
   margin: 0;
@@ -261,7 +261,7 @@ const InfoSection = styled.div`
 `;
 
 const PersonName = styled.h3`
-  font-size: 1.3rem;
+  font-size: calc(1.3rem * var(--fs, 1));
   font-weight: 700;
   color: #c6b1c9;
   margin: 0;
@@ -269,7 +269,7 @@ const PersonName = styled.h3`
 `;
 
 const PersonOccupation = styled.span`
-  font-size: 0.95rem;
+  font-size: calc(0.95rem * var(--fs, 1));
   color: #888;
   font-weight: 500;
   margin: 0;

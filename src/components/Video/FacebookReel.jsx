@@ -69,7 +69,7 @@ const StyledIframe = styled.iframe`
 
 const Fallback = styled.div`
   margin-top: 0.75rem;
-  font-size: 0.95rem;
+  font-size: calc(0.95rem * var(--fs, 1));
   color: #333;
 
   a {

@@ -148,7 +148,7 @@ const Heading = styled.h2`
 const Body = styled.p`
   font-size: calc(clamp(0.88rem, 1.5vw, 0.97rem) * var(--fs, 1));
   line-height: 1.8;
-  color: ${({ $inverse }) => ($inverse ? "#555" : "rgba(255,255,255,0.82)")};
+  color: ${({ $inverse }) => ($inverse ? "#555" : "rgba(255,255,255,0.95)")};
   margin: 0;
 
   strong {

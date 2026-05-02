@@ -92,7 +92,7 @@ const CardBody = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--fs, 1));
   font-weight: 700;
   color: #071c2f;
   line-height: 1.35;
@@ -104,7 +104,7 @@ const CardTitle = styled.h3`
 `;
 
 const CardDesc = styled.p`
-  font-size: 0.82rem;
+  font-size: calc(0.82rem * var(--fs, 1));
   color: #6b6f76;
   line-height: 1.55;
   margin: 0;
@@ -117,7 +117,7 @@ const CardDesc = styled.p`
 
 const CardLink = styled(Link)`
   align-self: flex-start;
-  font-size: 0.8rem;
+  font-size: calc(0.8rem * var(--fs, 1));
   font-weight: 700;
   color: #224464;
   text-decoration: none;

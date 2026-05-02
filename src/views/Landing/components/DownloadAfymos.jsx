@@ -22,7 +22,7 @@ const CircularButton = styled.button`
   border-radius: 50%;
   background-color: #007bff;
   color: #ffffff;
-  font-size: 18px;
+  font-size: calc(18px * var(--fs, 1));
   font-weight: bold;
   border: none;
   cursor: pointer;
