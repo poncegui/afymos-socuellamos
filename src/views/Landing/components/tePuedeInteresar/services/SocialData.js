@@ -5,16 +5,19 @@ export const linksData = [
     key: 1,
     name: "Nosotros",
     url: "nosotros",
+    title: "Ir a Sobre Nosotros",
   },
   {
     key: 2,
     name: "Terapias",
     url: "terapias",
+    title: "Ir a Terapias",
   },
   {
     key: 3,
     name: "Dona",
     url: "donaciones",
+    title: "Ir a Donaciones",
   },
 ];
 
@@ -23,6 +26,7 @@ export const transparencia = [
     key: 1,
     name: "Transparencia",
     url: "transparencia",
+    title: "Ir a Transparencia",
   },
 ];
 

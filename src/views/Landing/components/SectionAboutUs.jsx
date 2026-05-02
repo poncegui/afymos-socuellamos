@@ -15,7 +15,7 @@ const SectionServices = () => {
         <IconsContainer>
           {data.map((item) => (
             <Icons key={item.id} value={item.name}>
-              <Link to={item.url} aria-label="ir a la ruta selecionada">
+              <Link to={item.url} aria-label="ir a la ruta selecionada" title={item.browserTitle}>
                 <img loading="lazy" src={item.img} alt={item.name} />
                 <h3>{item.name}</h3>
               </Link>

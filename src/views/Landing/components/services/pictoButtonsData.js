@@ -14,6 +14,7 @@ export const servicesData = [
     img: centroDia,
     alt: "Centro de Dia",
     url: "/centro-de-dia",
+    browserTitle: "Ir a Centro de Día",
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ export const servicesData = [
     img: capacitacion,
     alt: "Servicio de capacitación",
     url: "/servicio-capacitacion",
+    browserTitle: "Ir a Servicio de Capacitación",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const servicesData = [
     img: viviendaSocial,
     alt: "Viviendas con apoyo",
     url: "/viviendas-con-apoyo",
+    browserTitle: "Ir a Viviendas con Apoyo",
   },
 
   {
@@ -36,6 +39,7 @@ export const servicesData = [
     img: formacion,
     alt: "formacion",
     url: "/formacion",
+    browserTitle: "Ir a Centro de Formación",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const servicesData = [
     img: voluntariado,
     alt: "Ocio y voluntariado",
     url: "/ocio-y-voluntariado",
+    browserTitle: "Ir a Ocio y Voluntariado",
   },
   {
     id: 6,
@@ -50,6 +55,7 @@ export const servicesData = [
     img: diagnostico,
     alt: "Valoración y Diagnóstico",
     url: "/valoracion-y-diagnostico",
+    browserTitle: "Ir a Valoración y Diagnóstico",
   },
   {
     id: 7,
@@ -57,6 +63,7 @@ export const servicesData = [
     img: servicios,
     alt: "terapias",
     url: "/terapias",
+    browserTitle: "Ir a Terapias",
   },
   {
     id: 8,
@@ -64,5 +71,6 @@ export const servicesData = [
     img: familias,
     alt: "Atención familias",
     url: "/apoyo-familias",
+    browserTitle: "Ir a Atención a Familias",
   },
 ];

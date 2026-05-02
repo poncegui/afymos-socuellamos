@@ -27,6 +27,7 @@ const IntroductionView = () => {
                 key={data.key}
                 to={data.url}
                 aria-label={`Ir a la sección ${data.name}`}
+                title={data.title}
               >
                 {data.name}
               </StyledButton>
@@ -42,6 +43,7 @@ const IntroductionView = () => {
               aria-label="Ir a la sección de contacto"
               role="button"
               tabIndex={0}
+              title="Ir a contacto"
             >
               Contacto
             </StyledButton>
@@ -49,6 +51,7 @@ const IntroductionView = () => {
             <StyledButtonTransparencia
               to="/transparencia"
               aria-label="Ir a la sección de transparencia"
+              title="Ir a Transparencia"
             >
               Transparencia
             </StyledButtonTransparencia>

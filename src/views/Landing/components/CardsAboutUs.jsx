@@ -190,7 +190,7 @@ const CardsAboutUs = () => {
 
                 if (isInternalRoute) {
                   return (
-                    <LinkButton to={card.url} aria-label={card.ariaLabel}>
+                    <LinkButton to={card.url} aria-label={card.ariaLabel} title={card.browserTitle}>
                       <StyledFontAwesomeIcon
                         icon={faPlus}
                         style={{
@@ -209,7 +209,7 @@ const CardsAboutUs = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={card.ariaLabel}
-                    title={card.title}
+                    title={card.browserTitle}
                   >
                     <StyledFontAwesomeIcon
                       icon={faPlus}

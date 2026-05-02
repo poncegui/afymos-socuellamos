@@ -13,6 +13,7 @@ export const aboutUsData = [
     url: "/instalaciones-centro-diversidad",
     color: "#f5f5f5",
     ariaLabel: "ir a instalaciones centro diversidad",
+    browserTitle: "Ir a Instalaciones Centro",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ export const aboutUsData = [
     url: "/organigrama",
     color: "#224464",
     ariaLabel: "ir a organigrama",
+    browserTitle: "Ver organigrama",
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export const aboutUsData = [
     url: "/junta-directiva",
     color: "#c6b1c9",
     ariaLabel: "ir a junta directiva",
+    browserTitle: "Ir a Junta Directiva",
   },
   {
     id: 4,
@@ -41,5 +44,6 @@ export const aboutUsData = [
     url: pdfCuentas,
     color: "#f5f5f5",
     ariaLabel: "Descargar archivo cuentas anuales en PDF",
+    browserTitle: "Descargar Cuentas Anuales 2024 (PDF)",
   },
 ];
