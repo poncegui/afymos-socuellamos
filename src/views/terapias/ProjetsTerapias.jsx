@@ -15,7 +15,6 @@ import {
 } from '../../components/Partners/services/partnersListData';
 
 import { ContentProjects } from '../../components/Content/ContentProjects';
-import Footer from '../../components/Footer/Footer';
 import NavBarViews from '../../components/Header/NavBarViews';
 import PartnertList from '../../components/Partners/PartnerList';
 import ProjectsIntro from './components/ProjectsIntro';
@@ -50,8 +49,7 @@ const ProjectsTerapias = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 

@@ -5,7 +5,6 @@ import {
 import { familyDataOne, familyDataTwo } from './services/familiasData';
 
 import { ContentProjects } from '../../components/Content/ContentProjects';
-import Footer from '../../components/Footer/Footer';
 import NavBarViews from '../../components/Header/NavBarViews';
 import PartnersList from '../../components/Partners/PartnerList';
 import { React } from 'react';
@@ -34,8 +33,7 @@ const ProjectsFamilias = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 export default ProjectsFamilias;

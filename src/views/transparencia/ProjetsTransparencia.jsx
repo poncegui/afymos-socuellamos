@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer/Footer";
 import NavBarViews from "../../components/Header/NavBarViews";
 import PartnersList from "../../components/Partners/PartnerList";
 import ProjectsIntro from "./components/ProjectsIntro";
@@ -9,8 +8,7 @@ const ProjectsTransparencia = () => {
       <NavBarViews title="Transparencia" />
       <ProjectsIntro />
       <PartnersList />
-      <Footer />
-    </>
+          </>
   );
 };
 

@@ -9,7 +9,6 @@ import {
 } from './services/ApiNosotros';
 
 import { ContentProjects } from '../../components/Content/ContentProjects';
-import Footer from '../../components/Footer/Footer';
 import NavBarViews from '../../components/Header/NavBarViews';
 import PartnertList from '../../components/Partners/PartnerList';
 import { React } from 'react';
@@ -38,8 +37,7 @@ const Nosotros = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 

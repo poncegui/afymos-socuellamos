@@ -9,7 +9,6 @@ import {
 } from './services/viviendasData';
 
 import { ContentProjects } from '../../components/Content/ContentProjects';
-import Footer from '../../components/Footer/Footer';
 import NavBarViews from '../../components/Header/NavBarViews';
 import PartnersList from '../../components/Partners/PartnerList';
 import { React } from 'react';
@@ -38,8 +37,7 @@ const ProjectsViviendas = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 

@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 
 import ScrollStepper from "./components/ScrollStepper";
 import CookieBanner from "./components/CookieBanner/CookieBanner";
+import Footer from "./components/Footer/Footer";
 
 /* ── Lazy-loaded routes ──────────────────────────────────────────────────── */
 const LandingView                    = lazy(() => import("./views/Landing/LandingView"));
@@ -98,6 +99,7 @@ const App = () => (
           <Route path="/noticias/:slug"                              element={<NewsDetail />} />
         </Routes>
       </main>
+      <Footer />
     </Suspense>
     <CookieBanner />
   </>

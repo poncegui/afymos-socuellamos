@@ -15,7 +15,6 @@ import { Content } from '../../components/Content/Content';
 import DonationInformation from './components/DonationInformation';
 import FeaturedNews from '../../components/News/FeaturedNewsClean';
 import NewsVideoBlock from '../../components/News/NewsVideoBlock';
-import Footer from '../../components/Footer/Footer';
 import PartnertList from '../../components/Partners/PartnerList';
 import PlanDeIgualdad from '../Landing/components/tePuedeInteresar/PlanDeIgualdad';
 import ProjectClubDeportivoAfymos from './components/ProjectClubDeportivo';
@@ -82,8 +81,7 @@ const LandingView = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 export default LandingView;

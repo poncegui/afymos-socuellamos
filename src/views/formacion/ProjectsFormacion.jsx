@@ -10,7 +10,6 @@ import {
 
 import { Content } from '../../components/Content/Content';
 import { ContentProjects } from '../../components/Content/ContentProjects';
-import Footer from '../../components/Footer/Footer';
 import PageHead from '../../components/SEO/PageHead';
 import NavBarViews from '../../components/Header/NavBarViews';
 import PartnertList from '../../components/Partners/PartnerList';
@@ -46,8 +45,7 @@ const ProjectsFormacion = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 export default ProjectsFormacion;

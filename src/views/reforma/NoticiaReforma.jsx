@@ -8,7 +8,6 @@ import {
 } from "./services/ReconocimientoFundacionMapreData";
 
 import { ContentProjects } from "../../components/Content/ContentProjects";
-import Footer from "../../components/Footer/Footer";
 import NavBarViews from "../../components/Header/NavBarViews";
 import PartnerList from "../../components/Partners/PartnerList";
 import React from "react";
@@ -36,8 +35,7 @@ const NoticiaReforma = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 

@@ -12,7 +12,6 @@ import {
 } from './services/voluntariadoData';
 
 import { ContentProjects } from '../../components/Content/ContentProjects';
-import Footer from '../../components/Footer/Footer';
 import NavBarTemplate from '../../components/Header/NavBarViews';
 import PartnertList from '../../components/Partners/PartnerList';
 import { React } from 'react';
@@ -42,8 +41,7 @@ const ProjectsVoluntariado = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 

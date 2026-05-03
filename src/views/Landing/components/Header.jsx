@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Header = () => {
   return (
     <>
-      <HeaderSection>
+      <HeaderSection role="banner" aria-label="Cabecera principal">
         <HeaderContainer>
           <HeaderTitle>
             <img loading="lazy" src={logo} alt="logo-afymos" />

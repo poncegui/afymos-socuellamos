@@ -1,5 +1,7 @@
 import logo from './logos/logo-afymos.png';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = props => {
   const handleBack = () => {
@@ -18,7 +20,7 @@ const Navbar = props => {
         aria-label="Volver a la página anterior"
       >
         <NavContainerPrincipal>
-          <i className="fa-solid fa-angles-left" aria-hidden="true"></i>
+          <FontAwesomeIcon icon={faAnglesLeft} aria-hidden="true" />
           <h2>
             volver a <span>Principal</span>
           </h2>
@@ -103,7 +105,7 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  .fa-angles-left {
+  svg {
     margin-left: clamp(0.75rem, 2vw, 1.5rem);
     font-size: calc(clamp(1rem, 2vw, 1.2rem) * var(--fs, 1));
     color: #c6b1c9;
@@ -130,7 +132,7 @@ const NavContainer = styled.nav`
     padding: 0 0.75rem;
     height: clamp(65px, 7vh, 80px);
 
-    .fa-angles-left {
+    svg {
       margin-left: 1rem;
     }
   }

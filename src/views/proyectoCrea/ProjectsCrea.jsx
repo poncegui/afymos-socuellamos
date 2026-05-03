@@ -5,7 +5,6 @@ import {
 import { creaDataOne, creaDataThree, creaDataTwo } from './services/creaData';
 
 import CreaBlock from './components/CreaBlock';
-import Footer from '../../components/Footer/Footer';
 import NavBarViews from '../../components/Header/NavBarViews';
 import PartnertList from '../../components/Partners/PartnerList';
 import React from 'react';
@@ -34,8 +33,7 @@ const ProjectsCrea = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 

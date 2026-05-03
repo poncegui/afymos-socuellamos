@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import Footer from "../../components/Footer/Footer";
 import NavBarViews from "../../components/Header/NavBarViews";
 import backgroundChartJpg from "./assets/images-chart-png/chartTeam1.jpg";
 import { juntaChart } from "./services/ApiChart";
@@ -53,8 +52,7 @@ const Chart = () => {
           </ContainerListChart>
         </ListChartSection>
       </Main>
-      <Footer />
-    </>
+          </>
   );
 };
 

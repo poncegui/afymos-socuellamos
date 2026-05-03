@@ -4,7 +4,6 @@ import {
 } from '../../components/Partners/services/partnersListData';
 
 import { ContentProjects } from '../../components/Content/ContentProjects';
-import Footer from '../../components/Footer/Footer';
 import NavBarViews from '../../components/Header/NavBarViews';
 import PartnertList from '../../components/Partners/PartnerList';
 import { React } from 'react';
@@ -32,8 +31,7 @@ const ProjectsDonaciones = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 export default ProjectsDonaciones;

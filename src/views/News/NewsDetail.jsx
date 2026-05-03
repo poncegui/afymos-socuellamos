@@ -5,7 +5,6 @@ import { sampleNews } from "../../components/News/newsData";
 import styled from "styled-components";
 import NewsArticle from "../../components/News/NewsArticle";
 import NavBarViews from "../../components/Header/NavBarViews";
-import Footer from "../../components/Footer/Footer";
 
 const NewsDetail = () => {
   // We'll look up item by slug-ish id in the route param 'slug'
@@ -20,8 +19,7 @@ const NewsDetail = () => {
       <Page>
         <NewsArticle item={item} />
       </Page>
-      <Footer />
-    </>
+          </>
   );
 };
 

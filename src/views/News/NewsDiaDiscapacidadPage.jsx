@@ -2,7 +2,6 @@ import React from "react";
 import NavBarViews from "../../components/Header/NavBarViews";
 import ScrollToTop from "../../components/ScrollToUp";
 import TitleSection from "../../components/TitleSection";
-import Footer from "../../components/Footer/Footer";
 import NewsArticle from "../../components/News/NewsArticle";
 import { sampleNews } from "../../components/News/newsData";
 
@@ -16,8 +15,7 @@ const NewsDiaDiscapacidadPage = () => {
       <TitleSection title={item ? item.title : "Día de la Discapacidad"} size />
       {item ? <NewsArticle item={item} /> : <p>Noticia no encontrada</p>}
 
-      <Footer />
-    </>
+          </>
   );
 };
 

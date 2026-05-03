@@ -11,7 +11,6 @@ import {
 
 import { ContentProjects } from '../../../../components/Content/ContentProjects';
 import FacebookReel from '../../../../components/Video/FacebookReel';
-import Footer from '../../../../components/Footer/Footer';
 import LazyResponsiveImage from '../../../../components/Image/LazyResponsiveImage';
 import { Link } from 'react-router-dom';
 import NavBarViews from '../../../../components/Header/NavBarViews';
@@ -78,8 +77,7 @@ const ProjectsCataVinos = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-      <Footer />
-    </>
+          </>
   );
 };
 
