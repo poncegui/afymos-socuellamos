@@ -4,6 +4,8 @@ import { Container } from '../../../globalStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faDownload } from '@fortawesome/free-solid-svg-icons';
 import DipticoGallery from './DipticoGallery';
+import { typography } from '../../../styles/typography';
+import CTAButton from '../../../components/Button/CTAButton';
 
 const CreaBlock = ({
   topLine,
@@ -37,49 +39,39 @@ const CreaBlock = ({
 
               <Buttons>
                 {href && (
-                  <Primary
+                  <CTAButton
                     href={href}
-                    target={'_blank'}
-                    rel={'noopener noreferrer'}
+                    target="_blank"
+                    variant="primary"
+                    ariaLabel={buttonLabel}
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
-                    aria-label={buttonLabel}
                   >
                     {buttonLabel}{' '}
-                    <FontAwesomeIcon
-                      icon={faArrowRight}
-                      style={{ marginLeft: 8 }}
-                    />
-                  </Primary>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </CTAButton>
                 )}
 
                 {gallery && gallery.length > 0 && (
-                  <Secondary
-                    as="button"
-                    type="button"
+                  <CTAButton
+                    variant="outline"
                     onClick={() => setShowGallery(true)}
-                    aria-label="Ver díptico"
+                    ariaLabel="Ver díptico"
                   >
-                    <FontAwesomeIcon
-                      icon={faDownload}
-                      style={{ marginRight: 8 }}
-                    />
+                    <FontAwesomeIcon icon={faDownload} />
                     Ver díptico
-                  </Secondary>
+                  </CTAButton>
                 )}
 
                 {downloadHref && (
-                  <Secondary
+                  <CTAButton
                     href={downloadHref}
-                    download
-                    aria-label={downloadLabel}
+                    variant="outline"
+                    ariaLabel={downloadLabel}
                   >
-                    <FontAwesomeIcon
-                      icon={faDownload}
-                      style={{ marginRight: 8 }}
-                    />
+                    <FontAwesomeIcon icon={faDownload} />
                     {downloadLabel}
-                  </Secondary>
+                  </CTAButton>
                 )}
               </Buttons>
 
@@ -161,29 +153,21 @@ const TopLine = styled.div`
 `;
 
 const Heading = styled.h2`
-  font-size: calc(2.6rem * var(--fs, 1));
-  color: #071c2f;
+  font-size: ${typography.fontSize.h2};
+  font-weight: ${typography.fontWeight.bold};
+  line-height: ${typography.lineHeight.snug};
+  color: ${typography.color.primary};
   margin: 0 0 1.25rem 0;
-  line-height: 1.12;
-
-  @media (max-width: 768px) {
-    font-size: calc(2rem * var(--fs, 1));
-  }
 `;
 
 const Description = styled.p`
-  font-size: calc(1.28rem * var(--fs, 1));
-  line-height: 1.95;
-  color: #374151;
+  font-size: ${typography.fontSize.bodyLarge};
+  font-weight: ${typography.fontWeight.regular};
+  line-height: ${typography.lineHeight.relaxed};
+  color: ${typography.color.secondary};
   white-space: pre-wrap;
   margin-bottom: 1.75rem;
   text-align: center;
-  font-weight: 600;
-
-  @media (max-width: 768px) {
-    font-size: calc(1.05rem * var(--fs, 1));
-    line-height: 1.6;
-  }
 `;
 
 const Buttons = styled.div`
@@ -192,42 +176,6 @@ const Buttons = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0.5rem;
-`;
-
-const Primary = styled.a`
-  display: inline-flex;
-  align-items: center;
-  background: #0b5d79;
-  color: #fff;
-  padding: 0.9rem 1.2rem;
-  font-size: calc(1.05rem * var(--fs, 1));
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(11, 93, 121, 0.18);
-  }
-`;
-
-const Secondary = styled.a`
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: transparent;
-  color: #0b5d79;
-  padding: 0.7rem 1rem;
-  font-size: calc(1rem * var(--fs, 1));
-  border-radius: 10px;
-  border: 2px solid #0b5d79;
-  text-decoration: none;
-  font-weight: 700;
-
-  &:hover {
-    background: rgba(11, 93, 121, 0.06);
-  }
 `;
 
 const ImageWrap = styled.div`

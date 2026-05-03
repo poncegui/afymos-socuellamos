@@ -45,23 +45,26 @@ const StyledButton = styled.button`
   border: 2px solid transparent;
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 
-  /* Tamaño del botón */
+  /* Tamaño del botón - WCAG 2.1 AA requiere mínimo 48x48px de área táctil */
   ${({ $size }) => {
     switch ($size) {
       case 'small':
         return `
-          padding: 8px 16px;
+          min-height: 48px;
+          padding: 12px 20px;
           font-size: 0.875rem;
         `;
       case 'large':
         return `
-          padding: 14px 28px;
+          min-height: 56px;
+          padding: 16px 32px;
           font-size: 1.125rem;
         `;
       case 'medium':
       default:
         return `
-          padding: 10px 20px;
+          min-height: 48px;
+          padding: 12px 24px;
           font-size: 1rem;
         `;
     }

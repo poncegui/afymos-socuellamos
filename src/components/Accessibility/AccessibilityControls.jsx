@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 
 const STORAGE_KEY = 'afymos_fontScale';
+
+// Generador de IDs únicos para accesibilidad
+let idCounter = 0;
+const generateUniqueId = (prefix) => {
+  idCounter += 1;
+  return `${prefix}-${idCounter}`;
+};
 
 const AccessibilityControls = ({
   text = '',
@@ -11,6 +18,12 @@ const AccessibilityControls = ({
   max = 2,
   inverse = false,
 }) => {
+  // Generar IDs únicos para esta instancia del componente
+  const uniqueIds = useMemo(() => ({
+    fontLabel: generateUniqueId('font-label'),
+    fontHelp: generateUniqueId('font-scale-help'),
+  }), []);
+
   const [scale, setScale] = useState(() => {
     try {
       const v = localStorage.getItem(STORAGE_KEY);
@@ -82,18 +95,18 @@ const AccessibilityControls = ({
   return (
     <Container role="region" aria-label="Controles de accesibilidad">
       <ControlsGroup>
-        <Label $inverse={inverse} id="font-label">
+        <Label $inverse={inverse} id={uniqueIds.fontLabel}>
           Tamaño de fuente:
         </Label>
         <ButtonGroup
           role="group"
-          aria-labelledby="font-label"
+          aria-labelledby={uniqueIds.fontLabel}
         >
           <ControlBtn
             onClick={decrease}
             disabled={scale <= min}
             aria-label="Reducir tamaño de letra"
-            aria-describedby="font-scale-help"
+            aria-describedby={uniqueIds.fontHelp}
             $inverse={inverse}
           >
             <FontAwesomeIcon icon={faMinus} aria-hidden="true" /> A
@@ -109,13 +122,13 @@ const AccessibilityControls = ({
             onClick={increase}
             disabled={scale >= max}
             aria-label="Aumentar tamaño de letra"
-            aria-describedby="font-scale-help"
+            aria-describedby={uniqueIds.fontHelp}
             $inverse={inverse}
           >
             <FontAwesomeIcon icon={faPlus} aria-hidden="true" /> A
           </ControlBtn>
         </ButtonGroup>
-        <span id="font-scale-help" className="sr-only">
+        <span id={uniqueIds.fontHelp} className="sr-only">
           Escala actual: {Math.round(scale * 100)}%
         </span>
       </ControlsGroup>

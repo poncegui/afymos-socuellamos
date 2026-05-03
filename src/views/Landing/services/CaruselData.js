@@ -14,6 +14,7 @@ export const items = [
   {
     id: 11,
     image: camiseta,
+    imageWebp: "/images/carusel/camiseta.webp",
     alt: "Camiseta Ponte en mis zapatos",
     title: "¡Encarga ya tu camiseta!",
     description:

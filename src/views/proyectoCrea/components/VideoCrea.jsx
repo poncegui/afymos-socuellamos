@@ -4,7 +4,7 @@ import VideoCreaInfo from './VideoCreaInfo';
 
 const DemoVideo = () => {
   return (
-    <Demo id="demo">
+    <Demo>
       <DemoContainer>
         <DemoLeft>
           <MainTitle>Proyecto NUEVO CREA — Formación y Empleo</MainTitle>

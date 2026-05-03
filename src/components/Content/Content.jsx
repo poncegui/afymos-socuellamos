@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import AccessibilityControls from '../Accessibility/AccessibilityControls';
+import { typography } from '../../styles/typography';
+import CTAButton from '../Button/CTAButton';
 
 const STORAGE_KEY = 'afymos_fontScale';
 
@@ -70,23 +71,15 @@ export const Content = ({
 
           {description && <Body $inverse={inverse}>{description}</Body>}
 
-          {href &&
-            buttonLabel &&
-            (isExternal ? (
-              <CtaLink
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={buttonLabel}
-                $inverse={inverse}
-              >
-                {buttonLabel}
-              </CtaLink>
-            ) : (
-              <CtaRouter to={href} aria-label={buttonLabel} $inverse={inverse}>
-                {buttonLabel}
-              </CtaRouter>
-            ))}
+          {href && buttonLabel && (
+            <CTAButton
+              {...(isExternal ? { href, target: "_blank" } : { to: href })}
+              variant={inverse ? "primary" : "secondary"}
+              ariaLabel={buttonLabel}
+            >
+              {buttonLabel}
+            </CTAButton>
+          )}
 
           <AccessibilityControls text={description} inverse={inverse} />
         </TextCol>
@@ -162,62 +155,19 @@ const Label = styled.span`
 `;
 
 const Headline = styled.h2`
-  font-size: calc(clamp(1.4rem, 3vw, 2rem) * var(--fs, 1));
-  font-weight: 700;
-  line-height: 1.2;
-  color: ${({ $inverse }) => ($inverse ? '#071c2f' : '#ffffff')};
+  font-size: ${typography.fontSize.h2};
+  font-weight: ${typography.fontWeight.bold};
+  line-height: ${typography.lineHeight.snug};
+  color: ${({ $inverse }) => ($inverse ? typography.color.primary : typography.color.inverse.primary)};
   margin: 0;
 `;
 
 const Body = styled.p`
-  font-size: calc(0.975rem * var(--fs, 1));
-  line-height: 1.8;
-  /* Mejorado de #444 a #333 para cumplir WCAG AA (contraste 4.5:1) */
-  color: ${({ $inverse }) => ($inverse ? '#333' : 'rgba(255,255,255,0.95)')};
+  font-size: ${typography.fontSize.body};
+  font-weight: ${typography.fontWeight.regular};
+  line-height: ${typography.lineHeight.relaxed};
+  color: ${({ $inverse }) => ($inverse ? typography.color.secondary : typography.color.inverse.secondary)};
   margin: 0;
-`;
-
-const ctaBase = `
-  display: inline-flex;
-  align-items: center;
-  align-self: flex-start;
-  padding: 0.65rem 1.5rem;
-  border-radius: 999px;
-  font-size: calc(0.9rem * var(--fs, 1));
-  font-weight: 700;
-  text-decoration: none;
-  transition: background 0.2s ease, transform 0.15s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
-
-  &:focus-visible {
-    outline: 3px solid #ffbf47;
-    outline-offset: 3px;
-  }
-`;
-
-const CtaLink = styled.a`
-  ${ctaBase}
-  background: ${({ $inverse }) => ($inverse ? '#224464' : '#c6b1c9')};
-  color: ${({ $inverse }) => ($inverse ? '#fff' : '#071c2f')};
-
-  &:hover {
-    background: ${({ $inverse }) => ($inverse ? '#071c2f' : '#d9c8dc')};
-    transform: translateY(-2px);
-  }
-`;
-
-const CtaRouter = styled(Link)`
-  ${ctaBase}
-  background: ${({ $inverse }) => ($inverse ? '#224464' : '#c6b1c9')};
-  color: ${({ $inverse }) => ($inverse ? '#fff' : '#071c2f')};
-
-  &:hover {
-    background: ${({ $inverse }) => ($inverse ? '#071c2f' : '#d9c8dc')};
-    transform: translateY(-2px);
-  }
 `;
 
 const ImgCol = styled.div`

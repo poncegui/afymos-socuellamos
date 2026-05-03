@@ -24,9 +24,9 @@ const Chart = () => {
       </picture>
       <Main>
         <ListChartSection aria-label="Listado de miembros de la Junta Directiva">
-          <ContainerListChart role="list">
+          <ContainerListChart>
             {junta.map((person, index) => (
-              <ChartItem key={person.id} index={index} role="listitem">
+              <ChartItem key={person.id} index={index}>
                 <figure>
                   <picture>
                     <source srcSet={person.imgWebp} type="image/webp" />
@@ -82,10 +82,13 @@ export const ListChartSection = styled.section`
   }
 `;
 
-export const ContainerListChart = styled.div`
+export const ContainerListChart = styled.ul`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
@@ -97,10 +100,11 @@ export const ContainerListChart = styled.div`
   }
 `;
 
-const ChartItem = styled.div`
+const ChartItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
 `;
 
 const ChartItemTitle = styled.h3`

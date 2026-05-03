@@ -14,6 +14,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.11.0",
+    "react-is": "^19.2.5",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
@@ -28,7 +29,9 @@
   "scripts": {
     "convert:webp": "node convert-webp.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && node inline-critical-css.js",
+    "build:original": "react-scripts build",
+    "optimize:images": "node optimize-images.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "githubpages": "rm -rf build && rm -rf docs && npm run build && mv build docs && git add docs/* && git commit -m \"Publish in GitHub Pages\" && git push"
@@ -58,6 +61,7 @@
     "lint-staged": "^13.2.0",
     "postcss-cli": "^10.1.0",
     "prettier": "2.8.4",
+    "sharp": "^0.34.5",
     "typescript": "^4.9.5",
     "webp-converter": "^2.3.3"
   },

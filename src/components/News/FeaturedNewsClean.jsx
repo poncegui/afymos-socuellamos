@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import SectionLabel from "../SectionLabel";
+import { typography } from "../../styles/typography";
+import CTAButton from "../Button/CTAButton";
 
 const STORAGE_KEY = "afymos_fontScale";
 
@@ -170,9 +172,13 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
               </PublishDate>
             )}
             {item.href && (
-              <ReadMore to={item.href} aria-label={`Leer el artículo completo: ${item.title}`}>
+              <CTAButton
+                to={item.href}
+                variant="primary"
+                ariaLabel={`Leer el artículo completo: ${item.title}`}
+              >
                 Leer artículo completo →
-              </ReadMore>
+              </CTAButton>
             )}
           </Footer>
         </ContentCol>
@@ -312,19 +318,19 @@ const Tag = styled.span`
 `;
 
 const Title = styled.h2`
-  font-size: calc(clamp(1.3rem, 2.8vw, 1.85rem) * var(--fs, 1));
-  font-weight: 800;
-  line-height: 1.2;
-  color: #071c2f;
+  font-size: ${typography.fontSize.h2};
+  font-weight: ${typography.fontWeight.bold};
+  line-height: ${typography.lineHeight.snug};
+  color: ${typography.color.primary};
   margin: 0;
 `;
 
 const Excerpt = styled.div`
-  color: #555;
-  line-height: 1.8;
+  color: ${typography.color.tertiary};
+  line-height: ${typography.lineHeight.relaxed};
 
   p {
-    font-size: calc(0.95rem * var(--fs, 1));
+    font-size: ${typography.fontSize.body};
     margin: 0 0 0.6rem 0;
 
     &:last-child {
@@ -346,35 +352,6 @@ const Footer = styled.div`
 const PublishDate = styled.time`
   font-size: calc(0.82rem * var(--fs, 1));
   color: #6b6f76;
-`;
-
-const ReadMore = styled(Link)`
-  display: inline-flex;
-  align-items: center;
-  font-size: calc(0.9rem * var(--fs, 1));
-  font-weight: 700;
-  color: #fff;
-  background: #224464;
-  text-decoration: none;
-  padding: 0.55rem 1.25rem;
-  border-radius: 999px;
-  transition: all 0.2s, transform 0.15s;
-
-  &:hover {
-    background: #c6b1c9;
-    color: #071c2f;
-    transform: translateX(2px);
-    box-shadow: 0 2px 8px rgba(198, 177, 201, 0.4);
-  }
-
-  &:focus-visible {
-    outline: 3px solid #ffbf47;
-    outline-offset: 3px;
-  }
-
-  &:active {
-    transform: translateX(0);
-  }
 `;
 
 const AccessibilityBar = styled.div`

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const DemoVideo = () => {
   return (
-    <Demo id="demo">
+    <Demo>
       <DemoContainer>
         <DemoLeft>
           <p>Centro de día Afymos</p>

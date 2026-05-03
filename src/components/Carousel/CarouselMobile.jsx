@@ -16,6 +16,7 @@ const CarouselMobile = ({ items }) => (
             src={item.image}
             webp={item.imageWebp}
             alt={item.alt || item.title}
+            responsive={true}
           />
         </CardImageWrap>
         <CardBody>

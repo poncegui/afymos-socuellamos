@@ -26,19 +26,50 @@ const StyledCounter = styled.div`
 
 const VisitCounter = () => {
   const [visitas, setVisitas] = useState(null);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch("https://api.countapi.xyz/hit/afymos.org/home")
-      .then((res) => res.json())
-      .then((data) => setVisitas(data.value))
-      .catch((err) => console.error("Error fetching visit count:", err));
+    // Timeout para evitar bloqueos largos
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+    fetch("https://api.countapi.xyz/hit/afymos.org/home", {
+      signal: controller.signal,
+    })
+      .then((res) => {
+        clearTimeout(timeoutId);
+        if (!res.ok) throw new Error('Network response was not ok');
+        return res.json();
+      })
+      .then((data) => {
+        if (data && typeof data.value === 'number') {
+          setVisitas(data.value);
+        }
+      })
+      .catch((err) => {
+        clearTimeout(timeoutId);
+        // Silenciar errores de red para servicios externos opcionales
+        // Solo registrar en desarrollo
+        if (process.env.NODE_ENV === 'development') {
+          console.warn("Visit counter unavailable:", err.message);
+        }
+        setError(true);
+      });
+
+    return () => {
+      clearTimeout(timeoutId);
+      controller.abort();
+    };
   }, []);
 
-  return visitas !== null && typeof visitas === "number" ? (
+  // No mostrar nada si hay error o está cargando
+  if (error || visitas === null) return null;
+
+  return (
     <StyledCounter role="status" aria-live="polite">
-      👁️ Visitas: {visitas}
+      👁️ Visitas: {visitas.toLocaleString('es-ES')}
     </StyledCounter>
-  ) : null;
+  );
 };
 
 export default VisitCounter;

@@ -49,10 +49,16 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-  <!-- Preconnect para mejora de rendimiento -->
+  <!-- Preconnect y DNS prefetch para mejora de rendimiento -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
+  <!-- Preload de recursos críticos -->
+  <link rel="preload" href="%PUBLIC_URL%/images/carusel/cata-vinos-400w.webp" as="image" type="image/webp" media="(max-width: 640px)" />
+  <link rel="preload" href="%PUBLIC_URL%/images/carusel/cata-vinos-800w.webp" as="image" type="image/webp" media="(min-width: 641px) and (max-width: 1024px)" />
+  <link rel="preload" href="%PUBLIC_URL%/images/carusel/cata-vinos-1200w.webp" as="image" type="image/webp" media="(min-width: 1025px)" />
 
   <!-- Fonts: preload as styles to avoid render-blocking -->
   <link rel="preload"

@@ -7,7 +7,7 @@ const DemoVideo = () => {
     <>
       <TitleSection title="Semana de la Capacidad" size />
       <section>
-        <Demo id="demo">
+        <Demo>
           <DemoContainer>
             <DemoRight>
               <iframe
@@ -33,7 +33,7 @@ const DemoVideo = () => {
         </Demo>
       </section>
       <section>
-        <Demo id="demo">
+        <Demo>
           <DemoContainer>
             <DemoLeft>
               <iframe

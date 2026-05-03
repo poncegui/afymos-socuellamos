@@ -12,6 +12,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
+import { typography } from '../../styles/typography';
 
 const NewsArticle = ({ item }) => {
   const [modalIndex, setModalIndex] = useState(null);
@@ -351,11 +352,11 @@ const Header = styled.header`
 
 const Title = styled.h1`
   margin: 0;
-  font-size: calc(clamp(1.5rem, 3vw, 2rem) * var(--fs));
-  color: #071c2f;
-  line-height: 1.15;
-  font-weight: 800;
-  letter-spacing: -0.5px;
+  font-size: ${typography.fontSize.h1};
+  font-weight: ${typography.fontWeight.extrabold};
+  line-height: ${typography.lineHeight.tight};
+  letter-spacing: ${typography.letterSpacing.tight};
+  color: ${typography.color.primary};
 `;
 
 const Subtitle = styled.div`
@@ -405,7 +406,9 @@ const Body = styled.article`
 
 const Paragraph = styled.p`
   margin: 0 0 1.5rem 0;
-  color: #444;
+  font-size: ${typography.fontSize.body};
+  line-height: ${typography.lineHeight.relaxed};
+  color: ${typography.color.secondary};
 
   &:last-child {
     margin-bottom: 0;

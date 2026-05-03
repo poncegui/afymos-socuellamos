@@ -60,26 +60,24 @@ const Footer = () => {
           <div className="footer-col">
             <h3>Síguenos</h3>
             <div className="footer-divider" aria-hidden="true" />
-            <div
+            <ul
               className="social-links"
-              role="list"
               aria-label="Enlaces a redes sociales"
             >
               {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Síguenos en ${link.name} (abre en nueva pestaña)`}
-                  title={`${link.name} - Afymos`}
-                  role="listitem"
-                  className="social-link-item"
-                >
-                  {link.icon}
-                </a>
+                <li key={index} className="social-link-item">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Síguenos en ${link.name} (abre en nueva pestaña)`}
+                    title={`${link.name} - Afymos`}
+                  >
+                    {link.icon}
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
 

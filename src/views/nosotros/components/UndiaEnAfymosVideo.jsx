@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const DemoVideo = (wrapReverse) => {
   return (
-    <Demo id="demo">
+    <Demo>
       <DemoContainer wrapReverse={wrapReverse}>
         <DemoRight>
           <iframe

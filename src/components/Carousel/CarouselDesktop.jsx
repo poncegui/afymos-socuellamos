@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import LazyResponsiveImage from "../Image/LazyResponsiveImage";
 import styled from "styled-components";
+import { typography } from "../../styles/typography";
 
 const CarouselDesktop = ({ items }) => {
   const [page, setPage] = useState(0);
@@ -86,6 +87,7 @@ const NewsCard = ({ item }) => (
         src={item.image}
         webp={item.imageWebp}
         alt={item.alt || item.title}
+        responsive={true}
       />
     </CardImageWrap>
     <CardBody>
@@ -173,10 +175,10 @@ const CardBody = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  font-size: calc(0.95rem * var(--fs, 1));
-  font-weight: 700;
-  color: #071c2f;
-  line-height: 1.35;
+  font-size: ${typography.fontSize.body};
+  font-weight: ${typography.fontWeight.bold};
+  line-height: ${typography.lineHeight.snug};
+  color: ${typography.color.primary};
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -185,9 +187,10 @@ const CardTitle = styled.h3`
 `;
 
 const CardDesc = styled.p`
-  font-size: calc(0.85rem * var(--fs, 1));
-  color: #6b6f76;
-  line-height: 1.55;
+  font-size: ${typography.fontSize.bodySmall};
+  font-weight: ${typography.fontWeight.regular};
+  line-height: ${typography.lineHeight.normal};
+  color: ${typography.color.tertiary};
   margin: 0;
   flex: 1;
   display: -webkit-box;
@@ -227,8 +230,11 @@ const Controls = styled.div`
 `;
 
 const NavBtn = styled.button`
-  width: 36px;
-  height: 36px;
+  /* Accessible touch target: minimum 48x48px */
+  min-width: 48px;
+  min-height: 48px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: none;
   background: #fff;
@@ -260,22 +266,39 @@ const NavBtn = styled.button`
 
 const Dots = styled.div`
   display: flex;
-  gap: 7px;
+  gap: 4px;
   align-items: center;
 `;
 
 const Dot = styled.button`
+  /* Visual indicator - keeps the same appearance */
   width: ${({ $active }) => ($active ? "22px" : "8px")};
   height: 8px;
   border-radius: 999px;
   border: none;
-  padding: 0;
   background: ${({ $active }) => ($active ? "#224464" : "#c6b1c9")};
   cursor: pointer;
   transition: width 0.3s ease, background 0.3s ease;
 
+  /* Accessible touch target: minimum 48x48px */
+  padding: 20px 12px;
+
+  /* Ensure button respects padding for click area */
+  position: relative;
+
   &:focus-visible {
     outline: 3px solid #ffbf47;
     outline-offset: 3px;
+  }
+
+  /* Alternative: Use ::before for larger hit area without affecting layout */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 48px;
+    min-height: 48px;
   }
 `;

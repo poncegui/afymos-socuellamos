@@ -11,27 +11,50 @@ const VisitCounter = ({ showLabel = true, namespace = 'afymos', key = 'visits' }
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    const controller = new AbortController();
+    let timeoutId;
+
     // Incrementar y obtener el contador
     const fetchCount = async () => {
       try {
+        // Timeout de 5 segundos para evitar bloqueos largos
+        timeoutId = setTimeout(() => controller.abort(), 5000);
+
         // API pública de CountAPI - incrementa automáticamente
         const response = await fetch(
-          `https://api.countapi.xyz/hit/${namespace}/${key}`
+          `https://api.countapi.xyz/hit/${namespace}/${key}`,
+          { signal: controller.signal }
         );
+
+        clearTimeout(timeoutId);
 
         if (!response.ok) throw new Error('Failed to fetch count');
 
         const data = await response.json();
-        setCount(data.value);
+
+        if (data && typeof data.value === 'number') {
+          setCount(data.value);
+        }
         setLoading(false);
       } catch (err) {
-        console.error('Error fetching visit count:', err);
+        clearTimeout(timeoutId);
+
+        // Solo mostrar en desarrollo
+        if (process.env.NODE_ENV === 'development') {
+          console.warn('Visit counter unavailable:', err.message);
+        }
+
         setError(true);
         setLoading(false);
       }
     };
 
     fetchCount();
+
+    return () => {
+      clearTimeout(timeoutId);
+      controller.abort();
+    };
   }, [namespace, key]);
 
   // No mostrar nada mientras carga o si hay error
