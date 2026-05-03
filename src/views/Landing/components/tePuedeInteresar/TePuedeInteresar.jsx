@@ -1,11 +1,11 @@
-import { linksData, socialIcons } from "./services/SocialData";
+import { linksData, socialIcons } from './services/SocialData';
 
-import { Link as ButtonNav } from "react-router-dom";
-import { Link as Contact } from "react-scroll";
-import Informacion from "./Informacion";
-import React from "react";
-import logo from "../../components/assets/logos/logo-afymos.png";
-import styled from "styled-components";
+import { Link as ButtonNav } from 'react-router-dom';
+import { Link as Contact } from 'react-scroll';
+import Informacion from './Informacion';
+import React from 'react';
+import logo from '../../components/assets/logos/logo-afymos.png';
+import styled from 'styled-components';
 
 const IntroductionView = () => {
   return (
@@ -22,7 +22,7 @@ const IntroductionView = () => {
           </HeaderTitle>
 
           <ButtonContainer role="navigation" aria-label="Navegación principal">
-            {linksData.map((data) => (
+            {linksData.map(data => (
               <StyledButton
                 key={data.key}
                 to={data.url}

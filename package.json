@@ -28,6 +28,9 @@
   },
   "scripts": {
     "convert:webp": "node convert-webp.js",
+    "convert:all-webp": "node convert-all-to-webp.js",
+    "find:unused-images": "node find-unused-images.js",
+    "clean:unused-images": "node delete-unused-images.js",
     "start": "react-scripts start",
     "build": "react-scripts build && node inline-critical-css.js",
     "build:original": "react-scripts build",

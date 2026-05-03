@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { Link } from "react-router-dom";
-import TitleSection from "../../../components/TitleSection";
-import { aboutUsData } from "./services/pictoButtonsData";
-import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import TitleSection from '../../../components/TitleSection';
+import { aboutUsData } from './services/pictoButtonsData';
+import styled from 'styled-components';
 
 const SectionServices = () => {
   const [data] = useState(aboutUsData);
@@ -13,9 +13,13 @@ const SectionServices = () => {
       <section>
         <TitleSection title="Sobre Nosotros" marginBottom />
         <IconsContainer>
-          {data.map((item) => (
+          {data.map(item => (
             <Icons key={item.id} value={item.name}>
-              <Link to={item.url} aria-label="ir a la ruta selecionada" title={item.browserTitle}>
+              <Link
+                to={item.url}
+                aria-label="ir a la ruta selecionada"
+                title={item.browserTitle}
+              >
                 <img loading="lazy" src={item.img} alt={item.name} />
                 <h3>{item.name}</h3>
               </Link>

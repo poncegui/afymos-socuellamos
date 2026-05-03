@@ -4,9 +4,9 @@ import carlos2 from "../../views/Landing/assets/images-noticias/carlos-2.jpg";
 import carlos3 from "../../views/Landing/assets/images-noticias/carlos-3.jpg";
 import carlos4 from "../../views/Landing/assets/images-noticias/carlos-4.jpg";
 import carlosMp4 from "../../views/Landing/assets/images-noticias/carlos.mp4";
-import cartelInclusionLaboral from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel.png";
-import cartelCurso from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel-curso.png";
-import inauguracion1 from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/inauguracion-1.jpg";
+import cartelInclusionLaboral from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel.webp";
+import cartelCurso from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel-curso.webp";
+import inauguracion1 from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/inauguracion-1.webp";
 
 export const sampleNews = [
   {

@@ -43,18 +43,8 @@ export const Content = ({
     return () => window.removeEventListener('storage', onStorage);
   }, [scale]);
 
-  const changeScale = next => {
-    try {
-      localStorage.setItem(STORAGE_KEY, String(next));
-      document.documentElement.style.setProperty('--fs', String(next));
-      setScale(next);
-    } catch {}
-  };
-
   /* Determina si href es ruta interna o URL externa */
-  const isExternal =
-    typeof href === 'string' &&
-    (href.startsWith('http'));
+  const isExternal = typeof href === 'string' && href.startsWith('http');
 
   return (
     <Wrapper $inverse={inverse}>
@@ -73,8 +63,8 @@ export const Content = ({
 
           {href && buttonLabel && (
             <CTAButton
-              {...(isExternal ? { href, target: "_blank" } : { to: href })}
-              variant={inverse ? "primary" : "secondary"}
+              {...(isExternal ? { href, target: '_blank' } : { to: href })}
+              variant={inverse ? 'primary' : 'secondary'}
               ariaLabel={buttonLabel}
             >
               {buttonLabel}
@@ -158,7 +148,8 @@ const Headline = styled.h2`
   font-size: ${typography.fontSize.h2};
   font-weight: ${typography.fontWeight.bold};
   line-height: ${typography.lineHeight.snug};
-  color: ${({ $inverse }) => ($inverse ? typography.color.primary : typography.color.inverse.primary)};
+  color: ${({ $inverse }) =>
+    $inverse ? typography.color.primary : typography.color.inverse.primary};
   margin: 0;
 `;
 
@@ -166,7 +157,8 @@ const Body = styled.p`
   font-size: ${typography.fontSize.body};
   font-weight: ${typography.fontWeight.regular};
   line-height: ${typography.lineHeight.relaxed};
-  color: ${({ $inverse }) => ($inverse ? typography.color.secondary : typography.color.inverse.secondary)};
+  color: ${({ $inverse }) =>
+    $inverse ? typography.color.secondary : typography.color.inverse.secondary};
   margin: 0;
 `;
 

@@ -60,10 +60,7 @@ const Footer = () => {
           <div className="footer-col">
             <h3>Síguenos</h3>
             <div className="footer-divider" aria-hidden="true" />
-            <ul
-              className="social-links"
-              aria-label="Enlaces a redes sociales"
-            >
+            <ul className="social-links" aria-label="Enlaces a redes sociales">
               {socialLinks.map((link, index) => (
                 <li key={index} className="social-link-item">
                   <a

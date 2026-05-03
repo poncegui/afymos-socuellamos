@@ -1,10 +1,10 @@
-import { faPlus, faSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faSquare } from '@fortawesome/free-solid-svg-icons';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
-import React from "react";
-import { aboutUsData } from "./services/cardsAboutUsData";
-import styled from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import React from 'react';
+import { aboutUsData } from './services/cardsAboutUsData';
+import styled from 'styled-components';
 
 const SectionContainer = styled.section`
   width: 100%;
@@ -48,7 +48,7 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.color};
+  background-color: ${props => props.color};
   position: relative;
 
   @media (max-width: 900px) {
@@ -57,12 +57,12 @@ const Card = styled.div`
 `;
 
 const TitleCard = styled.h3`
-  color: ${(props) => {
+  color: ${props => {
     // Use appropriate text color based on background for WCAG AA compliance
     const bgColor = props.$bgColor || props.color;
-    if (bgColor === "#224464") return "#fff"; // Dark blue background → white text
+    if (bgColor === '#224464') return '#fff'; // Dark blue background → white text
     // Green and light backgrounds need dark text for proper contrast
-    return "#000"; // Black text for best contrast on green/light backgrounds
+    return '#000'; // Black text for best contrast on green/light backgrounds
   }};
   font-size: calc(16px * var(--fs, 1));
   text-align: center;
@@ -147,8 +147,8 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 `;
 
 const CircleIcon = styled(FontAwesomeIcon)`
-  font-size: calc(${(props) => props.size}px * var(--fs, 1));
-  color: ${(props) => props.color};
+  font-size: calc(${props => props.size}px * var(--fs, 1));
+  color: ${props => props.color};
   margin-right: 10px;
 `;
 
@@ -162,65 +162,70 @@ const CardsAboutUs = () => {
         </Title>
         <CardsContainer>
           {aboutUsData.map((card, index) => {
-            const bgColor = index === 0 ? "#81b71a" : card.color;
+            const bgColor = index === 0 ? '#81b71a' : card.color;
             return (
               <Card key={index} color={bgColor}>
                 <TitleCard $bgColor={bgColor} color={card.color}>
                   {card.title}
                 </TitleCard>
-              <Image
-                src={card.image}
-                alt={card.alt}
-                loading="lazy"
-                width="60"
-                height="60"
-              />
-              {(() => {
-                // Determine if this should be treated as an internal route or an external/file link.
-                const isString = typeof card.url === "string";
-                // Consider common document/image extensions and CRA's /static/ path as external assets.
-                const isAssetOrFile =
-                  isString &&
-                  (/\.(pdf|docx?|xlsx?|zip|png|jpe?g|webp|svg)$/i.test(
-                    card.url
-                  ) ||
-                    card.url.includes("/static/"));
-                const isInternalRoute =
-                  isString && card.url.startsWith("/") && !isAssetOrFile;
+                <Image
+                  src={card.image}
+                  alt={card.alt}
+                  loading="lazy"
+                  width="60"
+                  height="60"
+                />
+                {(() => {
+                  // Determine if this should be treated as an internal route or an external/file link.
+                  const isString = typeof card.url === 'string';
+                  // Consider common document/image extensions and CRA's /static/ path as external assets.
+                  const isAssetOrFile =
+                    isString &&
+                    (/\.(pdf|docx?|xlsx?|zip|png|jpe?g|webp|svg)$/i.test(
+                      card.url,
+                    ) ||
+                      card.url.includes('/static/'));
+                  const isInternalRoute =
+                    isString && card.url.startsWith('/') && !isAssetOrFile;
 
-                if (isInternalRoute) {
+                  if (isInternalRoute) {
+                    return (
+                      <LinkButton
+                        to={card.url}
+                        aria-label={card.ariaLabel}
+                        title={card.browserTitle}
+                      >
+                        <StyledFontAwesomeIcon
+                          icon={faPlus}
+                          style={{
+                            color:
+                              card.color === '#224464' ? '#c6b1c9' : '#071c2f',
+                          }}
+                        />
+                      </LinkButton>
+                    );
+                  }
+
+                  // External link or asset file → open in new tab
                   return (
-                    <LinkButton to={card.url} aria-label={card.ariaLabel} title={card.browserTitle}>
+                    <ExternalButton
+                      href={card.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={card.ariaLabel}
+                      title={card.browserTitle}
+                    >
                       <StyledFontAwesomeIcon
                         icon={faPlus}
                         style={{
                           color:
-                            card.color === "#224464" ? "#c6b1c9" : "#071c2f",
+                            card.color === '#224464' ? '#c6b1c9' : '#071c2f',
                         }}
                       />
-                    </LinkButton>
+                    </ExternalButton>
                   );
-                }
-
-                // External link or asset file → open in new tab
-                return (
-                  <ExternalButton
-                    href={card.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={card.ariaLabel}
-                    title={card.browserTitle}
-                  >
-                    <StyledFontAwesomeIcon
-                      icon={faPlus}
-                      style={{
-                        color: card.color === "#224464" ? "#c6b1c9" : "#071c2f",
-                      }}
-                    />
-                  </ExternalButton>
-                );
-              })()}
-            </Card>
+                })()}
+              </Card>
             );
           })}
         </CardsContainer>
