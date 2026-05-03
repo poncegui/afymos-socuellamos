@@ -145,7 +145,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* Brand title: Montserrat Alternates para el logotipo Afymos */
   .brand-title {
-    font-family: 'Montserrat Alternates', 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', 'Montserrat Alternates Fallback', sans-serif;
     font-weight: 300;
     letter-spacing: 2px;
   }

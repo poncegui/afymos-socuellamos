@@ -8,9 +8,19 @@ import styled from 'styled-components';
 
 const SeccionContainer = styled.section`
   width: 100%;
+  max-width: 100%;
   padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   background: #ffffff;
   padding-bottom: 3rem;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 `;
 
 const Titulo = styled.h2`
@@ -47,42 +57,44 @@ const CircleIcon = styled.div`
 `;
 
 const ContenedorCards = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
   margin-top: 20px;
-  align-items: start;
-  flex-wrap: nowrap;
-  justify-content: center;
   width: 100%;
-  overflow-x: auto;
+  max-width: 100%;
+  box-sizing: border-box;
 
   @media (max-width: 1024px) {
-    flex-wrap: nowrap;
-    gap: 20px;
-    width: 100%;
-    margin: 3% auto 0 auto;
-    overflow-x: auto;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
   }
 
   @media (max-width: 600px) {
-    gap: 16px;
-    overflow-x: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 `;
 
 const Card = styled.div`
-  flex: 0 1 calc(33.333% - 16px);
-  max-width: 260px;
-  height: 400px;
-  margin-bottom: 16px;
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: ${props => props.color};
-  margin-right: 16px;
   position: relative;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  overflow: hidden;
 
   &:hover {
     transform: translateY(-4px);
@@ -90,17 +102,13 @@ const Card = styled.div`
   }
 
   @media (max-width: 1024px) {
-    flex: 1;
-    max-width: 100%;
-    height: 350px;
-    margin-right: 0;
+    height: 300px;
+    padding: 16px;
   }
 
   @media (max-width: 600px) {
-    height: auto;
-    min-height: 320px;
-    padding: 18px;
-    margin-bottom: 0;
+    height: 250px;
+    padding: 12px;
   }
 `;
 
@@ -129,8 +137,15 @@ const TituloCard = styled.h3`
 
 const Image = styled.img`
   width: 100px;
-  max-height: 70%;
+  max-width: 100%;
+  max-height: 60%;
   margin-bottom: 10px;
+  object-fit: contain;
+
+  @media (max-width: 600px) {
+    width: 70px;
+    max-height: 50%;
+  }
 `;
 
 const LinkButton = styled.a`

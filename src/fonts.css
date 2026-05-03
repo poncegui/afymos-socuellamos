@@ -1,0 +1,64 @@
+/**
+ * Optimización de fuentes con anulaciones de métricas
+ * Reduce los cambios de diseño (layout shift) cuando se cargan las fuentes de Google
+ */
+
+/* Montserrat Alternates fallback */
+@font-face {
+  font-family: 'Montserrat Alternates Fallback';
+  src: local('Arial');
+  size-adjust: 104.5%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Montserrat fallback */
+@font-face {
+  font-family: 'Montserrat Fallback';
+  src: local('Arial');
+  size-adjust: 105%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+/* Open Sans fallback */
+@font-face {
+  font-family: 'Open Sans Fallback';
+  src: local('Arial');
+  size-adjust: 107%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
+  font-weight: 400 600;
+  font-style: normal;
+}
+
+/* Merriweather fallback */
+@font-face {
+  font-family: 'Merriweather Fallback';
+  src: local('Georgia');
+  size-adjust: 95%;
+  ascent-override: 88%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Playfair Display fallback */
+@font-face {
+  font-family: 'Playfair Display Fallback';
+  src: local('Georgia');
+  size-adjust: 97%;
+  ascent-override: 90%;
+  descent-override: 28%;
+  line-gap-override: 0%;
+  font-weight: 400;
+  font-style: normal;
+}

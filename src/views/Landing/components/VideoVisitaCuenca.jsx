@@ -1,5 +1,7 @@
 import { memo, useEffect, useRef, useState } from 'react';
 import portadaVideo from '../assets/portada-cuenca.png';
+import portadaVideo400 from '../assets/portada-cuenca-400w.webp';
+import portadaVideo600 from '../assets/portada-cuenca-600w.webp';
 import styled from 'styled-components';
 import AccessibilityControls from '../../../components/Accessibility/AccessibilityControls';
 import SectionLabel from '../../../components/SectionLabel';
@@ -110,11 +112,18 @@ const VideoVisitaCuenca = () => {
                   onClick={handlePlay}
                   onKeyDown={e => e.key === 'Enter' && handlePlay()}
                 >
-                  <img
-                    src={portadaVideo}
-                    alt="Portada del vídeo de Cuenca"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcSet={`${portadaVideo400} 400w, ${portadaVideo600} 600w`}
+                      sizes="(max-width: 480px) 280px, 400px"
+                      type="image/webp"
+                    />
+                    <img
+                      src={portadaVideo}
+                      alt="Portada del vídeo de Cuenca"
+                      loading="lazy"
+                    />
+                  </picture>
                   <PlayBtn aria-hidden="true">
                     <PlayIcon />
                   </PlayBtn>
