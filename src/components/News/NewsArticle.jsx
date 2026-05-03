@@ -48,6 +48,7 @@ const NewsArticle = ({ item }) => {
         <HeroImage>
           <LazyResponsiveImage
             src={item.image || placeholderImg}
+            webp={item.imageWebp}
             alt={item.alt || item.title}
             width="1400"
             height="700"
@@ -149,6 +150,7 @@ const NewsArticle = ({ item }) => {
                   <ImageContainer>
                     <LazyResponsiveImage
                       src={img || placeholderImg}
+                      webp={item.imagesWebp && item.imagesWebp[i]}
                       alt={`${item.title} - ${i + 1}`}
                       width="400"
                       height="250"
@@ -181,6 +183,7 @@ const NewsArticle = ({ item }) => {
                 <ModalImg>
                   <LazyResponsiveImage
                     src={item.images[modalIndex]}
+                    webp={item.imagesWebp && item.imagesWebp[modalIndex]}
                     alt={`${item.title} - ${modalIndex + 1}`}
                     width="1200"
                     height="800"

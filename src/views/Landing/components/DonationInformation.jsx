@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import graph from '../assets/images-dontationInformation/grafico-2-removebg-preview.png';
-import money from '../assets/images-dontationInformation/dinero-removebg-preview.png';
-import percentage from '../assets/images-dontationInformation/80-removebg-preview.png';
+import graph from '../assets/images-dontationInformation/grafico-2-removebg-preview.webp';
+import money from '../assets/images-dontationInformation/dinero-removebg-preview.webp';
+import percentage from '../assets/images-dontationInformation/80-removebg-preview.webp';
 import styled from 'styled-components';
 
 const DonationInformation = () => {

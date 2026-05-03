@@ -1,12 +1,20 @@
 import heroImg from "../../views/Landing/assets/images-noticias/news.png";
+import heroImgWebp from "../../views/Landing/assets/images-noticias/news.webp";
 import carlos1 from "../../views/Landing/assets/images-noticias/carlos-1.jpg";
+import carlos1Webp from "../../views/Landing/assets/images-noticias/carlos-1.webp";
 import carlos2 from "../../views/Landing/assets/images-noticias/carlos-2.jpg";
+import carlos2Webp from "../../views/Landing/assets/images-noticias/carlos-2.webp";
 import carlos3 from "../../views/Landing/assets/images-noticias/carlos-3.jpg";
+import carlos3Webp from "../../views/Landing/assets/images-noticias/carlos-3.webp";
 import carlos4 from "../../views/Landing/assets/images-noticias/carlos-4.jpg";
+import carlos4Webp from "../../views/Landing/assets/images-noticias/carlos-4.webp";
 import carlosMp4 from "../../views/Landing/assets/images-noticias/carlos.mp4";
-import cartelInclusionLaboral from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel.webp";
-import cartelCurso from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel-curso.webp";
-import inauguracion1 from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/inauguracion-1.webp";
+import cartelInclusionLaboral from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel.png";
+import cartelInclusionLaboralWebp from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel.webp";
+import cartelCurso from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel-curso.png";
+import cartelCursoWebp from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel-curso.webp";
+import inauguracion1 from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/inauguracion-1.jpg";
+import inauguracion1Webp from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/inauguracion-1.webp";
 
 export const sampleNews = [
   {
@@ -35,7 +43,9 @@ Las entidades participantes coinciden en que la colaboración comarcal es clave 
 Victoria Moreno
 Preparadora laboral de AFYMOS`,
     image: inauguracion1,
+    imageWebp: inauguracion1Webp,
     images: [cartelInclusionLaboral, cartelCurso],
+    imagesWebp: [cartelInclusionLaboralWebp, cartelCursoWebp],
     alt: "Proyecto Nuevo CREA - Inclusión laboral comarcal",
     date: "2026-04-30",
     href: "/noticias/inclusion-laboral-comarca-2026",
@@ -72,7 +82,9 @@ Gracias a la creación del Punto de Información en el Ayuntamiento, se ha reali
 
 Esta actividad se engloba dentro de los objetivos del Servicio de Capacitación el cual está cofinanciado por el FSE+, la Consejería de Bienestar Social de Castilla-La Mancha y el Ayuntamiento de Socuéllamos.`,
     image: heroImg,
+    imageWebp: heroImgWebp,
     images: [heroImg],
+    imagesWebp: [heroImgWebp],
     alt: "Participantes en prácticas formativas",
     date: "2025-09-23",
     href: "/noticias/juntos-somos-capaces-practicas-2025",
@@ -103,7 +115,9 @@ Gracias a la Diputación por abrir sus puertas, y gracias Carlos por representar
 
 Hemos aprovechado para visitar el precioso Palacio de la Diputación de Ciudad Real junto con Natalia, Javier y Denisa.`,
     image: carlos4,
+    imageWebp: carlos4Webp,
     images: [carlos1, carlos2, carlos3],
+    imagesWebp: [carlos1Webp, carlos2Webp, carlos3Webp],
     videoLocal: carlosMp4,
     alt: "Pleno Diputación de Ciudad Real - Carlos representando",
     date: "2025-12-03",
