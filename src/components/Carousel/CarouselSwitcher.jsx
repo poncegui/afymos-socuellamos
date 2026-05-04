@@ -40,13 +40,6 @@ const CarouselSwitcher = ({ items }) => {
     return () => window.removeEventListener('storage', onStorage);
   }, [scale]);
 
-  const changeScale = next => {
-    try {
-      localStorage.setItem(STORAGE_KEY, String(next));
-      document.documentElement.style.setProperty('--fs', String(next));
-      setScale(next);
-    } catch {}
-  };
 
   return (
     <Section aria-labelledby="news-board-heading">

@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Video from '../Video';
 import { cardsIgualdadData } from './services/CardsData';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon, faPlus } from '../../../../utils/icons';
 import portada from '../../assets/portada-igualdad.png';
 import styled from 'styled-components';
 

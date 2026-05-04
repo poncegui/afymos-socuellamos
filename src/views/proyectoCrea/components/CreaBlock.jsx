@@ -21,7 +21,6 @@ const CreaBlock = ({
   id,
   gallery,
 }) => {
-  const [hovered, setHovered] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   return (
     <Section id={id} role="region" aria-labelledby={`${id}-heading`}>
@@ -44,8 +43,6 @@ const CreaBlock = ({
                     target="_blank"
                     variant="primary"
                     ariaLabel={buttonLabel}
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}
                   >
                     {buttonLabel}{' '}
                     <FontAwesomeIcon icon={faArrowRight} />

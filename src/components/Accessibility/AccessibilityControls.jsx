@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon, faPlus, faMinus, faVolumeUp } from '../../utils/icons';
 
 const STORAGE_KEY = 'afymos_fontScale';
 

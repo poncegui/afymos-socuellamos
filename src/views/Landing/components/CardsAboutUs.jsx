@@ -1,6 +1,4 @@
-import { faPlus, faSquare } from '@fortawesome/free-solid-svg-icons';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon, faPlus, faSquare } from '../../../utils/icons';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { aboutUsData } from './services/cardsAboutUsData';

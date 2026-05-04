@@ -35,13 +35,6 @@ const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
     return () => window.removeEventListener('storage', onStorage);
   }, [scale]);
 
-  const changeScale = next => {
-    try {
-      localStorage.setItem(STORAGE_KEY, String(next));
-      document.documentElement.style.setProperty('--fs', String(next));
-      setScale(next);
-    } catch {}
-  };
 
   return (
     <Wrapper role="region" aria-label={heading || 'Vídeo noticia'}>
