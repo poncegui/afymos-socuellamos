@@ -7,8 +7,7 @@ const STORAGE_KEY = 'afymos_fontScale';
 const DEFAULT_VIDEO_ID = '2Jlyz_ExeyQ';
 
 const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
-  const src = `https://www.youtube-nocookie.com/embed/${videoId}?rel=0&modestbranding=1`;
-
+  const [play, setPlay] = useState(false);
   const [scale, setScale] = useState(() => {
     try {
       const v = localStorage.getItem(STORAGE_KEY);
@@ -57,16 +56,34 @@ const NewsVideoBlock = ({ videoId = DEFAULT_VIDEO_ID, heading, children }) => {
 
         {/* Columna vídeo */}
         <VideoCol>
-          <VideoFrame>
-            <iframe
-              title={heading || 'Vídeo de noticias'}
-              src={src}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              loading="lazy"
-            />
-          </VideoFrame>
+          {!play ? (
+            <Thumbnail
+              role="button"
+              tabIndex={0}
+              aria-label={`Reproducir vídeo: ${heading || 'Vídeo de noticias'}`}
+              onClick={() => setPlay(true)}
+              onKeyDown={e => e.key === 'Enter' && setPlay(true)}
+            >
+              <img
+                src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                alt={`Miniatura: ${heading || 'Vídeo de noticias'}`}
+                loading="lazy"
+              />
+              <PlayBtn aria-hidden="true">
+                <PlayIcon />
+              </PlayBtn>
+            </Thumbnail>
+          ) : (
+            <VideoFrame>
+              <iframe
+                title={heading || 'Vídeo de noticias'}
+                src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </VideoFrame>
+          )}
         </VideoCol>
       </Inner>
     </Wrapper>
@@ -132,6 +149,75 @@ const Body = styled.div`
 
   @media (max-width: 860px) {
     -webkit-line-clamp: 5;
+  }
+`;
+
+const Thumbnail = styled.div`
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  &:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 4px;
+  }
+`;
+
+const PlayBtn = styled.div`
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(7, 28, 47, 0.4);
+  transition: background 0.25s ease;
+
+  ${Thumbnail}:hover & {
+    background: rgba(7, 28, 47, 0.55);
+  }
+`;
+
+const PlayIcon = styled.div`
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 22px;
+    border-color: transparent transparent transparent #071c2f;
+    margin-left: 5px;
+  }
+
+  ${Thumbnail}:hover & {
+    transform: scale(1.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
   }
 `;
 

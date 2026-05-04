@@ -30,9 +30,11 @@ const AccessibleYouTubeVideo = ({
   ...props
 }) => {
   const [showTranscript, setShowTranscript] = useState(false);
+  const [play, setPlay] = useState(false);
 
   // Construir URL con parámetros de accesibilidad
   const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}?${new URLSearchParams({
+    autoplay: play ? '1' : '0',
     cc_load_policy: hasCaptions ? '1' : '0', // Activar subtítulos por defecto
     cc_lang_pref: lang, // Idioma preferido de subtítulos
     modestbranding: '1', // Menos branding de YouTube
@@ -60,14 +62,32 @@ const AccessibleYouTubeVideo = ({
 
       {/* Video */}
       <VideoWrapper $aspectRatio={aspectRatio}>
-        <iframe
-          src={videoUrl}
-          title={title}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          loading="lazy"
-          {...props}
-        />
+        {!play ? (
+          <Thumbnail
+            role="button"
+            tabIndex={0}
+            aria-label={`Reproducir vídeo: ${title}`}
+            onClick={() => setPlay(true)}
+            onKeyDown={e => e.key === 'Enter' && setPlay(true)}
+          >
+            <img
+              src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+              alt={`Miniatura: ${title}`}
+              loading="lazy"
+            />
+            <PlayButton aria-hidden="true">
+              <PlayButtonInner />
+            </PlayButton>
+          </Thumbnail>
+        ) : (
+          <iframe
+            src={videoUrl}
+            title={title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            {...props}
+          />
+        )}
       </VideoWrapper>
 
       {/* Transcripción (opcional) */}
@@ -199,6 +219,73 @@ const VideoWrapper = styled.div`
   &:focus-within {
     outline: 3px solid ${a11yColors.focus};
     outline-offset: 3px;
+  }
+`;
+
+const Thumbnail = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: #000;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  &:focus-visible {
+    outline: 3px solid ${a11yColors.focus};
+    outline-offset: 3px;
+  }
+`;
+
+const PlayButton = styled.div`
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+
+  ${Thumbnail}:hover & {
+    background: rgba(0, 0, 0, 0.45);
+  }
+`;
+
+const PlayButtonInner = styled.div`
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 0 14px 24px;
+    border-color: transparent transparent transparent ${a11yColors.purple.darkOnLight};
+    margin-left: 6px;
+  }
+
+  ${Thumbnail}:hover & {
+    transform: scale(1.1);
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.4);
   }
 `;
 
