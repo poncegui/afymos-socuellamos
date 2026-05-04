@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import LazyResponsiveImage from "../Image/LazyResponsiveImage";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
-import SectionLabel from "../SectionLabel";
 import { typography } from "../../styles/typography";
 import CTAButton from "../Button/CTAButton";
 

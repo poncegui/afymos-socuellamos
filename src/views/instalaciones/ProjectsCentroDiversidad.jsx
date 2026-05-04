@@ -3,41 +3,22 @@ import {
   centroDiversidadDataThree,
   centroDiversidadDataTwo,
 } from './services/centroDiversidadData';
-import {
-  colaboradoresData,
-  partnersData,
-} from '../../components/Partners/services/partnersListData';
-
-import { ContentProjects } from '../../components/Content/ContentProjects';
-import NavBarViews from '../../components/Header/NavBarViews';
-import PartnertList from '../../components/Partners/PartnerList';
-import { React } from 'react';
-import ScrollToTop from '../../components/ScrollToUp';
-import TitleSection from '../../components/TitleSection';
+import ProjectPageLayout from '../../components/Layouts/ProjectPageLayout';
 
 const ProjectsCentroDiversidad = () => {
+  const contentSections = [
+    { data: centroDiversidadDataOne, inverse: true },
+    { data: centroDiversidadDataTwo, reverse: true },
+    { data: centroDiversidadDataThree, inverse: true },
+  ];
+
   return (
-    <>
-      <ScrollToTop />
-      <NavBarViews title="Nuestro Centro" />
-      <TitleSection title="Centro de atención a la Diversidad Funcional" size />
-      <ContentProjects {...centroDiversidadDataOne} inverse />
-      <ContentProjects {...centroDiversidadDataTwo} reverse />
-      <ContentProjects {...centroDiversidadDataThree} inverse />
-      <PartnertList
-        size
-        marginBottom
-        data={colaboradoresData}
-        title="Socios Colaboradores"
-      />
-      <PartnertList
-        size
-        inverse
-        marginBottom
-        data={partnersData}
-        title="Cofinanciaciones"
-      />
-          </>
+    <ProjectPageLayout
+      title="Nuestro Centro"
+      sectionTitle="Centro de atención a la Diversidad Funcional"
+      showTitleSection
+      contentSections={contentSections}
+    />
   );
 };
 

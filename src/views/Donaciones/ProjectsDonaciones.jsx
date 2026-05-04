@@ -1,37 +1,19 @@
-import {
-  colaboradoresData,
-  partnersData,
-} from '../../components/Partners/services/partnersListData';
-
-import { ContentProjects } from '../../components/Content/ContentProjects';
-import NavBarViews from '../../components/Header/NavBarViews';
-import PartnertList from '../../components/Partners/PartnerList';
-import { React } from 'react';
-import ScrollToTop from '../../components/ScrollToUp';
-import TitleSection from '../../components/TitleSection';
 import { donacionDataOne } from './services/donacionesData';
+import ProjectPageLayout from '../../components/Layouts/ProjectPageLayout';
 
 const ProjectsDonaciones = () => {
+  const contentSections = [
+    { data: donacionDataOne, inverse: true },
+  ];
+
   return (
-    <>
-      <ScrollToTop />
-      <NavBarViews title="Donaciones" />
-      <TitleSection title="Crecemos contigo" size />
-      <ContentProjects {...donacionDataOne} inverse />
-      <PartnertList
-        size
-        marginBottom
-        data={colaboradoresData}
-        title="Socios Colaboradores"
-      />
-      <PartnertList
-        size
-        inverse
-        marginBottom
-        data={partnersData}
-        title="Cofinanciaciones"
-      />
-          </>
+    <ProjectPageLayout
+      title="Donaciones"
+      sectionTitle="Crecemos contigo"
+      showTitleSection
+      contentSections={contentSections}
+    />
   );
 };
+
 export default ProjectsDonaciones;

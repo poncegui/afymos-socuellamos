@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon, faUpRightFromSquare } from '../../../utils/icons';
 import styled from 'styled-components';
 
 const PartnersCard = ({ url, alt, target, src, title }) => {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    setClicked(!clicked);
-  };
 
   // Best-effort WebP path next to original filename
   const fileName = src.split('/').pop().split('.')[0];
@@ -16,7 +10,6 @@ const PartnersCard = ({ url, alt, target, src, title }) => {
   return (
     <Anchor
       href={url}
-      onClick={handleClick}
       target={target}
       rel="noopener noreferrer"
       aria-label={`Visitar sitio web de ${title}, colaborador de Afymos`}
@@ -131,31 +124,4 @@ const PartnerCaption = styled.span`
 const Icon = styled.span`
   color: #6b6f76;
   font-size: calc(0.9rem * var(--fs, 1));
-`;
-
-export const Card = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  margin: auto;
-  position: relative;
-  width: 80%;
-  gap: 1rem;
-  white-space: nowrap;
-`;
-
-export const FaceFront = styled.div`
-  backface-visibility: hidden;
-  background: #e0e0e0;
-  border-radius: 10%;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-`;
-
-export const ImgFront = styled.img`
-  width: 100%;
-  object-fit: contain;
 `;

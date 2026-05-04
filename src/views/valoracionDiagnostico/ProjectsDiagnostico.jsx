@@ -1,41 +1,22 @@
 import {
-  colaboradoresData,
-  partnersData,
-} from '../../components/Partners/services/partnersListData';
-import {
   diagnosticoDataOne,
   diagnosticoDataThree,
   diagnosticoDataTwo,
 } from './services/diagnosticoData';
-
-import { ContentProjects } from '../../components/Content/ContentProjects';
-import NavBarViews from '../../components/Header/NavBarViews';
-import PartnertList from '../../components/Partners/PartnerList';
-import { React } from 'react';
-import ScrollToTop from '../../components/ScrollToUp';
+import ProjectPageLayout from '../../components/Layouts/ProjectPageLayout';
 
 const ProjectsDiagnostico = () => {
+  const contentSections = [
+    { data: diagnosticoDataOne, inverse: true },
+    { data: diagnosticoDataTwo, reverse: true },
+    { data: diagnosticoDataThree, inverse: true },
+  ];
+
   return (
-    <>
-      <ScrollToTop />
-      <NavBarViews title="Valoración y diagnostico" />
-      <ContentProjects {...diagnosticoDataOne} inverse />
-      <ContentProjects {...diagnosticoDataTwo} reverse />
-      <ContentProjects {...diagnosticoDataThree} inverse />
-      <PartnertList
-        size
-        marginBottom
-        data={colaboradoresData}
-        title="Socios Colaboradores"
-      />
-      <PartnertList
-        size
-        inverse
-        marginBottom
-        data={partnersData}
-        title="Cofinanciaciones"
-      />
-          </>
+    <ProjectPageLayout
+      title="Valoración y diagnostico"
+      contentSections={contentSections}
+    />
   );
 };
 
