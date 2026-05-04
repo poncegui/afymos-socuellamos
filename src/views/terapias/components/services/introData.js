@@ -7,14 +7,11 @@ import psicopedagogia from "../assets/pictogramas/psicopedagogia.png";
 import terapiaOcupacionalData from "../assets/pictogramas/terapeuta-ocupacional.png";
 import visualData from "../assets/pictogramas/terapia-visual.png";
 
-const target = "_blank";
-
 export const introData = [
   {
     id: "logopedia",
     name: "Logopedia",
     src: logopediaData,
-    target: target,
     alt: "Icono de logopedia",
     url: "logopedia",
   },
@@ -22,7 +19,6 @@ export const introData = [
     id: "fisioterapia",
     name: "Fisioterapia",
     src: fisioterapiaData,
-    target: target,
     alt: "Icono de fisioterapia",
     url: "fisioterapia",
   },
@@ -30,7 +26,6 @@ export const introData = [
     id: "terapia-ocupacional",
     name: "Terapia Ocupacional",
     src: terapiaOcupacionalData,
-    target: target,
     alt: "Icono de terapia ocupacional",
     url: "terapia-ocupacional",
   },
@@ -38,7 +33,6 @@ export const introData = [
     id: "psicopedagogia",
     name: "Psicopedagogía",
     src: psicopedagogia,
-    target: target,
     alt: "Icono de psicopedagogía",
     url: "psicopedagogia",
   },
@@ -46,23 +40,20 @@ export const introData = [
     id: "neuropsicologia",
     name: "Neuropsicología",
     src: neuropsicologiaData,
-    target: target,
     alt: "Icono de neuropsicología",
     url: "neuropsicologia",
   },
   {
     id: "auditiva",
-    name: "Auditiva",
+    name: "Terapia Auditiva",
     src: auditivaData,
-    target: target,
     alt: "Icono de terapia auditiva",
     url: "auditiva",
   },
   {
     id: "visual",
-    name: "Visual",
+    name: "Terapia Visual",
     src: visualData,
-    target: target,
     alt: "Icono de terapia visual",
     url: "visual",
   },
@@ -70,7 +61,6 @@ export const introData = [
     id: "psicologia",
     name: "Psicología",
     src: psicologiaData,
-    target: target,
     alt: "Icono de psicología",
     url: "psicologia",
   },

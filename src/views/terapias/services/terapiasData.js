@@ -15,11 +15,11 @@ export const introduccionData = {
     text: "Nuestra misión: AYUDARTE",
   },
   headline:
-    "Este programa tiene la finalidad de ofrecer **Servicios Terapéuticos** de diferentes disciplinas con el fin de mejorar la calidad de vida de las personas.",
+    "**Servicios Terapéuticos** especializados para mejorar tu calidad de vida",
   description:
-    "Contamos con profesionales de diferentes disciplinas para intervenir según las necesidades de los usuarios y actualmente contamos con los siguientes **servicios terapéuticos**.",
+    "Contamos con un equipo multidisciplinar de profesionales altamente cualificados. Cada terapia se adapta a tus necesidades individuales, combinando las últimas técnicas y un trato cercano y humano.",
   img: introduccion,
-  alt: "Nuestra misión ayudarte",
+  alt: "Equipo de profesionales de Afymos",
 };
 
 export const logopediaData = {
@@ -27,14 +27,14 @@ export const logopediaData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "LOGOPEDIA: conoce cómo trabajan nuestras profesionales Cristina Olivares y Paula Ramírez",
+    text: "LOGOPEDIA",
   },
   headline:
-    "La **Logopedia** es una disciplina que se ocupa del estudio, el diagnóstico, la rehabilitación y la prevención de los trastornos de la comunicación humana y funciones asociadas como son la deglución, la audición, etc. El campo de actuación es muy amplio abarcando desde la **Atención Temprana** en niños hasta la **Tercera Edad**, pasando por la adolescencia o la edad adulta. Por lo tanto se interviene en todas las etapas de la vida en las que se presenten alteraciones de la comunicación y el lenguaje desde los ámbitos sanitarios, socio – asistencial y educativo.",
+    "Rehabilitación de la **comunicación** y el **lenguaje** en todas las etapas de la vida",
   description:
-    "Para la **Evaluación Logopédica** se utilizan las siguientes herramientas:\n\n1. **Recolección de Información**\n2. **Anamnesis**\n3. **Observación**\n4. **Evaluación Inicial**\n5. **Aplicación de pruebas o test**\n6. **Programación y objetivos individuales** y adaptados a las necesidades de cada paciente y de sus familiares y/o personas de referencia.",
+    "**Profesionales:** Cristina Olivares y Paula Ramírez\n\nTratamos trastornos de la comunicación, el lenguaje, la deglución y la audición desde la **Atención Temprana** hasta la **Tercera Edad**. Trabajamos en los ámbitos sanitario, socio-asistencial y educativo.\n\n**Nuestro proceso de evaluación incluye:**\n• Recolección de información y anamnesis\n• Observación y evaluación inicial\n• Aplicación de pruebas y test especializados\n• Programación de objetivos individualizados adaptados a cada paciente y su entorno familiar",
   img: logopedia,
-  alt: "imagen logopeda",
+  alt: "Logopedas Cristina Olivares y Paula Ramírez",
 };
 
 export const fisioterapiaData = {
@@ -42,14 +42,14 @@ export const fisioterapiaData = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "FISIOTERAPIA: conoce cómo trabaja nuestra profesional, Amparo Guerrero",
+    text: "FISIOTERAPIA",
   },
   headline:
-    "Nuestro principal objetivo es tu **bienestar** y tu **recuperación**. Nos importas tú y cómo te sientes frente al problema que ha aparecido. Recibirás atención **individualizada**, nos centraremos no solo en el dolor, sino también en las limitaciones que te produce, y cómo afecta esto a tu vida diaria.",
+    "Tu **bienestar** y **recuperación** son nuestra prioridad",
   description:
-    "Durante nuestra terapia llevaremos a cabo una **valoración y diagnóstico de fisioterapia**, teniendo en cuenta una visión general del problema, dolencia, o patología. Y utilizaremos distintas **técnicas de fisioterapia**, para conseguir el mejor resultado en el menor tiempo posible.",
+    "**Profesional:** Amparo Guerrero\n\nOfrecemos atención **individualizada** centrada en ti y en cómo te sientes. No solo tratamos el dolor, sino también las limitaciones que produce en tu vida diaria.\n\nRealizamos una **valoración integral** de tu problema, dolencia o patología, aplicando técnicas especializadas de fisioterapia para conseguir los mejores resultados en el menor tiempo posible.",
   img: fisioterapia,
-  alt: "imagen fisioterapeuta",
+  alt: "Fisioterapeuta Amparo Guerrero",
 };
 
 export const terapiaOcupacionalData = {
@@ -57,14 +57,14 @@ export const terapiaOcupacionalData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "TERAPIA OCUPACIONAL: conoce cómo trabaja nuestra profesional, Laura Simancas",
+    text: "TERAPIA OCUPACIONAL",
   },
   headline:
-    "**Terapeuta Ocupacional** graduada en la Universidad Complutense de Madrid, cursando Psicología en la UNED.\n\n**Especialidades**:\n• **Autismo** y detección/intervención precoz\n• **Atención temprana** y trastornos del neurodesarrollo\n• Apoyo conductual positivo y salud mental infantil\n• Terapia asistida con animales y deporte terapéutico\n• Alimentación infantil y TCA (Trastornos de la Conducta Alimentaria)",
+    "Intervención centrada en la **persona** y la **familia** con más de 10 años de experiencia",
   description:
-    "Con más de **10 años de experiencia** en intervención centrada en la persona y la familia.\n\nLa **Terapia Ocupacional** es mi pasión: trabajar con familias, empatizar y crear **alianzas terapéuticas** sólidas. Combino intervención clínica con entornos naturales, priorizando los intereses individuales sobre objetivos preestablecidos, dando propósito y significado a cada actividad terapéutica.",
+    "**Profesional:** Laura Simancas (UCM, cursando Psicología en UNED)\n\n**Áreas de especialización:**\n• Autismo y detección/intervención precoz\n• Atención temprana y trastornos del neurodesarrollo\n• Apoyo conductual positivo y salud mental infantil\n• Terapia asistida con animales y deporte terapéutico\n• Alimentación infantil y TCA\n\nTrabajo creando **alianzas terapéuticas** sólidas con las familias, combinando intervención clínica con entornos naturales. Priorizo los intereses individuales, dando propósito y significado a cada actividad.",
   img: terapiaOcupacional,
-  alt: "imagen terapeuta ocupacional",
+  alt: "Terapeuta ocupacional Laura Simancas",
 };
 
 export const neuroPsicologiaData = {
@@ -72,14 +72,14 @@ export const neuroPsicologiaData = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "NEUROPSICOLOGÍA: conoce cómo trabaja nuestra profesional, Alicia Collado",
+    text: "NEUROPSICOLOGÍA",
   },
   headline:
-    "La **Neuropsicología** estudia las bases neuroanatómicas en relación a los procesos mentales como: atención, orientación, gnoxias, praxias, memoria, funciones ejecutivas y habilidades visoespaciales.",
+    "Evaluación y **rehabilitación cognitiva** adaptada a cada edad",
   description:
-    "Dentro de mi equipo mi función es la de evaluar las **capacidades cognitivas** y saber cuáles están fallando y cuales están \"a tope\". Después planteo un programa de **entrenamiento**, o como otros compañeros llaman, rehabilitación, para trabajar en la mejora de aquellas áreas que se han quedado dañadas o no se han desarrollado a los niveles esperables para la edad. Con los más pequeños (0-3 años) el trabajo se realiza desde la **gaminifación**, porque se aprende jugando. Con mayor edad, se trabaja con el Software **Neuronup**, una plataforma de neurorehabilitación.",
+    "**Profesional:** Alicia Collado\n\nLa **Neuropsicología** estudia las bases neuroanatómicas de los procesos mentales: atención, orientación, memoria, funciones ejecutivas y habilidades visoespaciales.\n\n**Nuestro proceso:**\n• Evaluación de capacidades cognitivas para identificar áreas de mejora\n• Diseño de programas de entrenamiento personalizados\n• Con niños pequeños (0-3 años): aprendizaje a través del juego (**gamificación**)\n• Con mayores: trabajo con **Neuronup**, plataforma especializada de neurorehabilitación",
   img: neuroPiscologia,
-  alt: "imagenneuropsicóloga",
+  alt: "Neuropsicóloga Alicia Collado",
 };
 
 export const psicoPedagogíaData = {
@@ -87,14 +87,14 @@ export const psicoPedagogíaData = {
   reverse: true,
   inverse: false,
   topLine: {
-    text: "PSICOPEDAGOGÍA: conoce cómo trabajan nuestras profesionales, Alicia Lara y Mónica Mazzella",
+    text: "PSICOPEDAGOGÍA",
   },
   headline:
-    "La terapia **psicopedagógica** facilita los procesos de aprendizaje de las personas, en cualquier etapa de la vida. Ayudando a superar las dificultades y los problemas de aprendizaje.",
+    "Facilitamos el **aprendizaje** en todas las etapas de la vida",
   description:
-    "Como **psicopedagogas** asesoramos, evaluamos y realizamos informes psicopedagógicos (tomando pruebas y test, analizando las necesidades de cada persona), planificamos y diseñamos propuestas de intervención para niños, adolescentes, jóvenes y adultos que tengan problemas en el aprendizaje. Detectando las habilidades y dificultades que tienen las personas en el momento de aprender.",
+    "**Profesionales:** Alicia Lara y Mónica Mazzella\n\nLa terapia **psicopedagógica** ayuda a superar dificultades y problemas de aprendizaje en niños, adolescentes, jóvenes y adultos.\n\n**Servicios que ofrecemos:**\n• Evaluación psicopedagógica completa\n• Informes psicopedagógicos detallados\n• Asesoramiento personalizado\n• Diseño de programas de intervención individualizados\n• Detección de habilidades y áreas de mejora en el proceso de aprendizaje",
   img: psicopedagogia,
-  alt: "imagen psicopedagoga",
+  alt: "Psicopedagogas Alicia Lara y Mónica Mazzella",
 };
 
 export const auditivaPsicologiaData = {
@@ -102,14 +102,14 @@ export const auditivaPsicologiaData = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "TERAPIA AUDITIVA: conoce cómo trabaja nuestra profesional, Alicia López Collado",
+    text: "TERAPIA AUDITIVA",
   },
   headline:
-    "La terapia de estimulación auditiva **SENA** es un tratamiento cuyo objetivo es mejorar la percepción auditiva de la persona que lo recibe.",
+    "Estimulación auditiva **SENA** para mejorar la percepción y el procesamiento auditivo",
   description:
-    "El procedimiento de esta terapia consiste en realizar una serie de pruebas:\n\n• **Otoscopia**: para comprobar el estado del canal auditivo\n• **Audiometría tonal liminar**: para evaluar el umbral auditivo\n• **Pruebas complementarias**\n\nLa terapia no es invasiva y consta de **10 sesiones continuadas** de 45 minutos diarios. Está dirigido personas con:\n\n• Dificultades en el aprendizaje de aprendizaje\n• Personas con TEA o TDAH que presenten problemas en el procesamiento auditivo central.",
+    "**Profesional:** Alicia López Collado\n\nTratamiento no invasivo que mejora la percepción auditiva mediante **10 sesiones continuadas** de 45 minutos.\n\n**Proceso de evaluación:**\n• Otoscopia (estado del canal auditivo)\n• Audiometría tonal liminar (umbral auditivo)\n• Pruebas complementarias\n\n**Indicado para personas con:**\n• Dificultades de aprendizaje\n• TEA o TDAH con problemas de procesamiento auditivo central",
   img: auditiva,
-  alt: "imagen psicóloga",
+  alt: "Especialista en terapia auditiva Alicia López Collado",
 };
 
 export const visualPedagogíaData = {
@@ -117,14 +117,14 @@ export const visualPedagogíaData = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "TERAPIA VISUAL: conoce cómo trabaja nuestra profesional, Rocío de la Torre",
+    text: "TERAPIA VISUAL",
   },
   headline:
-    "La **terapia visual** consiste en la repetición de una serie de ejercicios que consiguen crear nuevas conexiones neurológicas y mejorar habilidades visuales alteradas.",
+    "Mejora de **habilidades visuales** mediante entrenamiento neurológico",
   description:
-    "Evaluo el desarrollo y funcionamiento de la visión desde el nacimiento. Para ello analizo habilidades como la **acomodación**, **binocularidad** (visión en 3D), movimientos oculares y la percepción visual.",
+    "**Profesional:** Rocío de la Torre\n\nLa **terapia visual** utiliza ejercicios específicos que crean nuevas conexiones neurológicas para mejorar habilidades visuales alteradas.\n\n**Evaluamos:**\n• Desarrollo y funcionamiento visual desde el nacimiento\n• Acomodación (enfoque)\n• Binocularidad (visión en 3D)\n• Movimientos oculares\n• Percepción visual",
   img: visual,
-  alt: "imagen pedagoga visual",
+  alt: "Especialista en terapia visual Rocío de la Torre",
 };
 
 export const psicologiaData = {
@@ -132,12 +132,12 @@ export const psicologiaData = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "PSICOLOGÍA: conoce cómo trabaja nuestra profesional, Beatriz Henales",
+    text: "PSICOLOGÍA",
   },
   headline:
-    "Me encanta trabajar con las personas y ayudarles en su proceso de cambio. Empatizo con cada persona y con sus necesidades, desde una perspectiva **integradora**, analizando el global de la persona y su entorno. Busco que las personas entiendan sus propios procesos y busquen su propia adaptación al medio, mitigando sus niveles de malestar.",
+    "Acompañamiento en tu proceso de **cambio** y **bienestar emocional**",
   description:
-    "Trabajo desde un modelo **biopsicosocial**, desde la psicoterapia integradora en trauma y apego con **EMDR** así como herramientas de la psicología cognitivo conductual a través de reestructuración cognitiva para trabajar con la persona su pasado, presente y futuro.",
+    "**Profesional:** Beatriz Henales\n\nTrabajo desde una perspectiva **integradora**, analizando a la persona de forma global y su entorno. Mi objetivo es que entiendas tus propios procesos y encuentres tu mejor adaptación, reduciendo el malestar.\n\n**Enfoque terapéutico:**\n• Modelo **biopsicosocial**\n• Psicoterapia integradora en trauma y apego\n• **EMDR** (Desensibilización y Reprocesamiento por Movimientos Oculares)\n• Terapia cognitivo-conductual y reestructuración cognitiva\n• Trabajo integral: pasado, presente y futuro",
   img: psicologia,
-  alt: "imagen psicóloga",
+  alt: "Psicóloga Beatriz Henales",
 };

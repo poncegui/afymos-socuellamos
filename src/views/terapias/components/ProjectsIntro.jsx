@@ -1,173 +1,109 @@
-import { React, useState } from "react";
-
 import { Link } from "react-scroll";
 import TitleSection from "../../../components/TitleSection";
 import { introData } from "./services/introData";
 import styled from "styled-components";
 
 const ProjectsIntro = () => {
-  const [others] = useState(introData);
-
   return (
     <>
       <TitleSection title="Nuestras Terapias" size />
-      <section>
-        <SectionFeaturesMobile>
-          <ButtonContainer>
-            {others.map((picto) => (
-              <Icons key={picto.id} value={picto.name}>
-                <h3>{picto.name}</h3>
-                <Link
-                  to={picto.url}
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={1000}
-                  aria-label={`Ir a la sección de ${picto.name} de Afymos`}
-                  title={`${picto.name} - Afymos`}
-                >
-                  <img loading="lazy" src={picto.src} alt={picto.alt} />
-                </Link>
-              </Icons>
-            ))}
-          </ButtonContainer>
-        </SectionFeaturesMobile>
-      </section>
+      <SectionFeatures>
+        <ButtonContainer>
+          {introData.map((therapy) => (
+            <TherapyCard key={therapy.id}>
+              <Link
+                to={therapy.url}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+                aria-label={`Ir a la sección de ${therapy.name}`}
+              >
+                <img loading="lazy" src={therapy.src} alt={therapy.alt} />
+                <h3>{therapy.name}</h3>
+              </Link>
+            </TherapyCard>
+          ))}
+        </ButtonContainer>
+      </SectionFeatures>
     </>
   );
 };
 
 export default ProjectsIntro;
 
-export const SectionFeaturesMobile = styled.div`
-  display: flex;
-  width: 100%;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
-  background-color: white;
-  margin: auto;
-  padding: 5% 15%;
-  h1 {
-    font-size: calc(2.5rem * var(--fs, 1));
-  }
-
-  @media (max-width: 768px) {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-    background-color: white;
-  }
+const SectionFeatures = styled.section`
+  background: white;
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.5rem, 5vw, 4rem);
 `;
 
-export const ButtonContainer = styled.div`
+const ButtonContainer = styled.div`
   display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin: auto;
-  grid-gap: 5% 5%;
-  margin: 5% 20%;
-  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  max-width: 1000px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: auto;
-    grid-gap: 30px 30px;
-    margin: 5%;
-    margin-bottom: 15%;
-    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(1.25rem, 3vw, 2rem);
   }
 `;
 
-export const Description = styled.div`
-  display: flex;
-  width: 50%;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0px;
-`;
+const TherapyCard = styled.div`
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
 
-export const Icons = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border-radius: 10px;
-  width: 150px;
-  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;
-  margin: 5% 5%;
-  gap: 1rem;
+    &:hover,
+    &:focus {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(198, 177, 201, 0.3);
+      border: 2px solid #c6b1c9;
+    }
 
-  :hover {
-    border: 3px solid #c6b1c9;
-  }
-
-  h3 {
-    margin-top: 0.5rem;
-    font-size: calc(1rem * var(--fs, 1));
-    padding: 0 0.3rem;
+    &:focus {
+      outline: 3px solid rgba(198, 177, 201, 0.5);
+      outline-offset: 2px;
+    }
   }
 
   img {
-    height: 100px;
     width: 100px;
-    padding-bottom: 5%;
-    cursor: pointer;
+    height: 100px;
+    object-fit: contain;
   }
 
-  @media (max-width: 368px) {
-    margin: 5%;
-    margin-bottom: 15%;
-    gap: 0.6rem;
-    border-radius: 10px;
-    width: 80%;
-    box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;
-    border: solid 1px #071c2f;
+  h3 {
+    margin: 0;
+    font-size: calc(1rem * var(--fs, 1));
+    color: #071c2f;
+    text-align: center;
+    font-weight: 600;
+  }
 
-    h3 {
-      font-size: calc(0.875rem * var(--fs, 1)); /* 14px mínimo WCAG */
-      padding: 0 0.3rem;
+  @media (max-width: 480px) {
+    a {
+      padding: 1rem 0.75rem;
+      gap: 0.75rem;
     }
 
     img {
-      color: #071c2f;
-      height: 40px;
-      width: 40px;
+      width: 70px;
+      height: 70px;
     }
-  }
-
-  @media (min-width: 1090) {
-    margin: 5%;
-    margin-bottom: 15%;
-    gap: 0.6rem;
-    border-radius: 10px;
-    width: 70%;
-    height: 70%;
-    box-shadow: 30px 20px 40px #949494, -5px -5px 10px #ffffff;
-    border: solid 1px #071c2f;
 
     h3 {
-      font-size: calc(0.875rem * var(--fs, 1)); /* 14px mínimo WCAG */
-      padding: 0 0.3rem;
-    }
-
-    img {
-      color: #071c2f;
-      height: 40px;
-      width: 40px;
+      font-size: calc(0.9rem * var(--fs, 1));
     }
   }
 `;

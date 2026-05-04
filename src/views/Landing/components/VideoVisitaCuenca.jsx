@@ -5,8 +5,7 @@ import portadaVideo600 from '../assets/portada-cuenca-600w.webp';
 import styled from 'styled-components';
 import AccessibilityControls from '../../../components/Accessibility/AccessibilityControls';
 import SectionLabel from '../../../components/SectionLabel';
-
-const STORAGE_KEY = 'afymos_fontScale';
+import { useFontScale } from '../../../hooks/useFontScale';
 
 const VideoVisitaCuenca = () => {
   const [play, setPlay] = useState(false);
@@ -37,30 +36,7 @@ const VideoVisitaCuenca = () => {
     return () => observer.disconnect();
   }, []);
 
-  /* Controles de tamaño de texto */
-  const [scale, setScale] = useState(() => {
-    try {
-      return Number(localStorage.getItem(STORAGE_KEY) || 1);
-    } catch {
-      return 1;
-    }
-  });
-  useEffect(() => {
-    try {
-      document.documentElement.style.setProperty('--fs', String(scale));
-    } catch {}
-    const onStorage = e => {
-      if (e.key === STORAGE_KEY) {
-        try {
-          const v = Number(e.newValue || 1);
-          setScale(v);
-          document.documentElement.style.setProperty('--fs', String(v));
-        } catch {}
-      }
-    };
-    window.addEventListener('storage', onStorage);
-    return () => window.removeEventListener('storage', onStorage);
-  }, [scale]);
+  useFontScale();
 
 
   return (
