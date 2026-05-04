@@ -1,43 +1,24 @@
 import {
-  colaboradoresData,
-  partnersData,
-} from '../../components/Partners/services/partnersListData';
-import {
   viviendasDataOne,
   viviendasDataThree,
   viviendasDataTwo,
 } from './services/viviendasData';
-
-import { ContentProjects } from '../../components/Content/ContentProjects';
-import NavBarViews from '../../components/Header/NavBarViews';
-import PartnersList from '../../components/Partners/PartnerList';
-import { React } from 'react';
-import ScrollToTop from '../../components/ScrollToUp';
-import TitleSection from '../../components/TitleSection';
+import ProjectPageLayout from '../../components/Layouts/ProjectPageLayout';
 
 const ProjectsViviendas = () => {
+  const contentSections = [
+    { data: viviendasDataOne, inverse: true },
+    { data: viviendasDataTwo, reverse: true },
+    { data: viviendasDataThree, inverse: true },
+  ];
+
   return (
-    <>
-      <ScrollToTop />
-      <NavBarViews title="Viviendas" />
-      <TitleSection title="Apoyo acceso viviendas" size />
-      <ContentProjects {...viviendasDataOne} inverse />
-      <ContentProjects {...viviendasDataTwo} reverse />
-      <ContentProjects {...viviendasDataThree} inverse />
-      <PartnersList
-        size
-        marginBottom
-        data={colaboradoresData}
-        title="Socios Colaboradores"
-      />
-      <PartnersList
-        size
-        inverse
-        marginBottom
-        data={partnersData}
-        title="Cofinanciaciones"
-      />
-          </>
+    <ProjectPageLayout
+      title="Viviendas"
+      sectionTitle="Apoyo acceso viviendas"
+      showTitleSection
+      contentSections={contentSections}
+    />
   );
 };
 

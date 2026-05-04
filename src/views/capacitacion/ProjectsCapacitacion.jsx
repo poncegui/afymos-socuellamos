@@ -1,41 +1,19 @@
-import {
-  capacitacionDataOne,
-  capacitacionDataTwo,
-} from './services/capacitacionData';
-import {
-  colaboradoresData,
-  partnersData,
-} from '../../components/Partners/services/partnersListData';
-
-import { ContentProjects } from '../../components/Content/ContentProjects';
-import NavBarViews from '../../components/Header/NavBarViews';
-import PartnertList from '../../components/Partners/PartnerList';
-import { React } from 'react';
-import ScrollToTop from '../../components/ScrollToUp';
-import TitleSection from '../../components/TitleSection';
+import { capacitacionDataOne, capacitacionDataTwo } from './services/capacitacionData';
+import ProjectPageLayout from '../../components/Layouts/ProjectPageLayout';
 
 const ProjectsCapacitacion = () => {
+  const contentSections = [
+    { data: capacitacionDataOne, inverse: true },
+    { data: capacitacionDataTwo, reverse: true },
+  ];
+
   return (
-    <>
-      <ScrollToTop />
-      <NavBarViews title="Servicio de Capacitación" />
-      <TitleSection title="Programa habilitación laboral" size />
-      <ContentProjects {...capacitacionDataOne} inverse />
-      <ContentProjects {...capacitacionDataTwo} reverse />
-      <PartnertList
-        size
-        marginBottom
-        data={colaboradoresData}
-        title="Socios Colaboradores"
-      />
-      <PartnertList
-        size
-        inverse
-        marginBottom
-        data={partnersData}
-        title="Cofinanciaciones"
-      />
-          </>
+    <ProjectPageLayout
+      title="Servicio de Capacitación"
+      sectionTitle="Programa habilitación laboral"
+      showTitleSection
+      contentSections={contentSections}
+    />
   );
 };
 

@@ -9,47 +9,28 @@ import {
   terapiaOcupacionalData,
   visualPedagogíaData,
 } from './services/terapiasData';
-import {
-  colaboradoresData,
-  partnersData,
-} from '../../components/Partners/services/partnersListData';
-
-import { ContentProjects } from '../../components/Content/ContentProjects';
-import NavBarViews from '../../components/Header/NavBarViews';
-import PartnertList from '../../components/Partners/PartnerList';
+import ProjectPageLayout from '../../components/Layouts/ProjectPageLayout';
 import ProjectsIntro from './components/ProjectsIntro';
-import { React } from 'react';
-import ScrollToTop from '../../components/ScrollToUp';
 
 const ProjectsTerapias = () => {
+  const contentSections = [
+    { data: introduccionData, reverse: true },
+    { data: logopediaData, inverse: true },
+    { data: fisioterapiaData, reverse: true },
+    { data: terapiaOcupacionalData, inverse: true },
+    { data: psicoPedagogíaData, reverse: true },
+    { data: neuroPsicologiaData, inverse: true },
+    { data: auditivaPsicologiaData, reverse: true },
+    { data: visualPedagogíaData, inverse: true },
+    { data: psicologiaData, reverse: true },
+  ];
+
   return (
-    <>
-      <ScrollToTop />
-      <NavBarViews title="Servicio de Terapia" />
-      <ProjectsIntro />
-      <ContentProjects {...introduccionData} reverse />
-      <ContentProjects {...logopediaData} inverse />
-      <ContentProjects {...fisioterapiaData} reverse />
-      <ContentProjects {...terapiaOcupacionalData} inverse />
-      <ContentProjects {...psicoPedagogíaData} reverse />
-      <ContentProjects {...neuroPsicologiaData} inverse />
-      <ContentProjects {...auditivaPsicologiaData} reverse />
-      <ContentProjects {...visualPedagogíaData} inverse />
-      <ContentProjects {...psicologiaData} reverse />
-      <PartnertList
-        size
-        marginBottom
-        data={colaboradoresData}
-        title="Socios Colaboradores"
-      />
-      <PartnertList
-        size
-        inverse
-        marginBottom
-        data={partnersData}
-        title="Cofinanciaciones"
-      />
-          </>
+    <ProjectPageLayout
+      title="Servicio de Terapia"
+      IntroComponent={ProjectsIntro}
+      contentSections={contentSections}
+    />
   );
 };
 

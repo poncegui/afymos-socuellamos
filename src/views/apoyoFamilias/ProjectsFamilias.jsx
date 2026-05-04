@@ -1,39 +1,20 @@
-import {
-  colaboradoresData,
-  partnersData,
-} from '../../components/Partners/services/partnersListData';
 import { familyDataOne, familyDataTwo } from './services/familiasData';
-
-import { ContentProjects } from '../../components/Content/ContentProjects';
-import NavBarViews from '../../components/Header/NavBarViews';
-import PartnersList from '../../components/Partners/PartnerList';
-import { React } from 'react';
-import ScrollToTop from '../../components/ScrollToUp';
-
-import TitleSection from '../../components/TitleSection';
+import ProjectPageLayout from '../../components/Layouts/ProjectPageLayout';
 
 const ProjectsFamilias = () => {
+  const contentSections = [
+    { data: familyDataOne, inverse: true },
+    { data: familyDataTwo, reverse: true },
+  ];
+
   return (
-    <>
-      <ScrollToTop />
-      <NavBarViews title="Servicio de atención a familias" />
-      <TitleSection title="Apoyo a familiares" size />
-      <ContentProjects {...familyDataOne} inverse />
-      <ContentProjects {...familyDataTwo} reverse />
-      <PartnersList
-        size
-        marginBottom
-        data={colaboradoresData}
-        title="Socios Colaboradores"
-      />
-      <PartnersList
-        size
-        inverse
-        marginBottom
-        data={partnersData}
-        title="Cofinanciaciones"
-      />
-          </>
+    <ProjectPageLayout
+      title="Servicio de atención a familias"
+      sectionTitle="Apoyo a familiares"
+      showTitleSection
+      contentSections={contentSections}
+    />
   );
 };
+
 export default ProjectsFamilias;
