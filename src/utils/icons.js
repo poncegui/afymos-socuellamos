@@ -20,5 +20,13 @@ export {
   faSquare,
   faQuoteLeft,
   faArrowRight,
-  faDownload
+  faDownload,
+  faFileLines,
+  faScaleBalanced,
+  faHandshake,
+  faShieldHeart,
+  faPeopleGroup,
+  faChartLine,
+  faFileContract,
+  faFileInvoiceDollar
 } from '@fortawesome/free-solid-svg-icons';

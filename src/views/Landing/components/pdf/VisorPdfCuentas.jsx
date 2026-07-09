@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
+import styled from "styled-components";
 import cuentasPdf from "../../../transparencia/components/assets/docs_transparencia/cuentas-anuales-2024.pdf";
 import ExternalLink from "../../../../components/ExternalLink";
-import { Icons } from "../../../transparencia/components/ProjectsIntro";
 
 const VisorPdfCuentas = () => {
   useEffect(() => {
@@ -40,9 +40,9 @@ const VisorPdfCuentas = () => {
           ariaLabel="Abrir cuentas anuales de Afymos en nueva pestaña"
           title="Cuentas Anuales 2024 - PDF"
         >
-          <Icons>
+          <DocumentButton>
             <h3>Cuentas Anuales 2024</h3>
-          </Icons>
+          </DocumentButton>
         </ExternalLink>
 
         <button
@@ -87,5 +87,38 @@ const VisorPdfCuentas = () => {
     </div>
   );
 };
+
+const DocumentButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: calc(1.2rem * var(--fs, 1));
+    color: #071c2f;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.75rem 1.5rem;
+
+    h3 {
+      font-size: calc(1rem * var(--fs, 1));
+    }
+  }
+`;
 
 export default VisorPdfCuentas;
