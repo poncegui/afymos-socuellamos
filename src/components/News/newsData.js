@@ -15,8 +15,41 @@ import cartelCurso from "../../views/Landing/assets/images-noticias/inclusion-la
 import cartelCursoWebp from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/cartel-curso.webp";
 import inauguracion1 from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/inauguracion-1.jpg";
 import inauguracion1Webp from "../../views/Landing/assets/images-noticias/inclusion-laboral-comarca/inauguracion-1.webp";
+import crea2024 from "../../views/Landing/assets/images-noticias/crea-2024/crea-2024.jpg";
+import crea2024Webp from "../../views/Landing/assets/images-noticias/crea-2024/crea-2024.webp";
+import logosCrea from "../../views/Landing/assets/images-noticias/crea-2024/logos.jpg";
+import logosCreaWebp from "../../views/Landing/assets/images-noticias/crea-2024/logos.webp";
 
 export const sampleNews = [
+  {
+    id: "proyecto-formacion-empleo-crea-2026",
+    title: "Proyecto de formación y empleo",
+    excerpt: `El proyecto Nuevo CREA es un programa de formación y empleo que combina aprendizaje teórico con experiencia práctica en empresas, dirigido a personas con discapacidad intelectual.
+
+Este año, el programa se centra en la especialidad de Operaciones Auxiliares en Administración y Recepción, una formación con alta demanda en el mercado laboral actual.
+
+Gracias a la colaboración de empresas de Socuéllamos, Villarrobledo, Tomelloso y Campo de Criptana, los participantes tienen la oportunidad de desarrollar sus competencias profesionales en entornos reales de trabajo.
+
+El proyecto está subvencionado por la Consejería de Economía, Empresas y Empleo de Castilla-La Mancha, y representa un compromiso firme con la inclusión laboral en nuestra comarca.
+
+Descubre más sobre este proyecto en el vídeo.`,
+    image: crea2024,
+    imageWebp: crea2024Webp,
+    images: [logosCrea],
+    imagesWebp: [logosCreaWebp],
+    videoId: "oAuSpQsnGPE",
+    alt: "Proyecto Nuevo CREA - Formación y empleo",
+    date: "2026-08-30",
+    href: "/noticias/proyecto-formacion-empleo-crea-2026",
+    tags: [
+      "afymos",
+      "NuevoCREA",
+      "formacion",
+      "empleo",
+      "inclusionlaboral",
+      "JCCM",
+    ],
+  },
   {
     id: "inclusion-laboral-comarca-2026",
     title: "La comarca se une para impulsar la inclusión laboral de personas con discapacidad intelectual",

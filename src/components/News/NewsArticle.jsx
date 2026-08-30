@@ -45,22 +45,6 @@ const NewsArticle = ({ item }) => {
   return (
     <ArticlePage $fontSize={fontSize}>
       <HeroArea>
-        <HeroImage>
-          <LazyResponsiveImage
-            src={item.image || placeholderImg}
-            webp={item.imageWebp}
-            alt={item.alt || item.title}
-            width="1400"
-            height="700"
-          />
-        </HeroImage>
-
-        <Band aria-hidden={false}>
-          <BandInner>
-            <BandTitle>{item.subtitle || 'Oportunidades que cambian vidas'}</BandTitle>
-          </BandInner>
-        </Band>
-
         {item.videoLocal ? (
           <VideoWrapper>
             <NativeVideo
@@ -75,9 +59,40 @@ const NewsArticle = ({ item }) => {
           </VideoWrapper>
         ) : item.videoId ? (
           <VideoWrapper>
-            <NewsVideoBlock videoId={item.videoId} heading={item.title} />
+            <iframe
+              title={item.title}
+              width="100%"
+              height="600"
+              src={`https://www.youtube-nocookie.com/embed/${item.videoId}?rel=0&modestbranding=1`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{
+                borderRadius: '16px',
+                boxShadow: '0 16px 40px rgba(198, 177, 201, 0.15)',
+                maxWidth: '1200px',
+                margin: '0 auto',
+                display: 'block'
+              }}
+            />
           </VideoWrapper>
-        ) : null}
+        ) : (
+          <HeroImage>
+            <LazyResponsiveImage
+              src={item.image || placeholderImg}
+              webp={item.imageWebp}
+              alt={item.alt || item.title}
+              width="1400"
+              height="700"
+            />
+          </HeroImage>
+        )}
+
+        <Band aria-hidden={false}>
+          <BandInner>
+            <BandTitle>{item.subtitle || 'Oportunidades que cambian vidas'}</BandTitle>
+          </BandInner>
+        </Band>
       </HeroArea>
 
       <Container>

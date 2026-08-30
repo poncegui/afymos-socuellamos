@@ -9,8 +9,19 @@ import clubDeportivo from "../assets/images-cover/club-deportivo.jpg";
 import crea from "../assets/images-cover/crea-2024.jpg";
 import infanta from "../assets/images-cover/infanta.jpg";
 import reforma from "../assets/images-noticias/reforma.jpg";
+import crea2024 from "../assets/images-noticias/crea-2024/crea-2024.jpg";
 
 export const items = [
+  {
+    id: 12,
+    image: crea2024,
+    imageWebp: "/images/carusel/crea-2024.webp",
+    alt: "Proyecto de formación y empleo - Nuevo CREA",
+    title: "Proyecto de formación y empleo",
+    description:
+      "Descubre nuestro proyecto Nuevo CREA de formación y empleo. ¡Mira el vídeo!",
+    link: "/noticias/proyecto-formacion-empleo-crea-2026",
+  },
   {
     id: 11,
     image: camiseta,

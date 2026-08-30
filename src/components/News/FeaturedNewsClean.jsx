@@ -83,7 +83,26 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
     <Wrapper role="region" aria-label={`Noticia destacada: ${item.title}`}>
       <Inner>
         <MediaCol>
-          {item.image ? (
+          {item.videoId ? (
+            <VideoContainer>
+              <iframe
+                title={item.title}
+                width="100%"
+                height="100%"
+                src={`https://www.youtube-nocookie.com/embed/${item.videoId}?rel=0&modestbranding=1`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%'
+                }}
+              />
+            </VideoContainer>
+          ) : item.image ? (
             <>
               <LazyResponsiveImage
                 src={item.image}
@@ -236,6 +255,17 @@ const MediaCol = styled.div`
   @media (max-width: 860px) {
     aspect-ratio: 16 / 9;
     border-radius: 0;
+  }
+`;
+
+const VideoContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+
+  iframe {
+    border: none;
   }
 `;
 
