@@ -1,0 +1,31 @@
+# robots.txt for Afymos website
+# Specifies which search engines can crawl which URLs
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*?*
+Allow: /?*sort=
+Allow: /?*page=
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Slow down aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://afymos.org/sitemap.xml

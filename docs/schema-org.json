@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "NonProfit"],
+  "name": "Afymos",
+  "alternateName": "Asociación de Familias y Personas con Discapacidad Intelectual de Socuéllamos",
+  "url": "https://afymos.org",
+  "logo": "https://afymos.org/logo.png",
+  "image": "https://afymos.org/images/ogimage.png",
+  "description": "Organización sin ánimo de lucro que ofrece servicios de apoyo integral, terapias, vivienda asistida, empleo y centro de día para personas con discapacidad intelectual en Socuéllamos y comarca.",
+  "foundingDate": "2017",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "C. Pedro Arias 87",
+    "addressLocality": "Socuéllamos",
+    "addressRegion": "Ciudad Real",
+    "postalCode": "13630",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "39.2891",
+    "longitude": "-2.7989"
+  },
+  "telephone": "+34926532749",
+  "email": "afymos@gmail.com",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.2891",
+      "longitude": "-2.7989"
+    },
+    "geoRadius": "50000"
+  },
+  "serviceType": [
+    "Terapias ocupacionales",
+    "Logopedia",
+    "Fisioterapia",
+    "Servicios de apoyo familiar",
+    "Vivienda asistida",
+    "Empleo con apoyo",
+    "Centro de día",
+    "Formación y capacitación"
+  ],
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100067093413028",
+    "https://www.instagram.com/tv/CKKQgBcIW_Z/",
+    "https://www.youtube.com/@afymosasociacion2328"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+34926532749",
+    "email": "afymos@gmail.com",
+    "contactType": "Customer Service",
+    "availableLanguage": ["es"],
+    "areaServed": "ES"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Plena Inclusión Castilla-La Mancha"
+  }
+}
