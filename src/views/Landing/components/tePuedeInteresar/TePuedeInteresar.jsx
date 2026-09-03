@@ -61,7 +61,7 @@ const IntroductionView = () => {
               aria-label="Ir al servicio de capacitación sociolaboral de Afymos"
               title="Servicio de Capacitación sociolaboral - Afymos"
             >
-              Servicio sociolaboral
+              Servicio de capacitación
             </StyledButtonService>
           </ButtonContainer>
         </ContentContainer>

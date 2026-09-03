@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.477aa8b5.css",
-    "main.js": "./static/js/main.9f26d828.js",
+    "main.js": "./static/js/main.84deb987.js",
     "static/css/630.a1fd271e.chunk.css": "./static/css/630.a1fd271e.chunk.css",
-    "static/js/630.06f1bdf0.chunk.js": "./static/js/630.06f1bdf0.chunk.js",
+    "static/js/630.ce356377.chunk.js": "./static/js/630.ce356377.chunk.js",
     "static/js/34.99f31a7b.chunk.js": "./static/js/34.99f31a7b.chunk.js",
     "static/js/32.a15ea397.chunk.js": "./static/js/32.a15ea397.chunk.js",
     "static/js/574.73b770b6.chunk.js": "./static/js/574.73b770b6.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/636.5b4e79a3.chunk.js": "./static/js/636.5b4e79a3.chunk.js",
     "static/js/257.cd5ea254.chunk.js": "./static/js/257.cd5ea254.chunk.js",
     "static/js/640.6b5bd485.chunk.js": "./static/js/640.6b5bd485.chunk.js",
-    "static/js/701.33be113c.chunk.js": "./static/js/701.33be113c.chunk.js",
+    "static/js/701.4514a38f.chunk.js": "./static/js/701.4514a38f.chunk.js",
     "static/js/60.89816d5e.chunk.js": "./static/js/60.89816d5e.chunk.js",
     "static/js/421.a3bfc99a.chunk.js": "./static/js/421.a3bfc99a.chunk.js",
     "static/js/225.0f8ae9e7.chunk.js": "./static/js/225.0f8ae9e7.chunk.js",
@@ -39,7 +39,7 @@
     "static/js/707.6bdf1ffd.chunk.js": "./static/js/707.6bdf1ffd.chunk.js",
     "static/js/380.498d4d62.chunk.js": "./static/js/380.498d4d62.chunk.js",
     "static/js/226.2a2ca3da.chunk.js": "./static/js/226.2a2ca3da.chunk.js",
-    "static/js/83.f114260d.chunk.js": "./static/js/83.f114260d.chunk.js",
+    "static/js/83.ee22d432.chunk.js": "./static/js/83.ee22d432.chunk.js",
     "static/js/324.570c5deb.chunk.js": "./static/js/324.570c5deb.chunk.js",
     "static/media/cuenca.mp4": "./static/media/cuenca.65f6eaa503268209514b.mp4",
     "static/media/center1.jpg": "./static/media/center1.f4929772c0d2350b4bca.jpg",
@@ -89,9 +89,9 @@
     "static/media/clubDeportivo-2.jpg": "./static/media/clubDeportivo-2.4497d77fdf97c20c4111.jpg",
     "static/media/compromiso.pdf": "./static/media/compromiso.e591acfec001d7e31e57.pdf",
     "static/media/cartel-curso.png": "./static/media/cartel-curso.c768d4389d5ae2cd406f.png",
-    "static/media/chica-trabajando.jpeg": "./static/media/chica-trabajando.d505116aec6e653cc93b.jpeg",
     "static/media/portada-un-dia-afymos.png": "./static/media/portada-un-dia-afymos.7af74db6385de24ad524.png",
     "static/media/voluntariado7.jpg": "./static/media/voluntariado7.c62ea73f9adcf24227f8.jpg",
+    "static/media/chica-trabajando.jpeg": "./static/media/chica-trabajando.8a580ce01065cc1310de.jpeg",
     "static/media/charlas.png": "./static/media/charlas.9632c0261383e958972a.png",
     "static/media/plan-voluntariado-2025-2027.pdf": "./static/media/plan-voluntariado-2025-2027.44e8cb48c58eecb22f19.pdf",
     "static/media/portada-crea.png": "./static/media/portada-crea.d258d62ef056526d4ef4.png",
@@ -227,9 +227,9 @@
     "static/media/comment-regular.svg": "./static/media/comment-regular.359a48ce9dce9e0b8a52a5c03c68b262.svg",
     "static/media/face-smile-wink-solid.svg": "./static/media/face-smile-wink-solid.ad29efd0d3aba526c52dd9765a947eec.svg",
     "main.477aa8b5.css.map": "./static/css/main.477aa8b5.css.map",
-    "main.9f26d828.js.map": "./static/js/main.9f26d828.js.map",
+    "main.84deb987.js.map": "./static/js/main.84deb987.js.map",
     "630.a1fd271e.chunk.css.map": "./static/css/630.a1fd271e.chunk.css.map",
-    "630.06f1bdf0.chunk.js.map": "./static/js/630.06f1bdf0.chunk.js.map",
+    "630.ce356377.chunk.js.map": "./static/js/630.ce356377.chunk.js.map",
     "34.99f31a7b.chunk.js.map": "./static/js/34.99f31a7b.chunk.js.map",
     "32.a15ea397.chunk.js.map": "./static/js/32.a15ea397.chunk.js.map",
     "574.73b770b6.chunk.js.map": "./static/js/574.73b770b6.chunk.js.map",
@@ -240,7 +240,7 @@
     "636.5b4e79a3.chunk.js.map": "./static/js/636.5b4e79a3.chunk.js.map",
     "257.cd5ea254.chunk.js.map": "./static/js/257.cd5ea254.chunk.js.map",
     "640.6b5bd485.chunk.js.map": "./static/js/640.6b5bd485.chunk.js.map",
-    "701.33be113c.chunk.js.map": "./static/js/701.33be113c.chunk.js.map",
+    "701.4514a38f.chunk.js.map": "./static/js/701.4514a38f.chunk.js.map",
     "60.89816d5e.chunk.js.map": "./static/js/60.89816d5e.chunk.js.map",
     "421.a3bfc99a.chunk.js.map": "./static/js/421.a3bfc99a.chunk.js.map",
     "225.0f8ae9e7.chunk.js.map": "./static/js/225.0f8ae9e7.chunk.js.map",
@@ -264,11 +264,11 @@
     "707.6bdf1ffd.chunk.js.map": "./static/js/707.6bdf1ffd.chunk.js.map",
     "380.498d4d62.chunk.js.map": "./static/js/380.498d4d62.chunk.js.map",
     "226.2a2ca3da.chunk.js.map": "./static/js/226.2a2ca3da.chunk.js.map",
-    "83.f114260d.chunk.js.map": "./static/js/83.f114260d.chunk.js.map",
+    "83.ee22d432.chunk.js.map": "./static/js/83.ee22d432.chunk.js.map",
     "324.570c5deb.chunk.js.map": "./static/js/324.570c5deb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.477aa8b5.css",
-    "static/js/main.9f26d828.js"
+    "static/js/main.84deb987.js"
   ]
 }

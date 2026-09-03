@@ -34,8 +34,8 @@ import urbanCamp13 from "../../views/urbanCamp/images/urban-camp-13-26.jpg";
 import urbanCamp14 from "../../views/urbanCamp/images/urban-camp-14-26.jpg";
 import urbanCamp15 from "../../views/urbanCamp/images/urban-camp-15-26.jpg";
 
-const sembrandoFuturoPortada = "/images/huerto/PROYECTO.jpg";
-const sembrandoFuturo1 = "/images/huerto/huerto-1.jpg";
+const sembrandoFuturoPortada = "/images/huerto/huerto-1.jpg";
+const sembrandoFuturo1 = "/images/huerto/PROYECTO.jpg";
 const sembrandoFuturo2 = "/images/huerto/huerto-2.jpg";
 const sembrandoFuturo3 = "/images/huerto/huerto-3.jpg";
 
