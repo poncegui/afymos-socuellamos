@@ -1,12 +1,34 @@
-import { useEffect, useState } from "react";
-import LazyResponsiveImage from "../Image/LazyResponsiveImage";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faMinus, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
-import { typography } from "../../styles/typography";
-import CTAButton from "../Button/CTAButton";
+import { useEffect, useState } from 'react';
+import LazyResponsiveImage from '../Image/LazyResponsiveImage';
+import styled from 'styled-components';
+import { typography } from '../../styles/typography';
+import CTAButton from '../Button/CTAButton';
 
-const STORAGE_KEY = "afymos_fontScale";
+const STORAGE_KEY = 'afymos_fontScale';
+
+const SpeakerIcon = () => (
+  <Svg viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      d="M4 10.5v3h3.5l4.5 4V6.5L7.5 10.5H4Z"
+      fill="currentColor"
+      opacity="0.9"
+    />
+    <path
+      d="M16.5 9.3a4.7 4.7 0 0 1 0 5.4M18.8 6.6a8.2 8.2 0 0 1 0 10.8"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+  </Svg>
+);
+
+const Svg = styled.svg`
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  flex-shrink: 0;
+`;
 
 const FeaturedNews = ({ item, priorityImage = false }) => {
   const [scale, setScale] = useState(() => {
@@ -22,27 +44,27 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
   useEffect(() => {
     try {
       const v = Number(localStorage.getItem(STORAGE_KEY) || 1);
-      document.documentElement.style.setProperty("--fs", String(v));
+      document.documentElement.style.setProperty('--fs', String(v));
       setScale(v);
     } catch {}
 
-    const onStorage = (ev) => {
+    const onStorage = ev => {
       if (ev.key === STORAGE_KEY) {
         try {
           const val = Number(ev.newValue || 1);
-          document.documentElement.style.setProperty("--fs", String(val));
+          document.documentElement.style.setProperty('--fs', String(val));
           setScale(val);
         } catch {}
       }
     };
-    window.addEventListener("storage", onStorage);
-    return () => window.removeEventListener("storage", onStorage);
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
   }, []);
 
-  const updateScale = (newScale) => {
+  const updateScale = newScale => {
     try {
       localStorage.setItem(STORAGE_KEY, String(newScale));
-      document.documentElement.style.setProperty("--fs", String(newScale));
+      document.documentElement.style.setProperty('--fs', String(newScale));
       setScale(newScale);
     } catch {}
   };
@@ -62,14 +84,14 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
   };
 
   const handleSpeak = () => {
-    if ("speechSynthesis" in window) {
+    if ('speechSynthesis' in window) {
       if (speakActive) {
         window.speechSynthesis.cancel();
         setSpeakActive(false);
       } else {
         const text = item.excerpt;
         const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = "es-ES";
+        utterance.lang = 'es-ES';
         utterance.onstart = () => setSpeakActive(true);
         utterance.onend = () => setSpeakActive(false);
         window.speechSynthesis.speak(utterance);
@@ -98,7 +120,7 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
                   top: 0,
                   left: 0,
                   width: '100%',
-                  height: '100%'
+                  height: '100%',
                 }}
               />
             </VideoContainer>
@@ -110,6 +132,8 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
                 width="1200"
                 height="700"
                 priority={priorityImage}
+                className="featured-news-image"
+                style={{ filter: 'grayscale(1)' }}
               />
               <ImageCaption>Oportunidades que cambian vidas</ImageCaption>
             </>
@@ -123,7 +147,7 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
             <Label aria-hidden="true">Noticia destacada</Label>
             {item.tags && item.tags.length > 0 && (
               <TagList>
-                {item.tags.slice(0, 3).map((t) => (
+                {item.tags.slice(0, 3).map(t => (
                   <Tag key={t}>{t}</Tag>
                 ))}
               </TagList>
@@ -139,20 +163,20 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
                   disabled={scale <= 0.75}
                   aria-label="Reducir tamaño de texto"
                 >
-                  <FontAwesomeIcon icon={faMinus} /> A
+                  A−
                 </A11yButton>
                 <A11yButton
                   onClick={resetFontSize}
                   aria-label="Restablecer tamaño de texto"
                 >
-                  Escala actual: {(scale * 100).toFixed(0)}%
+                  {(scale * 100).toFixed(0)}%
                 </A11yButton>
                 <A11yButton
                   onClick={increaseFontSize}
                   disabled={scale >= 2}
                   aria-label="Aumentar tamaño de texto"
                 >
-                  <FontAwesomeIcon icon={faPlus} /> A
+                  A+
                 </A11yButton>
               </ButtonGroup>
             </AccessibilityGroup>
@@ -160,10 +184,10 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
             <A11yButton
               onClick={handleSpeak}
               active={speakActive}
-              aria-label={speakActive ? "Detener lectura" : "Leer en voz alta"}
+              aria-label={speakActive ? 'Detener lectura' : 'Leer en voz alta'}
             >
-              <FontAwesomeIcon icon={faVolumeUp} />
-              {speakActive ? " Pausar" : " Leer"}
+              <SpeakerIcon />
+              {speakActive ? 'Pausar' : 'Leer'}
             </A11yButton>
           </AccessibilityBar>
 
@@ -171,7 +195,7 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
 
           <Excerpt>
             {item.excerpt
-              .split("\n")
+              .split('\n')
               .slice(0, 4)
               .map((p, i) => (
                 <p key={i}>{p}</p>
@@ -181,10 +205,10 @@ const FeaturedNews = ({ item, priorityImage = false }) => {
           <Footer>
             {item.date && (
               <PublishDate dateTime={item.date}>
-                {new Date(item.date).toLocaleDateString("es-ES", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
+                {new Date(item.date).toLocaleDateString('es-ES', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
                 })}
               </PublishDate>
             )}
@@ -240,16 +264,21 @@ const MediaCol = styled.div`
   display: flex;
   flex-direction: column;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s ease;
+  .featured-news-image {
+    filter: grayscale(1) !important;
+    transition: transform 0.5s ease, filter 0.5s ease;
   }
 
-  &:hover img {
+  .featured-news-image img {
+    filter: grayscale(1) !important;
+  }
+
+  &:hover .featured-news-image {
     transform: scale(1.03);
+  }
+
+  &:hover .featured-news-image img {
+    filter: grayscale(1) contrast(1.04) !important;
   }
 
   @media (max-width: 860px) {
@@ -280,7 +309,11 @@ const ImageCaption = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(34, 68, 100, 0.95), rgba(34, 68, 100, 0.75));
+  background: linear-gradient(
+    to top,
+    rgba(34, 68, 100, 0.95),
+    rgba(34, 68, 100, 0.75)
+  );
   color: #fff;
   padding: 1.5rem 2rem;
   font-size: calc(1.5rem * var(--fs, 1));
@@ -421,19 +454,18 @@ const A11yButton = styled.button`
   align-items: center;
   gap: 0.35rem;
   padding: 0.45rem 0.8rem;
-  background: ${(props) =>
-    props.active ? "#224464" : props.disabled ? "#e8e8e8" : "#fff"};
-  color: ${(props) =>
-    props.active ? "#fff" : props.disabled ? "#666" : "#071c2f"};
+  background: ${props =>
+    props.active ? '#224464' : props.disabled ? '#e8e8e8' : '#fff'};
+  color: ${props =>
+    props.active ? '#fff' : props.disabled ? '#666' : '#071c2f'};
   border: 1.5px solid
-    ${(props) =>
-      props.active ? "#224464" : props.disabled ? "#ccc" : "#c6b1c9"};
+    ${props => (props.active ? '#224464' : props.disabled ? '#ccc' : '#c6b1c9')};
   border-radius: 8px;
   font-size: calc(0.8rem * var(--fs, 1));
   font-weight: 600;
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+  cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
   transition: all 0.2s;
-  opacity: ${(props) => (props.disabled ? 0.7 : 1)};
+  opacity: ${props => (props.disabled ? 0.7 : 1)};
 
   &:hover:not(:disabled) {
     background: #224464;
@@ -447,6 +479,8 @@ const A11yButton = styled.button`
   }
 
   svg {
-    font-size: calc(0.75rem * var(--fs, 1));
+    width: 0.85rem;
+    height: 0.85rem;
+    flex-shrink: 0;
   }
 `;

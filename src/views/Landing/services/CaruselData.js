@@ -1,6 +1,6 @@
 import afymos from "../assets/images-cover/familia-afymos.png";
 import basket from "../assets/images-cover/somos-campeones.png";
-import camiseta from "../assets/images-noticias/camiseta.jpg";
+import sembrandoFuturo from "../../huerto/images/huerto-1.jpg";
 import capacity from "../assets/images-cover/semana-capacidad.png";
 import carlos from "../assets/images-noticias/carlos-4.jpg";
 import cata from "../assets/images-noticias/cata-vino/cata-vinos.jpg";
@@ -24,13 +24,12 @@ export const items = [
   },
   {
     id: 11,
-    image: camiseta,
-    imageWebp: "/images/carusel/camiseta.webp",
-    alt: "Camiseta Ponte en mis zapatos",
-    title: "¡Encarga ya tu camiseta!",
+    image: sembrandoFuturo,
+    alt: "Proyecto Sembrando Futuro - Huerto AFYMOS",
+    title: "🌱 SEMBRANDO FUTURO 🌱",
     description:
-      "Si aún no tienes tu camiseta «Ponte en mis zapatos», ¡date prisa! Se ha ampliado el plazo hasta el 31. ¡Corre y no te quedes sin ella!",
-    link: "",
+      "¡Nuestra cosecha da sus frutos! Pepinos, pimientos, judías y tomates de nuestro huerto. Un proyecto que crece con esfuerzo e ilusión compartida.",
+    link: "/noticias/sembrando-futuro-2026",
   },
   {
     id: 10,

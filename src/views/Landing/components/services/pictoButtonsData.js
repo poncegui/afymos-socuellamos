@@ -19,12 +19,12 @@ export const servicesData = [
   },
   {
     id: 2,
-    name: "Servicio de capacitación",
+    name: "Servicio de Capacitación sociolaboral",
     img: capacitacion,
-    alt: "Servicio de capacitación",
+    alt: "Servicio de capacitación sociolaboral",
     url: "/servicio-capacitacion",
-    browserTitle: "Ir a Servicio de Capacitación de Afymos",
-    seoTitle: "Capacitación - Afymos",
+    browserTitle: "Ir a Servicio de Capacitación Sociolaboral de Afymos",
+    seoTitle: "Capacitación sociolaboral - Afymos",
   },
   {
     id: 3,

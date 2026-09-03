@@ -27,8 +27,44 @@ const ProjectPageLayout = ({
   IntroComponent,
   contentSections = [],
   showPartners = true,
-  children
+  footerData = null,
+  footerTitle = null,
+  children,
 }) => {
+  const renderPartnerSection = () => {
+    if (!showPartners) return null;
+
+    if (footerData && footerData.length) {
+      return (
+        <PartnersList
+          size
+          inverse
+          marginBottom
+          data={footerData}
+          title={footerTitle || 'Cofinanciado por'}
+        />
+      );
+    }
+
+    return (
+      <>
+        <PartnersList
+          size
+          marginBottom
+          data={colaboradoresData}
+          title="Socios Colaboradores"
+        />
+        <PartnersList
+          size
+          inverse
+          marginBottom
+          data={partnersData}
+          title="Cofinanciaciones"
+        />
+      </>
+    );
+  };
+
   return (
     <>
       <ScrollToTop />
@@ -54,23 +90,7 @@ const ProjectPageLayout = ({
       {children}
 
       {/* Partners - siempre al final */}
-      {showPartners && (
-        <>
-          <PartnersList
-            size
-            marginBottom
-            data={colaboradoresData}
-            title="Socios Colaboradores"
-          />
-          <PartnersList
-            size
-            inverse
-            marginBottom
-            data={partnersData}
-            title="Cofinanciaciones"
-          />
-        </>
-      )}
+      {renderPartnerSection()}
     </>
   );
 };

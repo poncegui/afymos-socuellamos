@@ -1,17 +1,27 @@
-import styled from "styled-components";
-import { FontAwesomeIcon, faFileLines, faScaleBalanced, faHandshake, faShieldHeart, faPeopleGroup, faChartLine, faFileContract, faFileInvoiceDollar } from "../../../utils/icons";
-import doc12 from "./assets/docs_transparencia/cuentas-anuales-2024.pdf";
-import doc4 from "./assets/docs_transparencia/plan-estrategico-2023-2024.pdf";
-import doc6 from "./assets/docs_transparencia/plan-voluntariado-2025-2027.pdf";
-import doc9 from "./assets/docs_transparencia/codigoEtico.pdf";
-import auditoriaVvdaApoyo from "./assets/docs_transparencia/auditoria-vvda-apoyo.pdf";
-import auditoria from "./assets/docs_transparencia/auditoria.pdf";
-import memoriaActividades from "./assets/docs_transparencia/memoria-actividades.pdf";
-import acuerdo from "../../Landing/components/tePuedeInteresar/assets/pdf/acuerdo.pdf";
-import docCompromiso from "../../Landing/components/tePuedeInteresar/assets/pdf/compromiso.pdf";
-import planIgualdad from "../../Landing/components/tePuedeInteresar/assets/pdf/planIgualdad.pdf";
-import protocolo from "../../Landing/components/tePuedeInteresar/assets/pdf/protocoloPrevencion.pdf";
-import diversesDoc from "../../Landing/components/tePuedeInteresar/assets/pdf/diverses.pdf";
+import styled from 'styled-components';
+import {
+  FontAwesomeIcon,
+  faFileLines,
+  faScaleBalanced,
+  faHandshake,
+  faShieldHeart,
+  faPeopleGroup,
+  faChartLine,
+  faFileContract,
+  faFileInvoiceDollar,
+} from '../../../utils/icons';
+import doc12 from './assets/docs_transparencia/cuentas-anuales-2025.pdf';
+import doc4 from './assets/docs_transparencia/plan-estrategico-2023-2024.pdf';
+import doc6 from './assets/docs_transparencia/plan-voluntariado-2025-2027.pdf';
+import doc9 from './assets/docs_transparencia/codigoEtico.pdf';
+import auditoriaVvdaApoyo from './assets/docs_transparencia/auditoria-vvda-apoyo.pdf';
+import auditoria from './assets/docs_transparencia/auditoria.pdf';
+import memoriaActividades from './assets/docs_transparencia/memoria-actividades.pdf';
+import acuerdo from '../../Landing/components/tePuedeInteresar/assets/pdf/acuerdo.pdf';
+import docCompromiso from '../../Landing/components/tePuedeInteresar/assets/pdf/compromiso.pdf';
+import planIgualdad from '../../Landing/components/tePuedeInteresar/assets/pdf/planIgualdad.pdf';
+import protocolo from '../../Landing/components/tePuedeInteresar/assets/pdf/protocoloPrevencion.pdf';
+import diversesDoc from '../../Landing/components/tePuedeInteresar/assets/pdf/diverses.pdf';
 
 const DescargaTransparencia = () => {
   const documents = [
@@ -20,108 +30,108 @@ const DescargaTransparencia = () => {
       url: doc4,
       name: 'Plan Estratégico: "En ruta"',
       icon: faChartLine,
-      color: "#224464",
-      category: "Planificación",
-      description: "Plan estratégico de la organización"
+      color: '#224464',
+      category: 'Planificación',
+      description: 'Plan estratégico de la organización',
     },
     {
       id: 2,
       url: doc6,
-      name: "Plan de Voluntariado: 2025-2027",
+      name: 'Plan de Voluntariado: 2025-2027',
       icon: faPeopleGroup,
-      color: "#81b71a",
-      category: "Planificación",
-      description: "Plan de voluntariado trienal"
+      color: '#81b71a',
+      category: 'Planificación',
+      description: 'Plan de voluntariado trienal',
     },
     {
       id: 3,
       url: doc9,
-      name: "Código Ético",
+      name: 'Código Ético',
       icon: faScaleBalanced,
-      color: "#c6b1c9",
-      category: "Normativa",
-      description: "Código ético organizacional"
+      color: '#c6b1c9',
+      category: 'Normativa',
+      description: 'Código ético organizacional',
     },
     {
       id: 4,
       url: doc12,
-      name: "Cuentas Anuales 2024",
+      name: 'Cuentas Anuales 2025',
       icon: faFileInvoiceDollar,
-      color: "#224464",
-      category: "Económico",
-      description: "Cuentas anuales del ejercicio 2024"
+      color: '#224464',
+      category: 'Económico',
+      description: 'Cuentas anuales del ejercicio 2025',
     },
     {
       id: 5,
       url: planIgualdad,
-      name: "Plan de Igualdad",
+      name: 'Plan de Igualdad',
       icon: faScaleBalanced,
-      color: "#c6b1c9",
-      category: "Igualdad",
-      description: "Plan de igualdad de género"
+      color: '#c6b1c9',
+      category: 'Igualdad',
+      description: 'Plan de igualdad de género',
     },
     {
       id: 6,
       url: protocolo,
-      name: "Protocolo para Prevención y Actuación",
+      name: 'Protocolo para Prevención y Actuación',
       icon: faShieldHeart,
-      color: "#81b71a",
-      category: "Igualdad",
-      description: "Protocolo de prevención y actuación"
+      color: '#81b71a',
+      category: 'Igualdad',
+      description: 'Protocolo de prevención y actuación',
     },
     {
       id: 7,
       url: docCompromiso,
-      name: "Compromiso con la Igualdad",
+      name: 'Compromiso con la Igualdad',
       icon: faHandshake,
-      color: "#224464",
-      category: "Igualdad",
-      description: "Documento de compromiso con la igualdad"
+      color: '#224464',
+      category: 'Igualdad',
+      description: 'Documento de compromiso con la igualdad',
     },
     {
       id: 8,
       url: acuerdo,
-      name: "Acuerdo Igualdad",
+      name: 'Acuerdo Igualdad',
       icon: faFileContract,
-      color: "#c6b1c9",
-      category: "Igualdad",
-      description: "Acuerdo de igualdad institucional"
+      color: '#c6b1c9',
+      category: 'Igualdad',
+      description: 'Acuerdo de igualdad institucional',
     },
     {
       id: 9,
       url: diversesDoc,
-      name: "Diverses",
+      name: 'Diverses',
       icon: faFileLines,
-      color: "#81b71a",
-      category: "Igualdad",
-      description: "Documento Diverses"
+      color: '#81b71a',
+      category: 'Igualdad',
+      description: 'Documento Diverses',
     },
     {
       id: 10,
       url: auditoria,
-      name: "Informe de Auditoría Centro de Día",
+      name: 'Informe de Auditoría Centro de Día',
       icon: faFileInvoiceDollar,
-      color: "#224464",
-      category: "Auditoría",
-      description: "Informe de auditoría del centro de día"
+      color: '#224464',
+      category: 'Auditoría',
+      description: 'Informe de auditoría del centro de día',
     },
     {
       id: 11,
       url: auditoriaVvdaApoyo,
-      name: "Auditoría Vivienda de Apoyo",
+      name: 'Auditoría Vivienda de Apoyo',
       icon: faFileInvoiceDollar,
-      color: "#c6b1c9",
-      category: "Auditoría",
-      description: "Auditoría de vivienda de apoyo"
+      color: '#c6b1c9',
+      category: 'Auditoría',
+      description: 'Auditoría de vivienda de apoyo',
     },
     {
       id: 12,
       url: memoriaActividades,
-      name: "Memoria de Actividades",
+      name: 'Memoria de Actividades',
       icon: faFileLines,
-      color: "#81b71a",
-      category: "Informes",
-      description: "Memoria anual de actividades"
+      color: '#81b71a',
+      category: 'Informes',
+      description: 'Memoria anual de actividades',
     },
   ];
 
@@ -139,7 +149,7 @@ const DescargaTransparencia = () => {
         aria-labelledby="transparencia-title"
         aria-describedby="transparencia-subtitle"
       >
-        {documents.map((doc) => (
+        {documents.map(doc => (
           <DocumentCard
             key={doc.id}
             href={doc.url}
@@ -334,7 +344,7 @@ const IconWrapper = styled.div`
   width: clamp(50px, 10vw, 64px);
   height: clamp(50px, 10vw, 64px);
   border-radius: 12px;
-  background: ${props => props.$color ? `${props.$color}20` : '#22446420'};
+  background: ${props => (props.$color ? `${props.$color}20` : '#22446420')};
   display: flex;
   align-items: center;
   justify-content: center;

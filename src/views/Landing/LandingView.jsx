@@ -81,7 +81,8 @@ const LandingView = () => {
         data={partnersData}
         title="Cofinanciaciones"
       />
-          </>
+    </>
   );
 };
+
 export default LandingView;

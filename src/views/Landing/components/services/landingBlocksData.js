@@ -1,21 +1,22 @@
 import proyectos from "../../../centroDia/assets/images-centroDia/centroDia-2.jpg";
 import sensibility from "../../assets/images-sensibilizacion/sensibilizacion-1.png";
-import sociolaboral from "../../assets/images-integracion-sociolaboral/tomas.jpg";
+import sociolaboral from "../../assets/chica-trabajando.jpeg";
 
 export const heroOne = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "Vida en comunidad:",
+    text: "Servicio de Capacitación sociolaboral",
   },
-  headline: "Integración sociolaboral",
+  headline:
+    "Un recurso de atención diurna y carácter transdisciplinar para la inclusión social y laboral",
   description:
-    "Nuestro objetivo es potenciar los puntos fuertes de las personas con discapacidad y facilitar el aprendizaje de nuevas capacidades en todos los ámbitos de la vida de la persona (autonomía personal, relaciones interpersonales, utilización de los recursos comunitarios y capacidad de toma de decisiones), haciendo especial énfasis en las habilidades de carácter laboral para facilitar su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian del Centro de Día por la metodología de trabajo, por la definición de sus objetivos y por la forma de evaluación de los mismos.",
+    "El servicio de capacitación sociolaboral se define como un recurso de atención diurna y carácter transdisciplinar, diseñado para fomentar la inclusión social y laboral de las personas adultas con discapacidad intelectual, inteligencia límite y/o trastorno del espectro autista.\n\nEl servicio se presta mediante la provisión de apoyos personales, basados en las preferencias, intereses y capacidades de cada persona, con el uso de los recursos de carácter normalizado existentes en el entorno comunitario y desde una perspectiva del fomento de la conducta autodeterminada y de la capacitación comunitaria.\n\nLa prestación del servicio se sustenta en la Planificación Centrada en la Persona, a través de los planes personales de apoyo, poniendo especial atención en las capacidades, puntos fuertes, aspiraciones, talentos y motivaciones de la persona, que se constituye como el protagonista y centro del proceso de intervención.\n\nEl Servicio de Capacitación Sociolaboral está Cofinanciado por la Unión Europea y la Junta de Comunidades de Castilla La Mancha.",
   buttonLabel: "Saber más",
   href: "/servicio-capacitacion",
-  browserTitle: "Ir a Servicio de Capacitación",
+  browserTitle: "Ir a Servicio de Capacitación Sociolaboral",
   img: sociolaboral,
-  alt: "persona trabajando",
+  alt: "persona trabajando en servicio de capacitación sociolaboral",
 };
 
 export const heroTwo = {

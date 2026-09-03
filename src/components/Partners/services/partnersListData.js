@@ -15,7 +15,6 @@ import europa from "../assets/logo-europa.png";
 import euroviane from "../assets/Colaboradores/euroviane.jpg";
 import explaga from "../assets/Colaboradores/explaga.jpg";
 import farmacia from "../assets/Colaboradores/farmacia.jpg";
-import fondosEuropeos from "../assets/fondosEuropeos.png";
 import globalcaja from "../assets/globalcaja.jpg";
 import globalcajaVerde from "../assets/Colaboradores/globalcaja_verde.jpg";
 import gracias from "../assets/gracias.png";
@@ -37,6 +36,7 @@ import samu from "../assets/Colaboradores/samu.jpg";
 import siramar from "../assets/Colaboradores/satie.png";
 import telar from "../assets/Colaboradores/telar.jpg";
 import yolandaAlcolea from "../assets/Colaboradores/yolandaAlcolea.jpg";
+import fondosEuropeos from "../../../views/Landing/assets/logo-fondos-europeos.png";
 
 const target = "_blank";
 

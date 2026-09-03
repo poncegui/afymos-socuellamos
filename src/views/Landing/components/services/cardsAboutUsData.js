@@ -2,7 +2,7 @@ import centroDiversidad from "../assets/pictogramas/campus-universitario.png";
 import contabilidad from "../assets/pictogramas/contabilidad.png";
 import junta from "../assets/pictogramas/junta.png";
 import organigrama from "../assets/pictogramas/organigrama.png";
-import pdfCuentas from "../../../transparencia/components/assets/docs_transparencia/cuentas-anuales-2024.pdf";
+import pdfCuentas from "../../../transparencia/components/assets/docs_transparencia/cuentas-anuales-2025.pdf";
 
 export const aboutUsData = [
   {
@@ -38,12 +38,12 @@ export const aboutUsData = [
   },
   {
     id: 4,
-    title: "Cuentas anuales 2024",
+    title: "Cuentas anuales 2025",
     image: contabilidad,
-    alt: "Cuentas anuales 2024",
+    alt: "Cuentas anuales 2025",
     url: pdfCuentas,
     color: "#f5f5f5",
-    ariaLabel: "Descargar cuentas anuales 2024 de Afymos (archivo PDF)",
-    browserTitle: "Cuentas Anuales 2024 - Afymos",
+    ariaLabel: "Descargar cuentas anuales 2025 de Afymos (archivo PDF)",
+    browserTitle: "Cuentas Anuales 2025 - Afymos",
   },
 ];

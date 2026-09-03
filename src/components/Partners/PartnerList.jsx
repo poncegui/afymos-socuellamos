@@ -10,19 +10,24 @@ const PartnerList = ({ size, inverse, data, title }) => {
       <SectionPartners aria-label="Listado de entidades colaboradoras">
         <Inner>
           <PartnersGrid>
-            {data?.map(partner => (
-              <PartnerWrapper key={partner.id}>
-                <PartnersCard
-                  src={partner.logoSrc}
-                  alt={partner.alt}
-                  url={partner.url}
-                  target={partner.target}
-                  rel="noopener noreferrer"
-                  loading="lazy"
-                  title={partner.titleImg || partner.name}
-                />
-              </PartnerWrapper>
-            ))}
+            {data?.map(partner => {
+              const isFullWidth = partner.name === 'Fondos Europeos';
+
+              return (
+                <PartnerWrapper key={partner.id} $fullWidth={isFullWidth}>
+                  <PartnersCard
+                    src={partner.logoSrc}
+                    alt={partner.alt}
+                    url={partner.url}
+                    target={partner.target}
+                    rel="noopener noreferrer"
+                    loading="lazy"
+                    title={partner.titleImg || partner.name}
+                    fullWidth={isFullWidth}
+                  />
+                </PartnerWrapper>
+              );
+            })}
           </PartnersGrid>
         </Inner>
       </SectionPartners>
@@ -82,23 +87,27 @@ const PartnersGrid = styled.div`
 
 const PartnerWrapper = styled.div`
   width: 100%;
-  max-width: clamp(200px, 20vw, 240px);
+  max-width: ${({ $fullWidth }) =>
+    $fullWidth ? '100%' : 'clamp(200px, 20vw, 240px)'};
   padding: clamp(0.4rem, 1vw, 0.6rem);
   display: flex;
   align-items: stretch;
   transition: transform 0.2s ease;
+  grid-column: ${({ $fullWidth }) => ($fullWidth ? '1 / -1' : 'auto')};
 
   &:hover {
     transform: translateY(-2px);
   }
 
   @media (max-width: 768px) {
-    max-width: clamp(180px, 18vw, 220px);
+    max-width: ${({ $fullWidth }) =>
+      $fullWidth ? '100%' : 'clamp(180px, 18vw, 220px)'};
     padding: clamp(0.35rem, 0.8vw, 0.5rem);
   }
 
   @media (max-width: 480px) {
-    max-width: clamp(160px, 16vw, 200px);
+    max-width: ${({ $fullWidth }) =>
+      $fullWidth ? '100%' : 'clamp(160px, 16vw, 200px)'};
     padding: clamp(0.3rem, 0.6vw, 0.4rem);
   }
 `;

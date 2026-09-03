@@ -1,5 +1,6 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import defaultFallback from '../../views/Landing/assets/images-noticias/news.png';
 
 /**
  * LazyResponsiveImage
@@ -16,7 +17,7 @@ import styled from "styled-components";
 const LazyResponsiveImage = ({
   src,
   webp,
-  alt = "",
+  alt = '',
   width,
   height,
   priority = false,
@@ -25,14 +26,16 @@ const LazyResponsiveImage = ({
   className,
   style,
   responsive = false,
+  variant = 'responsive', // 'responsive' | 'hero' | 'thumb' | 'modal'
+  objectFit,
 }) => {
   if (!src) return null;
 
-  const loading = priority ? "eager" : "lazy";
-  const fetchpriority = priority ? "high" : undefined;
+  const loading = priority ? 'eager' : 'lazy';
+  const fetchpriority = priority ? 'high' : undefined;
 
   // Generate responsive srcSet for carousel images
-  const generateResponsiveSrcSet = (basePath) => {
+  const generateResponsiveSrcSet = basePath => {
     if (!responsive || !basePath) return null;
 
     const ext = basePath.split('.').pop();
@@ -42,10 +45,11 @@ const LazyResponsiveImage = ({
   };
 
   const responsiveSrcSet = generateResponsiveSrcSet(webp);
-  const defaultSizes = sizes || "(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px";
+  const defaultSizes =
+    sizes || '(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px';
 
   return (
-    <PictureWrap className={className} style={style}>
+    <PictureWrap className={className} style={style} $variant={variant}>
       <picture>
         {webp && responsiveSrcSet && (
           <source
@@ -54,7 +58,9 @@ const LazyResponsiveImage = ({
             type="image/webp"
           />
         )}
-        {webp && !responsiveSrcSet && <source srcSet={webp} type="image/webp" />}
+        {webp && !responsiveSrcSet && (
+          <source srcSet={webp} type="image/webp" />
+        )}
         {srcSet && <source srcSet={srcSet} sizes={sizes} />}
         <Img
           src={src}
@@ -63,6 +69,18 @@ const LazyResponsiveImage = ({
           fetchpriority={fetchpriority}
           width={width}
           height={height}
+          $variant={variant}
+          $objectFit={objectFit}
+          onError={e => {
+            try {
+              if (e && e.target && e.target.src !== defaultFallback) {
+                e.target.onerror = null;
+                e.target.src = defaultFallback;
+              }
+            } catch (err) {
+              /* ignore */
+            }
+          }}
         />
       </picture>
     </PictureWrap>
@@ -72,13 +90,68 @@ const LazyResponsiveImage = ({
 export default LazyResponsiveImage;
 
 const PictureWrap = styled.span`
-  display: inline-block;
+  display: block;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
+  /* hero variant: limit height and cover */
+  ${props =>
+    props.$variant === 'hero' &&
+    `
+    max-height: 60vh;
+    display: block;
+  `}
+
+  /* thumbnail: keep smaller height but full width */
+  ${props =>
+    props.$variant === 'thumb' &&
+    `
+    max-height: 260px;
+  `}
+
+  /* modal: center content */
+  ${props =>
+    props.$variant === 'modal' &&
+    `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `}
 `;
 
 const Img = styled.img`
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: ${props => props.$objectFit || 'cover'};
+
+  /* hero uses cover and fills the wrapper */
+  ${props =>
+    props.$variant === 'hero' &&
+    `
+    width: 100%;
+    height: 100%;
+    object-fit: ${props.$objectFit || 'cover'};
+  `}
+
+  /* thumbnail keeps fixed height and covers */
+  ${props =>
+    props.$variant === 'thumb' &&
+    `
+    width: 100%;
+    height: 100%;
+    object-fit: ${props.$objectFit || 'cover'};
+  `}
+
+  /* modal: contain inside viewport */
+  ${props =>
+    props.$variant === 'modal' &&
+    `
+    width: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    object-fit: contain;
+  `}
 `;

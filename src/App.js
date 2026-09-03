@@ -36,6 +36,7 @@ const VisorPdfOrganigrama            = lazy(() => import("./views/Landing/compon
 const VisorPdfCuentas                = lazy(() => import("./views/Landing/components/pdf/VisorPdfCuentas"));
 const VisorFormacion                 = lazy(() => import("./views/Landing/components/pdf/VisorFormacion"));
 const VisorCrea                      = lazy(() => import("./views/Landing/components/pdf/VisorCrea2024"));
+const UrbanCampCollage               = lazy(() => import("./views/urbanCamp/components/UrbanCampCollage"));
 
 /* ── Fallback mientras carga cada ruta ──────────────────────────────────── */
 const PageLoader = () => (
@@ -96,6 +97,7 @@ const App = () => (
           <Route path="/cuentas-anuales"                             element={<VisorPdfCuentas />} />
           <Route path="/documentacion-formacion"                     element={<VisorFormacion />} />
           <Route path="/crea2024"                                    element={<VisorCrea />} />
+          <Route path="/urban-camp-2026"                             element={<UrbanCampCollage />} />
           <Route path="/noticias/dia-discapacidad-diputacion-cr-2025" element={<NewsDiaDiscapacidadPage />} />
           <Route path="/noticias/:slug"                              element={<NewsDetail />} />
         </Routes>

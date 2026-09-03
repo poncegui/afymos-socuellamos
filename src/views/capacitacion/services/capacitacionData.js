@@ -1,30 +1,30 @@
-import capacitacion from "../assets/images-capacitacion/sociolaboral.jpg";
+import capacitacion from "../../Landing/assets/chica-trabajando.jpeg";
 import capacitacion2 from "../assets/images-capacitacion/rafa.jpg";
 
 export const capacitacionDataOne = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "El Servicio de Capacitación Afymos",
+    text: "Servicio de Capacitación sociolaboral",
   },
   headline:
-    "Es un servicio de atención diurna que tiene como objetivo principal potenciar los puntos fuertes de las personas con discapacidad",
+    "Un recurso de atención diurna y carácter transdisciplinar para fomentar la inclusión social y laboral",
   description:
-    "Facilitar el aprendizaje de nuevas capacidades en todos los ámbitos de la vida de la persona (autonomía personal, relaciones interpersonales, utilización de los recursos comunitarios y capacidad de toma de decisiones).",
+    "El servicio de capacitación sociolaboral se define como un recurso de atención diurna y carácter transdisciplinar, diseñado para fomentar la inclusión social y laboral de las personas adultas con discapacidad intelectual, inteligencia límite y/o trastorno del espectro autista.\n\nEl servicio se presta mediante la provisión de apoyos personales, basados en las preferencias, intereses y capacidades de cada persona, con el uso de los recursos de carácter normalizado existentes en el entorno comunitario y desde una perspectiva del fomento de la conducta autodeterminada y de la capacitación comunitaria.\n\nLa prestación del servicio se sustenta en la Planificación Centrada en la Persona, a través de los planes personales de apoyo, poniendo especial atención en las capacidades, puntos fuertes, aspiraciones, talentos y motivaciones de la persona, que se constituye como el protagonista y centro del proceso de intervención.\n\nEl Servicio de Capacitación Sociolaboral está Cofinanciado por la Unión Europea y la Junta de Comunidades de Castilla La Mancha.",
   img: capacitacion,
-  alt: "Persona con discapacidad trabajando en programa de integración sociolaboral",
+  alt: "Persona con discapacidad trabajando en servicio de capacitación sociolaboral",
 };
 
 export const capacitacionDataTwo = {
   reverse: true,
   inverse: false,
   topLine: {
-    text: "Hacemos especial énfasis en las habilidades de carácter laboral",
+    text: "Apoyos personalizados y capacitación comunitaria",
   },
   headline:
-    "A través de programas de habilitación encaminados a alcanzar el mayor grado de autonomía personal, de comunicación, adquisición y mantenimiento de las habilidades básicas",
+    "Fortalecemos la autonomía, la comunicación y la participación activa en la comunidad",
   description:
-    "Facitiliamos su acceso al empleo normalizado y siempre sobre la base de sus preferencias y con el uso de apoyos personales. Se diferencian de otros recursos sociales por su metodología detrabajo, por la definición de sus objetivos y por la forma de evaluación de los mismos.",
+    "A través de la valoración de necesidades, intereses y capacidades, organizamos apoyos individuales y grupales orientados a la vida independiente, el empleo y la participación social.\n\nNuestro enfoque combina la atención personalizada con la inclusión en entornos normalizados, promoviendo la autodeterminación, la adquisición de habilidades de la vida cotidiana y la participación activa en la comunidad.\n\nLa intervención se articula desde una mirada centrada en la persona, con actividades dirigidas a reforzar la autonomía personal, la autonomía de decisión, la convivencia y el desarrollo de competencias sociolaborales.",
   img: capacitacion2,
   alt: "Participante del programa de habilitación laboral desarrollando habilidades básicas",
 };

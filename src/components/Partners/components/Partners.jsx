@@ -1,8 +1,7 @@
 import { FontAwesomeIcon, faUpRightFromSquare } from '../../../utils/icons';
 import styled from 'styled-components';
 
-const PartnersCard = ({ url, alt, target, src, title }) => {
-
+const PartnersCard = ({ url, alt, target, src, title, fullWidth = false }) => {
   // Best-effort WebP path next to original filename
   const fileName = src.split('/').pop().split('.')[0];
   const webpPath = `/images/partners/${fileName}.webp`;
@@ -14,12 +13,18 @@ const PartnersCard = ({ url, alt, target, src, title }) => {
       rel="noopener noreferrer"
       aria-label={`Visitar sitio web de ${title}, colaborador de Afymos`}
       title={`${title} - Colaborador`}
+      $fullWidth={fullWidth}
     >
-      <PartnertCard>
-        <PartnertFaceFront>
+      <PartnertCard $fullWidth={fullWidth}>
+        <PartnertFaceFront $fullWidth={fullWidth}>
           <picture>
             <source srcSet={webpPath} type="image/partners/webp" />
-            <LogoPartner src={src} alt={`Logo de ${alt}`} loading="lazy" />
+            <LogoPartner
+              src={src}
+              alt={`Logo de ${alt}`}
+              loading="lazy"
+              $fullWidth={fullWidth}
+            />
           </picture>
         </PartnertFaceFront>
       </PartnertCard>
@@ -42,7 +47,8 @@ export const PartnertCard = styled.div`
   justify-content: center;
   margin: auto;
   position: relative;
-  width: 50%;
+  width: ${({ $fullWidth }) => ($fullWidth ? '100%' : '50%')};
+  max-width: ${({ $fullWidth }) => ($fullWidth ? '100%' : '180px')};
   gap: 2rem;
   white-space: nowrap;
 `;
@@ -55,13 +61,14 @@ export const PartnertFaceFront = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 0.4rem;
+  padding: ${({ $fullWidth }) =>
+    $fullWidth ? '0.8rem 0.2rem' : '0.6rem 0.4rem'};
 `;
 
 export const LogoPartner = styled.img`
-  width: auto;
+  width: ${({ $fullWidth }) => ($fullWidth ? '100%' : 'auto')};
   max-width: 100%;
-  height: 60px;
+  height: ${({ $fullWidth }) => ($fullWidth ? 'auto' : '60px')};
   object-fit: contain;
 `;
 

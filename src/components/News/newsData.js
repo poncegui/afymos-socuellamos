@@ -19,8 +19,101 @@ import crea2024 from "../../views/Landing/assets/images-noticias/crea-2024/crea-
 import crea2024Webp from "../../views/Landing/assets/images-noticias/crea-2024/crea-2024.webp";
 import logosCrea from "../../views/Landing/assets/images-noticias/crea-2024/logos.jpg";
 import logosCreaWebp from "../../views/Landing/assets/images-noticias/crea-2024/logos.webp";
+import urbanCamp01 from "../../views/urbanCamp/images/urban-camp-01-26.jpg";
+import urbanCamp02 from "../../views/urbanCamp/images/urban-camp-02-26.jpg";
+import urbanCamp03 from "../../views/urbanCamp/images/urban-camp-03-26.jpg";
+import urbanCamp04 from "../../views/urbanCamp/images/urban-camp-04-26.jpg";
+import urbanCamp05 from "../../views/urbanCamp/images/urban-camp-05-26.jpg";
+import urbanCamp07 from "../../views/urbanCamp/images/urban-camp-07-26.jpg";
+import urbanCamp08 from "../../views/urbanCamp/images/urban-camp-08-26.jpg";
+import urbanCamp09 from "../../views/urbanCamp/images/urban-camp-09-26.jpg";
+import urbanCamp10 from "../../views/urbanCamp/images/urban-camp-10-26.jpg";
+import urbanCamp11 from "../../views/urbanCamp/images/urban-camp-11-26.jpg";
+import urbanCamp12 from "../../views/urbanCamp/images/urban-camp-12-26.jpg";
+import urbanCamp13 from "../../views/urbanCamp/images/urban-camp-13-26.jpg";
+import urbanCamp14 from "../../views/urbanCamp/images/urban-camp-14-26.jpg";
+import urbanCamp15 from "../../views/urbanCamp/images/urban-camp-15-26.jpg";
+import sembrandoFuturoPortada from "../../views/huerto/images/huerto-1.jpg";
+import sembrandoFuturo1 from "../../views/huerto/images/PROYECTO.jpg";
+import sembrandoFuturo2 from "../../views/huerto/images/huerto-2.jpg";
+import sembrandoFuturo3 from "../../views/huerto/images/huerto-3.jpg";
 
 export const sampleNews = [
+  {
+    id: "urban-camp-2026",
+    title: "URBAN CAMP 2026",
+    excerpt: `Un año más, URBAN CAMP nos deja un verano lleno de diversión, aprendizaje y convivencia. Durante todo el mes de julio hemos disfrutado de un sinfín de actividades: piscinas, gymkhanas fotográficas y temáticas, gymkhana de trueque, juegos de orientación, juegos tradicionales y, como uno de los momentos más esperados, ¡nuestra excursión a PLAYA PARK
+
+Como broche final, hemos vivido una fantástica acampada con actividades de multiaventura junto a Ecoturismo Ruidera y una noche inolvidable en el Hostal La Cañada. 
+
+ URBAN CAMP está subvencionado por Junta de Comunidades de Castilla-La Mancha, Ayuntamiento de Socuéllamos y Fundación "la Caixa", haciendo posible un campamento inclusivo dirigido a jóvenes de entre 12 y 16 años, donde todas las personas tienen la oportunidad de disfrutar del ocio en igualdad de condiciones.
+
+Queremos agradecer la colaboración de todas las entidades y profesionales que han contribuido al desarrollo y la seguridad del campamento: Policía Local, Plan Director de la Guardia Civil, TU SALUD, Ecoturismo Ruidera, los técnicos del Ayuntamiento de Socuéllamos y todas las personas implicadas.
+
+Y, por supuesto, nuestro mayor agradecimiento es para los y las jóvenes participantes, sus familias, por confiar en un modelo de ocio inclusivo, y al magnífico equipo de monitores y monitoras, cuya implicación ha hecho posible un mes de julio repleto de experiencias, amistad y diversión.
+
+¡Gracias por formar parte de URBAN CAMP 2026! Nos vemos el próximo verano.`,
+    image: urbanCamp01,
+    images: [
+      urbanCamp01,
+      urbanCamp02,
+      urbanCamp03,
+      urbanCamp04,
+      urbanCamp05,
+      urbanCamp07,
+      urbanCamp08,
+      urbanCamp09,
+      urbanCamp10,
+      urbanCamp11,
+      urbanCamp12,
+      urbanCamp13,
+      urbanCamp14,
+      urbanCamp15,
+    ],
+    alt: "Urban Camp 2026 - Campamento de verano inclusivo",
+    date: "2026-08-30",
+    href: "/noticias/urban-camp-2026",
+    collageUrl: "/urban-camp-2026",
+    collageLabel: "Ver collage completo",
+    tags: [
+      "afymos",
+      "UrbanCamp",
+      "verano",
+      "inclusion",
+      "ocio",
+      "JCCM",
+      "FundacionLaCaixa",
+    ],
+  },
+  {
+    id: "sembrando-futuro-2026",
+    title: "SEMBRANDO FUTURO",
+    excerpt: `30 de agosto de 2026
+Tras unos meses de trabajo muy intenso, estamos muy felices de compartir que nuestra cosecha empieza a dar sus frutos.
+
+La recolecta ya ha comenzado con los primeros pepinos y, cómo no, con nuestros queridos pimientos socuellaminos. Muy pronto también estarán listas nuestras judías y tomates para disfrutar de todo el sabor de nuestro huerto.
+
+Este proyecto crece gracias al esfuerzo, la ilusión y el trabajo compartido.
+
+Por ello, queremos agradecer una vez más a Ayuntamiento de Socuéllamos, Fundación MAPFRE y Junta de Comunidades de Castilla-La Mancha, voluntarios y empresas colaboradoras su apoyo y confianza, ayudándonos a germinar esta iniciativa que hoy comienza a florecer.
+
+¡Seguimos sembrando futuro!`,
+    image: sembrandoFuturoPortada,
+    images: [ sembrandoFuturo1, sembrandoFuturo2, sembrandoFuturo3],
+    alt: "Proyecto Sembrando Futuro - Huerto AFYMOS",
+    date: "2026-08-30",
+    href: "/noticias/sembrando-futuro-2026",
+    tags: [
+      "afymos",
+      "SembrandoFuturo",
+      "huerto",
+      "agricultura",
+      "inclusion",
+      "JCCM",
+      "FundacionMAPFRE",
+      "Socuellamos",
+    ],
+  },
   {
     id: "proyecto-formacion-empleo-crea-2026",
     title: "Proyecto de formación y empleo",
