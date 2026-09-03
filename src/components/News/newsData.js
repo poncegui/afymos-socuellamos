@@ -33,10 +33,11 @@ import urbanCamp12 from "../../views/urbanCamp/images/urban-camp-12-26.jpg";
 import urbanCamp13 from "../../views/urbanCamp/images/urban-camp-13-26.jpg";
 import urbanCamp14 from "../../views/urbanCamp/images/urban-camp-14-26.jpg";
 import urbanCamp15 from "../../views/urbanCamp/images/urban-camp-15-26.jpg";
-import sembrandoFuturoPortada from "../../views/huerto/images/huerto-1.jpg";
-import sembrandoFuturo1 from "../../views/huerto/images/PROYECTO.jpg";
-import sembrandoFuturo2 from "../../views/huerto/images/huerto-2.jpg";
-import sembrandoFuturo3 from "../../views/huerto/images/huerto-3.jpg";
+
+const sembrandoFuturoPortada = "/images/huerto/PROYECTO.jpg";
+const sembrandoFuturo1 = "/images/huerto/huerto-1.jpg";
+const sembrandoFuturo2 = "/images/huerto/huerto-2.jpg";
+const sembrandoFuturo3 = "/images/huerto/huerto-3.jpg";
 
 export const sampleNews = [
   {

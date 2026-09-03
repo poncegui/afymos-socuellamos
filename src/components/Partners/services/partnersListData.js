@@ -36,7 +36,8 @@ import samu from "../assets/Colaboradores/samu.jpg";
 import siramar from "../assets/Colaboradores/satie.png";
 import telar from "../assets/Colaboradores/telar.jpg";
 import yolandaAlcolea from "../assets/Colaboradores/yolandaAlcolea.jpg";
-import fondosEuropeos from "../../../views/Landing/assets/logo-fondos-europeos.png";
+
+const fondosEuropeos = "/images/logos/logo-fondos-europeos.png";
 
 const target = "_blank";
 
