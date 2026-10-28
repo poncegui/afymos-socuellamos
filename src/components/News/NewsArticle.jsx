@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import LazyResponsiveImage from '../Image/LazyResponsiveImage';
 import placeholderImg from '../../views/Landing/assets/images-noticias/news.png';
 import { typography } from '../../styles/typography';
+import { AccessiblePDFLink } from '../A11y';
 
 const SpeakerIcon = () => (
   <Svg viewBox="0 0 24 24" aria-hidden="true">
@@ -197,6 +198,25 @@ const NewsArticle = ({ item }) => {
                 ))}
               </div>
             </Body>
+
+            {item.pdfs && item.pdfs.length > 0 && (
+              <PDFSection>
+                <PDFTitle>📄 Documentos relacionados</PDFTitle>
+                <PDFList>
+                  {item.pdfs.map((pdf, i) => (
+                    <AccessiblePDFLink
+                      key={i}
+                      href={pdf.url}
+                      fileSize={pdf.size}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {pdf.title}
+                    </AccessiblePDFLink>
+                  ))}
+                </PDFList>
+              </PDFSection>
+            )}
 
             {item.collageUrl && (
               <CollageButtonWrapper>
@@ -901,5 +921,34 @@ const CollageButton = styled(Link)`
   @media (max-width: 768px) {
     padding: 0.85rem 1.5rem;
     font-size: calc(1rem * var(--fs, 1));
+  }
+`;
+
+const PDFSection = styled.section`
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f6f9 0%, #f0eef2 100%);
+  border-radius: 12px;
+  border-left: 4px solid #c6b1c9;
+`;
+
+const PDFTitle = styled.h3`
+  margin: 0 0 1.25rem 0;
+  font-size: calc(1.3rem * var(--fs, 1));
+  color: #071c2f;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+const PDFList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 `;

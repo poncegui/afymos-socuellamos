@@ -33,6 +33,7 @@ import urbanCamp12 from "../../views/urbanCamp/images/urban-camp-12-26.jpg";
 import urbanCamp13 from "../../views/urbanCamp/images/urban-camp-13-26.jpg";
 import urbanCamp14 from "../../views/urbanCamp/images/urban-camp-14-26.jpg";
 import urbanCamp15 from "../../views/urbanCamp/images/urban-camp-15-26.jpg";
+import concursoRelatosImg from "../../views/Landing/assets/images-noticias/concurso-relatos-2026/concurso-relatos.png";
 
 const sembrandoFuturoPortada = "/images/huerto/huerto-1.jpg";
 const sembrandoFuturo1 = "/images/huerto/PROYECTO.jpg";
@@ -40,6 +41,48 @@ const sembrandoFuturo2 = "/images/huerto/huerto-2.jpg";
 const sembrandoFuturo3 = "/images/huerto/huerto-3.jpg";
 
 export const sampleNews = [
+  {
+    id: "xv-concurso-relatos-cortos-2026",
+    title: "XV Concurso de Relatos Cortos para Personas con Discapacidad Intelectual",
+    excerpt: `¡Abierto el plazo para participar en nuestro XV Concurso de Relatos Cortos!
+
+Este año el tema es: "UN SUEÑO QUE QUIERO CUMPLIR"
+
+Todos tenemos sueños que nos gustaría conseguir algún día. Puede ser un viaje a un lugar, aprender algo nuevo, vivir una experiencia especial, conocer alguien importante, encontrar un trabajo o un amor.
+
+📝 PUEDEN PARTICIPAR: Personas con Discapacidad Intelectual, mayores de 18 años.
+
+📅 PLAZO: Del 1 de octubre al 6 de noviembre de 2026
+
+🏆 PREMIOS: 70€ + diploma por categoría
+
+🎭 GALA DE ENTREGA: 21 de noviembre de 2026
+
+Descarga las bases y participa compartiendo tu sueño.`,
+    image: concursoRelatosImg,
+    alt: "Ilustración de personas escribiendo y leyendo - XV Concurso de Relatos Cortos AFYMOS 2026",
+    date: "2026-10-01",
+    href: "/noticias/xv-concurso-relatos-cortos-2026",
+    pdfs: [
+      {
+        url: require("../../views/Landing/components/pdf/docs_pdf/bases-concurso-relatos-2026.pdf"),
+        title: "Bases del Concurso",
+        size: "332 KB"
+      },
+      {
+        url: require("../../views/Landing/components/pdf/docs_pdf/bases-lectura-facil-2026.pdf"),
+        title: "Bases en Lectura Fácil",
+        size: "4.3 MB"
+      }
+    ],
+    tags: [
+      "afymos",
+      "ConcursoRelatos",
+      "literatura",
+      "discapacidad",
+      "creatividad",
+    ],
+  },
   {
     id: "urban-camp-2026",
     title: "URBAN CAMP 2026",

@@ -27,6 +27,7 @@ import VisitCounter from './components/VisitCounter';
 import { items } from './services/CaruselData';
 import { sampleNews } from '../../components/News/newsData';
 import ScrollToTop from '../../components/ScrollToUp';
+import ConcursoRelatosModal from './components/ConcursoRelatosModal';
 
 const CarouselSwitcher = React.lazy(() =>
   import('../../components/Carousel/CarouselSwitcher'),
@@ -36,13 +37,12 @@ const VideoVisitaCuenca = React.lazy(() =>
   import('./components/VideoVisitaCuenca'),
 );
 
-// import Modal from "../Landing/components/tePuedeInteresar/NewsInformation";
-
 const LandingView = () => {
   return (
     <>
       <ScrollToTop />
       <VisitCounter />
+      <ConcursoRelatosModal />
       <TePuedeInteresar />
       <Suspense fallback={null}>
         <CarouselSwitcher items={items} />
